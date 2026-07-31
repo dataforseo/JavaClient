@@ -70,9 +70,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * main keyword in a group
-* contains the main keyword in a group determined by the synonym clustering algorithm
-* if the value is null, our database does not contain any keywords the corresponding algorithm could identify as synonymous with keyword
+   * main keyword in a groupcontains the main keyword in a group determined by the synonym clustering algorithmif the value is null, our database does not contain any keywords the corresponding algorithm could identify as synonymous with keyword
    * @return coreKeyword
    */
   @javax.annotation.Nullable
@@ -95,11 +93,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * the algorithm used to identify synonyms
-* possible values:
-* keyword_metrics – indicates the algorithm based on keyword_info parameters
-* text_processing – indicates the text-based algorithm
-* if the value is null, our database does not contain any keywords the corresponding algorithm could identify as synonymous with keyword
+   * the algorithm used to identify synonymspossible values:keyword_metrics - indicates the algorithm based on keyword_info parameterstext_processing - indicates the text-based algorithmif the value is null, our database does not contain any keywords the corresponding algorithm could identify as synonymous with keyword
    * @return synonymClusteringAlgorithm
    */
   @javax.annotation.Nullable
@@ -122,10 +116,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * difficulty of ranking in the first top-10 organic results for a keyword
-* indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;
-* calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;
-* learn more about the metric in this help center guide
+   * difficulty of ranking in the first top-10 organic results for a keywordindicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;learn more about the metric in this help center guide
    * @return keywordDifficulty
    */
   @javax.annotation.Nullable
@@ -148,8 +139,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * detected language of the keyword
-* indicates the language of the keyword as identified by our system
+   * detected language of the keywordindicates the language of the keyword as identified by our system
    * @return detectedLanguage
    */
   @javax.annotation.Nullable
@@ -172,8 +162,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * detected language of the keyword is different from the set language
-* if true, the language set in the request does not match the language determined by our system for a given keyword
+   * detected language of the keyword is different from the set languageif true, the language set in the request does not match the language determined by our system for a given keyword
    * @return isAnotherLanguage
    */
   @javax.annotation.Nullable
@@ -196,8 +185,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * number of words in the keyword
-* indicates how many words the keyword consists of
+   * number of words in the keywordindicates how many words the keyword consists of
    * @return wordsCount
    */
   @javax.annotation.Nullable

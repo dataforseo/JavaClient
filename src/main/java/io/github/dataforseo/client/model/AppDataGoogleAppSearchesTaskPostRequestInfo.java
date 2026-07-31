@@ -47,13 +47,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field;
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character);
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field;<br>all %## will be decoded (plus character ‘+’ will be decoded to a space character);<br>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<br>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -76,12 +70,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/app_data/google/locations
-* example:
-* West Los Angeles,California,United States
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify <code>location_code</code></strong><br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/locations</code><br>example:<br><code class='long-string'>West Los Angeles,California,United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -104,12 +93,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engine with their location_code by making a separate request to https://api.dataforseo.com/v3/app_data/google/locations
-* example:
-* 9061121
+   * <em>search engine location code</em><br><strong>required field if you don't specify <code>location_name</code></strong><br><strong>if you use this field, you don't need to specify <code>location_name</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/locations</code><br>example:<br><code class='long-string'>9061121</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -132,12 +116,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* optional field
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/app_data/google/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br>optional field<br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages with <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -160,12 +139,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* optional field
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/app_data/google/languages
-* example:
-* en
+   * <em>search engine language code</em><br>optional field<br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -188,13 +162,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/api/google-play' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -217,15 +185,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results to be returned to be returned from the Google Play SERP;
-* we strongly recommend setting the parsing depth in the multiples of 30, because our system processes 30 results in a row;
-* default value: 30;
-* maximum value: 200;
-* Your account will be billed per each SERP containing up to 30 results;
-* Setting depth above 30 may result in additional charges if the search engine returns more than 30 results;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of results to be returned to be returned from the Google Play SERP;<br>we strongly recommend setting the parsing depth in the multiples of 30, because our system processes 30 results in a row;<br>default value: <code>30</code>;<br>maximum value: <code>200</code>;<br><strong>Your account will be billed per each SERP containing up to 30 results;</strong> <br>Setting depth above 30 may result in additional charges if the search engine returns more than 30 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/app-data/google-play' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -248,11 +208,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -275,15 +231,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -306,11 +254,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* advanced, html
+   * <em>postback_url datatype</em><br><strong>required field if you specify <code>postback_url</code></strong><br>corresponds to the datatype that will be sent to your server<br>possible values:<br><code>advanced</code>, <code>html</code>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -333,15 +277,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

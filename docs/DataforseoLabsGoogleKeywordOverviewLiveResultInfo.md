@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**locationCode** | **Integer** | location code in a POST array |[optional]|
-**languageCode** | **String** | language code in a POST array |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<DataforseoLabsGoogleKeywordOverviewLiveItem>** | contains keywords and related data |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**locationCode** | **Integer** | <em>location code in a POST array</em> |[optional]|
+**languageCode** | **String** | <em>language code in a POST array</em> |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**items** | **List<DataforseoLabsGoogleKeywordOverviewLiveItem>** | <em>contains keywords and related data</em> |[optional]|

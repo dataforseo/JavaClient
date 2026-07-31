@@ -47,9 +47,7 @@ public class ContentAnalysisSearchLiveResultInfo  {
   }
 
   /**
-   * offset token for subsequent requests
-* you can use the string provided in this field to get the subsequent results of the initial task;
-* note: offset_token values are unique for each subsequent task
+   * <em>offset token for subsequent requests</em><br>you can use the string provided in this field to get the subsequent results of the initial task;<br><strong>note:</strong> <code>offset_token</code> values are unique for each subsequent task
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class ContentAnalysisSearchLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class ContentAnalysisSearchLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class ContentAnalysisSearchLiveResultInfo  {
   }
 
   /**
-   * contains citations and related data
+   * <em>contains citations and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

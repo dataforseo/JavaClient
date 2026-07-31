@@ -70,8 +70,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * absolute rank among all the listed reviews
-* absolute position among all reviews on the list
+   * <em>absolute rank among all the listed reviews</em><br>absolute position among all reviews on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * the alignment of the review in SERP
-* can take the following values: left
+   * <em>the alignment of the review in SERP</em><br>can take the following values: <code>left</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * version of the app
-* version of the app for which the review is submitted
+   * <em>version of the app</em><br>version of the app for which the review is submitted
    * @return version
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * the rating score submitted by the reviewer
+   * <em>the rating score submitted by the reviewer</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -189,10 +185,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * date and time when the review was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the review was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -215,7 +208,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * id of the review
+   * <em>id of the review</em>
    * @return id
    */
   @javax.annotation.Nullable
@@ -238,7 +231,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * title of the review
+   * <em>title of the review</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -261,7 +254,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * content of the review
+   * <em>content of the review</em>
    * @return reviewText
    */
   @javax.annotation.Nullable
@@ -284,7 +277,7 @@ public class AppStoreReviewsSearch  {
   }
 
   /**
-   * user profile of the reviewer
+   * <em>user profile of the reviewer</em>
    * @return userProfile
    */
   @javax.annotation.Nullable

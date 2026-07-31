@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppDataGoogleAppReviewsTaskGetHtmlResultInfo>** | array of results |[optional]|
+**result** | **List<AppDataGoogleAppReviewsTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

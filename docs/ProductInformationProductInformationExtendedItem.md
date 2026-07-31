@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**contents** | **List<ProductInformationRows>** | contains information specified about the product within the section_name |[optional]|
+**contents** | **List<ProductInformationRows>** | <em>contains information specified about the product within the <code>section_name</code></em> |[optional]|

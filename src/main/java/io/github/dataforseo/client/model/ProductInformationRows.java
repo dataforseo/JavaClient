@@ -70,7 +70,7 @@ public class ProductInformationRows  {
   }
 
   /**
-   * title under which related product information appears on the Amazon product page
+   * <em>title under which related product information appears on the Amazon product page</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ProductInformationRows  {
   }
 
   /**
-   * rows containing related product information
+   * <em>rows containing related product information</em>
    * @return rows
    */
   @javax.annotation.Nullable

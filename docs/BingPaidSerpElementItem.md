@@ -13,6 +13,7 @@
 **websiteName** | **String** | website name in SERP |[optional]|
 **isImage** | **Boolean** | indicates whether the element contains an image |[optional]|
 **isVideo** | **Boolean** | indicates whether the element contains a video |[optional]|
+**checks** | **List<String>** |  |[optional]|
 **images** | **List<AiModeImagesElementInfo>** | images of the element |[optional]|
 **highlighted** | **List<String>** | words highlighted in bold within the results description |[optional]|
 **extra** | **Map<String, String>** | additional information about the result |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleSearchIntentLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleSearchIntentLiveResultInfo>** | <em>array of results</em> |[optional]|

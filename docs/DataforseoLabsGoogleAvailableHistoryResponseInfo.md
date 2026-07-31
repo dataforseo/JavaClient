@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsGoogleAvailableHistoryTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsGoogleAvailableHistoryTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -47,9 +47,7 @@ public class AvailableLanguages  {
   }
 
   /**
-   * supported sources
-* contains the sources of data supported for a specific location and language combination
-* only google and bing are currently available
+   * <em>supported sources</em><br>contains the sources of data supported for a specific location and language combination<br>only <code>google</code> and <code>bing</code> are currently available
    * @return availableSources
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class AvailableLanguages  {
   }
 
   /**
-   * language name
+   * <em>language name</em>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class AvailableLanguages  {
   }
 
   /**
-   * language code according to ISO 639-1
+   * <em>language code according to <a href='https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes' target='_blank' rel='noopener noreferrer'>ISO 639-1</a></em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class AvailableLanguages  {
   }
 
   /**
-   * the number of keywords available for the given location and language
+   * <em>the number of keywords available for the given location and language
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class AvailableLanguages  {
   }
 
   /**
-   * the number of SERP pages available for the given location and language
+   * <em>the number of SERP pages available for the given location and language
    * @return serps
    */
   @javax.annotation.Nullable

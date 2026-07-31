@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantGoogleSellersAdUrlResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantGoogleSellersAdUrlResultInfo>** | <em>array of results</em> |[optional]|

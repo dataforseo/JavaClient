@@ -47,7 +47,7 @@ public class AppDataAppleAppListingsCategoriesResultInfo  {
   }
 
   /**
-   * name of the supported app category
+   * <em>name of the supported app category</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppDataAppleAppListingsCategoriesResultInfo  {
   }
 
   /**
-   * number of app listings that make up the supported app category
+   * <em>number of app listings that make up the supported app category</em>
    * @return count
    */
   @javax.annotation.Nullable

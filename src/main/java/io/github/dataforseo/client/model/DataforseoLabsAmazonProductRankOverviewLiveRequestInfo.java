@@ -47,14 +47,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * product IDs to compare
-* required field
-* product IDs to receive ranking data for;
-* the maximum number of ASINs you can specify in this array is 1000;
-* you can receive the asin parameter by making a separate request to the Amazon Products endpoint
-* Note: all letters in ASIN code must be specified in uppercase format;
-* example:
-* B01LW2SL7R
+   * <em>product IDs to compare</em><br><strong>required field</strong><br>product IDs to receive ranking data for;<br><strong>the maximum number of ASINs you can specify in this array is 1000;</strong><br>you can receive the <code>asin</code> parameter by making a separate request to the <a href='/v3/merchant/amazon/products/task_post/' target='_blank' rel='noopener noreferrer'>Amazon Products endpoint</a><p><strong>Note:</strong> all letters in ASIN code must be specified in uppercase format;<br>example:<br><code>B01LW2SL7R</code>
    * @return asins
    */
   @javax.annotation.Nullable
@@ -77,13 +70,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if don’t specify location_code
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
-* example:
-* United States
+   * <em>full name of the location</em><br><strong>required field if don't specify <code>location_code</code></strong><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -106,13 +93,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if don’t specify location_name
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if don't specify <code>location_name</code></strong><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -135,12 +116,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if don’t specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if don't specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -163,12 +139,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if don’t specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if don't specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -191,11 +162,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

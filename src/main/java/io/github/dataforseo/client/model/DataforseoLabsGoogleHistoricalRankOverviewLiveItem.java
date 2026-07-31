@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem  {
   }
 
   /**
-   * year for which the data is provided
+   * <em>year for which the data is provided</em>
    * @return year
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem  {
   }
 
   /**
-   * month for which the data is provided
+   * <em>month for which the data is provided</em>
    * @return month
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem  {
   }
 
   /**
-   * ranking data relevant to the specified domain
+   * <em>ranking data relevant to the specified domain</em>
    * @return metrics
    */
   @javax.annotation.Nullable

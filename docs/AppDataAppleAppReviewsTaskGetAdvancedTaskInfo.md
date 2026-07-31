@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppDataAppleAppReviewsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<AppDataAppleAppReviewsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

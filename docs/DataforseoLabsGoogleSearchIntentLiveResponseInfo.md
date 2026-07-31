@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsGoogleSearchIntentLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsGoogleSearchIntentLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

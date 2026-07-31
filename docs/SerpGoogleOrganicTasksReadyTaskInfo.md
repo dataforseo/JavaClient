@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleOrganicTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleOrganicTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

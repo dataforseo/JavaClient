@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**code** | **Integer** | code |[optional]|
-**message** | **String** | message |[optional]|
+**code** | **Integer** | <em>code</em> |[optional]|
+**message** | **String** | <em>message</em> |[optional]|

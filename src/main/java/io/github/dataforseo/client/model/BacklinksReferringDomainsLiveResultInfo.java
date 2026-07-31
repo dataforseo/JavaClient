@@ -47,7 +47,7 @@ public class BacklinksReferringDomainsLiveResultInfo  {
   }
 
   /**
-   * target in a POST array
+   * <em><code>target</code> in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class BacklinksReferringDomainsLiveResultInfo  {
   }
 
   /**
-   * total number of relevant items in the database
-* total number of main domains referring to your target;
-* example.com and blog.example.com are counted as one referring domain
+   * <em>total number of relevant items in the database</em><br>total number of main domains referring to your target;<br>example.com and blog.example.com are counted as one referring domain
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class BacklinksReferringDomainsLiveResultInfo  {
   }
 
   /**
-   * number of items in the items array
+   * <em>number of items in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class BacklinksReferringDomainsLiveResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

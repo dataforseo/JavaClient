@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**subdomain** | **String** | returned subdomain |[optional]|
-**metrics** | **Map<String, DataforseoLabsMetricsInfo>** | ranking data relevant to subdomain |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**subdomain** | **String** | <em>returned subdomain</em> |[optional]|
+**metrics** | **Map<String, DataforseoLabsMetricsInfo>** | <em>ranking data relevant to subdomain</em> |[optional]|

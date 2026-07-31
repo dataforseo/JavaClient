@@ -47,8 +47,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -141,10 +139,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -167,8 +162,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * item types
-* the number of items in the items array
+   * <em>item types</em><br>the number of items in the <code>items</code> array
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -191,9 +185,7 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * encountered item types
-* types of search engine results encountered in the items array;
-* possible item types: hotel_search_item
+   * <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>hotel_search_item</code>
    * @return items
    */
   @javax.annotation.Nullable

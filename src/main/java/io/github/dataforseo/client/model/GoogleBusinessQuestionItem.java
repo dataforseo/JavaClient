@@ -70,8 +70,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * absolute rank among all the elements
+   * <em>absolute rank among all the elements</em>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * ID of the question
+   * <em>ID of the question</em>
    * @return questionId
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * URL of the question
+   * <em>URL of the question</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * URL of the user’s profile image
+   * <em>URL of the user's profile image</em>
    * @return profileImageUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * URL of the user’s profile
+   * <em>URL of the user's profile</em>
    * @return profileUrl
    */
   @javax.annotation.Nullable
@@ -209,7 +208,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * displayed name of the user
+   * <em>displayed name of the user</em>
    * @return profileName
    */
   @javax.annotation.Nullable
@@ -232,7 +231,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * current text of the question
+   * <em>current text of the question</em>
    * @return questionText
    */
   @javax.annotation.Nullable
@@ -255,7 +254,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * original text of the question
+   * <em>original text of the question</em>
    * @return originalQuestionText
    */
   @javax.annotation.Nullable
@@ -278,7 +277,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * estimated time when the question was posted
+   * <em>estimated time when the question was posted</em>
    * @return timeAgo
    */
   @javax.annotation.Nullable
@@ -301,7 +300,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * exact time when the question was posted
+   * <em>exact time when the question was posted</em>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -324,8 +323,7 @@ public class GoogleBusinessQuestionItem  {
   }
 
   /**
-   * array of items
-* items within google_business_question_item
+   * <em>array of items</em><br>items within <code>google_business_question_item</code>
    * @return items
    */
   @javax.annotation.Nullable

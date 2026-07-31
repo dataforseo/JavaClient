@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AppendixWebhookResendTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AppendixWebhookResendTaskInfo>** | <em>array of tasks</em> |[optional]|

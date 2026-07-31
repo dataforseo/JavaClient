@@ -47,7 +47,7 @@ public class NewerModel  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class NewerModel  {
   }
 
   /**
-   * ASIN of the newer product model
+   * <em>ASIN of the newer product model</em>
    * @return newerModelAsin
    */
   @javax.annotation.Nullable

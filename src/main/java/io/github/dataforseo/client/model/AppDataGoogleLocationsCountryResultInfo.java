@@ -47,7 +47,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,13 +93,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
   }
 
   /**
-   * the name of the superordinate location
-* example:
-* 'location_code': 1006473,
-* 'location_name': 'Altrincham,England,United Kingdom',
-* 'location_name_parent': 'England,United Kingdom', where location_name_parent corresponds to:
-* 'location_code': 20339,
-* 'location_name': 'England,United Kingdom'
+   * <em>the name of the superordinate location</em><br>example:<br><code>'location_code': 1006473,<br>'location_name': 'Altrincham,England,United Kingdom',<br>'location_name_parent': 'England,United Kingdom',</code> where <code>location_name_parent</code> corresponds to:<p><code>'location_code': 20339,<br>'location_name': 'England,United Kingdom'</code>
    * @return locationNameParent
    */
   @javax.annotation.Nullable
@@ -122,7 +116,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -145,7 +139,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
   }
 
   /**
-   * location type
+   * <em>location type</em>
    * @return locationType
    */
   @javax.annotation.Nullable

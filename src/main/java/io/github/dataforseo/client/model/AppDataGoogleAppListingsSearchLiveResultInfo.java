@@ -47,7 +47,7 @@ public class AppDataGoogleAppListingsSearchLiveResultInfo  {
   }
 
   /**
-   * the total number of relevant results in the database
+   * <em>the total number of relevant results in the database</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppDataGoogleAppListingsSearchLiveResultInfo  {
   }
 
   /**
-   * the number of items in the results array
+   * <em>the number of items in the results array</em>
    * @return count
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AppDataGoogleAppListingsSearchLiveResultInfo  {
   }
 
   /**
-   * offset in the results array of returned apps
+   * <em>offset in the results array of returned apps</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class AppDataGoogleAppListingsSearchLiveResultInfo  {
   }
 
   /**
-   * token for subsequent requests
-* you can use this parameter in the POST request to avoid timeouts while trying to obtain over 100,000 results in a single request
+   * <em>token for subsequent requests</em><br>you can use this parameter in the POST request to avoid timeouts while trying to obtain over 100,000 results in a single request
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class AppDataGoogleAppListingsSearchLiveResultInfo  {
   }
 
   /**
-   * array of apps and related data
+   * <em>array of apps and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

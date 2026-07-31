@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataTrustpilotSearchTaskPostTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataTrustpilotSearchTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

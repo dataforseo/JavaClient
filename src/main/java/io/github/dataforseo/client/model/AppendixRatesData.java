@@ -47,7 +47,7 @@ public class AppendixRatesData  {
   }
 
   /**
-   * rate limits for API calls per a certain period of time
+   * <em>rate limits for API calls per a certain period of time</em>
    * @return limits
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppendixRatesData  {
   }
 
   /**
-   * statisctics for API calls
+   * <em>statisctics for API calls</em>
    * @return statistics
    */
   @javax.annotation.Nullable

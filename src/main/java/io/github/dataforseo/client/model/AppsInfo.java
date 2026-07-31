@@ -47,7 +47,7 @@ public class AppsInfo  {
   }
 
   /**
-   * ID of the app
+   * <i>ID of the app</i>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppsInfo  {
   }
 
   /**
-   * title of the app
+   * <i>title of the app</i>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AppsInfo  {
   }
 
   /**
-   * URL to the app page on Google Play
+   * <i>URL to the app page on Google Play</i>
    * @return url
    */
   @javax.annotation.Nullable

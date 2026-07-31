@@ -47,8 +47,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code
-* in this case, the value will be null
+   * <em>language code</em><br>in this case, the value will be <code>null</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
+   * <em>direct URL to search engine results</em>
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -237,7 +231,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chips
+   * <em>search refinement chips</em>
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -260,9 +254,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results found in SERP
-* possible item types:
-* event_item
+   * <em>types of search results found in SERP</em><br>possible item types:<br><code>event_item</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -285,9 +277,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * total number of results in SERP
-* in this case, the value will be 0
-* this search engine does not indicate the total number of results
+   * <em>total number of results in SERP</em><br>in this case, the value will be <code>0</code> <br>this search engine does not indicate the total number of results
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -310,7 +300,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -333,7 +323,7 @@ public class SerpGoogleEventsTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * items of the element
+   * <em>items of the element</em>
    * @return items
    */
   @javax.annotation.Nullable

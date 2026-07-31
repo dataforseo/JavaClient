@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * id of the app in a POST array
+   * <em>id of the app in a POST array</em>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveResultInfo  {
   }
 
   /**
-   * contains data related to the app_id and competitor applications
+   * <em>contains data related to the <code>app_id</code> and competitor applications</em>
    * @return items
    */
   @javax.annotation.Nullable

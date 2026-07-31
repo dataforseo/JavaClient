@@ -70,8 +70,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * id of the app in a POST array
+   * <em>id of the app in a POST array</em>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * title of the app
+   * <em>title of the app</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * URL to the app page on Google Play
+   * <em>URL to the app page on Google Play</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * URL to the app icon
+   * <em>URL to the app icon</em>
    * @return icon
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * the total number of reviews of the app
+   * <em>the total number of reviews of the app</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * average rating of the app
+   * <em>average rating of the app</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -281,7 +277,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * indicates whether the app is free
+   * 
    * @return isFree
    */
   @javax.annotation.Nullable
@@ -304,7 +300,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * price of the app
+   * 
    * @return price
    */
   @javax.annotation.Nullable
@@ -327,7 +323,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * name of the app developer
+   * <em>name of the app developer</em>
    * @return developer
    */
   @javax.annotation.Nullable
@@ -350,7 +346,7 @@ public class GooglePlaySearchOrganic  {
   }
 
   /**
-   * URL to the developer page on Google Play
+   * <em>URL to the developer page on Google Play</em>
    * @return developerUrl
    */
   @javax.annotation.Nullable

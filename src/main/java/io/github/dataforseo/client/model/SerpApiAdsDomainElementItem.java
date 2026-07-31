@@ -47,7 +47,7 @@ public class SerpApiAdsDomainElementItem  extends BaseSerpApiAdsAdvertiserElemen
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable

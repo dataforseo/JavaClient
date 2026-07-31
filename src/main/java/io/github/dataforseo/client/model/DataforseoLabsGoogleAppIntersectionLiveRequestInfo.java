@@ -47,20 +47,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * ids of the target apps
-* required field
-* IDs of the target mobile applications on Google Play;
-* you can find the ID in the URL of every app listed on Google Play;
-* example:
-* in the URL https://play.google.com/store/apps/details?id=org.telegram.messenger
-* the id is org.telegram.messenger;;
-* the ids should be specified the following way:
-* 'app_ids': {
-* '1': 'org.telegram.messenger',
-* '2': 'com.zhiliaoapp.musically'
-* }
-* if you specify a single ID here, the API will return results only for one application;
-* the maximum number of app IDs you can specify in this object is 20
+   * <em>ids of the target apps</em><br><strong>required field</strong><br>IDs of the target mobile applications on Google Play;<br>you can find the ID in the URL of every app listed on Google Play;<br>example:<br>in the URL <code>https://play.google.com/store/apps/details?id=org.telegram.messenger</code><br>the id is <code>org.telegram.messenger</code>;;<br>the ids should be specified the following way:<br><code>'app_ids': {<br>'1': 'org.telegram.messenger',<br>'2': 'com.zhiliaoapp.musically'<br>}</code><br>if you specify a single ID here, the API will return results only for one application;<br>the maximum number of app IDs you can specify in this object is <code>20</code>
    * @return appIds
    */
   @javax.annotation.Nullable
@@ -83,14 +70,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US location only;
-* example:
-* United States
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US location only;<br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -113,14 +93,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US location only;
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US location only;<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -143,14 +116,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the English language only;
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the English language only;<br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -173,14 +139,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the English language only
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the English language only<br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -203,16 +162,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* <, <=, >, >=, =, <>, in, not_in
-* example:
-* ['keyword_data.keyword_info.search_volume','>',500]
-* [['keyword_data.keyword_info.search_volume','<>',500],'and',[intersection_result.382617920.rank_group','>=','10']]
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code><br>example:<br><code>['keyword_data.keyword_info.search_volume','>',500]</code><p><code>[['keyword_data.keyword_info.search_volume','<>',500],'and',[intersection_result.382617920.rank_group','>=','10']]</code><p>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' rel='noopener noreferrer' target='_blank'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -235,22 +185,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results;
-* possible sorting types:
-* asc – results will be sorted in the ascending order;
-* desc – results will be sorted in the descending order;
-* you should use a comma to specify a sorting type;
-* example:
-* ['intersection_result.382617920.rank_absolute,asc']
-* Note: you can set no more than three sorting rules in a single request;
-* you should use a comma to separate several sorting rules;
-* example:
-* ['intersection_result.382617920.rank_absolute,desc','keyword_data.keyword_info.search_volume,asc']
-* default rule:
-* ['keyword_data.keyword_info.search_volume,desc']
-* Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results;<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order;<br><code>desc</code> - results will be sorted in the descending order;<br>you should use a comma to specify a sorting type;<br>example:<br><code>['intersection_result.382617920.rank_absolute,asc']</code><br><strong>Note:</strong> you can set no more than three sorting rules in a single request;<br>you should use a comma to separate several sorting rules;<br>example:<br><code>['intersection_result.382617920.rank_absolute,desc','keyword_data.keyword_info.search_volume,asc']</code><br>default rule:<br><code>['keyword_data.keyword_info.search_volume,desc']</code><br><strong>Note:</strong> if the <code>item_types</code> array contains item types that are different from <code>organic</code>, the results will be ordered by the first item type in the array
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -273,10 +208,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned keywords
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned keywords</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -299,10 +231,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned keywords
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
+   * <em>offset in the results array of returned keywords</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
    * @return offset
    */
   @javax.annotation.Nullable
@@ -325,11 +254,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

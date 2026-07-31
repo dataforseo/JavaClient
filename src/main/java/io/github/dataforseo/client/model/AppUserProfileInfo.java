@@ -47,7 +47,7 @@ public class AppUserProfileInfo  {
   }
 
   /**
-   * profile name of the reviewer
+   * <em>profile name of the reviewer</em>
    * @return profileName
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppUserProfileInfo  {
   }
 
   /**
-   * URL to the reviewer’s profile image
+   * <em>URL to the reviewer's profile image</em>
    * @return profileImageUrl
    */
   @javax.annotation.Nullable

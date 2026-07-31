@@ -70,10 +70,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * date and time when the data for the target was stored
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the data for the target was stored</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * target rank for the given date
-* learn more about the metric and how it is calculated in this help center article
+   * <em><code>target</code> rank for the given <code>date</code></em><br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -120,7 +116,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of backlinks for the given date
+   * <em>number of backlinks for the given <code>date</code></em>
    * @return backlinks
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of nofollow backlinks for the given date
+   * <em>number of nofollow backlinks for the given <code>date</code></em>
    * @return backlinksNofollow
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of pages pointing to target for the given date
+   * <em>number of pages pointing to <code>target</code> for the given <code>date</code></em>
    * @return referringPages
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of referring pages pointing at least one nofollow link to the target for the given date
+   * <em>number of referring pages pointing at least one nofollow link to the <code>target</code> for the given <code>date</code></em>
    * @return referringPagesNofollow
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of referring domains for the given date
-* referring domains include subdomains that are counted as separate domains for this metric
+   * <em>number of referring domains for the given <code>date</code></em><br>referring domains include subdomains that are counted as separate domains for this metric
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of domains pointing at least one nofollow link to the target for the given date
+   * <em>number of domains pointing at least one nofollow link to the <code>target</code> for the given <code>date</code></em>
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
@@ -259,7 +254,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of referring main domains for the given date
+   * <em>number of referring main domains for the given <code>date</code></em>
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
@@ -282,7 +277,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of main domains pointing at least one nofollow link to the target for the given date
+   * <em>number of main domains pointing at least one nofollow link to the <code>target</code> for the given <code>date</code></em>
    * @return referringMainDomainsNofollow
    */
   @javax.annotation.Nullable
@@ -305,8 +300,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of referring IP addresses for the given date
-* number of IP addresses pointing to this page
+   * <em>number of referring IP addresses for the given <code>date</code></em><br>number of IP addresses pointing to this page
    * @return referringIps
    */
   @javax.annotation.Nullable
@@ -329,7 +323,7 @@ public class BacklinksTimeseriesSummaryLiveItem  {
   }
 
   /**
-   * number of referring subnetworks for the given date
+   * <em>number of referring subnetworks for the given <code>date</code></em>
    * @return referringSubnets
    */
   @javax.annotation.Nullable

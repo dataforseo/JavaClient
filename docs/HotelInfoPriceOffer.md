@@ -6,9 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**title** | **String** | title of the hotel |[optional]|
-**price** | **Double** | price per night |[optional]|
-**currency** | **String** | price currency<br>USD is applied by default, unless specified in the POST array |[optional]|
+**title** | **String** | <em>title of the hotel</em> |[optional]|
+**price** | **Double** | <em>price per night</em> |[optional]|
+**currency** | **String** | <em>price currency</em><br><code>USD</code> is applied by default, unless specified in the POST array |[optional]|
 **url** | **String** | url of the price offer<br>URL to the page of the website where price offer appears |[optional]|
 **maxVisitors** | **Integer** | the maximal number of visitors<br>the maximum number of visitors for which the price offer is valid |[optional]|
 **offerImages** | **List<String>** | price offer images<br>URLs of the images featured in the price offer |[optional]|

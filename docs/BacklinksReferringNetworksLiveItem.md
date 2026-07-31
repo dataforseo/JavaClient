@@ -6,24 +6,24 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**networkAddress** | **String** | address of the referring subnetwork or IP |[optional]|
-**rank** | **Integer** | network rank<br>rank volume that a referring network passes to the target<br>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
-**backlinks** | **Long** | indicates the number of backlinks pointing to the target |[optional]|
-**firstSeen** | **String** | date and time when our crawler found the backlink for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**lostDate** | **String** | date and time when the last backlink from this domain was lost<br>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
-**brokenBacklinks** | **Long** | number of broken backlinks<br>number of broken backlinks pointing to the domain |[optional]|
-**brokenPages** | **Integer** | number of broken pages<br>number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to |[optional]|
-**referringDomains** | **Long** | indicates the number of referring domains<br>referring domains include subdomains that are counted as separate domains for this metric |[optional]|
-**referringDomainsNofollow** | **Long** | number of domains pointing at least one nofollow link to the target |[optional]|
-**referringMainDomains** | **Long** | indicates the number of referring main domains |[optional]|
-**referringMainDomainsNofollow** | **Long** | number of main domains pointing at least one nofollow link to the target |[optional]|
-**referringIps** | **Long** | number of referring IP addresses<br>number of IP addresses pointing to this page |[optional]|
-**referringSubnets** | **Long** | number of referring subnetworks |[optional]|
-**referringPages** | **Long** | indicates the number of pages pointing to the target specified |[optional]|
-**referringPagesNofollow** | **Long** | number of referring pages pointing at least one nofollow link to the target |[optional]|
-**referringLinksTld** | **Map<String, Long>** | top-level domains of the referring links<br>contains top level domains and referring link count per each |[optional]|
-**referringLinksTypes** | **Map<String, Long>** | types of referring links<br>indicates the types of the referring links and link count per each type<br>possible values:<br>anchor, image, link, meta, canonical, alternate, redirect |[optional]|
-**referringLinksAttributes** | **Map<String, Long>** | link attributes of the referring links<br>indicates link attributes of the referring links and link count per each attribute |[optional]|
-**referringLinksPlatformTypes** | **Map<String, Long>** | types of referring platforms<br>indicates referring platform types and and link count per each platform<br>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization |[optional]|
-**referringLinksSemanticLocations** | **Map<String, Long>** | semantic locations of the referring links<br>indicates semantic elements in HTML where the referring links are located and the link count per each semantic location<br>you can get the full list of semantic elements here<br>examples:<br>article, section, summary |[optional]|
-**referringLinksCountries** | **Map<String, Long>** | ISO country codes of the referring links<br>indicates ISO country codes of the domains where the referring links are located and the link count per each country |[optional]|
+**networkAddress** | **String** | <em>address of the referring subnetwork or IP</em> |[optional]|
+**rank** | **Integer** | <em>network rank</em><br>rank volume that a referring network passes to the <code>target</code><br><code>rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**backlinks** | **Long** | <em>indicates the number of backlinks pointing to the <code>target</code></em> |[optional]|
+**firstSeen** | **String** | <em>date and time when our crawler found the backlink for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**lostDate** | **String** | <em>date and time when the last backlink from this domain was lost</em><br>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2017-01-24 13:20:59 +00:00</code> |[optional]|
+**brokenBacklinks** | **Long** | <em>number of broken backlinks</em><br>number of broken backlinks pointing to the domain |[optional]|
+**brokenPages** | **Integer** | <em>number of broken pages</em><br>number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to |[optional]|
+**referringDomains** | **Long** | <em>indicates the number of referring domains</em><br>referring domains include subdomains that are counted as separate domains for this metric |[optional]|
+**referringDomainsNofollow** | **Long** | <em>number of domains pointing at least one nofollow link to the <code>target</code></em> |[optional]|
+**referringMainDomains** | **Long** | <em>indicates the number of referring main domains</em> |[optional]|
+**referringMainDomainsNofollow** | **Long** | <em>number of main domains pointing at least one nofollow link to the <code>target</code></em> |[optional]|
+**referringIps** | **Long** | <em>number of referring IP addresses</em><br>number of IP addresses pointing to this page |[optional]|
+**referringSubnets** | **Long** | <em>number of referring subnetworks</em> |[optional]|
+**referringPages** | **Long** | <em>indicates the number of pages pointing to the <code>target</code> specified</em> |[optional]|
+**referringPagesNofollow** | **Long** | <em>number of referring pages pointing at least one nofollow link to the <code>target</code></em> |[optional]|
+**referringLinksTld** | **Map<String, Long>** | <em>top-level domains of the referring links</em><br>contains top level domains and referring link count per each |[optional]|
+**referringLinksTypes** | **Map<String, Long>** | <em>types of referring links</em><br>indicates the types of the referring links and link count per each type<br>possible values:<br><code>anchor</code>, <code>image</code>, <code>link</code>, <code>meta</code>, <code>canonical</code>, <code>alternate</code>, <code>redirect</code> |[optional]|
+**referringLinksAttributes** | **Map<String, Long>** | <em>link attributes of the referring links</em><br>indicates link attributes of the referring links and link count per each attribute |[optional]|
+**referringLinksPlatformTypes** | **Map<String, Long>** | <em>types of referring platforms</em><br>indicates referring platform types and and link count per each platform<p>possible values: <code>cms</code>, <code>blogs</code>, <code>ecommerce</code>, <code>message-boards</code>, <code>wikis</code>, <code>news</code>, <code>organization</code> |[optional]|
+**referringLinksSemanticLocations** | **Map<String, Long>** | <em>semantic locations of the referring links</em><br>indicates semantic elements in HTML where the referring links are located and the link count per each semantic location<p>you can get the full list of semantic elements <a href='https://www.w3schools.com/html/html5_semantic_elements.asp' target='_blank' rel='noopener noreferrer'>here</a><br>examples:<br><code>article</code>, <code>section</code>, <code>summary</code> |[optional]|
+**referringLinksCountries** | **Map<String, Long>** | <em>ISO country codes of the referring links</em><br>indicates ISO country codes of the domains where the referring links are located and the link count per each country |[optional]|

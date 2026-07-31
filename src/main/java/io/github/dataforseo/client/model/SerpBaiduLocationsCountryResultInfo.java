@@ -47,7 +47,7 @@ public class SerpBaiduLocationsCountryResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpBaiduLocationsCountryResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,9 +93,7 @@ public class SerpBaiduLocationsCountryResultInfo  {
   }
 
   /**
-   * the code of the superordinate location
-* only City location_type is supported for all countries except China (where Country is also supported);
-* don’t match locations by location_code_parent because the results for Region and Country-level results for most countries are not supported by Baidu SERP API
+   * <em>the code of the superordinate location</em><br>only <code>City</code> <code>location_type</code> is supported for all countries except China (where <code>Country</code> is also supported);<br>don't match locations by <code>location_code_parent</code> because the results for <code>Region</code> and <code>Country</code>-level results for most countries are not supported by Baidu SERP API
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpBaiduLocationsCountryResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -141,8 +139,7 @@ public class SerpBaiduLocationsCountryResultInfo  {
   }
 
   /**
-   * location type
-* only City is supported for all countries except China (where Country is also supported)
+   * <em>location type</em><br>only <code>City</code> is supported for all countries except China (where <code>Country</code> is also supported)
    * @return locationType
    */
   @javax.annotation.Nullable

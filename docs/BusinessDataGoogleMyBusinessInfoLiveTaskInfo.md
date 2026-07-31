@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataGoogleMyBusinessInfoLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataGoogleMyBusinessInfoLiveResultInfo>** | <em>array of results</em> |[optional]|

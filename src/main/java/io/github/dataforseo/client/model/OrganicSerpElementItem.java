@@ -279,6 +279,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element contains an image
+* Note: this check no longer appears in SERP
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -302,6 +303,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element contains a video
+* Note: this check no longer appears in SERP
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -325,6 +327,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element is a featured_snippet
+* Note: this check no longer appears in SERP
    * @return isFeaturedSnippet
    */
   @javax.annotation.Nullable
@@ -348,6 +351,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element is marked as malicious
+* Note: this check no longer appears in SERP
    * @return isMalicious
    */
   @javax.annotation.Nullable
@@ -371,6 +375,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element is marked as Google web story
+* Note: this check no longer appears in SERP
    * @return isWebStory
    */
   @javax.annotation.Nullable
@@ -380,6 +385,37 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   public void setIsWebStory(Boolean isWebStory) {
     this.isWebStory = isWebStory;
+  }
+
+
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public OrganicSerpElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * array of properties detected for the SERP element
+* lists the properties that are true for this element
+* each value in the array represents a detected property
+* example:
+* if is_image is present in the array, the element contains an image
+* possible values in the array:
+* is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
+* equals null if none of the properties are detected for the element
+* learn more about the checks array in this Help Center article
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
   }
 
 
@@ -764,6 +800,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
         Objects.equals(this.isFeaturedSnippet, organicSerpElementItem.isFeaturedSnippet) &&
         Objects.equals(this.isMalicious, organicSerpElementItem.isMalicious) &&
         Objects.equals(this.isWebStory, organicSerpElementItem.isWebStory) &&
+        Objects.equals(this.checks, organicSerpElementItem.checks) &&
         Objects.equals(this.preSnippet, organicSerpElementItem.preSnippet) &&
         Objects.equals(this.extendedSnippet, organicSerpElementItem.extendedSnippet) &&
         Objects.equals(this.images, organicSerpElementItem.images) &&
@@ -787,7 +824,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(rankGroup, rankAbsolute, domain, title, description, url, breadcrumb, cacheUrl, relatedSearchUrl, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp);
+  return Objects.hash(rankGroup, rankAbsolute, domain, title, description, url, breadcrumb, cacheUrl, relatedSearchUrl, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, checks, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -817,6 +854,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
     sb.append("    isFeaturedSnippet: ").append(toIndentedString(isFeaturedSnippet)).append("\n");
     sb.append("    isMalicious: ").append(toIndentedString(isMalicious)).append("\n");
     sb.append("    isWebStory: ").append(toIndentedString(isWebStory)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    preSnippet: ").append(toIndentedString(preSnippet)).append("\n");
     sb.append("    extendedSnippet: ").append(toIndentedString(extendedSnippet)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
@@ -887,6 +925,8 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
     openapiFields.add("is_malicious");
     
     openapiFields.add("is_web_story");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("pre_snippet");
     

@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * keyword
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -140,9 +139,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * indicates data for Google and partner sites
-* if true, the results are returned for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-* if false, the results are returned for Google search sites only
+   * <em>indicates data for Google and partner sites</em><br>if <code class='prettyprint'>true</code>, the results are returned for owned, operated, and syndicated networks across Google and partner sites that host Google search;<br>if <code>false</code>, the results are returned for Google search sites only
    * @return searchPartners
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * keyword data for the returned keyword
+   * <em>keyword data for the returned keyword</em>
    * @return keywordInfo
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * contains keyword search volume normalized with Bing search volume
+   * <em>contains keyword search volume normalized with Bing search volume</em>
    * @return keywordInfoNormalizedWithBing
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * contains keyword search volume normalized with clickstream data
+   * <em>contains keyword search volume normalized with clickstream data<br></em>
    * @return keywordInfoNormalizedWithClickstream
    */
   @javax.annotation.Nullable
@@ -234,8 +231,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * clickstream data for the returned keyword
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true
+   * <em>clickstream data for the returned keyword</em><br>to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code>
    * @return clickstreamKeywordInfo
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * additional information about the keyword
+   * <em>additional information about the keyword</em>
    * @return keywordProperties
    */
   @javax.annotation.Nullable
@@ -281,8 +277,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * SERP data
-* the value will be null if you didn’t set the field include_serp_info to true in the POST array or if there is no SERP data for this keyword in our database
+   * <em>SERP data</em><br>the value will be <code>null</code> if you didn't set the field <code>include_serp_info</code> to <code>true</code> in the POST array or if there is no SERP data for this keyword in our database
    * @return serpInfo
    */
   @javax.annotation.Nullable
@@ -305,8 +300,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * backlink data for the returned keyword
-* this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 websites ranking organically for the keyword
+   * <em>backlink data for the returned keyword</em><br>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 websites ranking organically for the keyword
    * @return avgBacklinksInfo
    */
   @javax.annotation.Nullable
@@ -329,8 +323,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem  {
   }
 
   /**
-   * search intent info for the returned keyword
-* learn about search intent in this help center article
+   * <em>search intent info for the returned keyword</em><br>learn about search intent in this <a href='https://dataforseo.com/help-center/search-intent-and-its-types' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return searchIntentInfo
    */
   @javax.annotation.Nullable

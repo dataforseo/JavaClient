@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AppDataGoogleAppInfoTaskGetHtmlTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AppDataGoogleAppInfoTaskGetHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

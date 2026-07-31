@@ -47,7 +47,7 @@ public class ContentAnalysisCategoriesResultInfo  {
   }
 
   /**
-   * category code
+   * <em>category code</em>
    * @return categoryCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ContentAnalysisCategoriesResultInfo  {
   }
 
   /**
-   * full name of the category
+   * <em>full name of the category</em>
    * @return categoryName
    */
   @javax.annotation.Nullable
@@ -93,15 +93,7 @@ public class ContentAnalysisCategoriesResultInfo  {
   }
 
   /**
-   * the code of the superordinate category
-* example:
-* 'category_code': 10178,
-* 'category_name': 'Apparel Accessories',
-* 'category_code_parent': 10021
-* where category_code_parent
-* corresponds to:
-* 'category_code': 10178,
-* 'category_name': 'Apparel Accessories'
+   * <em>the code of the superordinate category</em><br>example:<br><code>'category_code': 10178,<br>'category_name': 'Apparel Accessories',<br>'category_code_parent': 10021</code> <br>where <code>category_code_parent</code> <br>corresponds to: <br><code>'category_code': 10178,<br>'category_name': 'Apparel Accessories'</code>
    * @return categoryCodeParent
    */
   @javax.annotation.Nullable

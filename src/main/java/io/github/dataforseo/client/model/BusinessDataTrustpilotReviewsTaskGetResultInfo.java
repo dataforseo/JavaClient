@@ -47,7 +47,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * domain of the business entity
+   * <em>domain of the business entity</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -140,10 +139,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * title of the ‘reviews’ element on Trustpilot
-* the name of the business entity for which the reviews are collected
+   * <em>title of the 'reviews' element on Trustpilot</em><br>the name of the business entity for which the reviews are collected
    * @return title
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * location of the business entity as specified on Trustpilot
-* address of the business entity for which the reviews are collected
+   * <em>location of the business entity as specified on Trustpilot</em><br>address of the business entity for which the reviews are collected
    * @return location
    */
   @javax.annotation.Nullable
@@ -214,7 +208,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * the total number of reviews
+   * <em>the total number of reviews</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * rating of the corresponding business entity
-* popularity rate based on reviews and displayed in SERP
+   * <em>rating of the corresponding business entity</em><br>popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -261,8 +254,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * the number of items in the results array
-* you can get more results by using the depth parameter when setting a task
+   * <em>the number of items in the results array</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -285,8 +277,7 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
   }
 
   /**
-   * found reviews
-* you can get more results by using the depth parameter when setting a task
+   * <em>found reviews</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return items
    */
   @javax.annotation.Nullable

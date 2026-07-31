@@ -47,12 +47,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * keywords
-* required field
-* UTF-8 encoding
-* The maximum number of keywords you can specify: 200.
-* The keywords will be converted to lowercase format
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords</em><br><strong>required field</strong><br>UTF-8 encoding<br>The maximum number of keywords you can specify: 200.<br>The keywords will be converted to lowercase format<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,13 +70,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -104,13 +93,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * unique location identifier
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* 2840
+   * <em>unique location identifier</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -133,15 +116,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* optional field
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
-* Note: if omitted, results default to the language with the most keyword records in the specified location;
-* refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language
+   * <em>full name of the language</em><br>optional field<br>if you use this field, you don't need to specify <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code><br><strong>Note:</strong> if omitted, results default to the language with the most keyword records in the specified location;<br>refer to the <code>available_languages.keywords</code> field of the <a href='https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages' target='_blank'>Locations and Languages endpoint</a> to determine the default language
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -164,15 +139,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * language code
-* optional field
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
-* Note: if omitted, results default to the language with the most keyword records in the specified location;
-* refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language
+   * <em>language code</em><br>optional field<br>if you use this field, you don't need to specify <code>language_name</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code><br><strong>Note:</strong> if omitted, results default to the language with the most keyword records in the specified location;<br>refer to the <code>available_languages.keywords</code> field of the <a href='https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages' target='_blank'>Locations and Languages endpoint</a> to determine the default language
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -195,11 +162,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * search mode
-* optional field
-* if set to true the results will be based on the phrase-match search algorithm
-* if set to false the results will be based on the broad-match search algorithm
-* default value: false
+   * <em>search mode</em><br>optional field<br>if set to_<code class='prettyprint'>true</code> the results will be based on the phrase-match search algorithm<br>if set to <code class='prettyprint'>false</code> the results will be based on the broad-match search algorithm<br>default value: <code>false</code>n
    * @return closelyVariants
    */
   @javax.annotation.Nullable
@@ -222,10 +185,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true only core keywords will be returned, all highly similar keywords will be excluded;
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to_<code class='prettyprint'>true</code> only core keywords will be returned, all highly similar keywords will be excluded;  <br>default value: <code>false</code>n
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -248,10 +208,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * include data from SERP for each keyword
-* optional field
-* if set to true, we will return a serp_info array containing SERP data (number of search results, relevant URL, and SERP features) for every keyword in the response
-* default value: false
+   * <em>include data from SERP for each keyword</em><br>optional field<br>if set to <code>true</code>, we will return a <code>serp_info</code> array containing SERP data (number of search results, relevant URL, and SERP features) for every keyword in the response<br>default value: <code>false</code>
    * @return includeSerpInfo
    */
   @javax.annotation.Nullable
@@ -274,12 +231,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * include or exclude data from clickstream-based metrics in the result
-* optional field
-* if the parameter is set to true, you will receive clickstream_keyword_info, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response
-* default value: false
-* with this parameter enabled, you will be charged double the price for the request
-* learn more about how clickstream-based metrics are calculated in this help center article
+   * <em>include or exclude data from clickstream-based metrics in the result</em><br>optional field<br>if the parameter is set to_<code>true</code>, you will receive <code>clickstream_keyword_info</code>, <code>keyword_info_normalized_with_clickstream</code>, and <code>keyword_info_normalized_with_bing</code> fields in the response<br>default value: <code>false</code><br>with this parameter enabled, you will be charged double the price for the request<p>learn more about how clickstream-based metrics are calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>n
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable
@@ -302,10 +254,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of keywords in the results array
-* optional field
-* default value: 700
-* maximum value: 1000
+   * <em>the maximum number of keywords in the results array</em><br>optional field<br>default value: <code>700</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -328,12 +277,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned keywords
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
-* Note: we recommend using this parameter only when retrieving up to 10,000 results
-* for retrieving over 10,000 results, use the offset_token instead.
+   * <em>offset in the results array of returned keywords</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords<br><strong>Note:</strong> we recommend using this parameter only when retrieving up to 10,000 results<br>for retrieving over 10,000 results, use the <code>offset_token</code> instead.
    * @return offset
    */
   @javax.annotation.Nullable
@@ -356,14 +300,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * offset token for subsequent requests
-* optional field
-* provided in the identical filed of the response to each request;
-* use this parameter to avoid timeouts while trying to obtain over 10,000 results in a single request;
-* by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
-* offset_token values are unique for each subsequent task
-* Note: if the offset_token is specified in the request, all other parameters except limit will not be taken into account when processing a task.
-* learn more about this parameter on our Help Center
+   * <em>offset token for subsequent requests</em><br>optional field<br>provided in the identical filed of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over 10,000 results in a single request;<br>by specifying the unique <code>offset_token</code> value from the response array, you will get the subsequent results of the initial task;<br><code>offset_token</code> values are unique for each subsequent task <br><strong>Note:</strong> if the <code>offset_token</code> is specified in the request, all other parameters except <code>limit</code> will not be taken into account when processing a task.<br>learn more about this parameter on our <a href='https://dataforseo.com/help-center/what-is-the-difference-between-the-offset-and-offset_token-parameters#offset_token' target='_blank'>Help Center</a>
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -386,25 +323,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, match, not_match, ilike, not_ilike, like, not_like
-* you can use the % operator with like and not_like,as well as ilike, not_ilike to match any string of zero or more characters
-* note that you can not filter the results by relevance
-* example:
-* ['keyword_info.search_volume','>',0]
-* [['keyword_info.search_volume','in',[0,1000]],
-* 'and',
-* ['keyword_info.competition_level','=','LOW']]
-* [['keyword_info.search_volume','>',100],
-* 'and',
-* [['keyword_info.cpc','<',0.5],
-* 'or',
-* ['keyword_info.high_top_of_page_bid','<=',0.5]]]
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>match</code>, <code>not_match</code>, <code>ilike</code>, <code>not_ilike</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code>,as well as <code>ilike</code>, <code>not_ilike</code> to match any string of zero or more characters<br><strong>note that you can not filter the results by <code>relevance</code></strong><br>example:<br><code>['keyword_info.search_volume','>',0]</code><p><code>[['keyword_info.search_volume','in',[0,1000]],<br>'and',<br>['keyword_info.competition_level','=','LOW']]</code><p><code>[['keyword_info.search_volume','>',100],<br>'and',<br>[['keyword_info.cpc','<',0.5],<br>'or',<p>['keyword_info.high_top_of_page_bid','<=',0.5]]]</code><br>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' rel='noopener noreferrer' target='_blank'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -427,20 +346,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting parameter
-* default rule:
-* ['relevance,desc']
-* relevance is used as the default sorting rule to provide you with the closest keyword ideas. We recommend using this sorting rule to get highly-relevant search terms. Note that relevance is only our internal system identifier, so it can not be used as a filter, and you will not find this field in the result array. The relevance score is based on a similar principle as used in the Keywords For Keywords endpoint.
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['relevance,desc','keyword_info.search_volume,desc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting parameter<p>default rule:<br><code>['relevance,desc']</code><br>relevance is used as the default sorting rule to provide you with the closest keyword ideas. We recommend using this sorting rule to get highly-relevant search terms. <strong>Note</strong> that <code>relevance</code> is only our internal system identifier, so <strong>it can not be used as a filter</strong>, and you will not find this field in the <code>result</code> array. The relevance score is based on a similar principle as used in <a href='/v3/keywords_data/google/keywords_for_keywords/live/?php'>the Keywords For Keywords</a> endpoint.<p><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['relevance,desc','keyword_info.search_volume,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -463,11 +369,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

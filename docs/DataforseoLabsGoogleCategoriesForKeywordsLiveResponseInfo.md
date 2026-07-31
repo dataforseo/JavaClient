@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsGoogleCategoriesForKeywordsLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsGoogleCategoriesForKeywordsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

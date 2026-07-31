@@ -47,11 +47,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * target domains and subdomains
-* required field
-* you can specify domains and subdomains in this field;
-* domains and subdomains should be specified without https:// and www.;
-* you can set up to 1000 domains or subdomains
+   * <em>target domains and subdomains</em><br><strong>required field</strong><br>you can specify domains and subdomains in this field;<br>domains and subdomains should be specified without <code>https://</code> and <code>www.</code>;<br>you can set up to 1000 domains or subdomains
    * @return targets
    */
   @javax.annotation.Nullable
@@ -74,13 +70,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * full name of the location
-* if you use this field, you don’t have to specify location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available locations
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br>if you use this field, you don't have to specify <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available locations<br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -103,13 +93,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * location code
-* if you use this field, you don’t have to specify location_name
-* you can receive the list of available locations with their location_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available locations
-* example:
-* 2840
+   * <em>location code</em><br>if you use this field, you don't have to specify <code>location_name</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available locations<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -132,13 +116,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * full name of the language
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available languages
-* example:
-* English
+   * <em>full name of the language</em><br>if you use this field, you don’t need to specify <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available languages<br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -161,13 +139,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * language code
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available languages
-* example:
-* en
+   * <em>language code</em><br>if you use this field, you don’t need to specify <code>language_name</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available languages<br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -190,11 +162,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * starting date of the time range
-* optional field
-* if you don’t specify this field, the data will be provided for the previous 12 months
-* minimal possible value: 2020-10-01
-* date format: 'yyyy-mm-dd'
+   * <em>starting date of the time range</em><br>optional field<br>if you don't specify this field, the data will be provided for the previous 12 months<br>minimal possible value: <code>2020-10-01</code><br>date format: <code>'yyyy-mm-dd'</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -217,12 +185,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, the today’s date will be used by default;
-* date format: 'yyyy-mm-dd'
-* example:
-* '2021-04-01'
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, the today's date will be used by default;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2021-04-01'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -245,10 +208,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true only core keywords will be returned, all highly similar keywords will be excluded;
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to_<code class='prettyprint'>true</code> only core keywords will be returned, all highly similar keywords will be excluded;<br>default value: <code>false</code>n
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -271,14 +231,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * display results by item type
-* optional field
-* indicates the type of search results included in the response;
-* Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array;
-* possible values:
-* ['organic', 'paid', 'featured_snippet', 'local_pack']
-* default value:
-* ['organic', 'paid']
+   * <em>display results by item type</em><br>optional field<br>indicates the type of search results included in the response;<br><strong>Note:</strong> if the <code>item_types</code> array contains item types that are different from <code>organic</code>, the results will be ordered by the first item type in the array;<br>possible values:<br><code>['organic', 'paid', 'featured_snippet', 'local_pack']</code><br>default value:<br><code>['organic', 'paid']</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -301,11 +254,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

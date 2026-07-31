@@ -47,7 +47,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * ids of the apps in a POST array
+   * <em>ids of the apps in a POST array</em>
    * @return appIds
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo  {
   }
 
   /**
-   * contains data related to the ranking keywords for the app specified in the app_id field
+   * <em>contains data related to the ranking keywords for the app specified in the <code>app_id</code> field</em>
    * @return items
    */
   @javax.annotation.Nullable

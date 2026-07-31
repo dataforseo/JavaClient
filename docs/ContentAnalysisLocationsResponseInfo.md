@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<ContentAnalysisLocationsTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<ContentAnalysisLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

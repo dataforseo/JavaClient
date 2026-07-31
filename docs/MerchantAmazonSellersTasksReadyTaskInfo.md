@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantAmazonSellersTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantAmazonSellersTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

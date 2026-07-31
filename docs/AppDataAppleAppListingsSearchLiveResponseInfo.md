@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AppDataAppleAppListingsSearchLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AppDataAppleAppListingsSearchLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

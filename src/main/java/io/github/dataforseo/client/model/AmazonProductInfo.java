@@ -70,8 +70,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * absolute rank
-* absolute position among all the elements in the response array
+   * <em> absolute rank</em><br>absolute position among all the elements in the response array
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * the alignment of the element in Amazon SERP
-* possible values:
-* left, right
+   * <em>the alignment of the element in Amazon SERP</em><br>possible values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * product specs and other details
+   * <em>product specs and other details</em>
    * @return details
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * the URL of the product image
+   * <em>the URL of the product image</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * product brand name
+   * <em>product brand name</em>
    * @return author
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * ASIN of the product received in a POST array
+   * <em>ASIN of the product received in a POST array</em>
    * @return dataAsin
    */
   @javax.annotation.Nullable
@@ -281,7 +277,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * parent ASIN of the product
+   * <em><a href='https://sellercentral.amazon.com/gp/help/external/help.html?itemID=8831&language=en-US&ref=mpbc_200779220_cont_8831&' target='_blank' rel='noopener noreferrer'>parent ASIN</a> of the product</em>
    * @return parentAsin
    */
   @javax.annotation.Nullable
@@ -304,7 +300,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * ASINs of all found product modifications
+   * <em>ASINs of all found product modifications</em>
    * @return productAsins
    */
   @javax.annotation.Nullable
@@ -327,9 +323,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * the lower limit of the product price range
-* example:
-* 49.98
+   * <em>the lower limit of the product price range</em><br>example:<br><code>49.98</code>
    * @return priceFrom
    */
   @javax.annotation.Nullable
@@ -352,9 +346,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * the upper limit of the product price range
-* example:
-* 384.99
+   * <em>the upper limit of the product price range</em><br>example:<br><code>384.99</code>
    * @return priceTo
    */
   @javax.annotation.Nullable
@@ -377,7 +369,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * value of the percentage discount
+   * <em>value of the percentage discount</em>
    * @return percentageDiscount
    */
   @javax.annotation.Nullable
@@ -400,9 +392,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * currency in the ISO format
-* example:
-* USD
+   * <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -425,8 +415,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * “Amazon’s choice” label
-* if the value is true, the product is marked with the “Amazon’s choice” label
+   * <em>'Amazon's choice' label</em><br>if the value is <code>true</code>, the product is marked with the 'Amazon's choice' label
    * @return isAmazonChoice
    */
   @javax.annotation.Nullable
@@ -449,7 +438,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * product rating info
+   * <em>product rating info</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -472,7 +461,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * indicates whether the newer model of the product is available
+   * <em>indicates whether the newer model of the product is available</em>
    * @return isNewerModelAvailable
    */
   @javax.annotation.Nullable
@@ -495,8 +484,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * indicates whether a product has an Amazon Prime Video label
-* if true, specified product is a part of Amazon Prime Video service
+   * <em>indicates whether a product has an Amazon Prime Video label</em><br>if <code>true</code>, specified product is a part of Amazon Prime Video service
    * @return isPrimeVideo
    */
   @javax.annotation.Nullable
@@ -519,7 +507,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * array of objects containing information about applicable vouchers
+   * <em>array of objects containing information about applicable vouchers</em>
    * @return applicableVouchers
    */
   @javax.annotation.Nullable
@@ -542,7 +530,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * information about the newer model of the product
+   * <em>information about the newer model of the product</em>
    * @return newerModel
    */
   @javax.annotation.Nullable
@@ -565,7 +553,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * contains related product categories
+   * <em>contains related product categories</em>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -588,7 +576,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * contains related product information
+   * <em>contains related product information</em>
    * @return productInformation
    */
   @javax.annotation.Nullable
@@ -611,7 +599,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * contains URLs for all images of the product displayed on the left side of the main image
+   * <em>contains URLs for all images of the product displayed on the left side of the main image</em>
    * @return productImagesList
    */
   @javax.annotation.Nullable
@@ -634,7 +622,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * contains URLs for all videos of the product displayed on the right side of the main video
+   * <em>contains URLs for all videos of the product displayed on the right side of the main video</em>
    * @return productVideosList
    */
   @javax.annotation.Nullable
@@ -657,7 +645,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * contains description of the product
+   * <em>contains description of the product</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -680,8 +668,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * indicates whether the product is available for ordering
-* if the value is true, the product can be ordered
+   * <em>indicates whether the product is <a href='https://www.amazon.com/gp/help/customer/display.html?nodeId=201910280' rel='noopener noreferrer' target='_blank'>available for ordering</a></em><br>if the value is <code>true</code>, the product can be ordered
    * @return isAvailable
    */
   @javax.annotation.Nullable
@@ -704,7 +691,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * array of objects with top reviews from target location
+   * <em>array of objects with top reviews from target location</em>
    * @return topLocalReviews
    */
   @javax.annotation.Nullable
@@ -727,7 +714,7 @@ public class AmazonProductInfo  {
   }
 
   /**
-   * array of objects with top reviews from around the world
+   * <em>array of objects with top reviews from around the world</em>
    * @return topGlobalReviews
    */
   @javax.annotation.Nullable

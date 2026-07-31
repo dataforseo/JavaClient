@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsAppleAppIntersectionLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsAppleAppIntersectionLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**url** | **String** | URL of the specified page |[optional]|
-**totalCount** | **Long** | total count of duplicate pages |[optional]|
-**pages** | **List<DuplicatePageInfo>** | pages with duplicate content |[optional]|
+**url** | **String** | <em>URL of the specified page</em> |[optional]|
+**totalCount** | **Long** | <em>total count of duplicate pages</em> |[optional]|
+**pages** | **List<DuplicatePageInfo>** | <em>pages with duplicate content</em> |[optional]|

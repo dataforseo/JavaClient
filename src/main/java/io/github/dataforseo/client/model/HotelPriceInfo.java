@@ -47,7 +47,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * price per night
+   * <em>price per night</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * full price per night without a discount applied
+   * <em>full price per night without a discount applied</em>
    * @return priceWithoutDiscount
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * price currency
-* USD is applied by default, unless specified in the POST array
+   * <em>price currency</em><br><code>USD</code> is applied by default, unless specified in the POST array
    * @return currency
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * text about a discount applied
+   * <em>text about a discount applied</em>
    * @return discountText
    */
   @javax.annotation.Nullable
@@ -140,10 +139,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * check-in date and time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>check-in date and time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return checkIn
    */
   @javax.annotation.Nullable
@@ -166,10 +162,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * check-out date and time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>check-out date and time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return checkOut
    */
   @javax.annotation.Nullable
@@ -192,7 +185,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * number of hotel visitors for this price
+   * <em>number of hotel visitors for this price</em>
    * @return visitors
    */
   @javax.annotation.Nullable
@@ -215,9 +208,7 @@ public class HotelPriceInfo  {
   }
 
   /**
-   * encountered item types
-* types of search engine results encountered in the items array;
-* possible item types: hotel_search_item
+   * <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>hotel_search_item</code>
    * @return items
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantAmazonProductsTaskGetHtmlResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantAmazonProductsTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

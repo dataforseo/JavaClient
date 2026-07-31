@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYahooLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYahooLanguagesResultInfo>** | <em>array of results</em> |[optional]|

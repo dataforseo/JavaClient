@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleEventsTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleEventsTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

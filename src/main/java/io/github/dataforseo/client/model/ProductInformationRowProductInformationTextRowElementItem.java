@@ -47,7 +47,7 @@ public class ProductInformationRowProductInformationTextRowElementItem  extends 
   }
 
   /**
-   * text of the voucher
+   * <em>text of the voucher</em>
    * @return text
    */
   @javax.annotation.Nullable

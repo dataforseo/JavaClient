@@ -47,7 +47,7 @@ public class BacklinksBulkReferringDomainsLiveItem  {
   }
 
   /**
-   * domain, subdomain or webpage from a POST array
+   * <em>domain, subdomain or webpage from a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class BacklinksBulkReferringDomainsLiveItem  {
   }
 
   /**
-   * number of referring domains pointing to the target
-* note that we calculate main domains (root domains, like example.com) and their subdomains (e.g. blog.example.com) separately for this metric
+   * <em>number of referring domains pointing to the <code>target</code></em><br>note that we calculate main domains (root domains, like <code>example.com</code>) and their subdomains (e.g. <code>blog.example.com</code>) separately for this metric
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BacklinksBulkReferringDomainsLiveItem  {
   }
 
   /**
-   * number of domains pointing at least one nofollow link to the target
+   * <em>number of domains pointing at least one nofollow link to the <code>target</code></em>
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class BacklinksBulkReferringDomainsLiveItem  {
   }
 
   /**
-   * number of referring main domains pointing to the target
-* the number of primary (root) domains referring to your target
+   * <em>number of referring main domains pointing to the <code>target</code></em><br>the number of primary (root) domains referring to your target
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class BacklinksBulkReferringDomainsLiveItem  {
   }
 
   /**
-   * number of main domains pointing at least one nofollow link to the target
+   * <em>number of main domains pointing at least one nofollow link to the <code>target</code></em>
    * @return referringMainDomainsNofollow
    */
   @javax.annotation.Nullable

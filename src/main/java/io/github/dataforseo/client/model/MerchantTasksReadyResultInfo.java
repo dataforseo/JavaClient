@@ -47,8 +47,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * search engine specified when setting the task
+   * <em>search engine specified when setting the task</em>
    * @return se
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * type of search engine
+   * <em>type of search engine</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * date when the task was posted (in the UTC format)
+   * <em>date when the task was posted (in the UTC format)</em>
    * @return datePosted
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * <em>user-defined task identifier</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of Amazon Sellers Advanced task
+   * <em>URL for collecting the results of Amazon Sellers Advanced task</em>
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of Amazon Sellers HTML task
+   * <em>URL for collecting the results of Amazon Sellers HTML task</em>
    * @return endpointHtml
    */
   @javax.annotation.Nullable

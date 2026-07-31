@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleBulkKeywordDifficultyLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleBulkKeywordDifficultyLiveItem  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -93,10 +93,7 @@ public class DataforseoLabsGoogleBulkKeywordDifficultyLiveItem  {
   }
 
   /**
-   * difficulty of ranking in the first top-10 organic results for a keyword
-* indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;
-* calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;
-* learn more about the metric in this help center guide
+   * <em>difficulty of ranking in the first top-10 organic results for a keyword</em><br>indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;<br>calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;<br>learn more about the metric in <a href='https://dataforseo.com/help-center/what-is-keyword-difficulty-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return keywordDifficulty
    */
   @javax.annotation.Nullable

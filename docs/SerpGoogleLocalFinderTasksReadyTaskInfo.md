@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleLocalFinderTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleLocalFinderTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

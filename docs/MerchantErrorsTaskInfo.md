@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantErrorsResultInfo>** | <em>array of results</em> |[optional]|

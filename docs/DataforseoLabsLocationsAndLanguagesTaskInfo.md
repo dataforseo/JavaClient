@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsLocationsAndLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsLocationsAndLanguagesResultInfo>** | <em>array of results</em> |[optional]|

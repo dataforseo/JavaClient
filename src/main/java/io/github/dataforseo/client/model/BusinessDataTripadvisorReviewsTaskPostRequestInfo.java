@@ -47,12 +47,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * URL path of the business entity
-* required field if you do not specify keyword
-* URL path to the Tripadvisor page of the business entity;
-* examples:
-* Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
-* https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
+   * <em>URL path of the business entity</em><br><strong>required field if you do not specify <code>keyword</code></strong><br>URL path to the Tripadvisor page of the business entity;<br>examples:<br><code>Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html</code><br><code>https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html</code>
    * @return urlPath
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * keyword
-* required field if you do not specify url_path
-* the keyword you specify should indicate a name of an existing business or prominent place on Tripadvisor;
-* you can specify up to 700 characters in the keyword filed;
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character);
-* if you need to use the “%” character for your keyword, please specify it as “%25”
+   * <em>keyword</em><br><strong>required field if you do not specify <code>url_path</code></strong><br>the keyword you specify should indicate a name of an existing business or prominent place on Tripadvisor;<br>you can specify up to 700 characters in the <code>keyword</code> filed;<br>all %## will be decoded (plus character ‘+’ will be decoded to a space character);<br>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -103,11 +93,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or url_path
-* you can receive the list of available locations with location_name by making a separate request to the https://api.dataforseo.com/v3/business_data/tripadvisor/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify <code>location_code</code> or <code>url_path</code></strong><br>you can receive the list of available locations with <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/business_data/tripadvisor/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -130,11 +116,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or url_path
-* you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/tripadvisor/locations
-* example:
-* 1003854
+   * <em>search engine location code</em><br><strong>required field if you don't specify <code>location_name</code> or <code>url_path</code></strong><br>you can receive the list of available locations with <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/business_data/tripadvisor/locations</code><br>example:<br><code class='long-string'>1003854</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -157,13 +139,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/business-data/business-data-api-tripadvisor-pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -186,14 +162,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* optional field
-* if you use this field, your account will be charged for one extra request
-* you can receive the list of available languages with language_name by making a separate request to the https://api.dataforseo.com/v3/business_data/tripadvisor/languages
-* example:
-* English
-* You will be additionally charged for setting a language parameter in this endpoint.
-* The cost can be calculated on the Pricing page.
+   * <em>full name of search engine language</em><br>optional field<br><strong>if you use this field, your account will be charged for one extra request</strong><br>you can receive the list of available languages with <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/business_data/tripadvisor/languages</code><br>example:<br><code class='long-string'>English</code><br>You will be additionally charged for setting a language parameter in this endpoint.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/business-data/business-data-api-tripadvisor-pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -216,14 +185,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* optional field
-* if you use this field, your account will be charged for one extra request
-* you can receive the list of available languages with language_code by making a separate request to the https://api.dataforseo.com/v3/business_data/tripadvisor/languages
-* example:
-* en
-* You will be additionally charged for setting a language parameter in this endpoint.
-* The cost can be calculated on the Pricing page.
+   * <em>search engine language code</em><br>optional field<br><strong>if you use this field, your account will be charged for one extra request</strong><br>you can receive the list of available languages with <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/business_data/tripadvisor/languages</code><br>example:<em><br></em><code class='long-string'>en</code><br>You will be additionally charged for setting a language parameter in this endpoint.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/business-data/business-data-api-tripadvisor-pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -246,15 +208,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of reviews in SERP;
-* we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row;
-* default value: 10;
-* max value: 4490
-* Your account will be billed per each SERP containing up to 10 results;
-* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of reviews in SERP;<br>we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row;<br>default value: <code>10</code>;<br>max value: <code>4490</code><br><strong>Your account will be billed per each SERP containing up to 10 results;</strong> <br>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/business-data/business-data-api-tripadvisor-pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -277,11 +231,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * Tripadvisor traveler rating for a place of interest
-* optional field
-* rating based on the written reviews by a traveler after they visited a place.
-* possible values: excellent, very_good, average, poor, terrible
-* you can specify several values at once
+   * <em>Tripadvisor traveler rating for a place of interest</em><br>optional field<br>rating based on the written reviews by a traveler after they visited a place.<br>possible values: <code>excellent</code>, <code>very_good</code>, <code>average</code>, <code>poor</code>, <code>terrible</code><br>you can specify several values at once
    * @return ratings
    */
   @javax.annotation.Nullable
@@ -304,10 +254,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * filter by type of travelers who left a review
-* optional field
-* possible values: families, couples, solo, business, friends
-* you can specify several values at once
+   * <em>filter by type of travelers who left a review</em><br>optional field<br>possible values: <code>families</code>, <code>couples</code>, <code>solo</code>, <code>business</code>, <code>friends</code><br>you can specify several values at once
    * @return visitType
    */
   @javax.annotation.Nullable
@@ -330,10 +277,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * filter by months when a traveler made a visit
-* optional field
-* possible values: january, february, march, april, may, april, june, july, august, september, october, november, december
-* you can specify several values at once
+   * <em>filter by months when a traveler made a visit</em><br>optional field<br>possible values: <code>january</code>, <code>february</code>, <code>march</code>, <code>april</code>, <code>may</code>, <code>april</code>, <code>june</code>, <code>july</code>, <code>august</code>, <code>september</code>, <code>october</code>, <code>november</code>, <code>december</code><br>you can specify several values at once
    * @return months
    */
   @javax.annotation.Nullable
@@ -343,31 +287,6 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
 
   public void setMonths(List<String> months) {
     this.months = months;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_REVIEWS_KEYWORD = "search_reviews_keyword";
-  @SerializedName(SERIALIZED_NAME_SEARCH_REVIEWS_KEYWORD)
-  private String searchReviewsKeyword;
-
-  public BusinessDataTripadvisorReviewsTaskPostRequestInfo searchReviewsKeyword(String searchReviewsKeyword) {
-    this.searchReviewsKeyword = searchReviewsKeyword;
-    return this;
-  }
-
-  /**
-   * search reviews containing a specified keyword
-* example:
-* dessert
-   * @return searchReviewsKeyword
-   */
-  @javax.annotation.Nullable
-  public String getSearchReviewsKeyword() {
-    return searchReviewsKeyword;
-  }
-
-  public void setSearchReviewsKeyword(String searchReviewsKeyword) {
-    this.searchReviewsKeyword = searchReviewsKeyword;
   }
 
 
@@ -381,12 +300,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * results sorting parameters
-* optional field
-* you can use this field to sort the results;
-* possible types of sorting:
-* most_recent
-* detailed_reviews
+   * <em>results sorting parameters</em><br>optional field<br>you can use this field to sort the results;<br>possible types of sorting:<br><code>most_recent</code><br><code>detailed_reviews</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -409,12 +323,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * translate reviews according to the URL path
-* optional field
-* if set to true, returned reviews will be translated to the language matching the specified url_path;
-* for example, if url_path contains tripadvisor.it and translate_reviews is true, reviews will be translated to the Italian language;
-* default value: true
-* you can learn more about how reviews are translated in this Help Center article
+   * <em>translate reviews according to the URL path</em><br>optional field<br>if set to <code>true</code>, returned reviews will be translated to the language matching the specified <code>url_path</code>;<br>for example, if <code>url_path</code> contains <code>tripadvisor.it</code> and <code>translate_reviews</code> is <code>true</code>, reviews will be translated to the Italian language;<br>default value: <code>true</code><br>you can learn more about how reviews are translated in <a href='https://dataforseo.com/help-center/how-to-translate-reviews-in-tripadvisor-business-data-api' rel='noopener noreferrer' target='_blank'>this Help Center article</a>
    * @return translateReviews
    */
   @javax.annotation.Nullable
@@ -437,11 +346,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -464,16 +369,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -496,16 +392,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -572,7 +459,6 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
         Objects.equals(this.ratings, businessDataTripadvisorReviewsTaskPostRequestInfo.ratings) &&
         Objects.equals(this.visitType, businessDataTripadvisorReviewsTaskPostRequestInfo.visitType) &&
         Objects.equals(this.months, businessDataTripadvisorReviewsTaskPostRequestInfo.months) &&
-        Objects.equals(this.searchReviewsKeyword, businessDataTripadvisorReviewsTaskPostRequestInfo.searchReviewsKeyword) &&
         Objects.equals(this.sortBy, businessDataTripadvisorReviewsTaskPostRequestInfo.sortBy) &&
         Objects.equals(this.translateReviews, businessDataTripadvisorReviewsTaskPostRequestInfo.translateReviews) &&
         Objects.equals(this.tag, businessDataTripadvisorReviewsTaskPostRequestInfo.tag) &&
@@ -587,7 +473,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(urlPath, keyword, locationName, locationCode, priority, languageName, languageCode, depth, ratings, visitType, months, searchReviewsKeyword, sortBy, translateReviews, tag, postbackUrl, pingbackUrl);
+  return Objects.hash(urlPath, keyword, locationName, locationCode, priority, languageName, languageCode, depth, ratings, visitType, months, sortBy, translateReviews, tag, postbackUrl, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -613,7 +499,6 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
     sb.append("    ratings: ").append(toIndentedString(ratings)).append("\n");
     sb.append("    visitType: ").append(toIndentedString(visitType)).append("\n");
     sb.append("    months: ").append(toIndentedString(months)).append("\n");
-    sb.append("    searchReviewsKeyword: ").append(toIndentedString(searchReviewsKeyword)).append("\n");
     sb.append("    sortBy: ").append(toIndentedString(sortBy)).append("\n");
     sb.append("    translateReviews: ").append(toIndentedString(translateReviews)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -663,8 +548,6 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo  {
     openapiFields.add("visit_type");
     
     openapiFields.add("months");
-    
-    openapiFields.add("search_reviews_keyword");
     
     openapiFields.add("sort_by");
     

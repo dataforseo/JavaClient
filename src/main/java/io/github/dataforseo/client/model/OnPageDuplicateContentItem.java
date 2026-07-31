@@ -47,7 +47,7 @@ public class OnPageDuplicateContentItem  {
   }
 
   /**
-   * URL of the specified page
+   * <em>URL of the specified page</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageDuplicateContentItem  {
   }
 
   /**
-   * total count of duplicate pages
+   * <em>total count of duplicate pages</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class OnPageDuplicateContentItem  {
   }
 
   /**
-   * pages with duplicate content
+   * <em>pages with duplicate content</em>
    * @return pages
    */
   @javax.annotation.Nullable

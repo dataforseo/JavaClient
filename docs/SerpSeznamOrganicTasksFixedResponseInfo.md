@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpSeznamOrganicTasksFixedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpSeznamOrganicTasksFixedTaskInfo>** | <em>array of tasks</em> |[optional]|

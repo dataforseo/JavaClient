@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**locationCode** | **Integer** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**languageCode** | **String** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
-**totalCount** | **Long** | total amount of results in our database relevant to your request |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<DataforseoLabsAmazonProductRankOverviewLiveItem>** | contains detected Amazon product competitors and related data |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**locationCode** | **Integer** | <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**languageCode** | **String** | <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**totalCount** | **Long** | <em>total amount of results in our database relevant to your request</em> |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**items** | **List<DataforseoLabsAmazonProductRankOverviewLiveItem>** | <em>contains detected Amazon product competitors and related data</em> |[optional]|

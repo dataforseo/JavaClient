@@ -47,9 +47,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * type of content
-* example:
-* page_content, comment
+   * <em>type of content</em><br>example:<br><code>page_content</code>, <code>comment</code>
    * @return contentType
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * title of the result
+   * <em>title of the result</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * page title
+   * <em>page title</em>
    * @return mainTitle
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * title of the previous content block
+   * <em>title of the previous content block</em>
    * @return previousTitle
    */
   @javax.annotation.Nullable
@@ -141,8 +139,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * title heading level
-* indicates h-tag level from 1 (top) to 6 (bottom)
+   * <em><code>title</code> heading level</em><br>indicates h-tag level from <code>1</code> (top) to <code>6</code> (bottom)
    * @return level
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * author of the content
+   * <em>author of the content</em>
    * @return author
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * content snippet
+   * <em>content snippet</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * character length of the snippet
+   * <em>character length of the snippet</em>
    * @return snippetLength
    */
   @javax.annotation.Nullable
@@ -234,8 +231,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * social media engagement metrics
-* data on social media interactions associated with the content based on website embeds developed and supported by social media platforms
+   * <em>social media engagement metrics</em><br>data on social media interactions associated with the content based on website embeds developed and supported by social media platforms
    * @return socialMetrics
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * highlighted text from the snippet
+   * <em>highlighted text from the <code>snippet</code></em>
    * @return highlightedText
    */
   @javax.annotation.Nullable
@@ -281,8 +277,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * main language of the domain
-* to obtain a full list of available languages, refer to the Languages endpoint
+   * <em>main language of the domain</em><br>to obtain a full list of available languages, refer to the <a href='/v3/content_analysis/languages/' rel='noopener noreferrer' target='_blank'>Languages</a> endpoint
    * @return language
    */
   @javax.annotation.Nullable
@@ -305,9 +300,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * sentiment connotations
-* contains sentiments (emotional reactions) related to the given citation and probability index per each sentiment
-* possible sentiment connotations: anger, happiness, love, sadness, share, fun
+   * <em>sentiment connotations</em><br>contains sentiments (emotional reactions) related to the given citation and probability index per each sentiment<br>possible sentiment connotations: <code>anger</code>, <code>happiness</code>, <code>love</code>, <code>sadness</code>, <code>share</code>, <code>fun</code>
    * @return sentimentConnotations
    */
   @javax.annotation.Nullable
@@ -330,9 +323,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * connotation types
-* contains types of sentiments (sentiment polarity) related to the given citation and probability index per each sentiment type
-* possible sentiment connotation types: positive, negative, neutral
+   * <em>connotation types</em><br>contains types of sentiments (sentiment polarity) related to the given citation and probability index per each sentiment type<br>possible sentiment connotation types: <code>positive</code>, <code>negative</code>, <code>neutral</code>
    * @return connotationTypes
    */
   @javax.annotation.Nullable
@@ -355,8 +346,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * text category
-* to obtain a full list of available categories, refer to the Categories endpoint
+   * <em>text category</em><br>to obtain a full list of available categories, refer to the <a href='/v3/content_analysis/categories/' rel='noopener noreferrer' target='_blank'>Categories</a> endpoint
    * @return textCategory
    */
   @javax.annotation.Nullable
@@ -379,10 +369,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * date and time when the content was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2017-01-24 13:20:59 +00:00
+   * <em>date and time when the content was published</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2017-01-24 13:20:59 +00:00</code>
    * @return datePublished
    */
   @javax.annotation.Nullable
@@ -405,8 +392,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * content quality score
-* this value is calculated based on the number of words, sentences and characters the content contains
+   * <em>content quality score</em><br>this value is calculated based on the number of words, sentences and characters the content contains
    * @return contentQualityScore
    */
   @javax.annotation.Nullable
@@ -429,10 +415,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * semantic location
-* indicates semantic element in HTML where the target keyword citation is located
-* example:
-* article, header
+   * <em>semantic location</em><br>indicates semantic element in HTML where the target keyword citation is located<br>example:<br><code>article</code>, <code>header</code>
    * @return semanticLocation
    */
   @javax.annotation.Nullable
@@ -455,8 +438,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * content rating
-* rating related to content_info
+   * <em>content rating</em><br>rating related to <code>content_info</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -479,12 +461,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * citation group date and time
-* indicates content publication date or date and time when our crawler visited the page for the first time;
-* this field can be used to group citations by date and display citation trends;
-* date and time are provided in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2017-01-24 13:20:59 +00:00
+   * <em>citation group date and time</em><br>indicates content publication date or date and time when our crawler visited the page for the first time;<br>this field can be used to group citations by date and display citation trends;<br>date and time are provided in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2017-01-24 13:20:59 +00:00</code>
    * @return groupDate
    */
   @javax.annotation.Nullable

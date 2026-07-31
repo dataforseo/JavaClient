@@ -280,6 +280,7 @@ public class RelatedResult  {
 
   /**
    * indicates whether the element contains an image
+* Note: this check no longer appears in SERP
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -303,6 +304,7 @@ public class RelatedResult  {
 
   /**
    * indicates whether the element contains a video
+* Note: this check no longer appears in SERP
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -312,6 +314,37 @@ public class RelatedResult  {
 
   public void setIsVideo(Boolean isVideo) {
     this.isVideo = isVideo;
+  }
+
+
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public RelatedResult checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * array of properties detected for the SERP element
+* lists the properties that are true for this element
+* each value in the array represents a detected property
+* example:
+* if is_image is present in the array, the element contains an image
+* possible values in the array:
+* is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
+* equals null if none of the properties are detected for the element
+* learn more about the checks array in this Help Center article
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
   }
 
 
@@ -612,6 +645,7 @@ public class RelatedResult  {
         Objects.equals(this.websiteName, relatedResult.websiteName) &&
         Objects.equals(this.isImage, relatedResult.isImage) &&
         Objects.equals(this.isVideo, relatedResult.isVideo) &&
+        Objects.equals(this.checks, relatedResult.checks) &&
         Objects.equals(this.description, relatedResult.description) &&
         Objects.equals(this.preSnippet, relatedResult.preSnippet) &&
         Objects.equals(this.extendedSnippet, relatedResult.extendedSnippet) &&
@@ -631,7 +665,7 @@ public class RelatedResult  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, page, xpath, domain, title, url, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, aboutThisResult, timestamp);
+  return Objects.hash(type, page, xpath, domain, title, url, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, checks, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, aboutThisResult, timestamp);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -658,6 +692,7 @@ public class RelatedResult  {
     sb.append("    websiteName: ").append(toIndentedString(websiteName)).append("\n");
     sb.append("    isImage: ").append(toIndentedString(isImage)).append("\n");
     sb.append("    isVideo: ").append(toIndentedString(isVideo)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    preSnippet: ").append(toIndentedString(preSnippet)).append("\n");
     sb.append("    extendedSnippet: ").append(toIndentedString(extendedSnippet)).append("\n");
@@ -714,6 +749,8 @@ public class RelatedResult  {
     openapiFields.add("is_image");
     
     openapiFields.add("is_video");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("description");
     

@@ -47,11 +47,7 @@ public class SerpErrorsRequestInfo  {
   }
 
   /**
-   * the maximum number of returned tasks that responded with an error
-* optional field
-* default value: 1000
-* maximum value: 1000
-* minimum value: 1
+   * <em>the maximum number of returned tasks that responded with an error</em><br>optional field<br>default value: <code>1000</code><br>maximum value: <code>1000</code><br>minimum value: <code>1</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -74,11 +70,7 @@ public class SerpErrorsRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned tasks
-* optional field
-* if you specify the 10 value, the first ten tasks in the results array will be omitted and the data will be provided for the successive tasks
-* default and minimum value: 0
-* maximum value: 100M (100 million)
+   * <em>offset in the results array of returned tasks</em><br>optional field<br>if you specify the <code>10</code> value, the first ten tasks in the results array will be omitted and the data will be provided for the successive tasks<br>default and minimum value: <code>0</code><br>maximum value: <code>100M</code> (100 million)
    * @return offset
    */
   @javax.annotation.Nullable
@@ -101,11 +93,7 @@ public class SerpErrorsRequestInfo  {
   }
 
   /**
-   * return tasks with a certain function
-* use this field to obtain a list of tasks that returned an error filtered by the certain endpoint’s URL, as well as pingback_url or postback_url specified in the API request;
-* you can filter the results by the values you receive in the function fields of the API response;
-* i.e., once you receive unfiltered results, you can call this API again to filter them by function;
-* example: serp/task_get/advanced
+   * <em>return tasks with a certain function</em><br>use this field to obtain a list of tasks that returned an error filtered by the certain endpoint's URL, as well as <code>pingback_url</code> or <code>postback_url</code> specified in the API request;<br>you can filter the results by the values you receive in the <code>function</code> fields of the API response;<br>i.e., once you receive unfiltered results, you can call this API again to filter them by <code>function</code>; <br>example: <code>serp/task_get/advanced</code>
    * @return filteredFunction
    */
   @javax.annotation.Nullable
@@ -128,14 +116,7 @@ public class SerpErrorsRequestInfo  {
   }
 
   /**
-   * start time for filtering results
-* optional field
-* allows filtering results by the datetime parameter within the range of the last 7 days;
-* must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00';
-* minimum value: 7 days from the current datetime
-* maximum value: current datetime
-* example:
-* 2021-11-15 12:57:46 +00:00
+   * <em>start time for filtering results</em><br>optional field<br>allows filtering results by the <code>datetime</code> parameter within the range of the last 7 days;<br>must be specified in the UTC format: <code>'yyyy-mm-dd hh-mm-ss +00:00'</code>;<br>minimum value: 7 days from the current <code>datetime</code><br>maximum value: current <code>datetime</code><br>example:<br><code>2021-11-15 12:57:46 +00:00</code>
    * @return datetimeFrom
    */
   @javax.annotation.Nullable
@@ -158,15 +139,7 @@ public class SerpErrorsRequestInfo  {
   }
 
   /**
-   * finish time for filtering results
-* optional field
-* allows filtering results by the datetime parameter within the range of the last 7 days;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* minimum value: 7 days from the current datetime
-* maximum value: current datetime
-* Note datetime_to must be greater than datetime_from if both parameters are used;
-* example:
-* 2021-11-15 13:57:46 +00:00
+   * <em>finish time for filtering results</em><br>optional field<br>allows filtering results by the <code>datetime</code> parameter within the range of the last 7 days;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>minimum value: 7 days from the current <code>datetime</code><br>maximum value: current <code>datetime</code><br><strong>Note</strong> <code>datetime_to</code> must be greater than <code>datetime_from</code> if both parameters are used;<br>example:<br><code>2021-11-15 13:57:46 +00:00</code>
    * @return datetimeTo
    */
   @javax.annotation.Nullable

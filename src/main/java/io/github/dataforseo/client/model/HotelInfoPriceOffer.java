@@ -70,7 +70,7 @@ public class HotelInfoPriceOffer  {
   }
 
   /**
-   * title of the hotel
+   * <em>title of the hotel</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HotelInfoPriceOffer  {
   }
 
   /**
-   * price per night
+   * <em>price per night</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class HotelInfoPriceOffer  {
   }
 
   /**
-   * price currency
-* USD is applied by default, unless specified in the POST array
+   * <em>price currency</em><br><code>USD</code> is applied by default, unless specified in the POST array
    * @return currency
    */
   @javax.annotation.Nullable

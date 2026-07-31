@@ -47,14 +47,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * target keyword
-* required field
-* UTF-8 encoding
-* the keywords will be converted to a lowercase format;
-* Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;
-* example:
-* 'keyword': '\'tesla palo alto\''
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keyword</em><br><strong>required field</strong><br>UTF-8 encoding<br>the keywords will be converted to a lowercase format;<br><strong>Note</strong>: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes; <br>example: <br>`'keyword': '\'tesla palo alto\''`<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -77,17 +70,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * target keyword fields and target keywords
-* optional field
-* use this parameter to filter the dataset by keywords that certain fields should contain;
-* fields you can specify: title, main_title, previous_title, snippet
-* you can indicate several fields;
-* Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;
-* example:
-* 'keyword_fields': {
-*     'snippet': '\'logitech mouse\'',
-*     'main_title': 'sale'
-* }
+   * <em>target keyword fields and target keywords</em><br>optional field<br>use this parameter to filter the dataset by keywords that certain fields should contain;<br>fields you can specify: <code>title</code>, <code>main_title</code>, <code>previous_title</code>, <code>snippet</code><br>you can indicate several fields;<br><strong>Note</strong>: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes; <br>example:<br>`'keyword_fields': {<br>'snippet': '\'logitech mouse\'',<br>'main_title': 'sale'<br>}'`
    * @return keywordFields
    */
   @javax.annotation.Nullable
@@ -110,11 +93,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * target page types
-* optional field
-* use this parameter to filter the dataset by page types
-* possible values:
-* 'ecommerce', 'news', 'blogs', 'message-boards', 'organization'
+   * <em>target page types</em><br>optional field<br>use this parameter to filter the dataset by page types<br>possible values: <br><code>'ecommerce'</code>, <code>'news'</code>, <code>'blogs'</code>, <code>'message-boards'</code>, <code>'organization'</code>
    * @return pageType
    */
   @javax.annotation.Nullable
@@ -137,12 +116,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * results grouping type
-* optional field
-* possible grouping types:
-* as_is – returns all citations for the target keyword
-* one_per_domain – returns one citation of the keyword per domain
-* default value: as_is
+   * <em>results grouping type</em><br>optional field<br>possible grouping types:<br><code>as_is</code> - returns all citations for the target <code>keyword</code><br><code>one_per_domain</code> - returns one citation of the <code>keyword</code> per domain<br>default value: <code>as_is</code>
    * @return searchMode
    */
   @javax.annotation.Nullable
@@ -165,10 +139,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned citations
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned citations</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -191,22 +162,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like,not_like, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['country','=', 'US']
-* [['domain_rank','>',800],'and',['content_info.connotation_types.negative','>',0.9]]
-* [['domain_rank','>',800],
-* 'and',
-* [['page_types','has','ecommerce'],
-* 'or',
-* ['content_info.text_category','has',10994]]]
-* for more information about filters, please refer to Content Analysis API – Filters
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>,<code>not_like</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['country','=', 'US']</code><p><code>[['domain_rank','>',800],'and',['content_info.connotation_types.negative','>',0.9]]</code><p><code>[['domain_rank','>',800],<br>'and',<br>[['page_types','has','ecommerce'],<br>'or',<p>['content_info.text_category','has',10994]]]</code><br>for more information about filters, please refer to <a href='/v3/content_analysis/filters' target='_blank' rel='noopener noreferrer'>Content Analysis API - Filters</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -229,21 +185,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['content_info.sentiment_connotations.anger,desc']
-* default rule:
-* ['content_info.sentiment_connotations.anger,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['content_info.sentiment_connotations.anger,desc','keyword_data.keyword_info.cpc,desc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['content_info.sentiment_connotations.anger,desc']</code><br>default rule:<br><code>['content_info.sentiment_connotations.anger,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['content_info.sentiment_connotations.anger,desc','keyword_data.keyword_info.cpc,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -266,12 +208,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned citations
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten citations in the results array will be omitted and the data will be provided for the successive citations
-* Note: we recommend using this parameter only when retrieving up to 10,000 results
-* for retrieving over 10,000 results, use the offset_token instead.
+   * <em>offset in the results array of returned citations</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten citations in the results array will be omitted and the data will be provided for the successive citations<br><strong>Note:</strong> we recommend using this parameter only when retrieving up to 10,000 results<br>for retrieving over 10,000 results, use the <code>offset_token</code> instead.
    * @return offset
    */
   @javax.annotation.Nullable
@@ -294,14 +231,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * offset token for subsequent requests
-* optional field
-* provided in the identical field of the response to each request;
-* use this parameter to avoid timeouts while trying to obtain over 10,000 results in a single request;
-* by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
-* offset_token values are unique for each subsequent task
-* Note: if the offset_token is specified in the request, all other parameters except limit will not be taken into account when processing a task
-* learn more about this parameter on our Help Center
+   * <em>offset token for subsequent requests</em><br>optional field<br>provided in the identical field of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over 10,000 results in a single request;<br>by specifying the unique <code>offset_token</code> value from the response array, you will get the subsequent results of the initial task;<br><code>offset_token</code> values are unique for each subsequent task <br><strong>Note:</strong> if the <code>offset_token</code> is specified in the request, all other parameters except <code>limit</code> will not be taken into account when processing a task<br>learn more about this parameter on our <a href='https://dataforseo.com/help-center/what-is-the-difference-between-the-offset-and-offset_token-parameters#offset_token' target='_blank'>Help Center</a>
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -324,14 +254,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the domain_rank, and url_rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>domain_rank</code>, and <code>url_rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works in <a href='https://dataforseo.com/help-center/using-the-rank_scale-parameter-in-content-analysis-api'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -354,11 +277,7 @@ public class ContentAnalysisSearchLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

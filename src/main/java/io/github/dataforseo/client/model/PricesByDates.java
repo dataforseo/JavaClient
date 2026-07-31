@@ -47,7 +47,7 @@ public class PricesByDates  {
   }
 
   /**
-   * price per night
+   * <em>price per night</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class PricesByDates  {
   }
 
   /**
-   * price currency
-* USD is applied by default, unless specified in the POST array
+   * <em>price currency</em><br><code>USD</code> is applied by default, unless specified in the POST array
    * @return currency
    */
   @javax.annotation.Nullable

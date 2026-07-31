@@ -47,7 +47,7 @@ public class ProductInformationProductInformationTextItem  extends BaseMerchantA
   }
 
   /**
-   * text specified under the given title within the section_name
+   * <em>text specified under the given <code>title</code> within the <code>section_name</code></em>
    * @return text
    */
   @javax.annotation.Nullable

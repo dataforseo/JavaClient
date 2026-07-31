@@ -12,5 +12,5 @@
 **totalCount** | **Long** | total number of results in our database relevant to your request |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
 **offset** | **Integer** | current offset value |[optional]|
-**offsetToken** | **String** | offset token for subsequent requests<br>you can use the string provided in this field to get the subsequent results of the initial task;<br>note: offset_token values are unique for each subsequent task |[optional]|
+**offsetToken** | **String** | offset token for subsequent requestsyou can use the string provided in this field to get the subsequent results of the initial task;note: offset_token values are unique for each subsequent task |[optional]|
 **items** | **List<KeywordDataInfo>** | contains keyword ideas and related data |[optional]|

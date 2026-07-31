@@ -47,7 +47,7 @@ public class AppendixErrorsResultInfo  {
   }
 
   /**
-   * code
+   * <em>code</em>
    * @return code
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppendixErrorsResultInfo  {
   }
 
   /**
-   * message
+   * <em>message</em>
    * @return message
    */
   @javax.annotation.Nullable

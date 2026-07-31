@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**year** | **Integer** | year for which the data is provided |[optional]|
-**month** | **Integer** | month for which the data is provided |[optional]|
-**metrics** | **Map<String, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**year** | **Integer** | <em>year for which the data is provided</em> |[optional]|
+**month** | **Integer** | <em>month for which the data is provided</em> |[optional]|
+**metrics** | **Map<String, DataforseoLabsMetricsInfo>** | <em>ranking data relevant to the specified domain</em> |[optional]|

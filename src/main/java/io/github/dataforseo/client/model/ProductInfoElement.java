@@ -70,8 +70,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * absolute rank on the product specification page
-* absolute position among all the elements found on the product specification page
+   * <em>absolute rank on the product specification page</em><br>absolute position among all the elements found on the product specification page
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * alignment of the element on the product specification page
-* can take the following values:
-* right, left
+   * <em>alignment of the element on the product specification page</em><br>can take the following values:<br><code>right</code>, <code>left</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -143,8 +139,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * product_id received in a POST array
-* ilearn more about the parameter in this help center guide
+   * <em>product_id received in a POST array</em><br>ilearn more about the parameter in <a href='https://dataforseo.com/help-center/product-id-google-shopping' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return productId
    */
   @javax.annotation.Nullable
@@ -167,7 +162,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * title of the product
+   * <em>title of the product</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * description of the product
+   * <em>description of the product</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * product url
-* url of the product on Google Shopping
+   * <em>product url</em><br>url of the product on Google Shopping
    * @return url
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * product images
-* contains urls to product images
+   * <em>product images</em><br>contains urls to product images
    * @return images
    */
   @javax.annotation.Nullable
@@ -261,8 +254,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * product features
-* contains snippets with the description of product features
+   * <em>product features</em><br>contains snippets with the description of product features
    * @return features
    */
   @javax.annotation.Nullable
@@ -285,8 +277,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * product rating 
-* the popularity rate based on reviews
+   * <em>product rating </em><br>the popularity rate based on reviews
    * @return rating
    */
   @javax.annotation.Nullable
@@ -309,8 +300,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * number of seller reviews
-* number of reviews on the product seller’s account
+   * <em>number of seller reviews</em><br>number of reviews on the product seller's account
    * @return sellerReviewsCount
    */
   @javax.annotation.Nullable
@@ -333,10 +323,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * unique identifier of the SERP data element
-* note that there is no full list of possible values as the data_docid is a dynamic value assigned by Google
-* example:
-* 17363035694596624076
+   * <em>unique identifier of the SERP data element</em><br>note that there is no full list of possible values as the <code>data_docid</code> is a dynamic value assigned by Google<br>example:<br><code>17363035694596624076</code>
    * @return dataDocid
    */
   @javax.annotation.Nullable
@@ -359,12 +346,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * global product identifier on Google Shopping
-* note that there is no full list of possible values as the gid is a dynamic value assigned by Google
-* if there are no values, you will get null
-* example:
-* 4702526954592161872
-* learn more about gid in this help center guide
+   * <em>global product identifier on Google Shopping</em><br>note that there is no full list of possible values as the gid is a dynamic value assigned by Google<br>if there are no values, you will get <code>null</code><br>example:<br><code>4702526954592161872</code><br>learn more about <code>gid</code> in <a href='https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api' target='_blank'>this help center guide</a>
    * @return gid
    */
   @javax.annotation.Nullable
@@ -387,8 +369,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * product specifications
-* contains all product attributes and related data listed on the product specification page
+   * <em>product specifications</em><br>contains all product attributes and related data listed on the product specification page
    * @return specifications
    */
   @javax.annotation.Nullable
@@ -411,8 +392,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * sellers of the product
-* number of reviews on the product seller’s account
+   * <em>sellers of the product</em><br>number of reviews on the product seller's account
    * @return sellers
    */
   @javax.annotation.Nullable
@@ -435,8 +415,7 @@ public class ProductInfoElement  {
   }
 
   /**
-   * variations of the product
-* contains brief information about different product variations
+   * <em>variations of the product</em><br>contains brief information about different product variations
    * @return variations
    */
   @javax.annotation.Nullable

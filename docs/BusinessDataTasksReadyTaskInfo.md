@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

@@ -70,8 +70,7 @@ public class BusinessDataSocialMediaPinterestLiveResultInfo  {
   }
 
   /**
-   * URL of the page the data is provided for
-* corresponding URL you specified in the targets array when setting a task
+   * <em>URL of the page the data is provided for</em><br>corresponding URL you specified in the <code>targets</code> array when setting a task
    * @return pageUrl
    */
   @javax.annotation.Nullable
@@ -94,9 +93,7 @@ public class BusinessDataSocialMediaPinterestLiveResultInfo  {
   }
 
   /**
-   * number of pins for the related page_url
-* pins on Pinterest correspond to content saves;
-* this field shows the number of content saves made from the related page_url using the Pinterest Save Button
+   * <em>number of pins for the related <code>page_url</code></em><br><a href='https://help.pinterest.com/en/business/article/build-a-pin' rel='noopener noreferrer' target='_blank'>pins on Pinterest</a> correspond to content saves;<br>this field shows the number of content saves made from the related <code>page_url</code> using the <a href='https://developers.pinterest.com/docs/widgets/save/?' rel='noopener noreferrer' target='_blank'>Pinterest Save Button</a>
    * @return pinsCount
    */
   @javax.annotation.Nullable

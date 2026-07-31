@@ -47,8 +47,7 @@ public class BusinessDirectoryInfo  {
   }
 
   /**
-   * title of the element
-* domain of the online menu system
+   * <em>title of the element</em><br>domain of the online menu system
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class BusinessDirectoryInfo  {
   }
 
   /**
-   * encountered item types
-* types of search engine results encountered in the items array;
-* possible item types: google_business_info
+   * <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_info</code>
    * @return items
    */
   @javax.annotation.Nullable

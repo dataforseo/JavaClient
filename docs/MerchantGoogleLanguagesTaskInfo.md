@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantGoogleLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

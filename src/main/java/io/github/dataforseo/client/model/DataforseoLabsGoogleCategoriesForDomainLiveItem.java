@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem  {
   }
 
   /**
-   * product and service categories
-* you can download the full list of possible categories
+   * <em>product and service categories</em><br>you can download <a href='https://cdn.dataforseo.com/v3/categories/categories_dataforseo_labs_2023_10_25.csv' target='_blank' rel='noopener noreferrer'>the full list of possible categories</a>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem  {
   }
 
   /**
-   * ranking data relevant to the specified domain or subdomain
+   * <em>ranking data relevant to the specified domain or subdomain</em>
    * @return metrics
    */
   @javax.annotation.Nullable

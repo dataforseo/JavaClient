@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpBaiduOrganicTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<SerpBaiduOrganicTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

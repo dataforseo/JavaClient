@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleAvailableHistoryResultInfo>** | array of objects containing results |[optional]|
+**result** | **List<DataforseoLabsGoogleAvailableHistoryResultInfo>** | <em>array of objects containing results</em> |[optional]|

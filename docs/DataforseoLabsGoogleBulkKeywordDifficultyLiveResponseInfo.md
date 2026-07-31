@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsGoogleBulkKeywordDifficultyLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsGoogleBulkKeywordDifficultyLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

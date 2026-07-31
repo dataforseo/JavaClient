@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * ASIN in a POST array
+   * <em>ASIN in a POST array</em>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -93,9 +93,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * average position of the product in Amazon SERP
-* Note: average position is calculated for intersected keywords only;
-* the value for a given product may differ when combined with different target products
+   * <em>average position of the product in Amazon SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given product may differ when combined with different target products
    * @return avgPosition
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * sum of all product positions in Amazon SERP
-* Note: average position is calculated for intersected keywords only;
-* the value for a given product may differ when combined with different target products
+   * <em>sum of all product positions in Amazon SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given product may differ when combined with different target products
    * @return sumPosition
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * number of intersecting keywords
+   * <em>number of intersecting keywords</em>
    * @return intersections
    */
   @javax.annotation.Nullable
@@ -166,9 +162,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * metrics for intersecting keywords
-* ranking data relevant to the keywords that the provided asin shares with the target asin;
-* Note: in this object ranking data is provided for the returned competitor’s asin
+   * <em>metrics for intersecting keywords</em><br>ranking data relevant to the keywords that the provided <code>asin</code> shares with the target <code>asin</code>;<br><strong>Note:</strong> in this object ranking data is provided for the returned competitor's <code>asin</code>
    * @return competitorMetrics
    */
   @javax.annotation.Nullable
@@ -191,8 +185,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * metrics for all keywords of the product
-* full overview of ranking data relevant to all keywords that the provided asin is ranking for
+   * <em>metrics for all keywords of the product</em><br>full overview of ranking data relevant to all keywords that the provided <code>asin</code> is ranking for
    * @return fullMetrics
    */
   @javax.annotation.Nullable

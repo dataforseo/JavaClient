@@ -47,7 +47,7 @@ public class MerchantGoogleSellersAdUrlResultInfo  {
   }
 
   /**
-   * unique ad click referral parameter
+   * <em>unique ad click referral parameter</em>
    * @return adAclk
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class MerchantGoogleSellersAdUrlResultInfo  {
   }
 
   /**
-   * full URL of the advertisement
+   * <em>full URL of the advertisement</em>
    * @return adUrl
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class MerchantGoogleSellersAdUrlResultInfo  {
   }
 
   /**
-   * URLs where the link from Google Shopping redirects before reaching a final URL
-* includes up to 10 URLs of the ad’s redirect path to the seller’s ad_url
+   * <em>URLs where the link from Google Shopping redirects before reaching a final URL</em><br>includes up to 10 URLs of the ad's redirect path to the seller's <code>ad_url</code>
    * @return adUrlRedirects
    */
   @javax.annotation.Nullable

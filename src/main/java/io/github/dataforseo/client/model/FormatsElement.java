@@ -70,8 +70,7 @@ public class FormatsElement  {
   }
 
   /**
-   * type of file format of the dataset
-* for example: zip, html, csv
+   * <em>type of file format of the dataset</em><br>for example: <code>zip</code>, <code>html</code>, <code>csv</code>
    * @return format
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class FormatsElement  {
   }
 
   /**
-   * file size in bytes
+   * <em>file size in bytes</em>
    * @return size
    */
   @javax.annotation.Nullable

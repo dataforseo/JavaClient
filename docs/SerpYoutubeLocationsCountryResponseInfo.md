@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpYoutubeLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpYoutubeLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

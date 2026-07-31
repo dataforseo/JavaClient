@@ -228,23 +228,23 @@ public class SerpGoogleAdsAdvertisersTaskPostTaskInfo  {
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
-  private String result;
+  private Object result;
 
-  public SerpGoogleAdsAdvertisersTaskPostTaskInfo result(String result) {
+  public SerpGoogleAdsAdvertisersTaskPostTaskInfo result(Object result) {
     this.result = result;
     return this;
   }
 
   /**
-   * 
+   * <em>array of results</em><br>in this case, the value will be <code>null</code>
    * @return result
    */
   @javax.annotation.Nullable
-  public String getResult() {
+  public Object getResult() {
     return result;
   }
 
-  public void setResult(String result) {
+  public void setResult(Object result) {
     this.result = result;
   }
 

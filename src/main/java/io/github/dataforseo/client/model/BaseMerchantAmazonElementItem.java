@@ -70,8 +70,7 @@ public class BaseMerchantAmazonElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BaseMerchantAmazonElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements found in Amazon SERP
+   * <em> absolute rank in SERP</em><br>absolute position among all the elements found in Amazon SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class BaseMerchantAmazonElementItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * categories for which domains are collected
+   * <em>categories for which domains are collected</em>
    * @return topCategories
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * current organic ETV of the domain
+   * <em>current organic ETV of the domain</em>
    * @return organicEtv
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * current total count of organic SERPs that contain the domain
+   * <em>current total count of organic SERPs that contain the domain</em>
    * @return organicCount
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * current number of lost ranked elements
-* indicates how many ranked elements of the domain were previously presented in SERPs, but weren’t found during the last check
+   * <em>current number of lost ranked elements</em><br>indicates how many ranked elements of the domain were previously presented in SERPs, but weren’t found during the last check
    * @return organicIsLost
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * current number of new ranked elements
-* indicates how many new ranked elements were found for the domain
+   * <em>current number of new ranked elements</em><br>indicates how many new ranked elements were found for the domain
    * @return organicIsNew
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * domain found for the specified category
+   * <em>domain found for the specified category</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -210,7 +208,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * primary domain
+   * <em>primary domain</em>
    * @return mainDomain
    */
   @javax.annotation.Nullable
@@ -233,7 +231,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * historical ranking and traffic data of the domain
+   * <em>historical ranking and traffic data of the domain</em>
    * @return metricsHistory
    */
   @javax.annotation.Nullable
@@ -256,8 +254,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem  {
   }
 
   /**
-   * metrics difference between first_date and second_date
-* calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date
+   * <em>metrics difference between <code>first_date</code> and <code>second_date</code></em><br>calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date
    * @return metricsDifference
    */
   @javax.annotation.Nullable

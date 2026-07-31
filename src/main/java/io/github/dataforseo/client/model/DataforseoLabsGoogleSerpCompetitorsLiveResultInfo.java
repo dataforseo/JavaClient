@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * keywords specified in the request
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keywords specified in the request</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return seedKeywords
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * the total amount of results in our database relevant to your request
+   * <em>the total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveResultInfo  {
   }
 
   /**
-   * contains detected SERP competitors and related data
+   * <em>contains detected SERP competitors and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

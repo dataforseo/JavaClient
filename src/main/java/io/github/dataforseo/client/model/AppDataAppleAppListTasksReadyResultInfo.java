@@ -47,8 +47,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * search engine specified when setting the task
+   * <em>search engine specified when setting the task</em>
    * @return se
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * date when the task was posted (in the UTC format)
+   * <em>date when the task was posted (in the UTC format)</em>
    * @return datePosted
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * 
    * @return tag
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Apple App List task
+   * <em>URL for collecting the results of the {{up_se_name}} {{normal_se_type}} task</em>
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -186,8 +185,7 @@ public class AppDataAppleAppListTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Apple App List HTML task
-* if HTML tasks are not supported in the specified endpoint, the value will be null
+   * <em>URL for collecting the results of the {{up_se_name}} {{normal_se_type}} HTML task</em><br>if HTML tasks are not supported in the specified endpoint, the value will be <code>null</code>
    * @return endpointHtml
    */
   @javax.annotation.Nullable

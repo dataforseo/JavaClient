@@ -70,8 +70,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * absolute rank among all the listed reviews
-* absolute position among all reviews on the list
+   * <em>absolute rank among all the listed reviews</em><br>absolute position among all reviews on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * title of the establishment
+   * <em>title of the establishment</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * domain of the establishment
+   * <em>domain of the establishment</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * URL to the establishment
+   * <em>URL to the establishment</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * the total number of reviews
+   * <em>the total number of reviews</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -210,7 +208,7 @@ public class TrustpilotSearchOrganic  {
   }
 
   /**
-   * the rating score of the establishment submitted by reviewers
+   * <em>the rating score of the establishment submitted by reviewers</em>
    * @return rating
    */
   @javax.annotation.Nullable

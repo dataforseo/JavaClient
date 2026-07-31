@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveItem  {
   }
 
   /**
-   * keyword data for the returned keyword
+   * <em>keyword data for the returned keyword</em>
    * @return keywordData
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveItem  {
   }
 
   /**
-   * data on the intersection
+   * <em>data on the intersection</em>
    * @return intersectionResult
    */
   @javax.annotation.Nullable

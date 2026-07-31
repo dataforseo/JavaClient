@@ -47,7 +47,7 @@ public class PreviewImage  {
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class PreviewImage  {
   }
 
   /**
-   * height of the preview image
+   * <em>height of the preview image</em>
    * @return height
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class PreviewImage  {
   }
 
   /**
-   * width of the preview image
+   * <em>width of the preview image</em>
    * @return width
    */
   @javax.annotation.Nullable

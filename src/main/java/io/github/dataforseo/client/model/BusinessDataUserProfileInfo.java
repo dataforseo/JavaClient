@@ -47,7 +47,7 @@ public class BusinessDataUserProfileInfo  {
   }
 
   /**
-   * the name of the reviewer
+   * 
    * @return name
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BusinessDataUserProfileInfo  {
   }
 
   /**
-   * URL to the reviewer’s profile
+   * 
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BusinessDataUserProfileInfo  {
   }
 
   /**
-   * URL to the reviewer’s profile picture
+   * 
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BusinessDataUserProfileInfo  {
   }
 
   /**
-   * country of the reviewer
+   * 
    * @return location
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BusinessDataUserProfileInfo  {
   }
 
   /**
-   * total number of reviews submitted by the reviewer
+   * <em>total number of reviews submitted by the reviewer</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable

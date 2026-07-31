@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<SerpErrorsResultInfo>** | <em>array of results</em> |[optional]|

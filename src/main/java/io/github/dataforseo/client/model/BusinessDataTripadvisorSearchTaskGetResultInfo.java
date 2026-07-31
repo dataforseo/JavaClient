@@ -47,8 +47,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* this field will contain the alias parameter if it was specified in a POST array
+   * <em>keyword received in a POST array</em><br>this field will contain the <code>alias</code> parameter if it was specified in a POST array
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to Tripadvisor results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to Tripadvisor results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -164,10 +162,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * item types encountered in the result
-* possible item types: tripadvisor_search_organic
+   * <em>item types encountered in the result</em><br>possible item types: <code>tripadvisor_search_organic</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -214,7 +208,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * the total number of results
+   * <em>the total number of results</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * the number of items in the results array
-* you can get more results by using the depth parameter when setting a task
+   * <em>the number of items in the results array</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -261,8 +254,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo  {
   }
 
   /**
-   * Tripadvisor search listing results
-* you can get more results by using the depth parameter when setting a task
+   * <em>Tripadvisor search listing results</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return items
    */
   @javax.annotation.Nullable

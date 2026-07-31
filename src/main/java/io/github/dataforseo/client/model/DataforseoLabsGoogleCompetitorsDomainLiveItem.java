@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * domain name
+   * <em>domain name</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -93,9 +93,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * average position of the domain in SERP
-* Note: average position is calculated for intersected keywords only;
-* the value for a given domain may differ when combined with different target websites
+   * <em>average position of the domain in SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given domain may differ when combined with different target websites
    * @return avgPosition
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * sum of all domain positions in SERP
-* Note: average position is calculated for intersected keywords only;
-* the value for a given domain may differ when combined with different target websites
+   * <em>sum of all domain positions in SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given domain may differ when combined with different target websites
    * @return sumPosition
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * number of intersecting keywords
+   * <em>number of intersecting keywords</em>
    * @return intersections
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * metrics for all keywords of the domain
-* full overview of ranking and traffic data relevant to all keywords that the provided domain is ranking for
+   * <em>metrics for all keywords of the domain</em><br>full overview of ranking and traffic data relevant to all keywords that the provided <code>domain</code> is ranking for
    * @return fullDomainMetrics
    */
   @javax.annotation.Nullable
@@ -190,9 +185,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * metrics for intersecting keywords
-* ranking and traffic data relevant to the keywords that the provided domain shares with the target domain
-* note: in this array ranking and traffic data is provided for the target considering the keywords target shares in search with the competitor’s domain
+   * <em>metrics for intersecting keywords</em><br>ranking and traffic data relevant to the keywords that the provided <code>domain</code> shares with the <code>target</code> domain<br><strong>note:</strong> in this array ranking and traffic data is provided for the <code>target</code> considering the keywords <code>target</code> shares in search with the competitor's <code>domain</code>
    * @return metrics
    */
   @javax.annotation.Nullable
@@ -215,9 +208,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveItem  {
   }
 
   /**
-   * metrics for intersecting keywords
-* ranking and traffic data relevant to the keywords that the provided domain shares with the target domain
-* note: in this array ranking and traffic data is provided for the returned competitor’s domain
+   * <em>metrics for intersecting keywords</em><br>ranking and traffic data relevant to the keywords that the provided <code>domain</code> shares with the <code>target</code> domain<br><strong>note:</strong> in this array ranking and traffic data is provided for the returned competitor's <code>domain</code>
    * @return competitorMetrics
    */
   @javax.annotation.Nullable

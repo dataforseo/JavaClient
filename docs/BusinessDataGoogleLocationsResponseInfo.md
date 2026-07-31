@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataGoogleLocationsTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataGoogleLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

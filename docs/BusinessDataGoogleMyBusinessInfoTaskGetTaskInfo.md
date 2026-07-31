@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataGoogleMyBusinessInfoTaskGetResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataGoogleMyBusinessInfoTaskGetResultInfo>** | <em>array of results</em> |[optional]|

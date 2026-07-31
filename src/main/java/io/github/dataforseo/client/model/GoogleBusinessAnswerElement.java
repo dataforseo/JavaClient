@@ -70,7 +70,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * ID of the answer
+   * <em>ID of the answer</em>
    * @return answerId
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * URL of the user’s profile image
+   * <em>URL of the user's profile image</em>
    * @return profileImageUrl
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * URL of the user’s profile
+   * <em>URL of the user's profile</em>
    * @return profileUrl
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * displayed name of the user
+   * <em>displayed name of the user</em>
    * @return profileName
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * current text of the answer
+   * <em>current text of the answer</em>
    * @return answerText
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * original text of the answer
+   * <em>original text of the answer</em>
    * @return originalAnswerText
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * estimated time when the answer was posted
+   * <em>estimated time when the answer was posted</em>
    * @return timeAgo
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class GoogleBusinessAnswerElement  {
   }
 
   /**
-   * exact time when the answer was posted
+   * <em>exact time when the answer was posted</em>
    * @return timestamp
    */
   @javax.annotation.Nullable

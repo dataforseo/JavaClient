@@ -47,8 +47,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * task identifier
-* unique task identifier in our system in the UUID format
+   * <em>task identifier</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * URL of the task
-* URL you used for making an API call
+   * <em>URL of the task</em><br>URL you used for making an API call
    * @return url
    */
   @javax.annotation.Nullable
@@ -95,10 +93,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * date and time when the task was made
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2023-01-15 12:57:46 +00:00
+   * <em>date and time when the task was made</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2023-01-15 12:57:46 +00:00</code>
    * @return datetimePosted
    */
   @javax.annotation.Nullable
@@ -121,10 +116,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * date and time when the task was completed
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2023-01-15 12:57:46 +00:00
+   * <em>date and time when the task was completed</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2023-01-15 12:57:46 +00:00</code>
    * @return datetimeDone
    */
   @javax.annotation.Nullable
@@ -147,8 +139,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * informational message of the task
-* you can find the full list of general informational messages here
+   * <em>informational message of the task</em><br>you can find the full list of general informational messages <a href='/v3/appendix-errors/'>here</a>
    * @return status
    */
   @javax.annotation.Nullable
@@ -171,7 +162,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * total tasks cost, USD
+   * <em>total tasks cost, USD</em>
    * @return cost
    */
   @javax.annotation.Nullable
@@ -194,7 +185,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * contains parameters you specified in the POST request
+   * <em>contains parameters you specified in the POST request</em>
    * @return metadata
    */
   @javax.annotation.Nullable

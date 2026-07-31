@@ -47,7 +47,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * id of the app in a POST array
+   * <em>id of the app in a POST array</em>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -93,9 +93,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * average position of the app in Google Play SERP
-* Note: average position is calculated for intersected keywords only;
-* the value for a given application may differ when combined with different target applications
+   * <em>average position of the app in Google Play SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given application may differ when combined with different target applications
    * @return avgPosition
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * sum of all app positions in Google Play SERP
-* Note: sum position is calculated for intersected keywords only;
-* the value for a given application may differ when combined with different target applications
+   * <em>sum of all app positions in Google Play SERP</em><br><strong>Note:</strong> sum position is calculated for intersected keywords only;<br>the value for a given application may differ when combined with different target applications
    * @return sumPosition
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * number of intersecting keywords
+   * <em>number of intersecting keywords</em>
    * @return intersections
    */
   @javax.annotation.Nullable
@@ -166,9 +162,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * metrics for intersecting keywords
-* ranking data relevant to the keywords that the provided competitor application shares with the app in a POST request;
-* note: in this array ranking data is provided for the returned competitor’s app_id
+   * <em>metrics for intersecting keywords</em><br>ranking data relevant to the keywords that the provided competitor application shares with the app in a POST request;<br><strong>note:</strong> in this array ranking data is provided for the returned competitor's <code>app_id</code>
    * @return competitorMetrics
    */
   @javax.annotation.Nullable
@@ -191,8 +185,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * metrics for all keywords of the application
-* full overview of ranking data relevant to all keywords that the provided app_id is ranking for
+   * <em>metrics for all keywords of the application</em><br>full overview of ranking data relevant to all keywords that the provided <code>app_id</code> is ranking for
    * @return fullMetrics
    */
   @javax.annotation.Nullable

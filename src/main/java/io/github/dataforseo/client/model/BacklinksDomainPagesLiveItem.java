@@ -70,8 +70,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * main website domain
-* main website domain does not include subdomains
+   * <em>main website domain</em><br>main website domain does not include subdomains
    * @return mainDomain
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * domain
-* domain where the page was found
+   * <em>domain</em><br>domain where the page was found
    * @return domain
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * top-level domain
-* top-level domain in the DNS root zone
+   * <em>top-level domain</em><br>top-level domain in the <a href='https://www.iana.org/domains/root/db' rel='noopener noreferrer' target='_blank'>DNS root zone</a>
    * @return tld
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * page URL
-* relevant page URL
+   * <em>page URL</em><br>relevant page URL
    * @return page
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * Internet Protocol address
+   * <em>Internet Protocol address</em>
    * @return ip
    */
   @javax.annotation.Nullable
@@ -189,11 +185,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * date and time of the first page visit
-* date and time when our crawler visited this page for the first time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2017-01-24 13:20:59 +00:00
+   * <em>date and time of the first page visit</em><br>date and time when our crawler visited this page for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2017-01-24 13:20:59 +00:00</code>
    * @return firstVisited
    */
   @javax.annotation.Nullable
@@ -216,10 +208,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * previous to the most recent date when our crawler visited the page
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2017-01-24 13:20:59 +00:00
+   * <em>previous to the most recent date when our crawler visited the page</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2017-01-24 13:20:59 +00:00</code>
    * @return prevVisited
    */
   @javax.annotation.Nullable
@@ -242,10 +231,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * most recent date and time when our crawler visited the page
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2017-01-24 13:20:59 +00:00
+   * <em>most recent date and time when our crawler visited the page</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2017-01-24 13:20:59 +00:00</code>
    * @return fetchTime
    */
   @javax.annotation.Nullable
@@ -268,9 +254,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * general status code
-* you can find the full list of the response codes here
-* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
+   * <i>general status code</i><br>you can find the full list of the response codes <a href='/v3/appendix/errors'>here</a><br><strong>Note:</strong> we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable
@@ -293,8 +277,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * location header
-* indicates the URL to redirect a page to if exists
+   * <em>location header</em><br>indicates the URL to redirect a page to if exists
    * @return location
    */
   @javax.annotation.Nullable
@@ -317,7 +300,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * indicates the page size, in bytes
+   * <em>indicates the page size, in bytes</em>
    * @return size
    */
   @javax.annotation.Nullable
@@ -340,8 +323,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * page size after encoding
-* indicates the size of the encoded page, in bytes
+   * <em>page size after encoding</em><br>indicates the size of the encoded page, in bytes
    * @return encodedSize
    */
   @javax.annotation.Nullable
@@ -364,7 +346,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * type of encoding
+   * <em>type of encoding</em>
    * @return contentEncoding
    */
   @javax.annotation.Nullable
@@ -387,7 +369,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * types of media used to display a page
+   * <em>types of media used to display a page</em>
    * @return mediaType
    */
   @javax.annotation.Nullable
@@ -410,7 +392,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * server version
+   * <em>server version</em>
    * @return server
    */
   @javax.annotation.Nullable
@@ -433,7 +415,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * page meta data
+   * <em>page meta data</em>
    * @return meta
    */
   @javax.annotation.Nullable
@@ -456,7 +438,7 @@ public class BacklinksDomainPagesLiveItem  {
   }
 
   /**
-   * contains backlink data for this page
+   * <em>contains backlink data for this page</em>
    * @return pageSummary
    */
   @javax.annotation.Nullable

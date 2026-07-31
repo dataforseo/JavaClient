@@ -47,7 +47,7 @@ public class AmazonMetricsBundleInfo  {
   }
 
   /**
-   * ranking data from Amazon organic SERP
+   * <em>ranking data from Amazon organic SERP</em>
    * @return amazonSerp
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AmazonMetricsBundleInfo  {
   }
 
   /**
-   * ranking data from Amazon paid SERP
+   * <em>ranking data from Amazon paid SERP</em>
    * @return amazonPaid
    */
   @javax.annotation.Nullable

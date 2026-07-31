@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleBulkAppMetricsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleBulkAppMetricsLiveResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,10 +47,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * domain
-* required field
-* the domain name of the target website
-* the domain should be specified without https:// and www.
+   * <em>domain</em><br><strong>required field</strong><br>the domain name of the target website<br>the domain should be specified without <code>https://</code> and <code>www.</code>
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,13 +70,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -102,13 +93,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,13 +116,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available locations with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available locations with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -160,13 +139,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available locations with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available locations with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -189,11 +162,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* if you don’t specify this field, the data will be provided for the previous 6 months
-* minimal possible value: 2020-10-01
-* date format: 'yyyy-mm-dd'
+   * <em>starting date of the time range</em><br>optional field<br>if you don't specify this field, the data will be provided for the previous 6 months<br>minimal possible value: <code>2020-10-01</code><br>date format: <code>'yyyy-mm-dd'</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -216,12 +185,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, the today’s date will be used by default
-* date format: 'yyyy-mm-dd'
-* example:
-* '2021-04-01'
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, the today's date will be used by default<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2021-04-01'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -244,12 +208,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * correlate data with previously obtained datasets
-* optional field
-* default value: true
-* if you use this parameter, our system will correlate data you obtain now with previously obtained datasets
-* this parameter is intended to mitigate any inconsistencies that may result from changes to our database
-* we recommend always setting correlate to true
+   * <em>correlate data with previously obtained datasets</em><br>optional field<br>default value: <code>true</code><br>if you use this parameter, our system will correlate data you obtain now with previously obtained datasets<br>this parameter is intended to mitigate any inconsistencies that may result from changes to our database<br>we recommend always setting <code>correlate</code> to <code>true</code>
    * @return correlate
    */
   @javax.annotation.Nullable
@@ -272,10 +231,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true, only data based on core keywords will be returned, data for all highly similar keywords will be excluded;
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to <code class='prettyprint'>true</code>, only data based on core keywords will be returned, data for all highly similar keywords will be excluded;  <br>default value: <code>false</code>
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -298,13 +254,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * include or exclude data from clickstream-based metrics in the result
-* optional field
-* if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response;
-* default value: false;
-* Note: historical clickstream data is available from 2024/05 (May, 2024);
-* with this parameter enabled, you will be charged double the price for the request;
-* learn more about how clickstream-based metrics are calculated in this help center article
+   * <em>include or exclude data from clickstream-based metrics in the result</em><br>optional field<br>if the parameter is set to <code>true</code>, you will receive <code>clickstream_etv</code>, <code>clickstream_gender_distribution</code>, and <code>clickstream_age_distribution</code> fields with clickstream data in the response;<br>default value: <code>false</code>;<p><strong>Note:</strong> historical clickstream data is available from 2024/05 (May, 2024);<br><strong>with this parameter enabled, you will be charged double the price for the request;</strong><br>learn more about how clickstream-based metrics are calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable
@@ -327,11 +277,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

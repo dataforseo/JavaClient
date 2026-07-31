@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleAutocompleteTaskGetAdvancedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpGoogleAutocompleteTaskGetAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

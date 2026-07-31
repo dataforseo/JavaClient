@@ -47,7 +47,7 @@ public class BusinessDataTrustpilotSearchTaskGetResultInfo  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BusinessDataTrustpilotSearchTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class BusinessDataTrustpilotSearchTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -117,10 +116,7 @@ public class BusinessDataTrustpilotSearchTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -143,8 +139,7 @@ public class BusinessDataTrustpilotSearchTaskGetResultInfo  {
   }
 
   /**
-   * the number of items in the results array
-* you can get more results by using the depth parameter when setting a task
+   * <em>the number of items in the results array</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -167,8 +162,7 @@ public class BusinessDataTrustpilotSearchTaskGetResultInfo  {
   }
 
   /**
-   * found reviews
-* you can get more results by using the depth parameter when setting a task
+   * <em>found reviews</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return items
    */
   @javax.annotation.Nullable

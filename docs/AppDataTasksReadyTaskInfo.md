@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppDataTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<AppDataTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

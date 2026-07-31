@@ -47,7 +47,7 @@ public class TargetInfo  {
   }
 
   /**
-   * server
+   * <em>server</em>
    * @return server
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class TargetInfo  {
   }
 
   /**
-   * content management system
+   * <em>content management system</em>
    * @return cms
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class TargetInfo  {
   }
 
   /**
-   * platform type
+   * <em>platform type</em>
    * @return platformType
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class TargetInfo  {
   }
 
   /**
-   * IP address of the target
+   * <em>IP address of the <code>target</code></em>
    * @return ipAddress
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class TargetInfo  {
   }
 
   /**
-   * country code that the target domain is determined to belong to
+   * <em>country code that the <code>target</code> domain is determined to belong to</em>
    * @return country
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class TargetInfo  {
   }
 
   /**
-   * indicates if the target is IP
-* if true, the domain, subdomain or webpage functions as an IP address and does not have a domain name
+   * <em>indicates if the <code>target</code> is IP</em><br>if <code>true</code>, the domain, subdomain or webpage functions as an IP address and does not have a domain name
    * @return isIp
    */
   @javax.annotation.Nullable
@@ -186,9 +185,7 @@ public class TargetInfo  {
   }
 
   /**
-   * spam score of the target
-* if the target is a domain/subdomain, this fields indicates the average spam score of all pages of that domain/subdomain;
-* learn more about how the metric is calculated on this help center page
+   * <em>spam score of the <code>target</code></em><br>if the <code>target</code> is a domain/subdomain, this fields indicates the average spam score of all pages of that domain/subdomain;<br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a>
    * @return targetSpamScore
    */
   @javax.annotation.Nullable

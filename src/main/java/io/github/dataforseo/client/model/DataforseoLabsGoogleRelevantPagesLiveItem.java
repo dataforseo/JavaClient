@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveItem  {
   }
 
   /**
-   * absolute URL of the relevant page
+   * <em>absolute URL of the relevant page</em>
    * @return pageAddress
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveItem  {
   }
 
   /**
-   * rankings and traffic metrics for the relevant page
+   * <em>rankings and traffic metrics for the relevant page</em>
    * @return metrics
    */
   @javax.annotation.Nullable

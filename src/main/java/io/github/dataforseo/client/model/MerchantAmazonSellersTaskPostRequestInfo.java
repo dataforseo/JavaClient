@@ -47,13 +47,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * unique product identifier on Amazon
-* required field
-* you can get this value making a separate request to the Amazon Products endpoint
-* note that there is no full list of possible values as the asin values is a dynamic value assigned by Amazon
-* example:
-* B085RFFC9Q
-* learn more about the identifier in this help center guide
+   * <em>unique product identifier on Amazon</em><br><strong>required field</strong><br>you can get this value making a separate request to <a href='/v3/merchant/amazon/products/task_post'>the Amazon Products endpoint</a><br>note that there is no full list of possible values as the <code>asin</code> values is a dynamic value assigned by Amazon<br>example:<br><code>B085RFFC9Q</code><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/asin-in-amazon-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -76,13 +70,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/merchant/amazon-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -105,12 +93,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available Amazon locations with their location_name by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available Amazon locations with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -133,12 +116,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available Amazon locations with their location_code by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available Amazon locations with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -161,14 +139,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 199.9
-* example:
-* 53.476225,-2.243572,200
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -191,12 +162,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available Amazon languages with their language_name by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
-* example:
-* English (United States)
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available Amazon languages with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/languages</code><br>example:<br><code class='long-string'>English (United States)</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -219,12 +185,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available Amazon languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
-* example:
-* en_US
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available Amazon languages with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en_US</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -247,12 +208,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * search engine domain
-* optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
-* example:
-* amazon.co.uk, amazon.com.au, amazon.de, etc.
+   * <em>search engine domain</em><br>optional field<br>we choose the relevant search engine domain automatically according to the location and language you specify<br>however, you can set a custom search engine domain in this field<br>example:<br><em><code>amazon.co.uk</code></em>, <em><code>amazon.com.au</code></em>, <em><code>amazon.de</code></em>, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -275,11 +231,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -302,16 +254,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -334,11 +277,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* advanced, html
+   * <em>postback_url datatype</em><br><strong>required field if you specify <code>postback_url</code></strong><br>corresponds to the datatype that will be sent to your server<br>possible values:<br><code>advanced</code>, <code>html</code>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -361,16 +300,7 @@ public class MerchantAmazonSellersTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

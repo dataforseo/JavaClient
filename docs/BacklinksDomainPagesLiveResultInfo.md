@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**target** | **String** | target in a POST array |[optional]|
-**totalCount** | **Long** | total number of relevant items in the database |[optional]|
-**itemsCount** | **Long** | number of items in the items array |[optional]|
-**items** | **List<BacklinksDomainPagesLiveItem>** | items array |[optional]|
+**target** | **String** | <em><code>target</code> in a POST array</em> |[optional]|
+**totalCount** | **Long** | <em>total number of relevant items in the database</em> |[optional]|
+**itemsCount** | **Long** | <em>number of items in the <code>items</code> array</em> |[optional]|
+**items** | **List<BacklinksDomainPagesLiveItem>** | <em>items array</em> |[optional]|

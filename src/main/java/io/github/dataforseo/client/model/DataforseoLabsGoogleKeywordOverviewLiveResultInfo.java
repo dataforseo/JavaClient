@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveResultInfo  {
   }
 
   /**
-   * contains keywords and related data
+   * <em>contains keywords and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

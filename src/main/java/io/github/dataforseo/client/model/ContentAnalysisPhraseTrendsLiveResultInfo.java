@@ -70,7 +70,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * date for which the data is provided
+   * <em>date for which the data is provided</em>
    * @return date
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * total number of results in our database relevant to your request
+   * <em>total number of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * rank of all URLs citing the keyword
-* normalized sum of ranks of all URLs citing the target keyword for the given date
+   * <em>rank of all URLs citing the <code>keyword</code></em><br>normalized sum of ranks of all URLs citing the target <code>keyword</code> for the given date
    * @return rank
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * top domains citing the target keyword
-* contains objects with top domains citing the target keyword and citation count per each domain
+   * <em>top domains citing the target keyword</em><br>contains objects with top domains citing the target keyword and citation count per each domain
    * @return topDomains
    */
   @javax.annotation.Nullable
@@ -164,9 +162,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * sentiment connotations
-* contains sentiments (emotional reactions) related to the target keyword citation and the number of citations per each sentiment
-* possible connotations: 'anger', 'happiness', 'love', 'sadness', 'share', 'fun'
+   * <em>sentiment connotations</em><br>contains sentiments (emotional reactions) related to the target keyword citation and the number of citations per each sentiment<br>possible connotations: <code>'anger'</code>, <code>'happiness'</code>, <code>'love'</code>, <code>'sadness'</code>, <code>'share'</code>, <code>'fun'</code>
    * @return sentimentConnotations
    */
   @javax.annotation.Nullable
@@ -189,9 +185,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * connotation types
-* contains types of sentiments (sentiment polarity) related to the keyword citation and citation count per each sentiment type
-* possible connotation types: 'positive', 'negative', 'neutral'
+   * <em>connotation types</em><br>contains types of sentiments (sentiment polarity) related to the keyword citation and citation count per each sentiment type<br>possible connotation types: <code>'positive'</code>, <code>'negative'</code>, <code>'neutral'</code>
    * @return connotationTypes
    */
   @javax.annotation.Nullable
@@ -214,9 +208,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * text categories
-* contains objects with text categories and citation count in each text category
-* to obtain a full list of available categories, refer to the Categories endpoint
+   * <em>text categories</em><br>contains objects with text categories and citation count in each text category<br>to obtain a full list of available categories, refer to the <a href='/v3/content_analysis/categories/' rel='noopener noreferrer' target='_blank'>Categories</a> endpoint
    * @return textCategories
    */
   @javax.annotation.Nullable
@@ -239,9 +231,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * page categories
-* contains objects with page categories and citation count in each page category
-* to obtain a full list of available categories, refer to the Categories endpoint
+   * <em>page categories</em><br>contains objects with page categories and citation count in each page category<br>to obtain a full list of available categories, refer to the <a href='/v3/content_analysis/categories/' rel='noopener noreferrer' target='_blank'>Categories</a> endpoint
    * @return pageCategories
    */
   @javax.annotation.Nullable
@@ -264,8 +254,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * page types
-* contains page types and citation count per each page type
+   * <em>page types</em><br>contains page types and citation count per each page type
    * @return pageTypes
    */
   @javax.annotation.Nullable
@@ -288,9 +277,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * countries
-* contains countries and citation count in each country
-* to obtain a full list of available countries, refer to the Locations endpoint
+   * <em>countries</em><br>contains countries and citation count in each country<br>to obtain a full list of available countries, refer to the <a href='/v3/content_analysis/locations/' rel='noopener noreferrer' target='_blank'>Locations</a> endpoint
    * @return countries
    */
   @javax.annotation.Nullable
@@ -313,9 +300,7 @@ public class ContentAnalysisPhraseTrendsLiveResultInfo  {
   }
 
   /**
-   * languages
-* contains languages and citation count in each language
-* to obtain a full list of available languages, refer to the Languages endpoint
+   * <em>languages</em><br>contains languages and citation count in each language<br>to obtain a full list of available languages, refer to the <a href='/v3/content_analysis/languages/' rel='noopener noreferrer' target='_blank'>Languages</a> endpoint
    * @return languages
    */
   @javax.annotation.Nullable

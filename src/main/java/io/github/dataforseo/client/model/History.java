@@ -47,7 +47,7 @@ public class History  {
   }
 
   /**
-   * year
+   * <em>year</em>
    * @return year
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class History  {
   }
 
   /**
-   * month
+   * <em>month</em>
    * @return month
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class History  {
   }
 
   /**
-   * historical data for the keyword
+   * <em>historical data for the keyword</em>
    * @return keywordInfo
    */
   @javax.annotation.Nullable

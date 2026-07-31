@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

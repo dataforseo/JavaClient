@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<MerchantAmazonLanguagesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<MerchantAmazonLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

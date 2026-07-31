@@ -47,7 +47,7 @@ public class LocationInfo  {
   }
 
   /**
-   * name of the event’s venue
+   * <em>name of the event's venue</em>
    * @return name
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class LocationInfo  {
   }
 
   /**
-   * address of the event’s venue
+   * <em>address of the event's venue</em>
    * @return address
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class LocationInfo  {
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class LocationInfo  {
   }
 
   /**
-   * google-defined client id
-* can be used with Google Reviews API to get a full list of reviews
+   * <em>google-defined client id</em><br>can be used with <a href='/v3/business_data/google/reviews/task_post/?php' rel='noopener noreferrer' target='_blank'>Google Reviews API</a> to get a full list of reviews
    * @return cid
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class LocationInfo  {
   }
 
   /**
-   * the unique identifier of the element in SERP
+   * <em>the unique identifier of the element in SERP</em>
    * @return featureId
    */
   @javax.annotation.Nullable

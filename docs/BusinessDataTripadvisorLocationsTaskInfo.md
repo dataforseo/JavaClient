@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataTripadvisorLocationsResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataTripadvisorLocationsResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,9 +47,7 @@ public class GpsCoordinatesLocationInfo  {
   }
 
   /**
-   * latitude coordinate of the hotel in google maps
-* example:
-* 'latitude': 51.584091
+   * <i>latitude coordinate of the hotel in google maps</i><br>example:<br><code>'latitude': 51.584091</code>
    * @return latitude
    */
   @javax.annotation.Nullable
@@ -72,9 +70,7 @@ public class GpsCoordinatesLocationInfo  {
   }
 
   /**
-   * longitude coordinate of the hotel in google maps
-* example:
-* 'longitude': -0.31365919999999997
+   * <i>longitude coordinate of the hotel in google maps</i><br>example:<br><code>'longitude': -0.31365919999999997</code>
    * @return longitude
    */
   @javax.annotation.Nullable

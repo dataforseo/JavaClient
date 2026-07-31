@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**category** | **String** | name of the supported app category |[optional]|
-**count** | **Long** | number of app listings that make up the supported app category |[optional]|
+**category** | **String** | <em>name of the supported app category</em> |[optional]|
+**count** | **Long** | <em>number of app listings that make up the supported app category</em> |[optional]|

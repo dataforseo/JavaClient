@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpBingLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpBingLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

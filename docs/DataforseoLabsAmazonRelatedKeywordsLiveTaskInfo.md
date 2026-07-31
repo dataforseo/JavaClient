@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsAmazonRelatedKeywordsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsAmazonRelatedKeywordsLiveResultInfo>** | <em>array of results</em> |[optional]|

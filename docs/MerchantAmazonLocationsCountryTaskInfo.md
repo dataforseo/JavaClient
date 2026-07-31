@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantAmazonLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantAmazonLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

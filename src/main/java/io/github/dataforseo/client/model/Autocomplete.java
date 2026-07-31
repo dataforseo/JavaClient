@@ -70,9 +70,7 @@ public class Autocomplete  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class Autocomplete  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,12 +116,7 @@ public class Autocomplete  {
   }
 
   /**
-   * relevance of suggested keyword
-* represents the relevant of the autocomplete suggestion to the target keyword
-* can take values from 500 to 2000
-* the higher the value, the more relevant is the suggestion
-* Note: only available for the following client:
-* chrome/chrome-omni
+   * <em>relevance of suggested keyword</em><br>represents the relevant of the autocomplete suggestion to the target keyword<br>can take values from <code>500</code> to <code>2000</code><br>the higher the value, the more relevant is the suggestion<br><strong>Note:</strong> only available for the following <code>client</code>:<br><code>chrome/chrome-omni</code>
    * @return relevance
    */
   @javax.annotation.Nullable
@@ -147,7 +139,7 @@ public class Autocomplete  {
   }
 
   /**
-   * google autocomplete keyword suggestion
+   * <em>google autocomplete keyword suggestion</em>
    * @return suggestion
    */
   @javax.annotation.Nullable
@@ -170,9 +162,7 @@ public class Autocomplete  {
   }
 
   /**
-   * google autocomplete suggestion type
-* Note: only available for the following client:
-* chrome/chrome-omni
+   * <em>google autocomplete suggestion type</em><br><strong>Note:</strong> only available for the following <code>client</code>:<br><code>chrome/chrome-omni</code>
    * @return suggestionType
    */
   @javax.annotation.Nullable
@@ -195,8 +185,7 @@ public class Autocomplete  {
   }
 
   /**
-   * url to search results
-* url to search results relevant to the google autocomplete suggestion
+   * <em>url to search results</em><br>url to search results relevant to the google autocomplete suggestion
    * @return searchQueryUrl
    */
   @javax.annotation.Nullable
@@ -219,11 +208,7 @@ public class Autocomplete  {
   }
 
   /**
-   * url of the thumbnail image
-* url of the thumbnail image of the google autocomplete suggestion
-* Note: only available for the following client:
-* gws-wiz
-* gws-wiz-serp
+   * <em>url of the thumbnail image</em><br>url of the thumbnail image of the google autocomplete suggestion<br><strong>Note:</strong> only available for the following <code>client</code>:<br><code>gws-wiz</code><br><code>gws-wiz-serp</code>
    * @return thumbnailUrl
    */
   @javax.annotation.Nullable
@@ -246,12 +231,7 @@ public class Autocomplete  {
   }
 
   /**
-   * keywords highlighted in autocomplete
-* contains a list of google autocomplete suggestions that are highlighted in the search bar;
-* Note: array is only available for the following client:
-* gws-wiz
-* psy-ab
-* gws-wiz-local
+   * <em>keywords highlighted in autocomplete</em><br>contains a list of google autocomplete suggestions that are highlighted in the search bar;<br><strong>Note:</strong> array is only available for the following <code>client</code>:<br><code>gws-wiz</code><br><code>psy-ab</code><br><code>gws-wiz-local</code>
    * @return highlighted
    */
   @javax.annotation.Nullable

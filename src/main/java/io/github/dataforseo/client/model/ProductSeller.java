@@ -70,7 +70,7 @@ public class ProductSeller  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class ProductSeller  {
   }
 
   /**
-   * seller url
-* url of the page where the product is sold
+   * <em>seller url</em><br>url of the page where the product is sold
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class ProductSeller  {
   }
 
   /**
-   * rating of the seller
+   * <em>rating of the seller</em>
    * @return sellerRating
    */
   @javax.annotation.Nullable
@@ -164,8 +163,7 @@ public class ProductSeller  {
   }
 
   /**
-   * product price
-* product price details on the seller’s website
+   * <em>product price</em><br>product price details on the seller's website
    * @return price
    */
   @javax.annotation.Nullable
@@ -188,8 +186,7 @@ public class ProductSeller  {
   }
 
   /**
-   * delivery information
-* product delivery information
+   * <em>delivery information</em><br>product delivery information
    * @return deliveryInfo
    */
   @javax.annotation.Nullable
@@ -212,8 +209,7 @@ public class ProductSeller  {
   }
 
   /**
-   * product availability information
-* can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+   * <em>product availability information</em><br>can take the following values: <code>in_stock</code>, <code>limited_stock</code>, <code>out_of_stock</code>, <code>backordered</code>, <code>pre_order_available</code>, <code>on_display_to_order</code>
    * @return productAvailability
    */
   @javax.annotation.Nullable

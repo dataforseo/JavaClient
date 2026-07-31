@@ -70,8 +70,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * absolute rank among all the listed reviews
-* absolute position among all reviews on the list
+   * <em>absolute rank among all the listed reviews</em><br>absolute position among all reviews on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the alignment of the review in SERP
-* can take the following values: right
+   * <em>the alignment of the review in SERP</em><br>can take the following values: <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the XPath of the review
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the review</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the content of the review
+   * <em>the content of the review</em>
    * @return reviewText
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * original content of the review
-* the original content of the review, no auto-translate applied
+   * <em>original content of the review</em><br>the original content of the review, no auto-translate applied
    * @return originalReviewText
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * original language of the review text
+   * <em>original language of the review text</em>
    * @return originalLanguage
    */
   @javax.annotation.Nullable
@@ -235,8 +231,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the time of publication
-* indicates the time (in the ‘time ago’ format) when the review was listed
+   * <em>the time of publication</em><br>indicates the time (in the 'time ago' format) when the review was listed
    * @return timeAgo
    */
   @javax.annotation.Nullable
@@ -259,10 +254,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * date and time when a review was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when a review was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -285,7 +277,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the rating score submitted by the reviewer
+   * <em>the rating score submitted by the reviewer</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -308,7 +300,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * total number of reviews submitted by the reviewer
+   * <em>total number of reviews submitted by the reviewer</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -331,7 +323,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * total number of photos submitted by the reviewer
+   * <em>total number of photos submitted by the reviewer</em>
    * @return photosCount
    */
   @javax.annotation.Nullable
@@ -354,7 +346,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * indicates whether the reviewer has a ‘local guide’ status
+   * <em>indicates whether the reviewer has a 'local guide' status</em>
    * @return localGuide
    */
   @javax.annotation.Nullable
@@ -377,7 +369,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * profile name of the reviewer
+   * <em>profile name of the reviewer</em>
    * @return profileName
    */
   @javax.annotation.Nullable
@@ -400,7 +392,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * URL of the reviewer’s profile
+   * <em>URL of the reviewer's profile</em>
    * @return profileUrl
    */
   @javax.annotation.Nullable
@@ -423,7 +415,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the URL of the review
+   * <em>the URL of the review</em>
    * @return reviewUrl
    */
   @javax.annotation.Nullable
@@ -446,7 +438,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * URL of the reviewer’s profile image
+   * <em>URL of the reviewer's profile image</em>
    * @return profileImageUrl
    */
   @javax.annotation.Nullable
@@ -469,8 +461,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * text of the owner’s response
-* the owner’s response to the review
+   * <em>text of the owner's response</em><br>the owner's response to the review
    * @return ownerAnswer
    */
   @javax.annotation.Nullable
@@ -493,8 +484,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * original text of the owner’s response
-* the original response to the review, no auto-translate applied
+   * <em>original text of the owner's response</em><br>the original response to the review, no auto-translate applied
    * @return originalOwnerAnswer
    */
   @javax.annotation.Nullable
@@ -517,8 +507,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * publication time
-* indicates the time (in the ‘time ago’ format) when the owner submitted the response to the review
+   * <em>publication time</em><br>indicates the time (in the 'time ago' format) when the owner submitted the response to the review
    * @return ownerTimeAgo
    */
   @javax.annotation.Nullable
@@ -541,10 +530,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * date and time of the owner’s reply to the review
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time of the owner's reply to the review</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return ownerTimestamp
    */
   @javax.annotation.Nullable
@@ -567,9 +553,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * the unique identifier of a review on Google
-* example:
-* ChZDSUhNMG9nS0VJQ0FnSUMxbHFyMFlnEAE
+   * <em>the unique identifier of a review on Google</em><br>example:<br><code>ChZDSUhNMG9nS0VJQ0FnSUMxbHFyMFlnEAE</code>
    * @return reviewId
    */
   @javax.annotation.Nullable
@@ -592,7 +576,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * images submitted by the reviewer
+   * <em>images submitted by the reviewer</em>
    * @return images
    */
   @javax.annotation.Nullable
@@ -615,8 +599,7 @@ public class GoogleReviewsSearch  {
   }
 
   /**
-   * review highlights
-* contains highlighted review criteria and assessments
+   * <em>review highlights</em><br>contains highlighted review criteria and assessments
    * @return reviewHighlights
    */
   @javax.annotation.Nullable

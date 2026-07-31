@@ -70,9 +70,7 @@ public class EventItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class EventItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class EventItem  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class EventItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -167,7 +162,7 @@ public class EventItem  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class EventItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class EventItem  {
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class EventItem  {
   }
 
   /**
-   * URL of the image featured in the element
+   * <em>URL of the image featured in the element</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -259,8 +254,7 @@ public class EventItem  {
   }
 
   /**
-   * dates when the event takes place
-* if there are none, equals null
+   * <em>dates when the event takes place</em><br>if there are none, equals <code>null</code>
    * @return eventDates
    */
   @javax.annotation.Nullable
@@ -283,7 +277,7 @@ public class EventItem  {
   }
 
   /**
-   * information about the event’s venue
+   * <em>information about the event's venue</em>
    * @return locationInfo
    */
   @javax.annotation.Nullable
@@ -306,7 +300,7 @@ public class EventItem  {
   }
 
   /**
-   * additional information and ticket purchase options
+   * <em>additional information and ticket purchase options</em>
    * @return informationAndTickets
    */
   @javax.annotation.Nullable

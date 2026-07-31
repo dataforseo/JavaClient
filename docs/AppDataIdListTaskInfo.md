@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppDataIdListResultInfo>** | array of results |[optional]|
+**result** | **List<AppDataIdListResultInfo>** | <em>array of results</em> |[optional]|

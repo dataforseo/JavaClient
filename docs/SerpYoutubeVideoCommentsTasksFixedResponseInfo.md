@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpYoutubeVideoCommentsTasksFixedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpYoutubeVideoCommentsTasksFixedTaskInfo>** | <em>array of tasks</em> |[optional]|

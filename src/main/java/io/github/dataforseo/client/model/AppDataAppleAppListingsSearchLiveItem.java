@@ -47,7 +47,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * ID of the returned app
+   * <em>ID of the returned app</em>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -163,10 +162,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * date and time when SERP data was last updated
-* in the ISO 8601 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”
-* example:
-* 2023-05-23 10:16:19 +00:00
+   * <em>date and time when SERP data was last updated</em><br>in the <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format: “YYYY-MM-DDThh:mm:ss.sssssssZ”<br>example:<br><code class='long-string'>2023-05-23 10:16:19 +00:00</code>
    * @return timeUpdate
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class AppDataAppleAppListingsSearchLiveItem  {
   }
 
   /**
-   * detailed information about the app
+   * <em>detailed information about the app</em>
    * @return item
    */
   @javax.annotation.Nullable

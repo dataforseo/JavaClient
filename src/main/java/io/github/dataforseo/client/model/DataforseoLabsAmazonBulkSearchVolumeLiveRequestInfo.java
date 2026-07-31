@@ -47,12 +47,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * target keywords
-* required field
-* UTF-8 encoding
-* maximum number of keywords you can specify in this array: 1000;
-* the keywords will be converted to lowercase format
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keywords</em><br><strong>required field</strong><br>UTF-8 encoding<br>maximum number of keywords you can specify in this array: 1000;<br>the keywords will be converted to lowercase format<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,30 +70,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if don’t specify location_code
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* 
-* Note: this endpoint currently supports the following locations and languages only:
-* Australia – 2036, en
-* Austria – 2040, de
-* Canada – 2124, en
-* Egypt – 2818, ar
-* France – 2250, fr
-* Germany – 2276, de
-* India – 2356, en
-* Italy – 2380, it
-* Mexico – 2484, es
-* Netherlands – 2528, nl
-* Saudi Arabia – 2682, ar
-* Singapore – 2702, en
-* Spain – 2724, es
-* United Arab Emirates – 2784, ar
-* United Kingdom – 2826, en
-* United States – 2840, en
-* example:
-* United States
+   * <em>full name of the location</em><br><strong>required field if don't specify <code>location_code</code></strong><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><a name='loc'></a><br><strong>Note:</strong> this endpoint currently supports the following locations and languages only:<p><code>Australia</code> - <code>2036</code>, <code>en</code><br><code>Austria</code> - <code>2040</code>, <code>de</code><br><code>Canada</code> - <code>2124</code>, <code>en</code><br><code>Egypt</code> - <code>2818</code>, <code>ar</code><br><code>France</code> - <code>2250</code>, <code>fr</code><br><code>Germany</code> - <code>2276</code>, <code>de</code><br><code>India</code> - <code>2356</code>, <code>en</code><br><code>Italy</code> - <code>2380</code>, <code>it</code><br><code>Mexico</code> - <code>2484</code>, <code>es</code><br><code>Netherlands</code> - <code>2528</code>, <code>nl</code><br><code>Saudi Arabia</code> - <code>2682</code>, <code>ar</code><br><code>Singapore</code> - <code>2702</code>, <code>en</code><br><code>Spain</code> - <code>2724</code>, <code>es</code><br><code>United Arab Emirates</code> - <code>2784</code>, <code>ar</code><br><code>United Kingdom</code> - <code>2826</code>, <code>en</code><br><code>United States</code> - <code>2840</code>, <code>en</code><br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -121,13 +93,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if don’t specify location_name
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports these locations and languages only;
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if don't specify <code>location_name</code></strong><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports <a href='#loc'>these locations and languages only;</a><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -150,12 +116,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if don’t specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* Note: this endpoint currently supports these locations and languages only;
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if don't specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br><strong>Note:</strong> this endpoint currently supports <a href='#loc'>these locations and languages only;</a><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -178,12 +139,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if don’t specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* Note: this endpoint currently supports these locations and languages only;
-* example:
-* en
+   * <em>language code</em><br><strong>required field if don't specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br><strong>Note:</strong> this endpoint currently supports <a href='#loc'>these locations and languages only;</a><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -206,11 +162,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

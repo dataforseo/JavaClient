@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BacklinksBulkReferringDomainsLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BacklinksBulkReferringDomainsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

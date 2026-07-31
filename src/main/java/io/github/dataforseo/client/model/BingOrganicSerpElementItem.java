@@ -337,6 +337,29 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public BingOrganicSerpElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * 
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
+  }
+
+
   public static final String SERIALIZED_NAME_PRE_SNIPPET = "pre_snippet";
   @SerializedName(SERIALIZED_NAME_PRE_SNIPPET)
   private String preSnippet;
@@ -715,6 +738,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
         Objects.equals(this.isFeaturedSnippet, bingOrganicSerpElementItem.isFeaturedSnippet) &&
         Objects.equals(this.isMalicious, bingOrganicSerpElementItem.isMalicious) &&
         Objects.equals(this.isWebStory, bingOrganicSerpElementItem.isWebStory) &&
+        Objects.equals(this.checks, bingOrganicSerpElementItem.checks) &&
         Objects.equals(this.preSnippet, bingOrganicSerpElementItem.preSnippet) &&
         Objects.equals(this.extendedSnippet, bingOrganicSerpElementItem.extendedSnippet) &&
         Objects.equals(this.images, bingOrganicSerpElementItem.images) &&
@@ -738,7 +762,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, title, description, url, breadcrumb, cacheUrl, relatedSearchUrl, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp);
+  return Objects.hash(domain, title, description, url, breadcrumb, cacheUrl, relatedSearchUrl, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, checks, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -766,6 +790,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
     sb.append("    isFeaturedSnippet: ").append(toIndentedString(isFeaturedSnippet)).append("\n");
     sb.append("    isMalicious: ").append(toIndentedString(isMalicious)).append("\n");
     sb.append("    isWebStory: ").append(toIndentedString(isWebStory)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    preSnippet: ").append(toIndentedString(preSnippet)).append("\n");
     sb.append("    extendedSnippet: ").append(toIndentedString(extendedSnippet)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
@@ -834,6 +859,8 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
     openapiFields.add("is_malicious");
     
     openapiFields.add("is_web_story");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("pre_snippet");
     

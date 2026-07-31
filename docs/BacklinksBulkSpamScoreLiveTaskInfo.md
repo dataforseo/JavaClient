@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksBulkSpamScoreLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksBulkSpamScoreLiveResultInfo>** | <em>array of results</em> |[optional]|

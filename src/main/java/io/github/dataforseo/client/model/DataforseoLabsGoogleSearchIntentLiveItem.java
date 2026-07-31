@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleSearchIntentLiveItem  {
   }
 
   /**
-   * target keyword in a POST array
+   * <em>target keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleSearchIntentLiveItem  {
   }
 
   /**
-   * search intent data relevant for the specified keyword
+   * <em>search intent data relevant for the specified keyword</em>
    * @return keywordIntent
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleSearchIntentLiveItem  {
   }
 
   /**
-   * contains objects with other possible search intents for the specified keyword
+   * <em>contains objects with other possible search intents for the specified keyword</em>
    * @return secondaryKeywordIntents
    */
   @javax.annotation.Nullable

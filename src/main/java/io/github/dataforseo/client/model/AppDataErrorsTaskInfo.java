@@ -236,7 +236,7 @@ public class AppDataErrorsTaskInfo  {
   }
 
   /**
-   * array of results
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

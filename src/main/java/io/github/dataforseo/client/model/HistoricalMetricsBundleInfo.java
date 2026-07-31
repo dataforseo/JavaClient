@@ -47,7 +47,7 @@ public class HistoricalMetricsBundleInfo  {
   }
 
   /**
-   * traffic data from organic search
+   * <em>traffic data from organic search</em>
    * @return organic
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class HistoricalMetricsBundleInfo  {
   }
 
   /**
-   * traffic data from paid search
+   * <em>traffic data from paid search</em>
    * @return paid
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HistoricalMetricsBundleInfo  {
   }
 
   /**
-   * traffic data from the local pack results in SERP
+   * <em>traffic data from the local pack results in SERP</em>
    * @return localPack
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class HistoricalMetricsBundleInfo  {
   }
 
   /**
-   * traffic data from the featured snippet results in Google SERP
+   * <em>traffic data from the featured snippet results in Google SERP</em>
    * @return featuredSnippet
    */
   @javax.annotation.Nullable

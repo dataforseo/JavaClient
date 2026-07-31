@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * target domain in a POST array
+   * <em>target domain in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is <code>null</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is <code>null</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveResultInfo  {
   }
 
   /**
-   * relevant pages and related data
+   * <em>relevant pages and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

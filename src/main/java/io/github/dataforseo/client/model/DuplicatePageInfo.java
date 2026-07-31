@@ -47,9 +47,7 @@ public class DuplicatePageInfo  {
   }
 
   /**
-   * content similarity score
-* by default, the content is considered duplicate if the value is greater than or equals 6
-* can take values from 0 to 10
+   * 
    * @return similarity
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class DuplicatePageInfo  {
   }
 
   /**
-   * information about the page with duplicate content
+   * <em>information about the page with duplicate content</em>
    * @return page
    */
   @javax.annotation.Nullable

@@ -47,12 +47,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
-* this field will contain the cid parameter if you specified it in the keyword field when setting a task;
-* example:
-* cid:2946633002421908862
-* learn more about the parameter in this help center article
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong><br>this field will contain the <code>cid</code> parameter if you specified it in the <code>keyword</code> field when setting a task;<br>example:<br><code>cid:2946633002421908862</code><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,7 +70,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain as specified in a POST array
+   * <em>search engine domain as specified in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -168,10 +162,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -194,7 +185,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * identifier of the business updates element in SERP
+   * <em>identifier of the business updates element in SERP</em>
    * @return businessUpdatesId
    */
   @javax.annotation.Nullable
@@ -217,9 +208,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment
-* learn more about the cid identifier in this help center article
+   * <em>google-defined client id</em><br>unique id of a local establishment<br>learn more about the <code>cid</code> identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -242,8 +231,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * the unique identifier of the element in SERP
-* learn more about the identifier in this help center article
+   * <em>the unique identifier of the element in SERP</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -266,9 +254,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * item types
-* types of search engine results encountered in the items array;
-* possible item types: google_business_post
+   * <em>item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_post</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -291,8 +277,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * item types
-* the number of items in the items array
+   * <em>item types</em><br>the number of items in the <code>items</code> array
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -315,9 +300,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo  {
   }
 
   /**
-   * encountered item types
-* types of search engine results encountered in the items array;
-* possible item types: google_business_post
+   * <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_post</code>
    * @return items
    */
   @javax.annotation.Nullable

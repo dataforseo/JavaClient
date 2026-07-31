@@ -47,7 +47,7 @@ public class DatasetDescription  {
   }
 
   /**
-   * text of the description
+   * <em>text of the description</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DatasetDescription  {
   }
 
   /**
-   * links featured in the ‘dataset_description’
+   * <em>links featured in the 'dataset_description'</em>
    * @return links
    */
   @javax.annotation.Nullable

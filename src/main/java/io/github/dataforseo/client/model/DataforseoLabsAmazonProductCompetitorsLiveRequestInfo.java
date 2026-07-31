@@ -47,10 +47,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * product ID
-* required field
-* unique product identifier (ASIN) on Amazon;
-* you can receive the asin parameter by making a separate request to the Amazon Products endpoint
+   * <em>product ID</em><br><strong>required field</strong><br><a href='https://dataforseo.com/help-center/asin-in-amazon-api' target='_blank' rel='noopener noreferrer'>unique product identifier (ASIN)</a> on Amazon;<br>you can receive the <code>asin</code> parameter by making a separate request to the <a href='/v3/merchant/amazon/products/task_post/' target='_blank' rel='noopener noreferrer'>Amazon Products endpoint</a>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -73,13 +70,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if don’t specify location_code
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
-* example:
-* United States
+   * <em>full name of the location</em><br><strong>required field if don't specify <code>location_code</code></strong><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -102,13 +93,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if don’t specify location_name
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if don't specify <code>location_name</code></strong><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,12 +116,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if don’t specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if don't specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -159,12 +139,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if don’t specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if don't specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -187,10 +162,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of products in the results array
-* optional field
-* default value: 100;
-* maximum value: 1000
+   * <em>the maximum number of products in the results array</em><br>optional field<br>default value: <code>100</code>;<br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -213,16 +185,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, ilike, not_ilike, like, not_like, match, not_match
-* you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters
-* example:
-* ['full_metrics.amazon_serp.pos_1','>', 20]
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>ilike</code>, <code>not_ilike</code>, <code>like</code>, <code>not_like</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code>, as well as <code>ilike</code> and <code>not_ilike</code> to match any string of zero or more characters<br>example:<br><code>['full_metrics.amazon_serp.pos_1','>', 20]</code><p>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' rel='noopener noreferrer' target='_blank'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -245,21 +208,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting parameter
-* example:
-* ['full_metrics.amazon_serp.pos_1,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['full_metrics.amazon_serp.pos_1,desc','avg_position,desc']
-* default rule:
-* ['ranked_serp_element.serp_item.rank_group,asc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting parameter<br>example:<br><code>['full_metrics.amazon_serp.pos_1,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['full_metrics.amazon_serp.pos_1,desc','avg_position,desc']</code><br>default rule:<br><code>['ranked_serp_element.serp_item.rank_group,asc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -282,10 +231,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned product competitors
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten product competitors in the results array will be omitted and the data will be provided for the successive product competitors
+   * <em>offset in the results array of returned product competitors</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten product competitors in the results array will be omitted and the data will be provided for the successive product competitors
    * @return offset
    */
   @javax.annotation.Nullable
@@ -308,11 +254,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

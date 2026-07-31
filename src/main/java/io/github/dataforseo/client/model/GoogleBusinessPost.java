@@ -70,8 +70,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * absolute rank among all the listed updates
-* absolute position among all present elements
+   * <em>absolute rank among all the listed updates</em><br>absolute position among all present elements
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values: right
+   * <em>the alignment of the element in SERP</em><br>can take the following values: <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * author of the post
+   * <em>author of the post</em>
    * @return author
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * additional content of a post
+   * <em>additional content of a post</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * main content of a post
+   * <em>main content of a post</em>
    * @return postText
    */
   @javax.annotation.Nullable
@@ -234,7 +231,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * url of a post
+   * <em>url of a post</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -257,7 +254,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * url of an image included in the post
+   * <em>url of an image included in the post</em>
    * @return imagesUrl
    */
   @javax.annotation.Nullable
@@ -280,9 +277,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * date when a post was published
-* in the following format:
-* 'mm/dd/yyyy hh:mm:ss'
+   * <em>date when a post was published</em><br>in the following format:<br><code>'mm/dd/yyyy hh:mm:ss'</code>
    * @return postDate
    */
   @javax.annotation.Nullable
@@ -305,10 +300,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * time when a post was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>time when a post was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -331,7 +323,7 @@ public class GoogleBusinessPost  {
   }
 
   /**
-   * links included in the post
+   * <em>links included in the post</em>
    * @return links
    */
   @javax.annotation.Nullable

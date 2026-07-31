@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**id** | **String** | task identifier of the completed task<br>unique task identifier in our system in the UUID format |[optional]|
-**se** | **String** | search engine specified when setting the task |[optional]|
-**seType** | **String** | type of search engine<br>can take the following values: shopping |[optional]|
-**datePosted** | **String** | date when the task was posted (in the UTC format) |[optional]|
-**tag** | **String** | user-defined task identifier |[optional]|
-**endpointAdvanced** | **String** | URL for collecting the results of Google Shopping Sellers Advanced task |[optional]|
-**endpointHtml** | **String** | URL for collecting the results of Google Shopping Sellers HTML task |[optional]|
+**id** | **String** | <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**se** | **String** | <em>search engine specified when setting the task</em> |[optional]|
+**seType** | **String** | <em>type of search engine</em><br>can take the following values: <code>shopping</code> |[optional]|
+**datePosted** | **String** | <em>date when the task was posted (in the UTC format)</em> |[optional]|
+**tag** | **String** | <em>user-defined task identifier</em> |[optional]|
+**endpointAdvanced** | **String** | <em>URL for collecting the results of Google Shopping Sellers Advanced task</em> |[optional]|
+**endpointHtml** | **String** | <em>URL for collecting the results of Google Shopping Sellers HTML task</em> |[optional]|

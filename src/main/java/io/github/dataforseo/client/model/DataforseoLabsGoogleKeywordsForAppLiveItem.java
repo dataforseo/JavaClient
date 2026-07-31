@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem  {
   }
 
   /**
-   * keyword data for the returned keyword
+   * <em>keyword data for the returned keyword</em>
    * @return keywordData
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem  {
   }
 
   /**
-   * contains data on the domain’s SERP element found for the returned keyword
+   * <em>contains data on the domain's SERP element found for the returned <code>keyword</code></em>
    * @return rankedSerpElement
    */
   @javax.annotation.Nullable

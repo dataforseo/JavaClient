@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo>** | <em>array of results</em> |[optional]|

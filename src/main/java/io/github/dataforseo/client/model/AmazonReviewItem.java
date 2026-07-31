@@ -70,8 +70,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * absolute rank among all the listed reviews
-* absolute position among all reviews on the list
+   * <em>absolute rank among all the listed reviews</em><br>absolute position among all reviews on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * the alignment of the review in SERP
-* can take the following values: right
+   * <em>the alignment of the review in SERP</em><br>can take the following values: <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * indicates whether the review has the “Verified Purchase” mark
+   * <em>indicates whether the review has the 'Verified Purchase' mark</em>
    * @return verified
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * subtitle of the review
+   * <em>subtitle of the review</em>
    * @return subtitle
    */
   @javax.annotation.Nullable
@@ -211,8 +208,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * helpful votes count
-* number of users who clicked on the ‘Helpful” button under the review text
+   * <em>helpful votes count</em><br>number of users who clicked on the 'Helpful' button under the review text
    * @return helpfulVotes
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * images of the product submitted by the reviewer
+   * <em>images of the product submitted by the reviewer</em>
    * @return images
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * videos of the product submitted by the reviewer
+   * <em>videos of the product submitted by the reviewer</em>
    * @return videos
    */
   @javax.annotation.Nullable
@@ -281,7 +277,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * user profile of the reviewer
+   * <em>user profile of the reviewer</em>
    * @return userProfile
    */
   @javax.annotation.Nullable
@@ -304,7 +300,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * title of the review
+   * <em>title of the review</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -327,7 +323,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * URL to the reviewer’s profile
+   * 
    * @return url
    */
   @javax.annotation.Nullable
@@ -350,7 +346,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * content of the review
+   * <em>content of the review</em>
    * @return reviewText
    */
   @javax.annotation.Nullable
@@ -373,10 +369,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * date and time when the review was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the review was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return publicationDate
    */
   @javax.annotation.Nullable
@@ -399,7 +392,7 @@ public class AmazonReviewItem  {
   }
 
   /**
-   * the rating score submitted by the reviewer
+   * <em>the rating score submitted by the reviewer</em>
    * @return rating
    */
   @javax.annotation.Nullable

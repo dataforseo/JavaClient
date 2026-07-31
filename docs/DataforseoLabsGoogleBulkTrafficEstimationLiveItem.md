@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**target** | **String** | target domain in a POST array |[optional]|
-**metrics** | **BulkMetricsBundleInfo** | traffic data relevant to the specified domain |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**target** | **String** | <em>target domain in a POST array</em> |[optional]|
+**metrics** | **BulkMetricsBundleInfo** | <em>traffic data relevant to the specified domain</em> |[optional]|

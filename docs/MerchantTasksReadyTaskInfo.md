@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

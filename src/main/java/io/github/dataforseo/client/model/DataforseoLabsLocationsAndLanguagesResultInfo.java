@@ -47,7 +47,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * the code of the superordinate location
-* the value will be null as Country is the only supported location_type for this API
+   * <em>the code of the superordinate location</em><br>the value will be <code>null</code> as <code>Country</code> is the only supported <code>location_type</code> for this API
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -140,9 +139,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * location type
-* possible values:
-* Country
+   * <em>location type</em><br>possible values:<br><code>Country</code>
    * @return locationType
    */
   @javax.annotation.Nullable
@@ -165,8 +162,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * supported languages
-* contains the languages which are supported for a specific location
+   * <em>supported languages</em><br>contains the languages which are supported for a specific location
    * @return availableLanguages
    */
   @javax.annotation.Nullable

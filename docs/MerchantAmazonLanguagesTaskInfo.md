@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantAmazonLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantAmazonLanguagesResultInfo>** | <em>array of results</em> |[optional]|

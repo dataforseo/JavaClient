@@ -47,7 +47,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * <em>domains, subdomains or webpages to get links for</em><br><strong>required field</strong><br>you can set up to 20 domains, subdomains or webpages<br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)<br>example:<br><code>'targets':</code> <code>{<br>'1': 'http://planet.postgresql.org/',</code><br><code>'2': 'http://gborg.postgresql.org/'<br>}</code>
+   * <em>domains, subdomains or webpages to get links for</em><br><strong>required field</strong><br>you can set up to 20 domains, subdomains or webpages<br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)<br>example:<br>`'targets': {<br>'1': 'http://planet.postgresql.org/',<br>'2': 'http://gborg.postgresql.org/'<br>}`
    * @return targets
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * <em>domains, subdomains or webpages you want to exclude</em><br>optional field<br>you can specify up to 10 domains, subdomains or webpages<br>if you use this array, results will contain the referring domains that link to <code>targets</code> but don't link to <code>exclude_targets</code><br>example:<br><code>'exclude_targets': [<br>'bbc.com',<br>'https://www.apple.com/iphone/*',<br>'https://dataforseo.com/apis/*']</code>
+   * <em>domains, subdomains or webpages you want to exclude</em><br>optional field<br>you can specify up to 10 domains, subdomains or webpages<br>if you use this array, results will contain the referring domains that link to <code>targets</code> but don't link to <code>exclude_targets</code><br>example:<br>`'exclude_targets': [<br>'bbc.com',<br>'https://www.apple.com/iphone/*',<br>'https://dataforseo.com/apis/*']`
    * @return excludeTargets
    */
   @javax.annotation.Nullable

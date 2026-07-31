@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpNaverOrganicTasksReadyTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpNaverOrganicTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

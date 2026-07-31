@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * ASINs in a POST array
+   * <em>ASINs in a POST array</em>
    * @return asins
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo  {
   }
 
   /**
-   * contains detected Amazon product competitors and related data
+   * <em>contains detected Amazon product competitors and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

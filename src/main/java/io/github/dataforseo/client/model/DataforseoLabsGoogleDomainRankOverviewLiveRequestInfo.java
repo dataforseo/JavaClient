@@ -47,10 +47,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * domain
-* required field
-* the domain name of the target website
-* the domain should be specified without https:// and www.
+   * <em>domain</em><br><strong>required field</strong><br>the domain name of the target website<br>the domain should be specified without <code>https://</code> and <code>www.</code>
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,14 +70,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* optional field
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available locations
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br>optional field<br>if you use this field, you don't need to specify <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available locations<br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -103,14 +93,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * location code
-* optional field
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations with their location_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available locations
-* example:
-* 2840
+   * <em>location code</em><br>optional field<br>if you use this field, you don't need to specify <code>location_name</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available locations<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -133,14 +116,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* optional field
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available languages
-* example:
-* English
+   * <em>full name of the language</em><br>optional field<br>if you use this field, you don't need to specify <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available languages<br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -163,14 +139,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * language code
-* optional field
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available languages
-* example:
-* en
+   * <em>language code</em><br>optional field<br>if you use this field, you don't need to specify <code>language_name</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available languages<br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -193,10 +162,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true, all highly similar keywords will be excluded from the ranking and traffic calculations, the results will be based on data for main keywords from groups of synonyms
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to_<code class='prettyprint'>true</code>, all highly similar keywords will be excluded from the ranking and traffic calculations, the results will be based on data for main keywords from groups of synonyms<br>default value: <code>false</code>n
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -219,10 +185,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned results for domain
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned results for domain</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -245,10 +208,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned items
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten items in the results array will be omitted and the data will be provided for the successive items
+   * <em>offset in the results array of returned items</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten <code>items</code> in the results array will be omitted and the data will be provided for the successive items
    * @return offset
    */
   @javax.annotation.Nullable
@@ -271,11 +231,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

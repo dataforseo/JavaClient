@@ -47,7 +47,7 @@ public class UserProfileInfo  {
   }
 
   /**
-   * the name of the reviewer
+   * 
    * @return name
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class UserProfileInfo  {
   }
 
   /**
-   * URL to the profile picture of the reviewer
+   * 
    * @return avatar
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class UserProfileInfo  {
   }
 
   /**
-   * relevant url
+   * <em>relevant url</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class UserProfileInfo  {
   }
 
   /**
-   * total number of reviews submitted by the reviewer
+   * 
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class UserProfileInfo  {
   }
 
   /**
-   * country of the reviewer
+   * 
    * @return locations
    */
   @javax.annotation.Nullable

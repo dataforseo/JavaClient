@@ -6,47 +6,47 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**domainFrom** | **String** | domain referring to the target domain or webpage |[optional]|
-**urlFrom** | **String** | URL of the page where the backlink is found |[optional]|
-**urlFromHttps** | **Boolean** | indicates whether the referring URL is secured with HTTPS<br>if true, the referring URL is secured with HTTPS |[optional]|
-**domainTo** | **String** | domain the backlink is pointing to |[optional]|
-**urlTo** | **String** | URL the backlink is pointing to |[optional]|
-**urlToHttps** | **Boolean** | indicates if the URL the backlink is pointing to is secured with HTTPS<br>if true, the URL is secured with HTTPS |[optional]|
-**tldFrom** | **String** | top-level domain of the referring URL |[optional]|
-**isNew** | **Boolean** | indicates whether the backlink is new<br>if true, the backlink was found on the page last time our crawler visited it |[optional]|
-**isLost** | **Boolean** | indicates whether the backlink was removed<br>if true, the backlink or the entire page was removed |[optional]|
-**backlinkSpamScore** | **Integer** | spam score of the backlink<br>learn more about how the metric is calculated on this help center page |[optional]|
-**rank** | **Integer** | backlink rank<br>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
-**pageFromRank** | **Integer** | page rank of the referring page<br>page_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
-**domainFromRank** | **Integer** | domain rank of the referring domain<br>indicates the rank of the domain at the time our crawler last saw the backlink;<br>domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
-**domainFromPlatformType** | **List<String>** | platform types of the referring domain<br>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization |[optional]|
-**domainFromIsIp** | **Boolean** | indicates if the domain is IP<br>if true, the domain functions as an IP address and does not have a domain name |[optional]|
-**domainFromIp** | **String** | IP address of the referring domain |[optional]|
-**domainFromCountry** | **String** | ISO country code of the referring domain |[optional]|
-**pageFromExternalLinks** | **Integer** | number of external links found on the referring page |[optional]|
-**pageFromInternalLinks** | **Integer** | number of internal links found on the referring page |[optional]|
-**pageFromSize** | **Integer** | size of the referring page, in bytes<br>example:<br>63357 |[optional]|
-**pageFromEncoding** | **String** | character encoding of the referring page<br>example:<br>utf-8 |[optional]|
-**pageFromLanguage** | **String** | language of the referring page<br>in ISO 639-1 format<br>example:<br>en |[optional]|
-**pageFromTitle** | **String** | title of the referring page |[optional]|
-**pageFromStatusCode** | **Integer** | HTTP status code returned by the referring page<br>example:<br>200 |[optional]|
-**firstSeen** | **String** | date and time when our crawler found the backlink for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**prevSeen** | **String** | previous to the most recent date when our crawler visited the backlink<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**lastSeen** | **String** | most recent date when our crawler visited the backlink<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**itemType** | **String** | link type<br>possible values:<br>anchor, image, link, meta, canonical, alternate, redirect |[optional]|
-**attributes** | **List<String>** | link attributes of the referring links<br>example:<br>nofollow |[optional]|
-**dofollow** | **Boolean** | indicates whether the backlink is dofollow<br>if false, the backlink is nofollow |[optional]|
-**original** | **Boolean** | indicates whether the backlink was present on the referring page when our crawler first visited it |[optional]|
-**alt** | **String** | alternative text of the image<br>this field will be null if backlink type is not image |[optional]|
-**anchor** | **String** | anchor text of the backlink |[optional]|
-**textPre** | **String** | text snippet before the anchor text |[optional]|
-**textPost** | **String** | snippet after the anchor text |[optional]|
-**semanticLocation** | **String** | indicates semantic element in HTML where the backlink is found<br>you can get the full list of semantic elements here<br>examples:<br>article, section, summary |[optional]|
-**linksCount** | **Long** | number of identical backlinks found on the referring page |[optional]|
-**groupCount** | **Long** | indicates total number of backlinks from this domain<br>for example, if mode is set to one_per_domain, this field will indicate the total number of backlinks coming from this domain |[optional]|
-**isBroken** | **Boolean** | indicates whether the backlink is broken<br>if true, the backlink is pointing to a page responding with a 4xx or 5xx status code |[optional]|
-**urlToStatusCode** | **Integer** | status code of the referenced page<br>if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to<br>example:<br>200 |[optional]|
-**urlToSpamScore** | **Integer** | spam score of the referenced page<br>if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to<br>learn more about how the metric is calculated on this help center page |[optional]|
-**urlToRedirectTarget** | **String** | target url of the redirect<br>target page the redirect is pointing to |[optional]|
-**isIndirectLink** | **Boolean** | indicates whether the backlink is an indirect link<br>if true, the backlink is an indirect link pointing to a page that either redirects to url_to, or points to a canonical page |[optional]|
-**indirectLinkPath** | **List<BacklinksRedirectInfo>** | indirect link path<br>indicates a URL or a sequence of URLs that lead to url_to |[optional]|
+**domainFrom** | **String** | <em>domain referring to the target domain or webpage</em> |[optional]|
+**urlFrom** | **String** | <em>URL of the page where the backlink is found</em> |[optional]|
+**urlFromHttps** | **Boolean** | <em>indicates whether the referring URL is secured with HTTPS</em><br>if <code>true</code>, the referring URL is secured with HTTPS |[optional]|
+**domainTo** | **String** | <em>domain the backlink is pointing to</em> |[optional]|
+**urlTo** | **String** | <em>URL the backlink is pointing to</em> |[optional]|
+**urlToHttps** | **Boolean** | <em>indicates if the URL the backlink is pointing to is secured with HTTPS</em><br>if <code>true</code>, the URL is secured with HTTPS |[optional]|
+**tldFrom** | **String** | <em>top-level domain of the referring URL</em> |[optional]|
+**isNew** | **Boolean** | <em>indicates whether the backlink is new</em><br>if <code>true</code>, the backlink was found on the page last time our crawler visited it |[optional]|
+**isLost** | **Boolean** | <em>indicates whether the backlink was removed</em><br>if <code>true</code>, the backlink or the entire page was removed |[optional]|
+**backlinkSpamScore** | **Integer** | <em>spam score of the backlink</em><br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a> |[optional]|
+**rank** | **Integer** | <em>backlink rank</em><br><code>rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**pageFromRank** | **Integer** | <em>page rank of the referring page</em><br><code>page_from_rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**domainFromRank** | **Integer** | <em>domain rank of the referring domain</em><br>indicates the rank of the domain at the time our crawler last saw the backlink;<br><code>domain_from_rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**domainFromPlatformType** | **List<String>** | <em>platform types of the referring domain</em><p>possible values: <code>cms</code>, <code>blogs</code>, <code>ecommerce</code>, <code>message-boards</code>, <code>wikis</code>, <code>news</code>, <code>organization</code> |[optional]|
+**domainFromIsIp** | **Boolean** | <em>indicates if the domain is IP</em><br>if <code>true</code>, the domain functions as an IP address and does not have a domain name |[optional]|
+**domainFromIp** | **String** | <em>IP address of the referring domain</em> |[optional]|
+**domainFromCountry** | **String** | <em>ISO country code of the referring domain</em> |[optional]|
+**pageFromExternalLinks** | **Integer** | <em>number of external links found on the referring page</em> |[optional]|
+**pageFromInternalLinks** | **Integer** | <em>number of internal links found on the referring page</em> |[optional]|
+**pageFromSize** | **Integer** | <em>size of the referring page, in bytes</em><br>example:<br><code>63357</code> |[optional]|
+**pageFromEncoding** | **String** | <em>character encoding of the referring page</em><br>example:<br><code>utf-8</code> |[optional]|
+**pageFromLanguage** | **String** | <em>language of the referring page</em><br>in ISO 639-1 format<br>example:<br><code>en</code> |[optional]|
+**pageFromTitle** | **String** | <em>title of the referring page</em> |[optional]|
+**pageFromStatusCode** | **Integer** | <em>HTTP status code returned by the referring page</em><br>example:<br><code>200</code> |[optional]|
+**firstSeen** | **String** | <em>date and time when our crawler found the backlink for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**prevSeen** | **String** | <em>previous to the most recent date when our crawler visited the backlink</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**lastSeen** | **String** | <em>most recent date when our crawler visited the backlink</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**itemType** | **String** | <em>link type</em><br>possible values:<br><code>anchor</code>, <code>image</code>, <code>link</code>, <code>meta</code>, <code>canonical</code>, <code>alternate</code>, <code>redirect</code> |[optional]|
+**attributes** | **List<String>** | <em>link attributes of the referring links</em><br>example:<br><code>nofollow</code> |[optional]|
+**dofollow** | **Boolean** | <em>indicates whether the backlink is dofollow</em><br>if <code>false</code>, the backlink is nofollow |[optional]|
+**original** | **Boolean** | <em>indicates whether the backlink was present on the referring page when our crawler first visited it</em> |[optional]|
+**alt** | **String** | <em>alternative text of the image</em><br>this field will be <code>null</code> if backlink <code>type</code> is not image |[optional]|
+**anchor** | **String** | <em>anchor text of the backlink</em> |[optional]|
+**textPre** | **String** | <em>text snippet before the anchor text</em> |[optional]|
+**textPost** | **String** | <em>snippet after the anchor text</em> |[optional]|
+**semanticLocation** | **String** | <em>indicates semantic element in HTML where the backlink is found</em><br>you can get the full list of semantic elements <a href='https://www.w3schools.com/html/html5_semantic_elements.asp' target='_blank' rel='noopener noreferrer'>here</a><br>examples:<br><code>article</code>, <code>section</code>, <code>summary</code> |[optional]|
+**linksCount** | **Long** | <em>number of identical backlinks found on the referring page</em> |[optional]|
+**groupCount** | **Long** | <em>indicates total number of backlinks from this domain</em><br>for example, if <code>mode</code> is set to <code>one_per_domain</code>, this field will indicate the total number of backlinks coming from this domain |[optional]|
+**isBroken** | **Boolean** | <em>indicates whether the backlink is broken</em><br>if <code>true</code>, the backlink is pointing to a page responding with a 4xx or 5xx status code |[optional]|
+**urlToStatusCode** | **Integer** | <em>status code of the referenced page</em><br>if the value is <code>null</code>, our crawler hasn't yet visited the webpage the link is pointing to<br>example:<br><code>200</code> |[optional]|
+**urlToSpamScore** | **Integer** | <em>spam score of the referenced page</em><br>if the value is <code>null</code>, our crawler hasn't yet visited the webpage the link is pointing to<br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a> |[optional]|
+**urlToRedirectTarget** | **String** | <em>target url of the redirect</em><br>target page the redirect is pointing to |[optional]|
+**isIndirectLink** | **Boolean** | <em>indicates whether the backlink is an indirect link</em><br>if <code>true</code>, the backlink is an indirect link pointing to a page that either redirects to <code>url_to</code>, or points to a canonical page |[optional]|
+**indirectLinkPath** | **List<BacklinksRedirectInfo>** | <em>indirect link path</em><br>indicates a URL or a sequence of URLs that lead to <code>url_to</code> |[optional]|

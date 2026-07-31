@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataTrustpilotReviewsTaskGetResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataTrustpilotReviewsTaskGetResultInfo>** | <em>array of results</em> |[optional]|

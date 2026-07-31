@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveItem  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveItem  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleDomainRankOverviewLiveItem  {
   }
 
   /**
-   * ranking data relevant to the specified domain
+   * <em>ranking data relevant to the specified domain</em>
    * @return metrics
    */
   @javax.annotation.Nullable

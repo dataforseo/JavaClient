@@ -47,7 +47,7 @@ public class DataforseoLabsCategoriesResultInfo  {
   }
 
   /**
-   * category code
+   * <em>category code</em>
    * @return categoryCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsCategoriesResultInfo  {
   }
 
   /**
-   * full name of the category
+   * <em>full name of the category</em>
    * @return categoryName
    */
   @javax.annotation.Nullable
@@ -93,16 +93,7 @@ public class DataforseoLabsCategoriesResultInfo  {
   }
 
   /**
-   * the code of the superordinate category
-* example:
-* 'category_code': 10178,
-* 'category_name': 'Apparel Accessories',
-* 'category_code_parent': 10021
-* where category_code_parent
-* corresponds to:
-* 'category_code': 10021,
-* 'category_name': 'Apparel'
-* 'category_code_parent': null
+   * <em>the code of the superordinate category</em><br>example:<br>`'category_code': 10178`,<br>`'category_name': 'Apparel Accessories'`,<br>`'category_code_parent': 10021`<br>where `category_code_parent`<br>corresponds to: <br>`'category_code': 10021`,<br>`'category_name': 'Apparel'`<br>`'category_code_parent': null`
    * @return categoryCodeParent
    */
   @javax.annotation.Nullable

@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**year** | **Integer** | year |[optional]|
-**month** | **Integer** | month |[optional]|
-**keywordInfo** | **KeywordInfo** | historical data for the keyword |[optional]|
+**year** | **Integer** | <em>year</em> |[optional]|
+**month** | **Integer** | <em>month</em> |[optional]|
+**keywordInfo** | **KeywordInfo** | <em>historical data for the keyword</em> |[optional]|

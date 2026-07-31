@@ -47,8 +47,7 @@ public class BacklinksPageIntersectionLiveItem  {
   }
 
   /**
-   * contains data on pages that link to the corresponding targets specified in the POST array
-* data is provided in separate objects corresponding to pages specified in the targets object
+   * <em>contains data on pages that link to the corresponding targets specified in the POST array</em><br>data is provided in separate objects corresponding to pages specified in the <code>targets</code> object
    * @return pageIntersection
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class BacklinksPageIntersectionLiveItem  {
   }
 
   /**
-   * contains the page intersections summary
+   * <em>contains the page intersections summary</em>
    * @return summary
    */
   @javax.annotation.Nullable

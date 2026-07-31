@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleBulkTrafficEstimationLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleBulkTrafficEstimationLiveItem  {
   }
 
   /**
-   * target domain in a POST array
+   * <em>target domain in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleBulkTrafficEstimationLiveItem  {
   }
 
   /**
-   * traffic data relevant to the specified domain
+   * <em>traffic data relevant to the specified domain</em>
    * @return metrics
    */
   @javax.annotation.Nullable

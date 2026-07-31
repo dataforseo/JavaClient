@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksReferringDomainsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksReferringDomainsLiveResultInfo>** | <em>array of results</em> |[optional]|

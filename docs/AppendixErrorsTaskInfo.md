@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppendixErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<AppendixErrorsResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,15 +47,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * keyword
-* optional field
-* the keyword you specify is used to search for the list of hotels;
-* if you don’t use this field, we will return the list of hotels found in a specified location;
-* you can specify up to 700 characters in the keyword filed
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* Note: in order to obtain accurate search results, the location name is appended to the keyword automatically
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keyword</em><br>optional field<br>the keyword you specify is used to search for the list of hotels;<br>if you don't use this field, we will return the list of hotels found in a specified location;<br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> filed<br><strong>all %## will be decoded (plus character ‘+’ will be decoded to a space character)</strong><br>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”; <br><strong>Note:</strong> in order to obtain accurate search results, the location name is appended to the keyword automatically<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -78,13 +70,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations
-* example:
-* London,England,United Kingdom
-* Note: in order to obtain accurate search results, the location_name you specify will be automatically appended to the keyword
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify <code>location_code</code> or <code>location_coordinate</code></strong><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/business_data/google/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code><br><strong>Note:</strong> in order to obtain accurate search results, the <code>location_name</code> you specify will be automatically appended to the keyword
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -107,12 +93,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify <code>location_name</code>_or <code>location_coordinate</code></strong><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/business_data/google/locations</code><br>example:<br><code class='long-string'>2840</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -135,14 +116,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* Note: if the coordinates are used to set a location, the search will occur in the nearest settlement
-* example:
-* 53.476225,-2.243572
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify <code>location_name</code>_or <code>location_code</code></strong><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br><strong>Note</strong>: if the coordinates are used to set a location, the search will occur in the nearest settlement<br>example:<br><code class='long-string'>53.476225,-2.243572</code>n
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -165,13 +139,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * show hotels from the displayed area
-* optional field
-* can take the values: true, false
-* default value: true
-* if set to false the search_this_area mode will be turned off
-* Note: if the search_this_area mode is turned off, the location_name won’t be appended to the keyword during search
-* learn more about this parameter on our Help Center
+   * <em>show hotels from the displayed area</em><br>optional field<br>can take the values: <code>true</code>, <code>false</code><br>default value: <code>true</code><br>if set to <code>false</code> the <code>search_this_area</code> mode will be turned off<br><strong>Note:</strong> if the <code>search_this_area</code> mode is turned off, the <code>location_name</code> won't be appended to the <code>keyword</code> during search<br>learn more about this parameter <a href='https://dataforseo.com/help-center/how-to-use-search_this_area-parameter-in-google-hotel-searches' target='_blank'>on our Help Center</a>
    * @return searchThisArea
    */
   @javax.annotation.Nullable
@@ -194,12 +162,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify <code>language_code</code></strong><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages with <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/business_data/google/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -222,12 +185,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages
-* example:
-* en
+   * <em>search engine language code</em><br><strong>required field if you don't specify <code>language_name</code></strong><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code>_by making a separate request to <code>https://api.dataforseo.com/v3/business_data/google/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -250,14 +208,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results in Google Hotels
-* default value: 18 organic results
-* max value: 140
-* Note: your account will be billed per each 18 organic results regardless of paid listings in the response;
-* thus, setting a depth above 18 may result in additional charges if Google Hotels return more than 18 results;
-* if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+   * <em>parsing depth</em><br>optional field<br>number of results in Google Hotels<br>default value: <code>18</code> organic results<br>max value: <code>140</code><br><strong>Note:</strong> your account will be billed per each 18 organic results regardless of paid listings in the response;<br>thus, setting a depth above <code>18</code> may result in additional charges if Google Hotels return more than 18 results;<br>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
    * @return depth
    */
   @javax.annotation.Nullable
@@ -280,13 +231,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * check-in date
-* optional field
-* if you don’t specify this field, tomorrow’s date will be used by default;
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
-* Note: the value cannot precede the today’s date
+   * <em>check-in date</em><br>optional field<br>if you don't specify this field, tomorrow's date will be used by default;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code><br><strong>Note:</strong> the value cannot precede the today's date
    * @return checkIn
    */
   @javax.annotation.Nullable
@@ -309,14 +254,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * check-out date
-* optional field
-* if you don’t specify this field, our system will apply the date of two days from now by default;
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
-* Note: the value cannot be less than or equal to check_in;
-* the range between check_in and check_out values cannot exceed 30 days
+   * <em>check-out date</em><br>optional field<br>if you don't specify this field, our system will apply the date of two days from now by default;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code><br><strong>Note:</strong> the value cannot be less than or equal to <code>check_in</code>;<br>the range between <code>check_in</code> and <code>check_out</code> values cannot exceed 30 days
    * @return checkOut
    */
   @javax.annotation.Nullable
@@ -339,10 +277,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * currency
-* optional field
-* example:
-* 'USD'
+   * <em>currency</em><br>optional field<br>example:<br><code>'USD'</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -365,12 +300,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * number of adults
-* optional field
-* if you don’t specify this field, the default value of 2 will be applied;
-* note that you can specify up to 6 persons including both adults and children
-* example:
-* 1
+   * <em>number of adults</em><br>optional field<br>if you don't specify this field, the default value of <code>2</code> will be applied;<br><strong>note</strong> that you can specify up to 6 persons including both adults and children<br>example:<br><code>1</code>
    * @return adults
    */
   @javax.annotation.Nullable
@@ -393,15 +323,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * number and age of children
-* optional field
-* if you don’t specify this field, no children will be included in the search;
-* age of child can be from 0 to 17;
-* note that you can specify up to 6 persons including both adults and children
-* set the following value if you want to include one 14-year-old child:
-* [14]
-* set the following value if you want to include one 13-year-old child and one 8-year-old child:
-* [13,8]
+   * <em>number and age of children</em><br>optional field<br>if you don't specify this field, no children will be included in the search;<br>age of child can be from <code>0</code> to <code>17</code>;<br><strong>note</strong> that you can specify up to 6 persons including both adults and children<br>set the following value if you want to include one 14-year-old child:<br><code>[14]</code><br>set the following value if you want to include one 13-year-old child and one 8-year-old child:<br><code>[13,8]</code>
    * @return children
    */
   @javax.annotation.Nullable
@@ -424,11 +346,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * hotel stars
-* optional field
-* set this field to [5] if you want to get the list of 5-star hotels only
-* example:
-* [3,4,5]
+   * <em>hotel stars</em><br>optional field<br>set this field to <code>[5]</code> if you want to get the list of 5-star hotels only<br>example:<br><code>[3,4,5]</code>
    * @return stars
    */
   @javax.annotation.Nullable
@@ -451,11 +369,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * minimum rating
-* optional field
-* you can use this field to specify guest rating higher than a certain value
-* example:
-* 2.5
+   * <em>minimum rating</em><br>optional field<br>you can use this field to specify guest rating higher than a certain value<br>example:<br><code>2.5</code>
    * @return minRating
    */
   @javax.annotation.Nullable
@@ -478,15 +392,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * results sorting parameters
-* optional field
-* you can use this field to sort the results
-* possible types of sorting:
-* relevance – sort by most relevant
-* lowest_price – sort by the lowest price
-* highest_rating – sort by highest rating
-* most_reviewed – sort by most reviewed
-* default value: relevance
+   * <em>results sorting parameters</em><br>optional field<br>you can use this field to sort the results<br>possible types of sorting:<br><code>relevance</code> – sort by most relevant<br><code>lowest_price</code> – sort by the lowest price<br><code>highest_rating</code> – sort by highest rating<br><code>most_reviewed</code> – sort by most reviewed<br>default value: <code>relevance</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -509,11 +415,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * minimum price per night
-* optional field
-* the currency of this value depends on the currency field
-* example:
-* 100
+   * <em>minimum price per night</em><br>optional field<br>the currency of this value depends on the <code>currency</code> field<br>example:<br><code>100</code>
    * @return minPrice
    */
   @javax.annotation.Nullable
@@ -536,11 +438,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * maximum price per night
-* optional field
-* the currency of this value depends on the currency field
-* example:
-* 600
+   * <em>maximum price per night</em><br>optional field<br>the currency of this value depends on the <code>currency</code> field<br>example:<br><code>600</code>
    * @return maxPrice
    */
   @javax.annotation.Nullable
@@ -563,10 +461,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * hotels with a free cancellation
-* optional field
-* set this field to true if you want to get the list of hotels with free cancellation of reservations
-* default value: false
+   * <em>hotels with a free cancellation</em><br>optional field<br>set this field to <code>true</code> if you want to get the list of hotels with free cancellation of reservations<br>default value: <code>false</code>
    * @return freeCancellation
    */
   @javax.annotation.Nullable
@@ -589,10 +484,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * search for vacation rentals
-* optional field
-* set this field to true if you want to get the list of vacation rentals instead of hotels
-* default value: false
+   * <em>search for vacation rentals</em><br>optional field<br>set this field to <code>true</code> if you want to get the list of vacation rentals instead of hotels<br>default value: <code>false</code>
    * @return isVacationRentals
    */
   @javax.annotation.Nullable
@@ -615,34 +507,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * hotel amenities
-* optional field
-* you can use this field to specify different hotel amenities
-* example:
-*   [
-*             'free_parking',
-*             'pets_allowed'
-*         ]
-* 
-* possible values:
-* 'air_conditioning',
-* 'all_inclusive_available',
-* 'bar',
-* 'free_breakfast',
-* 'fitness_center',
-* 'kid_friendly',
-* 'free_parking',
-* 'pets_allowed',
-* 'pool',
-* 'restaurant',
-* 'room_service',
-* 'spa',
-* 'free_wifi',
-* 'parking',
-* 'indoor_pool',
-* 'outdoor_pool',
-* 'wheelchair_accessible',
-* 'beach_access'
+   * <em>hotel amenities</em><br>optional field<br>you can use this field to specify different hotel amenities<br>example:<br><code>  [<br>            'free_parking',<br>            'pets_allowed'<br>        ]<br></code><br>possible values:<br>`'air_conditioning',<br>'all_inclusive_available',<br>'bar',<br>'free_breakfast',<br>'fitness_center',<br>'kid_friendly',<br>'free_parking',<br>'pets_allowed',<br>'pool',<br>'restaurant',<br>'room_service',<br>'spa',<br>'free_wifi',<br>'parking',<br>'indoor_pool',<br>'outdoor_pool',<br>'wheelchair_accessible',<br>'beach_access'`
    * @return amenities
    */
   @javax.annotation.Nullable
@@ -665,11 +530,7 @@ public class BusinessDataGoogleHotelSearchesLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

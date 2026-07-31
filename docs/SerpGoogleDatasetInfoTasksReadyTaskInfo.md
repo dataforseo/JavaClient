@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleDatasetInfoTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleDatasetInfoTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

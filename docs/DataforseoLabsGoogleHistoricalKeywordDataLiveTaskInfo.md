@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleHistoricalKeywordDataLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleHistoricalKeywordDataLiveResultInfo>** | <em>array of results</em> |[optional]|

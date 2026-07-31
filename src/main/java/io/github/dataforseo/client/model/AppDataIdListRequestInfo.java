@@ -47,13 +47,7 @@ public class AppDataIdListRequestInfo  {
   }
 
   /**
-   * start time for filtering results
-* required field
-* if include_metadata is set to true, maximum value: a month from current datetime;
-* if include_metadata is set to false, maximum value: six months from current datetime;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2023-01-15 12:57:46 +00:00
+   * <em>start time for filtering results</em><br><strong>required field</strong><br>if <code>include_metadata</code> is set to <code>true</code>, maximum value: a month from current datetime;<br>if <code>include_metadata</code> is set to <code>false</code>, maximum value: six months from current datetime;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2023-01-15 12:57:46 +00:00</code>
    * @return datetimeFrom
    */
   @javax.annotation.Nullable
@@ -76,12 +70,7 @@ public class AppDataIdListRequestInfo  {
   }
 
   /**
-   * finish time for filtering results
-* required field
-* maximum value: current datetime;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2023-01-31 13:57:46 +00:00
+   * <em>finish time for filtering results</em><br><strong>required field</strong><br>maximum value: current datetime;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2023-01-31 13:57:46 +00:00</code>
    * @return datetimeTo
    */
   @javax.annotation.Nullable
@@ -104,10 +93,7 @@ public class AppDataIdListRequestInfo  {
   }
 
   /**
-   * the maximum number of returned task IDs
-* optional field
-* default value: 1000
-* maximum value: 1000
+   * <em>the maximum number of returned task IDs</em><br>optional field<br>default value: <code>1000</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -130,10 +116,7 @@ public class AppDataIdListRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned task IDs
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten tasks in the results array will be omitted
+   * <em>offset in the results array of returned task IDs</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten tasks in the results array will be omitted
    * @return offset
    */
   @javax.annotation.Nullable
@@ -156,10 +139,7 @@ public class AppDataIdListRequestInfo  {
   }
 
   /**
-   * sorting by task execution time
-* optional field
-* possible values: 'asc', 'desc'
-* default value: 'asc'
+   * <em>sorting by task execution time</em><br>optional field<br>possible values: <code>'asc'</code>, <code>'desc'</code><br>default value: <code>'asc'</code>
    * @return sort
    */
   @javax.annotation.Nullable
@@ -182,9 +162,7 @@ public class AppDataIdListRequestInfo  {
   }
 
   /**
-   * include task metadata in the respond
-* optional field
-* default value: false
+   * <em>include task metadata in the respond</em><br>optional field<br>default value: <code>false</code>
    * @return includeMetadata
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsIdListTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

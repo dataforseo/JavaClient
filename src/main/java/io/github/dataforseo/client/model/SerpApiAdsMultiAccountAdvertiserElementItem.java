@@ -47,7 +47,7 @@ public class SerpApiAdsMultiAccountAdvertiserElementItem  extends BaseSerpApiAds
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAdsMultiAccountAdvertiserElementItem  extends BaseSerpApiAds
   }
 
   /**
-   * advertiser location
+   * <em>advertiser location</em>
    * @return location
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class SerpApiAdsMultiAccountAdvertiserElementItem  extends BaseSerpApiAds
   }
 
   /**
-   * ads count
-* the approximate number of ads that are run by the advertiser across all available Google Ads platforms
+   * <em>ads count</em><br>the approximate number of ads that are run by the advertiser across all available Google Ads platforms
    * @return approxAdsCount
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class SerpApiAdsMultiAccountAdvertiserElementItem  extends BaseSerpApiAds
   }
 
   /**
-   * associated advertiser accounts
-* contains objects with data on associated advertiser accounts
+   * <em>associated advertiser accounts</em><br>contains objects with data on associated advertiser accounts
    * @return advertisers
    */
   @javax.annotation.Nullable

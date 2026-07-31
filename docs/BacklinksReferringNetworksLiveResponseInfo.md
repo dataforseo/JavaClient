@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BacklinksReferringNetworksLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BacklinksReferringNetworksLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

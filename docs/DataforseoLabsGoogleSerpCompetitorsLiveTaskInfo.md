@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleSerpCompetitorsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleSerpCompetitorsLiveResultInfo>** | <em>array of results</em> |[optional]|

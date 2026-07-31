@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BacklinksPageIntersectionLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BacklinksPageIntersectionLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

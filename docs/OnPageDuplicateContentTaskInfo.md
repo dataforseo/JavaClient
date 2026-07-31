@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageDuplicateContentResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageDuplicateContentResultInfo>** | <em>array of results</em> |[optional]|

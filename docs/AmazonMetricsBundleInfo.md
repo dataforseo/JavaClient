@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**amazonSerp** | **AppMetricsInfo** | ranking data from Amazon organic SERP |[optional]|
-**amazonPaid** | **AppMetricsInfo** | ranking data from Amazon paid SERP |[optional]|
+**amazonSerp** | **AppMetricsInfo** | <em>ranking data from Amazon organic SERP</em> |[optional]|
+**amazonPaid** | **AppMetricsInfo** | <em>ranking data from Amazon paid SERP</em> |[optional]|

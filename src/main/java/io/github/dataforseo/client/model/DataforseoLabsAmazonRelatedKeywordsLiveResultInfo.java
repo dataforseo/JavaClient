@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return seedKeyword
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * keyword data for the seed keyword
-* fields in the object are identical to that of keyword_data
+   * <em>keyword data for the seed keyword</em><br>fields in the object are identical to that of <code>keyword_data</code>
    * @return seedKeywordData
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -209,7 +208,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * contains objects with keywords and related data
+   * <em>contains objects with keywords and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

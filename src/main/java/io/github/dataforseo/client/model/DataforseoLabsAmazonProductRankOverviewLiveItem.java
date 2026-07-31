@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveItem  {
   }
 
   /**
-   * ASIN of the product
-* unique product identifier on Amazon;
-* for more information, refer to this help center guide
+   * <em>ASIN of the product</em><br>unique product identifier on Amazon;<br>for more information, refer to <a href='https://dataforseo.com/help-center/asin-in-amazon-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveItem  {
   }
 
   /**
-   * average keyword position of the product
+   * <em>average keyword position of the product</em>
    * @return metrics
    */
   @javax.annotation.Nullable

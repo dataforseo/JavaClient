@@ -93,8 +93,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * keyword data for the seed keyword
-* fields in this object are identical to those of the items array
+   * keyword data for the seed keywordfields in this object are identical to those of the items array
    * @return seedKeywordData
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * location code in a POST arrayif there is no data, then the value is_nulln
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -141,8 +139,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * language code in a POST arrayif there is no data, then the value is_nulln
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -234,9 +231,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * offset token for subsequent requests
-* you can use the string provided in this field to get the subsequent results of the initial task;
-* note: offset_token values are unique for each subsequent task
+   * offset token for subsequent requestsyou can use the string provided in this field to get the subsequent results of the initial task;note: offset_token values are unique for each subsequent task
    * @return offsetToken
    */
   @javax.annotation.Nullable

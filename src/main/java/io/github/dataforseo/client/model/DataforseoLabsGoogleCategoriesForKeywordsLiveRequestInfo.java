@@ -47,12 +47,7 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  {
   }
 
   /**
-   * target keywords
-* required field
-* UTF-8 encoding
-* maximum number of keywords you can specify in this array: 1000
-* the keywords will be converted to lowercase format
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keywords</em><br><strong>required field</strong><br>UTF-8 encoding<br>maximum number of keywords you can specify in this array: 1000<br>the keywords will be converted to lowercase format<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if don’t specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if don't specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -103,12 +93,7 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if don’t specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if don't specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -131,11 +116,7 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

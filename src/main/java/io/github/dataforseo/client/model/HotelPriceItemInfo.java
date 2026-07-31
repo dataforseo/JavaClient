@@ -70,7 +70,7 @@ public class HotelPriceItemInfo  {
   }
 
   /**
-   * title of the hotel
+   * <em>title of the hotel</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HotelPriceItemInfo  {
   }
 
   /**
-   * price per night
+   * <em>price per night</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class HotelPriceItemInfo  {
   }
 
   /**
-   * price currency
-* USD is applied by default, unless specified in the POST array
+   * <em>price currency</em><br><code>USD</code> is applied by default, unless specified in the POST array
    * @return currency
    */
   @javax.annotation.Nullable
@@ -188,9 +187,7 @@ public class HotelPriceItemInfo  {
   }
 
   /**
-   * indicates a paid hotel listing
-* if true, related hotel_search_item is a paid ad
-* if false, related hotel_search_item is an organic hotel listing
+   * <em>indicates a paid hotel listing</strong></em><br>if <code>true</code>, related <code>hotel_search_item</code> is a paid ad<br>if <code>false</code>, related <code>hotel_search_item</code> is an organic hotel listing
    * @return isPaid
    */
   @javax.annotation.Nullable

@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**id** | **String** | task identifier<br>unique task identifier in our system in the UUID format |[optional]|
-**datetime** | **String** | date and time when an error occurred<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**function** | **String** | corresponding API function |[optional]|
-**errorCode** | **Integer** | error code |[optional]|
-**errorMessage** | **String** | error message or error URL<br>error message (see full list) or URL that caused an error |[optional]|
-**httpUrl** | **String** | URL that caused an error<br>URL you used for making an API call |[optional]|
-**httpMethod** | **String** | HTTP method |[optional]|
-**httpCode** | **Integer** | HTTP status code |[optional]|
-**httpTime** | **Double** | time taken by HTTP request |[optional]|
-**httpResponse** | **String** | HTTP response<br>server response |[optional]|
+**id** | **String** | <em>task identifier</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**datetime** | **String** | <em>date and time when an error occurred</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**function** | **String** | <em>corresponding API function</em> |[optional]|
+**errorCode** | **Integer** | <em>error code</em> |[optional]|
+**errorMessage** | **String** | <em>error message or error URL</em><br>error message <a href='https://docs.dataforseo.com/v3/appendix/errors/' rel='noopener noreferrer' target='_blank'>(see full list)</a> or URL that caused an error |[optional]|
+**httpUrl** | **String** | <em>URL that caused an error</em><br>URL you used for making an API call |[optional]|
+**httpMethod** | **String** | <em>HTTP method</em> |[optional]|
+**httpCode** | **Integer** | <em>HTTP status code</em> |[optional]|
+**httpTime** | **Double** | <em>time taken by HTTP request</em> |[optional]|
+**httpResponse** | **String** | <em>HTTP response</em><br>server response |[optional]|

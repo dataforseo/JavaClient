@@ -47,7 +47,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,11 +93,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
   }
 
   /**
-   * the name of the superordinate location
-* example:
-* 'location_code': 9041134,
-* 'location_name': '90290,California,United States',
-* 'location_name_parent': 'California,United States'
+   * <em>the name of the superordinate location</em><br>example:<br><code>'location_code': 9041134,<br>'location_name': '90290,California,United States',<br>'location_name_parent': 'California,United States'</code>
    * @return locationNameParent
    */
   @javax.annotation.Nullable
@@ -120,7 +116,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
   }
 
   /**
-   * location type
+   * <em>location type</em>
    * @return locationType
    */
   @javax.annotation.Nullable

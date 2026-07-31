@@ -47,7 +47,7 @@ public class HtmlItemInfo  {
   }
 
   /**
-   * serial number of the returned HTML page
+   * <i>serial number of the returned HTML page</i>
    * @return page
    */
   @javax.annotation.Nullable
@@ -70,10 +70,7 @@ public class HtmlItemInfo  {
   }
 
   /**
-   * date and time when the HTML page was scanned
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the HTML page was scanned</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class HtmlItemInfo  {
   }
 
   /**
-   * HTML page
+   * <i>HTML</i> <i>page</i>
    * @return html
    */
   @javax.annotation.Nullable

@@ -221,6 +221,29 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public BingPaidSerpElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * 
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
+  }
+
+
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
   private List<AiModeImagesElementInfo> images;
@@ -435,6 +458,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
         Objects.equals(this.websiteName, bingPaidSerpElementItem.websiteName) &&
         Objects.equals(this.isImage, bingPaidSerpElementItem.isImage) &&
         Objects.equals(this.isVideo, bingPaidSerpElementItem.isVideo) &&
+        Objects.equals(this.checks, bingPaidSerpElementItem.checks) &&
         Objects.equals(this.images, bingPaidSerpElementItem.images) &&
         Objects.equals(this.highlighted, bingPaidSerpElementItem.highlighted) &&
         Objects.equals(this.extra, bingPaidSerpElementItem.extra) &&
@@ -452,7 +476,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, title, description, url, breadcrumb, websiteName, isImage, isVideo, images, highlighted, extra, descriptionRows, links, price, rating);
+  return Objects.hash(domain, title, description, url, breadcrumb, websiteName, isImage, isVideo, checks, images, highlighted, extra, descriptionRows, links, price, rating);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -475,6 +499,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
     sb.append("    websiteName: ").append(toIndentedString(websiteName)).append("\n");
     sb.append("    isImage: ").append(toIndentedString(isImage)).append("\n");
     sb.append("    isVideo: ").append(toIndentedString(isVideo)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
     sb.append("    highlighted: ").append(toIndentedString(highlighted)).append("\n");
     sb.append("    extra: ").append(toIndentedString(extra)).append("\n");
@@ -527,6 +552,8 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
     openapiFields.add("is_image");
     
     openapiFields.add("is_video");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("images");
     

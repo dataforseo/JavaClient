@@ -70,8 +70,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * absolute rank among all the listed apps
-* absolute position among all apps on the list
+   * <em>absolute rank among all the listed apps</em><br>absolute position among all apps on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values: left
+   * <em>the alignment of the element in SERP</em><br>can take the following values: <code>left</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * ID of the app
+   * <em>ID of the app</em>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * title of the app
+   * <em>title of the app</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * subtitle of the app
+   * <em>subtitle of the app</em>
    * @return subtitle
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * URL to the app page on App Store
+   * <em>URL to the app page on App Store</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -234,7 +231,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * URL to the app icon
+   * <em>URL to the app icon</em>
    * @return icon
    */
   @javax.annotation.Nullable
@@ -257,7 +254,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * description of the app
+   * <em>description of the app</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -280,7 +277,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * the total number of reviews of the app
+   * <em>the total number of reviews of the app</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -303,7 +300,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * average rating of the app
+   * <em>average rating of the app</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -326,7 +323,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * price of the app
+   * <em>price of the app</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -349,7 +346,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * indicates whether the app is free
+   * <em>indicates whether the app is free</em>
    * @return isFree
    */
   @javax.annotation.Nullable
@@ -372,7 +369,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * main category/genre of the app
+   * <em>main category/genre of the app</em>
    * @return mainCategory
    */
   @javax.annotation.Nullable
@@ -395,8 +392,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * all relevant categories/genres of the app
-* Note: this field returns only one relevant category in the array
+   * <em>all relevant categories/genres of the app</em><br><strong>Note:</strong> this field returns only one relevant category in the array
    * @return categories
    */
   @javax.annotation.Nullable
@@ -419,8 +415,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * languages supported in the app
-* Note: this field returns only one supported language in the array
+   * <em>languages supported in the app</em><br><strong>Note:</strong> this field returns only one supported language in the array
    * @return languages
    */
   @javax.annotation.Nullable
@@ -443,7 +438,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * age rating and age-based content advisories
+   * <em>age rating and age-based content advisories</em>
    * @return advisories
    */
   @javax.annotation.Nullable
@@ -466,7 +461,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * name of the app developer
+   * <em>name of the app developer</em>
    * @return developer
    */
   @javax.annotation.Nullable
@@ -489,7 +484,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * ID of the app developer
+   * <em>ID of the app developer</em>
    * @return developerId
    */
   @javax.annotation.Nullable
@@ -512,7 +507,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * URL to the developer page on App Store
+   * <em>URL to the developer page on App Store</em>
    * @return developerUrl
    */
   @javax.annotation.Nullable
@@ -535,7 +530,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * current version of the app
+   * <em>current version of the app</em>
    * @return version
    */
   @javax.annotation.Nullable
@@ -558,7 +553,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * minimum OS version required to install the app
+   * <em>minimum OS version required to install the app</em>
    * @return minimumOsVersion
    */
   @javax.annotation.Nullable
@@ -581,7 +576,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * size of the app
+   * <em>size of the app</em>
    * @return size
    */
   @javax.annotation.Nullable
@@ -604,11 +599,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * date and time when the app was released
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
-* Note: this field is deprecated and always returns null
+   * <em>date and time when the app was released</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code>2019-11-15 12:57:46 +00:00</code><br><strong>Note:</strong> this field is deprecated and always returns <code>null</code>
    * @return releasedDate
    */
   @javax.annotation.Nullable
@@ -631,10 +622,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * date and time when the app was last updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the app was last updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return lastUpdateDate
    */
   @javax.annotation.Nullable
@@ -657,8 +645,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * update notes
-* contains the latest update notes from the developer
+   * <em>update notes</em><br>contains the latest update notes from the developer
    * @return updateNotes
    */
   @javax.annotation.Nullable
@@ -681,8 +668,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * app images
-* contains URLs to the images used on the app page on App Store
+   * <em>app images</em><br>contains URLs to the images used on the app page on App Store
    * @return images
    */
   @javax.annotation.Nullable
@@ -705,8 +691,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * similar apps
-* displays apps similar to the app in a POST request
+   * <em>similar apps</em><br>displays apps similar to the app in a POST request
    * @return similarApps
    */
   @javax.annotation.Nullable
@@ -729,8 +714,7 @@ public class AppStoreInfoOrganic  {
   }
 
   /**
-   * similar apps
-* information about apps built by the same developer
+   * <em>similar apps</em><br>information about apps built by the same developer
    * @return moreAppsByDeveloper
    */
   @javax.annotation.Nullable

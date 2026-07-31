@@ -47,7 +47,7 @@ public class AppMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the product ranks #1
+   * <em>number of organic SERPs where the product ranks #1</em>
    * @return pos1
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the product ranks #2-3
+   * <em>number of organic SERPs where the product ranks #2-3</em>
    * @return pos23
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AppMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the product ranks #4-10
+   * <em>number of organic SERPs where the product ranks #4-10</em>
    * @return pos410
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AppMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the product ranks #11-100
+   * <em>number of organic SERPs where the product ranks #11-100</em>
    * @return pos11100
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AppMetricsInfo  {
   }
 
   /**
-   * total count of Amazon organic SERPs that contain the product
+   * <em>total count of Amazon organic SERPs that contain the product</em>
    * @return count
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AppMetricsInfo  {
   }
 
   /**
-   * total search volume of the product’s ranking keywords in organic SERP
+   * <em>total search volume of the product's ranking keywords in organic SERP</em>
    * @return searchVolume
    */
   @javax.annotation.Nullable

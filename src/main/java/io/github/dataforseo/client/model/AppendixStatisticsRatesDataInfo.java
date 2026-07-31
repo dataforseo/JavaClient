@@ -70,7 +70,7 @@ public class AppendixStatisticsRatesDataInfo  {
   }
 
   /**
-   * total amount of money deposited to your account
+   * <em>total amount of money deposited to your account</em>
    * @return total
    */
   @javax.annotation.Nullable
@@ -622,9 +622,7 @@ public class AppendixStatisticsRatesDataInfo  {
   }
 
   /**
-   * time period for grouping
-* day in the yyyy-MM-dd format
-* minute in the yyyy-MM-dd HH:mm format
+   * <em>time period for grouping</em><br><code>day</code>_in the yyyy-MM-dd format<br><code>minute</code>_in the yyyy-MM-dd HH:mm formatn
    * @return value
    */
   @javax.annotation.Nullable

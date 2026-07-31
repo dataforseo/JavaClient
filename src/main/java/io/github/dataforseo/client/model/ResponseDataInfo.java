@@ -47,7 +47,7 @@ public class ResponseDataInfo  {
   }
 
   /**
-   * author of the response
+   * <em>author of the response</em>
    * @return author
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class ResponseDataInfo  {
   }
 
   /**
-   * title of the response
-* in this case, will equal null
+   * <em>title of the response</em><br>in this case, will equal <code>null</code>
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class ResponseDataInfo  {
   }
 
   /**
-   * content of the response
+   * <em>content of the response</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -117,10 +116,7 @@ public class ResponseDataInfo  {
   }
 
   /**
-   * date and time when the response was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the response was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class ImageUrlInfo  {
   }
 
   /**
-   * URL of the image used in the review
+   * <em>URL of the image used in the review</em>
    * @return url
    */
   @javax.annotation.Nullable

@@ -211,7 +211,7 @@ public class SerpGoogleAiModeTaskPostResponseInfo  {
   }
 
   /**
-   * 
+   * <em>array of tasks</em>
    * @return tasks
    */
   @javax.annotation.Nullable

@@ -47,12 +47,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in this field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in this field<br><strong>all %## will be decoded (plus character ‘+’ will be decoded to a space character)</strong><br>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,11 +70,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.amazon.com/s/?field-keywords=shoes&language=en_US
+   * <em>direct URL of the search query</em><br>optional field<br>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.<br>example:<br><code class='long-string'>https://www.amazon.com/s/?field-keywords=shoes&language=en_US</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -102,13 +93,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/merchant/amazon-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -131,12 +116,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations with their location_name parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
-* example:
-* HA1,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with their <code>location_name</code> parameters by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/locations</code><br>example:<br><code class='long-string'>HA1,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -159,13 +139,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations with their location_code parameters by making a separate request to the
-* https://api.dataforseo.com/v3/merchant/amazon/locations
-* example:
-* 9045969
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with their <code>location_code</code> parameters by making a separate request to the<br><code>https://api.dataforseo.com/v3/merchant/amazon/locations</code><br>example:<br><code class='long-string'>9045969</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -188,14 +162,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 199.9
-* example:
-* 53.476225,-2.243572,200
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -218,13 +185,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with their language_name parameters by making a separate request to the
-* https://api.dataforseo.com/v3/merchant/amazon/languages
-* example:
-* English (United Kingdom)
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> parameters by making a separate request to the<br><code>https://api.dataforseo.com/v3/merchant/amazon/languages</code><br>example:<br><code class='long-string'>English (United Kingdom)</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -247,12 +208,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
-* example:
-* en_GB
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code>_parameters by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en_GB</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -275,12 +231,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine domain
-* optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
-* example:
-* amazon.com, amazon.co.uk, amazon.fr, etc.
+   * <em>search engine domain</em><br>optional field<br>we choose the relevant search engine domain automatically according to the location and language you specify<br>however, you can set a custom search engine domain in this field<br>example:<br><code><em>amazon.com</em></code>, <code><em>amazon.co.uk</em></code>, <code><em>amazon.fr</em></code>, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -303,14 +254,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results to be retrieved from the Amazon results page
-* default value: 100
-* max value: 700
-* Your account will be billed per each SERP containing up to 100 results;
-* Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of results to be retrieved from the Amazon results page<br>default value: <code>100</code><br>max value: <code>700</code><br><strong>Your account will be billed per each SERP containing up to 100 results;</strong> <br>Setting depth above 100 may result in additional charges if the search engine returns more than 100 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/merchant/amazon-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -333,12 +277,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * page crawl limit
-* optional field
-* number of search results pages to crawl
-* max value: 7
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
+   * <em>page crawl limit</em><br>optional field<br>number of search results pages to crawl<br>max value: <code>7</code><br><strong>Note:</strong> the <code>max_crawl_pages</code> and <code>depth</code> parameters complement each other;<br>learn more at <a href='https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work' rel='noopener noreferrer' target='_blank'>our help center</a>
    * @return maxCrawlPages
    */
   @javax.annotation.Nullable
@@ -361,10 +300,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * amazon product department
-* optional field
-* specify one of the following amazon departments for extracting product listings:
-* 'Arts & Crafts', 'Automotive', 'Baby', 'Beauty & Personal Care', 'Books', 'Computers', 'Digital Music', 'Electronics', 'Kindle Store', 'Prime Video', 'Women's Fashion', 'Men's Fashion', 'Girls' Fashion', 'Boys' Fashion', 'Deals', 'Health & Household', 'Home & Kitchen', 'Industrial & Scientific', 'Luggage', 'Movies & TV', 'Music, CDs & Vinyl', 'Pet Supplies', 'Software', 'Sports & Outdoors', 'Tools & Home Improvement', 'Toys & Games', 'Video Games'
+   * <em>amazon product department</em><br>optional field<br>specify one of the following amazon departments for extracting product listings:<br><code>'Arts & Crafts'</code>, <code>'Automotive'</code>, <code>'Baby'</code>, <code>'Beauty & Personal Care'</code>, <code>'Books'</code>, <code>'Computers'</code>, <code>'Digital Music'</code>, <code>'Electronics'</code>, <code>'Kindle Store'</code>, <code>'Prime Video'</code>, <code>'Women's Fashion'</code>, <code>'Men's Fashion'</code>, <code>'Girls' Fashion'</code>, <code>'Boys' Fashion'</code>, <code>'Deals'</code>, <code>'Health & Household'</code>, <code>'Home & Kitchen'</code>, <code>'Industrial & Scientific'</code>, <code>'Luggage'</code>, <code>'Movies & TV'</code>, <code>'Music, CDs & Vinyl'</code>, <code>'Pet Supplies'</code>, <code>'Software'</code>, <code>'Sports & Outdoors'</code>, <code>'Tools & Home Improvement'</code>, <code>'Toys & Games'</code>, <code>'Video Games'</code>
    * @return department
    */
   @javax.annotation.Nullable
@@ -387,19 +323,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * additional parameters of the search query
-* optional field
-* you can use the following Amazon search URL parameters for customizing the search
-* example:
-* &low-price=52 – search for products that cost more than 52 USD;
-* &high-price=45 – search for products that cost less than 45 USD;
-* &sort=relevancerank – sort results by relevance;
-* &sort=featured-rank – sort results by featured products;
-* &sort=price-asc-rank – sort by ascending price;
-* &sort=price-desc-rank – sort by descending price;
-* &sort=review-rank – sort by the average customer reviews value;
-* &sort=date-desc-rank – sort by the newest arrival
-* Note that search_param values will be ignored if any of the following parameters is used: price_min, price_max, sort_by
+   * <em>additional parameters of the search query</em><br>optional field<br>you can use the following Amazon search URL parameters for customizing the search<br>example:<br><code>&low-price=52</code> - search for products that cost <em>more than 52 USD</em>;<br><code>&high-price=45</code> - search for products that cost <em>less than 45 USD</em>;<br><code>&sort=relevancerank</code> - sort results by <em>relevance</em>;<br><code>&sort=featured-rank</code> - sort results by <em>featured</em> products;<br><code>&sort=price-asc-rank</code> - sort by <em>ascending price</em>;<br><code>&sort=price-desc-rank</code> - sort by <em>descending price</em>;<br><code>&sort=review-rank</code> - sort by the average <em>customer reviews</em> value;<br><code>&sort=date-desc-rank</code> - sort by the <em>newest arrival</em><br><strong>Note</strong> that <code>search_param</code> values will be ignored if any of the following parameters is used: <code>price_min</code>, <code>price_max</code>, <code>sort_by</code>
    * @return searchParam
    */
   @javax.annotation.Nullable
@@ -422,12 +346,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * minimum product price
-* optional field
-* minimum price of the returned products listed on Amazon for the specified query
-* example:
-* 5
-* Note: if you specify price_min, the search_param parameter will be ignored
+   * <em>minimum product price</em><br>optional field<br>minimum price of the returned products listed on Amazon for the specified query<br>example:<br><code>5</code><br><strong>Note:</strong> if you specify <code>price_min</code>, the <code>search_param</code> parameter will be ignored
    * @return priceMin
    */
   @javax.annotation.Nullable
@@ -450,12 +369,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * maximum product price
-* optional field
-* maximum price of the returned products listed on Amazon for the specified query
-* example:
-* 100
-* Note: if you specify price_max, the search_param parameter will be ignored
+   * <em>maximum product price</em><br>optional field<br>maximum price of the returned products listed on Amazon for the specified query<br>example:<br><code>100</code><br><strong>Note:</strong> if you specify <code>price_max</code>, the <code>search_param</code> parameter will be ignored
    * @return priceMax
    */
   @javax.annotation.Nullable
@@ -478,13 +392,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* the following sorting rules are supported:
-* relevance, price_low_to_high, price_high_to_low, featured, avg_customer_review, newest_arrival
-* example:
-* sort_by:'relevance'
-* Note: if you specify sort_by, the search_param parameter will be ignored
+   * <em>results sorting rules</em><br>optional field<br>the following sorting rules are supported:<br><code>relevance</code>, <code>price_low_to_high</code>, <code>price_high_to_low</code>, <code>featured</code>, <code>avg_customer_review</code>, <code>newest_arrival</code><br>example:<br><code>sort_by:'relevance'</code><br><strong>Note:</strong> if you specify <code>sort_by</code>, the <code>search_param</code> parameter will be ignored
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -507,11 +415,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -534,16 +438,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -566,11 +461,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* advanced, html
+   * <em>postback_url datatype</em><br><strong>required field if you specify <code>postback_url</code></strong><br>corresponds to the datatype that will be sent to your server<br>possible values:<br><code>advanced</code>, <code>html</code>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -593,16 +484,7 @@ public class MerchantAmazonProductsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

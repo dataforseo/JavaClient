@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**appId** | **String** | ID of the app |[optional]|
-**title** | **String** | title of the app |[optional]|
-**url** | **String** | URL to the app page on Google Play |[optional]|
+**appId** | **String** | <i>ID of the app</i> |[optional]|
+**title** | **String** | <i>title of the app</i> |[optional]|
+**url** | **String** | <i>URL to the app page on Google Play</i> |[optional]|

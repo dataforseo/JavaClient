@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleAutocompleteTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleAutocompleteTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

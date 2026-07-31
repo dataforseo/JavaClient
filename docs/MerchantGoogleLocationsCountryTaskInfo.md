@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantGoogleLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantGoogleLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

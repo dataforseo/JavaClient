@@ -236,7 +236,7 @@ public class SerpGoogleAutocompleteLiveAdvancedTaskInfo  {
   }
 
   /**
-   * 
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

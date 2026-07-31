@@ -47,7 +47,7 @@ public class AppendixMoneyData  {
   }
 
   /**
-   * total amount of money deposited to your account
+   * <em>total amount of money deposited to your account</em>
    * @return total
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppendixMoneyData  {
   }
 
   /**
-   * amount of money left in your account
+   * <em>amount of money left in your account</em>
    * @return balance
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AppendixMoneyData  {
   }
 
   /**
-   * cost limits
+   * <em>cost limits</em>
    * @return limits
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AppendixMoneyData  {
   }
 
   /**
-   * statistics of your spending
+   * <em>statistics of your spending</em>
    * @return statistics
    */
   @javax.annotation.Nullable

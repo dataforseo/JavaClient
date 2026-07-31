@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**itemsCount** | **Long** | number of items in the results array |[optional]|
-**items** | **List<SerpAiSummaryItem>** | items array |[optional]|
+**itemsCount** | **Long** | <em>number of items in the results array</em> |[optional]|
+**items** | **List<SerpAiSummaryItem>** | <em>items array</em> |[optional]|

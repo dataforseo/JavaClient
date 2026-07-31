@@ -47,7 +47,7 @@ public class ProductInformationRowProductInformationImageRowElementItem  extends
   }
 
   /**
-   * alternative text of the related product image
+   * <em>alternative text of the related product image</em>
    * @return alt
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ProductInformationRowProductInformationImageRowElementItem  extends
   }
 
   /**
-   * URL of the image
+   * <em>URL of the image</em>
    * @return url
    */
   @javax.annotation.Nullable

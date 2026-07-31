@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BacklinksTimeseriesNewLostSummaryLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BacklinksTimeseriesNewLostSummaryLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

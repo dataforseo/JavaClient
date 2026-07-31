@@ -268,6 +268,29 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
 
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public SerpApiGoogleSearchByImagesOrganicElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * 
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
+  }
+
+
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private String description;
@@ -667,6 +690,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
         Objects.equals(this.isFeaturedSnippet, serpApiGoogleSearchByImagesOrganicElementItem.isFeaturedSnippet) &&
         Objects.equals(this.isMalicious, serpApiGoogleSearchByImagesOrganicElementItem.isMalicious) &&
         Objects.equals(this.isWebStory, serpApiGoogleSearchByImagesOrganicElementItem.isWebStory) &&
+        Objects.equals(this.checks, serpApiGoogleSearchByImagesOrganicElementItem.checks) &&
         Objects.equals(this.description, serpApiGoogleSearchByImagesOrganicElementItem.description) &&
         Objects.equals(this.preSnippet, serpApiGoogleSearchByImagesOrganicElementItem.preSnippet) &&
         Objects.equals(this.extendedSnippet, serpApiGoogleSearchByImagesOrganicElementItem.extendedSnippet) &&
@@ -691,7 +715,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp);
+  return Objects.hash(domain, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, checks, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -716,6 +740,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
     sb.append("    isFeaturedSnippet: ").append(toIndentedString(isFeaturedSnippet)).append("\n");
     sb.append("    isMalicious: ").append(toIndentedString(isMalicious)).append("\n");
     sb.append("    isWebStory: ").append(toIndentedString(isWebStory)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    preSnippet: ").append(toIndentedString(preSnippet)).append("\n");
     sb.append("    extendedSnippet: ").append(toIndentedString(extendedSnippet)).append("\n");
@@ -781,6 +806,8 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
     openapiFields.add("is_malicious");
     
     openapiFields.add("is_web_story");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("description");
     

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**text** | **String** | text of the description |[optional]|
-**links** | **List<LinkElement>** | links featured in the ‘dataset_description’ |[optional]|
+**text** | **String** | <em>text of the description</em> |[optional]|
+**links** | **List<LinkElement>** | <em>links featured in the 'dataset_description'</em> |[optional]|

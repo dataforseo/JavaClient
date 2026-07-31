@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleEventsTaskPostTaskInfo>** |  |[optional]|
+**tasks** | **List<SerpGoogleEventsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

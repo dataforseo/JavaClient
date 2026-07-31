@@ -47,8 +47,7 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
   }
 
   /**
-   * array of items with relevant traffic estimation data
+   * <em>array of items with relevant traffic estimation data</em>
    * @return items
    */
   @javax.annotation.Nullable

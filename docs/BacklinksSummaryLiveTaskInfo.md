@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksSummaryLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksSummaryLiveResultInfo>** | <em>array of results</em> |[optional]|

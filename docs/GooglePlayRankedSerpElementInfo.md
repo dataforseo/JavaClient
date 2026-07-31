@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**serpItem** | **GooglePlaySearchOrganic** | contains data on the SERP element<br>the list of supported SERP elements can be found below |[optional]|
-**checkUrl** | **String** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
-**seResultsCount** | **Integer** | number of search results for the returned keyword |[optional]|
-**lastUpdatedTime** | **String** | date and time when keyword data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**previousUpdatedTime** | **String** | previous to the most recent date and time when SERP data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-10-15 12:57:46 +00:00;<br>in this case, will equal null |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**serpItem** | **GooglePlaySearchOrganic** | <em>contains data on the SERP element</em><br>the list of supported SERP elements can be found below |[optional]|
+**checkUrl** | **String** | <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results |[optional]|
+**seResultsCount** | **Integer** | <em>number of search results for the returned keyword</em> |[optional]|
+**lastUpdatedTime** | **String** | <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**previousUpdatedTime** | **String** | <em>previous to the most recent date and time when SERP data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-10-15 12:57:46 +00:00</code>;<br>in this case, will equal null |[optional]|

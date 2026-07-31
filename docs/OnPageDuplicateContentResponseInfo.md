@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageDuplicateContentTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<OnPageDuplicateContentTaskInfo>** | <em>array of tasks</em> |[optional]|

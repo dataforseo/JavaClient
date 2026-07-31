@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsIdListResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsIdListResultInfo>** | <em>array of results</em> |[optional]|

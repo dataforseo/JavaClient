@@ -70,7 +70,7 @@ public class AppendixDayLimitsRatesData  {
   }
 
   /**
-   * total amount of money deposited to your account
+   * <em>total amount of money deposited to your account</em>
    * @return total
    */
   @javax.annotation.Nullable

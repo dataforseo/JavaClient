@@ -70,7 +70,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * Amazon domain
+   * <em>Amazon domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * the URL of the product page
+   * <em>the URL of the product page</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * URL of the product image featured in the results
+   * <em>URL of the product image featured in the results</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * number of product purchases in the past month
+   * <em>number of product purchases in the past month</em>
    * @return boughtPastMonth
    */
   @javax.annotation.Nullable
@@ -208,9 +208,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * the regular price of a product
-* example:
-* 49.98
+   * <em>the regular price of a product</em><br>example:<br><code>49.98</code>
    * @return priceFrom
    */
   @javax.annotation.Nullable
@@ -233,9 +231,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * the upper limit of the product price range
-* example:
-* 384.99
+   * <em>the upper limit of the product price range</em><br>example:<br><code>384.99</code>
    * @return priceTo
    */
   @javax.annotation.Nullable
@@ -258,9 +254,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * currency in the ISO format
-* example:
-* USD
+   * <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -283,8 +277,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * special offer details
-* contains special offer details, including coupon and Subscribe & Save discounts
+   * <em>special offer details</em><br>contains special offer details, including coupon and Subscribe & Save discounts
    * @return specialOffers
    */
   @javax.annotation.Nullable
@@ -307,10 +300,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * unique product identifier on Amazon
-* note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon
-* example:
-* B07G82D89J
+   * <em>unique product identifier on Amazon</em><br>note that there is no full list of possible values as the <code>data_asin</code> is a dynamic value assigned by Amazon<br>example:<br><code>B07G82D89J</code>
    * @return dataAsin
    */
   @javax.annotation.Nullable
@@ -333,7 +323,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * product rating info
+   * <em>product rating info</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -356,8 +346,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * “Amazon’s choice” label
-* if the value is true, the product is marked with the “Amazon’s choice” label
+   * <em>'Amazon's choice' label</em><br>if the value is <code>true</code>, the product is marked with the 'Amazon's choice' label
    * @return isAmazonChoice
    */
   @javax.annotation.Nullable
@@ -380,8 +369,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * “Best Seller” label
-* if the value is true, the product is marked with the “Best Seller” label
+   * <em>'Best Seller' label</em><br>if the value is <code>true</code>, the product is marked with the 'Best Seller' label
    * @return isBestSeller
    */
   @javax.annotation.Nullable
@@ -404,8 +392,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * delivery information
-* delivery information including free and fast delivery date ranges
+   * <em>delivery information</em><br>delivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable
@@ -428,9 +415,7 @@ public class AmazonSerpElement  {
   }
 
   /**
-   * product labels
-* array containing an object with main Amazon labels’ information
-* if the product contains no labels, the value will be null
+   * <em>product labels</em><br>array containing an object with main Amazon labels’ information<br>if the product contains no labels, the value will be <code>null</code>
    * @return labels
    */
   @javax.annotation.Nullable

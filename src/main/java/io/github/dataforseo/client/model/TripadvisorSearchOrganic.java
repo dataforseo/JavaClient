@@ -70,8 +70,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * absolute rank among all the listed results
-* absolute position among all reviews on the list
+   * <em>absolute rank among all the listed results</em><br>absolute position among all reviews on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * name of the business entity
+   * <em>name of the business entity</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -141,9 +139,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * URL path of the business entity
-* URL path to the Tripadvisor page of the business entity
-* you can use this identifier to collect reviews for the business entity using Tripadvisor Reviews
+   * <em>URL path of the business entity</em><br>URL path to the Tripadvisor page of the business entity<br>you can use this identifier to collect reviews for the business entity using <a href='/v3/business_data/tripadvisor/reviews/task_post/' rel='noopener noreferrer' target='_blank'>Tripadvisor Reviews</a>
    * @return urlPath
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * indicates a sponsored placement
-* if true, related tripadvisor_search_organic item is a paid advertising on Tripadvisor
+   * <em>indicates a sponsored placement</em><br>if <code>true</code>, related <code>tripadvisor_search_organic</code> item is a paid advertising on Tripadvisor
    * @return isSponsored
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * the total number of reviews
+   * <em>the total number of reviews</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * place category
+   * <em>place category</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * average price rate
+   * <em>average price rate</em>
    * @return priceRate
    */
   @javax.annotation.Nullable
@@ -259,7 +254,7 @@ public class TripadvisorSearchOrganic  {
   }
 
   /**
-   * the rating score of the establishment submitted by the reviewers
+   * <em>the rating score of the establishment submitted by the reviewers</em>
    * @return rating
    */
   @javax.annotation.Nullable

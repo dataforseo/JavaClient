@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpBaiduLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<SerpBaiduLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

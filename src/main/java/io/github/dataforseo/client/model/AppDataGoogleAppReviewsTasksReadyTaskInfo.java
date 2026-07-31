@@ -236,7 +236,7 @@ public class AppDataGoogleAppReviewsTasksReadyTaskInfo  {
   }
 
   /**
-   * array of results
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

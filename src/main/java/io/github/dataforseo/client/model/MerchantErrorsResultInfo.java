@@ -47,8 +47,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * task identifier
-* unique task identifier in our system in the UUID format
+   * <em>task identifier</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,10 +70,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * date and time when an error occurred
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when an error occurred</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -97,7 +93,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * corresponding API function
+   * <em>corresponding API function</em>
    * @return function
    */
   @javax.annotation.Nullable
@@ -120,7 +116,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * error code
+   * <em>error code</em>
    * @return errorCode
    */
   @javax.annotation.Nullable
@@ -143,8 +139,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * error message or error URL
-* error message (see full list) or URL that caused an error
+   * <em>error message or error URL</em><br>error message <a href='https://docs.dataforseo.com/v3/appendix/errors/' rel='noopener noreferrer' target='_blank'>(see full list)</a> or URL that caused an error
    * @return errorMessage
    */
   @javax.annotation.Nullable
@@ -167,8 +162,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * URL that caused an error
-* URL you used for making an API call or pingback/postback URL
+   * <em>URL that caused an error</em><br>URL you used for making an API call or pingback/postback URL
    * @return httpUrl
    */
   @javax.annotation.Nullable
@@ -191,7 +185,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * HTTP method
+   * <em>HTTP method</em>
    * @return httpMethod
    */
   @javax.annotation.Nullable
@@ -214,7 +208,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * HTTP status code
+   * <em>HTTP status code</em>
    * @return httpCode
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * time taken by HTTP request
-* for tasks set with a pingback/postback, this field will show the time it took your server to respond
+   * <em>time taken by HTTP request</em><br>for tasks set with a pingback/postback, this field will show the time it took your server to respond
    * @return httpTime
    */
   @javax.annotation.Nullable
@@ -261,8 +254,7 @@ public class MerchantErrorsResultInfo  {
   }
 
   /**
-   * HTTP response
-* server response
+   * <em>HTTP response</em><br>server response
    * @return httpResponse
    */
   @javax.annotation.Nullable

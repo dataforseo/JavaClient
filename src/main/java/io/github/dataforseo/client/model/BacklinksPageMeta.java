@@ -47,7 +47,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * page title
+   * <em>page title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * canonical page
+   * <em>canonical page</em>
    * @return canonical
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * number of internal links on the page
+   * <em>number of internal links on the page</em>
    * @return internalLinksCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * number of external links on the page
+   * <em>number of external links on the page</em>
    * @return externalLinksCount
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * number of images on the page
+   * <em>number of images on the page</em>
    * @return imagesCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * number of words on the page
+   * <em>number of words on the page</em>
    * @return wordsCount
    */
   @javax.annotation.Nullable
@@ -185,8 +185,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * spam score of the page
-* learn more about how the metric is calculated on this help center page
+   * <em>spam score of the page</em><br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a>
    * @return pageSpamScore
    */
   @javax.annotation.Nullable
@@ -209,9 +208,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * array of social media tags found on the page
-* contains social media tags and their content
-* supported tags include but are not limited to Open Graph and Twitter card
+   * <em>array of social media tags found on the page</em><br>contains social media tags and their content<br>supported tags include but are not limited to <a href='https://ogp.me/'>Open Graph</a> and <a href='https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started'>Twitter card</a>
    * @return socialMediaTags
    */
   @javax.annotation.Nullable
@@ -234,8 +231,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * h1 tag
-* content of h1 tags
+   * <em>h1 tag</em><br>content of <code>h1</code> tags
    * @return h1
    */
   @javax.annotation.Nullable
@@ -258,8 +254,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * h2 tag
-* content of h2 tags
+   * <em>h2 tag</em><br>content of <code>h2</code> tags
    * @return h2
    */
   @javax.annotation.Nullable
@@ -282,8 +277,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * h3 tag
-* content of h3 tags
+   * <em>h3 tag</em><br>content of <code>h3</code> tags
    * @return h3
    */
   @javax.annotation.Nullable
@@ -306,7 +300,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * content of alt tags
+   * <em>content of <code>alt</code> tags</em>
    * @return imagesAlt
    */
   @javax.annotation.Nullable
@@ -329,7 +323,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * CMS details
+   * <em>CMS details</em>
    * @return poweredBy
    */
   @javax.annotation.Nullable
@@ -352,9 +346,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * page content language
-* example:
-* en
+   * <em>page content language</em><br>example:<br><code>en</code>
    * @return language
    */
   @javax.annotation.Nullable
@@ -377,9 +369,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * character encoding
-* examples:
-* utf-8
+   * <em>character encoding</em><br>examples:<br><code>utf-8</code>
    * @return charset
    */
   @javax.annotation.Nullable
@@ -402,7 +392,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * type of a platform
+   * <em>type of a platform</em>
    * @return platformType
    */
   @javax.annotation.Nullable
@@ -425,7 +415,7 @@ public class BacklinksPageMeta  {
   }
 
   /**
-   * website technologies
+   * <em>website technologies</em>
    * @return technologies
    */
   @javax.annotation.Nullable

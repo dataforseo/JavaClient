@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleJobsTaskGetHtmlTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpGoogleJobsTaskGetHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

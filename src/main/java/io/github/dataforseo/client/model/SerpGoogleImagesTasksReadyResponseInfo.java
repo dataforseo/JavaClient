@@ -211,7 +211,7 @@ public class SerpGoogleImagesTasksReadyResponseInfo  {
   }
 
   /**
-   * array of tasks
+   * <em>array of tasks</em>
    * @return tasks
    */
   @javax.annotation.Nullable

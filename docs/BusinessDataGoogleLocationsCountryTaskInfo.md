@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataGoogleLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataGoogleLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

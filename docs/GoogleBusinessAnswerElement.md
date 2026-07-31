@@ -6,11 +6,11 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**answerId** | **String** | ID of the answer |[optional]|
-**profileImageUrl** | **String** | URL of the user’s profile image |[optional]|
-**profileUrl** | **String** | URL of the user’s profile |[optional]|
-**profileName** | **String** | displayed name of the user |[optional]|
-**answerText** | **String** | current text of the answer |[optional]|
-**originalAnswerText** | **String** | original text of the answer |[optional]|
-**timeAgo** | **String** | estimated time when the answer was posted |[optional]|
-**timestamp** | **String** | exact time when the answer was posted |[optional]|
+**answerId** | **String** | <em>ID of the answer</em> |[optional]|
+**profileImageUrl** | **String** | <em>URL of the user's profile image</em> |[optional]|
+**profileUrl** | **String** | <em>URL of the user's profile</em> |[optional]|
+**profileName** | **String** | <em>displayed name of the user</em> |[optional]|
+**answerText** | **String** | <em>current text of the answer</em> |[optional]|
+**originalAnswerText** | **String** | <em>original text of the answer</em> |[optional]|
+**timeAgo** | **String** | <em>estimated time when the answer was posted</em> |[optional]|
+**timestamp** | **String** | <em>exact time when the answer was posted</em> |[optional]|

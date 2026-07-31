@@ -47,7 +47,7 @@ public class BacklinksReferringNetworksLiveResultInfo  {
   }
 
   /**
-   * target in a POST array
+   * <em><code>target</code> in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksReferringNetworksLiveResultInfo  {
   }
 
   /**
-   * total number of relevant items in the database
+   * <em>total number of relevant items in the database</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksReferringNetworksLiveResultInfo  {
   }
 
   /**
-   * number of items in the items array
+   * <em>number of items in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BacklinksReferringNetworksLiveResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

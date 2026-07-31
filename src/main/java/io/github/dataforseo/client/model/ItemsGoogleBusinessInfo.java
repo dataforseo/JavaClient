@@ -70,8 +70,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * absolute rank among all the elements
+   * <em>absolute rank among all the elements</em>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * the alignment in SERP
+   * <em>the alignment in SERP</em>
    * @return position
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * title of the element in SERP
-* the name of the business entity for which the results are collected
+   * <em>title of the element in SERP</em><br>the name of the business entity for which the results are collected
    * @return title
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * original title of the element
-* original title not translated by Google
+   * <em>original title of the element</em><br>original title not translated by Google
    * @return originalTitle
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * description of the element in SERP
-* the description of the business entity for which the results are collected
+   * <em>description of the element in SERP</em><br>the description of the business entity for which the results are collected
    * @return description
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * business category
-* Google My Business general category that best describes the services provided by the business entity
+   * <em>business category</em><br>Google My Business general category that best describes the services provided by the business entity
    * @return category
    */
   @javax.annotation.Nullable
@@ -236,8 +231,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * global category IDs
-* universal category IDs that do not change based on the selected country
+   * <em>global category IDs</em><br>universal category IDs that do not change based on the selected country
    * @return categoryIds
    */
   @javax.annotation.Nullable
@@ -260,8 +254,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * additional business categories
-* additional Google My Business categories that describe the services provided by the business entity in more detail
+   * <em>additional business categories</em><br>additional Google My Business categories that describe the services provided by the business entity in more detail
    * @return additionalCategories
    */
   @javax.annotation.Nullable
@@ -284,10 +277,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment;
-* can be used with Google Reviews API to get a full list of reviews
-* learn more about the identifier in this help center article
+   * <em>google-defined client id</em><br>unique id of a local establishment;<br>can be used with <a href='/v3/reviews/google/overview/?php' target='_blank' rel='noopener noreferrer'>Google Reviews API</a> to get a full list of reviews<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -310,8 +300,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * the unique identifier of the element in SERP
-* learn more about the identifier in this help center article
+   * <em>the unique identifier of the element in SERP</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -334,7 +323,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * address of the business entity
+   * <em>address of the business entity</em>
    * @return address
    */
   @javax.annotation.Nullable
@@ -357,7 +346,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * object containing address components of the business entity
+   * <em>object containing address components of the business entity</em>
    * @return addressInfo
    */
   @javax.annotation.Nullable
@@ -380,9 +369,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * unique place identifier
-* place id of the local establishment featured in the element
-* learn more about the identifier in this help center article
+   * <em>unique place identifier</em><br><a href='https://developers.google.com/places/place-id'>place id</a> of the local establishment featured in the element<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return placeId
    */
   @javax.annotation.Nullable
@@ -405,7 +392,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * phone number of the business entity
+   * <em>phone number of the business entity</em>
    * @return phone
    */
   @javax.annotation.Nullable
@@ -428,7 +415,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * absolute url of the business entity
+   * <em>absolute url of the business entity</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -451,7 +438,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * URL of the preferred contact page
+   * <em>URL of the preferred contact page</em>
    * @return contactUrl
    */
   @javax.annotation.Nullable
@@ -474,7 +461,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * URL of the user’s or entity’s Local Guides profile, if available
+   * <em>URL of the user's or entity's Local Guides profile, if available</em>
    * @return contributorUrl
    */
   @javax.annotation.Nullable
@@ -497,8 +484,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * URL in the ‘book online’ button of the element
-* URL directing users to the online booking or order page of the business entity
+   * <em>URL in the 'book online' button of the element</em><br>URL directing users to the online booking or order page of the business entity
    * @return bookOnlineUrl
    */
   @javax.annotation.Nullable
@@ -521,7 +507,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * domain of the business entity
+   * <em>domain of the business entity</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -544,7 +530,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * URL of the logo featured in Google My Business profile
+   * <em>URL of the logo featured in Google My Business profile</em>
    * @return logo
    */
   @javax.annotation.Nullable
@@ -567,7 +553,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * URL of the main image featured in Google My Business profile
+   * <em>URL of the main image featured in Google My Business profile</em>
    * @return mainImage
    */
   @javax.annotation.Nullable
@@ -590,7 +576,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * total count of images featured in Google My Business profile
+   * <em>total count of images featured in Google My Business profile</em>
    * @return totalPhotos
    */
   @javax.annotation.Nullable
@@ -613,7 +599,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * additional information on the business entity
+   * <em>additional information on the business entity</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -636,9 +622,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * latitude coordinate of the local establishments in google maps
-* example:
-* 'latitude': 51.584091
+   * <i>latitude coordinate of the local establishments in google maps</i><br>example:<br><code>'latitude': 51.584091</code>
    * @return latitude
    */
   @javax.annotation.Nullable
@@ -661,9 +645,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * longitude coordinate of the local establishment in google maps
-* example:
-* 'longitude': -0.31365919999999997
+   * <i>longitude coordinate of the local establishment in google maps</i><br>example:<br><code>'longitude': -0.31365919999999997</code>
    * @return longitude
    */
   @javax.annotation.Nullable
@@ -686,7 +668,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * shows whether the entity is verified by its owner on Google Maps
+   * <i>shows whether the entity is verified by its owner on Google Maps</i>
    * @return isClaimed
    */
   @javax.annotation.Nullable
@@ -709,8 +691,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * service details in a form of user-reviewed checks;
-* service details of a business entity displayed in a form of checks and based on user feedback and business category
+   * <em>service details in a form of user-reviewed checks;</em><br>service details of a business entity displayed in a form of checks and based on user feedback and business <code>category</code>
    * @return attributes
    */
   @javax.annotation.Nullable
@@ -733,13 +714,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * keywords mentioned in customer reviews
-* contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword
-* example: 
-* 'place_topics': {
-* 'egg roll': 48,
-* 'birthday': 33
-* }
+   * <em>keywords mentioned in customer reviews</em><br>contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword<br>example:<br> <code><br>'place_topics': {<br>'egg roll': 48,<br>'birthday': 33<br>}</code>
    * @return placeTopics
    */
   @javax.annotation.Nullable
@@ -762,8 +737,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the element's rating </em><br>the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -786,9 +760,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * hotel class rating
-* class ratings range between 1-5 stars, learn more
-* if there is no hotel class rating information, the value will be null
+   * <em>hotel class rating</em><br>class ratings range between 1-5 stars, <a href='https://support.google.com/business/answer/7660515?hl=en' rel='noopener noreferrer' target='_blank'>learn more</a><br>if there is no hotel class rating information, the value will be <code>null</code>
    * @return hotelRating
    */
   @javax.annotation.Nullable
@@ -811,9 +783,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * property price level
-* can take values: inexpensive, moderate, expensive, very_expensive
-* if there is no price level information, the value will be null
+   * <em>property price level</em><br>can take values: <code>inexpensive</code>, <code>moderate</code>, <code>expensive</code>, <code>very_expensive</code><br>if there is no price level information, the value will be <code>null</code>
    * @return priceLevel
    */
   @javax.annotation.Nullable
@@ -836,8 +806,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * the distribution of ratings of the business entity
-* the object displays the number of 1-star to 5-star ratings, as reviewed by users
+   * <em>the distribution of ratings of the business entity</em><br>the object displays the number of 1-star to 5-star ratings, as reviewed by users
    * @return ratingDistribution
    */
   @javax.annotation.Nullable
@@ -860,7 +829,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * related business entities
+   * <em>related business entities</em>
    * @return peopleAlsoSearch
    */
   @javax.annotation.Nullable
@@ -883,8 +852,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * work time details
-* information related to operational hours of the business entity
+   * <em>work time details</em><br>information related to operational hours of the business entity
    * @return workTime
    */
   @javax.annotation.Nullable
@@ -907,8 +875,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * popular times
-* information related to busy hours of the business entity
+   * <em>popular times</em><br>information related to busy hours of the business entity
    * @return popularTimes
    */
   @javax.annotation.Nullable
@@ -931,8 +898,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * available interactions with the business
-* list of options to interact with the business directly from search results
+   * <em>available interactions with the business</em><br>list of options to interact with the business directly from search results
    * @return localBusinessLinks
    */
   @javax.annotation.Nullable
@@ -955,10 +921,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * business establishment is a part of the directory
-* indicates whether the business establishment is a part of the directory;
-* if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);
-* note: if the business establishment is a parent item in the directory, the value will be null
+   * <em>business establishment is a part of the directory</em><br>indicates whether the business establishment is a part of the directory;<br>if <code>true</code>, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);<br><strong>note:</strong> if the business establishment is a parent item in the directory, the value will be <code>null</code>
    * @return isDirectoryItem
    */
   @javax.annotation.Nullable
@@ -981,8 +944,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * items of the directory
-* includes information about businesses that are located within the target business establishment and have the same address
+   * <em>items of the directory</em><br>includes information about businesses that are located within the target business establishment and have the same address
    * @return directory
    */
   @javax.annotation.Nullable
@@ -1005,7 +967,7 @@ public class ItemsGoogleBusinessInfo  {
   }
 
   /**
-   * list of services offered by the business
+   * <em>list of services offered by the business</em>
    * @return services
    */
   @javax.annotation.Nullable

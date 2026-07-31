@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AppendixErrorsTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AppendixErrorsTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -93,8 +93,7 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveResultInfo  {
   }
 
   /**
-   * keyword data for the seed keyword
-* fields in the array are identical to that of keyword_data
+   * keyword data for the seed keywordfields in the array are identical to that of keyword_data
    * @return seedKeywordData
    */
   @javax.annotation.Nullable

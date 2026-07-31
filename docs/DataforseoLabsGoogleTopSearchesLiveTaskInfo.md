@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleTopSearchesLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleTopSearchesLiveResultInfo>** | <em>array of results</em> |[optional]|

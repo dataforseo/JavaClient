@@ -47,7 +47,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * your login
+   * <em>your login</em>
    * @return login
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * your time zone
-* can be set in your profile settings
+   * <em>your time zone</em><br><strong>can be set in your profile settings</strong>
    * @return timezone
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * your API rates
+   * <em>your API rates</em>
    * @return rates
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * section of your spending, USD
+   * <em>section of your spending, USD</em>
    * @return money
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * pricing
+   * <em>pricing</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -163,12 +162,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * expiry date of the backlinks api subscription
-* date and time when the current subscription to Backlinks API expires;
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-06-15 12:57:46 +00:00
-* Note: if there is no active subscription to Backlinks API, the value equals null
+   * <em>expiry date of the backlinks api subscription</em><br>date and time when the current subscription to Backlinks API expires;<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2025-06-15 12:57:46 +00:00</code><br><strong>Note:</strong> if there is no active subscription to Backlinks API, the value equals <code>null</code>
    * @return backlinksSubscriptionExpiryDate
    */
   @javax.annotation.Nullable
@@ -191,12 +185,7 @@ public class AppendixUserDataResultInfo  {
   }
 
   /**
-   * expiry date of the llm mentions api subscription
-* date and time when the current subscription to LLM Mentions API expires;
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2026-02-28 14:01:38 +00:00
-* Note: if there is no active subscription to LLM Mentions API, the value equals null
+   * <em>expiry date of the llm mentions api subscription</em><br>date and time when the current subscription to LLM Mentions API expires;<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2026-02-28 14:01:38 +00:00</code><br><strong>Note:</strong> if there is no active subscription to LLM Mentions API, the value equals <code>null</code>
    * @return llmMentionsSubscriptionExpiryDate
    */
   @javax.annotation.Nullable

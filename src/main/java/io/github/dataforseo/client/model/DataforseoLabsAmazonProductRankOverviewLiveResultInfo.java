@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class DataforseoLabsAmazonProductRankOverviewLiveResultInfo  {
   }
 
   /**
-   * contains detected Amazon product competitors and related data
+   * <em>contains detected Amazon product competitors and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -70,8 +70,7 @@ public class MapsSearch  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from the rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from the <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class MapsSearch  {
   }
 
   /**
-   * absolute rank among all the elements
+   * <em>absolute rank among all the elements</em>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class MapsSearch  {
   }
 
   /**
-   * domain of the business entity
+   * <em>domain of the business entity</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class MapsSearch  {
   }
 
   /**
-   * directory title
-* can take the following values: At this place, Directory
+   * <em>directory title</em><br>can take the following values: <code>At this place</code>, <code>Directory</code>
    * @return title
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class MapsSearch  {
   }
 
   /**
-   * URL to view the menu
+   * <em>URL to view the menu</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -187,8 +185,7 @@ public class MapsSearch  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the element's rating </em><br>the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -235,7 +232,7 @@ public class MapsSearch  {
   }
 
   /**
-   * additional information about the business entity
+   * <em>additional information about the business entity</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -258,7 +255,7 @@ public class MapsSearch  {
   }
 
   /**
-   * address of the business entity
+   * <em>address of the business entity</em>
    * @return address
    */
   @javax.annotation.Nullable
@@ -281,7 +278,7 @@ public class MapsSearch  {
   }
 
   /**
-   * object containing address components of the business entity
+   * <em>object containing address components of the business entity</em>
    * @return addressInfo
    */
   @javax.annotation.Nullable
@@ -304,9 +301,7 @@ public class MapsSearch  {
   }
 
   /**
-   * unique place identifier
-* place id of the local establishment featured in the element
-* learn more about the identifier in this help center article
+   * <em>unique place identifier</em><br><a href='https://developers.google.com/places/place-id'>place id</a> of the local establishment featured in the element<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return placeId
    */
   @javax.annotation.Nullable
@@ -329,7 +324,7 @@ public class MapsSearch  {
   }
 
   /**
-   * phone number of the business entity
+   * <em>phone number of the business entity</em>
    * @return phone
    */
   @javax.annotation.Nullable
@@ -352,7 +347,7 @@ public class MapsSearch  {
   }
 
   /**
-   * URL of the main image featured in Google My Business profile
+   * <em>URL of the main image featured in Google My Business profile</em>
    * @return mainImage
    */
   @javax.annotation.Nullable
@@ -375,7 +370,7 @@ public class MapsSearch  {
   }
 
   /**
-   * total count of images featured in Google My Business profile
+   * <em>total count of images featured in Google My Business profile</em>
    * @return totalPhotos
    */
   @javax.annotation.Nullable
@@ -398,8 +393,7 @@ public class MapsSearch  {
   }
 
   /**
-   * business category
-* Google My Business general category that best describes the services provided by the business entity
+   * <em>business category</em><br>Google My Business general category that best describes the services provided by the business entity
    * @return category
    */
   @javax.annotation.Nullable
@@ -422,8 +416,7 @@ public class MapsSearch  {
   }
 
   /**
-   * additional business categories
-* additional Google My Business categories that describe the services provided by the business entity in more detail
+   * <em>additional business categories</em><br>additional Google My Business categories that describe the services provided by the business entity in more detail
    * @return additionalCategories
    */
   @javax.annotation.Nullable
@@ -446,9 +439,7 @@ public class MapsSearch  {
   }
 
   /**
-   * property price level
-* can take values: inexpensive, moderate, expensive, very_expensive
-* if there is no price level information, the value will be null
+   * <em>property price level</em><br>can take values: <code>inexpensive</code>, <code>moderate</code>, <code>expensive</code>, <code>very_expensive</code><br>if there is no price level information, the value will be <code>null</code>
    * @return priceLevel
    */
   @javax.annotation.Nullable
@@ -471,9 +462,7 @@ public class MapsSearch  {
   }
 
   /**
-   * hotel class rating
-* class ratings range between 1-5 stars, learn more
-* if there is no hotel class rating information, the value will be null
+   * <em>hotel class rating</em><br>class ratings range between 1-5 stars, <a href='https://support.google.com/business/answer/7660515?hl=en' rel='noopener noreferrer' target='_blank'>learn more</a><br>if there is no hotel class rating information, the value will be <code>null</code>
    * @return hotelRating
    */
   @javax.annotation.Nullable
@@ -496,8 +485,7 @@ public class MapsSearch  {
   }
 
   /**
-   * global category IDs
-* universal category IDs that do not change based on the selected country
+   * <em>global category IDs</em><br>universal category IDs that do not change based on the selected country
    * @return categoryIds
    */
   @javax.annotation.Nullable
@@ -520,8 +508,7 @@ public class MapsSearch  {
   }
 
   /**
-   * open hours
-* information about work hours of the local establishment
+   * <em>open hours</em><br>information about work hours of the local establishment
    * @return workHours
    */
   @javax.annotation.Nullable
@@ -544,8 +531,7 @@ public class MapsSearch  {
   }
 
   /**
-   * the unique identifier of the element in SERP
-* learn more about the identifier in this help center article
+   * <em>the unique identifier of the element in SERP</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -568,10 +554,7 @@ public class MapsSearch  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment;
-* can be used with Google Reviews API to get a full list of reviews
-* learn more about the identifier in this help center article
+   * <em>google-defined client id</em><br>unique id of a local establishment;<br>can be used with <a href='/v3/reviews/google/overview/?php' target='_blank' rel='noopener noreferrer'>Google Reviews API</a> to get a full list of reviews<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -594,9 +577,7 @@ public class MapsSearch  {
   }
 
   /**
-   * latitude coordinate of the local establishments in google maps
-* example:
-* 'latitude': 51.584091
+   * <i>latitude coordinate of the local establishments in google maps</i><br>example:<br><code>'latitude': 51.584091</code>
    * @return latitude
    */
   @javax.annotation.Nullable
@@ -619,9 +600,7 @@ public class MapsSearch  {
   }
 
   /**
-   * longitude coordinate of the local establishment in google maps
-* example:
-* 'longitude': -0.31365919999999997
+   * <i>longitude coordinate of the local establishment in google maps</i><br>example:<br><code>'longitude': -0.31365919999999997</code>
    * @return longitude
    */
   @javax.annotation.Nullable
@@ -644,7 +623,7 @@ public class MapsSearch  {
   }
 
   /**
-   * shows whether the entity is verified by its owner on Google Maps
+   * <i>shows whether the entity is verified by its owner on Google Maps</i>
    * @return isClaimed
    */
   @javax.annotation.Nullable
@@ -667,8 +646,7 @@ public class MapsSearch  {
   }
 
   /**
-   * Google local justifications
-* snippets of text that “justify” why the business is showing up for search query
+   * <em>Google local justifications</em><br>snippets of text that “justify” why the business is showing up for search query
    * @return localJustifications
    */
   @javax.annotation.Nullable
@@ -691,10 +669,7 @@ public class MapsSearch  {
   }
 
   /**
-   * business establishment is a part of the directory
-* indicates whether the business establishment is a part of the directory;
-* if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);
-* note: if the business establishment is a parent item in the directory, the value will be null
+   * <em>business establishment is a part of the directory</em><br>indicates whether the business establishment is a part of the directory;<br>if <code>true</code>, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);<br><strong>note:</strong> if the business establishment is a parent item in the directory, the value will be <code>null</code>
    * @return isDirectoryItem
    */
   @javax.annotation.Nullable

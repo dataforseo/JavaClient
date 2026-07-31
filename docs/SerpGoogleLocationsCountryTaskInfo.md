@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

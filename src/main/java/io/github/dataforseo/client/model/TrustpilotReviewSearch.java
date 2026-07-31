@@ -70,8 +70,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * absolute rank among all the listed reviews
-* absolute position among all reviews on the list
+   * <em>absolute rank among all the listed reviews</em><br>absolute position among all reviews on the list
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * the alignment of the review in SERP
-* can take the following values: right
+   * <em>the alignment of the review in SERP</em><br>can take the following values: <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * the URL of the review
+   * <em>the URL of the review</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * the rating score submitted by the reviewer
+   * <em>the rating score submitted by the reviewer</em>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * indicates whether the review has the “Verified” mark
+   * <em>indicates whether the review has the 'Verified' mark</em>
    * @return verified
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * the language of the review
+   * <em>the language of the review</em>
    * @return language
    */
   @javax.annotation.Nullable
@@ -234,10 +231,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * date and time when a review was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when a review was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -260,7 +254,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * the title of the review
+   * <em>the title of the review</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -283,7 +277,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * the content of the review
+   * <em>the content of the review</em>
    * @return reviewText
    */
   @javax.annotation.Nullable
@@ -306,9 +300,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * images submitted by the reviewer
-* displays URLs to the images provided by the author of the review;
-* please note that Trustpilot doesn’t allow adding images to reviews, so the review_images parameter will always equal null
+   * <em>images submitted by the reviewer</em><br>displays URLs to the images provided by the author of the review;<br><strong>please note</strong> that Trustpilot doesn't allow adding images to reviews, so the <code>review_images</code> parameter will always equal <code>null</code>
    * @return reviewImages
    */
   @javax.annotation.Nullable
@@ -331,7 +323,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * user profile of the reviewer
+   * <em>user profile of the reviewer</em>
    * @return userProfile
    */
   @javax.annotation.Nullable
@@ -354,7 +346,7 @@ public class TrustpilotReviewSearch  {
   }
 
   /**
-   * owner’s response to the submitted review
+   * <em>owner's response to the submitted review</em>
    * @return responses
    */
   @javax.annotation.Nullable

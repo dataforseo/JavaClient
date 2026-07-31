@@ -47,10 +47,7 @@ public class AppendixPriorityTasksReadyKeywordsDataPriceDataInfo  {
   }
 
   /**
-   * charge type
-* can take the following values:
-* per_result – charge for every row in the result array
-* per_request – charge for a GET or POST request
+   * <em>charge type</em><br>can take the following values:<br><code>per_result</code>_- charge for every row in the <code>result</code> array<br><code>per_request</code>_- charge for a GET or POST requestn
    * @return costType
    */
   @javax.annotation.Nullable
@@ -73,7 +70,7 @@ public class AppendixPriorityTasksReadyKeywordsDataPriceDataInfo  {
   }
 
   /**
-   * cost, USD
+   * <em>cost, USD</em>
    * @return cost
    */
   @javax.annotation.Nullable

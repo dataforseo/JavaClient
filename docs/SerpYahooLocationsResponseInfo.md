@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpYahooLocationsTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpYahooLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

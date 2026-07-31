@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataTripadvisorLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataTripadvisorLanguagesResultInfo>** | <em>array of results</em> |[optional]|

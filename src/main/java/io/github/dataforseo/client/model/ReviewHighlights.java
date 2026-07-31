@@ -47,7 +47,7 @@ public class ReviewHighlights  {
   }
 
   /**
-   * reviewed feature
+   * <em>reviewed feature</em>
    * @return feature
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ReviewHighlights  {
   }
 
   /**
-   * feature assessment
+   * <em>feature assessment</em>
    * @return assessment
    */
   @javax.annotation.Nullable

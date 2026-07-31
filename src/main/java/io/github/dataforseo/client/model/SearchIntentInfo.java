@@ -70,8 +70,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * main search intent
-* possible values: informational, navigational, commercial, transactional
+   * main search intentpossible values: informational, navigational, commercial, transactional
    * @return mainIntent
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * supplementary search intents
-* possible values: informational, navigational, commercial, transactional
+   * supplementary search intentspossible values: informational, navigational, commercial, transactional
    * @return foreignIntent
    */
   @javax.annotation.Nullable
@@ -118,10 +116,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * date and time when keyword data was updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable

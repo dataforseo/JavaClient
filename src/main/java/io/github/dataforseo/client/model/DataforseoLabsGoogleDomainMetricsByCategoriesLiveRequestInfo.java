@@ -47,10 +47,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * product and service categories
-* required field
-* The maximum number of categories you can specify: 5
-* you can download the full list of possible categories
+   * <em>product and service categories</em><br><strong>required field</strong><br>The maximum number of categories you can specify: 5<br>you can download <a href='https://cdn.dataforseo.com/v3/categories/categories_dataforseo_labs_2023_10_25.csv'>the full list of possible categories</a>
    * @return categoryCodes
    */
   @javax.annotation.Nullable
@@ -73,16 +70,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * first date of comparison period
-* required field
-* first date for which domain metrics will be provided;
-* date format: 'yyyy-mm-dd';
-* example: '2021-06-01';
-* the list available dates is available through the available history endpoint;
-* Note: first_date cannot be greater than today’s date;
-* Also note: the dates specified in first_date and second_date cannot point to the same month of the same year;
-* you can specify the dates in any order: first_date can be greater than second_date and vice versa;
-* minimum date: '2020-10-01'
+   * <em>first date of comparison period</em><br><strong>required field</strong><br>first date for which domain metrics will be provided;<br>date format: <code>'yyyy-mm-dd'</code>;<br>example: <code>'2021-06-01'</code>;<br>the list available dates is available through the <a href='/v3/dataforseo_labs/google/available_history/live/' rel='noopener noreferrer' target='_blank'>available history endpoint</a>;<br><strong>Note:</strong> <code>first_date</code> cannot be greater than today's date;<br><strong>Also note:</strong> the dates specified in <code>first_date</code> and <code>second_date</code> cannot point to the same month of the same year;<br>you can specify the dates in any order: <code>first_date</code> can be greater than <code>second_date</code> and vice versa;<br>minimum date: <code>'2020-10-01'</code>
    * @return firstDate
    */
   @javax.annotation.Nullable
@@ -105,16 +93,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * second date of comparison period
-* required field
-* second date for which domain metrics will be provided;
-* date format: 'yyyy-mm-dd';
-* example: '2021-10-01';
-* the list available dates is available through the available history endpoint;
-* Note: second_date cannot be greater than today’s date;
-* Also note: the dates specified in first_date and second_date cannot point to the same month of the same year;
-* you can specify the dates in any order: second_date can be greater than first_date and vice versa;
-* minimum date: '2020-10-01'
+   * <em>second date of comparison period</em><br><strong>required field</strong><br>second date for which domain metrics will be provided;<br>date format: <code>'yyyy-mm-dd'</code>;<br>example: <code>'2021-10-01'</code>;<br>the list available dates is available through the <a href='/v3/dataforseo_labs/google/available_history/live/' rel='noopener noreferrer' target='_blank'>available history endpoint</a>;<br><strong>Note:</strong> <code>second_date</code> cannot be greater than today's date;<br><strong>Also note:</strong> the dates specified in <code>first_date</code> and <code>second_date</code> cannot point to the same month of the same year;<br>you can specify the dates in any order: <code>second_date</code> can be greater than <code>first_date</code> and vice versa;<br>minimum date: <code>'2020-10-01'</code>
    * @return secondDate
    */
   @javax.annotation.Nullable
@@ -137,13 +116,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code;
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code>;<br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -166,13 +139,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * unique location identifier
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code;
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* example:
-* 2840
+   * <em>unique location identifier</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code>;<br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -195,13 +162,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code;
-* you can receive the list of available languages with their language_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code>;<br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to<br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -224,12 +185,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * unique language identifier
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code;
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* example:
-* en
+   * <em>unique language identifier</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code>;<br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -252,14 +208,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * display results by item type
-* optional field
-* indicates the type of search results included in the response;
-* Note: if the item_types array contains item types that are different from the organic object, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response;
-* possible values:
-* ['organic', 'paid', 'featured_snippet', 'local_pack'];
-* default value:
-* ['organic', 'paid']
+   * <em>display results by item type</em><br>optional field<br>indicates the type of search results included in the response;<p><strong>Note:</strong> if the <code>item_types</code> array contains item types that are different from the <code>organic</code> object, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response;<p>possible values: <br><code>['organic', 'paid', 'featured_snippet', 'local_pack']</code>;<br>default value: <br><code>['organic', 'paid']</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -282,13 +231,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * number of additional domain categories
-* optional field
-* by using this parameter, you can receive domains relevant to additional categories that are not specified in category_codes above;
-* to learn more about the parameter, please refer to this help center article;
-* by default, top_categories_count is equal to the number of categories specified in the category_codes array;
-* Note: top_categories_count cannot be less than the number of categories in the category_codes array;
-* maximum value: 5
+   * <em>number of additional domain categories</em><br>optional field<br>by using this parameter, you can receive domains relevant to additional categories that are not specified in <code>category_codes</code> above;<br>to learn more about the parameter, please refer to <a href='https://dataforseo.com/help-center/what-is-top_categories_count' rel='noopener noreferrer' target='_blank'>this help center article;</a><br>by default, <code>top_categories_count</code> is equal to the number of categories specified in the <code>category_codes</code> array;<br><strong>Note:</strong> <code>top_categories_count</code> cannot be less than the number of categories in the <code>category_codes</code> array;<br>maximum value: <code>5</code>
    * @return topCategoriesCount
    */
   @javax.annotation.Nullable
@@ -311,11 +254,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * return subdomains in the API response
-* optional field
-* if false, the API response will contain main_domain only;
-* if true, the API will return main_domain plus its subdomains (if available);
-* default value: true
+   * <em>return subdomains in the API response</em><br>optional field<br>if <code>false</code>, the API response will contain <code>main_domain</code> only;<br>if <code>true</code>, the API will return <code>main_domain</code> plus its subdomains (if available);<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -338,9 +277,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * minimum current organic ETV of the domain
-* optional field
-* if specified, the API will return only domains with organic_etv greater than the specified value
+   * <em>minimum current organic ETV of the domain</em><br>optional field<br>if specified, the API will return only domains with <code>organic_etv</code> greater than the specified value
    * @return etvMin
    */
   @javax.annotation.Nullable
@@ -363,9 +300,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * maximum current organic ETV of the domain
-* optional field
-* if specified, the API will return only domains with organic_etv lesser than the specified value
+   * <em>maximum current organic ETV of the domain</em><br>optional field<br>if specified, the API will return only domains with <code>organic_etv</code> lesser than the specified value
    * @return etvMax
    */
   @javax.annotation.Nullable
@@ -388,12 +323,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * correlate data with previously obtained datasets
-* optional field
-* default value: true;
-* if you use this parameter, our system will correlate data you obtain now with previously obtained datasets;
-* this parameter is intended to mitigate any inconsistencies that may result from changes to our database;
-* Note: we do not recommend setting correlate to false
+   * <em>correlate data with previously obtained datasets</em><br>optional field<br>default value: <code>true</code>;<br>if you use this parameter, our system will correlate data you obtain now with previously obtained datasets;<br>this parameter is intended to mitigate any inconsistencies that may result from changes to our database;<br><strong>Note:</strong> we do not recommend setting <code>correlate</code> to <code>false</code>
    * @return correlate
    */
   @javax.annotation.Nullable
@@ -416,10 +346,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of domains in the results array
-* optional field
-* default value: 100;
-* maximum value: 1000
+   * <em>the maximum number of domains in the results array</em><br>optional field<br>default value: <code>100</code>;<br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -442,10 +369,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned domains
-* optional field
-* default value: 0;
-* if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains
+   * <em>offset in the results array of returned domains</em><br>optional field<br>default value: <code>0</code>;<br>if you specify the <code>10</code> value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains
    * @return offset
    */
   @javax.annotation.Nullable
@@ -468,16 +392,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum);
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, match, not_match, ilike, not_ilike, like, not_like;
-* you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters;
-* example:
-* ['metrics_history.202110.organic.pos_1', '>', 15];
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong>;<br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>match</code>, <code>not_match</code>, <code>ilike</code>, <code>not_ilike</code>, <code>like</code>, <code>not_like</code>;<br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code>, as well as <code>ilike</code> and <code>not_ilike</code> to match any string of zero or more characters;<br>example:<br><code>['metrics_history.202110.organic.pos_1', '>', 15]</code>;<br>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' target='_blank' rel='noopener noreferrer'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -500,20 +415,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results;
-* default rule: ['organic_etv,desc'];
-* possible sorting types:
-* asc – results will be sorted in ascending order
-* desc – results will be sorted in descending order;
-* you should use a comma to set up a sorting type;
-* example:
-* ['organic_count,desc'];
-* note that you can set no more than three sorting rules in a single request;
-* you should use a comma to separate several sorting rules;
-* example:
-* ['organic_etv,desc','organic_count,asc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results;<br>default rule: <code>['organic_etv,desc']</code>;<br>possible sorting types:<br><code>asc</code> - results will be sorted in ascending order<br><code>desc</code> - results will be sorted in descending order;<br>you should use a comma to set up a sorting type;<br>example:<br><code>['organic_count,desc']</code>;<br><strong>note that you can set no more than three sorting rules in a single request</strong>;<br>you should use a comma to separate several sorting rules;<br>example:<br><code>['organic_etv,desc','organic_count,asc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -536,11 +438,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255;
-* you can use this parameter to identify the task and match it with the result;
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em>;<br>you can use this parameter to identify the task and match it with the result;<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

@@ -47,10 +47,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * domain, subdomain or webpage to get data for
-* required field
-* a domain or a subdomain should be specified without https:// and www.
-* a page should be specified with absolute URL (including http:// or https://)
+   * <em>domain, subdomain or webpage to get data for</em><br><strong>required field</strong><br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,10 +70,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains of the <code>target</code> will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -99,11 +93,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * indicates if indirect links to the target will be included in the results
-* optional field
-* if set to true, the results will include data on indirect links pointing to a page that either redirects to the target, or points to a canonical page
-* if set to false, indirect links will be ignored
-* default value: true
+   * <em>indicates if indirect links to the <code>target</code> will be included in the results</em><br>optional field<br>if set to <code>true</code>, the results will include data on indirect links pointing to a page that either redirects to the target, or points to a canonical page<br>if set to <code>false</code>, indirect links will be ignored<br>default value: <code>true</code>
    * @return includeIndirectLinks
    */
   @javax.annotation.Nullable
@@ -126,11 +116,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * indicates if internal backlinks from subdomains to the target will be excluded from the results
-* optional field
-* if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target
-* if set to false, internal links will be included in the results
-* default value: true
+   * <em>indicates if internal backlinks from subdomains to the <code>target</code> will be excluded from the results</em><br>optional field<br>if set to <code>true</code>, the results will not include data on internal backlinks from subdomains of the same domain as <code>target</code><br>if set to <code>false</code>, internal links will be included in the results<br>default value: <code>true</code>
    * @return excludeInternalBacklinks
    */
   @javax.annotation.Nullable
@@ -153,16 +139,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* referring_links_tld
-* referring_links_types
-* referring_links_attributes
-* referring_links_platform_types
-* referring_links_semantic_locations
-* default value: 10
-* maximum value: 1000
+   * <em>maximum number of elements within internal arrays</em><br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br><code>referring_links_tld</code><br><code>referring_links_types</code><br><code>referring_links_attributes</code><br><code>referring_links_platform_types</code><br><code>referring_links_semantic_locations</code><p>default value: <code>10</code><br>maximum value: <code>1000</code>
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -185,14 +162,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * set what backlinks to return and count
-* optional field
-* you can use this field to choose what backlinks will be returned and used for aggregated metrics for your target;
-* possible values:
-* all – all backlinks will be returned and counted;
-* live – backlinks found during the last check will be returned and counted;
-* lost – lost backlinks will be returned and counted;
-* default value: live
+   * <em>set what backlinks to return and count</em><br>optional field<br>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your <code>target</code>;<br>possible values: <br><code>all</code> - all backlinks will be returned and counted;<br><code>live</code> - backlinks found during the last check will be returned and counted;<br><code>lost</code> - lost backlinks will be returned and counted;<p>default value: <code>live</code>
    * @return backlinksStatusType
    */
   @javax.annotation.Nullable
@@ -215,13 +185,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * filter the backlinks of your target
-* optional field
-* you can use this field to filter the initial backlinks that will be included in the dataset for aggregated metrics for your target
-* you can filter the backlinks by all fields available in the response of this endpoint
-* using this parameter, you can include only dofollow backlinks in the response and create a flexible backlinks dataset to calculate the metrics for
-* example:
-* 'backlinks_filters': ['dofollow', '=', true]
+   * <em>filter the backlinks of your <code>target</code></em><br>optional field<br>you can use this field to filter the initial backlinks that will be included in the dataset for aggregated metrics for your <code>target</code><br>you can filter the backlinks by all fields available in the response of <a href='/v3/backlinks/backlinks/live'>this endpoint</a><br>using this parameter, you can include only dofollow backlinks in the response and create a flexible backlinks dataset to calculate the metrics for<br>example:<br><code>'backlinks_filters': ['dofollow', '=', true]</code>
    * @return backlinksFilters
    */
   @javax.annotation.Nullable
@@ -244,14 +208,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>rank</code>, <code>domain_from_rank</code>, and <code>page_from_rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works and how ranking metrics are calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -274,11 +231,7 @@ public class BacklinksSummaryLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

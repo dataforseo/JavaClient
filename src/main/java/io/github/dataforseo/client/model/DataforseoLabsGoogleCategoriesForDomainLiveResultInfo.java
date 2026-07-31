@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * target domain or subdomain in a POST array
+   * <em>target domain or subdomain in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveResultInfo  {
   }
 
   /**
-   * contains relevant categories and related ranking data
+   * <em>contains relevant categories and related ranking data</em>
    * @return items
    */
   @javax.annotation.Nullable

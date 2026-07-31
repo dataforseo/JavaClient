@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveItem  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveItem  {
   }
 
   /**
-   * average monthly search volume rate
-* represents the (approximate) number of searches for the returned keyword on Amazon
+   * <em>average monthly search volume rate</em><br>represents the (approximate) number of searches for the returned keyword on Amazon
    * @return searchVolume
    */
   @javax.annotation.Nullable

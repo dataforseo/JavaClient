@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**appId** | **String** | id of the app in a POST array |[optional]|
-**metrics** | **Map<String, AppMetricsInfo>** | metrics for the ranking keywords of the app<br>ranking data relevant to the keywords that the provided application ranks for on Google Play |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**appId** | **String** | <em>id of the app in a POST array</em> |[optional]|
+**metrics** | **Map<String, AppMetricsInfo>** | <em>metrics for the ranking keywords of the app</em><br>ranking data relevant to the keywords that the provided application ranks for on Google Play |[optional]|

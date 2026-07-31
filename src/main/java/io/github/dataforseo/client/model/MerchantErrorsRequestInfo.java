@@ -47,10 +47,7 @@ public class MerchantErrorsRequestInfo  {
   }
 
   /**
-   * the maximum number of returned tasks that responded with an error
-* optional field
-* default value: 1000
-* maximum value: 1000
+   * <em>the maximum number of returned tasks that responded with an error</em><br>optional field<br>default value: <code>1000</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -73,10 +70,7 @@ public class MerchantErrorsRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned tasks
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten tasks in the results array will be omitted and the data will be provided for the successive tasks
+   * <em>offset in the results array of returned tasks</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten tasks in the results array will be omitted and the data will be provided for the successive tasks
    * @return offset
    */
   @javax.annotation.Nullable
@@ -99,11 +93,7 @@ public class MerchantErrorsRequestInfo  {
   }
 
   /**
-   * return tasks with a certain function
-* use this field to obtain a list of tasks that returned an error filtered by a certain function
-* you can filter the results by the values you receive in the function fields of the API response
-* i.e., once you receive unfiltered results, you can call this API again to filter them by function
-* example: sellers/ad_url, postback_url, pingback_url
+   * <em>return tasks with a certain function</em><br>use this field to obtain a list of tasks that returned an error filtered by a certain function<br>you can filter the results by the values you receive in the <code>function</code> fields of the API response<br>i.e., once you receive unfiltered results, you can call this API again to filter them by <code>function</code> <br>example: <code>sellers/ad_url</code>, <code>postback_url</code>, <code>pingback_url</code>
    * @return filteredFunction
    */
   @javax.annotation.Nullable
@@ -126,12 +116,7 @@ public class MerchantErrorsRequestInfo  {
   }
 
   /**
-   * start time for filtering results
-* optional field
-* allows filtering results by the datetime parameter within the range of the last 7 days;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2021-11-15 12:57:46 +00:00
+   * <em>start time for filtering results</em><br>optional field<br>allows filtering results by the <code>datetime</code> parameter within the range of the last 7 days;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2021-11-15 12:57:46 +00:00</code>
    * @return datetimeFrom
    */
   @javax.annotation.Nullable
@@ -154,12 +139,7 @@ public class MerchantErrorsRequestInfo  {
   }
 
   /**
-   * finish time for filtering results
-* optional field
-* allows filtering results by the datetime parameter within the range of the last 7 days;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2021-11-15 13:57:46 +00:00
+   * <em>finish time for filtering results</em><br>optional field<br>allows filtering results by the <code>datetime</code> parameter within the range of the last 7 days;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2021-11-15 13:57:46 +00:00</code>
    * @return datetimeTo
    */
   @javax.annotation.Nullable

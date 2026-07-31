@@ -47,7 +47,7 @@ public class BacklinksTimeseriesSummaryLiveResultInfo  {
   }
 
   /**
-   * target from a POST array
+   * <em><code>target</code> from a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,10 +70,7 @@ public class BacklinksTimeseriesSummaryLiveResultInfo  {
   }
 
   /**
-   * starting date of the time range
-* in the UTC format: “yyyy-mm-dd”
-* example:
-* 2019-01-01
+   * <em>starting date of the time range</em><br>in the UTC format: “yyyy-mm-dd”<br>example:<br><code>2019-01-01</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -96,10 +93,7 @@ public class BacklinksTimeseriesSummaryLiveResultInfo  {
   }
 
   /**
-   * ending date of the time range
-* in the UTC format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>ending date of the time range</em><br>in the UTC format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -145,7 +139,7 @@ public class BacklinksTimeseriesSummaryLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -168,7 +162,7 @@ public class BacklinksTimeseriesSummaryLiveResultInfo  {
   }
 
   /**
-   * contains relevant summary data
+   * <em>contains relevant summary data</em>
    * @return items
    */
   @javax.annotation.Nullable

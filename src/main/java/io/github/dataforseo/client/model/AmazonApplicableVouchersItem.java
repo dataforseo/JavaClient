@@ -70,7 +70,7 @@ public class AmazonApplicableVouchersItem  {
   }
 
   /**
-   * text of the voucher
+   * <em>text of the voucher</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AmazonApplicableVouchersItem  {
   }
 
   /**
-   * value of the fixed discount
+   * <em>value of the fixed discount</em>
    * @return fixedDiscount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AmazonApplicableVouchersItem  {
   }
 
   /**
-   * currency code of the fixed discount
+   * <em>currency code of the fixed discount</em>
    * @return fixedDiscountCurrency
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class AmazonApplicableVouchersItem  {
   }
 
   /**
-   * value of the percentage discount
-* if the discount is fixed, the value will be null
+   * <em>value of the percentage discount</em><br>if the discount is fixed, the value will be <code>null</code>
    * @return percentageDiscount
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class AmazonApplicableVouchersItem  {
   }
 
   /**
-   * important details about the terms of discount vouchers
+   * <em>important details about the terms of discount vouchers</em>
    * @return importantDetails
    */
   @javax.annotation.Nullable

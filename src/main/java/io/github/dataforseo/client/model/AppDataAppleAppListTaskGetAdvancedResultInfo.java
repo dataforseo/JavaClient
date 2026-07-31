@@ -47,7 +47,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * app collection received in a POST array
+   * <em>app collection received in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* in this case, the value will be null
+   * <em>direct URL to search engine results</em><br>in this case, the value will be <code>null</code>
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -163,10 +162,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the total number of results
+   * <em>the total number of results</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of app items in the results array
-* you can get more results by using the depth parameter when setting a task
+   * <em>the number of app items in the results array</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -236,8 +231,7 @@ public class AppDataAppleAppListTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * found apps
-* you can get more results by using the depth parameter when setting a task
+   * <em>found apps</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return items
    */
   @javax.annotation.Nullable

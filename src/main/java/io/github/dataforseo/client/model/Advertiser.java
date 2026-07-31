@@ -70,8 +70,7 @@ public class Advertiser  {
   }
 
   /**
-   * unique identifier of the advertiser account
-* can be used to obtain data on advertising campaigns from the Google Ads Search endpoint
+   * <em>unique identifier of the advertiser account</em><br>can be used to obtain data on advertising campaigns from the <a href='/v3/serp/google/ads_search/task_post/' rel='noopener noreferrer' target='_blank'>Google Ads Search endpoint</a>
    * @return advertiserId
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class Advertiser  {
   }
 
   /**
-   * location of the advertiser account
-* country code associated with the advertiser account
+   * <em>location of the advertiser account</em><br>country code associated with the advertiser account
    * @return location
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class Advertiser  {
   }
 
   /**
-   * verified advertiser account
-* equals true if advertiser account is verified by Google Ads
+   * <em>verified advertiser account</em><br>equals <code>true</code> if advertiser account is verified by Google Ads
    * @return verified
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class Advertiser  {
   }
 
   /**
-   * ads count
-* the approximate number of ads that are run by the advertiser account across all available Google Ads platforms
+   * <em>ads count</em><br>the approximate number of ads that are run by the advertiser account across all available Google Ads platforms
    * @return approxAdsCount
    */
   @javax.annotation.Nullable

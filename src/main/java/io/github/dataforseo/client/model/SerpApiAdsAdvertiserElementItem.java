@@ -47,7 +47,7 @@ public class SerpApiAdsAdvertiserElementItem  extends BaseSerpApiAdsAdvertiserEl
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class SerpApiAdsAdvertiserElementItem  extends BaseSerpApiAdsAdvertiserEl
   }
 
   /**
-   * unique identifier of the advertiser account
-* can be used to obtain data on advertising campaigns from the Google Ads Search endpoint
+   * <em>unique identifier of the advertiser account</em><br>can be used to obtain data on advertising campaigns from the <a href='/v3/serp/google/ads_search/task_post/' rel='noopener noreferrer' target='_blank'>Google Ads Search endpoint</a>
    * @return advertiserId
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpApiAdsAdvertiserElementItem  extends BaseSerpApiAdsAdvertiserEl
   }
 
   /**
-   * advertiser location
+   * <em>advertiser location</em>
    * @return location
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class SerpApiAdsAdvertiserElementItem  extends BaseSerpApiAdsAdvertiserEl
   }
 
   /**
-   * verified advertiser account
-* equals true if advertiser account is verified by Google Ads
+   * <em>verified advertiser account</em><br>equals <code>true</code> if advertiser account is verified by Google Ads
    * @return verified
    */
   @javax.annotation.Nullable
@@ -141,8 +139,7 @@ public class SerpApiAdsAdvertiserElementItem  extends BaseSerpApiAdsAdvertiserEl
   }
 
   /**
-   * ads count
-* the approximate number of ads that are run by the advertiser across all available Google Ads platforms
+   * <em>ads count</em><br>the approximate number of ads that are run by the advertiser across all available Google Ads platforms
    * @return approxAdsCount
    */
   @javax.annotation.Nullable

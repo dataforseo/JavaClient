@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataGoogleLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

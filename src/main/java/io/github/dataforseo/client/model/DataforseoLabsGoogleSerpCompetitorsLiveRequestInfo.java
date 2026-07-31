@@ -47,13 +47,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * keywords array
-* required field
-* the results will be based on the keywords you specify in this array
-* UTF-8 encoding;
-* the keywords will be converted to lowercase format;
-* you can specify the maximum of 200 keywords
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords array</em><br><strong>required field</strong><br>the results will be based on the keywords you specify in this array<br>UTF-8 encoding;<br>the keywords will be converted to lowercase format;<br><strong>you can specify the maximum of 200 keywords</strong><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -76,13 +70,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with location_name parameters by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with <code>location_name</code> parameters by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -105,13 +93,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * unique location identifier
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code parameters by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* 2840
+   * <em>unique location identifier</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> parameters by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -134,13 +116,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_name parameters by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> parameters by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -163,13 +139,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * unique language identifier
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_code parameters by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>unique language identifier</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_code</code> parameters by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -192,10 +162,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -218,13 +185,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * search results type
-* indicates type of search results included in the response
-* optional field
-* possible values:
-* ['organic', 'paid', 'featured_snippet', 'local_pack']
-* default value:
-* ['organic', 'paid']
+   * <em>search results type</em><br>indicates type of search results included in the response<br>optional field<p>possible values: <br><code>['organic', 'paid', 'featured_snippet', 'local_pack']</code><br>default value: <br><code>['organic', 'paid']</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -247,10 +208,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned domains
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned domains</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -273,10 +231,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned domains
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains
+   * <em>offset in the results array of returned domains</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains
    * @return offset
    */
   @javax.annotation.Nullable
@@ -299,20 +254,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, match, not_match, ilike, not_ilike, like, not_like
-* you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters
-* example:
-* ['median_position','in',[1,10]]
-* [['median_position','in',[1,10]],'and',['domain','not_like','%wikipedia.org%']]
-* [['domain','not_like','%wikipedia.org%'],
-* 'and',
-* [['relevant_serp_items','>',0],'or',['median_position','in',[1,10]]]]
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>match</code>, <code>not_match</code>, <code>ilike</code>, <code>not_ilike</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code>, as well as <code>ilike</code> and <code>not_ilike</code> to match any string of zero or more characters<br>example:<br><code>['median_position','in',[1,10]]</code><p><code>[['median_position','in',[1,10]],'and',['domain','not_like','%wikipedia.org%']]</code><p><code>[['domain','not_like','%wikipedia.org%'],<br>'and',<br>[['relevant_serp_items','>',0],'or',['median_position','in',[1,10]]]]</code><br>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' rel='noopener noreferrer' target='_blank'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -335,21 +277,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* the comma is used as a separator
-* example:
-* ['avg_position,asc']
-* default rule:
-* ['rating,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['avg_position,asc','etv,desc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>the comma is used as a separator<br>example:<br><code>['avg_position,asc']</code><br>default rule:<br><code>['rating,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['avg_position,asc','etv,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -372,11 +300,7 @@ public class DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

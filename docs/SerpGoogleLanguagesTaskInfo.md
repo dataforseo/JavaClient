@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

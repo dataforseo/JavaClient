@@ -232,6 +232,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element contains an image
+* Note: this check no longer appears in SERP
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -255,6 +256,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * indicates whether the element contains a video
+* Note: this check no longer appears in SERP
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -264,6 +266,37 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   public void setIsVideo(Boolean isVideo) {
     this.isVideo = isVideo;
+  }
+
+
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public PaidSerpElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * array of properties detected for the SERP element
+* lists the properties that are true for this element
+* each value in the array represents a detected property
+* example:
+* if is_image is present in the array, the element contains an image
+* possible values in the array:
+* is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
+* equals null if none of the properties are detected for the element
+* learn more about the checks array in this Help Center article
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
   }
 
 
@@ -487,6 +520,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
         Objects.equals(this.websiteName, paidSerpElementItem.websiteName) &&
         Objects.equals(this.isImage, paidSerpElementItem.isImage) &&
         Objects.equals(this.isVideo, paidSerpElementItem.isVideo) &&
+        Objects.equals(this.checks, paidSerpElementItem.checks) &&
         Objects.equals(this.images, paidSerpElementItem.images) &&
         Objects.equals(this.highlighted, paidSerpElementItem.highlighted) &&
         Objects.equals(this.extra, paidSerpElementItem.extra) &&
@@ -504,7 +538,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(rankGroup, rankAbsolute, domain, title, description, url, breadcrumb, websiteName, isImage, isVideo, images, highlighted, extra, descriptionRows, links, price, rating);
+  return Objects.hash(rankGroup, rankAbsolute, domain, title, description, url, breadcrumb, websiteName, isImage, isVideo, checks, images, highlighted, extra, descriptionRows, links, price, rating);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -529,6 +563,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
     sb.append("    websiteName: ").append(toIndentedString(websiteName)).append("\n");
     sb.append("    isImage: ").append(toIndentedString(isImage)).append("\n");
     sb.append("    isVideo: ").append(toIndentedString(isVideo)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
     sb.append("    highlighted: ").append(toIndentedString(highlighted)).append("\n");
     sb.append("    extra: ").append(toIndentedString(extra)).append("\n");
@@ -583,6 +618,8 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
     openapiFields.add("is_image");
     
     openapiFields.add("is_video");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("images");
     

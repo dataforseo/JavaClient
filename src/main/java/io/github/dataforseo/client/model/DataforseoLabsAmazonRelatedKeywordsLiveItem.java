@@ -47,7 +47,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveItem  {
   }
 
   /**
-   * keyword data for the returned keyword
+   * <em>keyword data for the returned keyword</em>
    * @return keywordData
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveItem  {
   }
 
   /**
-   * keyword search depth
+   * <em>keyword search depth</em>
    * @return depth
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveItem  {
   }
 
   /**
-   * list of related keywords
-* represents the list of search queries which are related to the keyword returned in the array above
+   * <em>list of related keywords</em><br>represents the list of search queries which are related to the keyword returned in the array above
    * @return relatedKeywords
    */
   @javax.annotation.Nullable

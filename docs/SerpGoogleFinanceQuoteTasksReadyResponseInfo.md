@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleFinanceQuoteTasksReadyTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpGoogleFinanceQuoteTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

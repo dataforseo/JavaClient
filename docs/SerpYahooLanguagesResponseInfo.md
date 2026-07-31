@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpYahooLanguagesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpYahooLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

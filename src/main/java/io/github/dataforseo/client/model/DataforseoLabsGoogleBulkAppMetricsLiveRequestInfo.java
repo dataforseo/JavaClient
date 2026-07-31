@@ -47,14 +47,7 @@ public class DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo  {
   }
 
   /**
-   * ids of the app
-* required field
-* IDs of the mobile applications on Google Play;
-* you can find the ID in the URL of every app listed on Google Play;
-* example:
-* in the URL https://play.google.com/store/apps/details?id=org.telegram.messenger
-* the id is org.telegram.messenger;
-* the maximum number of IDs you can specify in this field is 1000
+   * <em>ids of the app</em><br><strong>required field</strong><br>IDs of the mobile applications on Google Play;<br>you can find the ID in the URL of every app listed on Google Play;<br>example:<br>in the URL <code>https://play.google.com/store/apps/details?id=org.telegram.messenger</code><br>the id is <code>org.telegram.messenger</code>;<br>the maximum number of IDs you can specify in this field is <code>1000</code>
    * @return appIds
    */
   @javax.annotation.Nullable
@@ -77,14 +70,7 @@ public class DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US location only;
-* example:
-* United States
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US location only;<br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -107,14 +93,7 @@ public class DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US location only;
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US location only;<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -137,14 +116,7 @@ public class DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the English language only;
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the English language only;<br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -167,14 +139,7 @@ public class DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the English language only
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the English language only<br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -197,11 +162,7 @@ public class DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

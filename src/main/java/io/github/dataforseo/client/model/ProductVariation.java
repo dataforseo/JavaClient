@@ -70,8 +70,7 @@ public class ProductVariation  {
   }
 
   /**
-   * product ID in a POST array
-* learn more about the parameter in this help center guide
+   * <em>product ID in a POST array</em><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/product-id-google-shopping' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return productId
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class ProductVariation  {
   }
 
   /**
-   * GID ID in a POST array
-* learn more about the parameter in this help center guide
+   * <em>GID ID in a POST array</em><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return gid
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class ProductVariation  {
   }
 
   /**
-   * unique identifier of the SERP data element in the POST array
+   * <em>unique identifier of the SERP data element in the POST array</em>
    * @return dataDocid
    */
   @javax.annotation.Nullable
@@ -141,8 +139,7 @@ public class ProductVariation  {
   }
 
   /**
-   * product variation filter
-* used in the product variation URL as the identifier of the specific product variation
+   * <em>product variation filter</em><br>used in the product variation URL as the identifier of the specific product variation
    * @return pvf
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class ProductVariation  {
   }
 
   /**
-   * name of the product seller
+   * <em>name of the product seller</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class ProductVariation  {
   }
 
   /**
-   * product variation URL on Google Shopping
+   * <em>product variation URL on Google Shopping</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -211,8 +208,7 @@ public class ProductVariation  {
   }
 
   /**
-   * category of the product variation
-* example: 'Storage Capacity'
+   * <em>category of the product variation</em><br>example: <code>'Storage Capacity'</code>
    * @return variationCategory
    */
   @javax.annotation.Nullable

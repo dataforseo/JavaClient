@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataIdListTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

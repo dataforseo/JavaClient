@@ -47,13 +47,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * domain of the local establishment
-* required field
-* domain of the local establishment on Trustpilot;
-* you can find the domain in the URL of every business listed on Trustpilot
-* example:
-* www.thepearlsource.com
-* https://www.trustpilot.com/review/www.thepearlsource.com
+   * <em>domain of the local establishment</em><br><strong>required field</strong><br>domain of the local establishment on Trustpilot;<br>you can find the domain in the URL of every business listed on Trustpilot<br>example:<br><code>www.thepearlsource.com</code><br><code>https://www.trustpilot.com/review/<strong>www.thepearlsource.com</strong></code>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -76,13 +70,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * results sorting parameter
-* optional field
-* you can use this field to sort the results;
-* possible sorting parameters:
-* recency — most recent reviews first;
-* relevance — most relevant reviews first;
-* default value: relevance
+   * <em>results sorting parameter</em><br>optional field<br>you can use this field to sort the results;<br>possible sorting parameters:<br><code>recency</code> — most recent reviews first;<br><code>relevance</code> — most relevant reviews first;<br>default value: <code>relevance</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -105,13 +93,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/business-data/business-data-api-trustpilot-reviews-pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -134,15 +116,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of reviews to be returned from the API response
-* we strongly recommend setting the parsing depth in the multiples of twenty, because our system processes twenty reviews in a row
-* default value: 20
-* maximum value: 200
-* Your account will be billed per each SERP containing up to 20 results;
-* Setting depth above 20 may result in additional charges if the search engine returns more than 20 results;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of reviews to be returned from the API response<br>we strongly recommend setting the parsing depth in the multiples of twenty, because our system processes twenty reviews in a row<br>default value: <code>20</code><br>maximum value: <code>200</code><br><strong>Your account will be billed per each SERP containing up to 20 results;</strong> <br>Setting depth above 20 may result in additional charges if the search engine returns more than 20 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/business-data/business-data-api-trustpilot-reviews-pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -165,11 +139,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -192,16 +162,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -224,16 +185,7 @@ public class BusinessDataTrustpilotReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

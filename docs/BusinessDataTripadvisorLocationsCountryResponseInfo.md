@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataTripadvisorLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataTripadvisorLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

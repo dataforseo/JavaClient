@@ -47,12 +47,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword filed
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> filed<br><strong>all %## will be decoded (plus character ‘+’ will be decoded to a space character)</strong><br>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,11 +70,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.google.com/search?q=fish&hl=en&gl=US&gws_rd=cr&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc
+   * <em>direct URL of the search query</em><br>optional field<br>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.<br>example:<br><code class='long-string'>https://www.google.com/search?q=fish&hl=en&gl=US&gws_rd=cr&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -102,13 +93,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/merchant/google-shopping-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -131,12 +116,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available Google Shopping locations with their location_name by making a separate request to the https://api.dataforseo.com/v3/merchant/google/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available Google Shopping locations with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/google/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -159,12 +139,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available Google Shopping locations with their location_code by making a separate request to the https://api.dataforseo.com/v3/merchant/google/locations
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available Google Shopping locations with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/google/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -187,14 +162,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 199.9
-* example:
-* 53.476225,-2.243572,200
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -217,12 +185,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available Google Shopping languages with their language_name by making a separate request to the https://api.dataforseo.com/v3/merchant/google/languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available Google Shopping languages with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/google/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -245,12 +208,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available Google Shopping languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/merchant/google/languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available Google Shopping languages with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/google/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -273,12 +231,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine domain
-* optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
-* example:
-* google.co.uk, google.com.au, google.de, etc.
+   * <em>search engine domain</em><br>optional field<br>we choose the relevant search engine domain automatically according to the location and language you specify<br>however, you can set a custom search engine domain in this field<br>example:<br><code><em>google.co.uk</em></code>, <code><em>google.com.au</em></code>, <code><em>google.de</em></code>, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -301,14 +254,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results to be retrieved from Google Shopping SERP
-* default value: 40
-* max value: 120
-* Your account will be billed per each SERP containing up to 40 results;
-* Setting depth above 40 may result in additional charges if the search engine returns more than 40 results;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of results to be retrieved from Google Shopping SERP<br>default value: <code>40</code><br>max value: <code>120</code><br><strong>Your account will be billed per each SERP containing up to 40 results;</strong> <br>Setting depth above 40 may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'>if the search engine returns more than 40 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/merchant/google-shopping-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -331,12 +277,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * page crawl limit
-* optional field
-* number of search results pages to crawl
-* max value: 7
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
+   * <em>page crawl limit</em><br>optional field<br>number of search results pages to crawl<br>max value: <code>7</code><br><strong>Note:</strong> the <code>max_crawl_pages</code> and <code>depth</code> parameters complement each other;<br>learn more at <a href='https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work' rel='noopener noreferrer' target='_blank'>our help center</a>
    * @return maxCrawlPages
    */
   @javax.annotation.Nullable
@@ -359,19 +300,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * additional parameters of the search query
-* optional field
-* you can use the following search URL parameters for customizing the search;
-* example:
-* &tbs=ppr_min:45 – search for products that cost more than 45 USD;
-* &tbs=ppr_max:50 – search for products that cost less than 50 USD;
-* &tbs=p_ord:p – sort by ascending price;
-* &tbs=p_ord:pd – sort by descending price;
-* &tbs=p_ord:rv – sort by review score;
-* &tbs=ppr_max:50,p_ord:rv – sort by review score with the maximum price of 50 USD.;
-* &udm=28 – use new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly); the maximum depth is 200; this parameter must be specified without tbm=shop in the url;
-* &shoprs=$value – specify advanced filtering and sorting in the new Shopping markup; replace $value with a string in protobuf Base64 format; learn more on our help center.
-* Note that search_param values will be ignored if any of the following parameters are used: price_min, price_max, sort_by
+   * <em>additional parameters of the search query</em><br>optional field<br>you can use the following search URL parameters for customizing the search;<br>example:<br><code>&tbs=ppr_min:45</code> – search for products that cost <em>more than 45 USD</em>;<br><code>&tbs=ppr_max:50</code> – search for products that cost <em>less than 50 USD</em>;<br><code>&tbs=p_ord:p</code> – sort by <em>ascending price</em>;<br><code>&tbs=p_ord:pd</code> – sort by <em>descending price</em>;<br><code>&tbs=p_ord:rv</code> – sort by <em>review score</em>;<br><code>&tbs=ppr_max:50,p_ord:rv</code> – sort by <em>review score</em> with the <em>maximum price of 50 USD.</em>;<br><code>&udm=28</code> – use new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly); the maximum <code>depth</code> is 200; this parameter must be specified without <code>tbm=shop</code> in the <code>url</code>;<br><code>&shoprs=$value</code> – specify advanced filtering and sorting in the new Shopping markup; replace <code>$value</code> with a string in protobuf Base64 format; <a href='https://dataforseo.com/help-center/using-the-shoprs-parameter-in-google-shopping-merchant-api' target='_blank'>learn more on our help center.</a><br>  <br><strong>Note</strong> that <code>search_param</code> values will be ignored if any of the following parameters are used: <code>price_min</code>, <code>price_max</code>, <code>sort_by</code>
    * @return searchParam
    */
   @javax.annotation.Nullable
@@ -394,12 +323,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * minimum product price
-* optional field
-* minimum price of the returned products listed on Google Shopping for the specified query
-* example:
-* 5
-* Note: if you specify price_min, the search_param parameter will be ignored
+   * <em>minimum product price</em><br>optional field<br>minimum price of the returned products listed on Google Shopping for the specified query<br>example:<br><code>5</code><br><strong>Note:</strong> if you specify <code>price_min</code>, the <code>search_param</code> parameter will be ignored
    * @return priceMin
    */
   @javax.annotation.Nullable
@@ -422,12 +346,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * maximum product price
-* optional field
-* maximum price of the returned products listed on Google Shopping for the specified query
-* example:
-* 100
-* Note: if you specify price_max, the search_param parameter will be ignored
+   * <em>maximum product price</em><br>optional field<br>maximum price of the returned products listed on Google Shopping for the specified query<br>example:<br><code>100</code><br><strong>Note:</strong> if you specify <code>price_max</code>, the <code>search_param</code> parameter will be ignored
    * @return priceMax
    */
   @javax.annotation.Nullable
@@ -450,13 +369,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* the following sorting rules are supported:
-* review_score, price_low_to_high, price_high_to_low
-* example:
-* sort_by:'review_score'
-* Note: if you specify sort_by, the search_param parameter will be ignored
+   * <em>results sorting rules</em><br>optional field<br>the following sorting rules are supported:<br><code>review_score</code>, <code>price_low_to_high</code>, <code>price_high_to_low</code><br>example:<br><code>sort_by:'review_score'</code><br><strong>Note:</strong> if you specify <code>sort_by</code>, the <code>search_param</code> parameter will be ignored
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -479,11 +392,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -506,16 +415,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -538,11 +438,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* advanced, html
+   * <em>postback_url datatype</em><br><strong>required field if you specify <code>postback_url</code></strong><br>corresponds to the datatype that will be sent to your server<br>possible values:<br><code>advanced</code>, <code>html</code>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -565,16 +461,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

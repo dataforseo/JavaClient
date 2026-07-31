@@ -47,7 +47,7 @@ public class AppDataAppleCategoriesResultInfo  {
   }
 
   /**
-   * contains full list of supported app categories
+   * <em>contains full list of supported app categories</em>
    * @return categories
    */
   @javax.annotation.Nullable

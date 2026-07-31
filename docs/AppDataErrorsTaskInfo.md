@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppDataErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<AppDataErrorsResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,12 +47,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
-* this field will contain the cid parameter if you specified it in the keyword field when setting a task;
-* example:
-* cid:2946633002421908862
-* learn more about the parameter in this help center article
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong><br>this field will contain the <code>cid</code> parameter if you specified it in the <code>keyword</code> field when setting a task;<br>example:<br><code>cid:2946633002421908862</code><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,7 +70,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain as specified in a POST array
+   * <em>search engine domain as specified in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -168,10 +162,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -194,9 +185,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment;
-* learn more about the identifier in this help center article
+   * <em>google-defined client id</em><br>unique id of a local establishment;<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -219,7 +208,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * unique identifier of the SERP feature
+   * <em> unique identifier of the SERP feature</em>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -242,9 +231,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * item types
-* types of search engine results encountered in the items array;
-* possible item types: google_business_question_item
+   * <em>item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_question_item</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -267,7 +254,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * array of google business question items without answers
+   * <em>array of google business question items without answers</em>
    * @return itemsWithoutAnswers
    */
   @javax.annotation.Nullable
@@ -290,7 +277,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * the number of items in the items array
+   * <em>the number of items in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -313,10 +300,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo  {
   }
 
   /**
-   * array of items within google_business_question_item
-* contains answers to the google business questions;
-* the maximum number of answers returned for each question: 5
-* possible item types google_business_answer_element
+   * <em> array of items within <code>google_business_question_item</code></em><br>contains answers to the google business questions;<br>the maximum number of answers returned for each question: <code>5</code> <br>possible item types <code>google_business_answer_element</code>
    * @return items
    */
   @javax.annotation.Nullable

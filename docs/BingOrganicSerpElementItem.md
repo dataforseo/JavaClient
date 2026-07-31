@@ -18,6 +18,7 @@
 **isFeaturedSnippet** | **Boolean** | indicates whether the element is a featured_snippet |[optional]|
 **isMalicious** | **Boolean** | indicates whether the element is marked as malicious |[optional]|
 **isWebStory** | **Boolean** | indicates whether the element is marked as a web story |[optional]|
+**checks** | **List<String>** |  |[optional]|
 **preSnippet** | **String** | includes additional information appended before the result description in SERP |[optional]|
 **extendedSnippet** | **String** | includes additional information appended after the result description in SERP |[optional]|
 **images** | **List<AiModeImagesElementInfo>** | images of the element |[optional]|

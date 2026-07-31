@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<ContentAnalysisCategoryTrendsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<ContentAnalysisCategoryTrendsLiveResultInfo>** | <em>array of results</em> |[optional]|

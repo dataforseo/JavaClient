@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**categories** | **List<String>** | contains full list of supported app categories |[optional]|
+**categories** | **List<String>** | <em>contains full list of supported app categories</em> |[optional]|

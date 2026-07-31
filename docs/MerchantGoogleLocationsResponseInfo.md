@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<MerchantGoogleLocationsTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<MerchantGoogleLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

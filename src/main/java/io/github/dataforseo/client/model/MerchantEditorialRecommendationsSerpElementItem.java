@@ -47,9 +47,7 @@ public class MerchantEditorialRecommendationsSerpElementItem  extends BaseMercha
   }
 
   /**
-   * the alignment of the element in Amazon SERP
-* possible values:
-* left, right
+   * <em>the alignment of the element in Amazon SERP</em><br>possible values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class MerchantEditorialRecommendationsSerpElementItem  extends BaseMercha
   }
 
   /**
-   * Amazon product items
+   * <em>Amazon product items</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<ContentAnalysisSummaryLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<ContentAnalysisSummaryLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

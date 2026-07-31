@@ -47,11 +47,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo  {
   }
 
   /**
-   * domain to get data for
-* required field
-* a domain should be specified without https:// and www.
-* example:
-* 'forbes.com'
+   * <em>domain to get data for</em><br><strong>required field</strong><br>a domain should be specified without <code>https://</code> and <code>www.</code><br>example:<br><code>'forbes.com'</code>
    * @return target
    */
   @javax.annotation.Nullable
@@ -74,16 +70,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* this field indicates the date which will be used as a threshold for new and lost backlinks and referring domains;
-* the backlinks and referring domains that appeared in our index after the specified date will be considered as new;
-* the backlinks and referring domains that weren’t found after the specified date, but were present before, will be considered as lost;
-* minimum value: 2019-01-30
-* maximum value shouldn’t exceed the date specified in the date_to
-* date format: 'yyyy-mm-dd'
-* example:
-* '2021-01-01'
+   * <em>starting date of the time range</em><br>optional field<br>this field indicates the date which will be used as a threshold for new and lost backlinks and referring domains;<br>the backlinks and referring domains that appeared in our index after the specified date will be considered as new;<br>the backlinks and referring domains that weren't found after the specified date, but were present before, will be considered as lost;<p>minimum value: <code>2019-01-30</code><br>maximum value shouldn't exceed the date specified in the <code>date_to</code><br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2021-01-01'</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -106,14 +93,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, the today’s date will be used by default
-* minimum value shouldn’t preceed the date specified in the date_from
-* maximum value: today’s date
-* date format: 'yyyy-mm-dd'
-* example:
-* '2021-01-15'
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, the today's date will be used by default<br>minimum value shouldn't preceed the date specified in the <code>date_from</code><br>maximum value: today's date<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2021-01-15'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -136,18 +116,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo  {
   }
 
   /**
-   * time range which will be used to group the results
-* optional field
-* default value: month
-* possible values: day, week, month, year
-* note: for day, we will return items corresponding to all dates between and including date_from and date_to;
-* for week/month/year, we will return items corresponding to full weeks/months/years, where each item will indicate the last day of the week/month/year
-* for example, if you specify:
-* 'group_range': 'month',
-* 'date_from': '2022-03-23',
-* 'date_to': '2022-05-13'
-* we will return items falling between 2022-03-01 and 2022-05-31, namely, three items corresponding to the following dates: 2022-03-31, 2022-04-30, 2022-05-31
-* if there is no data for a certain  day/week/month/year, we will return 0
+   * <em>time range which will be used to group the results</em><br>optional field<br>default value: <code>month</code><br>possible values: <code>day</code>, <code>week</code>, <code>month</code>, <code>year</code><p><strong>note:</strong> for <code>day</code>, we will return items corresponding to all dates between and including <code>date_from</code> and <code>date_to</code>;<br>for <code>week</code>/<code>month</code>/<code>year</code>, we will return items corresponding to full weeks/months/years, where each item will indicate the last day of the week/month/year<p>for example, if you specify: <br><code>'group_range': 'month',<br>'date_from': '2022-03-23',<br>'date_to': '2022-05-13'</code><br>we will return items falling between 2022-03-01 and 2022-05-31, namely, three items corresponding to the following dates: <code>2022-03-31</code>, <code>2022-04-30</code>, <code>2022-05-31</code><p>if there is no data for a certain  <code>day</code>/<code>week</code>/<code>month</code>/<code>year</code>, we will return <code>0</code>
    * @return groupRange
    */
   @javax.annotation.Nullable
@@ -170,10 +139,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains of the <code>target</code> will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -196,11 +162,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

@@ -70,7 +70,7 @@ public class BacklinksBulkSpamScoreLiveItem  {
   }
 
   /**
-   * domain, subdomain or webpage from a POST array
+   * <em>domain, subdomain or webpage from a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class BacklinksBulkSpamScoreLiveItem  {
   }
 
   /**
-   * average spam score the target
-* learn more about how the metric is calculated
+   * <em>average spam score the target</em><br><a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>learn more</a> about how the metric is calculated
    * @return spamScore
    */
   @javax.annotation.Nullable

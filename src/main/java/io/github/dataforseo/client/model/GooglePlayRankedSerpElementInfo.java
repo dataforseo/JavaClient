@@ -47,7 +47,7 @@ public class GooglePlayRankedSerpElementInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class GooglePlayRankedSerpElementInfo  {
   }
 
   /**
-   * contains data on the SERP element
-* the list of supported SERP elements can be found below
+   * <em>contains data on the SERP element</em><br>the list of supported SERP elements can be found below
    * @return serpItem
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class GooglePlayRankedSerpElementInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class GooglePlayRankedSerpElementInfo  {
   }
 
   /**
-   * number of search results for the returned keyword
+   * <em>number of search results for the returned keyword</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -141,10 +139,7 @@ public class GooglePlayRankedSerpElementInfo  {
   }
 
   /**
-   * date and time when keyword data was updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable
@@ -167,11 +162,7 @@ public class GooglePlayRankedSerpElementInfo  {
   }
 
   /**
-   * previous to the most recent date and time when SERP data was updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-10-15 12:57:46 +00:00;
-* in this case, will equal null
+   * <em>previous to the most recent date and time when SERP data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-10-15 12:57:46 +00:00</code>;<br>in this case, will equal null
    * @return previousUpdatedTime
    */
   @javax.annotation.Nullable

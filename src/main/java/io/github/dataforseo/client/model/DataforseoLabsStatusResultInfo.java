@@ -47,7 +47,7 @@ public class DataforseoLabsStatusResultInfo  {
   }
 
   /**
-   * update information for the Google endpoints
+   * <em>update information for the Google endpoints</em>
    * @return google
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsStatusResultInfo  {
   }
 
   /**
-   * update information for the Bing endpoints
+   * <em>update information for the Bing endpoints</em>
    * @return bing
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsStatusResultInfo  {
   }
 
   /**
-   * update information for the Amazon endpoints
+   * <em>update information for the Amazon endpoints</em>
    * @return amazon
    */
   @javax.annotation.Nullable

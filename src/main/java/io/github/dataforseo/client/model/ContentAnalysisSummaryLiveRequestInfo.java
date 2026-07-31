@@ -47,14 +47,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * target keyword
-* required field
-* UTF-8 encoding
-* the keywords will be converted to a lowercase format;
-* Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;
-* example:
-* 'keyword': '\'tesla palo alto\''
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keyword</em><br><strong>required field</strong><br>UTF-8 encoding<br>the keywords will be converted to a lowercase format;<br><strong>Note</strong>: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes; <br>example: <br><code>'keyword': '\'tesla palo alto\''</code><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -77,17 +70,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * target keyword fields and target keywords
-* optional field
-* use this parameter to filter the dataset by keywords that certain fields should contain;
-* fields you can specify: title, main_title, previous_title, snippet
-* you can indicate several fields;
-* Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;
-* example:
-* 'keyword_fields': {
-*     'snippet': '\'logitech mouse\'',
-*     'main_title': 'sale'
-* }
+   * <em>target keyword fields and target keywords</em><br>optional field<br>use this parameter to filter the dataset by keywords that certain fields should contain;<br>fields you can specify: <code>title</code>, <code>main_title</code>, <code>previous_title</code>, <code>snippet</code><br>you can indicate several fields;<br><strong>Note</strong>: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes; <br>example:<br><code>'keyword_fields': {<br>'snippet': '\'logitech mouse\'',<br>'main_title': 'sale'<br>}</code>
    * @return keywordFields
    */
   @javax.annotation.Nullable
@@ -110,11 +93,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * target page types
-* optional field
-* use this parameter to filter the dataset by page types
-* possible values:
-* 'ecommerce', 'news', 'blogs', 'message-boards', 'organization'
+   * <em>target page types</em><br>optional field<br>use this parameter to filter the dataset by page types<br>possible values: <br><code>'ecommerce'</code>, <code>'news'</code>, <code>'blogs'</code>, <code>'message-boards'</code>, <code>'organization'</code>
    * @return pageType
    */
   @javax.annotation.Nullable
@@ -137,16 +116,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* top_domains
-* text_categories
-* page_categories
-* countries
-* languages
-* default value: 1
-* maximum value: 20
+   * <em>maximum number of elements within internal arrays</em><br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br><code>top_domains</code><br><code>text_categories</code><br><code>page_categories</code><br><code>countries</code><br><code>languages</code><br>default value: <code>1</code><br>maximum value: <code>20</code>
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -169,12 +139,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * positive connotation threshold
-* optional field
-* specified as the probability index threshold for positive sentiment related to the citation content
-* if you specify this field, connotation_types object in the response will only contain data on citations with positive sentiment probability more than or equal to the specified value
-* possible values: from 0 to 1
-* default value: 0.4
+   * <em>positive connotation threshold</em><br>optional field<br>specified as the probability index threshold for positive sentiment related to the citation content<br>if you specify this field, <code>connotation_types</code> object in the response will only contain data on citations with <code>positive</code> sentiment probability more than or equal to the specified value<br>possible values: from <code>0</code> to <code>1</code><br>default value: <code>0.4</code>
    * @return positiveConnotationThreshold
    */
   @javax.annotation.Nullable
@@ -197,13 +162,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * sentiment connotation threshold
-* optional field
-* specified as the probability index threshold for sentiment connotations related to the citation content
-* if you specify this field, sentiment_connotations object in the response will only contain data on citations where the
-* probability per each sentiment is more than or equal to the specified value
-* possible values: from 0 to 1
-* default value: 0.4
+   * <em>sentiment connotation threshold</em><br>optional field<br>specified as the probability index threshold for sentiment connotations related to the citation content<br>if you specify this field, <code>sentiment_connotations</code> object in the response will only contain data on citations where the <br>probability per each sentiment is more than or equal to the specified value<br>possible values: from <code>0</code> to <code>1</code><br>default value: <code>0.4</code>
    * @return sentimentsConnotationThreshold
    */
   @javax.annotation.Nullable
@@ -226,24 +185,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * initial dataset filtering parameters
-* optional field
-* initial filtering parameters that apply to fields in the Search endpoint
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like,not_like, has, has_not
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['domain','<>', 'logitech.com']
-* [['domain','<>','logitech.com'],'and',['content_info.connotation_types.negative','>',1000]]
-* [['domain','<>','logitech.com']],
-* 'and',
-* [['content_info.connotation_types.negative','>',1000],
-* 'or',
-* ['content_info.text_category','has',10994]]]
-* for more information about filters, please refer to Content Analysis API – Filters
-* learn more about the initial dataset filters in this help center article.
+   * <em>initial dataset filtering parameters</em><br>optional field<br>initial filtering parameters that apply to fields in the <a href='/v3/content_analysis/search/live/?bash' target='_blank'>Search endpoint</a><br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>,<code>not_like</code>, <code>has</code>, <code>has_not</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['domain','<>', 'logitech.com']</code><p><code>[['domain','<>','logitech.com'],'and',['content_info.connotation_types.negative','>',1000]]</code><p><code>[['domain','<&gt','logitech.com']],<br>'and',<br>[['content_info.connotation_types.negative','>',1000],<br>'or',<p>['content_info.text_category','has',10994]]]</code><br>for more information about filters, please refer to <a href='/v3/content_analysis/filters' target='_blank' rel='noopener noreferrer'>Content Analysis API - Filters</a><br>learn more about the initial dataset filters in <a href='https://dataforseo.com/help-center/what-are-the-initial-dataset-filters-and-how-do-they-work' rel='noopener noreferrer' target='_blank'>this help center article.</a>
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
@@ -266,14 +208,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works in <a href='https://dataforseo.com/help-center/using-the-rank_scale-parameter-in-content-analysis-api'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -296,11 +231,7 @@ public class ContentAnalysisSummaryLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

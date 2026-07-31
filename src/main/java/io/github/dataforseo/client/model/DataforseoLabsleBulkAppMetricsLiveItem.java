@@ -47,7 +47,7 @@ public class DataforseoLabsleBulkAppMetricsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsleBulkAppMetricsLiveItem  {
   }
 
   /**
-   * id of the app in a POST array
+   * <em>id of the app in a POST array</em>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsleBulkAppMetricsLiveItem  {
   }
 
   /**
-   * metrics for the ranking keywords of the app
-* ranking data relevant to the keywords that the provided application ranks for on Google Play
+   * <em>metrics for the ranking keywords of the app</em><br>ranking data relevant to the keywords that the provided application ranks for on Google Play
    * @return metrics
    */
   @javax.annotation.Nullable

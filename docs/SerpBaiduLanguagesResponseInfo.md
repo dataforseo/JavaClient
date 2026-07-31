@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpBaiduLanguagesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpBaiduLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

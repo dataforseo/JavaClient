@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AppDataIdListTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AppDataIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

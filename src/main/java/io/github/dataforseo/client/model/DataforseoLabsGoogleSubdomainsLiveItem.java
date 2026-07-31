@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleSubdomainsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleSubdomainsLiveItem  {
   }
 
   /**
-   * returned subdomain
+   * <em>returned subdomain</em>
    * @return subdomain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleSubdomainsLiveItem  {
   }
 
   /**
-   * ranking data relevant to subdomain
+   * <em>ranking data relevant to subdomain</em>
    * @return metrics
    */
   @javax.annotation.Nullable

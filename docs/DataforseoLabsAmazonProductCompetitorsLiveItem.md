@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**asin** | **String** | ASIN in a POST array |[optional]|
-**avgPosition** | **Float** | average position of the product in Amazon SERP<br>Note: average position is calculated for intersected keywords only;<br>the value for a given product may differ when combined with different target products |[optional]|
-**sumPosition** | **Integer** | sum of all product positions in Amazon SERP<br>Note: average position is calculated for intersected keywords only;<br>the value for a given product may differ when combined with different target products |[optional]|
-**intersections** | **Integer** | number of intersecting keywords |[optional]|
-**competitorMetrics** | **AmazonMetricsBundleInfo** | metrics for intersecting keywords<br>ranking data relevant to the keywords that the provided asin shares with the target asin;<br>Note: in this object ranking data is provided for the returned competitor’s asin |[optional]|
-**fullMetrics** | **AmazonMetricsBundleInfo** | metrics for all keywords of the product<br>full overview of ranking data relevant to all keywords that the provided asin is ranking for |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**asin** | **String** | <em>ASIN in a POST array</em> |[optional]|
+**avgPosition** | **Float** | <em>average position of the product in Amazon SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given product may differ when combined with different target products |[optional]|
+**sumPosition** | **Integer** | <em>sum of all product positions in Amazon SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given product may differ when combined with different target products |[optional]|
+**intersections** | **Integer** | <em>number of intersecting keywords</em> |[optional]|
+**competitorMetrics** | **AmazonMetricsBundleInfo** | <em>metrics for intersecting keywords</em><br>ranking data relevant to the keywords that the provided <code>asin</code> shares with the target <code>asin</code>;<br><strong>Note:</strong> in this object ranking data is provided for the returned competitor's <code>asin</code> |[optional]|
+**fullMetrics** | **AmazonMetricsBundleInfo** | <em>metrics for all keywords of the product</em><br>full overview of ranking data relevant to all keywords that the provided <code>asin</code> is ranking for |[optional]|

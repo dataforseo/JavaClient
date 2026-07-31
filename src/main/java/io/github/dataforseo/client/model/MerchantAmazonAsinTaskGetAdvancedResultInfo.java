@@ -47,9 +47,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * ASIN received in a POST array
-* the unique product identifier in Amazon (ASIN) received in a POST array
-* learn more about the identified in this help center guide
+   * <em>ASIN received in a POST array</em><br>the unique product identifier in Amazon (ASIN) received in a POST array<br>learn more about the identified in <a href='https://dataforseo.com/help-center/asin-in-amazon-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * Amazon domain in a POST array
+   * <em>Amazon domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to Amazon results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to Amazon results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -188,10 +185,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -214,10 +208,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results found on Amazon
-* contains types of all search results (items) found in the returned SERP
-* possible item types:
-* amazon_product_info
+   * <em>types of search results found on Amazon</em><br>contains types of all search results (<code>items</code>) found in the returned SERP<br>possible item types:<br><code>amazon_product_info</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -240,7 +231,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -263,7 +254,7 @@ public class MerchantAmazonAsinTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * Amazon product info items
+   * <em>Amazon product info items</em>
    * @return items
    */
   @javax.annotation.Nullable

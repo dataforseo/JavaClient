@@ -259,9 +259,9 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
 
   public static final String SERIALIZED_NAME_AVERAGE_CPC = "average_cpc";
   @SerializedName(SERIALIZED_NAME_AVERAGE_CPC)
-  private Integer averageCpc;
+  private Double averageCpc;
 
-  public KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo averageCpc(Integer averageCpc) {
+  public KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo averageCpc(Double averageCpc) {
     this.averageCpc = averageCpc;
     return this;
   }
@@ -273,11 +273,11 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
    * @return averageCpc
    */
   @javax.annotation.Nullable
-  public Integer getAverageCpc() {
+  public Double getAverageCpc() {
     return averageCpc;
   }
 
-  public void setAverageCpc(Integer averageCpc) {
+  public void setAverageCpc(Double averageCpc) {
     this.averageCpc = averageCpc;
   }
 

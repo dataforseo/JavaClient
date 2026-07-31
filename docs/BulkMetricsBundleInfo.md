@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**organic** | **BulkMetricsInfo** | traffic data from organic search |[optional]|
-**paid** | **BulkMetricsInfo** | traffic data from paid search |[optional]|
-**localPack** | **BulkMetricsInfo** | traffic data from the local pack results in SERP |[optional]|
-**featuredSnippet** | **BulkMetricsInfo** | traffic data from the featured snippet results in Google SERP |[optional]|
+**organic** | **BulkMetricsInfo** | <em>traffic data from organic search</em> |[optional]|
+**paid** | **BulkMetricsInfo** | <em>traffic data from paid search</em> |[optional]|
+**localPack** | **BulkMetricsInfo** | <em>traffic data from the local pack results in SERP</em> |[optional]|
+**featuredSnippet** | **BulkMetricsInfo** | <em>traffic data from the featured snippet results in Google SERP</em> |[optional]|

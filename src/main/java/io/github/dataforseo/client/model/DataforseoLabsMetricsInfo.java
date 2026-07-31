@@ -47,7 +47,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #1
+   * <em>number of organic SERPs where the domain or subdomain ranks #1</em>
    * @return pos1
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #2-3
+   * <em>number of organic SERPs where the domain or subdomain ranks #2-3</em>
    * @return pos23
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #4-10
+   * <em>number of organic SERPs where the domain or subdomain ranks #4-10</em>
    * @return pos410
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #11-20
+   * <em>number of organic SERPs where the domain or subdomain ranks #11-20</em>
    * @return pos1120
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #21-30
+   * <em>number of organic SERPs where the domain or subdomain ranks #21-30</em>
    * @return pos2130
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #31-40
+   * <em>number of organic SERPs where the domain or subdomain ranks #31-40</em>
    * @return pos3140
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #41-50
+   * <em>number of organic SERPs where the domain or subdomain ranks #41-50</em>
    * @return pos4150
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #51-60
+   * <em>number of organic SERPs where the domain or subdomain ranks #51-60</em>
    * @return pos5160
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #61-70
+   * <em>number of organic SERPs where the domain or subdomain ranks #61-70</em>
    * @return pos6170
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #71-80
+   * <em>number of organic SERPs where the domain or subdomain ranks #71-80</em>
    * @return pos7180
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #81-90
+   * <em>number of organic SERPs where the domain or subdomain ranks #81-90</em>
    * @return pos8190
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain or subdomain ranks #91-100
+   * <em>number of organic SERPs where the domain or subdomain ranks #91-100</em>
    * @return pos91100
    */
   @javax.annotation.Nullable
@@ -323,10 +323,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * estimated traffic volume
-* estimated organic monthly traffic to the domain or subdomain
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain or subdomain ranks for
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated traffic volume</em><br>estimated organic monthly traffic to the domain or subdomain<br>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain or subdomain ranks for<br>learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return etv
    */
   @javax.annotation.Nullable
@@ -349,7 +346,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * total count of organic SERPs that contain the domain or subdomain
+   * <em>total count of organic SERPs that contain the domain or subdomain</em>
    * @return count
    */
   @javax.annotation.Nullable
@@ -372,10 +369,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost (USD) of running ads for all keywords in the category that the domain or subdomain ranks for
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated cost of converting organic search traffic into paid</em><br>represents the estimated monthly cost (USD) of running ads for all keywords in the category that the domain or subdomain ranks for<br>the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search<br>learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -398,8 +392,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * number of new ranked elements
-* indicates how many new ranked elements were found for the indicated target
+   * <em>number of new ranked elements</em><br>indicates how many new ranked elements were found for the indicated target
    * @return isNew
    */
   @javax.annotation.Nullable
@@ -422,8 +415,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * rank went up
-* indicates how many ranked elements of the indicated target went up
+   * <em>rank went up</em><br>indicates how many ranked elements of the indicated target went up
    * @return isUp
    */
   @javax.annotation.Nullable
@@ -446,8 +438,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * rank went down
-* indicates how many ranked elements of the indicated target went down
+   * <em>rank went down</em><br>indicates how many ranked elements of the indicated target went down
    * @return isDown
    */
   @javax.annotation.Nullable
@@ -470,8 +461,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * lost ranked elements
-* indicates how many ranked elements of the indicated target were previously presented in SERPs, but weren’t found during the last check
+   * <em>lost ranked elements</em><br>indicates how many ranked elements of the indicated target were previously presented in SERPs, but weren't found during the last check
    * @return isLost
    */
   @javax.annotation.Nullable
@@ -494,10 +484,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * estimated traffic volume based on clickstream data
-* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated traffic volume based on clickstream data</em><br>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for<br>to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code><br>learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -520,9 +507,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * distribution of estimated clickstream-based metrics by gender
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true
-* learn more about how the metric is calculated in this help center article
+   * <em>distribution of estimated clickstream-based metrics by gender</em><br>to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code><br>learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return clickstreamGenderDistribution
    */
   @javax.annotation.Nullable
@@ -545,9 +530,7 @@ public class DataforseoLabsMetricsInfo  {
   }
 
   /**
-   * distribution of clickstream-based metrics by age
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true
-* learn more about how the metric is calculated in this help center article
+   * <em>distribution of clickstream-based metrics by age</em><br>to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code><br>learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return clickstreamAgeDistribution
    */
   @javax.annotation.Nullable

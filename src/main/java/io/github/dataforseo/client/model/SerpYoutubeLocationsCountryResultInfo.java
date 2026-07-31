@@ -47,7 +47,7 @@ public class SerpYoutubeLocationsCountryResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpYoutubeLocationsCountryResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,14 +93,7 @@ public class SerpYoutubeLocationsCountryResultInfo  {
   }
 
   /**
-   * the code of the superordinate location
-* example:
-* 'location_code': 9041134,
-* 'location_name': 'Vienna International Airport,Lower Austria,Austria',
-* 'location_code_parent': 20044
-* where location_code_parent corresponds to:
-* 'location_code': 20044,
-* 'location_name': 'Lower Austria,Austria'
+   * <em>the code of the superordinate location</em><br>example:<br>`'location_code': 9041134`,<br>`'location_name': 'Vienna International Airport,Lower Austria,Austria'`,<br>`'location_code_parent': 20044`<p>where `location_code_parent` corresponds to:<p>`'location_code': 20044`,<br>`'location_name': 'Lower Austria,Austria'`
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
@@ -123,7 +116,7 @@ public class SerpYoutubeLocationsCountryResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -146,10 +139,7 @@ public class SerpYoutubeLocationsCountryResultInfo  {
   }
 
   /**
-   * location type
-* indicates the geographic classification of the location
-* example:
-* 'location_type': 'Country', or 'location_type': 'State'
+   * <em>location type</em><br>indicates the geographic classification of the location<br>example:<br>`'location_type': 'Country'`, or `'location_type': 'State'`
    * @return locationType
    */
   @javax.annotation.Nullable

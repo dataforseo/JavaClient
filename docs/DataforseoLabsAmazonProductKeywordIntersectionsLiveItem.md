@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**keywordData** | **AmazonKeywordData** | keyword data for the returned keyword |[optional]|
-**intersectionResult** | **Map<String, AmazonInfo>** | data on the intersection |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**keywordData** | **AmazonKeywordData** | <em>keyword data for the returned keyword</em> |[optional]|
+**intersectionResult** | **Map<String, AmazonInfo>** | <em>data on the intersection</em> |[optional]|

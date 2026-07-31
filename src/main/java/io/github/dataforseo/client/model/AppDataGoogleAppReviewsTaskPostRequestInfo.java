@@ -47,12 +47,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * id of the app
-* required field
-* ID of the mobile application on Google Play;
-* you can find the ID in the URL of every app listed on Google Play;
-* example:
-* https://play.google.com/store/apps/details?id=org.telegram.messenger
+   * <em>id of the app</em><br><strong>required field</strong><br>ID of the mobile application on Google Play;<br>you can find the ID in the URL of every app listed on Google Play;<br>example:<br><code>https://play.google.com/store/apps/details?id=<strong>org.telegram.messenger</strong></code>
    * @return appId
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/app_data/google/locations
-* example:
-* West Los Angeles,California,United States
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify <code>location_code</code></strong><br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/locations</code><br>example:<br><code class='long-string'>West Los Angeles,California,United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -103,12 +93,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engine with their location_code by making a separate request to https://api.dataforseo.com/v3/app_data/google/locations
-* example:
-* 9061121
+   * <em>search engine location code</em><br><strong>required field if you don't specify <code>location_name</code></strong><br><strong>if you use this field, you don't need to specify <code>location_name</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/locations</code><br>example:<br><code class='long-string'>9061121</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,12 +116,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/app_data/google/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify <code>language_code</code></strong><br>if you use this field, you don't need to specify <code>language_code</code><br>you can receive the list of available languages with <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -159,12 +139,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/app_data/google/languages
-* example:
-* en
+   * <em>search engine language code</em><br><strong>required field if you don't specify <code>language_name</code></strong><br>if you use this field, you don't need to specify <code>language_name</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/app_data/google/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -187,13 +162,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/api/google-play' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -216,15 +185,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of reviews to be returned in the API response;
-* we strongly recommend setting the parsing depth in the multiples of 150, because our system processes 150 reviews in a row;
-* default value: 150;
-* maximum value: 100000;
-* Your account will be billed per each SERP containing up to 150 results;
-* Setting depth above 150 may result in additional charges if the search engine returns more than 150 results;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of reviews to be returned in the API response;<br>we strongly recommend setting the parsing depth in the multiples of 150, because our system processes 150 reviews in a row;<br>default value: <code>150</code>;<br>maximum value: <code>100000</code>;<br><strong>Your account will be billed per each SERP containing up to 150 results;</strong> <br>Setting depth above 150 may result in additional charges if the search engine returns more than 150 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/app-data/google-play' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -247,16 +208,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * filter reviews by rating
-* optional field
-* you can use this field to filter the results;
-* possible types of filtering:
-* 5 — return reviews with five-star rating only;
-* 4 — return reviews with four-star rating only;
-* 3 — return reviews with three-star rating only;
-* 2 — return reviews with two-star rating only;
-* 1 — return reviews with one-star rating only;
-* by default, the API returns all reviews regardless of the number of stars
+   * <em>filter reviews by rating</em><br>optional field<br>you can use this field to filter the results;<br>possible types of filtering:<br><code>5</code> — return reviews with five-star rating only;<br><code>4</code> — return reviews with four-star rating only;<br><code>3</code> — return reviews with three-star rating only;<br><code>2</code> — return reviews with two-star rating only;<br><code>1</code> — return reviews with one-star rating only;<br>by default, the API returns all reviews regardless of the number of stars
    * @return rating
    */
   @javax.annotation.Nullable
@@ -279,13 +231,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * results sorting parameters
-* optional field
-* you can use this field to sort the results;
-* possible types of sorting:
-* newest — sort by the most recent reviews;
-* most_relevant — sort by the most relevant reviews;
-* default rule: most_relevant
+   * <em>results sorting parameters</em><br>optional field<br>you can use this field to sort the results;<br>possible types of sorting:<br><code>newest</code> — sort by the most recent reviews;<br><code>most_relevant</code> — sort by the most relevant reviews;<br>default rule: <code>most_relevant</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -308,11 +254,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -335,15 +277,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -366,11 +300,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* advanced, html
+   * <em>postback_url datatype</em><br><strong>required field if you specify <code>postback_url</code></strong><br>corresponds to the datatype that will be sent to your server<br>possible values:<br><code>advanced</code>, <code>html</code>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -393,15 +323,7 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded; <br>i.a., the <code>#</code> character will be encoded into <code>%23</code>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

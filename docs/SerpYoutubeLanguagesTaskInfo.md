@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYoutubeLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYoutubeLanguagesResultInfo>** | <em>array of results</em> |[optional]|

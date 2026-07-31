@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsAmazonProductCompetitorsLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsAmazonProductCompetitorsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

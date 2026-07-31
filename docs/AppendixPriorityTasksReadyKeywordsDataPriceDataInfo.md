@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**costType** | **String** | charge type<br>can take the following values:<br>per_result – charge for every row in the result array<br>per_request – charge for a GET or POST request |[optional]|
-**cost** | **Double** | cost, USD |[optional]|
+**costType** | **String** | <em>charge type</em><br>can take the following values:<br><code>per_result</code>_- charge for every row in the <code>result</code> array<br><code>per_request</code>_- charge for a GET or POST requestn |[optional]|
+**cost** | **Double** | <em>cost, USD</em> |[optional]|

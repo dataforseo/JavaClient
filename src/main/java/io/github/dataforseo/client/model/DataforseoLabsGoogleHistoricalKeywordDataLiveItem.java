@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleHistoricalKeywordDataLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoLabsGoogleHistoricalKeywordDataLiveItem  {
   }
 
   /**
-   * keyword
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataforseoLabsGoogleHistoricalKeywordDataLiveItem  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class DataforseoLabsGoogleHistoricalKeywordDataLiveItem  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class DataforseoLabsGoogleHistoricalKeywordDataLiveItem  {
   }
 
   /**
-   * array of objects with historical data for the keyword
+   * <em>array of objects with historical data for the keyword</em>
    * @return history
    */
   @javax.annotation.Nullable

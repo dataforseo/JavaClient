@@ -70,9 +70,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * unique identifier of a hotel entity in Google search
-* example:
-* CgoI-KWyzenM_MV3EAE
+   * <em>unique identifier of a hotel entity in Google search</em><br>example:<br><code>CgoI-KWyzenM_MV3EAE</code>
    * @return hotelIdentifier
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * title of the hotel
+   * <em>title of the hotel</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * hotel class rating
-* class rating that ranges between 1-5 stars
+   * <em>hotel class rating</em><br>class rating that ranges between 1-5 stars
    * @return stars
    */
   @javax.annotation.Nullable
@@ -142,9 +139,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * indicates a paid hotel listing
-* if true, related hotel_search_item is a paid ad
-* if false, related hotel_search_item is an organic hotel listing
+   * <em>indicates a paid hotel listing</strong></em><br>if <code>true</code>, related <code>hotel_search_item</code> is a paid ad<br>if <code>false</code>, related <code>hotel_search_item</code> is an organic hotel listing
    * @return isPaid
    */
   @javax.annotation.Nullable
@@ -167,7 +162,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * GPS coordinates of the hotel’s location
+   * <em>GPS coordinates of the hotel's location</em>
    * @return location
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * hotel reviews and rating information
+   * <em>hotel reviews and rating information</em>
    * @return reviews
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * featured images for a hotel
+   * <em>featured images for a hotel</em>
    * @return overviewImages
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class BusinessDataGoogleHotelSearchesItem  {
   }
 
   /**
-   * hotel price
+   * <em>hotel price</em>
    * @return prices
    */
   @javax.annotation.Nullable

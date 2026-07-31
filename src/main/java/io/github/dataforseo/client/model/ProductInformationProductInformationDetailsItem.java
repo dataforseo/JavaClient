@@ -47,7 +47,7 @@ public class ProductInformationProductInformationDetailsItem  extends BaseMercha
   }
 
   /**
-   * contains information specified about the product within the section_name
+   * <em>contains information specified about the product within the <code>section_name</code></em>
    * @return body
    */
   @javax.annotation.Nullable

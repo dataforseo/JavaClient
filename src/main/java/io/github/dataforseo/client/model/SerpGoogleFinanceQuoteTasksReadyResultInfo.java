@@ -47,8 +47,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * search engine specified when setting the task
+   * <em>search engine specified when setting the task</em>
    * @return se
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * type of search engine
-* example: finance_quote
+   * <em>type of search engine</em><br>example: <code>{{low_se_type_under}}</code>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * date when the task was posted (in the UTC format)
+   * <em>date when the task was posted (in the UTC format)</em>
    * @return datePosted
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * <em>user-defined task identifier</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the SERP Regular task
-* if SERP Regular is not supported in the specified endpoint, the value will be null
+   * <em>URL for collecting the results of the SERP Regular task</em><br>if SERP Regular is not supported in the specified endpoint, the value will be <code>null</code>
    * @return endpointRegular
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the SERP Advanced task
-* if SERP Advanced is not supported in the specified endpoint, the value will be null
+   * <em>URL for collecting the results of the SERP Advanced task</em><br>if SERP Advanced is not supported in the specified endpoint, the value will be <code>null</code>
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class SerpGoogleFinanceQuoteTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the SERP HTML task
-* if SERP HTML is not supported in the specified endpoint, the value will be null
+   * <em>URL for collecting the results of the SERP HTML task</em><br>if SERP HTML is not supported in the specified endpoint, the value will be <code>null</code>
    * @return endpointHtml
    */
   @javax.annotation.Nullable

@@ -83,6 +83,75 @@ public class AnnotationInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_START_INDEX = "start_index";
+  @SerializedName(SERIALIZED_NAME_START_INDEX)
+  private Integer startIndex;
+
+  public AnnotationInfo startIndex(Integer startIndex) {
+    this.startIndex = startIndex;
+    return this;
+  }
+
+  /**
+   * <em>start of the annotation indexing</em>
+   * @return startIndex
+   */
+  @javax.annotation.Nullable
+  public Integer getStartIndex() {
+    return startIndex;
+  }
+
+  public void setStartIndex(Integer startIndex) {
+    this.startIndex = startIndex;
+  }
+
+
+  public static final String SERIALIZED_NAME_END_INDEX = "end_index";
+  @SerializedName(SERIALIZED_NAME_END_INDEX)
+  private Integer endIndex;
+
+  public AnnotationInfo endIndex(Integer endIndex) {
+    this.endIndex = endIndex;
+    return this;
+  }
+
+  /**
+   * <em>end of the annotation indexing</em>
+   * @return endIndex
+   */
+  @javax.annotation.Nullable
+  public Integer getEndIndex() {
+    return endIndex;
+  }
+
+  public void setEndIndex(Integer endIndex) {
+    this.endIndex = endIndex;
+  }
+
+
+  public static final String SERIALIZED_NAME_TEXT = "text";
+  @SerializedName(SERIALIZED_NAME_TEXT)
+  private String text;
+
+  public AnnotationInfo text(String text) {
+    this.text = text;
+    return this;
+  }
+
+  /**
+   * <em>text of the reasoning chain section</em><br>text of the reasoning chain  section summarizing the model's thought process
+   * @return text
+   */
+  @javax.annotation.Nullable
+  public String getText() {
+    return text;
+  }
+
+  public void setText(String text) {
+    this.text = text;
+  }
+
+
 
   public AnnotationInfo() {
   }
@@ -127,7 +196,10 @@ public class AnnotationInfo  {
     return
 
         Objects.equals(this.title, annotationInfo.title) &&
-        Objects.equals(this.url, annotationInfo.url);  
+        Objects.equals(this.url, annotationInfo.url) &&
+        Objects.equals(this.startIndex, annotationInfo.startIndex) &&
+        Objects.equals(this.endIndex, annotationInfo.endIndex) &&
+        Objects.equals(this.text, annotationInfo.text);  
     
   }
 
@@ -137,7 +209,7 @@ public class AnnotationInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, url);
+  return Objects.hash(title, url, startIndex, endIndex, text);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -154,6 +226,9 @@ public class AnnotationInfo  {
 
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    startIndex: ").append(toIndentedString(startIndex)).append("\n");
+    sb.append("    endIndex: ").append(toIndentedString(endIndex)).append("\n");
+    sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -180,6 +255,12 @@ public class AnnotationInfo  {
     openapiFields.add("title");
     
     openapiFields.add("url");
+    
+    openapiFields.add("start_index");
+    
+    openapiFields.add("end_index");
+    
+    openapiFields.add("text");
     
 
     // a set of required properties/fields (JSON key names)

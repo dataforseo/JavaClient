@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataTasksReadyTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

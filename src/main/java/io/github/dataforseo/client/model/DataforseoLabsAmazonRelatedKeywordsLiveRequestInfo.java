@@ -47,11 +47,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* UTF-8 encoding
-* the keywords should be specified in the lowercase format
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keyword</em><br><strong>required field</strong><br>UTF-8 encoding<br>the keywords should be specified in the lowercase format<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -74,14 +70,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
-* example:
-* United States
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -104,14 +93,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-* Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code>;<br><strong>Note:</strong> this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -134,12 +116,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available locations with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available locations with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -162,12 +139,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available locations with their language_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available locations with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -190,17 +162,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * keyword search depth
-* optional field
-* default value: 1;
-* number of the returned results depends on the value you set in this field;
-* you can specify a level from 0 to 4;
-* estimated number of keywords for each level (maximum):
-* 0 – the keyword set in the keyword field
-* 1 – 6 keywords
-* 2 – 42 keywords
-* 3 – 258 keywords
-* 4 – 1554 keywords
+   * <em>keyword search depth</em><br>optional field<br>default value: <code>1</code>;<br>number of the returned results depends on the value you set in this field;<br>you can specify a level from 0 to 4;<br>estimated number of keywords for each level (maximum):<br>0 - the keyword set in the <code>keyword</code> field<br>1 – 6 keywords<br>2 – 42 keywords<br>3 – 258 keywords<br>4 – 1554 keywords
    * @return depth
    */
   @javax.annotation.Nullable
@@ -223,10 +185,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * include data for the seed keyword
-* optional field
-* if set to true, data for the seed keyword specified in the keyword field will be provided in the seed_keyword_data array of the response
-* default value: false
+   * <em>include data for the seed keyword</em><br>optional field<br>if set to <code>true</code>, data for the seed keyword specified in the <code>keyword</code> field will be provided in the <code>seed_keyword_data</code> array of the response<br>default value: <code>false</code>
    * @return includeSeedKeyword
    */
   @javax.annotation.Nullable
@@ -249,10 +208,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true only core keywords will be returned, all highly similar keywords will be excluded;
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to_<code class='prettyprint'>true</code> only core keywords will be returned, all highly similar keywords will be excluded;  <br>default value: <code>false</code>n
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -275,10 +231,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned keywords
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned keywords</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -301,10 +254,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned keywords
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
+   * <em>offset in the results array of returned keywords</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
    * @return offset
    */
   @javax.annotation.Nullable
@@ -327,11 +277,7 @@ public class DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

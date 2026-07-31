@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsAmazonBulkSearchVolumeLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DataforseoLabsAmazonBulkSearchVolumeLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<ContentAnalysisCategoriesResultInfo>** | array of results |[optional]|
+**result** | **List<ContentAnalysisCategoriesResultInfo>** | <em>array of results</em> |[optional]|

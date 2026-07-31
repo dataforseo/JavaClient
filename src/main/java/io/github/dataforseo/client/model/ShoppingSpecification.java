@@ -70,8 +70,7 @@ public class ShoppingSpecification  {
   }
 
   /**
-   * name of the block of product attributes
-* indicates the name of the product specification section in which the related element is listed
+   * <em>name of the block of product attributes</em><br>indicates the name of the product specification section in which the related element is listed
    * @return blockName
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class ShoppingSpecification  {
   }
 
   /**
-   * product attribute
-* attribute name of the product data specification
+   * <em>product attribute</em><br>attribute name of the <a href='https://support.google.com/merchants/answer/7052112?hl=en' target='_blank' rel='noopener noreferrer'>product data specification</a>
    * @return specificationName
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class ShoppingSpecification  {
   }
 
   /**
-   * content of the specification
+   * <em>content of the specification</em>
    * @return specificationValue
    */
   @javax.annotation.Nullable

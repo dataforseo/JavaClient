@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpBingLanguagesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpBingLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

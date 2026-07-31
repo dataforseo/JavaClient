@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpAiSummaryResultInfo>** | array of results |[optional]|
+**result** | **List<SerpAiSummaryResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,12 +47,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
   }
 
   /**
-   * target keywords
-* required field
-* UTF-8 encoding
-* maximum number of keywords you can specify in this array: 1000;
-* the keywords will be converted to lowercase format
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keywords</em><br><strong>required field</strong><br>UTF-8 encoding<br>maximum number of keywords you can specify in this array: 1000;<br>the keywords will be converted to lowercase format<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,47 +70,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if don’t specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* 
-* Note: this endpoint currently supports the following languages only:
-* Arabic, ar,
-* Chinese(Traditional), zh-TW,
-* Czech, cs,
-* Danish, da,
-* Dutch, nl,
-* English, en,
-* Finnish, fi,
-* French, fr,
-* German, de,
-* Hebrew, he,
-* Hindi, hi,
-* Italian, it,
-* Japanese, ja,
-* Korean, ko,
-* Malay, ms,
-* Norwegian(Bokmål), nb,
-* Polish, pl,
-* Portuguese, pt,
-* Romanian, ro,
-* Russian, ru,
-* Spanish, es,
-* Swedish, sv,
-* Thai, th,
-* Ukrainian, uk,
-* Vietnamese, vi,
-* Bulgarian, bg,
-* Croatian, hr,
-* Serbian, sr,
-* Slovenian, sl,
-* Bosnian, bs,
-* Greek, el,
-* Hungarian, hu,
-* Slovak, sk,
-* Turkish, tr
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if don't specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br><a name='lng'></a><br><strong>Note:</strong> this endpoint currently supports the following languages only:<br><code>Arabic</code>, <code>ar</code>,<br><code>Chinese(Traditional)</code>, <code>zh-TW</code>,<br><code>Czech</code>, <code>cs</code>,<br><code>Danish</code>, <code>da</code>,<br><code>Dutch</code>, <code>nl</code>,<br><code>English</code>, <code>en</code>,<br><code>Finnish</code>, <code>fi</code>,<br><code>French</code>, <code>fr</code>,<br><code>German</code>, <code>de</code>,<br><code>Hebrew</code>, <code>he</code>,<br><code>Hindi</code>, <code>hi</code>,<br><code>Italian</code>, <code>it</code>,<br><code>Japanese</code>, <code>ja</code>,<br><code>Korean</code>, <code>ko</code>,<br><code>Malay</code>, <code>ms</code>,<br><code>Norwegian(Bokmål)</code>, <code>nb</code>,<br><code>Polish</code>, <code>pl</code>,<br><code>Portuguese</code>, <code>pt</code>,<br><code>Romanian</code>, <code>ro</code>,<br><code>Russian</code>, <code>ru</code>,<br><code>Spanish</code>, <code>es</code>,<br><code>Swedish</code>, <code>sv</code>,<br><code>Thai</code>, <code>th</code>,<br><code>Ukrainian</code>, <code>uk</code>,<br><code>Vietnamese</code>, <code>vi</code>,<br><code>Bulgarian</code>, <code>bg</code>,<br><code>Croatian</code>, <code>hr</code>,<br><code>Serbian</code>, <code>sr</code>,<br><code>Slovenian</code>, <code>sl</code>,<br><code>Bosnian</code>, <code>bs</code>,<br><code>Greek</code>, <code>el</code>,<br><code>Hungarian</code>, <code>hu</code>,<br><code>Slovak</code>, <code>sk</code>,<br><code>Turkish</code>, <code>tr</code><p>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -138,12 +93,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if don’t specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* Note: this endpoint currently supports these languages only;
-* example:
-* en
+   * <em>language code</em><br><strong>required field if don't specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br><strong>Note:</strong> this endpoint currently supports <a href='#lng'>these languages only;</a><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -166,11 +116,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

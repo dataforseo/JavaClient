@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataSocialMediaPinterestLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataSocialMediaPinterestLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

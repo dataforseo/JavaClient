@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AppDataGoogleAppListingsCategoriesResultInfo>** | array of results |[optional]|
+**result** | **List<AppDataGoogleAppListingsCategoriesResultInfo>** | <em>array of results</em> |[optional]|

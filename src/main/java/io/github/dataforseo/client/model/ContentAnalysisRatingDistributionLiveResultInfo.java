@@ -70,7 +70,7 @@ public class ContentAnalysisRatingDistributionLiveResultInfo  {
   }
 
   /**
-   * min rating on a distribution scale
+   * <em>min rating on a distribution scale</strong></em>
    * @return min
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ContentAnalysisRatingDistributionLiveResultInfo  {
   }
 
   /**
-   * max rating on a distribution scale
+   * <em>max rating on a distribution scale</strong></em>
    * @return max
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ContentAnalysisRatingDistributionLiveResultInfo  {
   }
 
   /**
-   * contains rating distribution metrics
+   * <em>contains rating distribution metrics</strong></em>
    * @return metrics
    */
   @javax.annotation.Nullable

@@ -70,9 +70,7 @@ public class AdsSearch  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class AdsSearch  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class AdsSearch  {
   }
 
   /**
-   * unique identifier of the advertiser account
+   * <em>unique identifier of the advertiser account</em>
    * @return advertiserId
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class AdsSearch  {
   }
 
   /**
-   * unique identifier of the advertisement
+   * <em>unique identifier of the advertisement</em>
    * @return creativeId
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class AdsSearch  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class AdsSearch  {
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -211,8 +208,7 @@ public class AdsSearch  {
   }
 
   /**
-   * verified advertiser account
-* equals true if advertiser account is verified by Google Ads
+   * <em>verified advertiser account</em><br>equals <code>true</code> if advertiser account is verified by Google Ads
    * @return verified
    */
   @javax.annotation.Nullable
@@ -235,8 +231,7 @@ public class AdsSearch  {
   }
 
   /**
-   * format of the advertisement
-* possible values: text, image, video
+   * <em>format of the advertisement</em><br>possible values: <code>text</code>, <code>image</code>, <code>video</code>
    * @return format
    */
   @javax.annotation.Nullable
@@ -259,7 +254,7 @@ public class AdsSearch  {
   }
 
   /**
-   * preview image of the advertisement
+   * <em>preview image of the advertisement</em>
    * @return previewImage
    */
   @javax.annotation.Nullable
@@ -282,7 +277,7 @@ public class AdsSearch  {
   }
 
   /**
-   * url pointing to the ad preview
+   * <em>url pointing to the ad preview</em>
    * @return previewUrl
    */
   @javax.annotation.Nullable
@@ -305,8 +300,7 @@ public class AdsSearch  {
   }
 
   /**
-   * date and time when the ad was shown for the first time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+   * <em>date and time when the ad was shown for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
    * @return firstShown
    */
   @javax.annotation.Nullable
@@ -329,8 +323,7 @@ public class AdsSearch  {
   }
 
   /**
-   * date and time when the ad was shown the last time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+   * <em>date and time when the ad was shown the last time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
    * @return lastShown
    */
   @javax.annotation.Nullable

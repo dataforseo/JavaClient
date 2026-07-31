@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo>** | <em>array of results</em> |[optional]|

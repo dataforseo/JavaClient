@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpBingLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<SerpBingLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

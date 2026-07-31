@@ -47,7 +47,7 @@ public class Categories  {
   }
 
   /**
-   * product category name
+   * <em>product category name</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class Categories  {
   }
 
   /**
-   * product category URL
-* indicates the browse path on Amazon with the unique browse node ID (product category ID on Amazon)
+   * <em>product category URL</em><br>indicates the <a href='https://sellercentral.amazon.com/gp/help/external/G1661?language=en_US' rel='noopener noreferrer' target='_blank'>browse path on Amazon</a> with the unique browse node ID (product category ID on Amazon)
    * @return url
    */
   @javax.annotation.Nullable

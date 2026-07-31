@@ -47,13 +47,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character '+' will be decoded to a space character)
-* if you need to use the '%' character for your keyword, please specify it as '%25';
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <p><em>keyword</em><p><strong>required field</strong><p>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<p><strong>all %## will be decoded (plus character '+' will be decoded to a space character)</strong><p>if you need to use the '%' character for your <code>keyword</code>, please specify it as '%25';<p>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”</p><br><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a></p>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -76,12 +70,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name or location_coordinate
-* if you use this field, you don't need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
-* example:
-* 2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -104,12 +93,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
-* example:
-* en
+   * <p><em>search engine language code</em><p><strong>required field if you don't specify</strong> <code>language_name</code><p><strong>if you use this field, you don't need to specify <code>language_name</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -132,14 +116,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results in SERP
-* default value: 10
-* max value: 700
-* Your account will be billed per each SERP containing up to 10 results;
-* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
-* The cost can be calculated on the Pricing page.
+   * <p><em>parsing depth</em><p>optional field<p>number of results in SERP<p>default value: <code>10</code><p>max value: <code>700</code></p><br><strong>Your account will be billed per each SERP containing up to 10 results;</strong><p>Setting depth above 10 may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'>if the search engine returns more than 10 results</a>;<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/bing-organic-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -162,13 +139,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/bing-organic-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -191,11 +162,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* return results for a specific device type
-* can take the values:desktop, mobile
-* default value: desktop
+   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>can take the values:<code>desktop</code>, <code>mobile</code><p>default value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -218,16 +185,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>notification URL of a completed task</em><p>optional field<p>when a task is completed we will notify you by GET request sent to the URL you have specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/pingscript?id=$id</code><p><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -250,16 +208,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>URL for sending task results</em><p>optional field<p>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/postbackscript?id=$id</code><p><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -282,11 +231,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* regular, advanced, html
+   * <p><em>postback_url datatype</em><p><strong>required field if you specify <code>postback_url</code></strong><p>corresponds to the datatype that will be sent to your server<p>possible values:<p><code>regular</code>, <code>advanced</code>, <code>html</code></p>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -309,12 +254,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code or location_coordinate
-* if you use this field, you don't need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
-* example:
-* London,England,United Kingdom
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><p><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><p>example:<p><code class='long-string'>London,England,United Kingdom</code></p>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -337,12 +277,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
-* example:
-* English
+   * <p><em>full name of search engine language</em><p><strong>required field if you don't specify</strong> <code>language_code</code><p><strong>if you use this field, you don't need to specify <code>language_code</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><p>example:<p><code class='long-string'>English</code></p>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -365,12 +300,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
+   * <p><em>device operating system</em><p>optional field<p>if you specify <code>desktop</code> in the <code>device</code> field, choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code><p>if you specify <code>mobile</code> in the <code>device</code> field, choose from the following values: <code>android</code>, <code>ios</code><p>default value: <code>android</code></p>
    * @return os
    */
   @javax.annotation.Nullable
@@ -393,11 +323,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -450,13 +376,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * target match type
-* required field if stop_crawl_on_match is specified
-* type of match for the match_value
-* possible values:
-* domain – specific domain or subdomain
-* with_subdomains – main domain and subdomains
-* wildcard –  wildcard pattern
+   * <p><em>target match type</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>type of match for the <code>match_value</code><p>possible values:<p><code>domain</code> – specific domain or subdomain<p><code>with_subdomains</code> – main domain and subdomains<p><code>wildcard</code> –  wildcard pattern</p>
    * @return matchType
    */
   @javax.annotation.Nullable
@@ -479,12 +399,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * target domain, subdomain, or wildcard value
-* required field if stop_crawl_on_match is specified
-* specify a target domain, subdomain, or wildcard value;
-* Note: domain or subdomain must be specified without a request protocol;
-* example: 'match_value': 'dataforseo.com',
-* 'match_value': '/blog/post-*'
+   * <p><em>target domain, subdomain, or wildcard value</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>specify a target domain, subdomain, or wildcard value;<p><strong>Note:</strong> domain or subdomain must be specified without a request protocol;<p>example: <code>'match_value': 'dataforseo.com'</code>,<p><code>'match_value': '/blog/post-*'</code></p>
    * @return matchValue
    */
   @javax.annotation.Nullable
@@ -507,13 +422,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * page crawl limit
-* optional field
-* number of search results pages to crawl
-* default value: 1
-* max value: 100
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
+   * <p><em>page crawl limit</em><p>optional field<p>number of search results pages to crawl<p>default value: <code>1</code><p>max value: <code>100</code><p><strong>Note:</strong> the <code>max_crawl_pages</code> and <code>depth</code> parameters complement each other;<p>learn more at <a href='https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work' target='_blank' rel='noopener noreferrer'>our help center</a></p>
    * @return maxCrawlPages
    */
   @javax.annotation.Nullable
@@ -536,9 +445,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * additional parameters of the search query
-* optional field
-* get the list of available parameters and additional details here
+   * <p><em>additional parameters of the search query</em><p>optional field<p><a href='https://dataforseo.com/help-center/bing-search-engine-parameters-and-how-to-use-them'>get the list of available parameters and additional details here</a></p>
    * @return searchParam
    */
   @javax.annotation.Nullable
@@ -561,12 +468,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * calcualte pixel rankings for SERP elements in advanced results
-* optional field
-* pixel ranking refers to the distance between the result snippet and top left corner of the screen;
-* Visit Help Center to learn more>>
-* by default, the parameter is set to false
-* Note: you will be charged extra $0.0006 for using this parameter
+   * <p><em>calcualte pixel rankings for SERP elements in advanced results</em><p>optional field<p>pixel ranking refers to the distance between the result snippet and top left corner of the screen;<p><a href='https://dataforseo.com/help-center/pixel-ranking-in-serp-api'>Visit Help Center to learn more>></a><p>by default, the parameter is set to <code>false</code><p><strong>Note:</strong> you will be charged extra $0.0006 for using this parameter</p>
    * @return calculateRectangles
    */
   @javax.annotation.Nullable
@@ -589,15 +491,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen width
-* optional field
-* you can set a custom browser screen width to calculate pixel rankings for a particular device;
-* can be specified within the following range: 240-9999;
-* by default, the parameter is set to:
-* 1920 for desktop;
-* 360 for mobile on android;
-* 375 for mobile on iOS;
-* Note: to use this parameter, set calculate_rectangles to true
+   * <p><em>browser screen width</em><p>optional field<p>you can set a custom browser screen width to calculate pixel rankings for a particular device;<p>can be specified within the following range: <code>240-9999</code>;<p>by default, the parameter is set to:<p><code>1920</code> for <code>desktop</code>;<p><code>360</code> for <code>mobile</code> on <code>android</code>;<p><code>375</code> for <code>mobile</code> on <code>iOS</code>;<p><strong>Note:</strong> to use this parameter, set <code>calculate_rectangles</code> to <code>true</code></p>
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -620,15 +514,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen height
-* optional field
-* you can set a custom browser screen height to calculate pixel rankings for a particular device;
-* can be specified within the following range: 240-9999;
-* by default, the parameter is set to:
-* 1080 for desktop;
-* 640 for mobile on android;
-* 812 for mobile on iOS;
-* Note: to use this parameter, set calculate_rectangles to true
+   * <p><em>browser screen height</em><p>optional field<p>you can set a custom browser screen height to calculate pixel rankings for a particular device;<p>can be specified within the following range: <code>240-9999</code>;<p>by default, the parameter is set to:<p><code>1080</code> for <code>desktop</code>;<p><code>640</code> for <code>mobile</code> on <code>android</code>;<p><code>812</code> for <code>mobile</code> on <code>iOS</code>;<p><strong>Note:</strong> to use this parameter, set <code>calculate_rectangles</code> to <code>true</code></p>
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -651,15 +537,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen resolution ratio
-* optional field
-* you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
-* can be specified within the following range: 0.5-3;
-* by default, the parameter is set to:
-* 1 for desktop;
-* 3 for mobile on android;
-* 3 for mobile on iOS;
-* Note: to use this parameter, set calculate_rectangles to true
+   * <p><em>browser screen resolution ratio</em><p>optional field<p>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;<p>can be specified within the following range: <code>0.5-3</code>;<p>by default, the parameter is set to:<p><code>1</code> for <code>desktop</code>;<p><code>3</code> for <code>mobile</code> on <code>android</code>;<p><code>3</code> for <code>mobile</code> on <code>iOS</code>;<p><strong>Note:</strong> to use this parameter, set <code>calculate_rectangles</code> to <code>true</code></p>
    * @return browserScreenResolutionRatio
    */
   @javax.annotation.Nullable
@@ -682,11 +560,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
+   * <p><em>direct URL of the search query</em><p>optional field<p>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.<p>example:<p><code class='long-string'>https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE</code></p>
    * @return url
    */
   @javax.annotation.Nullable
@@ -709,13 +583,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don't specify location_name or location_code
-* if you use this field, you don't need to specify location_name or location_code
-* location_coordinate parameter should be specified in the 'latitude,longitude' format
-* the maximum number of decimal digits for 'latitude' and 'longitude': 7
-* example:
-* 53.476225,-2.243572
+   * <p><em>GPS coordinates of a location</em><p><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><p><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude'</em> format<p>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<p>example:<p><code class='long-string'>53.476225,-2.243572</code></p>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable

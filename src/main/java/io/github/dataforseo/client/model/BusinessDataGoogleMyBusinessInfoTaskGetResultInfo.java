@@ -47,12 +47,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
-* this field will contain the cid parameter if you specified it in the keyword field when setting a task;
-* example:
-* cid:2946633002421908862
-* learn more about the parameter in this help center article
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong><br>this field will contain the <code>cid</code> parameter if you specified it in the <code>keyword</code> field when setting a task;<br>example:<br><code>cid:2946633002421908862</code><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,7 +70,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain as specified in a POST array
+   * <em>search engine domain as specified in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -168,10 +162,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -194,9 +185,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * item types
-* types of search engine results encountered in the items array;
-* possible item types: google_business_info
+   * <em>item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_info</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -219,8 +208,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * item types
-* the number of items in the items array
+   * <em>item types</em><br>the number of items in the <code>items</code> array
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -243,7 +231,7 @@ public class BusinessDataGoogleMyBusinessInfoTaskGetResultInfo  {
   }
 
   /**
-   * array of directory items
+   * <em><strong>array of directory items</strong></em>
    * @return items
    */
   @javax.annotation.Nullable

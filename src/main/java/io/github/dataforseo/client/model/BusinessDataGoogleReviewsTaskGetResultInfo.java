@@ -47,8 +47,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * title of the ‘reviews’ element in SERP
-* the name of the local establishment for which the reviews are collected
+   * <em>title of the 'reviews' element in SERP</em><br>the name of the local establishment for which the reviews are collected
    * @return title
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * subtitle of the ‘reviews’ element in SERP
-* additional information (e.g., address) on the ‘reviews’ element for which the reviews are collected
+   * <em>subtitle of the 'reviews' element in SERP</em><br>additional information (e.g., address) on the 'reviews' element for which the reviews are collected
    * @return subTitle
    */
   @javax.annotation.Nullable
@@ -261,8 +254,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * rating of the corresponding local establishment
-* popularity rate based on reviews and displayed in SERP
+   * <em>rating of the corresponding local establishment</em><br>popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -285,8 +277,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * the unique identifier of the ‘reviews’ element in SERP
-* learn more about the identifier in this help center article
+   * <em>the unique identifier of the 'reviews' element in SERP</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -309,8 +300,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * unique identifier of a business location assigned by Google
-* learn more about the identifier in this help center article
+   * <em>unique identifier of a business location assigned by Google</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return placeId
    */
   @javax.annotation.Nullable
@@ -333,9 +323,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment
-* learn more about the identifier in this help center article
+   * <i>google-defined client id</i><br>unique id of a local establishment<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -358,7 +346,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * the total number of reviews
+   * <em>the total number of reviews</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -381,8 +369,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * the number of reviews items in the results array
-* you can get more results by using the depth parameter when setting a task
+   * <em>the number of reviews items in the results array</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -405,8 +392,7 @@ public class BusinessDataGoogleReviewsTaskGetResultInfo  {
   }
 
   /**
-   * found reviews
-* you can get more results by using the depth parameter when setting a task
+   * <em>found reviews</em><br>you can get more results by using the <code>depth</code> parameter when setting a task
    * @return items
    */
   @javax.annotation.Nullable

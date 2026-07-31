@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYoutubeVideoSubtitlesTasksFixedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYoutubeVideoSubtitlesTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

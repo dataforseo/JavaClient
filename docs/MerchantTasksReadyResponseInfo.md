@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<MerchantTasksReadyTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<MerchantTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleFinanceMarketsTaskGetHtmlResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleFinanceMarketsTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

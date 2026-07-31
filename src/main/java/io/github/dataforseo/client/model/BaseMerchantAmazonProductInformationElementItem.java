@@ -70,7 +70,7 @@ public class BaseMerchantAmazonProductInformationElementItem  {
   }
 
   /**
-   * name of the section related to product information specified in the contents
+   * <em>name of the section related to product information specified in the <code>contents</code></em>
    * @return sectionName
    */
   @javax.annotation.Nullable
