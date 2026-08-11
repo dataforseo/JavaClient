@@ -5,12 +5,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**position** | **String** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**title** | **String** | link anchor text |[optional]|
-**snippet** | **String** | text snippet of the video |[optional]|
-**url** | **String** | link URL |[optional]|
-**domain** | **String** | domain in SERP |[optional]|
-**imageUrl** | **String** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
-**source** | **String** | source of the element<br>indicates the source of information included in the questions_and_answers_element |[optional]|
-**date** | **String** | the date when the page source of the element was published |[optional]|
-**timestamp** | **String** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**position** | **String** | <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code> |[optional]|
+**title** | **String** | <em>link anchor text</em> |[optional]|
+**snippet** | **String** | <em>text snippet of the video</em> |[optional]|
+**url** | **String** | <em>link URL</em> |[optional]|
+**domain** | **String** | <em>domain in SERP</em> |[optional]|
+**imageUrl** | **String** | <em>URL of the image</em><br>            the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**source** | **String** | <i>source of the element</i><br>            indicates the source of information included in the <code>questions_and_answers_element</code> |[optional]|
+**date** | **String** | <em>the date when the page source of the element was published</em> |[optional]|
+**timestamp** | **String** | <em>date and time when the result was published</em><br>            in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>            example:<br>            <code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|

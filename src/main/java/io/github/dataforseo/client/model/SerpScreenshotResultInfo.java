@@ -47,7 +47,7 @@ public class SerpScreenshotResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpScreenshotResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

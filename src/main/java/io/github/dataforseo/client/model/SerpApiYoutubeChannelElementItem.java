@@ -47,7 +47,7 @@ public class SerpApiYoutubeChannelElementItem  extends BaseSerpApiYoutubeOrganic
   }
 
   /**
-   * name of the channel
+   * <em>name of the channel</em>
    * @return name
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiYoutubeChannelElementItem  extends BaseSerpApiYoutubeOrganic
   }
 
   /**
-   * the URL of the page where the logo image is hosted
+   * <em>the URL of the page where the logo image is hosted</em>
    * @return logo
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiYoutubeChannelElementItem  extends BaseSerpApiYoutubeOrganic
   }
 
   /**
-   * the number of videos counted on the channel
+   * <em>the number of videos counted on the channel</em>
    * @return videoCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiYoutubeChannelElementItem  extends BaseSerpApiYoutubeOrganic
   }
 
   /**
-   * indicates whether the channel has a “verified” label
+   * <em>indicates whether the channel has a 'verified' label</em>
    * @return isVerified
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiYoutubeChannelElementItem  extends BaseSerpApiYoutubeOrganic
   }
 
   /**
-   * description of the channel
+   * <em>description of the channel</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiYoutubeChannelElementItem  extends BaseSerpApiYoutubeOrganic
   }
 
   /**
-   * highlighted keywords in the description
+   * <em>highlighted keywords in the description</em>
    * @return highlighted
    */
   @javax.annotation.Nullable

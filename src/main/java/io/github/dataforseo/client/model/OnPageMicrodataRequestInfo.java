@@ -47,11 +47,7 @@ public class OnPageMicrodataRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* '07131248-1535-0216-1000-17384017ad04'
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br><code>'07131248-1535-0216-1000-17384017ad04'</code>
    * @return id
    */
   @javax.annotation.Nullable
@@ -74,11 +70,7 @@ public class OnPageMicrodataRequestInfo  {
   }
 
   /**
-   * resource URL
-* required field
-* you can get this URL in the response of the Pages endpoint
-* example:
-* https://dataforseo.com/apis
+   * <em>resource URL</em><br><strong>required field</strong><br>you can get this URL in the response of the <a href='/v3/on_page/pages/'>Pages</a> endpoint<br>example:<br><code>https://dataforseo.com/apis</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -101,11 +93,7 @@ public class OnPageMicrodataRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

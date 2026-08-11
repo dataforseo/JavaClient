@@ -70,7 +70,7 @@ public class RefineProductsElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class RefineProductsElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class RefineProductsElement  {
   }
 
   /**
-   * keyword for the related refined search
+   * <em>keyword for the related refined search</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class RefineProductsElement  {
   }
 
   /**
-   * type of search refinement
+   * <em>type of search refinement</em>
    * @return refineType
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class RefineProductsElement  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

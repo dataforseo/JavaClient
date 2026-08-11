@@ -47,7 +47,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * ID of the video received in a POST array
+   * <em>ID of the video received in a POST array</em>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results<br></em>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -163,10 +162,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -189,8 +185,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -213,10 +208,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP.
-* possible item:
-* youtube_comment
+   * <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item:<br><code>youtube_comment</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -239,7 +231,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * title of the video
+   * <em>title of the video</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -262,7 +254,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * number of comments on the video
+   * <em>number of comments on the video</em>
    * @return commentsCount
    */
   @javax.annotation.Nullable
@@ -285,7 +277,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -308,7 +300,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedResultInfo  {
   }
 
   /**
-   * elements of search results found in SERP
+   * <em>elements of search results found in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

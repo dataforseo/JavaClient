@@ -93,9 +93,7 @@ public class BaseSerpApiElementItem  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class BaseSerpApiElementItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -141,9 +139,7 @@ public class BaseSerpApiElementItem  {
   }
 
   /**
-   * rectangle parameters
-* contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-* equals null if calculate_rectangles in the POST request is not set to true
+   * <em>rectangle parameters</em><br>contains cartesian coordinates and pixel dimensions of the result's snippet in SERP<br>equals <code>null</code> if <code>calculate_rectangles</code> in the POST request is not set to <code>true</code>
    * @return rectangle
    */
   @javax.annotation.Nullable

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**isValidHreflang** | **Boolean** | hreflang validity status<br>indicates whether the hreflang attribute is correctly implemented |[optional]|
-**hreflang** | **String** | hreflang attribute value<br>language and optional country code specified in the hreflang attribute<br>example: 'en-US', 'fr' |[optional]|
+**isValidHreflang** | **Boolean** | <em>hreflang validity status</em><br>indicates whether the hreflang attribute is correctly implemented |[optional]|
+**hreflang** | **String** | <em>hreflang attribute value</em><br>language and optional country code specified in the hreflang attribute<br>example: <code>'en-US'</code>, <code>'fr'</code> |[optional]|

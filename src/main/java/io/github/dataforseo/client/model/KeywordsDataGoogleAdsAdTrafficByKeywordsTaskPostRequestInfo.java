@@ -47,18 +47,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * keywords
-* required field
-* The maximum number of keywords you can specify: 1000
-* The maximum number of characters for each keyword: 80
-* The maximum number of words for each keyword phrase: 10
-* the keywords you specify will be converted to a lowercase format
-* Note #1: Google Ads may return no data for certain groups of keywords;
-* Note #2: Google Ads provides combined search volume values for groups of similar keywords
-* to obtain search volume for similar keywords, we recommend submitting such keywords in separate requests;
-* Note #3: Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task;
-* to learn more about which symbols and characters can be used, please refer to this article
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords</em><br><strong>required field</strong><br>The maximum number of keywords you can specify: 1000<br>The maximum number of characters for each keyword: 80<br>The maximum number of words for each keyword phrase: 10<br>the keywords you specify will be converted to a lowercase format<br><strong>Note #1:</strong> <a href='https://dataforseo.com/help-center/no-search-volume-data-for-some-keywords' target='_blank' rel='noopener noreferrer'>Google Ads may return no data for certain groups of keywords</a>;<br><strong>Note #2:</strong> <a href='https://dataforseo.com/help-center/sv-broad-exact-phrase-match' target='_blank' rel='noopener noreferrer'>Google Ads provides combined search volume values for groups of similar keywords</a><br>to obtain search volume for similar keywords, we recommend submitting such keywords in separate requests;<br><strong>Note #3:</strong> Google Ads doesn't allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can't use them when setting a task;<br>to learn more about which symbols and characters can be used, please refer to <a href='https://dataforseo.com/help-center/using-symbols-in-keywords-when-setting-a-google-ads-task' target='_blank' rel='noopener noreferrer'>this article</a><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -81,11 +70,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * the maximum custom bid
-* required field
-* the collected data will be based on this value
-* it stands for the price you are willing to pay for an ad; the higher value you specify here, the higher values you will get in the returned metrics
-* learn more in this help center article
+   * <em>the maximum custom bid</em><br><strong>required field</strong><br>the collected data will be based on this value<br>it stands for the price you are willing to pay for an ad; the higher value you specify here, the higher values you will get in the returned metrics<br>learn more in <a href='https://dataforseo.com/help-center/configuring-bid'>this help center article</a>
    * @return bid
    */
   @javax.annotation.Nullable
@@ -108,9 +93,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * keywords match-type
-* required field
-* can take the following values: exact, broad, phrase
+   * <em>keywords match-type</em><br><strong>required field</strong><br>can take the following values: <code>exact</code>, <code>broad</code>, <code>phrase</code>
    * @return match
    */
   @javax.annotation.Nullable
@@ -133,13 +116,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* optional field
-* if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -162,13 +139,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* optional field
-* if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
-* if you use this field, you don’t need to specify location_name or location_coordinate;
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong>;<br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -191,14 +162,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* optional field
-* if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
-* if you use this field, you don’t need to specify location_name or location_code;
-* location_coordinate parameter should be specified in the “latitude,longitude” format;
-* the data will be provided for the country the specified coordinates belong to;
-* example:
-* 52.6178549,-155.352142
+   * <em>GPS coordinates of a location</em><br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong>;<br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude'</em> format;<br><strong>the data will be provided for the country the specified coordinates belong to</strong>;<br>example:<br><code class='long-string'>52.6178549,-155.352142</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -221,11 +185,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* optional field
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br>optional field<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -248,11 +208,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* optional field
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/languages
-* example:
-* en
+   * <em>search engine language code</em><br>optional field<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -275,15 +231,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * starting date of the forecasting time range
-* required field if you specify date_to
-* if you indicate date_from and date_to, you don’t need to specify date_interval
-* minimum value is tomorrow’s date
-* the value you specify in date_from shouldn’t be further than date_to
-* date format: 'yyyy-mm-dd'
-* example:
-* '2021-10-30'if Status endpoint returns false in the actual_data field, date_from can be set to the month before last and prior;
-* if Status endpoint returns true in the actual_data field, date_from can be set to the last month and prior
+   * <em>starting date of the forecasting time range</em><br>required field if you specify <code>date_to</code><br><strong>if you indicate <code>date_from</code> and <code>date_to</code>, you don't need to specify <code>date_interval</code></strong><br>minimum value is tomorrow's date<br>the value you specify in <code>date_from</code> shouldn't be further than <code>date_to</code><br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2021-10-30'</code>if <a href='/v3/keywords_data/google_ads/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>false</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the month before last and prior;<br>if <a href='/v3/keywords_data/google_ads/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>true</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the last month and prior
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -306,14 +254,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * ending date of the forecasting time range
-* required field if you specify date_from
-* if you indicate date_from and date_to, you don’t need to specify date_interval
-* minimum value is date_from +1 day
-* maximum value is current day and month of the next year
-* date format: 'yyyy-mm-dd'
-* example:
-* '2022-10-30'
+   * <em>ending date of the forecasting time range</em><br>required field if you specify <code>date_from</code><br><strong>if you indicate <code>date_from</code> and <code>date_to</code>, you don't need to specify <code>date_interval</code></strong><br>minimum value is <code>date_from</code> +1 day<br>maximum value is current day and month of the next year<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2022-10-30'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -336,11 +277,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * forecasting date interval
-* optional field
-* if you specify date_interval, you don’t need to indicate date_from and date_to
-* possible values: next_week, next_month, next_quarter
-* default value: next_month
+   * <em>forecasting date interval</em><br>optional field<br><strong>if you specify <code>date_interval</code>, you don't need to indicate <code>date_from</code> and <code>date_to</code></strong><br>possible values: <code>next_week</code>, <code>next_month</code>, <code>next_quarter</code><br>default value: <code>next_month</code>
    * @return dateInterval
    */
   @javax.annotation.Nullable
@@ -363,10 +300,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * results sorting parameters
-* optional field
-* Use these parameters to sort the results by relevance, average_cpc, cost, or clicks in the descending order
-* default value: relevance
+   * <em>results sorting parameters</em><br>optional field<br>Use these parameters to sort the results by <code>relevance</code>, <code>average_cpc</code>, <code>cost</code>, or <code>clicks</code> in the descending order<br>default value: <code>relevance</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -389,16 +323,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -421,16 +346,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -453,11 +369,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

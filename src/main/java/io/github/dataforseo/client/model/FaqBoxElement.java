@@ -74,7 +74,7 @@ public class FaqBoxElement  {
   }
 
   /**
-   * title of the link
+   * <em>title of the link</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -97,7 +97,7 @@ public class FaqBoxElement  {
   }
 
   /**
-   * description of the hotel booking element
+   * <em>description of the hotel booking element</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -120,7 +120,7 @@ public class FaqBoxElement  {
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return links
    */
   @javax.annotation.Nullable

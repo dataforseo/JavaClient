@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpScreenshotTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpScreenshotTaskInfo>** | <em>array of tasks</em> |[optional]|

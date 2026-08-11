@@ -70,8 +70,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements found in Amazon Sellers SERP
+   * <em> absolute rank in SERP</em><br>absolute position among all the elements found in Amazon Sellers SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * alignment of the element in SERP
-* possible values:
-* left, right
+   * <em>alignment of the element in SERP</em><br>possible values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * XPath of the element
+   * <em><a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * business name of the seller
+   * <em>business name of the seller</em>
    * @return sellerName
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * url forwarding to the seller’s page on Amazon
+   * <em>url forwarding to the seller's page on Amazon</em>
    * @return sellerUrl
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * sender company name
+   * <em>sender company name</em>
    * @return shipsFrom
    */
   @javax.annotation.Nullable
@@ -235,8 +231,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * product pricing details
-* if there are no details, the value will be null
+   * <em>product pricing details</em><br>if there are no details, the value will be <code>null</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -259,7 +254,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * value of the percentage discount
+   * <em>value of the percentage discount</em>
    * @return percentageDiscount
    */
   @javax.annotation.Nullable
@@ -282,7 +277,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * array of objects containing information about applicable vouchers
+   * <em>array of objects containing information about applicable vouchers</em>
    * @return applicableVouchers
    */
   @javax.annotation.Nullable
@@ -305,8 +300,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * seller rating details
-* seller popularity rate based on customer reviews
+   * <em>seller rating details</em><br>seller popularity rate based on customer reviews
    * @return rating
    */
   @javax.annotation.Nullable
@@ -329,8 +323,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * product condition
-* condition of the product offered by the seller
+   * <em>product condition</em><br>condition of the product offered by the seller
    * @return condition
    */
   @javax.annotation.Nullable
@@ -353,8 +346,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * product condition details
-* expanded details on the condition of the product offered by the seller
+   * <em>product condition details</em><br>expanded details on the condition of the product offered by the seller
    * @return conditionDescription
    */
   @javax.annotation.Nullable
@@ -377,8 +369,7 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
   /**
-   * delivery information
-* delivery information including free and fast delivery date ranges
+   * <em>delivery information</em><br>delivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable

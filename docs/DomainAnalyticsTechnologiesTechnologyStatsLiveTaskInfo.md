@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo>** | <em>array of results</em> |[optional]|

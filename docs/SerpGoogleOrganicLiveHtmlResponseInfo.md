@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleOrganicLiveHtmlTaskInfo>** |  |[optional]|
+**tasks** | **List<SerpGoogleOrganicLiveHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

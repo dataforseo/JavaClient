@@ -70,7 +70,7 @@ public class JobsElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class JobsElement  {
   }
 
   /**
-   * link description
+   * <em>link description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class JobsElement  {
   }
 
   /**
-   * location for which the job vacancy is posted
+   * <em>location for which the job vacancy is posted</em>
    * @return location
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class JobsElement  {
   }
 
   /**
-   * author
+   * <em>author</em>
    * @return author
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class JobsElement  {
   }
 
   /**
-   * the time when the job was posted
+   * <i>the time when the job was posted</i>
    * @return jobPostedTime
    */
   @javax.annotation.Nullable
@@ -185,10 +185,7 @@ public class JobsElement  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class JobsElement  {
   }
 
   /**
-   * contract type
+   * <em>contract type</em>
    * @return contractType
    */
   @javax.annotation.Nullable
@@ -234,7 +231,7 @@ public class JobsElement  {
   }
 
   /**
-   * salary
+   * <i>salary</i>
    * @return salary
    */
   @javax.annotation.Nullable
@@ -257,7 +254,7 @@ public class JobsElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable

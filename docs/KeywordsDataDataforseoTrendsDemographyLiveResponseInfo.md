@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataDataforseoTrendsDemographyLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataDataforseoTrendsDemographyLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

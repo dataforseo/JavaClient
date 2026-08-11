@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataGoogleAdsLocationsResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataGoogleAdsLocationsResultInfo>** | <em>array of results</em> |[optional]|

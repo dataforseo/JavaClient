@@ -47,7 +47,7 @@ public class DataLabsTwitterSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsTwitterSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsTwitterSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * historical SERPs and related data found in the database
+   * <em>historical SERPs and related data found in the database</em>
    * @return items
    */
   @javax.annotation.Nullable

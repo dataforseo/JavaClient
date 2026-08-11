@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**itemsCount** | **Long** | number of items in the results array |[optional]|
-**items** | **List<ScreenshotItem>** | items array |[optional]|
+**itemsCount** | **Long** | <em>number of items in the results array</em> |[optional]|
+**items** | **List<ScreenshotItem>** | <em>items array</em> |[optional]|

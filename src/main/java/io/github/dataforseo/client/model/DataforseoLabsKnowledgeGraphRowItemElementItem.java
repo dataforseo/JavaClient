@@ -47,7 +47,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* action:listen_artist
+   * <em>google defined data attribute ID</em><br>            example:<br>            <code>action:listen_artist</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * description content
+   * <em>description content</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable

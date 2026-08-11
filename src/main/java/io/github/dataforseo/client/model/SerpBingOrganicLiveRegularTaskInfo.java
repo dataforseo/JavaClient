@@ -236,7 +236,7 @@ public class SerpBingOrganicLiveRegularTaskInfo  {
   }
 
   /**
-   * array of results
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

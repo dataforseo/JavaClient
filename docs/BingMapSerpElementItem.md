@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the item |[optional]|
-**url** | **String** | URL |[optional]|
+**title** | **String** | <em>title of the item</em> |[optional]|
+**url** | **String** | <em>URL</em> |[optional]|

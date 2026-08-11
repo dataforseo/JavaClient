@@ -47,7 +47,7 @@ public class SerpApiBingAiOverviewImagesElementItem  extends BaseSerpApiBingAiOv
   }
 
   /**
-   * URL link
+   * <em>URL link</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiBingAiOverviewImagesElementItem  extends BaseSerpApiBingAiOv
   }
 
   /**
-   * title of the link element
+   * <em>title of the link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiBingAiOverviewImagesElementItem  extends BaseSerpApiBingAiOv
   }
 
   /**
-   * items featured in the faq_box
+   * <em>items featured in the faq_box</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class PreviewVideos  {
   }
 
   /**
-   * ID of the video
+   * <em>ID of the video</em>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class PreviewVideos  {
   }
 
   /**
-   * title of the video
+   * <em>title of the video</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class PreviewVideos  {
   }
 
   /**
-   * URL of the video
+   * <em>URL of the video</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class PreviewVideos  {
   }
 
   /**
-   * duration of the video
+   * <em>duration of the video</em>
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class PreviewVideos  {
   }
 
   /**
-   * duration of the video in seconds
+   * <em>duration of the video in seconds</em>
    * @return durationTimeSeconds
    */
   @javax.annotation.Nullable

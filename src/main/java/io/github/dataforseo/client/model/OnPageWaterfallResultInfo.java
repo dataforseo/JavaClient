@@ -47,8 +47,7 @@ public class OnPageWaterfallResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageWaterfallResultInfo  {
   }
 
   /**
-   * details of the crawling session
+   * <em>details of the crawling session</em>
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class OnPageWaterfallResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class OnPageWaterfallResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

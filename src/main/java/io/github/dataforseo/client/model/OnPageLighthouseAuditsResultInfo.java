@@ -47,10 +47,7 @@ public class OnPageLighthouseAuditsResultInfo  {
   }
 
   /**
-   * the list of available lighthouse audits
-* an array containing the titles of available audits;
-* Note: the titles can change depending on if the audit passed or failed and may contain markdown code;
-* Note #2: if you’re using the audit that contains a slash (/) in its name, search by the last word after the slash
+   * <em>the list of available lighthouse audits</em><br>an array containing the titles of available audits;<br><strong>Note:</strong> the titles can change depending on if the audit passed or failed and may contain markdown code;<br><strong>Note #2:</strong> if you're using the audit that contains a slash (<code>/</code>) in its name, search by the last word after the slash
    * @return audits
    */
   @javax.annotation.Nullable

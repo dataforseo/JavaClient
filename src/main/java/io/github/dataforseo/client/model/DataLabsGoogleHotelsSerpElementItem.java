@@ -47,9 +47,7 @@ public class DataLabsGoogleHotelsSerpElementItem  extends BaseDataforseoLabsApiE
   }
 
   /**
-   * unique hotel identifier
-* unique hotel identifier assigned by Google;
-* example: 'CgoIjaeSlI6CnNpVEAE'
+   * <em>unique hotel identifier</em><br>            unique hotel identifier assigned by Google;<br>            example: <code>'CgoIjaeSlI6CnNpVEAE'</code>
    * @return hotelIdentifier
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class DataLabsGoogleHotelsSerpElementItem  extends BaseDataforseoLabsApiE
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable

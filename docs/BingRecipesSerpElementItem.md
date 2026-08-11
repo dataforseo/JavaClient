@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**items** | **List<RecipesElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**items** | **List<RecipesElement>** | <em>contains results featured in the 'hotels_pack' element of SERP</em> |[optional]|

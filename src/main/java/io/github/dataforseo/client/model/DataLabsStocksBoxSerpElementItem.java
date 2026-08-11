@@ -47,7 +47,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * source of additional information about the result
+   * <em>source of additional information about the result</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * text alongside the link title
+   * <em>text alongside the link title</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * price of booking a place for the specified dates of stay
+   * <em>price of booking a place for the specified dates of stay</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * table element
+   * <em>table element</em>
    * @return table
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * contains data provided in the graph of the element
+   * <em>contains data provided in the graph of the element</em>
    * @return graph
    */
   @javax.annotation.Nullable

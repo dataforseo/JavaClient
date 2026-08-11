@@ -47,7 +47,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * title of the video
+   * <em>title of the video</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * ID of the video
+   * <em>ID of the video</em>
    * @return playlistId
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * the URL of the page where the thumbnail is hosted
+   * <em>the URL of the page where the thumbnail is hosted</em>
    * @return thumbnailUrl
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * the name of the channel where the video is published
+   * <em>the name of the channel where the video is published</em>
    * @return channelName
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * the URL of the channel where the video is published
+   * <em>the URL of the channel where the video is published</em>
    * @return channelUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * the URL of the page where the logo image of the channel is hosted
+   * <em>the URL of the page where the logo image of the channel is hosted</em>
    * @return channelLogo
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * the number of videos in playlist
+   * <em>the number of videos in playlist</em>
    * @return videosCount
    */
   @javax.annotation.Nullable
@@ -208,8 +208,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * information about preview videos
-* array of objects containing information about videos in the preview block of the playlist element
+   * <em>information about preview videos</em><br>array of objects containing information about videos in the preview block of the playlist element
    * @return previewVideos
    */
   @javax.annotation.Nullable

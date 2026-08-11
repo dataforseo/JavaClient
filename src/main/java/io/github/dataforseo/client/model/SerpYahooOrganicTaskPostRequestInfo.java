@@ -47,11 +47,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://search.yahoo.com/search?p=rank+checker&n=100&vl=lang_en&vc=us&ei=UTF-8
+   * <em>direct URL of the search query</em><br>optional field<br>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.<br>example:<br><code class='long-string'>https://search.yahoo.com/search?p=rank+checker&n=100&vl=lang_en&vc=us&ei=UTF-8</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -74,13 +70,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<br><strong>all %## will be decoded (plus character '+' will be decoded to a space character)</strong><br>if you need to use the '%' character for your <code>keyword</code>, please specify it as '%25';<br>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -103,13 +93,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/yahoo-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -132,12 +116,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -160,12 +139,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>2840</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -188,15 +162,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 199.9 (mm)
-* the maximum value for “radius”: 199999 (mm)
-* example:
-* 53.476225,-2.243572,200
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9 (mm)<br>the maximum value for <em>'radius'</em>: 199999 (mm)<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>n
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -219,12 +185,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -247,12 +208,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/languages
-* example:
-* en
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -275,11 +231,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* return results for a specific device type
-* can take the values:desktop, mobile
-* default value: desktop
+   * <em>device type</em><br>optional field<br>return results for a specific device type<br>can take the values:<code>desktop</code>, <code>mobile</code><br>default value: <code>desktop</code>
    * @return device
    */
   @javax.annotation.Nullable
@@ -302,12 +254,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
+   * <em>device operating system</em><br>optional field<br>if you specify <code>desktop</code> in the <code>device</code> field, choose from the following values: <code>windows</code>, <code>macos</code><br>default value: <code>windows</code><br>if you specify <code>mobile</code> in the <code>device</code> field, choose from the following values: <code>android</code>, <code>ios</code><br>default value: <code>android</code>
    * @return os
    */
   @javax.annotation.Nullable
@@ -330,12 +277,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * search engine domain
-* optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
-* example:
-* au.search.yahoo.com, uk.search.yahoo.com, ca.search.yahoo.com, etc.
+   * <em>search engine domain</em><br>optional field<br>we choose the relevant search engine domain automatically according to the location and language you specify<br>however, you can set a custom search engine domain in this field<br>example:<br><code>au.search.yahoo.com</code>, <code>uk.search.yahoo.com</code>, <code>ca.search.yahoo.com</code>, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -358,14 +300,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results in SERP
-* default value: 6
-* max value: 700
-* Your account will be billed per each SERP;
-* Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
-* The cost can be calculated on the Pricing page.
+   * <em>parsing depth</em><br>optional field<br>number of results in SERP<br>default value: <code>6</code><br>max value: <code>700</code><br><strong>Your account will be billed per each SERP;</strong> <br>Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'></a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/yahoo-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -388,13 +323,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * page crawl limit
-* optional field
-* number of search results pages to crawl
-* default value: 1
-* max value: 100
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
+   * <em>page crawl limit</em><br>optional field<br>number of search results pages to crawl<br>default value: <code>1</code><br>max value: <code>100</code><br><strong>Note:</strong> the <code>max_crawl_pages</code> and <code>depth</code> parameters complement each other;<br>learn more at <a href='https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work' target='_blank' rel='noopener noreferrer'>our help center</a>
    * @return maxCrawlPages
    */
   @javax.annotation.Nullable
@@ -417,9 +346,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * additional parameters of the search query
-* optional field
-* get the list of available parameters and additional details here
+   * <em>additional parameters of the search query</em><br>optional field<br><a href='https://dataforseo.com/help-center/yahoo-search-engine-parameters-and-how-to-use-them'>get the list of available parameters and additional details here</a>
    * @return searchParam
    */
   @javax.annotation.Nullable
@@ -462,63 +389,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
-
-  public SerpYahooOrganicTaskPostRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
-    return this;
-  }
-
-  /**
-   * target domain, subdomain, or wildcard value
-* required field if stop_crawl_on_match is specified
-* specify a target domain, subdomain, or wildcard value;
-* Note: domain or subdomain must be specified without a request protocol;
-* example: 'match_value': 'dataforseo.com',
-* 'match_value': '/blog/post-*'
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public SerpYahooOrganicTaskPostRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * target match type
-* required field if stop_crawl_on_match is specified
-* type of match for the match_value
-* possible values:
-* domain – specific domain or subdomain
-* with_subdomains – main domain and subdomains
-* wildcard –  wildcard pattern
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -529,11 +399,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -556,16 +422,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -588,11 +445,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* regular, html
+   * <em>postback_url datatype</em><br><strong>required field if you specify <code>postback_url</code></strong><br>corresponds to the datatype that will be sent to your server<br>possible values:<br><code>regular</code>, <code>html</code>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -615,16 +468,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -695,8 +539,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
         Objects.equals(this.maxCrawlPages, serpYahooOrganicTaskPostRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpYahooOrganicTaskPostRequestInfo.searchParam) &&
         Objects.equals(this.stopCrawlOnMatch, serpYahooOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchValue, serpYahooOrganicTaskPostRequestInfo.matchValue) &&
-        Objects.equals(this.matchType, serpYahooOrganicTaskPostRequestInfo.matchType) &&
         Objects.equals(this.tag, serpYahooOrganicTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, serpYahooOrganicTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpYahooOrganicTaskPostRequestInfo.postbackData) &&
@@ -710,7 +552,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, stopCrawlOnMatch, matchValue, matchType, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, stopCrawlOnMatch, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -740,8 +582,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -798,10 +638,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
     openapiFields.add("search_param");
     
     openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_value");
-    
-    openapiFields.add("match_type");
     
     openapiFields.add("tag");
     

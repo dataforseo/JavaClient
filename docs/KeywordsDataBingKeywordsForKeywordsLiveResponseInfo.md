@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataBingKeywordsForKeywordsLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataBingKeywordsForKeywordsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

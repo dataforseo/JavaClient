@@ -70,9 +70,7 @@ public class BaseBingSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class BaseBingSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em> absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class BaseBingSerpApiElementItem  {
   }
 
   /**
-   * search results page number
-* indicates the number of the SERP page on which the element is located
+   * <em>search results page number</em><br>indicates the number of the SERP page on which the element is located
    * @return page
    */
   @javax.annotation.Nullable
@@ -143,9 +139,7 @@ public class BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -168,7 +162,7 @@ public class BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -191,9 +185,7 @@ public class BaseBingSerpApiElementItem  {
   }
 
   /**
-   * rectangle parameters
-* contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-* equals null if calculate_rectangles in the POST request is not set to true
+   * <em>rectangle parameters</em><br>            contains cartesian coordinates and pixel dimensions of the result's snippet in SERP<br>            equals <code>null</code> if <code>calculate_rectangles</code> in the POST request is not set to <code>true</code>
    * @return rectangle
    */
   @javax.annotation.Nullable

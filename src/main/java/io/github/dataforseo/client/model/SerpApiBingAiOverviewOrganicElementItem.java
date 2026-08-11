@@ -47,7 +47,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * title of the link
+   * <em>title of the link</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * relevant URL
+   * <em>relevant URL </em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * text snippet from the organic result
+   * <em>text snippet from the organic result</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * breadcrumb in SERP
+   * <em>breadcrumb in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * website name in SERP
+   * <em>website name in SERP</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * links featured in the faq_box_element
+   * <em>links featured in the faq_box_element</em>
    * @return links
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SerpApiBingAiOverviewOrganicElementItem  extends BaseSerpApiBingAiO
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable

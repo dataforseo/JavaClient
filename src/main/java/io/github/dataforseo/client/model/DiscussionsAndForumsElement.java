@@ -70,7 +70,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * link description
+   * <em>link description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -185,10 +185,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class DiscussionsAndForumsElement  {
   }
 
   /**
-   * number of posts from the discussion on the related source
+   * <em>number of posts from the discussion on the related source</em>
    * @return postsCount
    */
   @javax.annotation.Nullable

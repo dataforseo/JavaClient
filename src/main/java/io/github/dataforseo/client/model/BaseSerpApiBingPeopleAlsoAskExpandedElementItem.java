@@ -70,7 +70,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * title
+   * <em>title</em>
    * @return featuredTitle
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * domain name of the reference
+   * <em>domain name of the reference</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * images of the element
+   * <em>images of the element</em>
    * @return images
    */
   @javax.annotation.Nullable
@@ -208,9 +208,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * date and time when the video was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example: 2009-01-01 00:00:00 +00:00
+   * <em>date and time when the video was published</em><br>            in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>            example: <code>2009-01-01 00:00:00 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -233,8 +231,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * results table
-* if there are none, equals null
+   * <em>results table</em><br>            if there are none, equals <code>null</code>
    * @return table
    */
   @javax.annotation.Nullable

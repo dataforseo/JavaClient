@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the result in SERP |[optional]|
-**items** | **List<TopSightsElement>** | historical SERPs and related data found in the database |[optional]|
+**title** | **String** | <em>title of the result in SERP</em> |[optional]|
+**items** | **List<TopSightsElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|

@@ -5,17 +5,17 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**imageUrl** | **String** | URL specified in a POST array |[optional]|
-**keyword** | **String** | keyword Google associated with the specified image |[optional]|
+**imageUrl** | **String** | <em>URL specified in a POST array</em> |[optional]|
+**keyword** | **String** | <em>keyword Google associated with the specified image</em> |[optional]|
 **type** | **String** | type of element |[optional]|
-**seDomain** | **String** | search engine domain in a POST array |[optional]|
-**locationCode** | **Integer** | location code in a POST array |[optional]|
-**languageCode** | **String** | language code in a POST array |[optional]|
-**checkUrl** | **String** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
-**datetime** | **String** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
-**refinementChips** | **RefinementChipsInfo** | search refinement chips |[optional]|
-**itemTypes** | **List<String>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>organic,<br>images |[optional]|
-**seResultsCount** | **Long** | total number of results in SERP |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BaseSerpApiGoogleSearchByImagesElementItem>** | items featured in the faq_box |[optional]|
+**seDomain** | **String** | <em>search engine domain in a POST array</em> |[optional]|
+**locationCode** | **Integer** | <em>location code in a POST array</em> |[optional]|
+**languageCode** | **String** | <em>language code in a POST array</em> |[optional]|
+**checkUrl** | **String** | <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results |[optional]|
+**datetime** | **String** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**spell** | **SpellInfo** | <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**refinementChips** | **RefinementChipsInfo** | <em>search refinement chips</em> |[optional]|
+**itemTypes** | **List<String>** | <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><code>organic</code>, <br><code>images</code> |[optional]|
+**seResultsCount** | **Long** | <em> total number of results in SERP</em> |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <strong><code>items</code></strong> array</em> |[optional]|
+**items** | **List<BaseSerpApiGoogleSearchByImagesElementItem>** | <em>items of the element</em> |[optional]|

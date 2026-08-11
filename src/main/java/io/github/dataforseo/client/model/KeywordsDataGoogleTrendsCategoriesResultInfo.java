@@ -47,7 +47,7 @@ public class KeywordsDataGoogleTrendsCategoriesResultInfo  {
   }
 
   /**
-   * unique google trends category identifier
+   * <em>unique google trends category identifier</em>
    * @return categoryCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataGoogleTrendsCategoriesResultInfo  {
   }
 
   /**
-   * name of the google trends category
+   * <em>name of the google trends category</em>
    * @return categoryName
    */
   @javax.annotation.Nullable
@@ -93,14 +93,7 @@ public class KeywordsDataGoogleTrendsCategoriesResultInfo  {
   }
 
   /**
-   * the code of the superordinate category
-* example:
-* 'category_code': 1100,
-* 'category_name': 'Superhero Films',
-* 'category_code_parent': 1097
-* where category_code_parent corresponds to:
-* 'category_code': 1097,
-* 'category_name': 'Action & Adventure Films'
+   * <em>the code of the superordinate category</em><br>example:<br><code>'category_code': 1100,</code><br><code>'category_name': 'Superhero Films',</code><br><code>'category_code_parent': 1097</code> <br>where <code>category_code_parent</code> corresponds to: <br><code>'category_code': 1097,</code><br><code>'category_name': 'Action & Adventure Films'</code>
    * @return categoryCodeParent
    */
   @javax.annotation.Nullable

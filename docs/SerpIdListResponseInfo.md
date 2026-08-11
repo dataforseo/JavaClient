@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpIdListTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

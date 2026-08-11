@@ -47,11 +47,7 @@ public class OnPageDuplicateTagsRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* “07131248-1535-0216-1000-17384017ad04”
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='https://docs.dataforseo.com/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br>'07131248-1535-0216-1000-17384017ad04'
    * @return id
    */
   @javax.annotation.Nullable
@@ -97,9 +93,7 @@ public class OnPageDuplicateTagsRequestInfo  {
   }
 
   /**
-   * tag value
-* optional field
-* specify a title or description here if you want to receive a list of duplicate pages that contains this tag
+   * <em>tag value</em><br>optional field<br>specify a title or description here if you want to receive a list of duplicate pages that contains this tag
    * @return accumulator
    */
   @javax.annotation.Nullable
@@ -122,10 +116,7 @@ public class OnPageDuplicateTagsRequestInfo  {
   }
 
   /**
-   * the maximum number of returned pages
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned pages</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -148,11 +139,7 @@ public class OnPageDuplicateTagsRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned pages
-* optional field
-* default value: 0
-* maximum value: 2000000
-* if you specify the 10 value, the first ten pages in the results array will be omitted and the data will be provided for the successive pages
+   * <em>offset in the results array of returned pages</em><br>optional field<br>default value: <code>0</code><br>maximum value: <code>2000000</code><br>if you specify the <code>10</code> value, the first ten pages in the results array will be omitted and the data will be provided for the successive pages
    * @return offset
    */
   @javax.annotation.Nullable
@@ -175,11 +162,7 @@ public class OnPageDuplicateTagsRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

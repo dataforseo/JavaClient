@@ -13,5 +13,5 @@
 **httpUrl** | **String** | <em>URL that caused an error</em><br>URL you used for making an API call or pingback/postback URL |[optional]|
 **httpMethod** | **String** | <em>HTTP method</em> |[optional]|
 **httpCode** | **Integer** | <em>HTTP status code</em> |[optional]|
-**httpTime** | **Double** | <em>time taken by HTTP request</em><br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
+**httpTime** | **Integer** | <em>time taken by HTTP request</em><br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
 **httpResponse** | **String** | <em>HTTP response</em><br>server response |[optional]|

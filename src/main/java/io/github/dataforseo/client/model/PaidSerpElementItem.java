@@ -208,7 +208,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * name of the website in SERP
+   * <em>name of the website in SERP</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -231,8 +231,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains an image
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERPn
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -255,8 +254,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains a video
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element contains a <code class='prettyprint'>video</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -279,15 +277,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * array of properties detected for the SERP element
-* lists the properties that are true for this element
-* each value in the array represents a detected property
-* example:
-* if is_image is present in the array, the element contains an image
-* possible values in the array:
-* is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
-* equals null if none of the properties are detected for the element
-* learn more about the checks array in this Help Center article
+   * <em>array of properties detected for the SERP element</em><br>lists the properties that are true for this element<br>each value in the array represents a detected property <br>example:<br>if <code>is_image</code> is present in the array, the element contains an image<br>possible values in the array:<br><code>is_image</code>, <code>is_video</code>, <code>is_featured_snippet</code>, <code>amp_version</code>, <code>is_malicious</code>, <code>is_web_story</code>, <code>is_highly_cited</code><br>equals <code>null</code> if none of the properties are detected for the element<br>learn more about the <code>checks</code> array in <a href='https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api' target='_blank'>this Help Center article</a>
    * @return checks
    */
   @javax.annotation.Nullable
@@ -310,8 +300,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * images of the element
-* if there are none, equals null
+   * <em>images of the element</em><br>if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -334,7 +323,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -357,7 +346,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * additional information about the result
+   * <em>additional information about the result</em>
    * @return extra
    */
   @javax.annotation.Nullable
@@ -380,8 +369,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * extended description
-* if there is none, equals null
+   * <em>extended description</em><br>if there is none, equals <code>null</code>
    * @return descriptionRows
    */
   @javax.annotation.Nullable
@@ -404,7 +392,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return links
    */
   @javax.annotation.Nullable
@@ -427,9 +415,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result;
-* if there is none, equals null
+   * <em>pricing details</em><br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals <code>null</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -452,9 +438,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable

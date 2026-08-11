@@ -70,7 +70,7 @@ public class PeopleAlsoAskElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class PeopleAlsoAskElement  {
   }
 
   /**
-   * question that triggered additional expanded elements
+   * <em>question that triggered additional expanded elements</em>
    * @return seedQuestion
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class PeopleAlsoAskElement  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class PeopleAlsoAskElement  {
   }
 
   /**
-   * expanded element
+   * <em>expanded element</em>
    * @return expandedElement
    */
   @javax.annotation.Nullable

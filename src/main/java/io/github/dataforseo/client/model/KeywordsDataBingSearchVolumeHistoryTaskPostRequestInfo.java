@@ -47,12 +47,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * keywords
-* required field
-* The maximum number of keywords you can specify: 1000
-* The maximum number of characters for each keyword: 100
-* the specified keywords will be converted to lowercase, data will be provided in a separate array
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords</em><br><strong>required field</strong><br>The maximum number of keywords you can specify: 1000<br>The maximum number of characters for each keyword: 100<br>the specified keywords will be converted to lowercase, data will be provided in a separate array<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -103,12 +93,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,13 +116,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* the data will be provided for the country the specified coordinates belong to
-* example:
-* 52.6178549,-155.352142
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude'</em> format<br><strong>the data will be provided for the country the specified coordinates belong to</strong><br>example:<br><code class='long-string'>52.6178549,-155.352142</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -160,10 +139,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engines with their language_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages
+   * 
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -186,10 +162,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engines with their language_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages
+   * 
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -212,11 +185,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * device types
-* optional field
-* specify this field if you want to get the data for a particular device types
-* possible values: mobile, desktop, tablet, non_smartphones
-* default value:  ['mobile', 'desktop', 'tablet', 'non_smartphones']
+   * <em>device types</em><br>optional field<br>specify this field if you want to get the data for a particular device types<br>possible values: <code>mobile</code>, <code>desktop</code>, <code>tablet</code>, <code>non_smartphones</code><br>default value:  <code>['mobile', 'desktop', 'tablet', 'non_smartphones']</code>
    * @return device
    */
   @javax.annotation.Nullable
@@ -239,14 +208,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * aggregates the returned data to a certain time period
-* optional field
-* specify this field if you want to get the data in monthly, weekly or daily format
-* possible values: monthly, weekly, daily
-* monthly – returns data up to past 24 months
-* weekly – returns data up to past 15 weeks
-* daily – returns data up to past 45 days
-* default value:  monthly
+   * <em>aggregates the returned data to a certain time period</em><br>optional field<br>specify this field if you want to get the data in monthly, weekly or daily format<p>possible values: <code>monthly</code>, <code>weekly</code>, <code>daily</code><p><code>monthly</code> - returns data up to past 24 months<br><code>weekly</code> - returns data up to past 15 weeks<br><code>daily</code> - returns data up to past 45 days<p>default value:  <code>monthly</code>
    * @return period
    */
   @javax.annotation.Nullable
@@ -269,18 +231,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* minimum value: two years back from today’s date
-* maximum value: one day from today’s date
-* date format: 'yyyy-mm-dd'
-* example:
-* '2020-01-01'
-* Note: we do not recommend using a custom time range
-* Note 2: if date_from and date_to parameters are not specified, the data will be returned for the past 24 months
-* if you specify the period parameter:
-* with value weekly, you will get results for the past 15 weeks
-* with value daily, you will get results for the past 45 days
+   * <em>starting date of the time range</em><br>optional field<br>minimum value: two years back from today’s date<br>if <a href='/v3/keywords_data/bing/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>false</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the month before last and prior;<br>if <a href='/v3/keywords_data/bing/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>true</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the last month and prior;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2020-01-01'</code><p><strong>Note:</strong> we do not recommend using a custom time range<p><strong>Note 2:</strong> if <code>date_from</code> and <code>date_to</code> parameters are not specified, the data will be returned for the past 24 months<p>if you specify the <code>period</code> parameter:<p>with value <code>weekly</code>, you will get results for the past 15 weeks<br>with value <code>daily</code>, you will get results for the past 45 days
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -303,18 +254,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* minimum value: two years back from today’s date;
-* maximum value: one day from today’s date;
-* date format: 'yyyy-mm-dd'
-* example:
-* '2020-03-15'
-* Note: we do not recommend using a custom time range
-* Note 2: if date_from and date_to parameters are not specified, the data will be returned for the past 24 months
-* if you specify the period parameter:
-* with value weekly, you will get results for the past 15 weeks
-* with value daily, you will get results for the past 45 days
+   * <em>ending date of the time range</em><br>optional field<p>minimum value: two years back from today’s date;<br>maximum value: one day from today's date;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2020-03-15'</code><p><strong>Note:</strong> we do not recommend using a custom time range<p><strong>Note 2:</strong> if <code>date_from</code> and <code>date_to</code> parameters are not specified, the data will be returned for the past 24 months<p>if you specify the <code>period</code> parameter:<p>with value <code>weekly</code>, you will get results for the past 15 weeks<br>with value <code>daily</code>, you will get results for the past 45 days
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -337,16 +277,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>URL for sending task results</em><br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/postbackscript?id=$id</code><br><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -369,16 +300,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -401,11 +323,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

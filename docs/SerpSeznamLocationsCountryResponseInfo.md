@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpSeznamLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpSeznamLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

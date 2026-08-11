@@ -47,7 +47,7 @@ public class BingVideoSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * <em>contains results featured in the 'hotels_pack' element of SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -47,10 +47,7 @@ public class KnowledgeGraphDescriptionItemSerpElementItem  extends BaseSerpApiEl
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class KnowledgeGraphDescriptionItemSerpElementItem  extends BaseSerpApiEl
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,8 +93,7 @@ public class KnowledgeGraphDescriptionItemSerpElementItem  extends BaseSerpApiEl
   }
 
   /**
-   * reference text
-* text snippet from the page that was used to generate the ai_overview_element
+   * <em>reference text</em><br>text snippet from the page that was used to generate the <code>ai_overview_element</code>
    * @return text
    */
   @javax.annotation.Nullable
@@ -122,9 +116,7 @@ public class KnowledgeGraphDescriptionItemSerpElementItem  extends BaseSerpApiEl
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>the links shown below some of Google's search results<br>if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable

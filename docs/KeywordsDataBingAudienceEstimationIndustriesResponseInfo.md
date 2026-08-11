@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataBingAudienceEstimationIndustriesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataBingAudienceEstimationIndustriesTaskInfo>** | <em>array of tasks</em> |[optional]|

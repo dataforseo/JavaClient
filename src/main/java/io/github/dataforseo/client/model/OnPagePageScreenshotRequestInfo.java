@@ -47,10 +47,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * page url
-* required field
-* absolute URL of the page to snap
-* note: if the URL you indicate here returns a 404 status code or the indicated value is not a valid URL, you will obtain 'error_message':'Screenshot is empty' in the response array
+   * <em>page url</em><br><strong>required field</strong><br>absolute URL of the page to snap<br><strong>note:</strong> if the URL you indicate here returns a 404 status code or the indicated value is not a valid URL, you will obtain <code>'error_message':'Screenshot is empty'</code> in the response array
    * @return url
    */
   @javax.annotation.Nullable
@@ -73,10 +70,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * language header for accessing the website
-* optional field
-* all locale formats are supported (xx, xx-XX, xxx-XX, etc.)
-* note: if you do not specify this parameter, some websites may deny access; in this case, you will obtain 'error_message':'Screenshot is empty' in the response array
+   * <em>language header for accessing the website</em><br>optional field<br>all locale formats are supported (xx, xx-XX, xxx-XX, etc.)<br><strong>note:</strong> if you do not specify this parameter, some websites may deny access; in this case, you will obtain <code>'error_message':'Screenshot is empty'</code> in the response array
    * @return acceptLanguage
    */
   @javax.annotation.Nullable
@@ -99,12 +93,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * custom user agent
-* optional field
-* custom user agent for crawling a website
-* example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
-* 
-* default value: Mozilla/5.0 (compatible; RSiteAuditor)
+   * <em>custom user agent</em><br>optional field<br>custom user agent for crawling a website<br>example: <code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36<br></code><br>default value: <code>Mozilla/5.0 (compatible; RSiteAuditor)</code>
    * @return customUserAgent
    */
   @javax.annotation.Nullable
@@ -127,24 +116,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * preset for browser screen parameters
-* optional field
-* if you use this field, you don’t need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factor
-* possible values:
-* desktop, mobile, tablet
-* desktop preset will apply the following values:
-* browser_screen_width: 1920
-* browser_screen_height: 1080
-* browser_screen_scale_factor: 1
-* mobile preset will apply the following values:
-* browser_screen_width: 390
-* browser_screen_height: 844
-* browser_screen_scale_factor: 3
-* tablet preset will apply the following values:
-* browser_screen_width: 1024
-* browser_screen_height: 1366
-* browser_screen_scale_factor: 2
-* Note: in this endpoint, the enable_browser_rendering, enable_javascript, load_resources, and enable_xhr parameters are always enabled.
+   * <em>preset for browser screen parameters</em><br>optional field<br>if you use this field, you don't need to indicate <code>browser_screen_width</code>, <code>browser_screen_height</code>, <code>browser_screen_scale_factor</code><p>possible values:<br><code>desktop</code>, <code>mobile</code>, <code>tablet</code><p><code>desktop</code> preset will apply the following values:<p><code>browser_screen_width: 1920</code><br><code>browser_screen_height: 1080</code><br><code>browser_screen_scale_factor: 1</code><p><code>mobile</code> preset will apply the following values:<p><code>browser_screen_width: 390</code><br><code>browser_screen_height: 844</code><br><code>browser_screen_scale_factor: 3</code><p><code>tablet</code> preset will apply the following values:<p><code>browser_screen_width: 1024</code><br><code>browser_screen_height: 1366</code><br><code>browser_screen_scale_factor: 2</code><p><strong>Note:</strong> in this endpoint, the <code>enable_browser_rendering</code>, <code>enable_javascript</code>, <code>load_resources</code>, and <code>enable_xhr</code> parameters are always enabled.
    * @return browserPreset
    */
   @javax.annotation.Nullable
@@ -167,12 +139,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * browser screen width
-* optional field
-* you can set a custom browser screen width to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* minimum value, in pixels: 240
-* maximum value, in pixels: 9999
+   * <em>browser screen width</em><br>optional field<br>you can set a custom browser screen width to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<p>minimum value, in pixels: <code>240</code> <br>maximum value, in pixels: <code>9999</code>
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -195,12 +162,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * browser screen height
-* optional field
-* you can set a custom browser screen height to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* minimum value, in pixels: 240
-* maximum value, in pixels: 9999
+   * <em>browser screen height</em><br>optional field<br>you can set a custom browser screen height to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<p>minimum value, in pixels: <code>240</code> <br>maximum value, in pixels: <code>9999</code>
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -223,12 +185,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * browser screen scale factor
-* optional field
-* you can set a custom browser screen resolution ratio to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* minimum value: 0.5
-* maximum value: 3
+   * <em>browser screen scale factor</em><br>optional field<br>you can set a custom browser screen resolution ratio to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<p>minimum value: <code>0.5</code> <br>maximum value: <code>3</code>
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable
@@ -251,10 +208,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * take a screenshot of the full page
-* optional field
-* set to false if you want to capture only the part of the page displayed before scrolling
-* default value: true
+   * <em>take a screenshot of the full page</em><br>optional field<br>set to <code>false</code> if you want to capture only the part of the page displayed before scrolling<br>default value: <code>true</code>
    * @return fullPageScreenshot
    */
   @javax.annotation.Nullable
@@ -277,11 +231,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * disable the cookie popup 
-* optional field
-* set to true if you want to disable the popup requesting cookie consent from the user;
-* default value:
-* false
+   * <em>disable the cookie popup </em><br>optional field<br>set to <code>true</code> if you want to disable the popup requesting cookie consent from the user;<br>default value: <br><code>false</code>
    * @return disableCookiePopup
    */
   @javax.annotation.Nullable
@@ -304,10 +254,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * switch proxy pool
-* optional field
-* if true, additional proxy pools will be used to obtain the requested data;
-* the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+   * <em>switch proxy pool</em><br>optional field<br>if <code>true</code>, additional proxy pools will be used to obtain the requested data;<br>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional <code>rate-limit</code> and/or <code>site_unreachable</code> errors
    * @return switchPool
    */
   @javax.annotation.Nullable
@@ -330,11 +277,7 @@ public class OnPagePageScreenshotRequestInfo  {
   }
 
   /**
-   * proxy pool
-* optional field
-* you can choose a location of the proxy pool that will be used to obtain the requested data;
-* the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors
-* possible values: us, de
+   * <em>proxy pool</em><br>optional field<br>you can choose a location of the proxy pool that will be used to obtain the requested data;<br>the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional <code>site_unreachable</code> errors<br>possible values: <code>us</code>, <code>de</code>
    * @return ipPoolForScan
    */
   @javax.annotation.Nullable

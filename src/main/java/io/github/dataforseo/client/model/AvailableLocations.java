@@ -47,7 +47,7 @@ public class AvailableLocations  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AvailableLocations  {
   }
 
   /**
-   * location name
+   * <em>location name</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AvailableLocations  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -116,9 +116,7 @@ public class AvailableLocations  {
   }
 
   /**
-   * location type
-* possible values:
-* Country, Region
+   * <em>location type</em><br>possible values:<br><code>Country</code>, <code>Region</code>
    * @return locationType
    */
   @javax.annotation.Nullable

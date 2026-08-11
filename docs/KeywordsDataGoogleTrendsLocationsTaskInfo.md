@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataGoogleTrendsLocationsResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataGoogleTrendsLocationsResultInfo>** | <em>array of results</em> |[optional]|

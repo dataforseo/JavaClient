@@ -47,9 +47,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br><br>            position within a group of elements with identical <code>type</code> values<br><br>            positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br><br>            absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * relevant URL of the Ad element in SERP
+   * <em> relevant URL of the Ad element in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * breadcrumb of the Ad element in SERP
+   * <em>breadcrumb of the Ad element in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * keyword highlighted in the result
+   * <em>keyword highlighted in the result</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * snippet of the element
+   * <em>snippet of the element</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -234,7 +231,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -257,9 +254,7 @@ public class DictionarySerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * sitelinks
-* the links shown below some of search results
-* if there are none, equals null
+   * <em>sitelinks</em><br><br>            the links shown below some of search results<br><br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable

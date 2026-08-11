@@ -70,7 +70,7 @@ public class BaseDataforseoLabsApiElementItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class BaseDataforseoLabsApiElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>            positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class BaseDataforseoLabsApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>            absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -141,9 +139,7 @@ public class BaseDataforseoLabsApiElementItem  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class BaseDataforseoLabsApiElementItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

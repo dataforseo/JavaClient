@@ -47,12 +47,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field;
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character);
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
+   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field;<br>all %## will be decoded (plus character ‘+’ will be decoded to a space character);<br>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<br>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,11 +70,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* if you don’t specify this field, the API will return all SERPs collected for 365 days starting from the current datetime value;
-* minimal possible value: 365 days from the current datetime value;
-* date format: 'yyyy-mm-dd'
+   * <em>starting date of the time range</em><br>optional field<br>if you don't specify this field, the API will return all SERPs collected for 365 days starting from the current <code>datetime</code> value;<br>minimal possible value: 365 days from the current <code>datetime</code> value;<br>date format: <code>'yyyy-mm-dd'</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -102,12 +93,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, the today’s date will be used by default;
-* date format: 'yyyy-mm-dd';
-* example:
-* '2021-09-01'
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, the today's date will be used by default;<br>date format: <code>'yyyy-mm-dd'</code>;<br>example:<br><code>'2021-09-01'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -130,12 +116,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -158,12 +139,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * unique location identifier
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* 2840
+   * <em>unique location identifier</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -186,13 +162,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_name parameters by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> parameters by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -215,13 +185,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * unique language identifier
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_code parameters by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>unique language identifier</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_code</code> parameters by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -244,11 +208,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

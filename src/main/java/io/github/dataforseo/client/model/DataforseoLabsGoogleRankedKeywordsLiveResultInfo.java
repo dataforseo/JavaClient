@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * target domain or webpage in a POST array
+   * <em>target domain or webpage in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>            if there is no data, then the value is <code>null</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>            if there is no data, then the value is <code>null</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * total number of results in our database relevant to your request
+   * <em>total number of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -187,8 +185,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * ranking data relevant to the specified domain or webpage 
-* ranking data is provided by the rank_group parameters that show the result’s rank considering only equivalent SERP elements
+   * <em>ranking data relevant to the specified domain or webpage </em><br>            ranking data is provided by the <code>rank_group</code> parameters that show the result’s rank considering only equivalent SERP elements
    * @return metrics
    */
   @javax.annotation.Nullable
@@ -211,8 +208,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * ranking data relevant to the specified domain or webpage
-* ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements
+   * <em>ranking data relevant to the specified domain or webpage</em><br>            ranking data is provided by the <code>rank_absolute</code> parameters that indicate the result’s position among all SERP elements
    * @return metricsAbsolute
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * contains ranked keywords and related data
+   * <em>contains ranked keywords and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

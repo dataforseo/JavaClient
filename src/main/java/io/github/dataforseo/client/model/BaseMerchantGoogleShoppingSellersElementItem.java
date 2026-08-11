@@ -70,8 +70,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements found in Google Shopping SERP
+   * <em> absolute rank in SERP</em><br>absolute position among all the elements found in Google Shopping SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * the alignment of the element in Google Shopping SERP
-* possible values:
-* left, right
+   * <em>the alignment of the element in Google Shopping SERP</em><br>possible values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * XPath of the element
+   * <em><a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * Google Shopping URL forwarding to the product page on the seller’s website
-* if you want to obtain a URL of the advertisement forwarding to the product page on the seller’s website, please refer to the Google Shopping Sellers Ad URL endpoint
+   * <em>Google Shopping URL forwarding to the product page on the seller’s website</em><br>if you want to obtain a URL of the advertisement forwarding to the product page on the seller's website, please refer to the <a href='/v3/merchant/google/sellers/ad_url/'>Google Shopping Sellers Ad URL</a> endpoint
    * @return url
    */
   @javax.annotation.Nullable
@@ -236,8 +231,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * details and special offers
-* if there are no details, the value will be null
+   * <em>details and special offers</em><br>if there are no details, the value will be <code>null</code>
    * @return details
    */
   @javax.annotation.Nullable
@@ -260,7 +254,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * product price without tax and shipping
+   * <em>product price without tax and shipping</em>
    * @return basePrice
    */
   @javax.annotation.Nullable
@@ -283,8 +277,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * the amount of tax
-* tax is specified as the actual amount of money, not as the percentage
+   * <em>the amount of tax</em><br>tax is specified as the actual amount of money, not as the percentage
    * @return tax
    */
   @javax.annotation.Nullable
@@ -307,7 +300,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * product shipping price
+   * <em>product shipping price</em>
    * @return shippingPrice
    */
   @javax.annotation.Nullable
@@ -330,7 +323,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * product price including tax and shipping
+   * <em>product price including tax and shipping</em>
    * @return totalPrice
    */
   @javax.annotation.Nullable
@@ -353,9 +346,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * currency in the ISO format
-* example:
-* USD
+   * <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -378,8 +369,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * name of the seller
-* the name of the company that placed a corresponding product on Google Shopping
+   * <em>name of the seller</em><br>the name of the company that placed a corresponding product on Google Shopping
    * @return sellerName
    */
   @javax.annotation.Nullable
@@ -402,8 +392,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * unique ad click referral parameter
-* using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+   * <em>unique ad click referral parameter</em><br>using this parameter you can get a URL of the advertisement in <a href='/v3/merchant/google/sellers/ad_url/'>Google Shopping Sellers Ad URL</a>
    * @return shopAdAclk
    */
   @javax.annotation.Nullable

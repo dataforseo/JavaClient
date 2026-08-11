@@ -47,9 +47,7 @@ public class RankChanges  {
   }
 
   /**
-   * previous absolute rank in SERP
-* indicates previous rank of the element in Google SERP;
-* if this element is new, the value will be null
+   * <em>previous absolute rank in SERP</em><br>            indicates previous rank of the element in Google SERP;<br>            if this element is new, the value will be <code>null</code>
    * @return previousRankAbsolute
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class RankChanges  {
   }
 
   /**
-   * number of new ranked elements
-* indicates how many new ranked elements were found for this domain or webpage
+   * <em>number of new ranked elements</em><br>            indicates how many new ranked elements were found for this domain or webpage
    * @return isNew
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class RankChanges  {
   }
 
   /**
-   * rank went up
-* indicates how many ranked elements of this target went up in Google Search
+   * <em>rank went up</em><br>            indicates how many ranked elements of this target went up in Google Search
    * @return isUp
    */
   @javax.annotation.Nullable
@@ -120,8 +116,7 @@ public class RankChanges  {
   }
 
   /**
-   * rank went down
-* indicates how many ranked elements of this target went down in Google Search
+   * <em>rank went down</em><br>            indicates how many ranked elements of this target went down in Google Search
    * @return isDown
    */
   @javax.annotation.Nullable

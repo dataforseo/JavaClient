@@ -70,7 +70,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * reference page title
+   * <em>reference page title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * reference text
-* text snippet from the page that was used to generate the ai_overview_element
+   * <em>reference text</em><br>text snippet from the page that was used to generate the <code>ai_overview_element</code>
    * @return text
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * images of the element
-* if there is none, equals null
+   * <em>images of the element</em><br>if there is none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -164,9 +162,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>the links shown below some of Google's search results<br>if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable
@@ -189,8 +185,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

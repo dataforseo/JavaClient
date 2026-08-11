@@ -70,7 +70,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * resource URL
+   * <em>resource URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * resource initiator
+   * <em>resource initiator</em>
    * @return initiator
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * total time it takes until a browser receives a complete response from a server (in milliseconds)
+   * <em>total time it takes until a browser receives a complete response from a server (in milliseconds)</em>
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * time to start downloading the HTML resource
-* the amount of time the browser needs to start downloading a page
+   * <em>time to start downloading the HTML resource</em><br>the amount of time the browser needs to start downloading a page
    * @return fetchStart
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * time to complete downloading the HTML resource
-* the amount of time the browser needs to complete downloading a page
+   * <em>time to complete downloading the HTML resource</em><br>the amount of time the browser needs to complete downloading a page
    * @return fetchEnd
    */
   @javax.annotation.Nullable
@@ -187,8 +185,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * location of the resource in the document
-* parameters defining the location of the specific resource within the document’s HTML
+   * <em>location of the resource in the document</em><br>parameters defining the location of the specific resource within the document's HTML
    * @return location
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * indicates whether the resource blocks rendering
+   * <em>indicates whether the resource blocks rendering</em>
    * @return isRenderBlocking
    */
   @javax.annotation.Nullable

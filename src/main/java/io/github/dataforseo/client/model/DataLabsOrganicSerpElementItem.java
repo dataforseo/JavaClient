@@ -47,7 +47,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * subdomain in SERP
+   * <em>subdomain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * breadcrumb in SERP
+   * <em>breadcrumb in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * relevant website name in SERP
+   * <em>relevant website name in SERP</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * indicates whether the element contains an image
+   * <em>indicates whether the element contains an <code class='prettyprint'>image</code></em>
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * indicates whether the element contains a video
+   * <em>indicates whether the element contains a <code class='prettyprint'>video</code></em>
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * indicates whether the element is a featured_snippet
+   * <em>indicates whether the element is a <code class='prettyprint'>featured_snippet</code></em>
    * @return isFeaturedSnippet
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * indicates whether the element is marked as malicious
+   * <em>indicates whether the element is marked as malicious</em>
    * @return isMalicious
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * includes additional information appended before the result description in SERP
+   * <em>includes additional information appended before the result description in SERP</em>
    * @return preSnippet
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * includes additional information appended after the result description in SERP
+   * <em>includes additional information appended after the result description in SERP</em>
    * @return extendedSnippet
    */
   @javax.annotation.Nullable
@@ -323,8 +323,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * Accelerated Mobile Pages
-* indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>            indicates whether an item has the Accelerated Mobile Page (AMP) version
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -347,8 +346,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -371,7 +369,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -394,9 +392,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable
@@ -420,9 +416,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * contains information from the ‘About this result’ panel
-* ‘About this result’ panel provides additional context about why Google returned this result for the given query;
-* this feature appears after clicking on the three dots next to most results
+   * <em>contains information from the 'About this result' panel</em><br>            <a href='https://blog.google/products/search/learn-more-and-get-more-from-search/'>'About this result' panel</a> provides additional context about why Google returned this result for the given query;<br>            this feature appears after clicking on the three dots next to most results
    * @deprecated
    * @return aboutThisResult
    */
@@ -448,7 +442,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * primary domain name in SERP
+   * <em>primary domain name in SERP</em>
    * @return mainDomain
    */
   @javax.annotation.Nullable
@@ -471,7 +465,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * URL in SERP that does not specify the HTTPs protocol and domain name
+   * <em>URL in SERP that does not specify the HTTPs protocol and domain name</em>
    * @return relativeUrl
    */
   @javax.annotation.Nullable
@@ -494,10 +488,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated traffic volume
-* estimated organic monthly traffic to the domain or webpage;
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated traffic volume</em><br>            estimated organic monthly traffic to the domain or webpage;<br>            calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return etv
    */
   @javax.annotation.Nullable
@@ -520,10 +511,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated cost of converting organic search traffic into paid</em><br>            represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;<br>            the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -546,10 +534,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated traffic volume based on clickstream data
-* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true;
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated traffic volume based on clickstream data</em><br>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;<br>            to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code>;<br>            learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -572,8 +557,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * changes in rankings
-* contains information about the ranking changes of the SERP element since the previous_updated_time
+   * <em>changes in rankings</em><br>            contains information about the ranking changes of the SERP element since the <code>previous_updated_time</code>
    * @return rankChanges
    */
   @javax.annotation.Nullable
@@ -596,7 +580,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * backlinks information for the relevant page URL
+   * <em>backlinks information for the relevant page URL</em>
    * @return backlinksInfo
    */
   @javax.annotation.Nullable
@@ -619,7 +603,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * page and domain rank information
+   * <em>page and domain rank information</em>
    * @return rankInfo
    */
   @javax.annotation.Nullable

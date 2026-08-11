@@ -47,7 +47,7 @@ public class SerpApiBingAiOverviewVideosElementItem  extends BaseSerpApiBingAiOv
   }
 
   /**
-   * elements of search results found in SERP
+   * <em>elements of search results found in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -47,9 +47,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * subtitle of the item
+   * <em>subtitle of the item</em>
    * @return subtitle
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * card id
+   * <em>card id</em>
    * @return cardId
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -211,8 +208,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL of the logo from knowledge graph
+   * <em>URL of the logo from knowledge graph</em>
    * @return logoUrl
    */
   @javax.annotation.Nullable
@@ -258,9 +254,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment;
-* can be used with Google Reviews API to get a full list of reviews
+   * <em>google-defined client id</em><br>unique id of a local establishment;<br>can be used with <a href='/v3/reviews/google/overview/?php' target='_blank' rel='noopener noreferrer'>Google Reviews API</a> to get a full list of reviews
    * @return cid
    */
   @javax.annotation.Nullable
@@ -283,8 +277,7 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * <em>additional items present in the element</em><br>if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable

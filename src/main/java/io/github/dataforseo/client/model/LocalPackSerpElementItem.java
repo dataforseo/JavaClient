@@ -47,10 +47,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * title of the row
+   * <em>title of the row</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * description of the link
+   * <em>description of the link</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain of the website hosting the video
+   * <em>domain of the website hosting the video</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -167,7 +162,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * phone number
+   * <em>phone number</em>
    * @return phone
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL of the booking page
+   * <em>URL of the booking page</em>
    * @return bookingUrl
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL of the third-party review source
+   * <i>URL of the third-party review source</i>
    * @return url
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is an ad
+   * <em>indicates whether the element is an ad</em>
    * @return isPaid
    */
   @javax.annotation.Nullable
@@ -259,9 +254,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the element’s rating
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the element's rating</em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -284,7 +277,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * google-defined client id
+   * <em>google-defined client id</em>
    * @return cid
    */
   @javax.annotation.Nullable

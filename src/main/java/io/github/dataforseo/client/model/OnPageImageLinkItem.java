@@ -47,10 +47,7 @@ public class OnPageImageLinkItem  extends BaseOnPageLinkItem  {
   }
 
   /**
-   * link attribute added to external link
-* indicates link attributes added to the link_to on the page_from
-* example:
-* ['ugc','noopener']
+   * <em>link attribute added to external link</em><br>indicates link attributes added to the <code>link_to</code> on the <code>page_from</code><br>example:<br><code>['ugc','noopener']</code>
    * @return linkAttribute
    */
   @javax.annotation.Nullable
@@ -73,7 +70,7 @@ public class OnPageImageLinkItem  extends BaseOnPageLinkItem  {
   }
 
   /**
-   * anchor text
+   * <em>anchor text</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class OnPageImageLinkItem  extends BaseOnPageLinkItem  {
   }
 
   /**
-   * alternative text for the image
+   * <em>alternative text for the image</em>
    * @return imageAlt
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class OnPageImageLinkItem  extends BaseOnPageLinkItem  {
   }
 
   /**
-   * url of the image
+   * <em>url of the image</em>
    * @return imageSrc
    */
   @javax.annotation.Nullable

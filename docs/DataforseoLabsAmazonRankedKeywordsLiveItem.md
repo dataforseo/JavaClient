@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**keywordData** | **KeywordDataInfo** | keyword data for the returned keyword |[optional]|
-**rankedSerpElement** | **AmazonRankedSerpElement** | contains data on the products’s SERP element found for the returned keyword |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**keywordData** | **KeywordDataInfo** | <em>keyword data for the returned keyword</em> |[optional]|
+**rankedSerpElement** | **AmazonRankedSerpElement** | <em>contains data on the products's SERP element found for the returned <code>keyword</code></em> |[optional]|

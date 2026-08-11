@@ -47,7 +47,7 @@ public class GoogleTrendsGoogleTrendsGraphElementItem  extends BaseKeywordDataGo
   }
 
   /**
-   * Google Trends data for the specified parameters
+   * <em>Google Trends data for the specified parameters</em>
    * @return data
    */
   @javax.annotation.Nullable

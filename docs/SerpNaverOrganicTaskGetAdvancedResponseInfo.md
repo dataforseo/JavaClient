@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpNaverOrganicTaskGetAdvancedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpNaverOrganicTaskGetAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

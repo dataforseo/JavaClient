@@ -70,7 +70,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * name of the source of the video
+   * <em>name of the source of the video</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * image source URL
+   * <em>image source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * website domain
+   * <em>website domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result
+   * <em>pricing details</em><br>contains the pricing details of the product or service featured in the result
    * @return price
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * indicates whether the element is an ad
+   * <em>indicates whether the element is an ad</em>
    * @return isPaid
    */
   @javax.annotation.Nullable

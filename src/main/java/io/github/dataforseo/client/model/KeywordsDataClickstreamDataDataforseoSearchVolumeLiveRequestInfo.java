@@ -47,14 +47,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * target keywords
-* required field
-* UTF-8 encoding
-* maximum number of keywords you can specify in this array: 1000
-* the keywords will be converted to lowercase format
-* Note: certain symbols and characters (e.g., UTF symbols, emojis) are not allowed
-* to learn more about which symbols and characters can be used, please refer to this article
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keywords</em><br><strong>required field</strong><br>UTF-8 encoding<br>maximum number of keywords you can specify in this array: 1000<br>the keywords will be converted to lowercase format<p><strong>Note:</strong> certain symbols and characters (e.g., UTF symbols, emojis) are not allowed<br>to learn more about which symbols and characters can be used, please refer to <a href='https://dataforseo.com/help-center/using-symbols-in-keywords-when-setting-a-google-ads-task' target='_blank' rel='noopener noreferrer'>this article</a><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -77,11 +70,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code 
-* you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don’t specify <code>location_code </code></strong><br>you can receive the list of available locations with <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -104,11 +93,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
-* example:
-* 2826
+   * <em>search engine location code</em><br><strong>required field if you don’t specify <code>location_name</code></strong><br>if you use this field, you can receive the list of available locations with <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages</code><br>example:<br><code class='long-string'>2826</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,11 +116,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if don’t specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
-* example:
-* English
+   * <em>full name of search engine language</em><br><strong>required field if don’t specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -158,11 +139,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if don’t specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
-* example:
-* en
+   * <em>search engine language code</em><br><strong>required field if don’t specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -185,12 +162,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * use clickstream data to provide results
-* optional field
-* if set to true, you will get DataForSEO search volume values based on clickstream data;
-* if set to false, Bing search volume data will be used to calculate DataForSEO search volume;
-* default value: true;
-* Note: Bing search volume is available for locations provided in Bing Search Volume History Locations and Bing Ads Locations endpoints; search volume values for any other location are calculated based on clickstream data even if you set this parameter to false
+   * <em>use clickstream data to provide results</em><br>optional field<br>if set to <code>true</code>, you will get DataForSEO search volume values based on clickstream data;<br>if set to <code>false</code>, Bing search volume data will be used to calculate DataForSEO search volume;<br>default value: <code>true</code>;<br><strong>Note:</strong> Bing search volume is available for locations provided in <a href='https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash' rel='noopener noreferrer' target='_blank'>Bing Search Volume History Locations</a> and <a href='https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash' rel='noopener noreferrer' target='_blank'>Bing Ads Locations</a> endpoints; search volume values for any other location are calculated based on clickstream data even if you set this parameter to <code>false</code>
    * @return useClickstream
    */
   @javax.annotation.Nullable
@@ -213,11 +185,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

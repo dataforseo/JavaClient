@@ -5,17 +5,17 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**keyword** | **String** | keyword received in a POST array<br>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |[optional]|
+**keyword** | **String** | <em>keyword received in a POST array<br></em><strong>the keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong> |[optional]|
 **type** | **String** | type of element |[optional]|
-**seDomain** | **String** | search engine domain in a POST array |[optional]|
-**locationCode** | **Integer** | location code in a POST array |[optional]|
-**languageCode** | **String** | language code in a POST array |[optional]|
-**checkUrl** | **String** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
-**datetime** | **String** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
-**refinementChips** | **RefinementChipsInfo** | search refinement chips<br>equals null |[optional]|
-**itemTypes** | **List<String>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>featured_snippet, images, local_pack, hotels_pack, organic, paid, people_also_ask, related_searches, shopping, recipes, top_stories, video, ai_overview |[optional]|
-**seResultsCount** | **Long** | total number of results in SERP |[optional]|
-**pagesCount** | **Long** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BaseSerpApiElementItem>** | elements of search results found in SERP |[optional]|
+**seDomain** | **String** | <em>search engine domain in a POST array</em> |[optional]|
+**locationCode** | **Integer** | <em>location code in a POST array</em> |[optional]|
+**languageCode** | **String** | <em>language code in a POST array</em> |[optional]|
+**checkUrl** | **String** | <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results |[optional]|
+**datetime** | **String** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**spell** | **SpellInfo** | <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**refinementChips** | **RefinementChipsInfo** | <em>search refinement chips</em><br>equals <code>null</code> |[optional]|
+**itemTypes** | **List<String>** | <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><span><a href='#featured_snippet'><code>featured_snippet</code></a>, <a href='#images'><code>images</code></a>, <a href='#local_pack'><code>local_pack</code></a>, <a href='#hotels_pack'><code>hotels_pack</code></a>, <a href='#organic'><code>organic</code></a>, <a href='#paid'><code>paid</code></a>, <a href='#people_also_ask'><code>people_also_ask</code></a>, <a href='#related_searches'><code>related_searches</code></a>, <a href='#shopping'><code>shopping</code></a>, <a href='#recipes'><code>recipes</code></a>, <a href='#top_stories'><code>top_stories</code></a>, <a href='#video'><code>video</code></a></span>, <a href='#ai_overview'><code>ai_overview</code></a></span> |[optional]|
+**seResultsCount** | **Long** | <em> total number of results in SERP</em> |[optional]|
+**pagesCount** | **Long** | <em>total pages retrieved</em><br>total number of retrieved SERPs in the result |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <strong><code>items</code></strong> array</em> |[optional]|
+**items** | **List<BaseSerpApiElementItem>** | <em>elements of search results found in SERP</em> |[optional]|

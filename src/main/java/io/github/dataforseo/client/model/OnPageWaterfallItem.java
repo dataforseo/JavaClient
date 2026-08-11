@@ -47,7 +47,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * URL of the page
+   * <em>URL of the page</em>
    * @return pageUrl
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * Time To Interactive (TTI) metric
-* the time it takes until the user can interact with a page (in milliseconds)
+   * <em><a href='https://web.dev/interactive/'>Time To Interactive (TTI)</a> metric</em><br>the time it takes until the user can interact with a page (in milliseconds)
    * @return timeToInteractive
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to load resources
-* the time it takes until the page and all of its subresources are downloaded (in milliseconds)
+   * <em>time to load resources</em><br>the time it takes until the page and all of its subresources are downloaded (in milliseconds)
    * @return domComplete
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to connect to a server
-* the time it takes until the connection with a server is established (in milliseconds)
+   * <em>time to connect to a server</em><br>the time it takes until the connection with a server is established (in milliseconds)
    * @return connectionTime
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to establish a secure connection
-* the time it takes until the secure connection with a server is established (in milliseconds)
+   * <em>time to establish a secure connection</em><br>the time it takes until the secure connection with a server is established (in milliseconds)
    * @return timeToSecureConnection
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to send a request to a server
-* the time it takes until the request to a server is sent (in milliseconds)
+   * <em>time to send a request to a server</em><br>the time it takes until the request to a server is sent (in milliseconds)
    * @return requestSentTime
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to first byte (TTFB) in milliseconds
+   * <em>time to first byte <a href='https://en.wikipedia.org/wiki/Time_to_first_byte'>(TTFB)</a> in milliseconds</em>
    * @return waitingTime
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time it takes for a browser to receive a response (in milliseconds)
+   * <em>time it takes for a browser to receive a response (in milliseconds)</em>
    * @return downloadTime
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * total time it takes until a browser receives a complete response from a server (in milliseconds)
+   * <em>total time it takes until a browser receives a complete response from a server (in milliseconds)</em>
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -259,8 +254,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to start downloading the HTML resource
-* the amount of time the browser needs to start downloading a page
+   * <em>time to start downloading the HTML resource</em><br>the amount of time the browser needs to start downloading a page
    * @return fetchStart
    */
   @javax.annotation.Nullable
@@ -283,8 +277,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * time to complete downloading the HTML resource
-* the amount of time the browser needs to complete downloading a page
+   * <em>time to complete downloading the HTML resource</em><br>the amount of time the browser needs to complete downloading a page
    * @return fetchEnd
    */
   @javax.annotation.Nullable
@@ -307,8 +300,7 @@ public class OnPageWaterfallItem  {
   }
 
   /**
-   * resource-specific timing
-* contains separate arrays with timing for each resource found on the page
+   * <em>resource-specific timing</em><br>contains separate arrays with timing for each resource found on the page
    * @return resources
    */
   @javax.annotation.Nullable

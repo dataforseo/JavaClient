@@ -6,6 +6,6 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**title** | **String** | title of the link |[optional]|
-**description** | **String** | description of the hotel booking element |[optional]|
-**links** | **List<LinkElement>** | link of the element |[optional]|
+**title** | **String** | <em>title of the link</em> |[optional]|
+**description** | **String** | <em>description of the hotel booking element</em> |[optional]|
+**links** | **List<LinkElement>** | <em>link of the element</em> |[optional]|

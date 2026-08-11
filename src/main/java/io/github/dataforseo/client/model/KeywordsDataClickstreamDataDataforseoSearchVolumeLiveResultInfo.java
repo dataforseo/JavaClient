@@ -47,8 +47,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is <code>null</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -71,10 +70,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* 
-* Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;
-* we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
+   * <em>language code in a POST array<br></em><br><strong>Note:</strong>if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;<br>we use the functionality of Google Ads API to check and validate the spelling of keywords, <a href='https://support.google.com/google-ads/answer/7476658' target='_blank' rel='noopener noreferrer'>learn more by this link</a>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -97,8 +93,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * indicates if the use_clickstream parameter is active
-* possible values: true, false
+   * <em>indicates if the <code>use_clickstream</code> parameter is active</em><br>possible values: <code>true</code>, <code>false</code>
    * @return useClickstream
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * ithe number of results returned in the items array
+   * <em>ithe number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * array of keywords
-* contains keywords and their search volume rates
+   * <em>array of keywords</em><br>contains keywords and their search volume rates
    * @return items
    */
   @javax.annotation.Nullable

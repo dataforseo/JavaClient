@@ -47,8 +47,7 @@ public class OnPageRedirectChainsItem  {
   }
 
   /**
-   * indicates if redirects in chain start and end at the same URL
-* if true, the last URL from the chain redirects back to the original URL
+   * <em>indicates if redirects in <code>chain</code> start and end at the same URL</em><br>if <code>true</code>, the last URL from the chain redirects back to the original URL
    * @return isRedirectLoop
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageRedirectChainsItem  {
   }
 
   /**
-   * contains links that form a chain
+   * <em>contains links that form a chain</em>
    * @return chain
    */
   @javax.annotation.Nullable

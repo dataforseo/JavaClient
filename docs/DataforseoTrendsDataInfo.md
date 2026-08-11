@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**keyword** | **String** | relevant keyword for which demographic data is provided |[optional]|
-**values** | **List<DemographyItemValueInfo>** | contains age range and corresponding keyword popularity values |[optional]|
+**keyword** | **String** | <em>relevant keyword for which demographic data is provided</em> |[optional]|
+**values** | **List<DemographyItemValueInfo>** | <em>contains age range and corresponding keyword popularity values</em> |[optional]|

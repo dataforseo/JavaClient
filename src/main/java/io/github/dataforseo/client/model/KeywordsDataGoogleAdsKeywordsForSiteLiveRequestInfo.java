@@ -47,10 +47,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * domain or page
-* required field
-* the domain name of the target website or the url of the target page;
-* note: to obtain keywords for the target website, use the target_type parameter
+   * <em>domain or page</em><br><strong>required field</strong><br>the domain name of the target website or the url of the target page;<br><strong>note:</strong> to obtain keywords for the target website, use the <code>target_type</code> parameter
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,12 +70,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * search keywords for site or for url
-* optional field
-* possible values: site, page;
-* default value: page;
-* if set to site, keywords will be provided for the entire site;
-* if set to page, keywords will be provided for the specified webpage
+   * <em>search keywords for site or for url</em><br>optional field<br>possible values: <code>site</code>, <code>page</code>;<br>default value: <code>page</code>;<br>if set to <code>site</code>, keywords will be provided for the entire site;<br>if set to <code>page</code>, keywords will be provided for the specified webpage
    * @return targetType
    */
   @javax.annotation.Nullable
@@ -101,13 +93,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* optional field
-* if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -130,13 +116,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* optional field
-* if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
-* if you use this field, you don’t need to specify location_name or location_coordinate;
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong>;<br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -159,14 +139,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* optional field
-* if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
-* if you use this field, you don’t need to specify location_name or location_code;
-* location_coordinate parameter should be specified in the “latitude,longitude” format;
-* the data will be provided for the country the specified coordinates belong to;
-* example:
-* 52.6178549,-155.352142
+   * <em>GPS coordinates of a location</em><br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong>;<br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude'</em> format;<br><strong>the data will be provided for the country the specified coordinates belong to</strong>;<br>example:<br><code class='long-string'>52.6178549,-155.352142</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -189,11 +162,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* optional field
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br>optional field<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -216,11 +185,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * search engine language code
-* optional field
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/languages
-* example:
-* en
+   * <em>search engine language code</em><br>optional field<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_ads/languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -243,10 +208,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * include Google search partners
-* optional field
-* if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-* default value: false – results are returned for Google search sites
+   * <em>include Google search partners</em><br>optional field<br>if you specify <code class='prettyprint'>true</code>, the results will be delivered for owned, operated, and syndicated networks across <a href='https://support.google.com/google-ads/answer/1722047?hl=en' target='_blank' rel='noopener noreferrer'>Google and partner sites</a> that host Google search;<br>default value: <code>false</code> - results are returned for Google search sites
    * @return searchPartners
    */
   @javax.annotation.Nullable
@@ -269,13 +231,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* date format: 'yyyy-mm-dd'
-* minimal value: 4 years from the current date
-* by default, data is returned for the past 12 months;
-* Note: the indicated date cannot be greater than that specified in date_to and/or yesterday’s date;if Status endpoint returns false in the actual_data field, date_from can be set to the month before last and prior;
-* if Status endpoint returns true in the actual_data field, date_from can be set to the last month and prior
+   * <em>starting date of the time range</em><br>optional field<br>date format: <code>'yyyy-mm-dd'</code><br>minimal value: 4 years from the current date<br>by default, data is returned for the past 12 months;<br><strong>Note</strong>: the indicated date cannot be greater than that specified in <code>date_to</code> and/or yesterday's date;if <a href='/v3/keywords_data/google_ads/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>false</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the month before last and prior;<br>if <a href='/v3/keywords_data/google_ads/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>true</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the last month and prior
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -298,13 +254,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* Note: the indicated date cannot be greater than yesterday’s date;
-* if you don’t specify this field, yesterday’s date will be used by default
-* date format: 'yyyy-mm-dd'
-* example:
-* '2022-11-30'
+   * <em>ending date of the time range</em><br>optional field<br><strong>Note:</strong> the indicated date cannot be greater than yesterday's date;<br>if you don't specify this field, yesterday's date will be used by default<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2022-11-30'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -327,11 +277,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * include keywords associated with adult content
-* optional field
-* if set to true, adult keywords will be included in the response
-* default value: false
-* note that the API may return no data for such keywords due to Google Ads restrictions
+   * <em>include keywords associated with adult content</em><br>optional field<br>if set to <code>true</code>, adult keywords will be included in the response<br>default value: <code>false</code><br><strong>note</strong> that the API may return no data for such keywords due to <a href='https://support.google.com/adspolicy/answer/6008942?hl=en' target='_blank' rel='noopener noreferrer'>Google Ads restrictions</a>
    * @return includeAdultKeywords
    */
   @javax.annotation.Nullable
@@ -354,10 +300,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * results sorting parameters
-* optional field
-* Use these parameters to sort the results by relevance, search_volume, competition_index, low_top_of_page_bid, or high_top_of_page_bid in descending order
-* default value: relevance
+   * <em>results sorting parameters</em><br>optional field<br>Use these parameters to sort the results by <code>relevance</code>, <code>search_volume</code>, <code>competition_index</code>, <code>low_top_of_page_bid</code>, or <code>high_top_of_page_bid</code> in descending order<br>default value: <code>relevance</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -380,11 +323,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

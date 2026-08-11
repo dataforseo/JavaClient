@@ -47,7 +47,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * page title
+   * <em>page title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * code page
-* example: 65001
+   * <em><a href='https://en.wikipedia.org/wiki/Code_page' target='_blank' rel='noopener noreferrer'>code page</a></em><br>example: <code>65001</code>
    * @return charset
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * indicates whether a page’s ‘meta robots’ allows crawlers to follow the links on the page
-* if false, the page’s ‘meta robots’ tag contains “nofollow” parameter instructing crawlers not to follow the links on the page
+   * <em>indicates whether a page's 'meta robots' allows crawlers to follow the links on the page</em><br>if <code>false</code>, the page's 'meta robots' tag contains 'nofollow' parameter instructing crawlers not to follow the links on the page
    * @return follow
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * meta tag generator
+   * <em>meta tag generator</em>
    * @return generator
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * HTML header tags
+   * <em>HTML header tags</em>
    * @return htags
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * content of the meta description tag
+   * <em>content of the meta description tag</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * favicon of the page
+   * <em>favicon of the page</em>
    * @return favicon
    */
   @javax.annotation.Nullable
@@ -210,7 +208,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * content of the keywords meta tag
+   * <em>content of the <code>keywords</code> meta tag</em>
    * @return metaKeywords
    */
   @javax.annotation.Nullable
@@ -233,7 +231,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * canonical page
+   * <em>canonical page</em>
    * @return canonical
    */
   @javax.annotation.Nullable
@@ -256,7 +254,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of internal links on the page
+   * <em>number of internal links on the page</em>
    * @return internalLinksCount
    */
   @javax.annotation.Nullable
@@ -279,7 +277,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of external links on the page
+   * <em>number of external links on the page</em>
    * @return externalLinksCount
    */
   @javax.annotation.Nullable
@@ -302,7 +300,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of internal links pointing at the page
+   * <em>number of internal links pointing at the page</em>
    * @return inboundLinksCount
    */
   @javax.annotation.Nullable
@@ -325,7 +323,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of images on the page
+   * <em>number of images on the page</em>
    * @return imagesCount
    */
   @javax.annotation.Nullable
@@ -348,7 +346,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * total size of images on the page measured in bytes
+   * <em>total size of images on the page measured in bytes</em>
    * @return imagesSize
    */
   @javax.annotation.Nullable
@@ -371,7 +369,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of scripts on the page
+   * <em>number of scripts on the page</em>
    * @return scriptsCount
    */
   @javax.annotation.Nullable
@@ -394,7 +392,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * total size of scripts on the page measured in bytes
+   * <em>total size of scripts on the page measured in bytes</em>
    * @return scriptsSize
    */
   @javax.annotation.Nullable
@@ -417,7 +415,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of stylesheets on the page
+   * <em>number of stylesheets on the page</em>
    * @return stylesheetsCount
    */
   @javax.annotation.Nullable
@@ -440,7 +438,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * total size of stylesheets on the page measured in bytes
+   * <em>total size of stylesheets on the page measured in bytes</em>
    * @return stylesheetsSize
    */
   @javax.annotation.Nullable
@@ -463,7 +461,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * length of the title tag in characters
+   * <em>length of the <code>title</code> tag in characters</em>
    * @return titleLength
    */
   @javax.annotation.Nullable
@@ -486,7 +484,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * length of the description tag in characters
+   * <em>length of the <code>description</code> tag in characters</em>
    * @return descriptionLength
    */
   @javax.annotation.Nullable
@@ -509,7 +507,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of scripts on the page that block page rendering
+   * <em>number of scripts on the page that block page rendering</em>
    * @return renderBlockingScriptsCount
    */
   @javax.annotation.Nullable
@@ -532,7 +530,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * number of CSS styles on the page that block page rendering
+   * <em>number of CSS styles on the page that block page rendering</em>
    * @return renderBlockingStylesheetsCount
    */
   @javax.annotation.Nullable
@@ -555,8 +553,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * Core Web Vitals metric measuring the layout stability of the page
-* measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more.
+   * <em>Core Web Vitals metric measuring the layout stability of the page</em><br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. <a href='https://web.dev/cls/'>Learn more.</a>
    * @return cumulativeLayoutShift
    */
   @javax.annotation.Nullable
@@ -579,8 +576,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * meta title of the page
-* meta tag in the head section of an HTML document that defines the title of a page
+   * <em>meta title of the page</em><br>meta tag in the head section of an HTML document that defines the title of a page
    * @return metaTitle
    */
   @javax.annotation.Nullable
@@ -603,7 +599,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * overall information about content of the page
+   * <em>overall information about content of the page</em>
    * @return content
    */
   @javax.annotation.Nullable
@@ -626,7 +622,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * deprecated tags on the page
+   * <em>deprecated tags on the page</em>
    * @return deprecatedTags
    */
   @javax.annotation.Nullable
@@ -649,7 +645,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * duplicate meta tags on the page
+   * <em>duplicate meta tags on the page</em>
    * @return duplicateMetaTags
    */
   @javax.annotation.Nullable
@@ -672,8 +668,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * spellcheck
-* hunspell spellcheck errors
+   * <em>spellcheck</em><br><a href='http://hunspell.github.io/' target='_blank' rel='noopener noreferrer'>hunspell</a> spellcheck errors
    * @return spell
    */
   @javax.annotation.Nullable
@@ -696,9 +691,7 @@ public class PageMetaInfo  {
   }
 
   /**
-   * object of social media tags found on the page
-* contains social media tags and their content
-* supported tags include but are not limited to Open Graph and Twitter card
+   * <em>object of social media tags found on the page</em><br>contains social media tags and their content<br>supported tags include but are not limited to <a href='https://ogp.me/'>Open Graph</a> and <a href='https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started'>Twitter card</a>
    * @return socialMediaTags
    */
   @javax.annotation.Nullable

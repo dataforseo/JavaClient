@@ -47,7 +47,7 @@ public class DataforseoTrendsDataInfo  {
   }
 
   /**
-   * relevant keyword for which demographic data is provided
+   * <em>relevant keyword for which demographic data is provided</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoTrendsDataInfo  {
   }
 
   /**
-   * contains age range and corresponding keyword popularity values
+   * <em>contains age range and corresponding keyword popularity values</em>
    * @return values
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class BingMapSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the item
+   * <em>title of the item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingMapSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable

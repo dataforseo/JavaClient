@@ -47,8 +47,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array<br></em><strong>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chips
-* equals null
+   * <em>search refinement chips</em><br>equals <code>null</code>
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -261,10 +254,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP.
-* possible item types:
-* images, local_pack, organic, related_searches, top_stories, featured_snippet, video, shopping
+   * <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><a href='#images'><code>images</code></a>, <a href='#local_pack'><code>local_pack</code></a>, <a href='#organic'><code>organic</code></a>, <a href='#related_searches'><code>related_searches</code></a>, <a href='#top_stories'><code>top_stories</code></a>, <a href='#featured_snippet'><code>featured_snippet</code></a>, <a href='#video'><code>video</code></a>, <a href='#shopping'><code>shopping</code></a>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -287,7 +277,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * total number of results in SERP
+   * <em> total number of results in SERP</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -310,8 +300,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * total pages retrieved
-* total number of retrieved SERPs in the result
+   * <em>total pages retrieved</em><br>total number of retrieved SERPs in the result
    * @return pagesCount
    */
   @javax.annotation.Nullable
@@ -334,7 +323,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -357,8 +346,7 @@ public class SerpSeznamOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * <em>additional items present in the element</em><br>if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable

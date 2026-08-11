@@ -47,7 +47,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * additional text of the element in SERP
+   * <em>additional text of the element in SERP</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * website links featured in the element
+   * <em>website links featured in the element</em>
    * @return links
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * images of the element
-* if there is none, equals null
+   * <em>images of the element</em><br>if there is none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class DomainAnalyticsTechnologiesTechnologiesResultInfo  {
   }
 
   /**
-   * array of technology groups
+   * <em>array of technology groups</em>
    * @return groups
    */
   @javax.annotation.Nullable

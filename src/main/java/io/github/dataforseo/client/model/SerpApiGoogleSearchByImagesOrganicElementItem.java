@@ -47,7 +47,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * cached version of the page
+   * 
    * @return cacheUrl
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * URL to a similar search
-* URL to a new search for the same keyword(s) on related sites
+   * 
    * @return relatedSearchUrl
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * breadcrumb in SERP
+   * 
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * indicates whether the element contains an image
+   * 
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * indicates whether the element contains a video
+   * 
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -209,7 +208,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * indicates whether the element is a featured_snippet
+   * 
    * @return isFeaturedSnippet
    */
   @javax.annotation.Nullable
@@ -232,7 +231,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * indicates whether the element is marked as malicious
+   * 
    * @return isMalicious
    */
   @javax.annotation.Nullable
@@ -255,7 +254,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * indicates whether the element is marked as Google web story
+   * 
    * @return isWebStory
    */
   @javax.annotation.Nullable
@@ -301,7 +300,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * description of the results element in SERP
+   * 
    * @return description
    */
   @javax.annotation.Nullable
@@ -324,7 +323,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * includes additional information appended before the result description in SERP
+   * 
    * @return preSnippet
    */
   @javax.annotation.Nullable
@@ -347,7 +346,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * includes additional information appended after the result description in SERP
+   * 
    * @return extendedSnippet
    */
   @javax.annotation.Nullable
@@ -370,7 +369,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * images of the element
+   * 
    * @return images
    */
   @javax.annotation.Nullable
@@ -393,8 +392,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * Accelerated Mobile Pages
-* indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * 
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -417,8 +415,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * 
    * @return rating
    */
   @javax.annotation.Nullable
@@ -441,8 +438,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result
+   * 
    * @return price
    */
   @javax.annotation.Nullable
@@ -465,7 +461,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * words highlighted in bold within the results description
+   * 
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -488,9 +484,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * 
    * @return links
    */
   @javax.annotation.Nullable
@@ -514,9 +508,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * frequently asked questions
-* questions and answers extension shown below some of Google’s search results
-* if there are none, equals null
+   * 
    * @deprecated
    * @return faq
    */
@@ -542,9 +534,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * extension of the organic element
-* extension of the organic result containing related search queries
-* Note: extension appears in SERP upon clicking on the result and then bouncing back to search results
+   * 
    * @return extendedPeopleAlsoSearch
    */
   @javax.annotation.Nullable
@@ -568,9 +558,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * contains information from the ‘About this result’ panel
-* ‘About this result’ panel provides additional context about why Google returned this result for the given query;
-* this feature appears after clicking on the three dots next to most results
+   * 
    * @deprecated
    * @return aboutThisResult
    */
@@ -596,9 +584,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * related result from the same domain
-* related result from the same domain appears as a part of the main result snippet;
-* you can derive the related_result snippets as 'type': 'organic' results by setting the group_organic_results parameter to false in the POST request
+   * 
    * @return relatedResult
    */
   @javax.annotation.Nullable
@@ -621,10 +607,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * 
    * @return timestamp
    */
   @javax.annotation.Nullable

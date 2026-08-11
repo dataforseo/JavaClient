@@ -47,7 +47,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * table element
+   * <em>table element</em>
    * @return table
    */
   @javax.annotation.Nullable

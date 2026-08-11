@@ -70,7 +70,7 @@ public class MathSolverExpandedElement  {
   }
 
   /**
-   * title of the carousel item
+   * <em>title of the carousel item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class MathSolverExpandedElement  {
   }
 
   /**
-   * solution of the element
-* displays steps to solve the mathematical equation as specified in the element
+   * <em>solution of the element</em><br>displays steps to solve the mathematical equation as specified in the element
    * @return solution
    */
   @javax.annotation.Nullable

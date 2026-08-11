@@ -47,7 +47,7 @@ public class BingImagesSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the item
+   * <em>title of the item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingImagesSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BingImagesSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * <em>contains results featured in the 'hotels_pack' element of SERP</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -117,8 +117,7 @@ public class BingImagesSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * contains keywords and images related to the specified search term
-* if there are none, equals null
+   * <em>contains keywords and images related to the specified search term</em><br>            if there are none, equals <code>null</code>
    * @deprecated
    * @return relatedImageSearches
    */

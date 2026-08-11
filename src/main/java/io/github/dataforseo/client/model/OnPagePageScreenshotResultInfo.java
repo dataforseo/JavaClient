@@ -47,8 +47,7 @@ public class OnPagePageScreenshotResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class OnPagePageScreenshotResultInfo  {
   }
 
   /**
-   * error message
-* if the url you indicated returns a 404 status code or is not a valid URL, you will obtain 'error_message':'Screenshot is empty'
-* if no error is encountered, the value will be null
+   * <em>error message</em><br>if the <code>url</code> you indicated returns a 404 status code or is not a valid URL, you will obtain <code>'error_message':'Screenshot is empty'</code><br>if no error is encountered, the value will be <code>null</code>
    * @return errorMessage
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class OnPagePageScreenshotResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class OnPagePageScreenshotResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

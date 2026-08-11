@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**link** | **LinkElement** | link of the element |[optional]|
-**items** | **List<KnowledgeGraphImagesElement>** | additional items present in the element<br>if there are none, equals null |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**link** | **LinkElement** | <em>link of the element</em> |[optional]|
+**items** | **List<KnowledgeGraphImagesElement>** | <em>additional items present in the element</em><br>if there are none, equals <code>null</code> |[optional]|

@@ -47,7 +47,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the item
+   * <em>title of the item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * domain where the video is hosted
+   * <em>domain where the video is hosted</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * phone number
+   * <em>phone number</em>
    * @return phone
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is an ad
+   * <em>indicates whether the element is an ad</em>
    * @return isPaid
    */
   @javax.annotation.Nullable
@@ -208,8 +208,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -232,8 +231,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * bing-defined client id
-* unique id of a local establishment
+   * <em>bing-defined client id</em><br>            unique id of a local establishment
    * @return cid
    */
   @javax.annotation.Nullable
@@ -256,8 +254,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * business listing is claimed
-* if true, the business listing is claimed by the owner or representative
+   * <em>business listing is claimed</em><br>            if <code>true</code>, the business listing is claimed by the owner or representative
    * @return isClaimed
    */
   @javax.annotation.Nullable

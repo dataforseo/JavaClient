@@ -47,11 +47,7 @@ public class OnPageRedirectChainsRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* “07131248-1535-0216-1000-17384017ad04”
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br>'07131248-1535-0216-1000-17384017ad04'
    * @return id
    */
   @javax.annotation.Nullable
@@ -74,10 +70,7 @@ public class OnPageRedirectChainsRequestInfo  {
   }
 
   /**
-   * page URL
-* optional field
-* absolute URL of the target page
-* if you use this field, the API response will return only redirect chains which contain the specified URL
+   * <em>page URL</em><br>optional field<br>absolute URL of the target page<br>if you use this field, the API response will return only redirect chains which contain the specified URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -100,10 +93,7 @@ public class OnPageRedirectChainsRequestInfo  {
   }
 
   /**
-   * the maximum number of returned redirect chains
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned redirect chains</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -126,11 +116,7 @@ public class OnPageRedirectChainsRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned redirect chains
-* optional field
-* default value: 0
-* maximum value: 2000000
-* if you specify the 10 value, the first ten redirect chains in the results array will be omitted and the data will be provided for the successive redirect chains
+   * <em>offset in the results array of returned redirect chains</em><br>optional field<br>default value: <code>0</code><br>maximum value: <code>2000000</code><br>if you specify the <code>10</code> value, the first ten redirect chains in the results array will be omitted and the data will be provided for the successive redirect chains
    * @return offset
    */
   @javax.annotation.Nullable
@@ -153,16 +139,7 @@ public class OnPageRedirectChainsRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can use only one filtering parameter with this endpoint
-* the following filtering parameter is supported:
-* is_redirect_loop
-* the following operators are supported:
-* regex, not_regex, =, <>
-* examples:
-* ['is_redirect_loop','=','true']
-* ['is_redirect_loop','<>','false']
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can use only one filtering parameter with this endpoint</strong><p>the following filtering parameter is supported:<br><code>is_redirect_loop</code><br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code>=</code>, <code><></code><p>examples:<br><code>['is_redirect_loop','=','true']</code><p><code>['is_redirect_loop','<>','false']</code>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -185,11 +162,7 @@ public class OnPageRedirectChainsRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

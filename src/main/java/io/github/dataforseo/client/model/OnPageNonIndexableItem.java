@@ -47,8 +47,7 @@ public class OnPageNonIndexableItem  {
   }
 
   /**
-   * the reason why the page is non-indexable
-* can take the following values: robots_txt, meta_tag, http_header, attribute, too_many_redirects
+   * <em>the reason why the page is non-indexable</em><br>can take the following values: <code>robots_txt</code>, <code>meta_tag</code>, <code>http_header</code>, <code>attribute</code>, <code>too_many_redirects</code>
    * @return reason
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageNonIndexableItem  {
   }
 
   /**
-   * url of the non-indexable page
+   * <em>url of the non-indexable page</em>
    * @return url
    */
   @javax.annotation.Nullable

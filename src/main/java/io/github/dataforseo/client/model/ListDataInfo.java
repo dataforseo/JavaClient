@@ -47,8 +47,7 @@ public class ListDataInfo  {
   }
 
   /**
-   * the most popular related topics
-* represents the list of the most popular related topics
+   * <em>the most popular related topics</em><br>represents the list of the most popular related topics
    * @return top
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class ListDataInfo  {
   }
 
   /**
-   * emerging related topics
-* represents the list of related topics with the biggest increase in search frequency since the last time period
+   * <em>emerging related topics</em><br>represents the list of related topics with the biggest increase in search frequency since the last time period
    * @return rising
    */
   @javax.annotation.Nullable

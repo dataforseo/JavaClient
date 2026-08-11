@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the result in SERP |[optional]|
-**result** | **String** | solution to the equation<br>solution to the mathematical equation specified in the keyword field when setting a task |[optional]|
-**items** | **List<MathSolverElement>** | historical SERPs and related data found in the database |[optional]|
-**links** | **List<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
+**title** | **String** | <em>title of the result in SERP</em> |[optional]|
+**result** | **String** | <em>solution to the equation</em><br>            solution to the mathematical equation specified in the <code>keyword</code> field when setting a task |[optional]|
+**items** | **List<MathSolverElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|
+**links** | **List<LinkElement>** | <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code> |[optional]|

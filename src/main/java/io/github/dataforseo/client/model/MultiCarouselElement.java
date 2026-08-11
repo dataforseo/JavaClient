@@ -70,7 +70,7 @@ public class MultiCarouselElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class MultiCarouselElement  {
   }
 
   /**
-   * multi_carousel_snippet results
-* if there are none, equals null
+   * <em><code>multi_carousel_snippet</code> results</em><br>if there are none, equals <code>null</code>
    * @return multiCarouselSnippets
    */
   @javax.annotation.Nullable

@@ -47,8 +47,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * product_id received in a POST array
-* learn more about the parameter in this help center guide
+   * <em><code>product_id</code> received in a POST array</em><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/product-id-google-shopping' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return productId
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to Google Shopping results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to Google Shopping results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * title of the product
+   * <em>title of the product</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * URL to the product page
+   * <em>URL to the product page</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -259,7 +254,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * URL to the product image
+   * <em>URL to the product image</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -282,8 +277,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * product rating
-* the product popularity rate based on product reviews
+   * <em>product rating</em><br>the product popularity rate based on product reviews
    * @return rating
    */
   @javax.annotation.Nullable
@@ -306,10 +300,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results found in Google Shopping SERP
-* contains types of all search results (items) found in the returned SERP
-* possible item types:
-* shops_list, buy_on_google
+   * <em>types of search results found in Google Shopping SERP</em><br>contains types of all search results (<code>items</code>) found in the returned SERP<br>possible item types:<br><code>shops_list</code>, <code>buy_on_google</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -332,7 +323,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -355,7 +346,7 @@ public class MerchantGoogleSellersTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * items in SERP
+   * <em>items in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**position** | **String** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**title** | **String** | title of the result in SERP |[optional]|
-**text** | **String** | text or description of the element in SERP |[optional]|
-**markdown** | **String** | content of the element in markdown format |[optional]|
-**links** | **List<LinkElement>** | sitelinks<br>the links shown below some search results<br>if there are none, equals null |[optional]|
-**images** | **List<AiModeImagesElementInfo>** | images of the element |[optional]|
-**references** | **List<AiModeAiOverviewReferenceInfo>** | references relevant to the element<br>includes references to webpages that were used to generate the ai_overview_element |[optional]|
+**position** | **String** | <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code> |[optional]|
+**title** | **String** | <em>title of the result in SERP</em> |[optional]|
+**text** | **String** | <em>text or description of the element in SERP</em> |[optional]|
+**markdown** | **String** | <em>content of the element in markdown format</em> |[optional]|
+**links** | **List<LinkElement>** | <em>sitelinks</em><br>            the links shown below some search results<br>            if there are none, equals <code>null</code> |[optional]|
+**images** | **List<AiModeImagesElementInfo>** | <em>images of the element</em> |[optional]|
+**references** | **List<AiModeAiOverviewReferenceInfo>** | <em>references relevant to the element</em><br>            includes references to webpages that were used to generate the <code>ai_overview_element</code> |[optional]|

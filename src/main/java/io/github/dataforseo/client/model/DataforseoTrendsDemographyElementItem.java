@@ -47,8 +47,7 @@ public class DataforseoTrendsDemographyElementItem  extends BaseKeywordDataDataf
   }
 
   /**
-   * demographic breakdown of keyword popularity data per each specified term
-* conains keyword popularity data by age and gender
+   * <em>demographic breakdown of keyword popularity data per each specified term</em><br>conains keyword popularity data by age and gender
    * @return demography
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class DataforseoTrendsDemographyElementItem  extends BaseKeywordDataDataf
   }
 
   /**
-   * comparison of demographic data on keyword popularity for the specified parameters
-* conains keyword popularity data by age and gender
-* if you specified a single keyword, the value will be null
+   * <em>comparison of demographic data on keyword popularity for the specified parameters</em><br>conains keyword popularity data by age and gender<br>if you specified a single keyword, the value will be <code>null</code>
    * @return demographyComparison
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * contains keywords and related data
+   * <em>contains keywords and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

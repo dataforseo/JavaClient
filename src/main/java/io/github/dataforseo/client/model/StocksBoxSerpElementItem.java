@@ -47,10 +47,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * title of the row
+   * <em>title of the row</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -121,8 +116,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * source of the element
-* indicates the source of information included in the recipes_element
+   * <i>source of the element</i><br>indicates the source of information included in the <code>recipes_element</code>
    * @return source
    */
   @javax.annotation.Nullable
@@ -145,7 +139,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * text alongside the link title
+   * <em>text alongside the link title</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -168,7 +162,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * price indicated in the element
+   * <em>price indicated in the element</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -191,7 +185,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL of the third-party review source
+   * <i>URL of the third-party review source</i>
    * @return url
    */
   @javax.annotation.Nullable
@@ -214,7 +208,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain of the website hosting the video
+   * <em>domain of the website hosting the video</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * table present in the element
-* the header and content of the table present in the element
+   * <em>table present in the element</em><br>the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable
@@ -261,7 +254,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains data provided in the graph of the element
+   * <em>contains data provided in the graph of the element</em>
    * @return graph
    */
   @javax.annotation.Nullable

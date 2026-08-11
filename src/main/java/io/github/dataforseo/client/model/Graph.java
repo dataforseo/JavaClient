@@ -47,7 +47,7 @@ public class Graph  {
   }
 
   /**
-   * contains arrays of elements available in the list
+   * <em>contains arrays of elements available in the list</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class Graph  {
   }
 
   /**
-   * previous close data
-* contains stock price data based on the preceding time period
+   * <em>previous close data</em><br>contains stock price data based on the preceding time period
    * @return previousItems
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class BingHotelsPackSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * title of the item
+   * <em>title of the item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,10 +70,7 @@ public class BingHotelsPackSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * starting date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-15
+   * <em>starting date of stay</em><br>            in the format “year-month-date”<br>            example:<br>            2019-11-15
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -96,10 +93,7 @@ public class BingHotelsPackSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * ending date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-17
+   * <em>ending date of stay</em><br>            in the format “year-month-date”<br>            example:<br>            2019-11-17
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -122,7 +116,7 @@ public class BingHotelsPackSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * <em>contains results featured in the 'hotels_pack' element of SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

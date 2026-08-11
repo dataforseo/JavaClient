@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataDataforseoTrendsMergedDataLiveResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataDataforseoTrendsMergedDataLiveResultInfo>** | <em>array of results</em> |[optional]|

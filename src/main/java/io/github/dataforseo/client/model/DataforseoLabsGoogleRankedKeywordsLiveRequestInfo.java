@@ -47,13 +47,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * domain name or page url
-* required field
-* the domain name of the target website, subdomain or URL of the target webpage;
-* the domain name must be specified without https:// or www.;
-* the subdomain must be specified without https://;
-* the webpage URL must be specified with https:// or www.
-* Note: if you specify the webpage URL without https:// or www., the result will be returned for the entire domain rather than the specific page
+   * <em>domain name or page url</em><br><strong>required field</strong><br>the domain name of the target website, subdomain or URL of the target webpage;<br>the <strong>domain name</strong> must be specified <strong>without</strong> <code>https://</code> or <code>www.</code>;<br>the <strong>subdomain</strong> must be specified <strong>without</strong> <code>https://</code>;<br>the <strong>webpage URL</strong> must be specified <strong>with</strong> <code>https://</code> or <code>www.</code><br><strong>Note:</strong> if you specify the <strong>webpage URL</strong> without <code>https://</code> or <code>www.</code>, the result will be returned for the <strong>entire domain</strong> rather than the specific page
    * @return target
    */
   @javax.annotation.Nullable
@@ -76,14 +70,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* optional field
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available locations
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br>optional field<br>if you use this field, you don't need to specify <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available locations<br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -106,14 +93,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * location code
-* optional field
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations with their location_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available locations
-* example:
-* 2840
+   * <em>location code</em><br>optional field<br>if you use this field, you don't need to specify <code>location_name</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available locations<br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -136,14 +116,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* optional field
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available languages
-* example:
-* English
+   * <em>full name of the language</em><br>optional field<br>if you use this field, you don't need to specify <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available languages<br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -166,14 +139,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * language code
-* optional field
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* ignore this field to get the results for all available languages
-* example:
-* en
+   * <em>language code</em><br>optional field<br>if you use this field, you don't need to specify <code>language_name</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>ignore this field to get the results for all available languages<br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -196,10 +162,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true only core keywords will be returned, all highly similar keywords will be excluded;
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to <code class='prettyprint'>true</code> only core keywords will be returned, all highly similar keywords will be excluded;  <br>default value: <code>false</code>
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -222,14 +185,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * display results by item type
-* optional field
-* indicates the type of search results included in the response
-* Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response;
-* possible values:
-* ['organic', 'paid', 'featured_snippet', 'local_pack', 'ai_overview_reference']
-* default value:
-* ['organic', 'paid']
+   * <em>display results by item type</em><br>optional field<br>indicates the type of search results included in the response<p><strong>Note:</strong> if the <code>item_types</code> array contains item types that are different from <code>organic</code>, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response;<p>possible values: <br><code>['organic', 'paid', 'featured_snippet', 'local_pack', 'ai_overview_reference']</code><br>default value: <br><code>['organic', 'paid']</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -252,12 +208,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * include or exclude data from clickstream-based metrics in the result
-* optional field
-* if the parameter is set to true, you will receive clickstream_keyword_info, clickstream_etv, clickstream_gender_distribution, clickstream_age_distribution, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response
-* default value: false
-* with this parameter enabled, you will be charged double the price for the request
-* learn more about how clickstream-based metrics are calculated in this help center article
+   * <em>include or exclude data from clickstream-based metrics in the result</em><br>optional field<br>if the parameter is set to <code>true</code>, you will receive <code>clickstream_keyword_info</code>, <code>clickstream_etv</code>, <code>clickstream_gender_distribution</code>, <code>clickstream_age_distribution</code>, <code>keyword_info_normalized_with_clickstream</code>, and <code>keyword_info_normalized_with_bing</code> fields in the response<br>default value: <code>false</code><br>with this parameter enabled, you will be charged double the price for the request<p>learn more about how clickstream-based metrics are calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable
@@ -280,10 +231,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned keywords
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned keywords</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -306,10 +254,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned keywords
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
+   * <em>offset in the results array of returned keywords</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
    * @return offset
    */
   @javax.annotation.Nullable
@@ -332,10 +277,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * return rankings distribution by rank_absolute
-* optional field
-* default value: false
-* if set to true, we will return the field metrics_absolute containing rankings distribution by the rank_absolute parameter that indicates the result’s position among all SERP elements
+   * <em>return rankings distribution by <code>rank_absolute</code></code></em><br>optional field<br>default value: <code>false</code><br>if set to <code>true</code>, we will return the field <code>metrics_absolute</code> containing rankings distribution by the <code>rank_absolute</code> parameter that indicates the result’s position among all SERP elements
    * @return loadRankAbsolute
    */
   @javax.annotation.Nullable
@@ -358,14 +300,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * data collection mode
-* optional field
-* you can use this field to filter the results;
-* possible types of filtering:
-* live — return keywords for which the specified target currently has ranking results in SERP;
-* lost — return keywords for which the specified target had previously had ranking results in SERP, but didn’t have them during the last check;
-* all — return both types of keywords.
-* default value: live
+   * <em>data collection mode</em><br>optional field<br>you can use this field to filter the results;<br>possible types of filtering:<br><code>live</code> — return keywords for which the specified <code>target</code> currently has ranking results in SERP;<br><code>lost</code> — return keywords for which the specified <code>target</code> had previously had ranking results in SERP, but didn't have them during the last check;<br><code>all</code> — return both types of keywords.<br>default value: <code>live</code>
    * @return historicalSerpMode
    */
   @javax.annotation.Nullable
@@ -388,25 +323,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, match, not_match, ilike, not_ilike, like, not_like
-* you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters
-* example:
-* ['ranked_serp_element.serp_item.rank_group','<=',10]
-* [['ranked_serp_element.serp_item.rank_group','<=',10],
-* 'and',
-* ['ranked_serp_element.serp_item.type','<>','paid']]
-* [['keyword_data.keyword_info.search_volume','<>',0],
-* 'and',
-* [['ranked_serp_element.serp_item.type','<>','paid'],'or',['ranked_serp_element.serp_item.is_malicious','=',false]]]
-* if you want to get the keywords a particular webpage ranks for, you can use a target field or filter by the ranked_serp_element.serp_item.relative_url parameter
-* example:
-* ['ranked_serp_element.serp_item.relative_url', '=', '/apis/rank-tracker-api']
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>match</code>, <code>not_match</code>, <code>ilike</code>, <code>not_ilike</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code>, as well as <code>ilike</code> and <code>not_ilike</code> to match any string of zero or more characters<br>example:<br><code>['ranked_serp_element.serp_item.rank_group','<=',10]</code><p><code>[['ranked_serp_element.serp_item.rank_group','<=',10],<br>'and',<br>['ranked_serp_element.serp_item.type','<>','paid']]</code><p><code>[['keyword_data.keyword_info.search_volume','<>',0],<br>'and',<br>[['ranked_serp_element.serp_item.type','<>','paid'],'or',['ranked_serp_element.serp_item.is_malicious','=',false]]]</code><p>if you want to get the keywords a particular webpage ranks for, you can use a <code><a href='/v3/dataforseo_labs/google/ranked_keywords/live/#target'>target</a></code> field or filter by the <code>ranked_serp_element.serp_item.relative_url</code> parameter<br>example:<br><code>['ranked_serp_element.serp_item.relative_url', '=', '/apis/rank-tracker-api']</code><br>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' rel='noopener noreferrer' target='_blank'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -429,21 +346,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['keyword_data.keyword_info.competition,desc']
-* default rule:
-* ['ranked_serp_element.serp_item.rank_group,asc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['keyword_data.keyword_info.search_volume,desc','keyword_data.keyword_info.cpc,desc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['keyword_data.keyword_info.competition,desc']</code><br>default rule:<br><code>['ranked_serp_element.serp_item.rank_group,asc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['keyword_data.keyword_info.search_volume,desc','keyword_data.keyword_info.cpc,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -466,11 +369,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

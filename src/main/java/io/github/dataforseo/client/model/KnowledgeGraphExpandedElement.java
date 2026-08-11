@@ -70,7 +70,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * title of a given element
+   * <em>title of a given element</em>
    * @return featuredTitle
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * relevant URL
+   * <em>relevant URL </em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * text alongside the link title
+   * <em>text alongside the link title</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -185,8 +185,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * images of the element
-* if there are none, equals null
+   * <em>images of the element</em><br>if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -209,10 +208,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -235,8 +231,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * table present in the element
-* the header and content of the table present in the element
+   * <em>table present in the element</em><br>the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable

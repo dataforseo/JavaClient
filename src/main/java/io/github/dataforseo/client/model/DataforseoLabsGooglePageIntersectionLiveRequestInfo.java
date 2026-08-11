@@ -47,26 +47,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * target URLs of pages
-* required field
-* you can set up to 20 pages in this object
-* the pages should be specified with absolute URLs (including http:// or https://)
-* example:
-* 'pages': {
-* '1':'https://www.apple.com/mac/*',
-* '2':'https://dataforseo.com/*',
-* '3':'https://support.microsoft.com/'
-* }if you specify a single page here, we will return results only for this page;
-* you can also use a wildcard (‘*’) character to specify the search pattern
-* example:
-* 'example.com'
-* search for the exact URL
-* 'example.com/eng/*'
-* search for the example.com page and all its related URLs which start with ‘/eng/’, such as “example.com/eng/index.html” and “example.com/eng/help/”, etc.
-* note: a wilcard should be placed after the slash (‘/’) character in the end of the URL, it is not possible to place it after the domain in the following way:
-* https://dataforseo.com*
-* use https://dataforseo.com/* instead
-* Note: this endpoint will not provide results if the number of intersecting keywords exceeds 10 million
+   * <em>target URLs of pages</em><br><strong>required field</strong><br>you can set <strong>up to 20 pages</strong> in this object<br>the pages should be specified with absolute URLs (including http:// or https://)<br>example:<br>`'pages': {`<br>`'1':'https://www.apple.com/mac/*',`<br>`'2':'https://dataforseo.com/*',`<br>`'3':'https://support.microsoft.com/'`<br>`}`if you specify a single page here, we will return results only for this page;<br>you can also use a wildcard ('*') character to specify the search pattern<br>example:<br><code class='long-string'>'example.com'</code><br>search for the exact URL<br><code class='long-string'>'example.com/eng/*'</code><br>search for the <em>example.com</em> page and all its related URLs which start with <em>'/eng/'</em>, such as <em>'example.com/eng/index.html'</em> and <em>'example.com/eng/help/'</em>, etc.<br><strong>note:</strong> a wilcard should be placed after the slash ('/') character in the end of the URL, it is <strong>not possible</strong> to place it after the domain in the following way:<br>`https://dataforseo.com`<strong>*</strong><br>use `https://dataforseo.com`<strong>/*</strong> instead<p><strong>Note:</strong> this endpoint will not provide results if the number of intersecting keywords exceeds 10 million
    * @return pages
    */
   @javax.annotation.Nullable
@@ -89,18 +70,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * URLs of pages you want to exclude
-* optional field
-* you can set up to 10 pages in this array
-* if you use this array, results will contain the keywords for which URLs from the pages object rank, but URLs from exclude_pages array do not;
-* note that if you specify this field, the results will be based on the keywords any URL from pages ranks for regardless of intersections between them. However, you can set intersection_mode to intersect and results will contain the keywords all URLs from pages rank for in the same SERP and URLs from exclude_pages do not.
-* use a wildcard (‘*’) character to specify the search pattern
-* example:
-* 'exclude_pages': [
-* 'https://www.apple.com/iphone/*',
-* 'https://dataforseo.com/apis/*',
-* 'https://www.microsoft.com/en-us/industry/services/'
-* ]
+   * <em>URLs of pages you want to exclude</em><br>optional field<br>you can set <strong>up to 10 pages</strong> in this array<br>if you use this array, results will contain the keywords for which URLs from the <code>pages</code> object rank, but URLs from <code>exclude_pages</code> array do not;<p><strong>note</strong> that if you specify this field, the results will be based on the keywords <strong>any</strong> URL from <code>pages</code> ranks for regardless of intersections between them. However, you can set <code>intersection_mode</code> to <code>intersect</code> and results will contain the keywords <strong>all</strong> URLs from <code>pages</code> rank for in the same SERP and URLs from <code>exclude_pages</code> do not. <br>use a wildcard ('&ast;') character to specify the search pattern<br>example:<br>`'exclude_pages':`<br>`['https://www.apple.com/iphone/&ast;',`<br>`'https://dataforseo.com/apis/&ast;',`<br>`'https://www.microsoft.com/en-us/industry/services/']`
    * @return excludePages
    */
   @javax.annotation.Nullable
@@ -123,13 +93,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don’t specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -152,13 +116,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * location code
-* required field if you don’t specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* 2840
+   * <em>location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -181,13 +139,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don’t specify language_code
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -210,13 +162,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don’t specify language_name
-* Note: it is required to specify either language_name or language_code
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>Note:</strong> it is required to specify either <code>language_name</code> or <code>language_code</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -239,13 +185,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * search results type
-* indicates type of search results included in the response
-* optional field
-* possible values:
-* ['organic', 'paid', 'featured_snippet', 'local_pack']
-* default value:
-* ['organic', 'paid']
+   * <em>search results type</em><br>indicates type of search results included in the response<br>optional field<p>possible values: <br><code>['organic', 'paid', 'featured_snippet', 'local_pack']</code><br>default value: <br><code>['organic', 'paid']</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -268,10 +208,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned keywords
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned keywords</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -294,10 +231,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * offset in the items array of returned keywords
-* optional field
-* default value: 0
-* if you specify 10 here, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
+   * <em>offset in the <code>items</code> array of returned keywords</em><br>optional field<br>default value: <code>0</code><br>if you specify <code>10</code> here, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
    * @return offset
    */
   @javax.annotation.Nullable
@@ -320,10 +254,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -346,13 +277,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * indicates whether to intersect keywords
-* optional field
-* use this field to intersect or merge results for the specified URLs
-* possible values: union, intersect
-* union – results are based on all keywords any URL from pages rank for;
-* intersect – results are based on the keywords all URLs from pages rank for in the same SERP:
-* by default, results are based on the intersect mode if you specify only pages array. If you specify exclude_pages as well, results are based on the union mode
+   * <em>indicates whether to intersect keywords</em><br>optional field<br>use this field to intersect or merge results for the specified URLs<p>possible values: <code>union</code>, <code>intersect</code><p><code>union</code> - results are based on all keywords <strong>any</strong> URL from <code>pages</code> rank for;<p><code>intersect</code> - results are based on the keywords <strong>all</strong> URLs from <code>pages</code> rank for in the same SERP:<p>by default, results are based on the <code>intersect</code> mode if you specify only <code>pages</code> array. If you specify <code>exclude_pages</code> as well, results are based on the <code>union</code> mode
    * @return intersectionMode
    */
   @javax.annotation.Nullable
@@ -375,10 +300,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * include data from SERP for each keyword
-* optional field
-* if set to true, we will return a serp_info array containing SERP data (number of search results, relevant URL, and SERP features) for every keyword in the response
-* default value: false
+   * <em>include data from SERP for each keyword</em><br>optional field<br>if set to <code>true</code>, we will return a <code>serp_info</code> array containing SERP data (number of search results, relevant URL, and SERP features) for every keyword in the response<br>default value: <code>false</code>
    * @return includeSerpInfo
    */
   @javax.annotation.Nullable
@@ -401,12 +323,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * include or exclude data from clickstream-based metrics in the result
-* optional field
-* if the parameter is set to true, you will receive clickstream_keyword_info, clickstream_etv, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response
-* default value: false
-* with this parameter enabled, you will be charged double the price for the request
-* learn more about how clickstream-based metrics are calculated in this help center article
+   * <em>include or exclude data from clickstream-based metrics in the result</em><br>optional field<br>if the parameter is set to <code>true</code>, you will receive <code>clickstream_keyword_info</code>, <code>clickstream_etv</code>, <code>keyword_info_normalized_with_clickstream</code>, and <code>keyword_info_normalized_with_bing</code> fields in the response<br>default value: <code>false</code><br>with this parameter enabled, you will be charged double the price for the request<p>learn more about how clickstream-based metrics are calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable
@@ -429,10 +346,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * ignore highly similar keywords
-* optional field
-* if set to true only core keywords will be returned, all highly similar keywords will be excluded;
-* default value: false
+   * <em>ignore highly similar keywords</em><br>optional field<br>if set to <code class='prettyprint'>true</code> only core keywords will be returned, all highly similar keywords will be excluded;  <br>default value: <code>false</code>
    * @return ignoreSynonyms
    */
   @javax.annotation.Nullable
@@ -455,25 +369,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, ilike, not_ilike, like, not_like, match, not_match
-* you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters
-* note that if you want to filter by any field in the intersection_result array you need to specify the number of corresponding page
-* for instance, if you want to filter results by the ranking of the first specified URL, you should set the following filter:
-* [intersection_result.1.rank_absolute,'=',1]
-* if you want to filter results and receive only organic listings for the third specified URL, you should set the following filter:
-* [intersection_result.3.type,'=','organic'] , etc.example:
-* ['keyword_data.keyword_info.search_volume','in',[100,1000]]
-* [['intersection_result.1.etv','>',0],'and',['intersection_result.1.description','like','%goat%']][['keyword_data.keyword_info.search_volume','>',100],
-* 'and',
-* [['intersection_result.2.description','like','%goat%'],
-* 'or',
-* ['intersection_result.2.type','=','organic']]]
-* for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>ilike</code>, <code>not_ilike</code>, <code>like</code>, <code>not_like</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code>, as well as <code>ilike</code> and <code>not_ilike</code> to match any string of zero or more characters<br><strong>note</strong> that if you want to filter by any field in the <code>intersection_result</code> array you need to specify the number of corresponding page<br>for instance, if you want to filter results by the ranking of the first specified URL, you should set the following filter:<br><code>[intersection_result.1.rank_absolute,'=',1]</code><br>if you want to filter results and receive only organic listings for the third specified URL, you should set the following filter:<br><code>[intersection_result.3.type,'=','organic']</code> , etc.example:<br><code>['keyword_data.keyword_info.search_volume','in',[100,1000]]</code><br><code>[['intersection_result.1.etv','>',0],'and',['intersection_result.1.description','like','%goat%']]</code><code>[['keyword_data.keyword_info.search_volume','>',100],<br>'and',<br>[['intersection_result.2.description','like','%goat%'],<br>'or',<br>['intersection_result.2.type','=','organic']]]</code><br>for more information about filters, please refer to <a href='/v3/dataforseo_labs/filters' target='_blank' rel='noopener noreferrer'>Dataforseo Labs - Filters</a> or this <a href='https://dataforseo.com/help-center/how-to-use-filters-in-dataforseo-labs-api' rel='noopener noreferrer' target='_blank'>help center guide</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -496,21 +392,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting parameter
-* example:
-* ['keyword_data.keyword_info.competition,desc']
-* default rule:
-* ['keyword_data.keyword_info.search_volume,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['intersection_result.1.rank_group,asc','intersection_result.2.rank_absolute,asc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting parameter<br>example:<br><code>['keyword_data.keyword_info.competition,desc']</code><br>default rule:<br><code>['keyword_data.keyword_info.search_volume,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['intersection_result.1.rank_group,asc','intersection_result.2.rank_absolute,asc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -533,11 +415,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

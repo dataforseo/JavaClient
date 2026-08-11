@@ -47,7 +47,7 @@ public class BingRelatedSearchesSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * items in SERP
+   * <em>items in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -47,14 +47,7 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * start time for filtering results
-* required field
-* if include_metadata is set to true, minimum start value: a month from current datetime;
-* if include_metadata is set to false, minimum start value: six months from current datetime;
-* maximum start value: current datetime;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2023-01-15 12:57:46 +00:00
+   * <em>start time for filtering results</em><br><strong>required field</strong><br>if <code>include_metadata</code> is set to <code>true</code>, minimum start value: a month from current datetime;<br>if <code>include_metadata</code> is set to <code>false</code>, minimum start value: six months from current datetime;<br>maximum start value: current <code>datetime</code>;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00';<br>example:<br><code>2023-01-15 12:57:46 +00:00</code>
    * @return datetimeFrom
    */
   @javax.annotation.Nullable
@@ -77,15 +70,7 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * finish time for filtering results
-* required field
-* if include_metadata is set to true, minimum finish value: a month from current datetime;
-* if include_metadata is set to false, minimum finish value: six months from current datetime;
-* maximum finish value: current datetime;
-* Note: datetime_to must be greater than datetime_from;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2023-01-31 13:57:46 +00:00
+   * <em>finish time for filtering results</em><br><strong>required field</strong><br>if <code>include_metadata</code> is set to <code>true</code>, minimum finish value: a month from current datetime;<br>if <code>include_metadata</code> is set to <code>false</code>, minimum finish value: six months from current datetime;<br>maximum finish value: current <code>datetime</code>;<br><strong>Note:</strong> <code>datetime_to</code> must be greater than <code>datetime_from</code>;<br>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00';<br>example:<br><code>2023-01-31 13:57:46 +00:00</code>
    * @return datetimeTo
    */
   @javax.annotation.Nullable
@@ -108,11 +93,7 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * the maximum number of returned task IDs
-* optional field
-* default value: 1000
-* maximum value: 1000
-* minimum value: 1
+   * <em>the maximum number of returned task IDs</em><br>optional field<br>default value: <code>1000</code><br>maximum value: <code>1000</code><br>minimum value: <code>1</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -135,11 +116,7 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned task IDs
-* optional field
-* if you specify the 10 value, the first ten tasks in the results array will be omitted;
-* minimum and default value: 0;
-* maximum value: 100M (100 million)
+   * <em>offset in the results array of returned task IDs</em><br>optional field<br>if you specify the <code>10</code> value, the first ten tasks in the results array will be omitted;<br>minimum and default value: <code>0</code>;<br>maximum value: <code>100M</code> (100 million)
    * @return offset
    */
   @javax.annotation.Nullable
@@ -162,10 +139,7 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * sorting by task execution time
-* optional field
-* possible values: 'asc', 'desc'
-* default value: 'asc'
+   * <em>sorting by task execution time</em><br>optional field<br>possible values: <code>'asc'</code>, <code>'desc'</code><br>default value: <code>'asc'</code>
    * @return sort
    */
   @javax.annotation.Nullable
@@ -188,10 +162,7 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * include task metadata in the response
-* optional field
-* if set to true, the metadata object containing parameters specified in the POST request will be provided in the response;
-* default value: false
+   * <em>include task metadata in the response</em><br>optional field<br>if set to <code>true</code>, the <code>metadata</code> object containing parameters specified in the POST request will be provided in the response;<br>default value: <code>false</code>
    * @return includeMetadata
    */
   @javax.annotation.Nullable

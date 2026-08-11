@@ -70,8 +70,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * referring domain
-* the link was found on this domain
+   * <em>referring domain</em><br>the link was found on this domain
    * @return domainFrom
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * referenced domain
-* the link is pointing to this domain
+   * <em>referenced domain</em><br>the link is pointing to this domain
    * @return domainTo
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * referring page
-* relative URL of the page on which the link was found
+   * <em>referring page</em><br>relative URL of the page on which the link was found
    * @return pageFrom
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * referenced page
-* relative URL of the page to which the link is pointing
+   * <em>referenced page</em><br>relative URL of the page to which the link is pointing
    * @return pageTo
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * referring page
-* absolute URL of the page on which the link was found
+   * <em>referring page</em><br>absolute URL of the page on which the link was found
    * @return linkFrom
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * referenced page
-* absolute URL of the page to which the link is pointing
+   * <em>referenced page</em><br>absolute URL of the page to which the link is pointing
    * @return linkTo
    */
   @javax.annotation.Nullable
@@ -214,8 +208,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * indicates whether the link is dofollow
-* if the value is true, the link doesn’t have a rel='nofollow' attribute
+   * <em>indicates whether the link is dofollow</em><br>if the value is <code>true</code>, the link doesn't have a <code>rel='nofollow'</code> attribute
    * @return dofollow
    */
   @javax.annotation.Nullable
@@ -238,7 +231,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * url scheme of the referring page
+   * <em><a href='https://en.wikipedia.org/wiki/List_of_URI_schemes' target='_blank' rel='noopener noreferrer'>url scheme</a> of the referring page</em>
    * @return pageFromScheme
    */
   @javax.annotation.Nullable
@@ -261,7 +254,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * url scheme of the referenced page
+   * <em><a href='https://en.wikipedia.org/wiki/List_of_URI_schemes' target='_blank' rel='noopener noreferrer'>url scheme</a> of the referenced page</em>
    * @return pageToScheme
    */
   @javax.annotation.Nullable
@@ -284,8 +277,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * direction of the link
-* possible values: internal, external
+   * <em>direction of the link</em><br>possible values: <code>internal</code>, <code>external</code>
    * @return direction
    */
   @javax.annotation.Nullable
@@ -308,8 +300,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * link is broken
-* indicates whether a link is directing to a broken page or resource
+   * <em>link is broken</em><br>indicates whether a link is directing to a broken page or resource
    * @return isBroken
    */
   @javax.annotation.Nullable
@@ -332,8 +323,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * indicates that the link may have a conflict with another link
-* if true, at least one link pointing to link_to has a rel='nofollow' attribute and at least one is dofollow
+   * <em>indicates that the link may have a conflict with another link</em><br>if <code>true</code>, at least one link pointing to <code>link_to</code> has a <code>rel='nofollow'</code> attribute <strong>and</strong> at least one is dofollow
    * @return isLinkRelationConflict
    */
   @javax.annotation.Nullable
@@ -356,8 +346,7 @@ public class BaseOnPageLinkItem  {
   }
 
   /**
-   * status code of the referenced page
-* status code of the page to which the link is pointing
+   * <em>status code of the referenced page</em><br>status code of the page to which the link is pointing
    * @return pageToStatusCode
    */
   @javax.annotation.Nullable

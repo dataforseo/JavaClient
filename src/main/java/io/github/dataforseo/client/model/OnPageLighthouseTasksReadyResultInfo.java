@@ -47,8 +47,7 @@ public class OnPageLighthouseTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageLighthouseTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * <em>user-defined task identifier</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class OnPageLighthouseTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the OnPage Lighthouse JSON task
+   * <em>URL for collecting the results of the OnPage Lighthouse JSON task</em>
    * @return endpointJson
    */
   @javax.annotation.Nullable

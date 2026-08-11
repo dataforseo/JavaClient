@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DomainAnalyticsTechnologiesDomainTechnologiesLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DomainAnalyticsTechnologiesDomainTechnologiesLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

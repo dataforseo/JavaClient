@@ -47,7 +47,7 @@ public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo  
   }
 
   /**
-   * language name
+   * <em>language name</em>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo  
   }
 
   /**
-   * language code
+   * <em>language code</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo  
   }
 
   /**
-   * supported locations
-* contains locations supported in combination with a specific language
+   * <em>supported locations</em><br>contains locations supported in combination with a specific language
    * @return availableLocations
    */
   @javax.annotation.Nullable

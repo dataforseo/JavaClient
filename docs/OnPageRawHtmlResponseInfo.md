@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageRawHtmlTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<OnPageRawHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

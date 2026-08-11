@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**keyword** | **String** | returned keyword |[optional]|
-**frequency** | **Integer** | keyword frequency<br>number of times the keyword appears on the website (or webpage if you specified a url) |[optional]|
-**density** | **Double** | keyword density<br>calculated as a ratio of frequency to the total count of keywords with the set keyword_length on the web page or website |[optional]|
+**keyword** | **String** | <em>returned keyword</em> |[optional]|
+**frequency** | **Integer** | <em>keyword frequency</em><br>number of times the keyword appears on the website (or webpage if you specified a <code>url</code>) |[optional]|
+**density** | **Double** | <em>keyword density</em><br>calculated as a ratio of <code>frequency</code> to the total count of keywords with the set <code>keyword_length</code> on the web page or website |[optional]|

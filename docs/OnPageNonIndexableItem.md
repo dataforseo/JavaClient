@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**reason** | **String** | the reason why the page is non-indexable<br>can take the following values: robots_txt, meta_tag, http_header, attribute, too_many_redirects |[optional]|
-**url** | **String** | url of the non-indexable page |[optional]|
+**reason** | **String** | <em>the reason why the page is non-indexable</em><br>can take the following values: <code>robots_txt</code>, <code>meta_tag</code>, <code>http_header</code>, <code>attribute</code>, <code>too_many_redirects</code> |[optional]|
+**url** | **String** | <em>url of the non-indexable page</em> |[optional]|

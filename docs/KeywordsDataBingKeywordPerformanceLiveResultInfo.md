@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**keyword** | **String** | keyword in a POST array |[optional]|
-**locationCode** | **Integer** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**languageCode** | **String** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
-**year** | **Integer** | indicates the year for which the data is provided for<br>example:<br>2020 |[optional]|
-**month** | **Integer** | indicates the month for which the data is provided for<br>example:<br>10 |[optional]|
-**keywordKpi** | **KeywordKpi** | object containing keyword metrics<br>if there is no data, then the value is null |[optional]|
+**keyword** | **String** | <em>keyword in a POST array</em> |[optional]|
+**locationCode** | **Integer** | <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**languageCode** | **String** | <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**year** | **Integer** | <em>indicates the year for which the data is provided for</em><br>example:<br><code>2020</code> |[optional]|
+**month** | **Integer** | <em>indicates the month for which the data is provided for</em><br>example:<br><code>10</code> |[optional]|
+**keywordKpi** | **KeywordKpi** | <em>object containing keyword metrics</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|

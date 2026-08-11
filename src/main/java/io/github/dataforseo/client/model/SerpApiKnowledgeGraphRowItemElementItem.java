@@ -47,9 +47,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * title of the link
+   * <em>title of the link</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* kc:/common/topic:social media presence
+   * <em>google defined data attribute ID</em><br>example:<br><code>kc:/common/topic:social media presence</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * reference text
-* text snippet from the page that was used to generate the ai_overview_element
+   * <em>reference text</em><br>text snippet from the page that was used to generate the <code>ai_overview_element</code>
    * @return text
    */
   @javax.annotation.Nullable
@@ -168,9 +162,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>the links shown below some of Google's search results<br>if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable

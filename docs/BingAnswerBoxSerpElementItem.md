@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**text** | **List<String>** | text<br>if there is none, equals null |[optional]|
-**links** | **List<LinkElement>** | links featured in the organic result |[optional]|
+**text** | **List<String>** | <em>text</em><br>            if there is none, equals <code>null</code> |[optional]|
+**links** | **List<LinkElement>** | <em>links featured in the organic result</em> |[optional]|

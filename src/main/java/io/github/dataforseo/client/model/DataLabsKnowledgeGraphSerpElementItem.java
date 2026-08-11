@@ -47,7 +47,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * subtitle of the item
+   * <em>subtitle of the item</em>
    * @return subTitle
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * card id
+   * <em>card id</em>
    * @return cardId
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * URL of the image from knowledge graph
+   * <em>URL of the image from knowledge graph</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * URL of the logo from knowledge graph
+   * <em>URL of the logo from knowledge graph</em>
    * @return logoUrl
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * google-defined client id
+   * <em>google-defined client id</em>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * historical SERPs and related data found in the database
+   * <em>historical SERPs and related data found in the database</em>
    * @return items
    */
   @javax.annotation.Nullable

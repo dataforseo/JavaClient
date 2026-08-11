@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageLighthouseLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageLighthouseLanguagesResultInfo>** | <em>array of results</em> |[optional]|

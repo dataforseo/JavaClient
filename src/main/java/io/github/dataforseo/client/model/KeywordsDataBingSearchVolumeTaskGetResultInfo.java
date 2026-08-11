@@ -47,7 +47,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * indicates whether data from partner networks included in the response
+   * <em>indicates whether data from partner networks included in the response</em>
    * @return searchPartners
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * device type in a POST array
-* if there is no data, then the value is null
+   * <em>device type in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return device
    */
   @javax.annotation.Nullable
@@ -163,13 +162,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * competition
-* represents the relative amount of competition associated with the given keyword in paid SERP only. This value is based on Bing Ads data.
-* Possible values: 0.1, 0.5,0.9 
-* 0.1 – low competition,
-* 0.5 – medium competition,
-* 0.9 – high competition;
-* if there is no data the value is null
+   * <em>competition</em><br>represents the relative amount of competition associated with the given keyword in paid SERP only. This value is based on Bing Ads data.<br>Possible values: <code>0.1</code>, <code>0.5</code>,<code>0.9</code> <p><code>0.1</code> - low competition,<br><code>0.5</code> - medium competition, <br><code>0.9</code> - high competition;<br>if there is no data the value is <code>null</code>
    * @return competition
    */
   @javax.annotation.Nullable
@@ -192,9 +185,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * cost-per-click
-* represents the average cost per click (USD) historically paid for the keyword.
-* if there is no data then the value is null
+   * <em>cost-per-click</em><br>represents the average cost per click (USD) historically paid for the keyword.<br>if there is no data then the value is_<code>null</code>n
    * @return cpc
    */
   @javax.annotation.Nullable
@@ -217,8 +208,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * monthly average search volume rate
-* search volume is rounded to the nearest tens
+   * <em>monthly average search volume rate</em><br>search volume is rounded to the nearest tens
    * @return searchVolume
    */
   @javax.annotation.Nullable
@@ -241,8 +231,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * product and service categories
-* our API doesn’t return categories for this endpoint: the parameter will always equal null
+   * <em>product and service categories</em><br>our API doesn't return categories for this endpoint: the parameter will always equal <code>null</code>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -265,9 +254,7 @@ public class KeywordsDataBingSearchVolumeTaskGetResultInfo  {
   }
 
   /**
-   * monthly searches
-* represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations
-* if there is no data then the value is null
+   * <em>monthly searches</em><br>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations<br>if there is no data then the value is_<code>null</code>n
    * @return monthlySearches
    */
   @javax.annotation.Nullable

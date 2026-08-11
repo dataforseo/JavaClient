@@ -47,12 +47,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/bing/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/bing/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -103,13 +93,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius (in km)” format
-* the data will be provided for the country the specified coordinates belong to
-* example:
-* 29.6821525,-82.4098881,100
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius (in km)'</em> format<br><strong>the data will be provided for the country the specified coordinates belong to</strong><br>example:<br><code class='long-string'>29.6821525,-82.4098881,100</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -132,8 +116,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * selection of age ranges for targeting
-* possible values: eighteen_to_twenty_four, fifty_to_sixty_four, sixty_five_and_above, thirteen_to_seventeen, thirty_five_to_forty_nine, twenty_five_to_thirty_four, unknown, zero_to_twelve
+   * <em>selection of age ranges for targeting</em><br>possible values: <code>eighteen_to_twenty_four</code>, <code>fifty_to_sixty_four</code>, <code>sixty_five_and_above</code>, <code>thirteen_to_seventeen</code>, <code>thirty_five_to_forty_nine</code>, <code>twenty_five_to_thirty_four</code>, <code>unknown</code>, <code>zero_to_twelve</code>
    * @return age
    */
   @javax.annotation.Nullable
@@ -156,8 +139,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * desired bid setting value in USD
-* maximum value: 1000
+   * <em>desired bid setting value in USD</em><br>maximum value: 1000
    * @return bid
    */
   @javax.annotation.Nullable
@@ -180,8 +162,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * daily campaign budget value in USD
-* maximum value: 10000
+   * <em>daily campaign budget value in USD</em><br>maximum value: 10000
    * @return dailyBudget
    */
   @javax.annotation.Nullable
@@ -204,8 +185,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * gender to target
-* possible values: male, female, unknown
+   * <em>gender to target</em><br>possible values: <code>male</code>, <code>female</code>, <code>unknown</code>
    * @return gender
    */
   @javax.annotation.Nullable
@@ -228,9 +208,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * industry of LinkedIn profile targeting
-* if you use this field, you can receive the list of available industry names  with industry_id by making a separate request to the https://api.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries
-* example: 806301758
+   * <em>industry of LinkedIn profile targeting</em><p>if you use this field, you can receive the list of available industry names  with industry_id by making a separate request to the https://api.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries<p>example: <code>806301758</code>
    * @return industry
    */
   @javax.annotation.Nullable
@@ -253,9 +231,7 @@ public class KeywordsDataBingAudienceEstimationLiveRequestInfo  {
   }
 
   /**
-   * job function of LinkedIn profile targeting
-* if you use this field, you can receive the list of available job function names  with job_function_id by making a separate request to the https://api.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions
-* example: 806300451
+   * <em>job function of LinkedIn profile targeting</em><p>if you use this field, you can receive the list of available job function names  with job_function_id by making a separate request to the https://api.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions<p>example: <code>806300451</code>
    * @return jobFunction
    */
   @javax.annotation.Nullable

@@ -47,15 +47,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * keywords
-* required field
-* the maximum number of keywords you can specify: 5
-* the maximum number of characters you can specify in a keyword: 100
-* the minimum number of characters must be greater than 1
-* comma characters (,) in the specified keywords will be unset and ignored
-* Note: keywords cannot consist of a combination of the following characters: < > | \ ' - + = ~ ! : * ( ) [ ] { }
-* Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords</em><br><strong>required field</strong><br>the maximum number of keywords you can specify: 5<br>the maximum number of characters you can specify in a keyword: 100<br>the minimum number of characters must be greater than 1<br>comma characters (<code>,</code>) in the specified keywords will be unset and ignored<p><strong>Note:</strong> keywords cannot consist of a combination of the following characters: <code>< > |  ' - + = ~ ! : * ( ) [ ] { }</code><p><strong>Note:</strong> to obtain <code>google_trends_topics_list</code> and <code>google_trends_queries_list</code> items, specify no more than 1 keyword<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -78,14 +70,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* optional field
-* if you don’t use this field, you will recieve global results
-* if you use this field, you don’t need to specify location_code
-* you can use this field as an array to set several locations, each corresponding to a specific keyword – learn more;
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations
-* example:
-* United Kingdom
+   * <em>full name of search engine location</em><br>optional field<br>if you don't use this field, you will recieve global results<br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can use this field as an array to set several locations, each corresponding to a specific keyword - <a href='https://dataforseo.com/help-center/multiple-locations-in-google-trends-api' rel='noopener noreferrer' target='_blank'>learn more</a>;<br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_trends/locations</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -108,14 +93,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* optional field
-* if you don’t use this field, you will recieve global results
-* if you use this field, you don’t need to specify location_name
-* you can use this field as an array to set several locations, each corresponding to a specific keyword – learn more;
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br>optional field<br>if you don't use this field, you will recieve global results<br><strong>if you use this field, you don't need to specify <code>location_name</code></strong><br>you can use this field as an array to set several locations, each corresponding to a specific keyword - <a href='https://dataforseo.com/help-center/multiple-locations-in-google-trends-api' rel='noopener noreferrer' target='_blank'>learn more</a>;<br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_trends/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -138,13 +116,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* optional field
-* default value: English
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br>optional field<br>default value: <code>English</code><br>if you use this field, you don't need to specify <code>language_code</code><br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_trends/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -167,13 +139,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * search engine language code
-* optional field
-* default value: en
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/languages
-* example:
-* en
+   * <em>search engine language code</em><br>optional field<br>default value: <code>en</code><br>if you use this field, you don't need to specify <code>language_name</code><br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/google_trends/languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -219,10 +185,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * google trends search category
-* optional field
-* if you don’t specify this field, the 0 value will be applied by default and the search will be carried out across all available categories
-* you can receive the list of available categories with their category_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/google_trends/categories
+   * <em>google trends search category</em><br>optional field<br>if you don't specify this field, the <code>0</code> value will be applied by default and the search will be carried out across all available categories<br>you can receive the list of available categories with their <code>category_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/keywords_data/google_trends/categories</code>
    * @return categoryCode
    */
   @javax.annotation.Nullable
@@ -245,14 +208,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* if you don’t specify this field, the current day and month of the preceding year will be used by default
-* minimal value for the web type: 2004-01-01
-* minimal value for other types: 2008-01-01
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>starting date of the time range</em><br>optional field<br>if you don't specify this field, the current day and month of the preceding year will be used by default<br>minimal value for the <code>web</code> type: <code>2004-01-01</code><br>minimal value for other types: <code>2008-01-01</code><br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -275,12 +231,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, the today’s date will be used by default
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, the today's date will be used by default<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -303,15 +254,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * preset time ranges
-* optional field
-* if you specify date_from or date_to parameters, this field will be ignored when setting a task
-* possible values for all type parameters:
-* past_hour, past_4_hours, past_day, past_7_days, past_30_days, past_90_days, past_12_months, past_5_years
-* possible values for web only:
-* 2004_present
-* possible values for news, youtube, images, froogle:
-* 2008_present
+   * <em>preset time ranges</em><br>optional field<br>if you specify <code>date_from</code> or <code>date_to</code> parameters, this field will be ignored when setting a task<br><em>possible values for all <code>type</code> parameters:</em><br><code>past_hour</code>, <code>past_4_hours</code>, <code>past_day</code>, <code>past_7_days</code>, <code>past_30_days</code>, <code>past_90_days</code>, <code>past_12_months</code>, <code>past_5_years</code><br><em>possible values for <code>web</code> only:</em><br><code>2004_present</code><br><em>possible values for <code>news</code>, <code>youtube</code>, <code>images</code>, <code>froogle</code>:</em><br><code>2008_present</code>
    * @return timeRange
    */
   @javax.annotation.Nullable
@@ -334,14 +277,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * types of items returned
-* optional field
-* to speed up the execution of the request, specify one item at a time;
-* possible values:
-* 'google_trends_graph', 'google_trends_map', 'google_trends_topics_list','google_trends_queries_list'
-* default value:
-* 'google_trends_graph'
-* Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword in the keywords field
+   * <em>types of items returned</em><br>optional field<br>to speed up the execution of the request, specify one item at a time;<br>possible values:<br><code>'google_trends_graph'</code>, <code>'google_trends_map'</code>, <code>'google_trends_topics_list'</code>,<code>'google_trends_queries_list'</code><br>default value:<br><code>'google_trends_graph'</code><p><strong>Note:</strong> to obtain <code>google_trends_topics_list</code> and <code>google_trends_queries_list</code> items, specify no more than 1 keyword in the <code>keywords</code> field
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -364,11 +300,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * additional information for the video
+   * <em>additional information for the video</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * reference page URL
+   * <em>reference page URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * domain in link
+   * <em>domain in link</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * URL of the image
+   * <em>URL of the image</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * web source of the shopping element
-* indicates the source of information included in the element
+   * <em>web source of the shopping element</em><br>indicates the source of information included in the element
    * @return source
    */
   @javax.annotation.Nullable
@@ -186,9 +185,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * date when the video was published or indexed
-* example:
-* Apr 26, 2024
+   * <em>date when the video was published or indexed</em><br>example: <br><code>Apr 26, 2024</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -211,10 +208,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * date and time when the video was published or indexed
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the video was published or indexed</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

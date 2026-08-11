@@ -47,7 +47,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * title of the video
+   * <em>title of the video</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * ID of the video
+   * <em>ID of the video</em>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * the URL of the page where the thumbnail is hosted
+   * <em>the URL of the page where the thumbnail is hosted</em>
    * @return thumbnailUrl
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * the name of the channel where the video is published
+   * <em>the name of the channel where the video is published</em>
    * @return channelName
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * the URL of the channel where the video is published
+   * <em>the URL of the channel where the video is published</em>
    * @return channelUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * the URL of the page where the logo image of the channel is hosted
+   * <em>the URL of the page where the logo image of the channel is hosted</em>
    * @return channelLogo
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * description of the channel
+   * <em>description of the channel</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * highlighted keywords in the description
+   * <em>highlighted keywords in the description</em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -231,9 +231,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * video badges
-* example:
-* New, CC, 4K
+   * <em>video badges</em><br>example:<br><code>New</code>, <code>CC</code>, <code>4K</code>
    * @return badges
    */
   @javax.annotation.Nullable
@@ -256,7 +254,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * indicates whether the video is a live broadcast
+   * <em>indicates whether the video is a live broadcast</em>
    * @return isLive
    */
   @javax.annotation.Nullable
@@ -279,7 +277,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * indicates whether the video is shorts
+   * <em>indicates whether the video is shorts</em>
    * @return isShorts
    */
   @javax.annotation.Nullable
@@ -302,7 +300,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * indicates whether the video is a movie
+   * <em>indicates whether the video is a movie</em>
    * @return isMovie
    */
   @javax.annotation.Nullable
@@ -325,7 +323,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * number of views of the video
+   * <em>number of views of the video</em>
    * @return viewsCount
    */
   @javax.annotation.Nullable
@@ -348,7 +346,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * the date when the video is published
+   * <em>the date when the video is published</em>
    * @return publicationDate
    */
   @javax.annotation.Nullable
@@ -371,10 +369,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * date and time when the result is published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2022-11-15 12:57:46 +00:00
+   * <em>date and time when the result is published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2022-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -397,7 +392,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * duration of the video
+   * <em>duration of the video</em>
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -420,7 +415,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * duration of the video in seconds
+   * <em>duration of the video in seconds</em>
    * @return durationTimeSeconds
    */
   @javax.annotation.Nullable

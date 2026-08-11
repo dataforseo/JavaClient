@@ -47,10 +47,7 @@ public class KnowledgeGraphImagesItemSerpElementItem  extends BaseSerpApiElement
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class KnowledgeGraphImagesItemSerpElementItem  extends BaseSerpApiElement
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class KnowledgeGraphImagesItemSerpElementItem  extends BaseSerpApiElement
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return link
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class KnowledgeGraphImagesItemSerpElementItem  extends BaseSerpApiElement
   }
 
   /**
-   * contains arrays of elements available in the list
+   * <em>contains arrays of elements available in the list</em>
    * @return items
    */
   @javax.annotation.Nullable

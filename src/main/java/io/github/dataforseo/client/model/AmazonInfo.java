@@ -47,7 +47,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * absolute rank in Amazon SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in Amazon SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -141,9 +139,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * the alignment of the element in Amazon SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in Amazon SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * Amazon domain
+   * <em>Amazon domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * URL of the product page
+   * <em>URL of the product page</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * ASIN in a POST array
+   * <em>ASIN in a POST array</em>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -281,7 +277,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * URL of the product image featured in the results
+   * <em>URL of the product image featured in the results</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -304,9 +300,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * the regular price of a product
-* example:
-* 49.98
+   * <em>the regular price of a product</em><br>example:<br><code>49.98</code>
    * @return priceFrom
    */
   @javax.annotation.Nullable
@@ -329,9 +323,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * the upper limit of the product price range
-* example:
-* 384.99
+   * <em>the upper limit of the product price range</em><br>example:<br><code>384.99</code>
    * @return priceTo
    */
   @javax.annotation.Nullable
@@ -354,9 +346,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * currency in the ISO format
-* example:
-* USD
+   * <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -379,8 +369,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * special offer details
-* contains special offer details, including coupon and Subscribe & Save discounts
+   * <em>special offer details</em><br>contains special offer details, including coupon and Subscribe & Save discounts
    * @return specialOffers
    */
   @javax.annotation.Nullable
@@ -403,8 +392,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * “Best Seller” label
-* if the value is true, the product is marked with the “Best Seller” label
+   * <em>'Best Seller' label</em><br>if the value is <code>true</code>, the product is marked with the 'Best Seller' label
    * @return isBestSeller
    */
   @javax.annotation.Nullable
@@ -427,8 +415,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * “Amazon’s choice” label
-* if the value is true, the product is marked with the “Amazon’s choice” label
+   * <em>'Amazon's choice' label</em><br>if the value is <code>true</code>, the product is marked with the 'Amazon's choice' label
    * @return isAmazonChoice
    */
   @javax.annotation.Nullable
@@ -451,8 +438,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -475,8 +461,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * delivery information
-* delivery information including free and fast delivery date ranges
+   * <em>delivery information</em><br>delivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable

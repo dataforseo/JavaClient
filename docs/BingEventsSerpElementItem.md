@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the item |[optional]|
-**url** | **String** | URL |[optional]|
-**items** | **List<EventsElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**title** | **String** | <em>title of the item</em> |[optional]|
+**url** | **String** | <em>URL</em> |[optional]|
+**items** | **List<EventsElement>** | <em>contains results featured in the 'hotels_pack' element of SERP</em> |[optional]|

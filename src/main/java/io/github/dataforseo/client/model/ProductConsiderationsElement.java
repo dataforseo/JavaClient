@@ -70,7 +70,7 @@ public class ProductConsiderationsElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class ProductConsiderationsElement  {
   }
 
   /**
-   * category of the consideration element
-* the category is indicated just above the title fo the consideration element
+   * <em>category of the consideration element</em><br>the category is indicated just above the title fo the consideration element
    * @return considerationCategory
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class ProductConsiderationsElement  {
   }
 
   /**
-   * expanded element
+   * <em>expanded element</em>
    * @return expandedElement
    */
   @javax.annotation.Nullable

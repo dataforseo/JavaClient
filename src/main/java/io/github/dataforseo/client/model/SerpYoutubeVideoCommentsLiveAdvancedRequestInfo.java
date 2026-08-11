@@ -47,11 +47,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * ID of the video
-* required field
-* you can find video ID in the URL or ‘youtube_video’ item of YouTube Organic result
-* example:
-* vQXvyV0zIP4
+   * <em>ID of the video</em><br><strong>required field</strong><br>you can find video ID in the URL or 'youtube_video' item of <a href='/v3/serp/youtube/organic/live/advanced/' rel='noopener noreferrer' target='_blank'>YouTube Organic</a> result<br>example:<br><code>vQXvyV0zIP4</code>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -74,12 +70,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -102,12 +93,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name 
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_<br><strong>if you use this field, you don't need to specify <code>location_name</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><br>example:<br><code class='long-string'>2840</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -130,12 +116,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -158,12 +139,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -186,9 +162,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* only value: desktop
+   * <em>device type</em><br>optional field<br>only value: <code>desktop</code>
    * @return device
    */
   @javax.annotation.Nullable
@@ -211,10 +185,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* choose from the following values: windows, macos
-* default value: windows
+   * 
    * @return os
    */
   @javax.annotation.Nullable
@@ -237,14 +208,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results in SERP
-* default value: 20
-* max value: 200
-* Note: your account will be billed per each SERP containing up to 20 results;
-* thus, setting a depth above 20 may result in additional charges if the search engine returns more than 20 results;
-* if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+   * <em>parsing depth</em><br>optional field<br>number of results in SERP<br>default value: <code>20</code><br>max value: <code>200</code><br><strong>Note:</strong> your account will be billed per each SERP containing up to 20 results;<br>thus, setting a depth above <code>20</code> may result in additional charges if the search engine returns more than 20 results;<br>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
    * @return depth
    */
   @javax.annotation.Nullable
@@ -267,11 +231,7 @@ public class SerpYoutubeVideoCommentsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

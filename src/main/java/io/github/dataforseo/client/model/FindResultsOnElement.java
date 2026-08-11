@@ -70,7 +70,7 @@ public class FindResultsOnElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class FindResultsOnElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class FindResultsOnElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class FindResultsOnElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable

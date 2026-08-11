@@ -47,7 +47,7 @@ public class AudienceEstimationInfo  {
   }
 
   /**
-   * indicates the upper bound of the range result
+   * <em>indicates the upper bound of the range result</em>
    * @return high
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AudienceEstimationInfo  {
   }
 
   /**
-   * indicates the lower bound of the range result
+   * <em>indicates the lower bound of the range result</em>
    * @return low
    */
   @javax.annotation.Nullable

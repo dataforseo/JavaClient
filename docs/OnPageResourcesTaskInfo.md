@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageResourcesResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageResourcesResultInfo>** | <em>array of results</em> |[optional]|

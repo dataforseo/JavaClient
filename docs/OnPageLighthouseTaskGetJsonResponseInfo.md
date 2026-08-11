@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageLighthouseTaskGetJsonTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<OnPageLighthouseTaskGetJsonTaskInfo>** | <em>array of tasks</em> |[optional]|

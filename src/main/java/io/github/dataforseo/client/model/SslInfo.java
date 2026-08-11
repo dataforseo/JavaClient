@@ -47,8 +47,7 @@ public class SslInfo  {
   }
 
   /**
-   * ssl certificate validity
-* indicates whether the ssl certificate detected on a website is not expired, suspended, revoked or invalid
+   * <em>ssl certificate validity</em><br>indicates whether the ssl certificate detected on a website is not expired, suspended, revoked or invalid
    * @return validCertificate
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class SslInfo  {
   }
 
   /**
-   * ssl certificate authority
-* the entity that issued the detected ssl certificate
+   * <em>ssl certificate authority</em><br>the entity that issued the detected ssl certificate
    * @return certificateIssuer
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class SslInfo  {
   }
 
   /**
-   * ssl certificate subject
-* the entity associated with the public key
+   * <em>ssl certificate subject</em><br>the entity associated with the public key
    * @return certificateSubject
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class SslInfo  {
   }
 
   /**
-   * ssl certificate version
-* indicates the version of X.509 used by an ssl certificate
+   * <em>ssl certificate version</em><br>indicates the version of <a href='https://en.wikipedia.org/wiki/X.509' target='_blank' rel='noopener noreferrer'>X.509</a> used by an ssl certificate
    * @return certificateVersion
    */
   @javax.annotation.Nullable
@@ -143,8 +139,7 @@ public class SslInfo  {
   }
 
   /**
-   * ssl certificate hash
-* the version of the ssl certificate’s hash function
+   * <em>ssl certificate hash</em><br>the version of the ssl certificate's hash function
    * @return certificateHash
    */
   @javax.annotation.Nullable
@@ -167,11 +162,7 @@ public class SslInfo  {
   }
 
   /**
-   * ssl certificate expiration date
-* the date and time when the ssl certificate expires
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>ssl certificate expiration date</em><br>the date and time when the ssl certificate expires<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return certificateExpirationDate
    */
   @javax.annotation.Nullable

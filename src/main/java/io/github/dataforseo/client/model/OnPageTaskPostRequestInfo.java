@@ -47,10 +47,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * target domain
-* required field
-* domain name should be specified without https:// and www.
-* if you specify the page URL, the results will be returned for the domain included in the URL
+   * <em>target domain</em><br><strong>required field</strong><br>domain name should be specified without <code>https://</code> and <code>www.</code><br>if you specify the page URL, the results will be returned for the domain included in the URL
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,14 +70,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * crawled pages limit
-* required field
-* the number of pages to crawl on the specified domain
-* Note:
-* if you set max_crawl_pages to 1 and do not specify start_url or set a homepage in it, the following sitewide checks will be disabled:
-* test_canonicalization, enable_www_redirect_check, test_hidden_server_signature, test_page_not_found, test_directory_browsing, test_https_redirect
-* to enable them anyway, set force_sitewide_checks to trueif you set max_crawl_pages to 1 and specify start_url other than a homepage, all sitewide checks will be disabled;
-* to enable them anyway, set force_sitewide_checks to true
+   * <em>crawled pages limit</em><br><strong>required field</strong><br>the number of pages to crawl on the specified domain<br><strong>Note:</strong><br>if you set <code>max_crawl_pages</code> to 1 and do not specify <code>start_url</code> or set a homepage in it, the following sitewide checks will be disabled:<br><code>test_canonicalization</code>, <code>enable_www_redirect_check</code>, <code>test_hidden_server_signature</code>, <code>test_page_not_found</code>, <code>test_directory_browsing</code>, <code>test_https_redirect</code><br>to enable them anyway, set <code>force_sitewide_checks</code> to <code>true</code>if you set <code>max_crawl_pages</code> to 1 and specify <code>start_url</code> other than a homepage, all sitewide checks will be disabled;<br>to enable them anyway, set <code>force_sitewide_checks</code> to <code>true</code>
    * @return maxCrawlPages
    */
   @javax.annotation.Nullable
@@ -103,11 +93,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * the first url to crawl 
-* optional field
-* Note: you should specify an absolute URL
-* if you want to crawl a single page, specify its URL in this field and additionally set the max_crawl_pages parameter to 1
-* you can also use the live Instant Pages endpoint to get page-specific data
+   * <em>the first url to crawl </em><br>optional field<br><strong>Note:</strong> you should specify an absolute URL<br>if you want to crawl a single page, specify its URL in this field and additionally set the <code>max_crawl_pages</code> parameter to <code>1</code><br>you can also use the <a href='/v3/on_page/instant_pages/?bash' target='_blank' rel='noopener noreferrer'>live Instant Pages endpoint</a> to get page-specific data
    * @return startUrl
    */
   @javax.annotation.Nullable
@@ -130,10 +116,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * enable sitewide checks when crawling a single page
-* optional field
-* set to true to get data on sitewide checks when crawling a single page;
-* default value: false
+   * <em>enable sitewide checks when crawling a single page</em><br>optional field<br>set to <code>true</code> to get data on sitewide checks when crawling a single page;<br>default value: <code>false</code>
    * @return forceSitewideChecks
    */
   @javax.annotation.Nullable
@@ -156,17 +139,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * urls to be crawled bypassing the queue
-* optional field
-* URLs specified in this array will be crawled in the first instance, bypassing the crawling queue;
-* Note: you should specify the absolute URL;
-* you can specify up to 20 URLs;
-* all URLs in the array must belong to the target domain;
-* subdomains will be ignored unless the allow_subdomains parameter is set to trueexample:
-* 'priority_urls': [
-* 'https://dataforseo.com/apis/serp-api',
-* 'https://dataforseo.com/contact'
-* ]
+   * <em>urls to be crawled bypassing the queue</em><br>optional field<br>URLs specified in this array will be crawled in the first instance, bypassing the crawling queue;<br><strong>Note:</strong> you should specify the absolute URL;<br>you can specify up to <strong>20 URLs</strong>;<br>all URLs in the array must belong to the <code>target</code> domain;<br>subdomains will be ignored unless the <code>allow_subdomains</code> parameter is set to <code>true</code>example:<br>`'priority_urls': [<br>'https://dataforseo.com/apis/serp-api',<br>'https://dataforseo.com/contact'<br>]`
    * @return priorityUrls
    */
   @javax.annotation.Nullable
@@ -189,10 +162,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * crawl depth
-* optional field
-* the linking depth of the pages to crawl;
-* for example, starting page of the crawl is level 0, pages that have links from that page are level 1, etc.
+   * <em>crawl depth</em><br>optional field<br>the linking depth of the pages to crawl;<br>for example, starting page of the crawl is level 0, pages that have links from that page are level 1, etc.
    * @return maxCrawlDepth
    */
   @javax.annotation.Nullable
@@ -215,10 +185,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * delay between hits, ms
-* optional field
-* the custom delay between crawler hits to the server
-* default value: 2000
+   * <em>delay between hits, ms</em><br>optional field<br>the custom delay between crawler hits to the server<br>default value: <code>2000</code>
    * @return crawlDelay
    */
   @javax.annotation.Nullable
@@ -241,10 +208,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * store HTML of crawled pages
-* optional field
-* set to true if you want to get the HTML of the page using the OnPage Raw HTML endpoint
-* default value: false
+   * <em>store HTML of crawled pages</em><br>optional field<br>set to <code>true</code> if you want to get the HTML of the page using the <a href='/v3/on_page/raw_html/' target='_blank' rel='noopener noreferrer'>OnPage Raw HTML endpoint</a><br>default value: <code>false</code>
    * @return storeRawHtml
    */
   @javax.annotation.Nullable
@@ -267,10 +231,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * parse content on crawled pages
-* optional field
-* set to true to use the OnPage Content Parsing endpoint
-* default value: false
+   * <em>parse content on crawled pages</em><br>optional field<br>set to <code>true</code> to use the <a href='/v3/on_page/content_parsing/live/' target='_blank' rel='noopener noreferrer'>OnPage Content Parsing endpoint</a><br>default value: <code>false</code>
    * @return enableContentParsing
    */
   @javax.annotation.Nullable
@@ -293,10 +254,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * support cookies on crawled pages
-* optional field
-* set to true to support cookies when crawling the pages
-* default value: false
+   * <em>support cookies on crawled pages</em><br>optional field<br>set to <code>true</code> to support cookies when crawling the pages<br>default value: <code>false</code>
    * @return supportCookies
    */
   @javax.annotation.Nullable
@@ -319,10 +277,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * language header for accessing the website
-* optional field
-* all locale formats are supported (xx, xx-XX, xxx-XX, etc.)
-* Note: if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the 'type':'broken in the response array
+   * <em>language header for accessing the website</em><br>optional field<br>all locale formats are supported (xx, xx-XX, xxx-XX, etc.)<br><strong>Note:</strong> if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the <code>'type':'broken</code> in the response array
    * @return acceptLanguage
    */
   @javax.annotation.Nullable
@@ -345,9 +300,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * custom robots.txt settings
-* optional field
-* example: Disallow: /directory1/
+   * <em>custom robots.txt settings</em><br>optional field<br>example: <code>Disallow: /directory1/</code>
    * @return customRobotsTxt
    */
   @javax.annotation.Nullable
@@ -370,12 +323,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * merge with or override robots.txt settings
-* optional field
-* possible values: merge, override;
-* set to override if you want to ignore website crawling restrictions and other robots.txt settings
-* default value: merge;
-* Note: if set to override, specify the custom_robots_txt parameter
+   * <em>merge with or override robots.txt settings</em><br>optional field<br>possible values: <code>merge</code>, <code>override</code>;<br>set to <code>override</code> if you want to ignore website crawling restrictions and other robots.txt settings<br>default value: <code>merge</code>;<br><strong>Note:</strong> if set to <code>override</code>, specify the <code>custom_robots_txt</code> parameter
    * @return robotsTxtMergeMode
    */
   @javax.annotation.Nullable
@@ -398,12 +346,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * custom user agent
-* optional field
-* custom user agent for crawling a website
-* example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
-* 
-* default value: Mozilla/5.0 (compatible; RSiteAuditor)
+   * <em>custom user agent</em><br>optional field<br>custom user agent for crawling a website<br>example: <code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36<br></code><br>default value: <code>Mozilla/5.0 (compatible; RSiteAuditor)</code>
    * @return customUserAgent
    */
   @javax.annotation.Nullable
@@ -426,17 +369,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * preset for browser screen parameters
-* optional field
-* if you use this field, you don’t need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factorpossible values:
-* desktop, mobile, tabletdesktop preset will apply the following values:browser_screen_width: 1920
-* browser_screen_height: 1080
-* browser_screen_scale_factor: 1mobile preset will apply the following values:browser_screen_width: 390
-* browser_screen_height: 844
-* browser_screen_scale_factor: 3tablet preset will apply the following values:browser_screen_width: 1024
-* browser_screen_height: 1366
-* browser_screen_scale_factor: 2
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
+   * <em>preset for browser screen parameters</em><br>optional field<br>if you use this field, you don't need to indicate <code>browser_screen_width</code>, <code>browser_screen_height</code>, <code>browser_screen_scale_factor</code>possible values:<br><code>desktop</code>, <code>mobile</code>, <code>tablet</code><code>desktop</code> preset will apply the following values:<code>browser_screen_width: 1920</code><br><code>browser_screen_height: 1080</code><br><code>browser_screen_scale_factor: 1</code><code>mobile</code> preset will apply the following values:<code>browser_screen_width: 390</code><br><code>browser_screen_height: 844</code><br><code>browser_screen_scale_factor: 3</code><code>tablet</code> preset will apply the following values:<code>browser_screen_width: 1024</code><br><code>browser_screen_height: 1366</code><br><code>browser_screen_scale_factor: 2</code><br><strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>
    * @return browserPreset
    */
   @javax.annotation.Nullable
@@ -459,12 +392,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen width
-* optional field
-* you can set a custom browser screen width to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value, in pixels: 240
-* maximum value, in pixels: 9999
+   * <em>browser screen width</em><br>optional field<br>you can set a custom browser screen width to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<br><strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>minimum value, in pixels: <code>240</code><br>maximum value, in pixels: <code>9999</code>
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -487,12 +415,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen height
-* optional field
-* you can set a custom browser screen height to perform an audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value, in pixels: 240
-* maximum value, in pixels: 9999
+   * <em>browser screen height</em><br>optional field<br>you can set a custom browser screen height to perform an audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<br><strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>minimum value, in pixels: <code>240</code><br>maximum value, in pixels: <code>9999</code>
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -515,12 +438,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen scale factor
-* optional field
-* you can set a custom browser screen resolution ratio to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value: 0.5
-* maximum value: 3
+   * <em>browser screen scale factor</em><br>optional field<br>you can set a custom browser screen resolution ratio to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<br><strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>minimum value: <code>0.5</code><br>maximum value: <code>3</code>
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable
@@ -543,12 +461,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * respect sitemap when crawling
-* optional field
-* set to true if you want to follow the order of pages indicated in the primary sitemap when crawling;
-* default value: false
-* Note: if set to true, the click_depth value in the API response will equal 0;
-* the max_crawl_depth field of the request will be ignored, you can specify the number of pages to crawl using the max_crawl_pages parameter
+   * <em>respect sitemap when crawling</em><br>optional field<br>set to <code>true</code> if you want to follow the order of pages indicated in the primary sitemap when crawling;<br>default value: <code>false</code><br><strong>Note:</strong> if set to <code>true</code>, the <code>click_depth</code> value in the API response will equal <code>0</code>;<br>the <code>max_crawl_depth</code> field of the request will be ignored, you can specify the number of pages to crawl using the <code>max_crawl_pages</code> parameter
    * @return respectSitemap
    */
   @javax.annotation.Nullable
@@ -571,10 +484,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * custom sitemap url
-* optional field
-* the URL of the page where the alternative sitemap is located
-* Note: if you want to use this parameter, respect_sitemap should be true
+   * <em>custom sitemap url</em><br>optional field<br>the URL of the page where the alternative sitemap is located<br><strong>Note:</strong> if you want to use this parameter, <code>respect_sitemap</code> should be <code>true</code>
    * @return customSitemap
    */
   @javax.annotation.Nullable
@@ -597,12 +507,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * crawl only pages indicated in the sitemap
-* optional field
-* set to true if you want to crawl only the pages indicated in the sitemap
-* if you set this parameter to true and do not specify custom_sitemap, we will crawl the default sitemap
-* default value: false
-* Note: if you want to use this parameter, respect_sitemap should be true
+   * <em>crawl only pages indicated in the sitemap</em><br>optional field<br>set to <code>true</code> if you want to crawl only the pages indicated in the sitemap<br>if you set this parameter to <code>true</code> and do not specify <code>custom_sitemap</code>, we will crawl the default sitemap<br>default value: <code>false</code><br><strong>Note:</strong> if you want to use this parameter, <code>respect_sitemap</code> should be <code>true</code>
    * @return crawlSitemapOnly
    */
   @javax.annotation.Nullable
@@ -625,11 +530,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * load resources
-* optional field
-* set to true if you want to load image, stylesheets, scripts, and broken resources
-* default value: false
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * <em>load resources</em><br>optional field<br>set to <code>true</code> if you want to load image, stylesheets, scripts, and broken resources<br>default value: <code>false</code><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' target='_blank' rel='noopener noreferrer'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' target='_blank' rel='noopener noreferrer'>Pricing Page</a>
    * @return loadResources
    */
   @javax.annotation.Nullable
@@ -652,10 +553,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * check if the domain implemented the www redirection
-* optional field
-* set to true if you want to check if the requested domain implemented the www to non-www or non-www to www redirect;
-* default value: false
+   * <em>check if the domain implemented the www redirection</em><br>optional field<br>set to <code>true</code> if you want to check if the requested domain implemented the www to non-www or non-www to www redirect;<br>default value: <code>false</code>
    * @return enableWwwRedirectCheck
    */
   @javax.annotation.Nullable
@@ -678,11 +576,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * load javascript on a page
-* optional field
-* set to true if you want to load the scripts available on a page
-* default value: false
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * <em>load javascript on a page</em><br>optional field<br>set to <code>true</code> if you want to load the scripts available on a page<br>default value: <code>false</code><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' target='_blank' rel='noopener noreferrer'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' target='_blank' rel='noopener noreferrer'>Pricing Page</a>
    * @return enableJavascript
    */
   @javax.annotation.Nullable
@@ -705,10 +599,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * enable XMLHttpRequest on a page
-* optional field
-* set to true if you want our crawler to request data from a web server using the XMLHttpRequest object
-* default value: false;if you use this field, enable_javascript must be set to true;
+   * <em>enable XMLHttpRequest on a page</em><br>optional field<br>set to <code>true</code> if you want our crawler to request data from a web server using the XMLHttpRequest object<br>default value: <code>false</code>;if you use this field, <code>enable_javascript</code> must be set to <code>true</code>;
    * @return enableXhr
    */
   @javax.annotation.Nullable
@@ -731,14 +622,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * emulate browser rendering to measure Core Web Vitals
-* optional field
-* by using this parameter you will be able to emulate a browser when loading a web page;
-* enable_browser_rendering loads styles, images, fonts, animations, videos, and other resources on a page;
-* default value: false
-* set to true to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;
-* if you use this field, enable_javascript, and load_resources parameters must be set to true
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * <em>emulate browser rendering to measure Core Web Vitals</em><br>optional field<br>by using this parameter you will be able to emulate a browser when loading a web page;<br><code>enable_browser_rendering</code> loads styles, images, fonts, animations, videos, and other resources on a page;<br>default value: <code>false</code><br>set to <code>true</code> to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;<br><strong>if you use this field, <code>enable_javascript</code>, and <code>load_resources</code> parameters must be set to <code>true</code></strong><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' target='_blank' rel='noopener noreferrer'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' target='_blank' rel='noopener noreferrer'>Pricing Page</a>
    * @return enableBrowserRendering
    */
   @javax.annotation.Nullable
@@ -761,11 +645,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * disable the cookie popup
-* optional field
-* set to true if you want to disable the popup requesting cookie consent from the user;
-* default value:
-* false
+   * <em>disable the cookie popup</em><br>optional field<br>set to <code>true</code> if you want to disable the popup requesting cookie consent from the user;<br>default value:<br><code>false</code>
    * @return disableCookiePopup
    */
   @javax.annotation.Nullable
@@ -788,17 +668,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * custom javascript
-* optional field
-* Note that the execution time for the script you enter here should be 700 ms maximum, for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute:
-* let meta = { haveGoogleAnalytics: false, haveTagManager: false };\r\nfor (var i = 0; i < document.scripts.length; i++) {\r\n let src = document.scripts[i].getAttribute(\'src\');\r\n if (src != undefined) {\r\n if (src.indexOf(\'analytics.js\') >= 0)\r\n      meta.haveGoogleAnalytics = true;\r\n\tif (src.indexOf(\'gtm.js\') >= 0)\r\n      meta.haveTagManager = true;\r\n  }\r\n}\r\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script:
-* meta = {}; meta.url = document.URL; meta.test = 'test'; meta;
-* as a response you will receive the following data:
-* 'custom_js_response': {
-* 'url': 'https://dataforseo.com/',
-* 'test': 'test'
-* }
-* Note: the length of the script you enter must be no more than 2000 characters
+   * <em>custom javascript</em><br>optional field<br><strong>Note</strong> that the execution time for the script you enter here should be 700 ms maximum, for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a <code>scr</code> attribute:<br><code>let meta = { haveGoogleAnalytics: false, haveTagManager: false };rnfor (var i = 0; i < document.scripts.length; i++) {rn let src = document.scripts[i].getAttribute('src');rn if (src != undefined) {rn if (src.indexOf('analytics.js') >= 0)rn      meta.haveGoogleAnalytics = true;rntif (src.indexOf('gtm.js') >= 0)rn      meta.haveTagManager = true;rn  }rn}rnmeta;</code>the returned value depends on what you specified in this field. For instance, if you specify the following script:<br>`meta = {}; meta.url = document.URL; meta.test = 'test'; meta;`<br>as a response you will receive the following data:<br>`'custom_js_response': {<br>'url': 'https://dataforseo.com/',<br>'test': 'test'<br>}`<br><strong>Note:</strong> the length of the script you enter must be no more than 2000 characters
    * @return customJs
    */
   @javax.annotation.Nullable
@@ -821,10 +691,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * enable microdata validation
-* optional field
-* set to true if you want to use the OnPage API Microdata endpoint
-* default value: false
+   * <em>enable microdata validation</em><br>optional field<br>set to <code>true</code> if you want to use the <a href='/v3/on_page/microdata/' target='_blank' rel='noopener noreferrer'>OnPage API Microdata endpoint</a><br>default value: <code>false</code>
    * @return validateMicromarkup
    */
   @javax.annotation.Nullable
@@ -847,10 +714,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * include pages on subdomains
-* optional field
-* set to true if you want to crawl all subdomains of a target website
-* default value: false
+   * <em>include pages on subdomains</em><br>optional field<br>set to <code>true</code> if you want to crawl all subdomains of a target website<br>default value: <code>false</code>
    * @return allowSubdomains
    */
   @javax.annotation.Nullable
@@ -873,12 +737,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * subdomains to crawl
-* optional field
-* specify subdomains that you want to crawl
-* example: ['blog.site.com', 'my.site.com', 'shop.site.com']
-* Note: to use this parameter, the allow_subdomains parameter should be set to false;
-* otherwise, the content of allowed_subdomains field will be ignored and the results will be returned for all subdomains
+   * <em>subdomains to crawl</em><br>optional field<br>specify subdomains that you want to crawl<br>example: <code>['blog.site.com', 'my.site.com', 'shop.site.com']</code><br><strong>Note:</strong> to use this parameter, the <code>allow_subdomains</code> parameter should be set to <code>false</code>;<br>otherwise, the content of <code>allowed_subdomains</code> field will be ignored and the results will be returned for all subdomains
    * @return allowedSubdomains
    */
   @javax.annotation.Nullable
@@ -901,11 +760,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * subdomains not to crawl
-* optional field
-* specify subdomains that you don’t want to crawl
-* example: ['status.site.com', 'docs.site.com']
-* Note: to use this parameter, the allow_subdomains parameter should be set to true
+   * <em>subdomains not to crawl</em><br>optional field<br>specify subdomains that you don't want to crawl<br>example: <code>['status.site.com', 'docs.site.com']</code><br><strong>Note:</strong> to use this parameter, the <code>allow_subdomains</code> parameter should be set to <code>true</code>
    * @return disallowedSubdomains
    */
   @javax.annotation.Nullable
@@ -928,10 +783,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * check spelling
-* optional field
-* set to true to check spelling on a website using Hunspell library
-* default value: false
+   * <em>check spelling</em><br>optional field<br>set to <code>true</code> to check spelling on a website using <a href='http://hunspell.github.io/' target='_blank' rel='noopener noreferrer'>Hunspell</a> library<br>default value: <code>false</code>
    * @return checkSpell
    */
   @javax.annotation.Nullable
@@ -954,10 +806,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * language of the spell check
-* optional field
-* supported languages: ‘hy’, ‘eu’, ‘bg’, ‘ca’, ‘hr’, ‘cs’, ‘da’, ‘nl’, ‘en’, ‘eo’, ‘et’, ‘fo’, ‘fa’, ‘fr’, ‘fy’, ‘gl’, ‘ka’, ‘de’, ‘el’, ‘he’, ‘hu’, ‘is’, ‘ia’, ‘ga’, ‘it’, ‘rw’, ‘la’, ‘lv’, ‘lt’, ‘mk’, ‘mn’, ‘ne’, ‘nb’, ‘nn’, ‘pl’, ‘pt’, ‘ro’, ‘gd’, ‘sr’, ‘sk’, ‘sl’, ‘es’, ‘sv’, ‘tr’, ‘tk’, ‘uk’, ‘vi’
-* Note: if no language is specified, it will be set automatically based on page content
+   * <em>language of the spell check</em><br>optional field<br>supported languages: 'hy', 'eu', 'bg', 'ca', 'hr', 'cs', 'da', 'nl', 'en', 'eo', 'et', 'fo', 'fa', 'fr', 'fy', 'gl', 'ka', 'de', 'el', 'he', 'hu', 'is', 'ia', 'ga', 'it', 'rw', 'la', 'lv', 'lt', 'mk', 'mn', 'ne', 'nb', 'nn', 'pl', 'pt', 'ro', 'gd', 'sr', 'sk', 'sl', 'es', 'sv', 'tr', 'tk', 'uk', 'vi'<br><strong>Note:</strong> if no language is specified, it will be set automatically based on page content
    * @return checkSpellLanguage
    */
   @javax.annotation.Nullable
@@ -980,12 +829,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * words excluded from spell check
-* optional field
-* specify the words that you want to exclude from spell check
-* maximum word length: 100 characters
-* maximum amount of words: 1000
-* example: 'SERP', 'minifiers', 'JavaScript'
+   * <em>words excluded from spell check</em><br>optional field<br>specify the words that you want to exclude from spell check<br>maximum word length: 100 characters<br>maximum amount of words: 1000<br>example: <code>'SERP', 'minifiers', 'JavaScript'</code>
    * @return checkSpellExceptions
    */
   @javax.annotation.Nullable
@@ -1008,12 +852,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * calculate keyword density for the target domain
-* optional field
-* set to true if you want to calculate keyword density for website pages
-* default value: false
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article
-* once the crawl is completed, you can obtain keyword density values with the Keyword Density endpoint
+   * <em>calculate keyword density for the target domain</em><br>optional field<br>set to <code>true</code> if you want to calculate keyword density for website pages<br>default value: <code>false</code><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' target='_blank' rel='noopener noreferrer'>in our help article</a><br>once the crawl is completed, you can obtain keyword density values with <a href='/v3/on_page/keyword_density?bash' target='_blank' rel='noopener noreferrer'>the Keyword Density endpoint</a>
    * @return calculateKeywordDensity
    */
   @javax.annotation.Nullable
@@ -1036,30 +875,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * custom threshold values for checks
-* optional field
-* you can specify custom threshold values for the parameters included in the checks object of OnPage API responses;
-* Note: only integer threshold values can be modified;
-* for example, the high_loading_time and large_page_size parameters are set to 3 seconds and 1 megabyte respectively by default;
-* if you want to change these thresholds to 1 second and 1000 kbytes, use the following snippet:
-* 'checks_threshold': {
-* 'high_loading_time': 1,
-* 'large_page_size': 1000
-* }available customizable parameters with default values:
-* 'title_too_short', default value: 30, type: 'int'
-* 'title_too_long', default value: 65, type: 'int'
-* 'small_page_size', default value: 1024, type: 'int'
-* 'large_page_size', default value: 1048576 (1024 * 1024), type: 'int'
-* 'low_character_count', default value: 1024, type: 'int'
-* 'high_character_count', default value: 256000 (250 * 1024), type: 'int'
-* 'low_content_rate', default value: 0.1, type: 'float'
-* 'high_content_rate', default value: 0.9, type: 'float'
-* 'high_loading_time', default value: 3000, type: 'int'
-* 'high_waiting_time', default value: 1500, type: 'int'
-* 'low_readability_rate', default value: 15.0, type: 'float'
-* 'irrelevant_description', default value: 0.2, type: 'float'
-* 'irrelevant_title', default value: 0.3, type: 'float'
-* 'irrelevant_meta_keywords', default value: 0.6, type: 'float'
+   * <em>custom threshold values for checks</em><br>optional field<br>you can specify custom threshold values for the parameters included in the <code>checks</code> object of OnPage API responses;<br><strong>Note:</strong> only integer threshold values can be modified;<br>for example, the <code>high_loading_time</code> and <code>large_page_size</code> parameters are set to 3 seconds and 1 megabyte respectively by default;<br>if you want to change these thresholds to 1 second and 1000 kbytes, use the following snippet:<br>`'checks_threshold': {<br>'high_loading_time': 1,<br>'large_page_size': 1000<br>}`<br>available customizable parameters with default values:<br>`'title_too_short', default value: 30, type: 'int'<br>'title_too_long', default value: 65, type: 'int'<br>'small_page_size', default value: 1024, type: 'int'<br>'large_page_size', default value: 1048576 (1024 * 1024), type: 'int'<br>'low_character_count', default value: 1024, type: 'int'<br>'high_character_count', default value: 256000 (250 * 1024), type: 'int'<br>'low_content_rate', default value: 0.1, type: 'float'<br>'high_content_rate', default value: 0.9, type: 'float'<br>'high_loading_time', default value: 3000, type: 'int'<br>'high_waiting_time', default value: 1500, type: 'int'<br>'low_readability_rate', default value: 15.0, type: 'float'<br>'irrelevant_description', default value: 0.2, type: 'float'<br>'irrelevant_title', default value: 0.3, type: 'float'<br>'irrelevant_meta_keywords', default value: 0.6, type: 'float'`
    * @return checksThreshold
    */
   @javax.annotation.Nullable
@@ -1082,14 +898,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * prevent certain sitewide checks from running
-* optional field
-* specify the following checks to prevent them from running on the target website:
-* 'test_page_not_found'
-* 'test_canonicalization'
-* 'test_https_redirect'
-* 'test_directory_browsing'example:
-* 'disable_sitewide_checks': ['test_directory_browsing', 'test_page_not_found']learn more on our help center
+   * <em>prevent certain sitewide checks from running</em><br>optional field<br>specify the following <code>checks</code> to prevent them from running on the <code>target</code> website:<br><code>'test_page_not_found'</code><br><code>'test_canonicalization'</code><br><code>'test_https_redirect'</code><br><code>'test_directory_browsing'</code>example:<br><code>'disable_sitewide_checks': ['test_directory_browsing', 'test_page_not_found']</code>learn more on <a href='https://dataforseo.com/help-center/how-to-disable-sitewide-checks-in-onpage-api' target='_blank' rel='noopener noreferrer'>our help center</a>
    * @return disableSitewideChecks
    */
   @javax.annotation.Nullable
@@ -1112,10 +921,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * prevent certain page checks from running
-* optional field
-* specify certain checks to prevent them from running and impacting the onpage_scoreexample:
-* 'disable_page_checks': ['is_5xx_code', 'is_4xx_code']
+   * <em>prevent certain page checks from running</em><br>optional field<br>specify certain <code>checks</code> to prevent them from running and impacting the <code>onpage_score</code>example:<br><code>'disable_page_checks': ['is_5xx_code', 'is_4xx_code']</code>
    * @return disablePageChecks
    */
   @javax.annotation.Nullable
@@ -1138,10 +944,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * switch proxy pool
-* optional field
-* if true, additional proxy pools will be used to obtain the requested data;
-* the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+   * <em>switch proxy pool</em><br>optional field<br>if <code>true</code>, additional proxy pools will be used to obtain the requested data;<br>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional <code>rate-limit</code> and/or <code>site_unreachable</code> errors
    * @return switchPool
    */
   @javax.annotation.Nullable
@@ -1164,10 +967,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * return data on pages despite the timeout error
-* optional field
-* if true, the data will be provided on pages that failed to load within 120 seconds and responded with a timeout error;
-* default value: false
+   * <em>return data on pages despite the timeout error</em><br>optional field<br>if <code>true</code>, the data will be provided on pages that failed to load within 120 seconds and responded with a timeout error;<br>default value: <code>false</code>
    * @return returnDespiteTimeout
    */
   @javax.annotation.Nullable
@@ -1190,11 +990,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -1217,16 +1013,7 @@ public class OnPageTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

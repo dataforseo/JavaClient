@@ -47,11 +47,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* “07131248-1535-0216-1000-17384017ad04”
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='https://docs.dataforseo.com/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br>'07131248-1535-0216-1000-17384017ad04'
    * @return id
    */
   @javax.annotation.Nullable
@@ -74,10 +70,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * relative page URL
-* optional field
-* if you use this field, the API response will contain only links from the specified page
-* note that in this field you can specify relative URLs only
+   * <em>relative page URL</em><br>optional field<br>if you use this field, the API response will contain only links from the specified page<br>note that in this field you can specify relative URLs only
    * @return pageFrom
    */
   @javax.annotation.Nullable
@@ -100,10 +93,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * relative page URL
-* optional field
-* if you use this field, the API response will contain only internal links pointing to the specified page
-* note that in this field you can specify relative URLs only
+   * <em>relative page URL</em><br>optional field<br>if you use this field, the API response will contain only internal links pointing to the specified page<br>note that in this field you can specify relative URLs only
    * @return pageTo
    */
   @javax.annotation.Nullable
@@ -126,10 +116,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * the maximum number of returned links
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned links</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -152,11 +139,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned links
-* optional field
-* default value: 0
-* maximum value: 2000000
-* if you specify the 10 value, the first ten links in the results array will be omitted and the data will be provided for the successive links
+   * <em>offset in the results array of returned links</em><br>optional field<br>default value: <code>0</code><br>maximum value: <code>2000000</code><br>if you specify the <code>10</code> value, the first ten links in the results array will be omitted and the data will be provided for the successive links
    * @return offset
    */
   @javax.annotation.Nullable
@@ -179,22 +162,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['direction','=','external']
-* [['domain_to','<>','example.com'],
-* 'and',
-* ['link_from','not_like','%example.com/blog%']]
-* [['direction','=','external'],
-* 'and',
-* [['link_from','like','%example.com/blog%'],'or',['link_from','like','%example.com/help%']]]
-* The full list of possible filters is available by this link.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['direction','=','external']</code><p><code>[['domain_to','<>','example.com'],<br>'and',<br>['link_from','not_like','%example.com/blog%']]</code><p><code>[['direction','=','external'],<br>'and',<br>[['link_from','like','%example.com/blog%'],'or',['link_from','like','%example.com/help%']]]</code><p>The full list of possible filters is available <a href='/v3/on_page/filters_and_thresholds/?bash' rel='noopener noreferrer' target='_blank'>by this link.</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -217,13 +185,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * token for subsequent requests
-* optional field
-* provided in the identical filed of the response to each request;
-* use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
-* by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
-* search_after_token values are unique for each subsequent task ;
-* Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+   * <em>token for subsequent requests</em><br>optional field<br>provided in the identical filed of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over <code>20,000</code> results in a single request;<br>by specifying the unique <code>search_after_token</code> value from the response array, you will get the subsequent results of the initial task;<br><code>search_after_token</code> values are unique for each subsequent task ;<br><strong>Note:</strong> if the <code>search_after_token</code> is specified in the request, all other parameters should be identical to the previous request
    * @return searchAfterToken
    */
   @javax.annotation.Nullable
@@ -246,11 +208,7 @@ public class OnPageLinksRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

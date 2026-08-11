@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYoutubeOrganicTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYoutubeOrganicTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

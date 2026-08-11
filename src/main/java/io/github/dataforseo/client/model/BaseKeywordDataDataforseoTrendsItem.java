@@ -70,8 +70,7 @@ public class BaseKeywordDataDataforseoTrendsItem  {
   }
 
   /**
-   * the alignment of the element
-* can take the following values: 1, 2, 3, 4, etc.
+   * <em>the alignment of the element</em><br>can take the following values: <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, etc.
    * @return position
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BaseKeywordDataDataforseoTrendsItem  {
   }
 
   /**
-   * keywords in a POST array
+   * <em>keywords in a POST array</em>
    * @return keywords
    */
   @javax.annotation.Nullable

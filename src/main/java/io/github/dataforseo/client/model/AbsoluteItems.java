@@ -47,11 +47,7 @@ public class AbsoluteItems  {
   }
 
   /**
-   * location identifier
-* you can use this field for matching obtained results with location parameters specified in the request
-* see the full list of available locations with their geo_id here or by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
-* example:
-* US-NY
+   * <em>location identifier</em><br>you can use this field for matching obtained results with location parameters specified in the request<br>see the full list of available locations with their <code>geo_id</code> <a href='/v3/keywords_data/dataforseo_trends/locations/' rel='noopener noreferrer' target='_blank'>here</a> or by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</code><br>example:<br><code>US-NY</code>
    * @return geoId
    */
   @javax.annotation.Nullable
@@ -74,11 +70,7 @@ public class AbsoluteItems  {
   }
 
   /**
-   * location name
-* you can use this field for matching obtained results with location parameters specified in the request
-* see the full list of available locations with their geo_name here or by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
-* example:
-* Andorra
+   * <em>location name</em><br>you can use this field for matching obtained results with location parameters specified in the request<br>see the full list of available locations with their <code>geo_name</code> <a href='/v3/keywords_data/dataforseo_trends/locations/' rel='noopener noreferrer' target='_blank'>here</a> or by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</code><br>example:<br><code>Andorra</code>
    * @return geoName
    */
   @javax.annotation.Nullable
@@ -101,7 +93,7 @@ public class AbsoluteItems  {
   }
 
   /**
-   * contains data on relative keyword popularity by country or region
+   * <em>contains data on relative keyword popularity by country or region</em>
    * @return values
    */
   @javax.annotation.Nullable

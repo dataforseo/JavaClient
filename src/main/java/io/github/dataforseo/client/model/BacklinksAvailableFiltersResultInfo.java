@@ -70,7 +70,7 @@ public class BacklinksAvailableFiltersResultInfo  {
   }
 
   /**
-   * 
+   * filters available for the backlinks endpoint:
    * @return backlinks
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class BacklinksAvailableFiltersResultInfo  {
   }
 
   /**
-   * 
+   * filters available for the page intersection endpoint:
    * @return pageIntersection
    */
   @javax.annotation.Nullable

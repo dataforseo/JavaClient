@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageLighthouseTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageLighthouseTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

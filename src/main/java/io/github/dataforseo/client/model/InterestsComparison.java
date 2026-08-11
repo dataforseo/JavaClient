@@ -47,7 +47,7 @@ public class InterestsComparison  {
   }
 
   /**
-   * contains keyword popularity and related data
+   * <em>contains keyword popularity and related data</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class InterestsComparison  {
   }
 
   /**
-   * keyword popularity rates across all locations
-* values in this array represent percentages relative to the maximum value across all locations
+   * <em>keyword popularity rates across all locations</em><br>values in this array represent percentages relative to the maximum value across all locations
    * @return absoluteItems
    */
   @javax.annotation.Nullable

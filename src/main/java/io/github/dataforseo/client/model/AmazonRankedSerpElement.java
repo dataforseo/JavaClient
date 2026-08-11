@@ -47,7 +47,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * contains data on the SERP element
-* the list of supported SERP elements can be found below
+   * <em>contains data on the SERP element</em><br>the list of supported SERP elements can be found below
    * @return serpItem
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * direct URL to Amazon results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to Amazon results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -118,10 +116,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * direct URL to Amazon results
-* contains types of all search results (items) found in the returned SERP;
-* possible item types:
-* amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
+   * <em>direct URL to Amazon results</em><br>contains types of all search results (<code>items</code>) found in the returned SERP;<br>possible item types:<br><code>amazon_serp</code>, <code>amazon_paid</code>, <code>editorial_recommendations</code>, <code>top_rated_from_our_brands</code>, <code>related_searches</code>
    * @return serpItemTypes
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * total number of results in Amazon SERP
+   * <em>total number of results in Amazon SERP</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -167,10 +162,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * date and time when keyword data was updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable
@@ -193,10 +185,7 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * previous to the most recent update of SERP data
-* in the ISO 8601 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”
-* example:
-* 2020-09-12T00:07:43.0733218Z
+   * <em>previous to the most recent update of SERP data</em><br>in the <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 860</a>1 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”<br>example:<br><code class='long-string'>2020-09-12T00:07:43.0733218Z</code>
    * @return previousUpdatedTime
    */
   @javax.annotation.Nullable

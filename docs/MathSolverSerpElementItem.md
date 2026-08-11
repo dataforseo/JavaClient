@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
-**title** | **String** | title of the row |[optional]|
-**result** | **String** | solution to the equation<br>solution to the mathematical equation specified in the keyword field when setting a task |[optional]|
-**items** | **List<MathSolverElement>** | contains arrays of elements available in the list |[optional]|
-**links** | **List<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**title** | **String** | <em>title of the row</em> |[optional]|
+**result** | **String** | <em>solution to the equation</em><br>solution to the mathematical equation specified in the <code>keyword</code> field when setting a task |[optional]|
+**items** | **List<MathSolverElement>** | <em>contains arrays of elements available in the list</em> |[optional]|
+**links** | **List<LinkElement>** | <em>sitelinks</em><br>the links shown below some of Google's search results<br>if there are none, equals <code>null</code> |[optional]|

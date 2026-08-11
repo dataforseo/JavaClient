@@ -47,7 +47,7 @@ public class DataLabsTopStoriesSerpElementItem  extends BaseDataforseoLabsApiEle
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsTopStoriesSerpElementItem  extends BaseDataforseoLabsApiEle
   }
 
   /**
-   * historical SERPs and related data found in the database
+   * <em>historical SERPs and related data found in the database</em>
    * @return items
    */
   @javax.annotation.Nullable

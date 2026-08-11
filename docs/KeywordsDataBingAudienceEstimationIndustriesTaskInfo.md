@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataBingAudienceEstimationIndustriesResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataBingAudienceEstimationIndustriesResultInfo>** | <em>array of results</em> |[optional]|

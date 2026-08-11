@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DataforseoLabsAvailableFiltersTaskInfo>** |  |[optional]|
+**tasks** | **List<DataforseoLabsAvailableFiltersTaskInfo>** | <em>array of tasks</em> |[optional]|

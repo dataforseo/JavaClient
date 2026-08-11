@@ -70,7 +70,7 @@ public class OnPageMicrodataInfoItem  {
   }
 
   /**
-   * information related to microdata validation
+   * <em>information related to microdata validation</em>
    * @return inspectionInfo
    */
   @javax.annotation.Nullable

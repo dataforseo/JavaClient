@@ -47,9 +47,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * domain or URL
-* required field
-* the domain name or URL of the target website
+   * <em>domain or URL</em><br><strong>required field</strong><br>the domain name or URL of the target website
    * @return target
    */
   @javax.annotation.Nullable
@@ -72,12 +70,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/bing/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -100,12 +93,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/bing/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/bing/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -128,13 +116,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* the data will be provided for the country the specified coordinates belong to
-* example:
-* 52.6178549,-155.352142
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude'</em> format<br><strong>the data will be provided for the country the specified coordinates belong to</strong><br>example:<br><code class='long-string'>52.6178549,-155.352142</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -157,11 +139,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* supported languages:
-* English, French, German
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br>if you use this field, you don't need to specify <code>language_code</code><br>supported languages:<br><code>English</code>, <code>French</code>, <code>German</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -184,11 +162,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* supported languages:
-* en, fr, de
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br>if you use this field, you don't need to specify <code>language_name</code><br>supported languages:<br><code class='long-string'>en</code>, <code>fr</code>, <code>de</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -211,11 +185,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * keywords negative array
-* optional field
-* These keywords will be ignored in the results array;
-* You can specify a maximum of 200 terms that you want to exclude from the results;
-* the specified keywords will be converted to lowercase format
+   * <em>keywords negative array</em><br>optional field<br>These keywords will be ignored in the results array;<br>You can specify <strong>a maximum of 200 terms</strong> that you want to exclude from the results;<br>the specified keywords will be converted to lowercase format
    * @return keywordsNegative
    */
   @javax.annotation.Nullable
@@ -238,10 +208,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* specify this field if you want to get the data for a particular device typepossible values: all, mobile, desktop, tablet
-* default value: all
+   * <em>device type</em><br>optional field<br>specify this field if you want to get the data for a particular device typepossible values: <code>all</code>, <code>mobile</code>, <code>desktop</code>, <code>tablet</code><br>default value: <code>all</code>
    * @return device
    */
   @javax.annotation.Nullable
@@ -264,14 +231,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* minimal value: 24 months from today’s date;
-* if you don’t specify this field, data will be provided for the last 12 months
-* date format: 'yyyy-mm-dd'
-* example:
-* '2020-01-01'
-* Note: we do not recommend using a custom time range for the past year’s dates
+   * <em>starting date of the time range</em><br>optional field<br>minimal value: 24 months from today's date;<br>if you don't specify this field, data will be provided for the last 12 months;<br>if <a href='/v3/keywords_data/bing/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>false</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the month before last and prior;<br>if <a href='/v3/keywords_data/bing/status/' target='_blank' rel='noopener noreferrer'>Status endpoint</a> returns <code>true</code> in the <code>actual_data</code> field, <code>date_from</code> can be set to the last month and prior;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2020-01-01'</code><p><strong>Note:</strong> we do not recommend using a custom time range for the past year's dates
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -294,16 +254,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, data will be provided for the last 12 months;
-* minimum value: two years back from today’s date;
-* maximum value: one month from today’s date;
-* note: we do not recommend using a custom time range for the past year’s dates;
-* date format: 'yyyy-mm-dd'
-* example:
-* '2020-03-15'
-* Note: we do not recommend using a custom time range for the past year’s dates
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, data will be provided for the last 12 months;<br>minimum value: two years back from today’s date;<br>maximum value: one month from today's date;<br><strong>note:</strong> we do not recommend using a custom time range for the past year's dates;<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2020-03-15'</code><p><strong>Note:</strong> we do not recommend using a custom time range for the past year's dates
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -326,10 +277,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * results sorting parameters
-* optional field
-* Use these parameters to sort the results by search_volume, cpc, competition or relevance in the descending order
-* default value: relevance
+   * <em>results sorting parameters</em><br>optional field<br>Use these parameters to sort the results by <code>search_volume</code>, <code>cpc</code>, <code>competition</code> or <code>relevance</code> in the descending order<br>default value: <code>relevance</code>
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -352,10 +300,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * Bing search partners type
-* optional field
-* if you specify true, the results will be delivered for owned, operated, and syndicated networks across Bing, Yahoo, AOL and partner sites that host Bing, AOL, and Yahoo search.
-* default value: false – results are returned for Bing, AOL, and Yahoo search networks
+   * <em>Bing search partners type</em><br>optional field<br>if you specify <code class='prettyprint'>true</code>, the results will be delivered for owned, operated, and syndicated networks across Bing, Yahoo, AOL and partner sites that host Bing, AOL, and Yahoo search.<br>default value: <code>false</code> - results are returned for Bing, AOL, and Yahoo search networks
    * @return searchPartners
    */
   @javax.annotation.Nullable
@@ -378,11 +323,7 @@ public class KeywordsDataBingKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

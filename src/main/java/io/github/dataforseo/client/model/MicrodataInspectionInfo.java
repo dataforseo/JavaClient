@@ -47,8 +47,7 @@ public class MicrodataInspectionInfo  {
   }
 
   /**
-   * parent microdata types
-* for a full list of available types, please visit schema.org
+   * <em>parent microdata types</em><br>for a full list of available types, please visit <a href='https://schema.org/docs/full.html' rel='noopener noreferrer' target='_blank'>schema.org</a>
    * @return types
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class MicrodataInspectionInfo  {
   }
 
   /**
-   * microdata fields
-* an array of objects containing data fields related to the certain microdata type
+   * <em>microdata fields</em><br>an array of objects containing data fields related to the certain microdata type
    * @return fields
    */
   @javax.annotation.Nullable

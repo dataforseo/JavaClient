@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageKeywordDensityTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<OnPageKeywordDensityTaskInfo>** | <em>array of tasks</em> |[optional]|

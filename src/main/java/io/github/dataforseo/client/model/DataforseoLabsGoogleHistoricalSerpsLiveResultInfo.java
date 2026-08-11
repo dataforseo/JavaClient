@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * search engine type in a POST array
+   * <em>search engine type in a POST array</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array</em><br>            <strong>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * the total amount of results in our database relevant to your request
+   * <em>the total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * historical SERPs and related data found in the database
+   * <em>historical SERPs and related data found in the database</em>
    * @return items
    */
   @javax.annotation.Nullable

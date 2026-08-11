@@ -70,7 +70,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * relevant URL of the Ad element in SERP
+   * <em> relevant URL of the Ad element in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * alt tag of the image
+   * <i>alt tag of the image</i>
    * @return alt
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

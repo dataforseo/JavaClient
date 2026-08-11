@@ -47,12 +47,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * keywords
-* required field
-* the maximum number of keywords you can specify: 5
-* avoid symbols and special characters (e.g., UTF symbols, emojis);
-* specifying non-Latin characters, you’ll get data for the countries where they are used
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords</em><br><strong>required field</strong><br>the maximum number of keywords you can specify: 5<br>avoid symbols and special characters (e.g., UTF symbols, emojis);<br>specifying non-Latin characters, you’ll get data for the countries where they are used<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,14 +70,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* optional field
-* if you don’t use this field, you will recieve global results
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
-* note that the data will be provided for the country the specified location_name belongs to;
-* example:
-* United Kingdom
+   * <em>full name of search engine location</em><br>optional field<br>if you don't use this field, you will recieve global results<br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</code><br><strong>note that the data will be provided for the country the specified <code>location_name</code> belongs to;</strong><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -105,14 +93,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * search engine location code
-* optional field
-* if you don’t use this field, you will recieve global results
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
-* note that the data will be provided for the country the specified location_code belongs to;
-* example:
-* 2840
+   * <em>search engine location code</em><br>optional field<br>if you don't use this field, you will recieve global results<br><strong>if you use this field, you don't need to specify <code>location_name</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</code><br><strong>note that the data will be provided for the country the specified <code>location_code</code> belongs to;</strong><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -158,14 +139,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * starting date of the time range
-* optional field
-* if you don’t specify this field, the current day and month of the preceding year will be used by default
-* minimal value for the web type: 2004-01-01
-* minimal value for other types: 2008-01-01
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>starting date of the time range</em><br>optional field<br>if you don't specify this field, the current day and month of the preceding year will be used by default<br>minimal value for the <code>web</code> type: <code>2004-01-01</code><br>minimal value for other types: <code>2008-01-01</code><br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -188,12 +162,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * ending date of the time range
-* optional field
-* if you don’t specify this field, the today’s date will be used by default
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>ending date of the time range</em><br>optional field<br>if you don't specify this field, the today's date will be used by default<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -216,11 +185,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * preset time ranges
-* optional field
-* if you specify date_from or date_to parameters, this field will be ignored when setting a task
-* possible values for all type parameters:
-* past_4_hours, past_day, past_7_days, past_30_days, past_90_days, past_12_months, past_5_years
+   * <em>preset time ranges</em><br>optional field<br>if you specify <code>date_from</code> or <code>date_to</code> parameters, this field will be ignored when setting a task<br><em>possible values for all <code>type</code> parameters:</em><br><code>past_4_hours</code>, <code>past_day</code>, <code>past_7_days</code>, <code>past_30_days</code>, <code>past_90_days</code>, <code>past_12_months</code>, <code>past_5_years</code>
    * @return timeRange
    */
   @javax.annotation.Nullable
@@ -243,11 +208,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

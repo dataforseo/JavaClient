@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**hotelIdentifier** | **String** | unique hotel identifier<br>unique hotel identifier assigned by Google;<br>example: 'CgoIjaeSlI6CnNpVEAE' |[optional]|
-**url** | **String** | relevant URL in SERP |[optional]|
+**hotelIdentifier** | **String** | <em>unique hotel identifier</em><br>            unique hotel identifier assigned by Google;<br>            example: <code>'CgoIjaeSlI6CnNpVEAE'</code> |[optional]|
+**url** | **String** | <em> relevant URL in SERP</em> |[optional]|

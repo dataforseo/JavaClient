@@ -47,8 +47,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * keyword
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword<br></em><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * correct spelling of the keyword
-* Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;
-* we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
+   * <em>correct spelling of the keyword</em><br><strong>Note:</strong>if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;<br>we use the functionality of Google Ads API to check and validate the spelling of keywords, <a href='https://support.google.com/google-ads/answer/7476658' target='_blank' rel='noopener noreferrer'>learn more by this link</a>
    * @return spell
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -120,8 +116,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * indicates whether data from partner networks included in the response
+   * <em>indicates whether data from partner networks included in the response</em>
    * @return searchPartners
    */
   @javax.annotation.Nullable
@@ -167,11 +162,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * competition
-* represents the relative amount of competition associated with the given keyword in paid SERP only;
-* this value is based on Google Ads data and can take the following values: HIGH, MEDIUM, LOW;
-* if there is no data the value is null;
-* learn more about the metric in this help center article
+   * <em>competition</em><br>represents the relative amount of competition associated with the given keyword in paid SERP only;<br>this value is based on Google Ads data and can take the following values: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code>;<br>if there is no data the value is <code>null</code>;<br>learn more about the metric in <a href='https://dataforseo.com/help-center/what-is-competition' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return competition
    */
   @javax.annotation.Nullable
@@ -194,11 +185,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * competition
-* represents the relative amount of competition associated with the given keyword in paid SERP only;
-* this value is based on Google Ads data and can be between 0 and 100 (inclusive);
-* if there is no data the value is null;
-* learn more about the metric in this help center article
+   * <em>competition</em><br>represents the relative amount of competition associated with the given keyword in paid SERP only;<br>this value is based on Google Ads data and can be between 0 and 100 (inclusive);<br>if there is no data the value is <code>null</code>;<br>learn more about the metric in <a href='https://dataforseo.com/help-center/what-is-competition' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return competitionIndex
    */
   @javax.annotation.Nullable
@@ -221,9 +208,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * monthly average search volume rate;
-* represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting;
-* if there is no data then the value is null
+   * <em>monthly average search volume rate;<br></em>represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting;<br>if there is no data then the value is_<code>null</code>n
    * @return searchVolume
    */
   @javax.annotation.Nullable
@@ -246,9 +231,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * minimum bid for the ad to be displayed at the top of the first page
-* indicates the value greater than about 20% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers);
-* the value may differ depending on the location specified in a POST request
+   * <em>minimum bid for the ad to be displayed at the top of the first page</em><br>indicates the value greater than about 20% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers);<br>the value may differ depending on the location specified in a POST request
    * @return lowTopOfPageBid
    */
   @javax.annotation.Nullable
@@ -271,9 +254,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * maximum bid for the ad to be displayed at the top of the first page
-* indicates the value greater than about 80% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers);
-* the value may differ depending on the location specified in a POST request
+   * <em>maximum bid for the ad to be displayed at the top of the first page</em><br>indicates the value greater than about 80% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers);<br>the value may differ depending on the location specified in a POST request
    * @return highTopOfPageBid
    */
   @javax.annotation.Nullable
@@ -296,8 +277,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * cost per click
-* indicates the amount paid (USD) for each click on the ad displayed for a given keyword
+   * <em>cost per click</em><br>indicates the amount paid (USD) for each click on the ad displayed for a given keyword
    * @return cpc
    */
   @javax.annotation.Nullable
@@ -320,9 +300,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * monthly searches
-* represents the (approximate) number of searches on this keyword idea (as available for the past twelve months by default), targeted to the specified geographic locations;
-* if there is no data then the value is null
+   * <em>monthly searches</em><br>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months by default), targeted to the specified geographic locations;<br>if there is no data then the value is_<code>null</code>n
    * @return monthlySearches
    */
   @javax.annotation.Nullable

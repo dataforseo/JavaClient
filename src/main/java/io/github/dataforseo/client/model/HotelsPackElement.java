@@ -70,7 +70,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * price indicated in the element
+   * <em>price indicated in the element</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * link description
+   * <em>link description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -139,9 +139,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * unique hotel identifier
-* unique hotel identifier assigned by Google;
-* example: 'CgoIjaeSlI6CnNpVEAE'
+   * <em>unique hotel identifier</em><br>unique hotel identifier assigned by Google;<br>example: <code>'CgoIjaeSlI6CnNpVEAE'</code>
    * @return hotelIdentifier
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -210,7 +208,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * indicates whether the element is an ad
+   * <em>indicates whether the element is an ad</em>
    * @return isPaid
    */
   @javax.annotation.Nullable
@@ -233,9 +231,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable

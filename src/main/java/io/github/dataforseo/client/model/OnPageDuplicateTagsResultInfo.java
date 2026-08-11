@@ -47,8 +47,7 @@ public class OnPageDuplicateTagsResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageDuplicateTagsResultInfo  {
   }
 
   /**
-   * details of the crawling session
+   * <em>details of the crawling session</em>
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class OnPageDuplicateTagsResultInfo  {
   }
 
   /**
-   * total number of pages with duplicate tags
-* displays the total number of pages with duplicate tags of the target website
+   * <em>total number of pages with duplicate tags</em><br>displays the total number of pages with duplicate tags of the target website
    * @return totalPagesCount
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class OnPageDuplicateTagsResultInfo  {
   }
 
   /**
-   * number of pages with duplicate tags in the response
-* displays the number of pages with duplicate tags returned in the response
+   * <em>number of pages with duplicate tags in the response</em><br>displays the number of pages with duplicate tags returned in the response
    * @return pagesCount
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class OnPageDuplicateTagsResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class OnPageDuplicateTagsResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

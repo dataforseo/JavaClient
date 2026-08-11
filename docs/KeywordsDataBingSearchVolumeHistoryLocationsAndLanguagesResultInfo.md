@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**languageName** | **String** | language name |[optional]|
-**languageCode** | **String** | language code according to ISO 639-1 |[optional]|
-**availableLocations** | **List<AvailableLocations>** | array of available locations for a certain language |[optional]|
+**languageName** | **String** | <em>language name</em> |[optional]|
+**languageCode** | **String** | <em>language code according to <a href='https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes' target='_blank' rel='noopener noreferrer'>ISO 639-1</a></em> |[optional]|
+**availableLocations** | **List<AvailableLocations>** | <em>array of available locations for a certain language</em> |[optional]|

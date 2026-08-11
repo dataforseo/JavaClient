@@ -47,14 +47,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * target technology paths
-* required field if you don’t specify groups, technologies and categories
-* each technology path should be specified as a separate object containing “path” and “name”, where “path” is specified as “$group_id.$category_id” and “name” – as the name of the target technology;
-* each object with a technology path should be separated with a comma
-* you can find the full list of technology group ids, category ids and technology names on this page
-* note: you can specify up to 10 technology paths in this array
-* example:
-* [{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]
+   * <em>target technology paths</em><br><strong>required field if you don't specify <code>groups</code>, <code>technologies</code> and <code>categories</code></strong><br>each technology path should be specified as a separate object containing 'path' and 'name', where 'path' is specified as '$group_id.$category_id' and 'name' - as the name of the target technology; <br>each object with a technology path should be separated with a comma<br>you can find the full list of technology group ids, category ids and technology names <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technology paths in this array<br>example:<br><code>[{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]</code>
    * @return technologyPaths
    */
   @javax.annotation.Nullable
@@ -77,12 +70,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * ids of the target technology groups
-* required field if you don’t specify technologies, technology_paths, categories, or keywords
-* you can find the full list of technology group ids on this page
-* note: you can specify up to 10 technology groups in this array
-* example:
-* ['sales', 'marketing']
+   * <em>ids of the target technology groups</em><br><strong>required field if you don't specify <code>technologies</code>, <code>technology_paths</code>, <code>categories</code>, or <code>keywords</code></strong><br>you can find the full list of technology group ids <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technology groups in this array<br>example:<br><code>['sales', 'marketing']</code>
    * @return groups
    */
   @javax.annotation.Nullable
@@ -105,12 +93,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * ids of the target technology categories
-* required field if you don’t specify groups, technology_paths, technologies, or keywords
-* you can find the full list of technology category ids on this page
-* note: you can specify up to 10 technology categories in this array
-* example:
-* ['payment_processors','crm']
+   * <em>ids of the target technology categories</em><br><strong>required field if you don't specify <code>groups</code>, <code>technology_paths</code>, <code>technologies</code>, or <code>keywords</code></strong><br>you can find the full list of technology category ids <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technology categories in this array<br>example:<br><code>['payment_processors','crm']</code>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -133,12 +116,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * target technologies
-* required field if you don’t specify groups, technology_paths, categories, or keywords
-* you can find the full list of technologies you can specify here on this page
-* note: you can specify up to 10 technologies in this array
-* example:
-* ['Google Pay','Salesforce']
+   * <em>target technologies</em><br><strong>required field if you don't specify <code>groups</code>, <code>technology_paths</code>, <code>categories</code>, or <code>keywords</code></strong><br>you can find the full list of technologies you can specify here <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technologies in this array<br>example:<br><code>['Google Pay','Salesforce']</code>
    * @return technologies
    */
   @javax.annotation.Nullable
@@ -161,13 +139,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * target keywords in the domain’s title, description or meta keywords
-* required field if you don’t specify groups, technology_paths, categories, or technologies
-* you can specify the maximum of 10 keywords;
-* UTF-8 encoding;
-* example:
-* ['seo','software']
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keywords in the domain's title, description or meta keywords</em><br><strong>required field if you don't specify <code>groups</code>, <code>technology_paths</code>, <code>categories</code>, or <code>technologies</code></strong><br>you can specify the maximum of 10 keywords;<br>UTF-8 encoding;<br>example:<br><code>['seo','software']</code><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -190,12 +162,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * search mode
-* optional field
-* possible search mode types:
-* as_is – search for results exactly matching the specified group ids, category ids, or technology names
-* entry – search for results matching a part of the specified group ids, category ids, or technology names
-* default value: as_is
+   * <em>search mode</em><br>optional field<br>possible search mode types:<br><code>as_is</code> - search for results exactly matching the specified group ids, category ids, or technology names<br><code>entry</code> - search for results matching a part of the specified group ids, category ids, or technology names<br>default value: <code>as_is</code>
    * @return mode
    */
   @javax.annotation.Nullable
@@ -218,19 +185,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* <, <=, >, >=, =, <>, in, not_in, like,not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* you can use the following parameters to filter the results: domain_rank, last_visited, country_iso_code, language_code, content_language_code
-* example:
-* [['country_iso_code','=','US'],
-* 'and',
-* ['domain_rank','>',800]]
-* for more information about filters, please refer to Domain Analytics Technologies API – Filters
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>,<code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>you can use the following parameters to filter the results: <code>domain_rank</code>, <code>last_visited</code>, <code>country_iso_code</code>, <code>language_code</code>, <code>content_language_code</code><br>example:<br><code>[['country_iso_code','=','US'],<br>'and',<br>['domain_rank','>',800]]</code><p>for more information about filters, please refer to <a href='/v3/domain_analytics/technologies/filters' target='_blank' rel='noopener noreferrer'>Domain Analytics Technologies API - Filters</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -253,13 +208,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* countries, languages, content_languages, keywords
-* default value: 10
-* minimum value: 1
-* maximum value: 10000
+   * <em>maximum number of elements within internal arrays</em><br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br><code>countries</code>, <code>languages</code>, <code>content_languages</code>, <code>keywords</code><br>default value: <code>10</code><br>minimum value: <code>1</code><br>maximum value: <code>10000</code>
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -282,11 +231,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

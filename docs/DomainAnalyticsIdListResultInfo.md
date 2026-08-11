@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**id** | **String** | task identifier<br>unique task identifier in our system in the UUID format |[optional]|
-**url** | **String** | URL of the task<br>URL you used for making an API call |[optional]|
-**datetimePosted** | **String** | date and time when the task was made<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2023-01-15 12:57:46 +00:00 |[optional]|
-**datetimeDone** | **String** | date and time when the task was completed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2023-01-15 12:57:46 +00:00 |[optional]|
-**status** | **String** | informational message of the task<br>you can find the full list of general informational messages here |[optional]|
-**cost** | **Double** | total tasks cost, USD |[optional]|
-**metadata** | **Map<String, Object>** | contains parameters you specified in the POST request |[optional]|
+**id** | **String** | <em>task identifier</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**url** | **String** | <em>URL of the task</em><br>URL you used for making an API call |[optional]|
+**datetimePosted** | **String** | <em>date and time when the task was made</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2023-01-15 12:57:46 +00:00</code> |[optional]|
+**datetimeDone** | **String** | <em>date and time when the task was completed</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2023-01-15 12:57:46 +00:00</code> |[optional]|
+**status** | **String** | <em>informational message of the task</em><br>you can find the full list of general informational messages <a href='/v3/appendix-errors/'>here</a> |[optional]|
+**cost** | **Double** | <em>total tasks cost, USD</em> |[optional]|
+**metadata** | **Map<String, Object>** | <em>contains parameters you specified in the POST request</em> |[optional]|

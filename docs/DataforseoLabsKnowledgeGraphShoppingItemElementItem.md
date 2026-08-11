@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the result in SERP |[optional]|
-**dataAttrid** | **String** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
-**items** | **List<KnowledgeGraphShoppingElement>** | historical SERPs and related data found in the database |[optional]|
+**title** | **String** | <em>title of the result in SERP</em> |[optional]|
+**dataAttrid** | **String** | <em>google defined data attribute ID</em><br>            example:<br>            <code>action:listen_artist</code> |[optional]|
+**items** | **List<KnowledgeGraphShoppingElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|

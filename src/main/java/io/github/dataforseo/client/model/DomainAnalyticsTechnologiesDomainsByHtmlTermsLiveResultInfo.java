@@ -47,7 +47,7 @@ public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResultInfo  {
   }
 
   /**
-   * total number of relevant items in the database
+   * <em>total number of relevant items in the database</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResultInfo  {
   }
 
   /**
-   * specified offset value
+   * <em>specified offset value</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -116,9 +116,7 @@ public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResultInfo  {
   }
 
   /**
-   * token for subsequent requests
-* by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task;
-* offset_token values are unique for each subsequent task
+   * <em>token for subsequent requests</em><br>by specifying the unique <code>offset_token</code> when setting a new task, you will get the subsequent results of the initial task;<br><code>offset_token</code> values are unique for each subsequent task
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

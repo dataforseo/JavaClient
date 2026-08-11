@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the element |[optional]|
-**text** | **String** | additional text of the element in SERP |[optional]|
-**markdown** | **String** | content of the element in markdown format |[optional]|
-**links** | **List<LinkElement>** | website links featured in the element |[optional]|
-**images** | **List<AiModeImagesElementInfo>** | images of the element<br>if there is none, equals null |[optional]|
-**references** | **List<AiModeAiOverviewReferenceInfo>** | references relevant to the element<br>includes references to webpages that were used to generate the ai_overview_element |[optional]|
+**title** | **String** | <em>title of the element</em> |[optional]|
+**text** | **String** | <em>additional text of the element in SERP</em> |[optional]|
+**markdown** | **String** | <em>content of the element in markdown format</em> |[optional]|
+**links** | **List<LinkElement>** | <em>website links featured in the element</em> |[optional]|
+**images** | **List<AiModeImagesElementInfo>** | <em>images of the element</em><br>if there is none, equals <code>null</code> |[optional]|
+**references** | **List<AiModeAiOverviewReferenceInfo>** | <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code> |[optional]|

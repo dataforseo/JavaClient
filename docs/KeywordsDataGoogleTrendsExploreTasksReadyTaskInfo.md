@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataGoogleTrendsExploreTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataGoogleTrendsExploreTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

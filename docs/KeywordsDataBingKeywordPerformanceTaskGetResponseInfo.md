@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataBingKeywordPerformanceTaskGetTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataBingKeywordPerformanceTaskGetTaskInfo>** | <em>array of tasks</em> |[optional]|

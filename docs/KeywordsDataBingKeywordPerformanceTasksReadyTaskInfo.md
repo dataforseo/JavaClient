@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataBingKeywordPerformanceTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataBingKeywordPerformanceTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

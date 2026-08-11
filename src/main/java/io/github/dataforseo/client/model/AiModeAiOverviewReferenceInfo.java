@@ -70,9 +70,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * domain name of the reference
+   * <em>domain name of the reference</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * link URL
+   * <em>link URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * link anchor text
+   * <em>link anchor text</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * text of the component
+   * <em>text of the component</em>
    * @return text
    */
   @javax.annotation.Nullable

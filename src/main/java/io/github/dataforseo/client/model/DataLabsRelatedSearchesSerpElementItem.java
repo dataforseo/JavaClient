@@ -47,7 +47,7 @@ public class DataLabsRelatedSearchesSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * historical SERPs and related data found in the database
+   * <em>historical SERPs and related data found in the database</em>
    * @return items
    */
   @javax.annotation.Nullable

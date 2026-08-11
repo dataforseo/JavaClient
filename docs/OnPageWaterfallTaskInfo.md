@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageWaterfallResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageWaterfallResultInfo>** | <em>array of results</em> |[optional]|

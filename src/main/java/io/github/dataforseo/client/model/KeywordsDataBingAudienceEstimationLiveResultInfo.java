@@ -47,7 +47,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * monthly estimated impressions range
+   * <em>monthly estimated impressions range</em>
    * @return estImpressions
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * monthly estimated reach user count range
+   * <em>monthly estimated reach user count range</em>
    * @return estAudienceSize
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * monthly estimated click count range
+   * <em>monthly estimated click count range</em>
    * @return estClicks
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * monthly estimated spending range
+   * <em>monthly estimated spending range</em>
    * @return estSpend
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * indicates the estimated cost per event with range result
+   * <em>indicates the estimated cost per event with range result</em>
    * @return estCostPerEvent
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * estimated click-through rate range
+   * <em>estimated click-through rate range</em>
    * @return estCtr
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * suggested bid value under the current targeting
+   * <em>suggested bid value under the current targeting</em>
    * @return suggestedBid
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * suggested daily budget value under the current targeting and bid
+   * <em>suggested daily budget value under the current targeting and bid</em>
    * @return suggestedBudget
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * indicates event lost count due to insufficient input bid
+   * <em>indicates event lost count due to insufficient input bid</em>
    * @return eventsLostToBid
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * indicates the event lost count due to insufficient input budget
+   * <em>indicates the event lost count due to insufficient input budget</em>
    * @return eventsLostToBudget
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * monthly estimated user count
+   * <em>monthly estimated user count</em>
    * @return estReachAudienceSize
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * monthly estimated impressions
+   * <em>monthly estimated impressions</em>
    * @return estReachImpressions
    */
   @javax.annotation.Nullable
@@ -323,8 +323,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
   }
 
   /**
-   * currency name
-* example: USDollar
+   * <em>currency name</em><p>example: <code>USDollar</code>
    * @return currency
    */
   @javax.annotation.Nullable

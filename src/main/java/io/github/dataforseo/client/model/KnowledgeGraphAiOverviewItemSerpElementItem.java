@@ -47,9 +47,7 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
   }
 
   /**
-   * indicates whether the element is loaded asynchronously
-* if true, the ai_overview element is loaded asynchronously;
-* if false, the ai_overview element is loaded from cache
+   * <em>indicates whether the element is loaded asynchronously</em><br>if <code>true</code>, the <code>ai_overview</code> element is loaded asynchronously;<br>if <code>false</code>, the <code>ai_overview</code> element is loaded from cache
    * @return asynchronousAiOverview
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
   }
 
   /**
-   * contains arrays of elements available in the list
+   * <em>contains arrays of elements available in the list</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

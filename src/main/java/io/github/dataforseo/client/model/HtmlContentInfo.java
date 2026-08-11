@@ -47,7 +47,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * total size of the text on the page measured in bytes
+   * <em>total size of the text on the page measured in bytes</em>
    * @return plainTextSize
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * number of words on the page
+   * <em>number of words on the page</em>
    * @return plainTextWordCount
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * Automated Readability Index
+   * <em><a href='https://en.wikipedia.org/wiki/Automated_readability_index' target='_blank' rel='noopener noreferrer'>Automated Readability Index</a></em>
    * @return automatedReadabilityIndex
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * Coleman–Liau Index
+   * <em><a href='https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index' target='_blank' rel='noopener noreferrer'>Coleman–Liau Index</a></em>
    * @return colemanLiauReadabilityIndex
    */
   @javax.annotation.Nullable
@@ -163,7 +163,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * Dale–Chall Readability Index
+   * <em><a href='https://en.wikipedia.org/wiki/Dale%E2%80%93Chall_readability_formula' target='_blank' rel='noopener noreferrer'>Dale–Chall Readability Index</a></em>
    * @return daleChallReadabilityIndex
    */
   @javax.annotation.Nullable
@@ -186,7 +186,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * Flesch–Kincaid Readability Index
+   * <em><a href='https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests' target='_blank' rel='noopener noreferrer'>Flesch–Kincaid Readability Index</a></em>
    * @return fleschKincaidReadabilityIndex
    */
   @javax.annotation.Nullable
@@ -209,7 +209,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * SMOG Readability Index
+   * <em><a href='https://en.wikipedia.org/wiki/SMOG' target='_blank' rel='noopener noreferrer'>SMOG Readability Index</a></em>
    * @return smogReadabilityIndex
    */
   @javax.annotation.Nullable
@@ -232,8 +232,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * consistency of the meta description tag with the page content
-* measured from 0 to 1
+   * <em>consistency of the meta <code>description</code> tag with the page content</em><br>measured from 0 to 1
    * @return descriptionToContentConsistency
    */
   @javax.annotation.Nullable
@@ -256,8 +255,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * consistency of the meta title tag with the page content
-* measured from 0 to 1
+   * <em>consistency of the meta <code>title</code> tag with the page content</em><br>measured from 0 to 1
    * @return titleToContentConsistency
    */
   @javax.annotation.Nullable
@@ -280,8 +278,7 @@ public class HtmlContentInfo  {
   }
 
   /**
-   * consistency of meta keywordstag with the page content
-* measured from 0 to 1
+   * <em>consistency of meta <code>keywords</code>tag with the page content</em><br>measured from 0 to 1
    * @return metaKeywordsToContentConsistency
    */
   @javax.annotation.Nullable

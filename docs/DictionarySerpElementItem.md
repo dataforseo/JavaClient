@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**title** | **String** | title of the result in SERP |[optional]|
-**url** | **String** | relevant URL of the Ad element in SERP |[optional]|
-**domain** | **String** | domain in SERP |[optional]|
-**breadcrumb** | **String** | breadcrumb of the Ad element in SERP |[optional]|
-**keyword** | **String** | keyword highlighted in the result |[optional]|
-**snippet** | **String** | snippet of the element |[optional]|
-**text** | **String** | description of the results element in SERP |[optional]|
-**links** | **List<LinkElement>** | sitelinks<br>the links shown below some of search results<br>if there are none, equals null |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br><br>            position within a group of elements with identical <code>type</code> values<br><br>            positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br><br>            absolute position among all the elements in SERP |[optional]|
+**title** | **String** | <em>title of the result in SERP</em> |[optional]|
+**url** | **String** | <em> relevant URL of the Ad element in SERP</em> |[optional]|
+**domain** | **String** | <em>domain in SERP</em> |[optional]|
+**breadcrumb** | **String** | <em>breadcrumb of the Ad element in SERP</em> |[optional]|
+**keyword** | **String** | <em>keyword highlighted in the result</em> |[optional]|
+**snippet** | **String** | <em>snippet of the element</em> |[optional]|
+**text** | **String** | <em>description of the results element in SERP</em> |[optional]|
+**links** | **List<LinkElement>** | <em>sitelinks</em><br><br>            the links shown below some of search results<br><br>            if there are none, equals <code>null</code> |[optional]|

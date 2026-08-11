@@ -47,8 +47,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * keyword in a POST array
-* metrics are provided for all the keywords specified in the POST array
+   * <em>keyword in a POST array</em><br>metrics are provided for all the keywords specified in the POST array
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * forecasting date interval in a POST array
+   * <em>forecasting date interval in a POST array</em>
    * @return dateInterval
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * include Google search partners
-* the value is always false
+   * <em>include Google search partners</em><br>the value is always <code>false</code>
    * @return searchPartners
    */
   @javax.annotation.Nullable
@@ -166,11 +162,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * the maximum custom bid
-* the bid you have specified when setting the task
-* represents the price you are willing to pay for an ad
-* the higher value you have specified, the higher metrics and cost you receive in response
-* learn more in this help center article
+   * <em>the maximum custom bid</em><br>the bid you have specified when setting the task<br>represents the price you are willing to pay for an ad<br>the higher value you have specified, the higher metrics and cost you receive in response<br>learn more in <a href='https://dataforseo.com/help-center/configuring-bid'>this help center article</a>
    * @return bid
    */
   @javax.annotation.Nullable
@@ -193,8 +185,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * keywords match-type
-* can take the following values: exact, broad, phrase
+   * <em>keywords match-type</em><br>can take the following values: <code>exact</code>, <code>broad</code>, <code>phrase</code>
    * @return match
    */
   @javax.annotation.Nullable
@@ -217,9 +208,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * projected number of ad impressions
-* number of impressions an ad is projected to get within the specified time period
-* Note: parameter deprecated, the value is always null
+   * <em>projected number of ad impressions</em><br>number of impressions an ad is projected to get within the specified time period<br><strong>Note:</strong> parameter deprecated, the value is always_<code>null</code>n
    * @return impressions
    */
   @javax.annotation.Nullable
@@ -242,9 +231,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * projected clickthrough rate (CTR) of the advertisement
-* number of clicks an ad is projected to receive divided by the number of ad impressions;
-* Note: parameter deprecated, the value is always null
+   * <em>projected clickthrough rate (CTR) of the advertisement</em><br>number of clicks an ad is projected to receive divided by the number of ad impressions;<br><strong>Note:</strong> parameter deprecated, the value is always <code>null</code>
    * @return ctr
    */
   @javax.annotation.Nullable
@@ -267,9 +254,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * the average cost-per-click value
-* represents the cost-per-click (USD) estimated for a keyword based on the specified time period and historical data;
-* if there is no data, then the value is null
+   * <em>the average cost-per-click value</em><br>represents the cost-per-click (USD) estimated for a keyword based on the specified time period and historical data;<br>if there is no data, then the value is_<code>null</code>n
    * @return averageCpc
    */
   @javax.annotation.Nullable
@@ -292,9 +277,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * charge for an ad
-* amount that will be charged for running an ad within the specified time period
-* if there is no data, then the value is null
+   * <em>charge for an ad</em><br>amount that will be charged for running an ad within the specified time period<br>if there is no data, then the value is_<code>null</code>n
    * @return cost
    */
   @javax.annotation.Nullable
@@ -317,9 +300,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo  {
   }
 
   /**
-   * number of clicks on an ad
-* number of clicks an ad is projected to get within the specified time period
-* if there is no data, then the value is null
+   * <em>number of clicks on an ad</em><br>number of clicks an ad is projected to get within the specified time period<br>if there is no data, then the value is_<code>null</code>n
    * @return clicks
    */
   @javax.annotation.Nullable

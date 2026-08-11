@@ -70,8 +70,7 @@ public class RelatedResult  {
   }
 
   /**
-   * search results page number
-* indicates the number of the SERP page on which the element is located
+   * <em>search results page number</em><br>indicates the number of the SERP page on which the element is located
    * @return page
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class RelatedResult  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class RelatedResult  {
   }
 
   /**
-   * website domain
+   * <em>website domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class RelatedResult  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class RelatedResult  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class RelatedResult  {
   }
 
   /**
-   * cached version of the page
+   * <em>cached version of the page</em>
    * @return cacheUrl
    */
   @javax.annotation.Nullable
@@ -209,8 +208,7 @@ public class RelatedResult  {
   }
 
   /**
-   * URL to a similar search
-* URL to a new search for the same keyword(s) on related sites
+   * <em>URL to a similar search</em><br>URL to a new search for the same keyword(s) <a href='https://support.google.com/websearch/answer/2466433?hl=en#:~:text=Search%20for%20related%20sites'>on related sites</a>
    * @return relatedSearchUrl
    */
   @javax.annotation.Nullable
@@ -233,7 +231,7 @@ public class RelatedResult  {
   }
 
   /**
-   * breadcrumb in SERP
+   * <em>breadcrumb in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -256,7 +254,7 @@ public class RelatedResult  {
   }
 
   /**
-   * name of the website in the ad element
+   * <em>name of the website in the ad element</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -279,8 +277,7 @@ public class RelatedResult  {
   }
 
   /**
-   * indicates whether the element contains an image
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERPn
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -303,8 +300,7 @@ public class RelatedResult  {
   }
 
   /**
-   * indicates whether the element contains a video
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element contains a <code class='prettyprint'>video</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -327,15 +323,7 @@ public class RelatedResult  {
   }
 
   /**
-   * array of properties detected for the SERP element
-* lists the properties that are true for this element
-* each value in the array represents a detected property
-* example:
-* if is_image is present in the array, the element contains an image
-* possible values in the array:
-* is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
-* equals null if none of the properties are detected for the element
-* learn more about the checks array in this Help Center article
+   * <em>array of properties detected for the SERP element</em><br>lists the properties that are true for this element<br>each value in the array represents a detected property <br>example:<br>if <code>is_image</code> is present in the array, the element contains an image<br>possible values in the array:<br><code>is_image</code>, <code>is_video</code>, <code>is_featured_snippet</code>, <code>amp_version</code>, <code>is_malicious</code>, <code>is_web_story</code>, <code>is_highly_cited</code><br>equals <code>null</code> if none of the properties are detected for the element<br>learn more about the <code>checks</code> array in <a href='https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api' target='_blank'>this Help Center article</a>
    * @return checks
    */
   @javax.annotation.Nullable
@@ -358,7 +346,7 @@ public class RelatedResult  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -381,7 +369,7 @@ public class RelatedResult  {
   }
 
   /**
-   * includes additional information appended before the result description in SERP
+   * <em>includes additional information appended before the result description in SERP</em>
    * @return preSnippet
    */
   @javax.annotation.Nullable
@@ -404,7 +392,7 @@ public class RelatedResult  {
   }
 
   /**
-   * includes additional information appended after the result description in SERP
+   * <em>includes additional information appended after the result description in SERP</em>
    * @return extendedSnippet
    */
   @javax.annotation.Nullable
@@ -427,8 +415,7 @@ public class RelatedResult  {
   }
 
   /**
-   * images of the component
-* if there are none, equals null
+   * <em>images of the component</em><br>if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -451,8 +438,7 @@ public class RelatedResult  {
   }
 
   /**
-   * Accelerated Mobile Pages
-* indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -475,9 +461,7 @@ public class RelatedResult  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -500,7 +484,7 @@ public class RelatedResult  {
   }
 
   /**
-   * price of booking a place for the specified dates of stay
+   * <em>price of booking a place for the specified dates of stay</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -523,7 +507,7 @@ public class RelatedResult  {
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -547,8 +531,7 @@ public class RelatedResult  {
   }
 
   /**
-   * contains information from the ‘About this result’ panel
-* Note: this object is deprecated and always returns null
+   * <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> this object is deprecated and always returns <code>null</code>
    * @deprecated
    * @return aboutThisResult
    */
@@ -574,10 +557,7 @@ public class RelatedResult  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

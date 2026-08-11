@@ -47,7 +47,7 @@ public class DataLabsMapSerpElementItem  extends BaseDataforseoLabsApiElementIte
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsMapSerpElementItem  extends BaseDataforseoLabsApiElementIte
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable

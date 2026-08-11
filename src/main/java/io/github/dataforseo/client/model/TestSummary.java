@@ -47,7 +47,7 @@ public class TestSummary  {
   }
 
   /**
-   * number of fatal microdata errors
+   * <em>number of fatal microdata errors</em>
    * @return fatal
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class TestSummary  {
   }
 
   /**
-   * number of serious microdata errors
+   * <em>number of serious microdata errors</em>
    * @return error
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class TestSummary  {
   }
 
   /**
-   * number of microdata warnings
+   * <em>number of microdata warnings</em>
    * @return warning
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class TestSummary  {
   }
 
   /**
-   * number of microdata information flags
+   * <em>number of microdata information flags</em>
    * @return info
    */
   @javax.annotation.Nullable

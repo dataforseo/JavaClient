@@ -70,7 +70,7 @@ public class AiOverviewElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiOverviewElement  {
   }
 
   /**
-   * content within the item
+   * <em>content within the item</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiOverviewElement  {
   }
 
   /**
-   * images of the element
+   * <em>images of the element</em>
    * @return images
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class AiOverviewElement  {
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

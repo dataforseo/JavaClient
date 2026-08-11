@@ -47,7 +47,7 @@ public class KeywordsDataBingKeywordPerformanceLiveResultInfo  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class KeywordsDataBingKeywordPerformanceLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class KeywordsDataBingKeywordPerformanceLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class KeywordsDataBingKeywordPerformanceLiveResultInfo  {
   }
 
   /**
-   * indicates the year for which the data is provided for
-* example:
-* 2020
+   * <em>indicates the year for which the data is provided for</em><br>example:<br><code>2020</code>
    * @return year
    */
   @javax.annotation.Nullable
@@ -143,9 +139,7 @@ public class KeywordsDataBingKeywordPerformanceLiveResultInfo  {
   }
 
   /**
-   * indicates the month for which the data is provided for
-* example:
-* 10
+   * <em>indicates the month for which the data is provided for</em><br>example:<br><code>10</code>
    * @return month
    */
   @javax.annotation.Nullable
@@ -168,8 +162,7 @@ public class KeywordsDataBingKeywordPerformanceLiveResultInfo  {
   }
 
   /**
-   * object containing keyword metrics
-* if there is no data, then the value is null
+   * <em>object containing keyword metrics</em><br>if there is no data, then the value is_<code>null</code>n
    * @return keywordKpi
    */
   @javax.annotation.Nullable

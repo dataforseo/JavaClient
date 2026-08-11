@@ -47,7 +47,7 @@ public class BingAiOverviewSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class BingAiOverviewSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * <em>additional items present in the element</em><br>            if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BingAiOverviewSerpElementItem  extends BaseBingSerpApiElementItem  
   }
 
   /**
-   * additional references relevant to the item
-* includes references to webpages that may have been used to generate the ai_overview
+   * <em>additional references relevant to the item</em><br>            includes references to webpages that may have been used to generate the <code>ai_overview</code>
    * @return references
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

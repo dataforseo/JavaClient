@@ -47,7 +47,7 @@ public class BingPeopleAlsoSearchSerpElementItem  extends BaseBingSerpApiElement
   }
 
   /**
-   * title of the item
+   * <em>title of the item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingPeopleAlsoSearchSerpElementItem  extends BaseBingSerpApiElement
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * <em>contains results featured in the 'hotels_pack' element of SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

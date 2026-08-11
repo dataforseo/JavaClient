@@ -47,7 +47,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable

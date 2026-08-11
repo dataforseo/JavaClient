@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataGoogleAdsKeywordsForSiteTaskPostTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataGoogleAdsKeywordsForSiteTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

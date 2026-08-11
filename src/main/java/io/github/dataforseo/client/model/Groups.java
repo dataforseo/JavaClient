@@ -47,9 +47,7 @@ public class Groups  {
   }
 
   /**
-   * id of the technology group
-* example:
-* marketing, sales
+   * <em>id of the technology group</em><br>example:<br><code>marketing</code>, <code>sales</code>
    * @return id
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class Groups  {
   }
 
   /**
-   * title of the technology group
+   * <em>title of the technology group</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class Groups  {
   }
 
   /**
-   * technology categories in this group
+   * <em>technology categories in this group</em>
    * @return categories
    */
   @javax.annotation.Nullable

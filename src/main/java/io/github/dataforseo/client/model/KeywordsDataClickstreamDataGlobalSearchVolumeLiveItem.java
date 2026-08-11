@@ -47,8 +47,7 @@ public class KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem  {
   }
 
   /**
-   * keyword
-* keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * <em>keyword</em><br><strong>keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem  {
   }
 
   /**
-   * clickstream-based average monthly search volume rate
-* represents the (approximate) number of searches for the given keyword idea based on clickstream
-* you can learn more about clickstream search volume in this Help Center article
+   * <em>clickstream-based average monthly search volume rate</em><br>represents the (approximate) number of searches for the given keyword idea based on clickstream<br>you can learn more about clickstream search volume in <a href='https://dataforseo.com/help-center/what-is-clickstream-search-volume-and-how-to-get-it-with-dataforseo'>this Help Center article</a>
    * @return searchVolume
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem  {
   }
 
   /**
-   * distribution of clickstream by countries
-* represents clickstream-based search volume in available countries, as well as its respective percentage of global search volume
+   * <em>distribution of clickstream by countries</em><br>represents clickstream-based search volume in available countries, as well as its respective percentage of global search volume
    * @return countryDistribution
    */
   @javax.annotation.Nullable

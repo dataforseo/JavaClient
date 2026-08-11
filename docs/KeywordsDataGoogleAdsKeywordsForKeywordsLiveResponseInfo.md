@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

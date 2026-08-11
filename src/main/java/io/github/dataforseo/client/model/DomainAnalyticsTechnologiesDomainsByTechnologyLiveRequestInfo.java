@@ -47,15 +47,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * target technology paths
-* required field if you don’t specify groups, technologies, keywords or categories
-* at least one field (technology_paths, groups, technologies, keywords or categories) must be set;
-* each technology path should be specified as a separate object containing “path” and “name”, where “path” is specified as “$group_id.$category_id” and “name” – as the name of the target technology;
-* each object with a technology path should be separated with a comma
-* you can find the full list of technology group ids, category ids and technology names on this page
-* note: you can specify up to 10 technology paths in this array
-* example:
-* [{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]
+   * <em>target technology paths</em><br><strong>required field if you don't specify <code>groups</code>, <code>technologies</code>, <code>keywords</code> or <code>categories</code></strong><br>at least one field (<code>technology_paths</code>, <code>groups</code>, <code>technologies</code>, <code>keywords</code> or <code>categories</code>) must be set;<br>each technology path should be specified as a separate object containing 'path' and 'name', where 'path' is specified as '$group_id.$category_id' and 'name' - as the name of the target technology; <br>each object with a technology path should be separated with a comma<br>you can find the full list of technology group ids, category ids and technology names <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technology paths in this array<br>example:<br><code>[{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]</code>
    * @return technologyPaths
    */
   @javax.annotation.Nullable
@@ -78,12 +70,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * ids of the target technology groups
-* required field if you don’t specify technologies, technology_paths, keywords or categories
-* you can find the full list of technology group ids on this page
-* note: you can specify up to 10 technology groups in this array
-* example:
-* ['sales', 'marketing']
+   * <em>ids of the target technology groups</em><br><strong>required field if you don't specify <code>technologies</code>, <code>technology_paths</code>, <code>keywords</code> or <code>categories</code></strong><br>you can find the full list of technology group ids <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technology groups in this array<br>example:<br><code>['sales', 'marketing']</code>
    * @return groups
    */
   @javax.annotation.Nullable
@@ -106,12 +93,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * ids of the target technology categories
-* required field if you don’t specify groups, technology_paths, keywords or technologies
-* you can find the full list of technology category ids on this page
-* note: you can specify up to 10 technology categories in this array
-* example:
-* ['payment_processors','crm']
+   * <em>ids of the target technology categories</em><br><strong>required field if you don't specify <code>groups</code>, <code>technology_paths</code>, <code>keywords</code> or <code>technologies</code></strong><br>you can find the full list of technology category ids <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technology categories in this array<br>example:<br><code>['payment_processors','crm']</code>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -134,12 +116,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * target technologies
-* required field if you don’t specify groups, technology_paths, keywords or categories
-* you can find the full list of technologies you can specify here on this page
-* note: you can specify up to 10 technologies in this array
-* example:
-* ['Google Pay','Salesforce']
+   * <em>target technologies</em><br><strong>required field if you don't specify <code>groups</code>, <code>technology_paths</code>, <code>keywords</code> or <code>categories</code></strong><br>you can find the full list of technologies you can specify here <a href='/v3/domain_analytics/technologies/technologies' target='_blank' rel='noopener noreferrer'>on this page</a><br><strong>note:</strong> you can specify up to 10 technologies in this array<br>example:<br><code>['Google Pay','Salesforce']</code>
    * @return technologies
    */
   @javax.annotation.Nullable
@@ -162,14 +139,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * target keywords in the domain’s title, description or meta keywords
-* required field if you don’t specify groups, technology_paths, technologies or categories
-* optional field
-* you can specify the maximum of 10 keywords;
-* UTF-8 encoding;
-* example:
-* ['seo','software']
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>target keywords in the domain's title, description or meta keywords</em><br><strong>required field if you don't specify <code>groups</code>, <code>technology_paths</code>, <code>technologies</code> or <code>categories</code></strong><br>optional field<br>you can specify the maximum of 10 keywords;<br>UTF-8 encoding;<br>example:<br><code>['seo','software']</code><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -192,12 +162,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * search mode
-* optional field
-* possible search mode types:
-* as_is – search for results exactly matching the specified group ids, category ids, or technology names
-* entry – search for results matching a part of the specified group ids, category ids, or technology names
-* default value: as_is
+   * <em>search mode</em><br>optional field<br>possible search mode types:<br><code>as_is</code> - search for results exactly matching the specified group ids, category ids, or technology names<br><code>entry</code> - search for results matching a part of the specified group ids, category ids, or technology names<br>default value: <code>as_is</code>
    * @return mode
    */
   @javax.annotation.Nullable
@@ -220,22 +185,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* <, <=, >, >=, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['country_iso_code','=','US']
-* [['country_iso_code','=','US'],
-* 'and',
-* ['domain_rank','>',100]]
-* [['domain_rank','>',100],
-* 'and',
-* [['country_iso_code','=','US'],'or',['country_iso_code','=','CA']]]
-* for more information about filters, please refer to Domain Analytics Technologies API – Filters
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['country_iso_code','=','US']</code><p><code>[['country_iso_code','=','US'],<br>'and',<br>['domain_rank','>',100]]</code><p><code>[['domain_rank','>',100],<br>'and',<br>[['country_iso_code','=','US'],'or',['country_iso_code','=','CA']]]</code><p>for more information about filters, please refer to <a href='/v3/domain_analytics/technologies/filters' target='_blank' rel='noopener noreferrer'>Domain Analytics Technologies API - Filters</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -258,22 +208,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* available fields:
-* domain_rank, domain, last_visited, country_iso_code, language_code, content_language_code
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['last_visited,desc']
-* default rule:
-* ['domain_rank,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['last_visited,desc','domain_rank,desc']
+   * <em>results sorting rules</em><br>optional field<br>available fields: <br><code>domain_rank</code>, <code>domain</code>, <code>last_visited</code>, <code>country_iso_code</code>, <code>language_code</code>, <code>content_language_code</code><br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['last_visited,desc']</code><br>default rule:<br><code>['domain_rank,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['last_visited,desc','domain_rank,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -296,10 +231,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned domains
-* optional field
-* default value: 100
-* maximum value: 10000
+   * <em>the maximum number of returned domains</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>10000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -322,12 +254,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned domains
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains;
-* Note: the maximum value is 9999, the sum of limit and offset must not exceed 10000;
-* use the offset_token if you would like to offset more results
+   * <em>offset in the results array of returned domains</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains;<br><strong>Note:</strong> the maximum value is <code>9999</code>, the sum of <code>limit</code> and <code>offset</code> must not exceed <code>10000</code>;<br>use the <code>offset_token</code> if you would like to offset more results
    * @return offset
    */
   @javax.annotation.Nullable
@@ -350,14 +277,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo  {
   }
 
   /**
-   * token for subsequent requests
-* optional field
-* provided in the identical filed of the response to each request;
-* use this parameter to avoid timeouts while trying to obtain over 100,000 results in a single request;
-* by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
-* offset_token values are unique for each subsequent task
-* Note: if the offset_token is specified in the request, all other parameters should be identical to the previous request
-* learn more about this parameter on our Help Center
+   * <em>token for subsequent requests</em><br>optional field<br>provided in the identical filed of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over 100,000 results in a single request;<br>by specifying the unique <code>offset_token</code> value from the response array, you will get the subsequent results of the initial task;<br><code>offset_token</code> values are unique for each subsequent task <br><strong>Note:</strong> if the <code>offset_token</code> is specified in the request, all other parameters should be identical to the previous request<br>learn more about this parameter on our <a href='https://dataforseo.com/help-center/what-is-the-difference-between-the-offset-and-offset_token-parameters#offset_token' target='_blank'>Help Center</a>
    * @return offsetToken
    */
   @javax.annotation.Nullable

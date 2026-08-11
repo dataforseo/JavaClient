@@ -236,8 +236,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveTaskInfo  {
   }
 
   /**
-   * array of results
-* the array includes objects with SERPs for each month within the specified time frame
+   * <em>array of results</em><br>            the array includes objects with SERPs for each month within the specified time frame
    * @return result
    */
   @javax.annotation.Nullable

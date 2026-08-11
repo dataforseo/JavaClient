@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataDataforseoTrendsSubregionInterestsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataDataforseoTrendsSubregionInterestsLiveResultInfo>** | <em>array of results</em> |[optional]|

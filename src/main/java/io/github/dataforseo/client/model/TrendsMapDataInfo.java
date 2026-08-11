@@ -47,10 +47,7 @@ public class TrendsMapDataInfo  {
   }
 
   /**
-   * Google Trends location identifier
-* you can use this field for matching obtained results with location parameters specified in the request
-* example:
-* US-NY
+   * <em>Google Trends location identifier</em><br>you can use this field for matching obtained results with location parameters specified in the request<br>example:<br><code>US-NY</code>
    * @return geoId
    */
   @javax.annotation.Nullable
@@ -73,8 +70,7 @@ public class TrendsMapDataInfo  {
   }
 
   /**
-   * Google Trends location name
-* you can use this field for matching obtained results with location parameters specified in the request
+   * <em>Google Trends location name</em><br>you can use this field for matching obtained results with location parameters specified in the request
    * @return geoName
    */
   @javax.annotation.Nullable
@@ -97,12 +93,7 @@ public class TrendsMapDataInfo  {
   }
 
   /**
-   * relative keyword popularity rate in a given location
-* represents the location-specific keyword popularity rate over the given time range
-* if you specify more than one keyword, the values will be averaged to the highest value across all specified keywords
-* a value of 100 is the peak popularity for the term
-* a value of 50 means that the term is half as popular
-* a value of 0 means there was not enough data for this term
+   * <em>relative keyword popularity rate in a given location</em><br>represents the location-specific keyword popularity rate over the given time range<br><strong>if you specify more than one keyword, the values will be averaged to the highest value across all specified keywords</strong><br>a value of <code>100</code> is the peak popularity for the term<br>a value of <code>50</code> means that the term is half as popular<br>a value of <code>0</code> means there was not enough data for this term
    * @return values
    */
   @javax.annotation.Nullable
@@ -125,9 +116,7 @@ public class TrendsMapDataInfo  {
   }
 
   /**
-   * max value among comparable terms
-* represents the maximum value if you specified more than two keywords in a POST array
-* if you specified only one keyword, the value will be null
+   * <em>max value among comparable terms</em><br>represents the maximum value if you specified more than two keywords in a POST array<br>if you specified only one keyword, the value will be <code>null</code>
    * @return maxValueIndex
    */
   @javax.annotation.Nullable

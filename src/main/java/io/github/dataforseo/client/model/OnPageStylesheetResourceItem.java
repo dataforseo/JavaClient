@@ -47,8 +47,7 @@ public class OnPageStylesheetResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * page properties
-* the value depends on the resource_type
+   * <em>page properties</em><br>the value depends on the <code>resource_type</code>
    * @return meta
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageStylesheetResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * time range within which a result was fetched
+   * <em>time range within which a result was fetched</em>
    * @return fetchTiming
    */
   @javax.annotation.Nullable
@@ -94,10 +93,7 @@ public class OnPageStylesheetResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * indicates the expected type of resource
-* for example, if 'resource_type': 'broken', accept_type will indicate the type of the broken resource
-* possible values:
-* any, none, image, sitemap, robots, script, stylesheet, redirect, html, text, other, font
+   * <em>indicates the expected type of resource</em><br>for example, if <code>'resource_type': 'broken'</code>, <code>accept_type</code> will indicate the type of the broken resource<br>possible values:<br><code>any</code>, <code>none</code>, <code>image</code>, <code>sitemap</code>, <code>robots</code>, <code>script</code>, <code>stylesheet</code>, <code>redirect</code>, <code>html</code>, <code>text</code>, <code>other</code>, <code>font</code>
    * @return acceptType
    */
   @javax.annotation.Nullable

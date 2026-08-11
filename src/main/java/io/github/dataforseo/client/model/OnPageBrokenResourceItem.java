@@ -47,7 +47,7 @@ public class OnPageBrokenResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * time range within which a result was fetched
+   * <em>time range within which a result was fetched</em>
    * @return fetchTiming
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageBrokenResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * indicates whether a page is a single resource
+   * <em>indicates whether a page is a single resource</em>
    * @return isResource
    */
   @javax.annotation.Nullable
@@ -93,10 +93,7 @@ public class OnPageBrokenResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * resource properties
-* the value depends on the resource_type
-* note that if you do not indicate a url when setting a task, resource’s meta is returned based on the data from the page where our crawler first saw the resource;
-* to obtain resource’s meta from a particular url, specify that URL when setting a task
+   * <em>resource properties</em><br>the value depends on the <code>resource_type</code><br>note that if you do not indicate a <code>url</code> when setting a task, resource's <code>meta</code> is returned based on the data from the page where our crawler first saw the resource;<br>to obtain resource's <code>meta</code> from a particular <code>url</code>, specify that URL when setting a task
    * @return meta
    */
   @javax.annotation.Nullable
@@ -119,10 +116,7 @@ public class OnPageBrokenResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * indicates the expected type of resource
-* for example, if 'resource_type': 'broken', accept_type will indicate the type of the broken resource
-* possible values:
-* any, none, image, sitemap, robots, script, stylesheet, redirect, html, text, other, font
+   * <em>indicates the expected type of resource</em><br>for example, if <code>'resource_type': 'broken'</code>, <code>accept_type</code> will indicate the type of the broken resource<br>possible values: <br><code>any</code>, <code>none</code>, <code>image</code>, <code>sitemap</code>, <code>robots</code>, <code>script</code>, <code>stylesheet</code>, <code>redirect</code>, <code>html</code>, <code>text</code>, <code>other</code>, <code>font</code>
    * @return acceptType
    */
   @javax.annotation.Nullable

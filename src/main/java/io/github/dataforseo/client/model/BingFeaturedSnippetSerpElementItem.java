@@ -47,7 +47,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * domain of the ad element in SERP
+   * <em>domain of the ad element in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * title of the ad element in SERP
+   * <em>title of the ad element in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * description of the ad element in SERP
+   * <em>description of the ad element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * relevant URL of the ad element in SERP
+   * <em>relevant URL of the ad element in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * breadcrumb of the ad element in SERP
+   * <em>breadcrumb of the ad element in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * the title of the featured snippets source page
+   * <em>the title of the featured snippets source page</em>
    * @return featuredTitle
    */
   @javax.annotation.Nullable
@@ -185,10 +185,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>            example:<br>            <code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * images of the element
+   * <em>images of the element</em><br>            if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -234,8 +231,7 @@ public class BingFeaturedSnippetSerpElementItem  extends BaseBingSerpApiElementI
   }
 
   /**
-   * results table
-* if there are none, equals null
+   * <em>results table</em><br>            if there are none, equals <code>null</code>
    * @return table
    */
   @javax.annotation.Nullable

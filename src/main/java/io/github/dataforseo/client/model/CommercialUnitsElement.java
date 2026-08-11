@@ -70,7 +70,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * price indicated in the element
+   * <em>price indicated in the element</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -185,9 +185,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable

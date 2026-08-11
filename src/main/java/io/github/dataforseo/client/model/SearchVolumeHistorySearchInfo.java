@@ -47,8 +47,7 @@ public class SearchVolumeHistorySearchInfo  {
   }
 
   /**
-   * device type = desktop
-* contains historical search volume data for searches made from desktop devices
+   * <em>device type = <strong>desktop</strong></em><br>contains historical search volume data for searches made from desktop devices
    * @return desktop
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class SearchVolumeHistorySearchInfo  {
   }
 
   /**
-   * device type = non-smartphones
-* contains historical search volume data for searches made from feature phones (non-smartphone mobile devices)
+   * <em>device type = <strong>non-smartphones</strong></em><br>contains historical search volume data for searches made from feature phones (non-smartphone mobile devices)
    * @return nonSmartphones
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class SearchVolumeHistorySearchInfo  {
   }
 
   /**
-   * device type = mobile
-* contains historical search volume data for searches made from mobile devices
+   * <em>device type = <strong>mobile</strong></em><br>contains historical search volume data for searches made from mobile devices
    * @return mobile
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class SearchVolumeHistorySearchInfo  {
   }
 
   /**
-   * device type = tablet
-* contains historical search volume data for searches made from tablets
+   * <em>device type = <strong>tablet</strong></em><br>contains historical search volume data for searches made from tablets
    * @return tablet
    */
   @javax.annotation.Nullable

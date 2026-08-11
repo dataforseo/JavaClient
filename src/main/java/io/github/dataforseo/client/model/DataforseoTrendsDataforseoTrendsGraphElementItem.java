@@ -47,7 +47,7 @@ public class DataforseoTrendsDataforseoTrendsGraphElementItem  extends BaseKeywo
   }
 
   /**
-   * contains the same parameters that you specified in the POST request
+   * <em>contains the same parameters that you specified in the POST request<br></em>
    * @return data
    */
   @javax.annotation.Nullable

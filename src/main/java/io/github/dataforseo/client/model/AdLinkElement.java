@@ -70,7 +70,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * title of the element in SERP
+   * <em>title of the element in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * description of the link
+   * <em>description of the link</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * reference page URL
+   * <em>reference page URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * the identifier of the ad
+   * <em>the identifier of the ad</em>
    * @return adAclk
    */
   @javax.annotation.Nullable

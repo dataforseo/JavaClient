@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**id** | **String** | task identifier of the completed task<br>unique task identifier in our system in the UUID format |[optional]|
-**tag** | **String** | user-defined task identifier |[optional]|
-**endpointJson** | **String** | URL for collecting the results of the OnPage Lighthouse JSON task |[optional]|
+**id** | **String** | <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**tag** | **String** | <em>user-defined task identifier</em> |[optional]|
+**endpointJson** | **String** | <em>URL for collecting the results of the OnPage Lighthouse JSON task</em> |[optional]|

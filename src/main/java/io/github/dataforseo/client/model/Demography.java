@@ -47,7 +47,7 @@ public class Demography  {
   }
 
   /**
-   * distribution of keyword popularity by age
+   * <em>distribution of keyword popularity by age</em>
    * @return age
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class Demography  {
   }
 
   /**
-   * distribution of keyword popularity by gender
+   * <em>distribution of keyword popularity by gender</em>
    * @return gender
    */
   @javax.annotation.Nullable

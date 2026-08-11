@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<DataforseoLabsGoogleDomainIntersectionLiveResultInfo>** | array of results |[optional]|
+**result** | **List<DataforseoLabsGoogleDomainIntersectionLiveResultInfo>** | <em>array of results</em> |[optional]|

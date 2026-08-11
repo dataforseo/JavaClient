@@ -5,20 +5,20 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the video |[optional]|
-**videoId** | **String** | ID of the video |[optional]|
-**thumbnailUrl** | **String** | the URL of the page where the thumbnail is hosted |[optional]|
-**channelName** | **String** | the name of the channel where the video is published |[optional]|
-**channelUrl** | **String** | the URL of the channel where the video is published |[optional]|
-**channelLogo** | **String** | the URL of the page where the logo image of the channel is hosted |[optional]|
-**description** | **String** | description of the channel |[optional]|
-**highlighted** | **List<String>** | highlighted keywords in the description |[optional]|
-**badges** | **List<String>** | video badges<br>example:<br>New, CC, 4K |[optional]|
-**isLive** | **Boolean** | indicates whether the video is a live broadcast |[optional]|
-**isShorts** | **Boolean** | indicates whether the video is shorts |[optional]|
-**isMovie** | **Boolean** | indicates whether the video is a movie |[optional]|
-**viewsCount** | **Long** | number of views of the video |[optional]|
-**publicationDate** | **String** | the date when the video is published |[optional]|
-**timestamp** | **String** | date and time when the result is published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-15 12:57:46 +00:00 |[optional]|
-**durationTime** | **String** | duration of the video |[optional]|
-**durationTimeSeconds** | **Integer** | duration of the video in seconds |[optional]|
+**title** | **String** | <em>title of the video</em> |[optional]|
+**videoId** | **String** | <em>ID of the video</em> |[optional]|
+**thumbnailUrl** | **String** | <em>the URL of the page where the thumbnail is hosted</em> |[optional]|
+**channelName** | **String** | <em>the name of the channel where the video is published</em> |[optional]|
+**channelUrl** | **String** | <em>the URL of the channel where the video is published</em> |[optional]|
+**channelLogo** | **String** | <em>the URL of the page where the logo image of the channel is hosted</em> |[optional]|
+**description** | **String** | <em>description of the channel</em> |[optional]|
+**highlighted** | **List<String>** | <em>highlighted keywords in the description</em> |[optional]|
+**badges** | **List<String>** | <em>video badges</em><br>example:<br><code>New</code>, <code>CC</code>, <code>4K</code> |[optional]|
+**isLive** | **Boolean** | <em>indicates whether the video is a live broadcast</em> |[optional]|
+**isShorts** | **Boolean** | <em>indicates whether the video is shorts</em> |[optional]|
+**isMovie** | **Boolean** | <em>indicates whether the video is a movie</em> |[optional]|
+**viewsCount** | **Long** | <em>number of views of the video</em> |[optional]|
+**publicationDate** | **String** | <em>the date when the video is published</em> |[optional]|
+**timestamp** | **String** | <em>date and time when the result is published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2022-11-15 12:57:46 +00:00</code> |[optional]|
+**durationTime** | **String** | <em>duration of the video</em> |[optional]|
+**durationTimeSeconds** | **Integer** | <em>duration of the video in seconds</em> |[optional]|

@@ -70,7 +70,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveItem  {
   }
 
   /**
-   * date for which the data is provided
+   * <em>date for which the data is provided</em>
    * @return date
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveItem  {
   }
 
   /**
-   * number of domains that use the specified technology
+   * <em>number of domains that use the specified technology</em>
    * @return domainsCount
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveItem  {
   }
 
   /**
-   * distribution of websites by country
-* contains country codes and number of websites per country
+   * <em>distribution of websites by country</em><br>contains country codes and number of websites per country
    * @return countries
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveItem  {
   }
 
   /**
-   * distribution of websites by language
-* contains language codes and number of websites per language
+   * <em>distribution of websites by language</em><br>contains language codes and number of websites per language
    * @return languages
    */
   @javax.annotation.Nullable
@@ -164,9 +162,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveItem  {
   }
 
   /**
-   * distribution of websites by backlink rank
-* contains domain rank ranges and number of websites per range
-* learn more about rank and how it is calculated in this help center article
+   * <em>distribution of websites by backlink rank</em><br>contains domain rank ranges and number of websites per range<br>learn more about rank and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return domainsRank
    */
   @javax.annotation.Nullable

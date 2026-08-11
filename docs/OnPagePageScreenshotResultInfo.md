@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**crawlProgress** | **String** | status of the crawling session<br>possible values: in_progress, finished |[optional]|
-**errorMessage** | **String** | error message<br>if the url you indicated returns a 404 status code or is not a valid URL, you will obtain 'error_message':'Screenshot is empty'<br>if no error is encountered, the value will be null |[optional]|
-**itemsCount** | **Long** | number of items in the results array |[optional]|
-**items** | **List<ScreenshotItem>** | items array |[optional]|
+**crawlProgress** | **String** | <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code> |[optional]|
+**errorMessage** | **String** | <em>error message</em><br>if the <code>url</code> you indicated returns a 404 status code or is not a valid URL, you will obtain <code>'error_message':'Screenshot is empty'</code><br>if no error is encountered, the value will be <code>null</code> |[optional]|
+**itemsCount** | **Long** | <em>number of items in the results array</em> |[optional]|
+**items** | **List<ScreenshotItem>** | <em>items array</em> |[optional]|

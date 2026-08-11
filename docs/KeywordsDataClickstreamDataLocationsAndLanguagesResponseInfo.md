@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataClickstreamDataLocationsAndLanguagesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataClickstreamDataLocationsAndLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

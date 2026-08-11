@@ -47,7 +47,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskGetResultInfo  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskGetResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskGetResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -141,9 +139,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskGetResultInfo  {
   }
 
   /**
-   * time period
-* indicates if returned data is aggregated to a certain time period
-* default value monthly
+   * 
    * @return period
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class KeywordsDataBingSearchVolumeHistoryTaskGetResultInfo  {
   }
 
   /**
-   * contains results distributed by device type
-* if the device parameter is not specified, the data will be returned for all available device types
+   * 
    * @return searches
    */
   @javax.annotation.Nullable

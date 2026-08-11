@@ -70,7 +70,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * subtitle of the item
+   * <em>subtitle of the item</em>
    * @return subtitle
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * sitelink URL
+   * <em>sitelink URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

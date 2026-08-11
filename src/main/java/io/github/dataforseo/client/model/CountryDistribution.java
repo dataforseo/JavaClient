@@ -47,7 +47,7 @@ public class CountryDistribution  {
   }
 
   /**
-   * country ISO code
+   * <em>country ISO code</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class CountryDistribution  {
   }
 
   /**
-   * clickstream-based average monthly search volume rate
-* represents the (approximate) number of searches for the given keyword idea based on clickstream
-* you can learn more about clickstream search volume in this Help Center article
+   * <em>clickstream-based average monthly search volume rate</em><br>represents the (approximate) number of searches for the given keyword idea based on clickstream<br>you can learn more about clickstream search volume in <a href='https://dataforseo.com/help-center/what-is-clickstream-search-volume-and-how-to-get-it-with-dataforseo'>this Help Center article</a>
    * @return searchVolume
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class CountryDistribution  {
   }
 
   /**
-   * percentage of global search volume
+   * <em>percentage of global search volume</em>
    * @return percentage
    */
   @javax.annotation.Nullable

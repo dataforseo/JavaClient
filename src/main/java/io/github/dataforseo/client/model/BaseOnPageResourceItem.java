@@ -47,7 +47,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * type of the returned resource = ‘html’
+   * <em>type of the returned resource = <strong>'html'</strong></em>
    * @return resourceType
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * general status code
-* you can find the full list of the response codes here
-* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
+   * <i>general status code</i><br>you can find the full list of the response codes <a href='/v3/appendix/errors'>here</a><br><strong>Note:</strong> we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * location header
-* indicates the URL to redirect a page to
+   * <em>location header</em><br>indicates the URL to redirect a page to
    * @return location
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * page URL
+   * <em>page URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * resource errors and warnings
+   * <em>resource errors and warnings</em>
    * @return resourceErrors
    */
   @javax.annotation.Nullable
@@ -165,8 +162,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * resource size
-* indicates the size of a given page measured in bytes
+   * <em>resource size</em><br>indicates the size of a given page measured in bytes
    * @return size
    */
   @javax.annotation.Nullable
@@ -189,8 +185,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * page size after encoding
-* indicates the size of the encoded page measured in bytes
+   * <em>page size after encoding</em><br>indicates the size of the encoded page measured in bytes
    * @return encodedSize
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * compressed page size
-* indicates the compressed size of a given page
+   * <em>compressed page size</em><br>indicates the compressed size of a given page
    * @return totalTransferSize
    */
   @javax.annotation.Nullable
@@ -237,10 +231,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * date and time when a resource was fetched
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when a resource was fetched</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return fetchTime
    */
   @javax.annotation.Nullable
@@ -263,7 +254,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * instructions for caching
+   * <em>instructions for caching</em>
    * @return cacheControl
    */
   @javax.annotation.Nullable
@@ -286,8 +277,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * website checks
-* on-page check-ups related to the page
+   * <em>website checks</em><br>on-page check-ups related to the page
    * @return checks
    */
   @javax.annotation.Nullable
@@ -310,7 +300,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * type of encoding
+   * <em>type of encoding</em>
    * @return contentEncoding
    */
   @javax.annotation.Nullable
@@ -333,7 +323,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * types of media used to display a page
+   * <em>types of media used to display a page</em>
    * @return mediaType
    */
   @javax.annotation.Nullable
@@ -356,7 +346,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * server version
+   * <em>server version</em>
    * @return server
    */
   @javax.annotation.Nullable
@@ -379,8 +369,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * contains data on changes related to the resource
-* if there is no data, the value will be null
+   * <em>contains data on changes related to the resource</em><br>if there is no data, the value will be <code>null</code>
    * @return lastModified
    */
   @javax.annotation.Nullable

@@ -47,8 +47,7 @@ public class OnPageKeywordDensityResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageKeywordDensityResultInfo  {
   }
 
   /**
-   * details of the crawling session
+   * <em>details of the crawling session</em>
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class OnPageKeywordDensityResultInfo  {
   }
 
   /**
-   * total number of relevant items
-* total number of keywords on the specified website or web page matching the set keyword_length and filters
+   * <em>total number of relevant items</em><br>total number of keywords on the specified website or web page matching the set <code>keyword_length</code> and <code>filters</code>
    * @return totalItemsCount
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class OnPageKeywordDensityResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class OnPageKeywordDensityResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

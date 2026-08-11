@@ -74,7 +74,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -97,7 +97,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * alt tag of the image
+   * <i>alt tag of the image</i>
    * @return alt
    */
   @javax.annotation.Nullable
@@ -120,7 +120,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -143,8 +143,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable

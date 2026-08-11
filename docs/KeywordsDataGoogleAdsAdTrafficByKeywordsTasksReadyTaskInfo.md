@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

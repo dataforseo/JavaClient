@@ -70,7 +70,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * price indicated in the element
+   * <em>price indicated in the element</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * link description
+   * <em>link description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -162,10 +162,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * merchant account provider
-* commerce site that hosts products or websites of individual sellers under the same merchant account
-* example:
-* by Google
+   * <em>merchant account provider</em><br>commerce site that hosts products or websites of individual sellers under the same merchant account<br>example:<br><code>by Google</code>
    * @return marketplace
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * relevant marketplace URL
-* URL of the page on the marketplace website where the product is hosted
+   * <em>relevant marketplace URL</em><br>URL of the page on the marketplace website where the product is hosted
    * @return marketplaceUrl
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -235,9 +231,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable

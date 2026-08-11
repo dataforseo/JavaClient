@@ -47,7 +47,7 @@ public class DataLabsGoogleReviewsSerpElementItem  extends BaseDataforseoLabsApi
   }
 
   /**
-   * the number of reviews
+   * <i>the number of reviews</i>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataLabsGoogleReviewsSerpElementItem  extends BaseDataforseoLabsApi
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataLabsGoogleReviewsSerpElementItem  extends BaseDataforseoLabsApi
   }
 
   /**
-   * the identifier of a place
+   * <em>the identifier of a place</em>
    * @return placeId
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class DataLabsGoogleReviewsSerpElementItem  extends BaseDataforseoLabsApi
   }
 
   /**
-   * the additional feature of the review
+   * <i>the additional feature of the review</i>
    * @return feature
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class DataLabsGoogleReviewsSerpElementItem  extends BaseDataforseoLabsApi
   }
 
   /**
-   * google-defined client id
+   * <em>google-defined client id</em>
    * @return cid
    */
   @javax.annotation.Nullable

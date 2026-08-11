@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpSeznamLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<SerpSeznamLanguagesResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,7 +47,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the results element in SERP
+   * <em>title of the results element in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * breadcrumb in SERP
+   * <em>breadcrumb in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * cached version of the page
+   * <em>cached version of the page</em>
    * @return cacheUrl
    */
   @javax.annotation.Nullable
@@ -185,8 +185,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * URL to a similar search
-* URL to a new search for the same keyword(s) on related sites
+   * <em>URL to a similar search</em><br>            URL to a new search for the same keyword(s) on related sites
    * @return relatedSearchUrl
    */
   @javax.annotation.Nullable
@@ -209,7 +208,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * name of the source website
+   * <em>name of the source website</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -232,7 +231,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains an image
+   * <em>indicates whether the element contains an <code class='prettyprint'>image</code></em>
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -255,7 +254,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains a video
+   * <em>indicates whether the element contains a <code class='prettyprint'>video</code></em>
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -278,7 +277,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is a featured_snippet
+   * <em>indicates whether the element is a <code class='prettyprint'>featured_snippet</code></em>
    * @return isFeaturedSnippet
    */
   @javax.annotation.Nullable
@@ -301,7 +300,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is marked as malicious
+   * <em>indicates whether the element is marked as malicious</em>
    * @return isMalicious
    */
   @javax.annotation.Nullable
@@ -324,7 +323,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is marked as a web story
+   * <em>indicates whether the element is marked as a web story</em>
    * @return isWebStory
    */
   @javax.annotation.Nullable
@@ -370,7 +369,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * includes additional information appended before the result description in SERP
+   * <em>includes additional information appended before the result description in SERP</em>
    * @return preSnippet
    */
   @javax.annotation.Nullable
@@ -393,7 +392,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * includes additional information appended after the result description in SERP
+   * <em>includes additional information appended after the result description in SERP</em>
    * @return extendedSnippet
    */
   @javax.annotation.Nullable
@@ -416,7 +415,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * images of the element
+   * <em>images of the element</em>
    * @return images
    */
   @javax.annotation.Nullable
@@ -439,8 +438,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * Accelerated Mobile Pages
-* indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>            indicates whether an item has the Accelerated Mobile Page (AMP) version
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -463,8 +461,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -487,8 +484,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result
+   * <em>pricing details</em><br>            contains the pricing details of the product or service featured in the result
    * @return price
    */
   @javax.annotation.Nullable
@@ -511,7 +507,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -534,9 +530,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * sitelinks
-* the links shown below some search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>            the links shown below some search results<br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable
@@ -560,9 +554,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * frequently asked questions
-* questions and answers extension shown below some search results
-* if there are none, equals null
+   * <em>frequently asked questions</em><br>            questions and answers extension shown below some search results<br>            if there are none, equals <code>null</code>
    * @deprecated
    * @return faq
    */
@@ -588,9 +580,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * extension of the organic element
-* extension of the organic result containing related search queries
-* Note: extension appears in SERP upon clicking on the result and then bouncing back to search results
+   * <em>extension of the organic element</em><br>            extension of the organic result containing related search queries<br>            <strong>Note:</strong> extension appears in SERP upon clicking on the result and then bouncing back to search results
    * @return extendedPeopleAlsoSearch
    */
   @javax.annotation.Nullable
@@ -614,8 +604,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * contains information from the ‘About this result’ panel
-* note: about_this_result feature is not available in Bing search engine, that’s why it always equals null
+   * <em>contains information from the 'About this result' panel</em><br>            <strong>note:</strong> <code>about_this_result</code> feature is not available in Bing search engine, that’s why it always equals <code>null</code>
    * @deprecated
    * @return aboutThisResult
    */
@@ -641,9 +630,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * related result from the same domain
-* related result from the same domain appears as a part of the main result snippet;
-* note: related_result feature is not available in Bing search engine, that’s why it always equals null
+   * <em>related result from the same domain</em><br>            related result from the same domain appears as a part of the main result snippet;<br>            <strong>note:</strong> <code>related_result</code> feature is not available in Bing search engine, that’s why it always equals <code>null</code>
    * @return relatedResult
    */
   @javax.annotation.Nullable
@@ -666,10 +653,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>            example:<br>            <code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

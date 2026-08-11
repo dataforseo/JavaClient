@@ -70,7 +70,7 @@ public class DataforseoLabsCarouselElement  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsCarouselElement  {
   }
 
   /**
-   * subtitle of the item
+   * <em>subtitle of the item</em>
    * @return subTitle
    */
   @javax.annotation.Nullable

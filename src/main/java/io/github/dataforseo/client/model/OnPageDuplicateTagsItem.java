@@ -47,7 +47,7 @@ public class OnPageDuplicateTagsItem  {
   }
 
   /**
-   * contains the value of duplicated tag
+   * <em>contains the value of duplicated tag</em>
    * @return accumulator
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageDuplicateTagsItem  {
   }
 
   /**
-   * total count of duplicate pages
+   * <em>total count of duplicate pages</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class OnPageDuplicateTagsItem  {
   }
 
   /**
-   * pages with duplicate tags
+   * <em>pages with duplicate tags</em>
    * @return pages
    */
   @javax.annotation.Nullable

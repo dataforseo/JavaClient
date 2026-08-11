@@ -47,7 +47,7 @@ public class FetchTiming  {
   }
 
   /**
-   * total time it takes until a browser receives a complete response from a server (in milliseconds)
+   * <em>total time it takes until a browser receives a complete response from a server (in milliseconds)</em>
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class FetchTiming  {
   }
 
   /**
-   * time to start downloading the HTML resource
-* the amount of time the browser needs to start downloading a page
+   * <em>time to start downloading the HTML resource</em><br>the amount of time the browser needs to start downloading a page
    * @return fetchStart
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class FetchTiming  {
   }
 
   /**
-   * time to complete downloading the HTML resource
-* the amount of time the browser needs to complete downloading a page
+   * <em>time to complete downloading the HTML resource</em><br>the amount of time the browser needs to complete downloading a page
    * @return fetchEnd
    */
   @javax.annotation.Nullable

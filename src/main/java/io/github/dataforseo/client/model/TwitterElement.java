@@ -70,7 +70,7 @@ public class TwitterElement  {
   }
 
   /**
-   * tweet message
+   * <i>tweet message</i>
    * @return tweet
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class TwitterElement  {
   }
 
   /**
-   * the date when the page source of the element was published
+   * <em>the date when the page source of the element was published</em>
    * @return date
    */
   @javax.annotation.Nullable
@@ -116,10 +116,7 @@ public class TwitterElement  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class TwitterElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable

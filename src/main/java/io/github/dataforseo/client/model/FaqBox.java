@@ -74,7 +74,7 @@ public class FaqBox  {
   }
 
   /**
-   * contains arrays of specific images
+   * <em>contains arrays of specific images</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageRedirectChainsResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageRedirectChainsResultInfo>** | <em>array of results</em> |[optional]|

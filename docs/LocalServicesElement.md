@@ -6,9 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**title** | **String** | title of a given link element |[optional]|
-**url** | **String** | source URL |[optional]|
-**domain** | **String** | domain where a link points |[optional]|
-**description** | **String** | link description |[optional]|
-**rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals null |[optional]|
-**profileImageUrl** | **String** | URL of the image featured in the element |[optional]|
+**title** | **String** | <em>title of a given link element</em> |[optional]|
+**url** | **String** | <em>source URL</em> |[optional]|
+**domain** | **String** | <em>domain where a link points</em> |[optional]|
+**description** | **String** | <em>link description</em> |[optional]|
+**rating** | **RatingInfo** | <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code> |[optional]|
+**profileImageUrl** | **String** | <em>URL of the image featured in the element</em> |[optional]|

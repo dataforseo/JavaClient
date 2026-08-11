@@ -47,7 +47,7 @@ public class KeywordsDataBingAudienceEstimationIndustriesResultInfo  {
   }
 
   /**
-   * ID of the industry
+   * <em>ID of the industry</em>
    * @return industryId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataBingAudienceEstimationIndustriesResultInfo  {
   }
 
   /**
-   * name of the industry
+   * <em>name of the industry</em>
    * @return industryName
    */
   @javax.annotation.Nullable

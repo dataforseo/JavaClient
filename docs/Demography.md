@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**age** | **List<DataforseoTrendsDataInfo>** | distribution of keyword popularity by age |[optional]|
-**gender** | **List<DataforseoTrendsDataInfo>** | distribution of keyword popularity by gender |[optional]|
+**age** | **List<DataforseoTrendsDataInfo>** | <em>distribution of keyword popularity by age</em> |[optional]|
+**gender** | **List<DataforseoTrendsDataInfo>** | <em>distribution of keyword popularity by gender</em> |[optional]|

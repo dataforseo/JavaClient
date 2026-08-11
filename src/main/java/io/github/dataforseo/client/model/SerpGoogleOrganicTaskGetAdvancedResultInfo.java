@@ -47,8 +47,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array<br></em><strong>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -237,7 +231,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chips
+   * <em>search refinement chips</em>
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -260,10 +254,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP.
-* possible item types:
-* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, recipes, top_sights, scholarly_articles, popular_products,  questions_and_answers, find_results_on, stocks_box, commercial_units, local_services, google_hotels, math_solver, currency_box,product_considerations, short_videos, refine_products, perspectives, discussions_and_forums, compare_sites, ai_overview
+   * <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><span><a href='#answer_box'><code>answer_box</code></a>, <a href='#app'><code>app</code></a>, <a href='#carousel'><code>carousel</code></a>, <a href='#multi_carousel'><code>multi_carousel</code></a>, <a href='#featured_snippet'><code>featured_snippet</code></a>, <a href='#google_flights'><code>google_flights</code></a>, <a href='#google_reviews'><code>google_reviews</code></a>, <a href='#third_party_reviews'><code>third_party_reviews</code></a>, <a href='#images'><code>images</code></a>, <a href='#jobs'><code>jobs</code></a>, <a href='#knowledge_graph'><code>knowledge_graph</code></a>, <a href='#local_pack'><code>local_pack</code></a>, <a href='#hotels_pack'><code>hotels_pack</code></a>, <a href='#map'><code>map</code></a>, <a href='#organic'><code>organic</code></a>, <a href='#paid'><code>paid</code></a>, <a href='#people_also_ask'><code>people_also_ask</code></a>, <a href='#related_searches'><code>related_searches</code></a>, <a href='#people_also_search'><code>people_also_search</code></a>, <a href='#shopping'><code>shopping</code></a>, <a href='#top_stories'><code>top_stories</code></a>, <a href='#twitter'><code>twitter</code></a>, <a href='#video'><code>video</code></a>, <a href='#events'><code>events</code></a>, <a href='#recipes'><code>recipes</code></a>, <a href='#top_sights'><code>top_sights</code></a>, <a href='#scholarly_articles'><code>scholarly_articles</code></a>, <a href='#popular_products'><code>popular_products</code></a>,  <a href='#questions_and_answers'><code>questions_and_answers</code></a>, <a href='#find_results_on'><code>find_results_on</code></a>, <a href='#stocks_box'><code>stocks_box</code></a>, <a href='#commercial_units'><code>commercial_units</code></a>, <a href='#local_services'><code>local_services</code></a>, <a href='#google_hotels'><code>google_hotels</code></a>, <a href='#math_solver'><code>math_solver</code></a>, <a href='#currency_box'><code>currency_box</code></a>,<a href='#product_considerations'><code>product_considerations</code></a>, <a href='#short_videos'><code>short_videos</code></a>, <a href='#refine_products'><code>refine_products</code></a>, <a href='#perspectives'><code>perspectives</code></a>, <a href='#discussions_and_forums'><code>discussions_and_forums</code></a></span>, <a href='#compare_sites'><code>compare_sites</code></a></span>, <a href='#ai_overview'><code>ai_overview</code></a></span>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -286,7 +277,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * total number of results in SERP
+   * <em> total number of results in SERP</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -309,8 +300,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * total search results pages retrieved
-* total number of retrieved SERPs in the result
+   * <em>total search results pages retrieved</em><br>total number of retrieved SERPs in the result
    * @return pagesCount
    */
   @javax.annotation.Nullable
@@ -333,7 +323,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -356,7 +346,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return items
    */
   @javax.annotation.Nullable

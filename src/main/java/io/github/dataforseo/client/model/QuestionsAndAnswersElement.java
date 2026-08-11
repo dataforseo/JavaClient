@@ -70,7 +70,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * question included in the item
+   * <em>question included in the item</em>
    * @return questionText
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * answer included in the item
+   * <em>answer included in the item</em>
    * @return answerText
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * answer upvotes from the source
+   * <em>answer upvotes from the source</em>
    * @return votes
    */
   @javax.annotation.Nullable

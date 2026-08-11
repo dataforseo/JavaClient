@@ -47,10 +47,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * title of the row
+   * <em>title of the row</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -121,10 +116,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * starting date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-15
+   * <em>starting date of stay</em><br>in the format 'year-month-date'<br>example:<br>2019-11-15
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -147,10 +139,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * ending date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-17
+   * <em>ending date of stay</em><br>in the format 'year-month-date'<br>example:<br>2019-11-17
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -173,9 +162,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* action:listen_artist
+   * <em>google defined data attribute ID</em><br>example:<br><code>action:listen_artist</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -198,7 +185,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * contains arrays of elements available in the list
+   * <em>contains arrays of elements available in the list</em>
    * @return items
    */
   @javax.annotation.Nullable

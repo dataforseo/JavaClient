@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageNonIndexableResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageNonIndexableResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,10 +47,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the value of the rating
+   * <em>the value of the rating</em>
    * @return value
    */
   @javax.annotation.Nullable
@@ -121,9 +116,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * value converted to a requested currency
-* indicates the exact value based on Google Fincance data at the time when our API pulled the results
-* note that exchange rates displayed in the currency_box element may be delayed according to the Google Finance disclaimer
+   * <i>value converted to a requested currency</i><br>indicates the exact value based on Google Fincance data at the time when our API pulled the results<br>note that exchange rates displayed in the <code>currency_box</code> element may be delayed according to <a href='https://www.google.com/intl/en_us/googlefinance/disclaimer/'>the Google Finance disclaimer</a>
    * @return convertedValue
    */
   @javax.annotation.Nullable
@@ -146,8 +139,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * currency of the listed price
-* ISO code of the currency applied to the price
+   * <i>currency of the listed price</i><br>ISO code of the currency applied to the price
    * @return currency
    */
   @javax.annotation.Nullable
@@ -170,7 +162,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * converted currency
+   * <em>converted currency</em>
    * @return convertedCurrency
    */
   @javax.annotation.Nullable
@@ -193,10 +185,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -219,8 +208,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * table present in the element
-* the header and content of the table present in the element
+   * <em>table present in the element</em><br>the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable
@@ -243,7 +231,7 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains data provided in the graph of the element
+   * <em>contains data provided in the graph of the element</em>
    * @return graph
    */
   @javax.annotation.Nullable

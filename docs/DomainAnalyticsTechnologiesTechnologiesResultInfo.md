@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**groups** | **List<Groups>** | array of technology groups |[optional]|
+**groups** | **List<Groups>** | <em>array of technology groups</em> |[optional]|

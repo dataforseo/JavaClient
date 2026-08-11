@@ -47,7 +47,7 @@ public class DataforseoLabsKnowledgeGraphExpandedItemElementItem  extends BaseDa
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class DataforseoLabsKnowledgeGraphExpandedItemElementItem  extends BaseDa
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* action:listen_artist
+   * <em>google defined data attribute ID</em><br>            example:<br>            <code>action:listen_artist</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class DataforseoLabsKnowledgeGraphExpandedItemElementItem  extends BaseDa
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return expandedElement
    */
   @javax.annotation.Nullable

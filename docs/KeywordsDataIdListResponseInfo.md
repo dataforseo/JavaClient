@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataIdListTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

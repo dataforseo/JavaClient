@@ -47,8 +47,7 @@ public class KeywordKpi  {
   }
 
   /**
-   * keyword data aggregated for desktop devices
-* if there is no data, then the value is null
+   * <em>keyword data aggregated for desktop devices</em><br>if there is no data, then the value is_<code>null</code>n
    * @return desktop
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class KeywordKpi  {
   }
 
   /**
-   * keyword data aggregated for mobile devices
-* if there is no data, then the value is null
+   * <em>keyword data aggregated for mobile devices</em><br>if there is no data, then the value is_<code>null</code>n
    * @return mobile
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class KeywordKpi  {
   }
 
   /**
-   * keyword data aggregated for tablet devices
-* if there is no data, then the value is null
+   * <em>keyword data aggregated for tablet devices</em><br>if there is no data, then the value is_<code>null</code>n
    * @return tablet
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class DataforseoLabsKnowledgeGraphDescriptionItemElementItem  extends Bas
   }
 
   /**
-   * description content
+   * <em>description content</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class DataforseoLabsKnowledgeGraphDescriptionItemElementItem  extends Bas
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable

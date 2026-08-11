@@ -47,8 +47,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo  {
   }
 
   /**
-   * distribution of websites by country
-* contains country codes and number of websites per country
+   * <em>distribution of websites by country</em><br>contains country codes and number of websites per country
    * @return countries
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo  {
   }
 
   /**
-   * distribution of websites by language
-* contains language codes and number of websites per language
+   * <em>distribution of websites by language</em><br>contains language codes and number of websites per language
    * @return languages
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo  {
   }
 
   /**
-   * distribution of websites by content language
-* contains content language codes and number of websites per language
+   * <em>distribution of websites by content language</em><br>contains content language codes and number of websites per language
    * @return contentLanguages
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo  {
   }
 
   /**
-   * distribution of websites by keywords
-* contains keywords found in the websites’ titles, descriptions or meta keywords, and number of websites using each keyword
+   * <em>distribution of websites by keywords</em><br>contains keywords found in the websites' titles, descriptions or meta keywords, and number of websites using each keyword
    * @return keywords
    */
   @javax.annotation.Nullable

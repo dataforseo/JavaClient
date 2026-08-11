@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpBingOrganicLiveAdvancedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpBingOrganicLiveAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

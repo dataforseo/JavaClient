@@ -47,7 +47,7 @@ public class AvailibleVersions  {
   }
 
   /**
-   * lighthouse version
+   * <em>lighthouse version</em>
    * @return version
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AvailibleVersions  {
   }
 
   /**
-   * the version is used by default
-* if false, the version is not used by default and should be specified in the corresponding field of the POST request if necessary
+   * <em>the version is used by default</em><br>if <code>false</code>, the version is not used by default and should be specified in the corresponding field of the POST request if necessary
    * @return default_
    */
   @javax.annotation.Nullable

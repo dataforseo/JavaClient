@@ -47,9 +47,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * title of the item
+   * <em>title of the item</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* ss:/webfacts:net_worth
+   * <em>google defined data attribute ID</em><br>example:<br><code>ss:/webfacts:net_worth</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return link
    */
   @javax.annotation.Nullable
@@ -167,8 +162,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * <em>additional items present in the element</em><br>if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable

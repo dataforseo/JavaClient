@@ -47,8 +47,7 @@ public class GoogleShoppingSellersBuyOnGoogleElementItem  extends BaseMerchantGo
   }
 
   /**
-   * shop rating
-* the shop popularity rate based on product reviews
+   * <em>shop rating</em><br>the shop popularity rate based on product reviews
    * @return rating
    */
   @javax.annotation.Nullable

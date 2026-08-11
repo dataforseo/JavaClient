@@ -47,7 +47,7 @@ public class OnPageKeywordDensityItem  {
   }
 
   /**
-   * returned keyword
+   * <em>returned keyword</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class OnPageKeywordDensityItem  {
   }
 
   /**
-   * keyword frequency
-* number of times the keyword appears on the website (or webpage if you specified a url)
+   * <em>keyword frequency</em><br>number of times the keyword appears on the website (or webpage if you specified a <code>url</code>)
    * @return frequency
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class OnPageKeywordDensityItem  {
   }
 
   /**
-   * keyword density
-* calculated as a ratio of frequency to the total count of keywords with the set keyword_length on the web page or website
+   * <em>keyword density</em><br>calculated as a ratio of <code>frequency</code> to the total count of keywords with the set <code>keyword_length</code> on the web page or website
    * @return density
    */
   @javax.annotation.Nullable

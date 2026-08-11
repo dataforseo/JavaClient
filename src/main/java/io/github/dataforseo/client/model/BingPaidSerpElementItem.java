@@ -47,7 +47,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * domain of the ad element in SERP
+   * <em>domain of the ad element in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the ad element in SERP
+   * <em>title of the ad element in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * description of the ad element in SERP
+   * <em>description of the ad element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * relevant URL of the ad element in SERP
+   * <em>relevant URL of the ad element in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * breadcrumb of the ad element in SERP
+   * <em>breadcrumb of the ad element in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * website name in SERP
+   * <em>website name in SERP</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains an image
+   * <em>indicates whether the element contains an <code class='prettyprint'>image</code></em>
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains a video
+   * <em>indicates whether the element contains a <code class='prettyprint'>video</code></em>
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * images of the element
+   * <em>images of the element</em><br>            if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * additional information about the result
+   * <em>additional information about the result</em>
    * @return extra
    */
   @javax.annotation.Nullable
@@ -323,8 +323,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * extended description
-* if there is none, equals null
+   * <em>extended description</em><br>            if there is none, equals <code>null</code>
    * @return descriptionRows
    */
   @javax.annotation.Nullable
@@ -347,7 +346,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * links featured in the organic result
+   * <em>links featured in the organic result</em>
    * @return links
    */
   @javax.annotation.Nullable
@@ -370,7 +369,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * price of booking a place for the specified dates of stay
+   * <em>price of booking a place for the specified dates of stay</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -393,8 +392,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable

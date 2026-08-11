@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageKeywordDensityResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageKeywordDensityResultInfo>** | <em>array of results</em> |[optional]|

@@ -37,284 +37,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_KEYWORD = "keyword";
-  @SerializedName(SERIALIZED_NAME_KEYWORD)
-  private String keyword;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo keyword(String keyword) {
-    this.keyword = keyword;
-    return this;
-  }
-
-  /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”;
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
-   * @return keyword
-   */
-  @javax.annotation.Nullable
-  public String getKeyword() {
-    return keyword;
-  }
-
-  public void setKeyword(String keyword) {
-    this.keyword = keyword;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
-  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo locationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-    return this;
-  }
-
-  /**
-   * search engine location code
-* required field if you don't specify location_name 
-* if you use this field, you don't need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
-   * @return locationCode
-   */
-  @javax.annotation.Nullable
-  public Integer getLocationCode() {
-    return locationCode;
-  }
-
-  public void setLocationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_DEVICE = "device";
-  @SerializedName(SERIALIZED_NAME_DEVICE)
-  private String device;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo device(String device) {
-    this.device = device;
-    return this;
-  }
-
-  /**
-   * device type
-* optional field
-* return results for a specific device type
-* available values: desktop, mobile
-   * @return device
-   */
-  @javax.annotation.Nullable
-  public String getDevice() {
-    return device;
-  }
-
-  public void setDevice(String device) {
-    this.device = device;
-  }
-
-
-  public static final String SERIALIZED_NAME_BLOCK_DEPTH = "block_depth";
-  @SerializedName(SERIALIZED_NAME_BLOCK_DEPTH)
-  private Integer blockDepth;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo blockDepth(Integer blockDepth) {
-    this.blockDepth = blockDepth;
-    return this;
-  }
-
-  /**
-   * parsing depth
-* optional field
-* number of blocks of results in SERP
-* default value: 20
-* max value: 200
-* Note: your account will be billed per each SERP containing up to 20 results;
-* thus, setting a block depth above 20 may result in additional charges if the search engine returns more than 20 results;
-* if the specified block depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
-   * @return blockDepth
-   */
-  @javax.annotation.Nullable
-  public Integer getBlockDepth() {
-    return blockDepth;
-  }
-
-  public void setBlockDepth(Integer blockDepth) {
-    this.blockDepth = blockDepth;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don't specify location_code
-* if you use this field, you don't need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
-  private String searchParam;
-
-  public SerpYoutubeOrganicLiveAdvancedRequestInfo searchParam(String searchParam) {
-    this.searchParam = searchParam;
-    return this;
-  }
-
-  /**
-   * additional parameters of the search query
-* optional field
-* example:
-* sp=EgIQAg%253D%253D
-   * @return searchParam
-   */
-  @javax.annotation.Nullable
-  public String getSearchParam() {
-    return searchParam;
-  }
-
-  public void setSearchParam(String searchParam) {
-    this.searchParam = searchParam;
-  }
-
-
 
   public SerpYoutubeOrganicLiveAdvancedRequestInfo() {
   }
@@ -355,19 +77,9 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
 
 
     
-    SerpYoutubeOrganicLiveAdvancedRequestInfo serpYoutubeOrganicLiveAdvancedRequestInfo = (SerpYoutubeOrganicLiveAdvancedRequestInfo) o;
-    return
-
-        Objects.equals(this.keyword, serpYoutubeOrganicLiveAdvancedRequestInfo.keyword) &&
-        Objects.equals(this.locationCode, serpYoutubeOrganicLiveAdvancedRequestInfo.locationCode) &&
-        Objects.equals(this.languageCode, serpYoutubeOrganicLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpYoutubeOrganicLiveAdvancedRequestInfo.device) &&
-        Objects.equals(this.blockDepth, serpYoutubeOrganicLiveAdvancedRequestInfo.blockDepth) &&
-        Objects.equals(this.locationName, serpYoutubeOrganicLiveAdvancedRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpYoutubeOrganicLiveAdvancedRequestInfo.languageName) &&
-        Objects.equals(this.os, serpYoutubeOrganicLiveAdvancedRequestInfo.os) &&
-        Objects.equals(this.tag, serpYoutubeOrganicLiveAdvancedRequestInfo.tag) &&
-        Objects.equals(this.searchParam, serpYoutubeOrganicLiveAdvancedRequestInfo.searchParam);  
+      
+    return true;
+      
     
   }
 
@@ -377,7 +89,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, device, blockDepth, locationName, languageName, os, tag, searchParam);
+  return Objects.hash();
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -392,16 +104,6 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpYoutubeOrganicLiveAdvancedRequestInfo {\n");
 
-    sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    blockDepth: ").append(toIndentedString(blockDepth)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -424,26 +126,6 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    
-    openapiFields.add("keyword");
-    
-    openapiFields.add("location_code");
-    
-    openapiFields.add("language_code");
-    
-    openapiFields.add("device");
-    
-    openapiFields.add("block_depth");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("search_param");
     
 
     // a set of required properties/fields (JSON key names)

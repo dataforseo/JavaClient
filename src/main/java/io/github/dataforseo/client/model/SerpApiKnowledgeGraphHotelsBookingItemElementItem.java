@@ -47,9 +47,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,10 +116,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * starting date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-15
+   * <em>starting date of stay</em><br>in the format “year-month-date”<br>example:<br>2019-11-15
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -145,10 +139,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * ending date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-17
+   * <em>ending date of stay</em><br>in the format “year-month-date”<br>example:<br>2019-11-17
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -171,9 +162,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* kc:/local:hotel booking
+   * <em>google defined data attribute ID</em><br>example:<br><code>kc:/local:hotel booking</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -196,8 +185,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * popular keywords relevant to the initial search query
-* if there are none, equals null
+   * <em>popular keywords relevant to the initial search query</em><br>if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable

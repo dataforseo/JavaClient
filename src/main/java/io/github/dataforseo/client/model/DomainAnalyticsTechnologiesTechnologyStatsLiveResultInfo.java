@@ -47,7 +47,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo  {
   }
 
   /**
-   * target technology
+   * <em>target technology</em>
    * @return technology
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo  {
   }
 
   /**
-   * starting date of the time range
+   * <em>starting date of the time range</em>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo  {
   }
 
   /**
-   * ending date of the time range
+   * <em>ending date of the time range</em>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -108,23 +108,23 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private Integer itemsCount;
 
-  public DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo itemsCount(Long itemsCount) {
+  public DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo itemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
 
   /**
-   * number of items in the results array
+   * 
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public Integer getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -139,7 +139,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo  {
   }
 
   /**
-   * items array
+   * 
    * @return items
    */
   @javax.annotation.Nullable

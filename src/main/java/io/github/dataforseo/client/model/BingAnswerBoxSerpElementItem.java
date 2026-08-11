@@ -47,8 +47,7 @@ public class BingAnswerBoxSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * text
-* if there is none, equals null
+   * <em>text</em><br>            if there is none, equals <code>null</code>
    * @return text
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class BingAnswerBoxSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * links featured in the organic result
+   * <em>links featured in the organic result</em>
    * @return links
    */
   @javax.annotation.Nullable

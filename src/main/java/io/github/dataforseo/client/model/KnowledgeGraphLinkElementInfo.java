@@ -70,7 +70,7 @@ public class KnowledgeGraphLinkElementInfo  {
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KnowledgeGraphLinkElementInfo  {
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KnowledgeGraphLinkElementInfo  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KnowledgeGraphLinkElementInfo  {
   }
 
   /**
-   * text alongside the link title
+   * <em>text alongside the link title</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class KnowledgeGraphLinkElementInfo  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

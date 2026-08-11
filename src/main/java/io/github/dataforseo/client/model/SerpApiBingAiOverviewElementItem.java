@@ -47,9 +47,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * text or description of the element in SERP
+   * <em>text or description of the element in SERP</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -141,9 +139,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * sitelinks
-* the links shown below some search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>            the links shown below some search results<br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * images of the element
+   * <em>images of the element</em>
    * @return images
    */
   @javax.annotation.Nullable
@@ -189,8 +185,7 @@ public class SerpApiBingAiOverviewElementItem  extends BaseSerpApiBingAiOverview
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>            includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

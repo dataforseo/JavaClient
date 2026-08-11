@@ -47,7 +47,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * average number of referring domains
+   * <em>average number of referring domains</em>
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * average number of referring main domains
+   * <em>average number of referring main domains</em>
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * average number of referring pages
+   * <em>average number of referring pages</em>
    * @return referringPages
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * average number of dofollow links
+   * <em>average number of dofollow links</em>
    * @return dofollow
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * average number of backlinks
+   * <em>average number of backlinks</em>
    * @return backlinks
    */
   @javax.annotation.Nullable
@@ -162,10 +162,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * date and time when backlink data was updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when backlink data was updated</em><br>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>            example:<br>            <code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timeUpdate
    */
   @javax.annotation.Nullable

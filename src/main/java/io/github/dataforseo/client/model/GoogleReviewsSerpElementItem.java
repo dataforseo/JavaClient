@@ -47,10 +47,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values;
-* positions of elements with different type values are omitted from rank_group;
-* always equals 0 for desktop
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
-* always equals 0 for desktop
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code>
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -98,7 +93,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the number of reviews
+   * <i>the number of reviews</i>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -121,9 +116,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the element’s rating
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the element's rating</em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -146,7 +139,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the identifier of a place
+   * <em>the identifier of a place</em>
    * @return placeId
    */
   @javax.annotation.Nullable
@@ -169,7 +162,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the additional feature of the review
+   * <i>the additional feature of the review</i>
    * @return feature
    */
   @javax.annotation.Nullable
@@ -192,7 +185,7 @@ public class GoogleReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * google-defined client id
+   * <em>google-defined client id</em>
    * @return cid
    */
   @javax.annotation.Nullable

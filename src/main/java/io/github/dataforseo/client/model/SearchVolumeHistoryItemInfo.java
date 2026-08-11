@@ -47,7 +47,7 @@ public class SearchVolumeHistoryItemInfo  {
   }
 
   /**
-   * year
+   * <em>year</em>
    * @return year
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SearchVolumeHistoryItemInfo  {
   }
 
   /**
-   * month
+   * <em>month</em>
    * @return month
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SearchVolumeHistoryItemInfo  {
   }
 
   /**
-   * day of the month
+   * <em>day of the month</em>
    * @return day
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SearchVolumeHistoryItemInfo  {
   }
 
   /**
-   * search volume rate
+   * <em>search volume rate</em>
    * @return searchVolume
    */
   @javax.annotation.Nullable

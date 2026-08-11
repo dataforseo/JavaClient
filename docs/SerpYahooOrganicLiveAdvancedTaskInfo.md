@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYahooOrganicLiveAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYahooOrganicLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

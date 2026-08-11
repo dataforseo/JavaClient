@@ -47,7 +47,7 @@ public class SerpApiProductConsiderationsAiOverviewExpandedElementItem  extends 
   }
 
   /**
-   * items present in the element
+   * <em>items present in the element</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class SerpApiProductConsiderationsAiOverviewExpandedElementItem  extends 
   }
 
   /**
-   * additional references relevant to the item
-* includes references to webpages that may have been used to generate the ai_overview
+   * <em>additional references relevant to the item</em><br>includes references to webpages that may have been used to generate the <code>ai_overview</code>
    * @return references
    */
   @javax.annotation.Nullable

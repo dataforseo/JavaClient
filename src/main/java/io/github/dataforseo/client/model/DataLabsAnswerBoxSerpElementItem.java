@@ -47,8 +47,7 @@ public class DataLabsAnswerBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * text
-* if there is none, equals null
+   * <em>text</em><br>            if there is none, equals <code>null</code>
    * @return text
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class DataLabsAnswerBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable

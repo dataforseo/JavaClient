@@ -47,9 +47,7 @@ public class SerpApiKnowledgeGraphExpandedItemElementItem  extends BaseSerpApiKn
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiKnowledgeGraphExpandedItemElementItem  extends BaseSerpApiKn
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class SerpApiKnowledgeGraphExpandedItemElementItem  extends BaseSerpApiKn
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class SerpApiKnowledgeGraphExpandedItemElementItem  extends BaseSerpApiKn
   }
 
   /**
-   * google defined data attribute ID
-* example:
-* kc:/local:place qa
+   * <em>google defined data attribute ID</em><br>example:<br><code>kc:/local:place qa</code>
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class SerpApiKnowledgeGraphExpandedItemElementItem  extends BaseSerpApiKn
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return expandedElement
    */
   @javax.annotation.Nullable

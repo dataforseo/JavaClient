@@ -70,7 +70,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem  {
   }
 
   /**
-   * technology group id
+   * <em>technology group id</em>
    * @return group
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem  {
   }
 
   /**
-   * technology category id
+   * <em>technology category id</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem  {
   }
 
   /**
-   * technology name
+   * <em>technology name</em>
    * @return technology
    */
   @javax.annotation.Nullable
@@ -139,8 +139,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem  {
   }
 
   /**
-   * technology groups count
-* number of domains that match the parameters you specified and are using technologies from the indicated group
+   * <em>technology groups count</em><br>number of domains that match the parameters you specified and are using technologies from the indicated <code>group</code>
    * @return groupsCount
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem  {
   }
 
   /**
-   * technology categories count
-* number of domains that match the parameters you specified and are using technologies from the indicated category
+   * <em>technology categories count</em><br>number of domains that match the parameters you specified and are using technologies from the indicated <code>category</code>
    * @return categoriesCount
    */
   @javax.annotation.Nullable
@@ -187,8 +185,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem  {
   }
 
   /**
-   * technologies count
-* number of domains that match the parameters you specified and are using the indicated technology
+   * <em>technologies count</em><br>number of domains that match the parameters you specified and are using the indicated <code>technology</code>
    * @return technologiesCount
    */
   @javax.annotation.Nullable

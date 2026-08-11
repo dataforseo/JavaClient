@@ -47,22 +47,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * represents the position of the relevant ad in SERP
-* can take the following values:
-* FirstPage1: The first ad to appear on the right side of the first search results page
-* FirstPage2: The second ad to appear on the right side of the first search results page
-* FirstPage3: The third ad to appear on the right side of the first search results page
-* FirstPage4: The fourth ad to appear on the right side of the first search results page
-* FirstPage5: The fifth ad to appear on the right side of the first search results page
-* FirstPage6: The sixth ad to appear on the right side of the first search results page
-* FirstPage7: The seventh ad to appear on the right side of the first search results page
-* FirstPage8: The eighth ad to appear on the right side of the first search results page
-* FirstPage9: The ninth ad to appear on the right side of the first search results page
-* FirstPage10: The tenth ad to appear on the right side of the first search results page
-* MainLine1: The first ad to appear at the top of the search results page
-* MainLine2: The second ad to appear at the top of the search results page
-* MainLine3: The third ad to appear at the top of the search results page
-* MainLine4: The fourth ad to appear at the top of the search results page
+   * <em>represents the position of the relevant ad in SERP</em><br>can take the following values:<br><code>FirstPage1</code>: The first ad to appear on the right side of the first search results page<br><code>FirstPage2</code>: The second ad to appear on the right side of the first search results page<br><code>FirstPage3</code>: The third ad to appear on the right side of the first search results page<br><code>FirstPage4</code>: The fourth ad to appear on the right side of the first search results page<br><code>FirstPage5</code>: The fifth ad to appear on the right side of the first search results page<br><code>FirstPage6</code>: The sixth ad to appear on the right side of the first search results page<br><code>FirstPage7</code>: The seventh ad to appear on the right side of the first search results page<br><code>FirstPage8</code>: The eighth ad to appear on the right side of the first search results page<br><code>FirstPage9</code>: The ninth ad to appear on the right side of the first search results page<br><code>FirstPage10</code>: The tenth ad to appear on the right side of the first search results page<br><code>MainLine1</code>: The first ad to appear at the top of the search results page<br><code>MainLine2</code>: The second ad to appear at the top of the search results page<br><code>MainLine3</code>: The third ad to appear at the top of the search results page<br><code>MainLine4</code>: The fourth ad to appear at the top of the search results page
    * @return adPosition
    */
   @javax.annotation.Nullable
@@ -85,8 +70,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * ad clicks
-* the number of clicks that the keyword and match type generated during the last month
+   * <em>ad clicks</em><br>the number of clicks that the keyword and match type generated during the last month
    * @return clicks
    */
   @javax.annotation.Nullable
@@ -109,8 +93,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * ad impressions
-* the number of impressions that the keyword and match type generated during the last month
+   * <em>ad impressions</em><br>the number of impressions that the keyword and match type generated during the last month
    * @return impressions
    */
   @javax.annotation.Nullable
@@ -133,8 +116,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * average cost per click, USD
-* calculated by dividing the cost of all clicks by the number of clicks
+   * <em>average cost per click, USD</em><br>calculated by dividing the cost of all clicks by the number of clicks
    * @return averageCpc
    */
   @javax.annotation.Nullable
@@ -157,8 +139,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * click-through rate as a percentage
-* calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100
+   * <em>click-through rate as a percentage</em><br>calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100
    * @return ctr
    */
   @javax.annotation.Nullable
@@ -181,8 +162,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * total cost of an ad, USD
-* the cost of using the specified keyword and match type during the last month
+   * <em>total cost of an ad, USD</em><br>the cost of using the specified keyword and match type during the last month
    * @return totalCost
    */
   @javax.annotation.Nullable
@@ -205,7 +185,7 @@ public class KeywordKpiItemInfo  {
   }
 
   /**
-   * average bid of the keyword
+   * <em>average bid of the keyword</em>
    * @return averageBid
    */
   @javax.annotation.Nullable

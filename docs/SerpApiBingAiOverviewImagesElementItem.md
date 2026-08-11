@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**url** | **String** | URL link |[optional]|
-**title** | **String** | title of the link element |[optional]|
-**items** | **List<AiModeImagesElementInfo>** | items featured in the faq_box |[optional]|
+**url** | **String** | <em>URL link</em> |[optional]|
+**title** | **String** | <em>title of the link element</em> |[optional]|
+**items** | **List<AiModeImagesElementInfo>** | <em>items featured in the faq_box</em> |[optional]|

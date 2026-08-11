@@ -47,7 +47,7 @@ public class DataLabsHotelsPackSerpElementItem  extends BaseDataforseoLabsApiEle
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,10 +70,7 @@ public class DataLabsHotelsPackSerpElementItem  extends BaseDataforseoLabsApiEle
   }
 
   /**
-   * starting date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-15
+   * <em>starting date of stay</em><br>            in the format “year-month-date”<br>            example:<br>            2019-11-15
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -96,10 +93,7 @@ public class DataLabsHotelsPackSerpElementItem  extends BaseDataforseoLabsApiEle
   }
 
   /**
-   * ending date of stay
-* in the format “year-month-date”
-* example:
-* 2019-11-17
+   * <em>ending date of stay</em><br>            in the format “year-month-date”<br>            example:<br>            2019-11-17
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -122,7 +116,7 @@ public class DataLabsHotelsPackSerpElementItem  extends BaseDataforseoLabsApiEle
   }
 
   /**
-   * historical SERPs and related data found in the database
+   * <em>historical SERPs and related data found in the database</em>
    * @return items
    */
   @javax.annotation.Nullable

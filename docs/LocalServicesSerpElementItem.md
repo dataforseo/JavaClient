@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
-**title** | **String** | title of the row |[optional]|
-**url** | **String** | URL of the third-party review source |[optional]|
-**domain** | **String** | domain of the website hosting the video |[optional]|
-**items** | **List<LocalServicesElement>** | contains arrays of elements available in the list |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**title** | **String** | <em>title of the row</em> |[optional]|
+**url** | **String** | <i>URL of the third-party review source</i> |[optional]|
+**domain** | **String** | <em>domain of the website hosting the video</em> |[optional]|
+**items** | **List<LocalServicesElement>** | <em>contains arrays of elements available in the list</em> |[optional]|

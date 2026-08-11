@@ -70,9 +70,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * absolute rank in SERP for the target domain
-* absolute position among all the elements in SERP
+   * <em> absolute rank in SERP for the target domain</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * name of the author of the comment
+   * <em>name of the author of the comment</em>
    * @return authorName
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * the URL of the page where the author’s channel logo is hosted
+   * <em>the URL of the page where the author's channel logo is hosted</em>
    * @return authorThumbnail
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * URL of the author’s channel
+   * <em>URL of the author's channel</em>
    * @return authorUrl
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * text of the comment
+   * <em>text of the comment</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * displayed publication date
+   * <em>displayed publication date</em>
    * @return publicationDate
    */
   @javax.annotation.Nullable
@@ -234,10 +231,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2022-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2022-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -260,7 +254,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * number of likes on the comment
+   * <em>number of likes on the comment</em>
    * @return likesCount
    */
   @javax.annotation.Nullable
@@ -283,7 +277,7 @@ public class YoutubeComment  {
   }
 
   /**
-   * number of replies on the comment
+   * <em>number of replies on the comment</em>
    * @return replyCount
    */
   @javax.annotation.Nullable

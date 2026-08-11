@@ -70,9 +70,7 @@ public class GraphElement  {
   }
 
   /**
-   * date when the video was published or indexed
-* example:
-* Apr 26, 2024
+   * <em>date when the video was published or indexed</em><br>example: <br><code>Apr 26, 2024</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class GraphElement  {
   }
 
   /**
-   * the value of the rating
+   * <em>the value of the rating</em>
    * @return value
    */
   @javax.annotation.Nullable

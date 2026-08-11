@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**items** | **List<QuestionsAndAnswersElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**items** | **List<QuestionsAndAnswersElement>** | <em>contains results featured in the 'hotels_pack' element of SERP</em> |[optional]|

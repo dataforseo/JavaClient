@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageWaterfallTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<OnPageWaterfallTaskInfo>** | <em>array of tasks</em> |[optional]|

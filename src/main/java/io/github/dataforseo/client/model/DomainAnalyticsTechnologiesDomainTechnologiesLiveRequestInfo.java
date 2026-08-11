@@ -47,10 +47,7 @@ public class DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo  {
   }
 
   /**
-   * target domain
-* required field
-* domain name of the website to analyze
-* Note: results will be returned for the specified domain only
+   * <em>target domain</em><br><strong>required field</strong><br>domain name of the website to analyze<br><strong>Note:</strong> results will be returned for the specified domain only
    * @return target
    */
   @javax.annotation.Nullable

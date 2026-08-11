@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo>** | <em>array of results</em> |[optional]|

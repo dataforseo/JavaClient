@@ -47,8 +47,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
   /**
-   * monthly price multiplier
-* indicates the number of months covered by the monthly payment for the product
+   * <em>monthly price multiplier</em><br>indicates the number of months covered by the monthly payment for the product
    * @return priceMultiplier
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
   /**
-   * installment details as displayed in the results
-* shows how the product price can be broken down into monthly payments, if applicable
+   * <em>installment details as displayed in the results</em><br>shows how the product price can be broken down into monthly payments, if applicable
    * @return displayedPaymentBreakdown
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
   /**
-   * shop rating
-* the shop popularity rate based on product reviews
+   * <em>shop rating</em><br>the shop popularity rate based on product reviews
    * @return rating
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
   /**
-   * indicated condition of the product
-* possible values: Used, Refurbished, New, Pre-owned, null
+   * <em>indicated condition of the product</em><br>possible values: <code>Used</code>, <code>Refurbished</code>, <code>New</code>, <code>Pre-owned</code>, <code>null</code>
    * @return productCondition
    */
   @javax.annotation.Nullable
@@ -143,9 +139,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
   /**
-   * data from annotations and badges with special offers
-* if there is no annotation for this product, the value will be null
-* examples: LOW PRICE, SPECIAL OFFER, SALE, PRICE DROP
+   * <em>data from annotations and badges with special offers</em><br>if there is no annotation for this product, the value will be <code>null</code><br>examples: <code>LOW PRICE</code>, <code>SPECIAL OFFER</code>, <code>SALE</code>, <code>PRICE DROP</code>
    * @return productAnnotation
    */
   @javax.annotation.Nullable
@@ -168,9 +162,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
   /**
-   * product availability information
-* product availability information
-* can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+   * <em>product availability information</em><br>product availability information<br>can take the following values: <code>in_stock</code>, <code>limited_stock</code>, <code>out_of_stock</code>, <code>backordered</code>, <code>pre_order_available</code>, <code>on_display_to_order</code>
    * @return productAvailability
    */
   @javax.annotation.Nullable

@@ -47,8 +47,7 @@ public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
   }
 
   /**
-   * hreflang validity status
-* indicates whether the hreflang attribute is correctly implemented
+   * <em>hreflang validity status</em><br>indicates whether the hreflang attribute is correctly implemented
    * @return isValidHreflang
    */
   @javax.annotation.Nullable
@@ -71,9 +70,7 @@ public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
   }
 
   /**
-   * hreflang attribute value
-* language and optional country code specified in the hreflang attribute
-* example: 'en-US', 'fr'
+   * <em>hreflang attribute value</em><br>language and optional country code specified in the hreflang attribute<br>example: <code>'en-US'</code>, <code>'fr'</code>
    * @return hreflang
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class KeywordsDataClickstreamDataSearchVolumeLiveItem  {
   }
 
   /**
-   * keyword provided in the POST array
+   * <em>keyword provided in the POST array</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataClickstreamDataSearchVolumeLiveItem  {
   }
 
   /**
-   * current search volume rate of a keyword
+   * <em>current search volume rate of a keyword</em>
    * @return searchVolume
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class KeywordsDataClickstreamDataSearchVolumeLiveItem  {
   }
 
   /**
-   * monthly search volume rates
-* array of objects with search volume rates in a certain month of a year
+   * <em>monthly search volume rates</em><br>array of objects with search volume rates in a certain month of a year
    * @return monthlySearches
    */
   @javax.annotation.Nullable

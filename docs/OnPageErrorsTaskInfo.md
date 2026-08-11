@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageErrorsResultInfo>** | <em>array of results</em> |[optional]|

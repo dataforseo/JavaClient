@@ -47,9 +47,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * link anchor text
+   * <em>link anchor text</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * text snippet of the video
+   * <em>text snippet of the video</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * link URL
+   * <em>link URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>            the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * source of the element
-* indicates the source of information included in the questions_and_answers_element
+   * <i>source of the element</i><br>            indicates the source of information included in the <code>questions_and_answers_element</code>
    * @return source
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * the date when the page source of the element was published
+   * <em>the date when the page source of the element was published</em>
    * @return date
    */
   @javax.annotation.Nullable
@@ -235,10 +231,7 @@ public class SerpApiBingAiOverviewVideoElementItem  extends BaseSerpApiBingAiOve
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>            in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>            example:<br>            <code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

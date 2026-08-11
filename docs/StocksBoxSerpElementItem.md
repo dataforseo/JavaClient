@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
-**title** | **String** | title of the row |[optional]|
-**source** | **String** | source of the element<br>indicates the source of information included in the recipes_element |[optional]|
-**snippet** | **String** | text alongside the link title |[optional]|
-**price** | **PriceInfo** | price indicated in the element |[optional]|
-**url** | **String** | URL of the third-party review source |[optional]|
-**domain** | **String** | domain of the website hosting the video |[optional]|
-**table** | **Table** | table present in the element<br>the header and content of the table present in the element |[optional]|
-**graph** | **Graph** | contains data provided in the graph of the element |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**title** | **String** | <em>title of the row</em> |[optional]|
+**source** | **String** | <i>source of the element</i><br>indicates the source of information included in the <code>recipes_element</code> |[optional]|
+**snippet** | **String** | <em>text alongside the link title</em> |[optional]|
+**price** | **PriceInfo** | <em>price indicated in the element</em> |[optional]|
+**url** | **String** | <i>URL of the third-party review source</i> |[optional]|
+**domain** | **String** | <em>domain of the website hosting the video</em> |[optional]|
+**table** | **Table** | <em>table present in the element</em><br>the header and content of the table present in the element |[optional]|
+**graph** | **Graph** | <em>contains data provided in the graph of the element</em> |[optional]|

@@ -47,8 +47,7 @@ public class OnPageSummaryResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageSummaryResultInfo  {
   }
 
   /**
-   * details of the crawling session
+   * <em>details of the crawling session</em>
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -94,9 +93,7 @@ public class OnPageSummaryResultInfo  {
   }
 
   /**
-   * crawler ip address
-* displays the IP address used by the crawler to initiate the current crawling session
-* you can find the full list of IPs used by our crawler in the Overview section
+   * <em>crawler ip address</em><br>displays the IP address used by the crawler to initiate the current crawling session<br>you can find the full list of IPs used by our crawler in the <a href='/v3/on_page/overview' target='_blank' rel='noopener noreferrer'>Overview section</a>
    * @return crawlGatewayAddress
    */
   @javax.annotation.Nullable
@@ -119,13 +116,7 @@ public class OnPageSummaryResultInfo  {
   }
 
   /**
-   * reason why the crawling stopped
-* information about the reason why the crawling process stopped;
-* possible values:
-* limit_exceeded – the limit set in the max_crawl_pages was exceeded;
-* empty_queue – all URLs in the queue were crawled;
-* force_stopped – the crawling process was halted using the On Page API Force Stop function;
-* unexpected_exception – an internal error was encountered while crawling the target, contact support for more info
+   * <em>reason why the crawling stopped</em><br>information about the reason why the crawling process stopped;<br>possible values:<br><code>limit_exceeded</code> - the limit set in the <code>max_crawl_pages</code> was exceeded;<br><code>empty_queue</code> - all URLs in the queue were crawled;<br><code>force_stopped</code> - the crawling process was halted using the<a href='/v3/on_page/force_stop' target='_blank' rel='noopener noreferrer'> On Page API Force Stop</a> function;<br><code>unexpected_exception</code> - an internal error was encountered while crawling the <code>target</code>, contact support for more info
    * @return crawlStopReason
    */
   @javax.annotation.Nullable
@@ -148,8 +139,7 @@ public class OnPageSummaryResultInfo  {
   }
 
   /**
-   * domain-wide info
-* on-page information about the target domain and crawling process
+   * <em>domain-wide info</em><br>on-page information about the target domain and crawling process
    * @return domainInfo
    */
   @javax.annotation.Nullable
@@ -172,8 +162,7 @@ public class OnPageSummaryResultInfo  {
   }
 
   /**
-   * page-specific info
-* metrics information on the target website pages
+   * <em>page-specific info</em><br>metrics information on the target website pages
    * @return pageMetrics
    */
   @javax.annotation.Nullable

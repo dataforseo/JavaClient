@@ -236,7 +236,7 @@ public class SerpSeznamOrganicTaskGetAdvancedTaskInfo  {
   }
 
   /**
-   * array of results
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

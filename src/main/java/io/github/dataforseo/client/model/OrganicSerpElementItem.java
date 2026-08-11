@@ -208,7 +208,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * cached version of the page
+   * <em>cached version of the page</em>
    * @return cacheUrl
    */
   @javax.annotation.Nullable
@@ -231,8 +231,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL to a similar search
-* URL to a new search for the same keyword(s) on related sites
+   * <em>URL to a similar search</em><br>URL to a new search for the same keyword(s) <a href='https://support.google.com/websearch/answer/2466433?hl=en#:~:text=Search%20for%20related%20sites'>on related sites</a>
    * @return relatedSearchUrl
    */
   @javax.annotation.Nullable
@@ -255,7 +254,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * name of the website in SERP
+   * <em>name of the website in SERP</em>
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -278,8 +277,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains an image
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERPn
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -302,8 +300,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element contains a video
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element contains a <code class='prettyprint'>video</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isVideo
    */
   @javax.annotation.Nullable
@@ -326,8 +323,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is a featured_snippet
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element is a <code class='prettyprint'>featured_snippet</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isFeaturedSnippet
    */
   @javax.annotation.Nullable
@@ -350,8 +346,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is marked as malicious
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element is marked as malicious</em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isMalicious
    */
   @javax.annotation.Nullable
@@ -374,8 +369,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is marked as Google web story
-* Note: this check no longer appears in SERP
+   * <em>indicates whether the element is marked as Google web story</em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isWebStory
    */
   @javax.annotation.Nullable
@@ -398,15 +392,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * array of properties detected for the SERP element
-* lists the properties that are true for this element
-* each value in the array represents a detected property
-* example:
-* if is_image is present in the array, the element contains an image
-* possible values in the array:
-* is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
-* equals null if none of the properties are detected for the element
-* learn more about the checks array in this Help Center article
+   * <em>array of properties detected for the SERP element</em><br>lists the properties that are true for this element<br>each value in the array represents a detected property <br>example:<br>if <code>is_image</code> is present in the array, the element contains an image<br>possible values in the array:<br><code>is_image</code>, <code>is_video</code>, <code>is_featured_snippet</code>, <code>amp_version</code>, <code>is_malicious</code>, <code>is_web_story</code>, <code>is_highly_cited</code><br>equals <code>null</code> if none of the properties are detected for the element<br>learn more about the <code>checks</code> array in <a href='https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api' target='_blank'>this Help Center article</a>
    * @return checks
    */
   @javax.annotation.Nullable
@@ -429,7 +415,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * includes additional information appended before the result description in SERP
+   * <em>includes additional information appended before the result description in SERP</em>
    * @return preSnippet
    */
   @javax.annotation.Nullable
@@ -452,7 +438,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * includes additional information appended after the result description in SERP
+   * <em>includes additional information appended after the result description in SERP</em>
    * @return extendedSnippet
    */
   @javax.annotation.Nullable
@@ -475,8 +461,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * images of the element
-* if there are none, equals null
+   * <em>images of the element</em><br>if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -499,8 +484,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * Accelerated Mobile Pages
-* indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -523,9 +507,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -548,9 +530,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result;
-* if there is none, equals null
+   * <em>pricing details</em><br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals <code>null</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -573,7 +553,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * words highlighted in bold within the results description
+   * <em>words highlighted in bold within the results <code>description</code></em>
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -596,7 +576,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * link of the element
+   * <em>link of the element</em>
    * @return links
    */
   @javax.annotation.Nullable
@@ -620,9 +600,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * frequently asked questions
-* questions and answers extension shown below some of Google’s search results
-* Note: this object is deprecated and always returns null
+   * <em>frequently asked questions</em><br>questions and answers extension shown below some of Google's search results<br><strong>Note:</strong> this object is deprecated and always returns <code>null</code>
    * @deprecated
    * @return faq
    */
@@ -648,9 +626,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * extension of the organic element
-* extension of the organic result containing related search queries
-* Note: extension appears in SERP upon clicking on the result and then bouncing back to search results
+   * <em>extension of the organic element</em><br>extension of the organic result containing related search queries<br><strong>Note:</strong> extension appears in SERP upon clicking on the result and then bouncing back to search results
    * @return extendedPeopleAlsoSearch
    */
   @javax.annotation.Nullable
@@ -674,8 +650,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains information from the ‘About this result’ panel
-* Note: this object is deprecated and always returns null
+   * <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> this object is deprecated and always returns <code>null</code>
    * @deprecated
    * @return aboutThisResult
    */
@@ -701,9 +676,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * related result from the same domain
-* related result from the same domain appears as a part of the main result snippet;
-* you can derive the related_result snippets as 'type': 'organic' results by setting the group_organic_results parameter to false in the POST request
+   * <em>related result from the same domain</em><br>related result from the same domain appears as a part of the main result snippet;<br>you can derive the <code>related_result</code> snippets as <code>'type': 'organic'</code> results by setting the <code>group_organic_results</code> parameter to <code>false</code> in the POST request
    * @return relatedResult
    */
   @javax.annotation.Nullable
@@ -726,10 +699,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

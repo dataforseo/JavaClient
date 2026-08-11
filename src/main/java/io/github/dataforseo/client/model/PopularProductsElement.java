@@ -70,7 +70,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -80,6 +80,52 @@ public class PopularProductsElement  {
 
   public void setTitle(String title) {
     this.title = title;
+  }
+
+
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
+
+  public PopularProductsElement url(String url) {
+    this.url = url;
+    return this;
+  }
+
+  /**
+   * <em>source URL</em>
+   * @return url
+   */
+  @javax.annotation.Nullable
+  public String getUrl() {
+    return url;
+  }
+
+  public void setUrl(String url) {
+    this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_DOMAIN = "domain";
+  @SerializedName(SERIALIZED_NAME_DOMAIN)
+  private String domain;
+
+  public PopularProductsElement domain(String domain) {
+    this.domain = domain;
+    return this;
+  }
+
+  /**
+   * <em>domain where a link points</em>
+   * @return domain
+   */
+  @javax.annotation.Nullable
+  public String getDomain() {
+    return domain;
+  }
+
+  public void setDomain(String domain) {
+    this.domain = domain;
   }
 
 
@@ -93,7 +139,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * link description
+   * <em>link description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +162,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * indicates whether the product is sold by multiple sellers
+   * <em>indicates whether the product is sold by multiple sellers</em>
    * @return moreSellers
    */
   @javax.annotation.Nullable
@@ -139,7 +185,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * seller of the product
+   * <em>seller of the product</em>
    * @return seller
    */
   @javax.annotation.Nullable
@@ -162,8 +208,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +231,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * price indicated in the element
+   * <em>price indicated in the element</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -209,9 +254,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -221,6 +264,29 @@ public class PopularProductsElement  {
 
   public void setRating(RatingInfo rating) {
     this.rating = rating;
+  }
+
+
+  public static final String SERIALIZED_NAME_PRODUCT_IDENTIFIERS = "product_identifiers";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_IDENTIFIERS)
+  private ProductIdentifiers productIdentifiers;
+
+  public PopularProductsElement productIdentifiers(ProductIdentifiers productIdentifiers) {
+    this.productIdentifiers = productIdentifiers;
+    return this;
+  }
+
+  /**
+   * <em>identifiers of the product</em><br>can include the following identifiers: <code>product_id</code>, <code>data_docid</code>, <code>gid</code>
+   * @return productIdentifiers
+   */
+  @javax.annotation.Nullable
+  public ProductIdentifiers getProductIdentifiers() {
+    return productIdentifiers;
+  }
+
+  public void setProductIdentifiers(ProductIdentifiers productIdentifiers) {
+    this.productIdentifiers = productIdentifiers;
   }
 
 
@@ -269,12 +335,15 @@ public class PopularProductsElement  {
 
         Objects.equals(this.type, popularProductsElement.type) &&
         Objects.equals(this.title, popularProductsElement.title) &&
+        Objects.equals(this.url, popularProductsElement.url) &&
+        Objects.equals(this.domain, popularProductsElement.domain) &&
         Objects.equals(this.description, popularProductsElement.description) &&
         Objects.equals(this.moreSellers, popularProductsElement.moreSellers) &&
         Objects.equals(this.seller, popularProductsElement.seller) &&
         Objects.equals(this.imageUrl, popularProductsElement.imageUrl) &&
         Objects.equals(this.price, popularProductsElement.price) &&
-        Objects.equals(this.rating, popularProductsElement.rating);  
+        Objects.equals(this.rating, popularProductsElement.rating) &&
+        Objects.equals(this.productIdentifiers, popularProductsElement.productIdentifiers);  
     
   }
 
@@ -284,7 +353,7 @@ public class PopularProductsElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, description, moreSellers, seller, imageUrl, price, rating);
+  return Objects.hash(type, title, url, domain, description, moreSellers, seller, imageUrl, price, rating, productIdentifiers);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -301,12 +370,15 @@ public class PopularProductsElement  {
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    moreSellers: ").append(toIndentedString(moreSellers)).append("\n");
     sb.append("    seller: ").append(toIndentedString(seller)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
+    sb.append("    productIdentifiers: ").append(toIndentedString(productIdentifiers)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -334,6 +406,10 @@ public class PopularProductsElement  {
     
     openapiFields.add("title");
     
+    openapiFields.add("url");
+    
+    openapiFields.add("domain");
+    
     openapiFields.add("description");
     
     openapiFields.add("more_sellers");
@@ -345,6 +421,8 @@ public class PopularProductsElement  {
     openapiFields.add("price");
     
     openapiFields.add("rating");
+    
+    openapiFields.add("product_identifiers");
     
 
     // a set of required properties/fields (JSON key names)

@@ -47,11 +47,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* “07131248-1535-0216-1000-17384017ad04”
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br>'07131248-1535-0216-1000-17384017ad04'
    * @return id
    */
   @javax.annotation.Nullable
@@ -74,11 +70,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * page URL
-* optional field
-* specify this field if you want to get the resources for a specific page
-* note that to obtain resource’s meta from a particular URL, you should specify the URL in this field;
-* if you do not indicate a url when setting a task, resource’s meta in the results will be returned based on the data from the page where our crawler first saw the resource
+   * <em>page URL</em><br>optional field<br>specify this field if you want to get the resources for a specific page<br>note that to obtain resource's <code>meta</code> from a particular URL, you should specify the URL in this field;<br>if you do not indicate a <code>url</code> when setting a task, resource's <code>meta</code> in the results will be returned based on the data from the page where our crawler first saw the resource
    * @return url
    */
   @javax.annotation.Nullable
@@ -101,10 +93,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * the maximum number of returned resources
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned resources</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -127,11 +116,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned resources
-* optional field
-* default value: 0
-* maximum value: 2000000
-* if you specify the 10 value, the first ten resources in the results array will be omitted and the data will be provided for the successive resources
+   * <em>offset in the results array of returned resources</em><br>optional field<br>default value: <code>0</code><br>maximum value: <code>2000000</code><br>if you specify the <code>10</code> value, the first ten resources in the results array will be omitted and the data will be provided for the successive resources
    * @return offset
    */
   @javax.annotation.Nullable
@@ -154,19 +139,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['resource_type','=','stylesheet']
-* [['resource_type','=','image'],
-* 'and',['checks.is_https','=',false]]
-* [['fetch_timing.duration_time','>',1],'and',[['total_transfer_size','>',100],'or',['checks.high_loading_time','=',true]]]
-* The full list of possible filters is available by this link.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['resource_type','=','stylesheet']</code><p><code>[['resource_type','=','image'],<br>'and',['checks.is_https','=',false]]</code><p><code>[['fetch_timing.duration_time','>',1],'and',[['total_transfer_size','>',100],'or',['checks.high_loading_time','=',true]]]</code><p>The full list of possible filters is available <a href='/v3/on_page/filters_and_thresholds/?bash' rel='noopener noreferrer' target='_blank'>by this link.</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -189,17 +162,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * filter the resources by relevant pages
-* optional field
-* you can use this field to obtain resources from pages matching to the defined parameters
-* you can apply the same filters here as available for the pages endpoint
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['checks.no_image_title','=',true]
+   * <em>filter the resources by relevant pages</em><br>optional field<br>you can use this field to obtain resources from pages matching to the defined parameters<br>you can apply the same filters here as available for the <a href='/v3/on_page/pages/' rel='noopener noreferrer' target='_blank'>pages endpoint</a><br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['checks.no_image_title','=',true]</code>
    * @return relevantPagesFilters
    */
   @javax.annotation.Nullable
@@ -222,19 +185,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['size,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['size,desc','fetch_timing.fetch_end,desc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['size,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['size,desc','fetch_timing.fetch_end,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -257,13 +208,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * token for subsequent requests
-* optional field
-* provided in the identical filed of the response to each request;
-* use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
-* by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
-* search_after_token values are unique for each subsequent task ;
-* Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+   * <em>token for subsequent requests</em><br>optional field<br>provided in the identical filed of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over <code>20,000</code> results in a single request;<br>by specifying the unique <code>search_after_token</code> value from the response array, you will get the subsequent results of the initial task;<br><code>search_after_token</code> values are unique for each subsequent task ;<br><strong>Note:</strong> if the <code>search_after_token</code> is specified in the request, all other parameters should be identical to the previous request
    * @return searchAfterToken
    */
   @javax.annotation.Nullable
@@ -286,11 +231,7 @@ public class OnPageResourcesRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

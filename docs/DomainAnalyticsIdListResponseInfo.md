@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DomainAnalyticsIdListTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DomainAnalyticsIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

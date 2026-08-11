@@ -47,11 +47,7 @@ public class OnPageNonIndexableRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* “07131248-1535-0216-1000-17384017ad04”
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br>'07131248-1535-0216-1000-17384017ad04'
    * @return id
    */
   @javax.annotation.Nullable
@@ -74,10 +70,7 @@ public class OnPageNonIndexableRequestInfo  {
   }
 
   /**
-   * the maximum number of returned pages
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned pages</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -100,11 +93,7 @@ public class OnPageNonIndexableRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned pages
-* optional field
-* default value: 0
-* maximum value: 2000000
-* if you specify the 10 value, the first ten pages in the results array will be omitted and the data will be provided for the successive pages
+   * <em>offset in the results array of returned pages</em><br>optional field<br>default value: <code>0</code><br>maximum value: <code>2000000</code><br>if you specify the <code>10</code> value, the first ten pages in the results array will be omitted and the data will be provided for the successive pages
    * @return offset
    */
   @javax.annotation.Nullable
@@ -127,21 +116,7 @@ public class OnPageNonIndexableRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['reason','=','robots_txt'][['reason','<>','robots_txt'],
-* 'and',
-* ['url','not_like','%/wp-admin/%']]
-* [['url','not_like','%/wp-admin/%'],
-* 'and',
-* [['reason','<>','meta_tag'],'or',['reason','<>','http_header']]]
-* The full list of possible filters is available by this link.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>[['reason','<>','robots_txt'],<br>'and',<br>['url','not_like','%/wp-admin/%']]</code><p><code>[['url','not_like','%/wp-admin/%'],<br>'and',<br>[['reason','<>','meta_tag'],'or',['reason','<>','http_header']]]</code><p>The full list of possible filters is available <a href='/v3/on_page/filters_and_thresholds/?bash' target='_blank' rel='noopener noreferrer'>by this link.</a>
    * @return filters
    */
   @javax.annotation.Nullable

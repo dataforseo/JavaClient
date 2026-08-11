@@ -47,7 +47,7 @@ public class SerpApiGoogleSearchByImagesImagesElementItem  extends BaseSerpApiGo
   }
 
   /**
-   * elements of search results found in SERP
+   * <em>elements of search results found in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -71,8 +71,7 @@ public class SerpApiGoogleSearchByImagesImagesElementItem  extends BaseSerpApiGo
   }
 
   /**
-   * contains keywords and images related to the specified search term
-* if there are none, equals null
+   * 
    * @deprecated
    * @return relatedImageSearches
    */

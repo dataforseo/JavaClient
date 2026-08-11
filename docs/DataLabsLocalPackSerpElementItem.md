@@ -5,18 +5,18 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the result in SERP |[optional]|
-**description** | **String** | description of the results element in SERP |[optional]|
-**domain** | **String** | domain in SERP |[optional]|
-**phone** | **String** | phone number |[optional]|
-**url** | **String** | relevant URL in SERP |[optional]|
-**isPaid** | **Boolean** | indicates whether the element is an ad |[optional]|
-**rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
-**mainDomain** | **String** | primary domain name in SERP |[optional]|
-**relativeUrl** | **String** | URL in SERP that does not specify the HTTPs protocol and domain name |[optional]|
-**etv** | **Double** | estimated traffic volume<br>estimated organic monthly traffic a featured URL delivers to the domain<br>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword<br>learn more about how the metric is calculated in this help center article |[optional]|
-**estimatedPaidTrafficCost** | **Double** | estimated cost of converting organic search traffic into paid<br>represents the estimated monthly cost of running ads for the returned keyword<br>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search<br>learn more about how the metric is calculated in this help center article |[optional]|
-**clickstreamEtv** | **Double** |  |[optional]|
-**rankChanges** | **RankChanges** | changes in rankings<br>ranking changes of the SERP element compared to the preceding month;<br>Note: the changes are calculated even if the preceding month is not included in a POST request |[optional]|
-**backlinksInfo** | **BacklinksInfo** | backlinks information for the ranked website |[optional]|
-**rankInfo** | **RankInfo** | page and domain rank information |[optional]|
+**title** | **String** | <em>title of the result in SERP</em> |[optional]|
+**description** | **String** | <em>description of the results element in SERP</em> |[optional]|
+**domain** | **String** | <em>subdomain in SERP</em> |[optional]|
+**phone** | **String** | <em>phone number</em> |[optional]|
+**url** | **String** | <em> relevant URL in SERP</em> |[optional]|
+**isPaid** | **Boolean** | <em>indicates whether the element is an ad</em> |[optional]|
+**rating** | **RatingInfo** | <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP |[optional]|
+**mainDomain** | **String** | <em>primary domain name in SERP</em> |[optional]|
+**relativeUrl** | **String** | <em>URL in SERP that does not specify the HTTPs protocol and domain name</em> |[optional]|
+**etv** | **Double** | <em>estimated traffic volume</em><br>            estimated organic monthly traffic to the domain or webpage;<br>            calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**estimatedPaidTrafficCost** | **Double** | <em>estimated cost of converting organic search traffic into paid</em><br>            represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;<br>            the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**clickstreamEtv** | **Double** | <em>estimated traffic volume based on clickstream data</em><br>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;<br>            to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code>;<br>            learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>help center article</a> |[optional]|
+**rankChanges** | **RankChanges** | <em>changes in rankings</em><br>            contains information about the ranking changes of the SERP element since the <code>previous_updated_time</code> |[optional]|
+**backlinksInfo** | **BacklinksInfo** | <em>backlinks information for the relevant page URL</em> |[optional]|
+**rankInfo** | **RankInfo** | <em>page and domain rank information</em> |[optional]|

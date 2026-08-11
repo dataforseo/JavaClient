@@ -47,7 +47,7 @@ public class GoogleTrendsGoogleTrendsMapElementItem  extends BaseKeywordDataGoog
   }
 
   /**
-   * Google Trends data from the corresponding item
+   * <em>Google Trends data from the corresponding item</em>
    * @return data
    */
   @javax.annotation.Nullable

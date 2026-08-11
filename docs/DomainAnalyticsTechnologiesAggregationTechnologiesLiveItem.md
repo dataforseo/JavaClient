@@ -6,9 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**group** | **String** | technology group id |[optional]|
-**category** | **String** | technology category id |[optional]|
-**technology** | **String** | technology name |[optional]|
-**groupsCount** | **Long** | technology groups count<br>number of domains that match the parameters you specified and are using technologies from the indicated group |[optional]|
-**categoriesCount** | **Long** | technology categories count<br>number of domains that match the parameters you specified and are using technologies from the indicated category |[optional]|
-**technologiesCount** | **Long** | technologies count<br>number of domains that match the parameters you specified and are using the indicated technology |[optional]|
+**group** | **String** | <em>technology group id</em> |[optional]|
+**category** | **String** | <em>technology category id</em> |[optional]|
+**technology** | **String** | <em>technology name</em> |[optional]|
+**groupsCount** | **Long** | <em>technology groups count</em><br>number of domains that match the parameters you specified and are using technologies from the indicated <code>group</code> |[optional]|
+**categoriesCount** | **Long** | <em>technology categories count</em><br>number of domains that match the parameters you specified and are using technologies from the indicated <code>category</code> |[optional]|
+**technologiesCount** | **Long** | <em>technologies count</em><br>number of domains that match the parameters you specified and are using the indicated <code>technology</code> |[optional]|

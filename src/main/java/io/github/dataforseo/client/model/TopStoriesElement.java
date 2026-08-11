@@ -70,7 +70,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * the date when the page source of the element was published
+   * <em>the date when the page source of the element was published</em>
    * @return date
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * Accelerated Mobile Pages
-* indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -186,10 +185,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * date and time when the result was published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -235,8 +231,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -259,7 +254,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * badges relevant to the element
+   * <em>badges relevant to the element</em>
    * @return badges
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**items** | **List<String>** | items in SERP |[optional]|
+**items** | **List<String>** | <em>items in SERP</em> |[optional]|

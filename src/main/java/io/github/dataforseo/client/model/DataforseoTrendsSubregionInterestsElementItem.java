@@ -47,7 +47,7 @@ public class DataforseoTrendsSubregionInterestsElementItem  extends BaseKeywordD
   }
 
   /**
-   * subregional keyword popuarity data for each specified term
+   * <em>subregional keyword popuarity data for each specified term</em>
    * @return interests
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class DataforseoTrendsSubregionInterestsElementItem  extends BaseKeywordD
   }
 
   /**
-   * comparison of data on subregional keyword popularity for the specified parameters
-* if you specified a single keyword, the value will be null
+   * <em>comparison of data on subregional keyword popularity for the specified parameters</em><br>if you specified a single keyword, the value will be <code>null</code>
    * @return interestsComparison
    */
   @javax.annotation.Nullable

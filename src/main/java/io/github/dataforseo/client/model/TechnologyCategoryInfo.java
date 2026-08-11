@@ -47,9 +47,7 @@ public class TechnologyCategoryInfo  {
   }
 
   /**
-   * id of the technology category
-* example:
-* crm, cart_abandonment
+   * <em>id of the technology category</em><br>example:<br><code>crm</code>, <code>cart_abandonment</code>
    * @return id
    */
   @javax.annotation.Nullable
@@ -72,9 +70,7 @@ public class TechnologyCategoryInfo  {
   }
 
   /**
-   * path to the technology category
-* example:
-* user_generated_content.content_curation
+   * <em>path to the technology category</em><br>example:<br><code>user_generated_content.content_curation</code>
    * @return path
    */
   @javax.annotation.Nullable
@@ -97,7 +93,7 @@ public class TechnologyCategoryInfo  {
   }
 
   /**
-   * title of the technology category
+   * <em>title of the technology category</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -120,9 +116,7 @@ public class TechnologyCategoryInfo  {
   }
 
   /**
-   * list of technologies in this category
-* example:
-* 'Salesforce', 'CareCart'
+   * <em>list of technologies in this category</em><br>example:<br><code>'Salesforce'</code>, <code>'CareCart'</code>
    * @return technologies
    */
   @javax.annotation.Nullable

@@ -70,8 +70,7 @@ public class BaseKeywordDataGoogleTrendsItem  {
   }
 
   /**
-   * the alignment of the element in Google Trends
-* can take the following values: 1, 2, 3, 4, etc.
+   * <em>the alignment of the element in Google Trends</em><br>can take the following values: <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, etc.
    * @return position
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BaseKeywordDataGoogleTrendsItem  {
   }
 
   /**
-   * title of the element in Google Trends
+   * <em>title of the element in Google Trends</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class BaseKeywordDataGoogleTrendsItem  {
   }
 
   /**
-   * relevant keywords
-* the data included in the google_trends_graph element is based on the keywords listed in this array
+   * <em>relevant keywords</em><br>the data included in the <code>google_trends_graph</code> element is based on the keywords listed in this array
    * @return keywords
    */
   @javax.annotation.Nullable

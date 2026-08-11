@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleSearchByImageTaskPostTaskInfo>** |  |[optional]|
+**tasks** | **List<SerpGoogleSearchByImageTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

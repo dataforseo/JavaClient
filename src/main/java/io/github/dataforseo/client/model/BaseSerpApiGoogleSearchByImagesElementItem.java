@@ -70,9 +70,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * 
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * 
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -142,9 +139,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * 
    * @return position
    */
   @javax.annotation.Nullable
@@ -167,7 +162,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -213,7 +208,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -236,9 +231,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * rectangle parameters
-* contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-* equals null if calculate_rectangles in the POST request is not set to true
+   * 
    * @return rectangle
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class KeywordsDataBingAudienceEstimationJobFunctionsResultInfo  {
   }
 
   /**
-   * ID of the job function
+   * <em>ID of the job function</em>
    * @return jobFunctionId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordsDataBingAudienceEstimationJobFunctionsResultInfo  {
   }
 
   /**
-   * name of the job function
+   * <em>name of the job function</em>
    * @return jobFunctionName
    */
   @javax.annotation.Nullable

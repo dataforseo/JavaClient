@@ -70,7 +70,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * domain where a link points
+   * <em>domain where a link points</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,9 +139,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result;
-* if there is none, equals null
+   * <em>pricing details</em><br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals <code>null</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -187,7 +185,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * text alongside the link title
+   * <em>text alongside the link title</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -210,10 +208,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * merchant account provider
-* ecommerce site that hosts products or websites of individual sellers under the same merchant account
-* example:
-* by Google
+   * <em>merchant account provider</em><br>ecommerce site that hosts products or websites of individual sellers under the same merchant account<br>example:<br><code>by Google</code>
    * @return marketplace
    */
   @javax.annotation.Nullable
@@ -236,8 +231,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * URL to the merchant account provider
-* ecommerce site that hosts products or websites of individual sellers under the same merchant account
+   * <em>URL to the merchant account provider</em><br>ecommerce site that hosts products or websites of individual sellers under the same merchant account
    * @return marketplaceUrl
    */
   @javax.annotation.Nullable

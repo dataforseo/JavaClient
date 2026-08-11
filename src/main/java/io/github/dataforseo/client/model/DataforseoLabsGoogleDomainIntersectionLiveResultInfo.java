@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * the first target domain in a POST array
+   * <em>the first target domain in a POST array</em>
    * @return target1
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * the second target domain in a POST array
+   * <em>the second target domain in a POST array</em>
    * @return target2
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * contains keywords, relevant SERP elements and related data
+   * <em>contains keywords, relevant SERP elements and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

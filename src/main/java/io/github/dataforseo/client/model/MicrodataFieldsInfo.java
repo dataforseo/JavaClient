@@ -47,8 +47,7 @@ public class MicrodataFieldsInfo  {
   }
 
   /**
-   * field name
-* name of the data field
+   * <em>field name</em><br>name of the data field
    * @return name
    */
   @javax.annotation.Nullable
@@ -118,8 +117,7 @@ public class MicrodataFieldsInfo  {
   }
 
   /**
-   * microdata validation test results
-* sub-type microdata test results that contain detected errors and related messages
+   * <em>microdata validation test results</em><br>sub-type microdata test results that contain detected errors and related messages
    * @return testResults
    */
   @javax.annotation.Nullable
@@ -142,8 +140,7 @@ public class MicrodataFieldsInfo  {
   }
 
   /**
-   * microdata fields
-* an array of objects containing data fields related to the certain microdata type
+   * <em>microdata fields</em><br>an array of objects containing data fields related to the certain microdata type
    * @return fields
    */
   @javax.annotation.Nullable

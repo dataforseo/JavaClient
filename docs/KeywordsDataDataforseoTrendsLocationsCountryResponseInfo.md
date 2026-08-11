@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<KeywordsDataDataforseoTrendsLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<KeywordsDataDataforseoTrendsLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

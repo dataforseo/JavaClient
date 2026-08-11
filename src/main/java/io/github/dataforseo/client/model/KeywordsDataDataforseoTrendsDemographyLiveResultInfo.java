@@ -47,7 +47,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveResultInfo  {
   }
 
   /**
-   * keywords in a POST array
+   * <em>keywords in a POST array</em>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
-* if there is no data, then the value is null
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
-* if there is no data, then the value is null
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -141,10 +139,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -167,7 +162,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class KeywordsDataDataforseoTrendsDemographyLiveResultInfo  {
   }
 
   /**
-   * contains keyword popularity and related data
+   * <em>contains keyword popularity and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

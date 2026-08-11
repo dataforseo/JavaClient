@@ -47,8 +47,7 @@ public class OnPageInstantPagesResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class OnPageInstantPagesResultInfo  {
   }
 
   /**
-   * details of the crawling session
-* in this case the value will be null
+   * <em>details of the crawling session</em><br>in this case the value will be <code>null</code>
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -95,9 +93,7 @@ public class OnPageInstantPagesResultInfo  {
   }
 
   /**
-   * crawler ip address
-* displays the IP address used by the crawler to initiate the current crawling session
-* you can find the full list of IPs used by our crawler in the Overview section
+   * <em>crawler ip address</em><br>displays the IP address used by the crawler to initiate the current crawling session<br>you can find the full list of IPs used by our crawler in the <a href='/v3/on_page/overview' target='_blank' rel='noopener noreferrer'>Overview section</a>
    * @return crawlGatewayAddress
    */
   @javax.annotation.Nullable
@@ -120,7 +116,7 @@ public class OnPageInstantPagesResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class OnPageInstantPagesResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

@@ -168,7 +168,7 @@ public class AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo  {
   }
 
   /**
-   * <em>target platform</em><br>optional field<br>possible values:<br><code>chat_gpt</code>, <code>google</code><br>default value: <code class='long-string'>google</code><br><strong>Note:</strong> if the <code>platform</code> is not specified, the data is returned for both platforms<br><strong>Note #2:</strong><code>chat_gpt</code> data is available for the <code>United States</code> and <code>English</code> only
+   * <em>target platform</em><br>optional field<br>possible values:<br><code>chat_gpt</code>, <code>google</code><br>default value: <code class='long-string'>google</code><br><strong>Note:</strong> data specific to brand entities is available for <code>chat_gpt</code> only;<br><strong>Note #2:</strong><code>chat_gpt</code> data is available for the <code>United States</code> and <code>English</code> only
    * @return platform
    */
   @javax.annotation.Nullable

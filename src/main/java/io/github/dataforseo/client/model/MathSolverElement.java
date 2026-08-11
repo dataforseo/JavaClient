@@ -70,7 +70,7 @@ public class MathSolverElement  {
   }
 
   /**
-   * title of a given link element
+   * <em>title of a given link element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class MathSolverElement  {
   }
 
   /**
-   * expanded element
+   * <em>expanded element</em>
    * @return expandedElement
    */
   @javax.annotation.Nullable

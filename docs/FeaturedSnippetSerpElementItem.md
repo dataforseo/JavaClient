@@ -12,7 +12,7 @@
 **description** | **String** | <em>description of the ad element in SERP</em> |[optional]|
 **url** | **String** | <em>relevant URL of the ad element in SERP</em> |[optional]|
 **breadcrumb** | **String** | <em>breadcrumb of the ad element in SERP</em> |[optional]|
-**featuredTitle** | **String** | title |[optional]|
-**timestamp** | **String** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**images** | **List<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
-**table** | **Table** | table present in the element<br>the header and content of the table present in the element |[optional]|
+**featuredTitle** | **String** | <em>title</em> |[optional]|
+**timestamp** | **String** | <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**images** | **List<AiModeImagesElementInfo>** | <em>images of the element</em><br>if there are none, equals <code>null</code> |[optional]|
+**table** | **Table** | <em>table present in the element</em><br>the header and content of the table present in the element |[optional]|
