@@ -47,7 +47,7 @@ public class SerpApiGoogleNewsNewsSearchElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiGoogleNewsNewsSearchElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class SerpApiGoogleNewsNewsSearchElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpApiGoogleNewsNewsSearchElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * snippet of the result in SERP
+   * <em>snippet of the result in SERP</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class SerpApiGoogleNewsNewsSearchElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * indicates the time the result was published
+   * <em>indicates the time the result was published</em>
    * @return timePublished
    */
   @javax.annotation.Nullable
@@ -163,10 +162,7 @@ public class SerpApiGoogleNewsNewsSearchElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * date and time when the news was published
-* in the format “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the news was published</em><br>in the format “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

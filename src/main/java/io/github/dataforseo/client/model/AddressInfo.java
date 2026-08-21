@@ -47,7 +47,7 @@ public class AddressInfo  {
   }
 
   /**
-   * administrative unit or district the local establishment belongs to
+   * <em>administrative unit or district the local establishment belongs to</em>
    * @return borough
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AddressInfo  {
   }
 
   /**
-   * street address of the local establishment
+   * <em>street address of the local establishment</em>
    * @return address
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AddressInfo  {
   }
 
   /**
-   * name of the city where the local establishment is located
+   * <em>name of the city where the local establishment is located</em>
    * @return city
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AddressInfo  {
   }
 
   /**
-   * ZIP code of the local establishment
+   * <em>ZIP code of the local establishment</em>
    * @return zip
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AddressInfo  {
   }
 
   /**
-   * DMA region the local establishment belongs to
+   * <em>DMA region the local establishment belongs to</em>
    * @return region
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AddressInfo  {
   }
 
   /**
-   * ISO country code of the local establishment
+   * <em>ISO country code of the local establishment</em>
    * @return countryCode
    */
   @javax.annotation.Nullable

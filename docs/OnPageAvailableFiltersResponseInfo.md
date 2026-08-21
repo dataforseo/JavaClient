@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageAvailableFiltersTaskInfo>** |  |[optional]|
+**tasks** | **List<OnPageAvailableFiltersTaskInfo>** | <em>array of tasks</em> |[optional]|

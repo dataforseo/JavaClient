@@ -70,10 +70,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * futures’ date and time of expiration
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-02-10 09:40:00 +00:00
+   * <em>futures' date and time of expiration</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code>
    * @return expirationTimestamp
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * futures’ symbol
+   * <em>futures' symbol</em>
    * @return symbol
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * price of the market instrument
-* price of the market instrument at a given timestamp
+   * <em>price of the market instrument</em><br>price of the market instrument at a given <code>timestamp</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * currency of the price value
+   * <em>currency of the price value</em>
    * @return priceCurrency
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * change in price of the market instrument
-* change in price at a given timestamp
+   * <em>change in price of the market instrument</em><br>change in <code>price</code> at a given <code>timestamp</code>
    * @return priceDelta
    */
   @javax.annotation.Nullable
@@ -190,7 +185,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * percentage of change in value of the market index
+   * <em>percentage of change in value of the market index</em>
    * @return percentageDelta
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class GoogleFinanceFuturesChainElement  {
   }
 
   /**
-   * growth trend of the market index
-* possible values: up, down, stable
+   * <em>growth trend of the market index</em><br>possible values: <code>up</code>, <code>down</code>, <code>stable</code>
    * @return trend
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * returned keyword idea
+   * <em>returned keyword idea</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * keyword data for the returned keyword idea
+   * <em>keyword data for the returned keyword idea</em>
    * @return keywordInfo
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * contains keyword search volume normalized with Bing search volume
+   * <em>contains keyword search volume normalized with Bing search volume</em>
    * @return keywordInfoNormalizedWithBing
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * contains keyword search volume normalized with clickstream data
+   * <em>contains keyword search volume normalized with clickstream data<br></em>
    * @return keywordInfoNormalizedWithClickstream
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * clickstream data for the returned keywordto retrieve results for this field, the parameter include_clickstream_data must be set to true
+   * <em>clickstream data for the returned keyword</em><br>to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code>
    * @return clickstreamKeywordInfo
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * additional information about the keyword
+   * <em>additional information about the keyword</em>
    * @return keywordProperties
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * SERP datathe value will be null if you didn't set the field include_serp_info to true in the POST array or if there is no SERP data for this keyword in our database
+   * <em>SERP data</em><br>the value will be <code>null</code> if you didn't set the field <code>include_serp_info</code> to <code>true</code> in the POST array or if there is no SERP data for this keyword in our database
    * @return serpInfo
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * backlink data for the returned keywordthis object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 webpages ranking organically for the keyword
+   * <em>backlink data for the returned keyword</em><br>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 webpages ranking organically for the keyword
    * @return avgBacklinksInfo
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class KeywordDataInfo  {
   }
 
   /**
-   * search intent info for the returned keywordlearn about search intent in this help center article
+   * <em>search intent info for the returned keyword</em><br>learn about search intent in this <a href='https://dataforseo.com/help-center/search-intent-and-its-types' target='_blank' rel='noopener noreferrer'>help center article</a>
    * @return searchIntentInfo
    */
   @javax.annotation.Nullable

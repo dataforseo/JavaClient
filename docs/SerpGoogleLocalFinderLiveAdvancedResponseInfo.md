@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleLocalFinderLiveAdvancedTaskInfo>** |  |[optional]|
+**tasks** | **List<SerpGoogleLocalFinderLiveAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

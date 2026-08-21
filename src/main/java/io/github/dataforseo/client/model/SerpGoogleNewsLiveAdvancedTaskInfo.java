@@ -236,7 +236,7 @@ public class SerpGoogleNewsLiveAdvancedTaskInfo  {
   }
 
   /**
-   * 
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

@@ -191,7 +191,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo  {
   }
 
   /**
-   * <em>links source scope</em><br>optional field<br>this parameter specifies which links will be used to extract domains and aggregation data<br>possible values: <code>sources</code>, <code>search_results</code><br>default value: <code>sources</code>
+   * <em>links source scope</em><br>optional field<br>this parameter specifies which links will be used to extract domains and aggregation data<br>possible values: <code>sources</code>, <code>search_results</code><br>default value: <code>sources</code><br><strong>Note:</strong>if you specify <code>search_results</code>, the data will be available for <code>chat_gpt</code> only
    * @return linksScope
    */
   @javax.annotation.Nullable

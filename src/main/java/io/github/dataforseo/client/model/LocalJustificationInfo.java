@@ -70,7 +70,7 @@ public class LocalJustificationInfo  {
   }
 
   /**
-   * text snippet of local justification
+   * <em>text snippet of local justification</em>
    * @return text
    */
   @javax.annotation.Nullable

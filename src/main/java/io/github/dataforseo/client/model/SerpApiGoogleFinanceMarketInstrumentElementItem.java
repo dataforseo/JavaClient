@@ -47,8 +47,7 @@ public class SerpApiGoogleFinanceMarketInstrumentElementItem  extends BaseSerpAp
   }
 
   /**
-   * ticker of the market index
-* example: DAX
+   * <em>ticker of the market index</em><br>example: <code>DAX</code>
    * @return ticker
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpApiGoogleFinanceMarketInstrumentElementItem  extends BaseSerpAp
   }
 
   /**
-   * value of the base asset compared to the quote asset
+   * <em>value of the base asset compared to the quote asset</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class SerpApiGoogleFinanceMarketInstrumentElementItem  extends BaseSerpAp
   }
 
   /**
-   * change in price
-* change in price at a given timestamp
+   * <em>change in price</em><br>change in <code>price</code> at a given <code>timestamp</code>
    * @return priceDelta
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class SerpApiGoogleFinanceMarketInstrumentElementItem  extends BaseSerpAp
   }
 
   /**
-   * price currency
-* example: USD
+   * <em>price currency</em><br>example: <code>USD</code>
    * @return priceCurrency
    */
   @javax.annotation.Nullable

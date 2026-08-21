@@ -1,7 +1,7 @@
 package io.github.dataforseo.client;
 
 public class Configuration {
-    public static final String VERSION = "2.1.3";
+    public static final String VERSION = "2.1.5";
 
     private static ApiClient defaultApiClient = new ApiClient();
 

@@ -12,4 +12,4 @@
 **channelUrl** | **String** | <em>the URL of the channel where the video is published</em> |[optional]|
 **channelLogo** | **String** | <em>the URL of the page where the logo image of the channel is hosted</em> |[optional]|
 **videosCount** | **Long** | <em>the number of videos in playlist</em> |[optional]|
-**previewVideos** | **List<PreviewVideos>** | <em>information about preview videos</em><br>array of objects containing information about videos in the preview block of the playlist element |[optional]|
+**previewVideos** | **List<PreviewVideos>** | <em>information about preview videos</em><br>            array of objects containing information about videos in the preview block of the playlist element |[optional]|

@@ -47,7 +47,7 @@ public class Contacts  {
   }
 
   /**
-   * array of telephone numbers
+   * <em>array of telephone numbers</em><br>
    * @return telephones
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class Contacts  {
   }
 
   /**
-   * array of emails
+   * <em>array of emails</em><br>
    * @return emails
    */
   @javax.annotation.Nullable

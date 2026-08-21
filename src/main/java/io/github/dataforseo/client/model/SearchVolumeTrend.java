@@ -47,7 +47,7 @@ public class SearchVolumeTrend  {
   }
 
   /**
-   * search volume change in percent compared to the previous month
+   * <em>search volume change in percent compared to the previous month</em>
    * @return monthly
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SearchVolumeTrend  {
   }
 
   /**
-   * search volume change in percent compared to the previous quarter
+   * <em>search volume change in percent compared to the previous quarter</em>
    * @return quarterly
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SearchVolumeTrend  {
   }
 
   /**
-   * search volume change in percent compared to the previous year
+   * <em>search volume change in percent compared to the previous year</em>
    * @return yearly
    */
   @javax.annotation.Nullable

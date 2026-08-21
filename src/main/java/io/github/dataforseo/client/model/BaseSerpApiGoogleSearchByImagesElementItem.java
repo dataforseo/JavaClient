@@ -70,7 +70,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * 
+   * <em>group rank in SERP</em><br>            position within a group of elements with identical <code>type</code> values<br>            positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * 
+   * <em>absolute rank in SERP</em><br>            absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * 
+   * <em>the alignment of the element in SERP</em><br>            can take the following values:<br>            <code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
   /**
-   * 
+   * <em>rectangle parameters</em><br>            contains cartesian coordinates and pixel dimensions of the result's snippet in SERP<br>            equals <code>null</code> if <code>calculate_rectangles</code> in the POST request is not set to <code>true</code>
    * @return rectangle
    */
   @javax.annotation.Nullable

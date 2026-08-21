@@ -5,12 +5,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**seType** | **String** | search engine type |[optional]|
-**backlinks** | **Double** | average number of backlinks |[optional]|
-**dofollow** | **Double** | average number of dofollow links |[optional]|
-**referringPages** | **Double** | average number of referring pages |[optional]|
-**referringDomains** | **Double** | average number of referring domains |[optional]|
-**referringMainDomains** | **Double** | average number of referring main domains |[optional]|
-**rank** | **Double** | average ranklearn more about the metric and its calculation formula in this help center article |[optional]|
-**mainDomainRank** | **Double** | average main domain ranklearn more about the metric and its calculation formula in this help center article |[optional]|
-**lastUpdatedTime** | **String** | date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00 |[optional]|
+**seType** | **String** | <em>search engine type</em> |[optional]|
+**backlinks** | **Double** | <em>average number of backlinks</em> |[optional]|
+**dofollow** | **Double** | <em>average number of dofollow links</em> |[optional]|
+**referringPages** | **Double** | <em>average number of referring pages</em> |[optional]|
+**referringDomains** | **Double** | <em>average number of referring domains</em> |[optional]|
+**referringMainDomains** | **Double** | <em>average number of referring main domains</em> |[optional]|
+**rank** | **Double** | <em>average rank</em><br>learn more about the metric and its calculation formula in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' target='_blank' rel='noopener noreferrer'>this help center article</a> |[optional]|
+**mainDomainRank** | **Double** | <em>average main domain rank</em><br>learn more about the metric and its calculation formula in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' target='_blank' rel='noopener noreferrer'>this help center article</a> |[optional]|
+**lastUpdatedTime** | **String** | <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|

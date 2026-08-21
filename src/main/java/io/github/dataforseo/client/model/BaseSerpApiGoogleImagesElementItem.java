@@ -70,9 +70,7 @@ public class BaseSerpApiGoogleImagesElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class BaseSerpApiGoogleImagesElementItem  {
   }
 
   /**
-   * absolute rank in SERP for the target domain
-* absolute position among all the elements in SERP
+   * <em> absolute rank in SERP for the target domain</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class BaseSerpApiGoogleImagesElementItem  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

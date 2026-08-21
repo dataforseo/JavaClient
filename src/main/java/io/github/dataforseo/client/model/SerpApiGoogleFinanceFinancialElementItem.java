@@ -47,9 +47,7 @@ public class SerpApiGoogleFinanceFinancialElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiGoogleFinanceFinancialElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class SerpApiGoogleFinanceFinancialElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * quarterly google finance metrics
+   * <em>quarterly google finance metrics</em>
    * @return quarterlyMetrics
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class SerpApiGoogleFinanceFinancialElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * annual google finance metrics
+   * <em>annual google finance metrics</em>
    * @return annualMetrics
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleMapsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleMapsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

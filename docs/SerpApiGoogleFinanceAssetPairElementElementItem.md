@@ -5,16 +5,16 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**baseSymbol** | **String** | identifier of the base asset in a pair<br>example: EUR |[optional]|
-**quoteSymbol** | **String** | identifier of the quote asset in a pair<br>example: USD |[optional]|
-**baseDisplayName** | **String** | full name of the base asset in a pair<br>example: Euro |[optional]|
-**quoteDisplayName** | **String** | full name of the base asset in a pair<br>example: Euro |[optional]|
-**price** | **Double** | value of the base asset compared to the quote asset |[optional]|
-**priceDelta** | **Double** | change in price<br>change in price at a given timestamp |[optional]|
-**identifier** | **String** | identifier of the element<br>full identifier of the element that consists from ticker and market_identifier<br>example: PX1:INDEXDB |[optional]|
-**displayedName** | **String** | name of the market index as displayed on Google Finance<br>example: CAC 40 |[optional]|
-**url** | **String** | URL to the page of the market index on Google Finance |[optional]|
-**location** | **String** | location of the market index<br>example: Europe/Paris |[optional]|
-**trend** | **String** | growth trend of the market index<br>possible values: up, down, stable |[optional]|
-**timestamp** | **String** | date and time of the value readout<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2025-02-10 09:40:00 +00:00 |[optional]|
-**percentageDelta** | **Double** | percentage of change in value of the market index |[optional]|
+**baseSymbol** | **String** | <em>identifier of the base asset in a pair</em><br>example: <code>EUR</code> |[optional]|
+**quoteSymbol** | **String** | <em>identifier of the quote asset in a pair</em><br>example: <code>USD</code> |[optional]|
+**baseDisplayName** | **String** | <em>full name of the base asset in a pair</em><br>example: <code>Euro</code> |[optional]|
+**quoteDisplayName** | **String** | <em>full name of the base asset in a pair</em><br>example: <code>Euro</code> |[optional]|
+**price** | **Double** | <em>value of the base asset compared to the quote asset</em> |[optional]|
+**priceDelta** | **Double** | <em>change in price</em><br>change in <code>price</code> at a given <code>timestamp</code> |[optional]|
+**identifier** | **String** | <em>identifier of the element</em><br>full identifier of the element that consists from <code>ticker</code> and <code>market_identifier</code><br>example: <code>PX1:INDEXDB</code> |[optional]|
+**displayedName** | **String** | <em>name of the market index as displayed on Google Finance</em><br>example: <code>CAC 40</code> |[optional]|
+**url** | **String** | <em>URL to the page of the market index on Google Finance</em> |[optional]|
+**location** | **String** | <em>location of the market index</em><br>example: <code>Europe/Paris</code> |[optional]|
+**trend** | **String** | <em>growth trend of the market index</em><br>possible values: <code>up</code>, <code>down</code>, <code>stable</code> |[optional]|
+**timestamp** | **String** | <em>date and time of the value readout</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code> |[optional]|
+**percentageDelta** | **Double** | <em>percentage of change in value of the market index</em> |[optional]|

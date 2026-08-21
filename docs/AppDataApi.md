@@ -77,9 +77,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
     AppDataIdListRequestInfo model = new AppDataIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     AppDataIdListResponseInfo response = apiInstance.appDataIdList(List.of(model));
     System.out.println(result);
@@ -150,9 +148,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
     AppDataErrorsRequestInfo model = new AppDataErrorsRequestInfo()
-           .limit(10)
-           .offset(0)
-           .filteredFunction("pingback_url");
+           .limit(10);
     AppDataErrorsResponseInfo response = apiInstance.appDataErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2963,7 +2959,7 @@ public class Example {
            .description("vpn")
            .categories(
                List.of(
-                   "Tools"
+                   "Utilities"
                 ))
            .orderBy(
                List.of(
@@ -2973,7 +2969,7 @@ public class Example {
                List.of(
                
                 ))
-           .limit(2);
+           .limit(10);
     AppDataAppleAppListingsSearchLiveResponseInfo response = apiInstance.appleAppListingsSearchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

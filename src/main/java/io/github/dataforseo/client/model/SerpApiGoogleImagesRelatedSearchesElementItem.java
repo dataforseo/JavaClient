@@ -70,9 +70,7 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
   }
 
   /**
-   * items of the element
+   * <em>items of the element</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -118,9 +116,7 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
   }
 
   /**
-   * rectangle parameters
-* contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-* note: calculate_rectangles parameter is not yet available when setting tasks for this search engine type, that’s why rectangle always equals null
+   * <em>rectangle parameters</em><br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br><strong>note: </strong>calculate_rectangles parameter is not yet available when setting tasks for this search engine type, that’s why <code>rectangle</code> always equals <code>null</code>
    * @return rectangle
    */
   @javax.annotation.Nullable

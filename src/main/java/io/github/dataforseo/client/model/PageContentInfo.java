@@ -47,7 +47,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * parsed content of the header
+   * <em>parsed content of the header</em><br>
    * @return header
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * content of the footer of the table
+   * <em>content of the footer of the table</em><br>
    * @return footer
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * main topic on the page
-* you can find more information about topic priority calculation in this help center article
+   * <em>main topic on the page</em><br>            you can find more information about topic priority calculation in this <a href='https://dataforseo.com/help-center/difference-between-primary-and-secondary-content#topics' rel='noopener noreferrer' target='_blank'>help center article</a><br>
    * @return mainTopic
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * secondary topic on the page
-* you can find more information about topic priority calculation in this help center article
+   * <em>secondary topic on the page</em><br>            you can find more information about topic priority calculation in this <a href='https://dataforseo.com/help-center/difference-between-primary-and-secondary-content#topics' rel='noopener noreferrer' target='_blank'>help center article</a><br>
    * @return secondaryTopic
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * contains objects with rating information for the products displayed on the page
+   * <em>contains objects with rating information for the products displayed on the page</em><br>
    * @return ratings
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * array of products displayed on the page
-* contains objects with information on products displayed on the page
+   * <em>array of products displayed on the page</em><br>            contains objects with information on products displayed on the page
    * @return offers
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * array of comments displayed on the page
-* contains objects with information on comments related to displayed products
+   * <em>array of comments displayed on the page</em><br>            contains objects with information on comments related to displayed products
    * @return comments
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * contact information
-* contains contact information displayed on the page
+   * <em>contact information</em><br>            contains contact information displayed on the page
    * @return contacts
    */
   @javax.annotation.Nullable

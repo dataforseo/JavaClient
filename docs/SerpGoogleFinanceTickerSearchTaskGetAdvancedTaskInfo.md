@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

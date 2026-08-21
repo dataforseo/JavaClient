@@ -211,7 +211,7 @@ public class SerpGoogleFinanceMarketsLiveAdvancedResponseInfo  {
   }
 
   /**
-   * 
+   * <em>array of tasks</em>
    * @return tasks
    */
   @javax.annotation.Nullable

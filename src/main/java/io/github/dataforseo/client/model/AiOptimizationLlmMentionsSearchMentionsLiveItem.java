@@ -208,7 +208,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * <em>array of search results</em><br>all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+   * <em>array of search results</em><br>all web search outputs the model retrieved when looking up information, including duplicates and unused entries<br><strong>Note:</strong> available only for <code>chat_gpt</code>
    * @return searchResults
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * <em>array of brand entities</em><br>contains information on brands mentioned in the response
+   * <em>array of brand entities</em><br>contains information on brands mentioned in the response<br><strong>Note:</strong> available only for <code>chat_gpt</code>
    * @return brandEntities
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response
+   * <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response<br><strong>Note:</strong> available only for <code>chat_gpt</code>
    * @return fanOutQueries
    */
   @javax.annotation.Nullable

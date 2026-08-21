@@ -139,7 +139,7 @@ public class BusinessDataBusinessListingsSearchLiveRequestInfo  {
   }
 
   /**
-   * <em>GPS coordinates of a location</em><br>optional field<br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the value of <em>'radius'</em> is specified in kilometres (km)<br>the minimum value for <em>'radius'</em>: <code>1</code><br>the maximum value for <em>'radius'</em>: <code>100000</code><br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>
+   * <em>GPS coordinates of a location</em><br>optional field<br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the value of <em>'radius'</em> is specified in kilometres (km)<br>the minimum value for <em>'radius'</em>: <code>1</code><br>the maximum value for <em>'radius'</em>: <code>100000</code><br>example:<br><code class='long-string'>53.476225,-2.243572,200</code><br>learn more about how to set location parameters in this API on our <a href='https://dataforseo.com/help-center/how-to-specify-location-settings-in-business-listings-api' target='_blank'>Help Center</a>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable

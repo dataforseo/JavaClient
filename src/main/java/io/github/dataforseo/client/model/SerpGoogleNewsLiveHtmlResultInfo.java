@@ -47,7 +47,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
   }
 
   /**
-   * 
+   * <em>keyword received in a POST array<br></em><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
   }
 
   /**
-   * 
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
   }
 
   /**
-   * 
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
   }
 
   /**
-   * 
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
   }
 
   /**
-   * 
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -177,23 +177,23 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Integer itemsCount;
+  private Long itemsCount;
 
-  public SerpGoogleNewsLiveHtmlResultInfo itemsCount(Integer itemsCount) {
+  public SerpGoogleNewsLiveHtmlResultInfo itemsCount(Long itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
 
   /**
-   * 
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Integer getItemsCount() {
+  public Long getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Integer itemsCount) {
+  public void setItemsCount(Long itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -208,7 +208,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo  {
   }
 
   /**
-   * 
+   * <em>elements of search results found in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

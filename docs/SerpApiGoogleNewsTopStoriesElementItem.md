@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **page** | **Integer** |  |[optional]|
-**position** | **String** | the alignment of the element in SERP<br>can take the following values:<br>left |[optional]|
-**items** | **List<TopStoriesElement>** | items of the element |[optional]|
+**position** | **String** | <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code> |[optional]|
+**items** | **List<TopStoriesElement>** | <em>items of the element</em> |[optional]|

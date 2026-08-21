@@ -37,6 +37,29 @@ import io.github.dataforseo.client.JSON;
 public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
 
 
+  public static final String SERIALIZED_NAME_IS_RENDERED = "is_rendered";
+  @SerializedName(SERIALIZED_NAME_IS_RENDERED)
+  private Boolean isRendered;
+
+  public ChatGptAdElementItem isRendered(Boolean isRendered) {
+    this.isRendered = isRendered;
+    return this;
+  }
+
+  /**
+   * <em>  indicates whether the ad is displayed to the user</em><br>if `true`, the ad is present in the response and shown on the page<br>if `false`, the ad is present in the response but not displayed to the user
+   * @return isRendered
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsRendered() {
+    return isRendered;
+  }
+
+  public void setIsRendered(Boolean isRendered) {
+    this.isRendered = isRendered;
+  }
+
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -218,6 +241,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
     ChatGptAdElementItem chatGptAdElementItem = (ChatGptAdElementItem) o;
     return
 
+        Objects.equals(this.isRendered, chatGptAdElementItem.isRendered) &&
         Objects.equals(this.title, chatGptAdElementItem.title) &&
         Objects.equals(this.snippet, chatGptAdElementItem.snippet) &&
         Objects.equals(this.url, chatGptAdElementItem.url) &&
@@ -234,7 +258,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, snippet, url, domain, imageUrl, advertiser);
+  return Objects.hash(isRendered, title, snippet, url, domain, imageUrl, advertiser);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -249,6 +273,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
     StringBuilder sb = new StringBuilder();
     sb.append("class ChatGptAdElementItem {\n");
 
+    sb.append("    isRendered: ").append(toIndentedString(isRendered)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -280,6 +305,8 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
+    
+    openapiFields.add("is_rendered");
     
     openapiFields.add("title");
     

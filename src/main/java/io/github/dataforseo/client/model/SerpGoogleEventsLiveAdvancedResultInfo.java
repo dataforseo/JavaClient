@@ -208,7 +208,8 @@ public class SerpGoogleEventsLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * autocorrection of the search engine
+* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable

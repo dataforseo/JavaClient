@@ -93,7 +93,7 @@ public class ProductIdentifiers  {
   }
 
   /**
-   * <em>global product identifier on Google Shopping</em><br>example:<br><code>4702526954592161872<code><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
+   * <em>global product identifier on Google Shopping</em><br>example:<br><code>4702526954592161872</code><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return gid
    */
   @javax.annotation.Nullable

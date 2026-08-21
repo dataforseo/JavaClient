@@ -82,9 +82,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsIdListRequestInfo model = new DataforseoLabsIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     DataforseoLabsIdListResponseInfo response = apiInstance.dataforseoLabsIdList(List.of(model));
     System.out.println(result);
@@ -224,8 +222,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsErrorsRequestInfo model = new DataforseoLabsErrorsRequestInfo()
-           .limit(10)
-           .offset(0);
+           .limit(10);
     DataforseoLabsErrorsResponseInfo response = apiInstance.dataforseoLabsErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

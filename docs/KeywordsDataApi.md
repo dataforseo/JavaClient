@@ -105,9 +105,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
     KeywordsDataIdListRequestInfo model = new KeywordsDataIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     KeywordsDataIdListResponseInfo response = apiInstance.keywordsDataIdList(List.of(model));
     System.out.println(result);

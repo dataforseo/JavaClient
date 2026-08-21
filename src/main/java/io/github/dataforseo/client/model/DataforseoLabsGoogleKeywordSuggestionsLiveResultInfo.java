@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * keyword in a POST array
+   * <em>keyword in a POST array</em>
    * @return seedKeyword
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * keyword data for the seed keywordfields in this object are identical to those of the items array
+   * <em>keyword data for the seed keyword</em><br>fields in this object are identical to those of the <code>items</code> array
    * @return seedKeywordData
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * location code in a POST arrayif there is no data, then the value is_nulln
+   * <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * language code in a POST arrayif there is no data, then the value is_nulln
+   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * current offset value
+   * <em>current offset value</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * offset token for subsequent requestsyou can use the string provided in this field to get the subsequent results of the initial task;note: offset_token values are unique for each subsequent task
+   * <em>offset token for subsequent requests</em><br>you can use the string provided in this field to get the subsequent results of the initial task;<br><strong>note:</strong> <code>offset_token</code> values are unique for each subsequent task
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
   }
 
   /**
-   * contains keywords and related data
+   * <em>contains keywords and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

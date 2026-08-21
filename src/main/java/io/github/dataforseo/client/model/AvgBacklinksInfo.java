@@ -47,7 +47,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average number of backlinks
+   * <em>average number of backlinks</em>
    * @return backlinks
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average number of dofollow links
+   * <em>average number of dofollow links</em>
    * @return dofollow
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average number of referring pages
+   * <em>average number of referring pages</em>
    * @return referringPages
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average number of referring domains
+   * <em>average number of referring domains</em>
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average number of referring main domains
+   * <em>average number of referring main domains</em>
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average ranklearn more about the metric and its calculation formula in this help center article
+   * <em>average rank</em><br>learn more about the metric and its calculation formula in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * average main domain ranklearn more about the metric and its calculation formula in this help center article
+   * <em>average main domain rank</em><br>learn more about the metric and its calculation formula in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return mainDomainRank
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class AvgBacklinksInfo  {
   }
 
   /**
-   * date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable

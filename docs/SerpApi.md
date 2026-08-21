@@ -216,9 +216,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpIdListRequestInfo model = new SerpIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     SerpIdListResponseInfo response = apiInstance.idList(List.of(model));
     System.out.println(result);

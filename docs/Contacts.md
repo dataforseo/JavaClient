@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**telephones** | **List<String>** | array of telephone numbers |[optional]|
-**emails** | **List<String>** | array of emails |[optional]|
+**telephones** | **List<String>** | <em>array of telephone numbers</em><br> |[optional]|
+**emails** | **List<String>** | <em>array of emails</em><br> |[optional]|

@@ -47,7 +47,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * main search intentpossible values: informational, navigational, commercial, transactional
+   * <em>main search intent</em><br>possible values: <code>informational</code>, <code>navigational</code>, <code>commercial</code>, <code>transactional</code>
    * @return mainIntent
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * supplementary search intentspossible values: informational, navigational, commercial, transactional
+   * <em>supplementary search intents</em><br>possible values: <code>informational</code>, <code>navigational</code>, <code>commercial</code>, <code>transactional</code>
    * @return foreignIntent
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SearchIntentInfo  {
   }
 
   /**
-   * date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable

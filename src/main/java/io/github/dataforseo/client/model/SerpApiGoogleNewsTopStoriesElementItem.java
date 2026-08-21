@@ -70,9 +70,7 @@ public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNe
   }
 
   /**
-   * items of the element
+   * <em>items of the element</em>
    * @return items
    */
   @javax.annotation.Nullable

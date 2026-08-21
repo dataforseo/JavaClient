@@ -47,7 +47,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>domain in SERP</em>
+   * <em>subdomain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>title of a given element</em>
+   * <em>the title of the featured snippets source page</em>
    * @return featuredTitle
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>table element</em>
+   * <em>results table</em><br>            if there are none, equals <code>null</code>
    * @return table
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>estimated traffic volume</em><br>            estimated organic monthly traffic a featured URL delivers to the domain<br>            calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
+   * <em>estimated traffic volume</em><br>            estimated organic monthly traffic to the domain or webpage;<br>            calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return etv
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>estimated cost of converting organic search traffic into paid</em><br>            represents the estimated monthly cost of running ads for the returned keyword<br>            the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
+   * <em>estimated cost of converting organic search traffic into paid</em><br>            represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;<br>            the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * 
+   * <em>estimated traffic volume based on clickstream data</em><br>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;<br>            to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code>;<br>            learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>changes in rankings</em><br>            ranking changes of the SERP element compared to the preceding month;<br>            <strong>Note:</strong> the changes are calculated even if the preceding month is not included in a POST request
+   * <em>changes in rankings</em><br>            contains information about the ranking changes of the SERP element since the <code>previous_updated_time</code>
    * @return rankChanges
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * <em>backlinks information for the ranked website</em>
+   * <em>backlinks information for the relevant page URL</em>
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

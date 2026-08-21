@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveItem  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveItem  {
   }
 
   /**
-   * keyword data for the returned keyword
+   * <em>keyword data for the returned keyword</em>
    * @return keywordData
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveItem  {
   }
 
   /**
-   * keyword search depth
+   * <em>keyword search depth</em>
    * @return depth
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveItem  {
   }
 
   /**
-   * list of related keywordsrepresents the list of search queries which are related to the keyword returned in the array above
+   * <em>list of related keywords</em><br>represents the list of search queries which are related to the keyword returned in the array above
    * @return relatedKeywords
    */
   @javax.annotation.Nullable

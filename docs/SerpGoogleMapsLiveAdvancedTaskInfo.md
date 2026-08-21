@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleMapsLiveAdvancedResultInfo>** |  |[optional]|
+**result** | **List<SerpGoogleMapsLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,9 +47,7 @@ public class SerpApiGoogleFinanceNewsElementItem  extends BaseSerpApiGoogleFinan
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiGoogleFinanceNewsElementItem  extends BaseSerpApiGoogleFinan
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class SerpApiGoogleFinanceNewsElementItem  extends BaseSerpApiGoogleFinan
   }
 
   /**
-   * title of the news element
-* example: In the news
+   * <em>title of the news element</em><br>example: <code>In the news</code>
    * @return title
    */
   @javax.annotation.Nullable
@@ -120,8 +116,7 @@ public class SerpApiGoogleFinanceNewsElementItem  extends BaseSerpApiGoogleFinan
   }
 
   /**
-   * sub-title of the news element
-* example: Based on Europe, Middle East, and Africa
+   * <em>sub-title of the news element</em><br>example: <code>Based on Europe, Middle East, and Africa</code>
    * @return subTitle
    */
   @javax.annotation.Nullable
@@ -144,9 +139,7 @@ public class SerpApiGoogleFinanceNewsElementItem  extends BaseSerpApiGoogleFinan
   }
 
   /**
-   * market indexes data
-* array of items containing market indexes data;
-* possible type of items: google_finance_asset_pair_element, google_finance_market_instrument_element, google_finance_market_index_element
+   * <em>market indexes data</em><br>array of items containing market indexes data;<br>possible <code>type</code> of items: <code>google_finance_asset_pair_element</code>, <code>google_finance_market_instrument_element</code>, <code>google_finance_market_index_element</code>
    * @return items
    */
   @javax.annotation.Nullable

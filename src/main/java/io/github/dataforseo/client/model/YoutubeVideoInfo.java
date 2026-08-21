@@ -70,9 +70,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>            position within a group of elements with identical <code>type</code> values<br>            positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * absolute rank in SERP for the target domain
-* absolute position among all the elements in SERP
+   * <em> absolute rank in SERP for the target domain</em><br>            absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * ID of the video received in a POST array
+   * <em>ID of the video received in a POST array</em>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * title of the video
+   * <em>title of the video</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * URL of the video
+   * <em>URL of the video</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the URL of the page where the thumbnail is hosted
+   * <em>the URL of the page where the thumbnail is hosted</em>
    * @return thumbnailUrl
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the ID of the channel where the video is published
+   * <em>the ID of the channel where the video is published</em>
    * @return channelId
    */
   @javax.annotation.Nullable
@@ -234,7 +231,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the name of the channel where the video is published
+   * <em>the name of the channel where the video is published</em>
    * @return channelName
    */
   @javax.annotation.Nullable
@@ -257,7 +254,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the URL of the channel where the video is published
+   * <em>the URL of the channel where the video is published</em>
    * @return channelUrl
    */
   @javax.annotation.Nullable
@@ -280,7 +277,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the URL of the page where the logo image of the channel is hosted
+   * <em>the URL of the page where the logo image of the channel is hosted</em>
    * @return channelLogo
    */
   @javax.annotation.Nullable
@@ -303,7 +300,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * description of the video
+   * <em>description of the video</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -326,7 +323,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * number of views of the video
+   * <em>number of views of the video</em>
    * @return viewsCount
    */
   @javax.annotation.Nullable
@@ -349,7 +346,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * number of likes on the video
+   * <em>number of likes on the video</em>
    * @return likesCount
    */
   @javax.annotation.Nullable
@@ -372,7 +369,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * number of comments on the video
+   * <em>number of comments on the video</em>
    * @return commentsCount
    */
   @javax.annotation.Nullable
@@ -395,7 +392,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * number of subscribers of the channel
+   * <em>number of subscribers of the channel</em>
    * @return channelSubscribersCount
    */
   @javax.annotation.Nullable
@@ -418,7 +415,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the date when the video is published
+   * <em>the date when the video is published</em>
    * @return publicationDate
    */
   @javax.annotation.Nullable
@@ -441,10 +438,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * date and time when the result is published
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2022-11-15 12:57:46 +00:00
+   * <em>date and time when the result is published</em><br>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>            example:<br>            <code>2022-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -467,7 +461,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * keywords relevant to the video
+   * <em>keywords relevant to the video</em><br>            also known as 'YouTube tags'
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -490,7 +484,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * the category the video belongs to
+   * <em>the category the video belongs to</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -513,7 +507,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * indicates whether the video is on live
+   * <em>indicates whether the video is on live</em>
    * @return isLive
    */
   @javax.annotation.Nullable
@@ -536,7 +530,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * indicates whether the video is embeddable
+   * <em>indicates whether the video is embeddable</em>
    * @return isEmbeddable
    */
   @javax.annotation.Nullable
@@ -559,7 +553,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * duration of the video
+   * <em>duration of the video</em>
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -582,7 +576,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * duration of the video in seconds
+   * <em>duration of the video in seconds</em>
    * @return durationTimeSeconds
    */
   @javax.annotation.Nullable
@@ -605,7 +599,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * array of elements describing properties of subtitles in the video
+   * <em>array of elements describing properties of subtitles in the video</em>
    * @return subtitles
    */
   @javax.annotation.Nullable
@@ -628,7 +622,7 @@ public class YoutubeVideoInfo  {
   }
 
   /**
-   * array of elements that contain information about all possible streaming qualities of the video
+   * <em>array of elements that contain information about all possible streaming qualities of the video</em>
    * @return streamingQuality
    */
   @javax.annotation.Nullable

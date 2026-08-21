@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataGoogleReviewsTasksReadyTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataGoogleReviewsTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

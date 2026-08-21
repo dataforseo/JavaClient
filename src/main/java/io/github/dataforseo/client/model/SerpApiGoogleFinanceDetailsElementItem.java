@@ -47,9 +47,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * google finance badges relevant to the element
-* example: Futures Contract
+   * <em>google finance badges relevant to the element</em><br>example: <code>Futures Contract</code>
    * @return badges
    */
   @javax.annotation.Nullable
@@ -120,7 +116,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * value of the previous close
+   * <em>value of the previous close</em>
    * @return previousClose
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * value of the start day range
+   * <em>value of the start day range</em>
    * @return startDayRange
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * value of the end day range
+   * <em>value of the end day range</em>
    * @return endDayRange
    */
   @javax.annotation.Nullable
@@ -189,7 +185,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * value of the start year range
+   * <em>value of the start year range</em>
    * @return startYearRange
    */
   @javax.annotation.Nullable
@@ -212,7 +208,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * value of the end year range
+   * <em>value of the end year range</em>
    * @return endYearRange
    */
   @javax.annotation.Nullable
@@ -235,7 +231,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * market cap value
+   * <em>market cap value</em>
    * @return marketCap
    */
   @javax.annotation.Nullable
@@ -258,7 +254,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * total volume value
+   * <em>total volume value</em>
    * @return volume
    */
   @javax.annotation.Nullable
@@ -281,7 +277,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * average volume value
+   * <em>average volume value</em>
    * @return avgVolume
    */
   @javax.annotation.Nullable
@@ -304,7 +300,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * price-earnings ratio
+   * <em>price-earnings ratio</em>
    * @return peRatio
    */
   @javax.annotation.Nullable
@@ -327,7 +323,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * dividend yield value
+   * <em>dividend yield value</em>
    * @return dividendYield
    */
   @javax.annotation.Nullable
@@ -350,7 +346,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * primary exchange value
+   * <em>primary exchange value</em>
    * @return primaryExchange
    */
   @javax.annotation.Nullable
@@ -373,7 +369,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * year-to-date return value
+   * <em>year-to-date return value</em>
    * @return ytdReturn
    */
   @javax.annotation.Nullable
@@ -396,7 +392,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * expense ratio value
+   * <em>expense ratio value</em>
    * @return expenseRatio
    */
   @javax.annotation.Nullable
@@ -419,7 +415,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * category name
+   * <em>category name</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -465,7 +461,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * yield value
+   * <em>yield value</em>
    * @return yield
    */
   @javax.annotation.Nullable
@@ -488,7 +484,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * front load value
+   * <em>front load value</em>
    * @return frontLoad
    */
   @javax.annotation.Nullable
@@ -511,7 +507,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * name of the relevant market segment
+   * <em>name of the relevant market segment</em>
    * @return marketSegment
    */
   @javax.annotation.Nullable
@@ -534,7 +530,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * open interest value
+   * <em>open interest value</em>
    * @return openInterest
    */
   @javax.annotation.Nullable
@@ -557,7 +553,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * settlement price value
+   * <em>settlement price value</em>
    * @return settlementPrice
    */
   @javax.annotation.Nullable
@@ -580,7 +576,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * climate change score by carbon disclosure project methodology
+   * <em>climate change score by carbon disclosure project methodology</em>
    * @return cdpClimateChangeScore
    */
   @javax.annotation.Nullable
@@ -603,7 +599,7 @@ public class SerpApiGoogleFinanceDetailsElementItem  extends BaseSerpApiGoogleFi
   }
 
   /**
-   * currency of the metrics
+   * <em>currency of the metrics</em>
    * @return metricsCurrency
    */
   @javax.annotation.Nullable

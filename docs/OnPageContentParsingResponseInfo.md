@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<OnPageContentParsingTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<OnPageContentParsingTaskInfo>** | <em>array of tasks</em> |[optional]|

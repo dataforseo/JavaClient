@@ -70,9 +70,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * identifier of the element
-* full identifier of the element that consists from ticker and market_identifier
-* example: PX1:INDEXDB
+   * <em>identifier of the element</em><br>full identifier of the element that consists from <code>ticker</code> and <code>market_identifier</code><br>example: <code>PX1:INDEXDB</code>
    * @return identifier
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * name of the market index as displayed on Google Finance
-* example: CAC 40
+   * <em>name of the market index as displayed on Google Finance</em><br>example: <code>CAC 40</code>
    * @return displayedName
    */
   @javax.annotation.Nullable
@@ -168,7 +162,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * URL to the page of the market index on Google Finance
+   * <em>URL to the page of the market index on Google Finance</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -191,8 +185,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * location of the market index
-* example: Europe/Paris
+   * <em>location of the market index</em><br>example: <code>Europe/Paris</code>
    * @return location
    */
   @javax.annotation.Nullable
@@ -215,8 +208,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * growth trend of the market index
-* possible values: up, down, stable
+   * <em>growth trend of the market index</em><br>possible values: <code>up</code>, <code>down</code>, <code>stable</code>
    * @return trend
    */
   @javax.annotation.Nullable
@@ -239,10 +231,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * date and time of the value readout
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-02-10 09:40:00 +00:00
+   * <em>date and time of the value readout</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -265,7 +254,7 @@ public class BaseSerpApiGoogleFinanceTickerSearchElementItem  {
   }
 
   /**
-   * percentage of change in value of the market index
+   * <em>percentage of change in value of the market index</em>
    * @return percentageDelta
    */
   @javax.annotation.Nullable

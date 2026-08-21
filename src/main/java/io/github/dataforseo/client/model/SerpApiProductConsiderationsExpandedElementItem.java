@@ -232,7 +232,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> element no longer appears in SERP and has been deprecated in SERP API
+   * <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> this object is deprecated and always returns <code>null</null>
    * @deprecated
    * @return aboutThisResult
    */

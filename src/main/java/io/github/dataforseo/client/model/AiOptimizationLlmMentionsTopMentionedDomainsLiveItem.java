@@ -162,7 +162,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiveItem  {
   }
 
   /**
-   * <em>found top search results domains relevant to the target</em><br>array of objects containing data on top domains that appear in search results related to LLM queries
+   * <em>found top search results domains relevant to the target</em><br>array of objects containing data on top domains that appear in search results related to LLM queries;<br><strong>Note:</strong> available only for <code>chat_gpt</code>
    * @return searchResultsDomain
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiveItem  {
   }
 
   /**
-   * <em>data on brand entities relevant to the target</em><br>array of objects containing data on brand entity titles that appear in search results related to LLM queries
+   * <em>data on brand entities relevant to the target</em><br>array of objects containing data on brand entity titles that appear in search results related to LLM queries;<br><strong>Note:</strong> available only for <code>chat_gpt</code>
    * @return brandEntitiesTitle
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiveItem  {
   }
 
   /**
-   * <em>data on brand entities relevant to the target</em><br>array of objects containing data on brand entity categories that appear in search results related to LLM queries
+   * <em>data on brand entities relevant to the target</em><br>array of objects containing data on brand entity categories that appear in search results related to LLM queries;<br><strong>Note:</strong> available only for <code>chat_gpt</code>
    * @return brandEntitiesCategory
    */
   @javax.annotation.Nullable

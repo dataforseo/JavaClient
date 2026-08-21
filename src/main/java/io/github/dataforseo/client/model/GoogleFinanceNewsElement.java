@@ -70,7 +70,7 @@ public class GoogleFinanceNewsElement  {
   }
 
   /**
-   * title of the news article
+   * <em>title of the news article</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class GoogleFinanceNewsElement  {
   }
 
   /**
-   * URL to the page of the market index on Google Finance
+   * <em>URL to the page of the market index on Google Finance</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class GoogleFinanceNewsElement  {
   }
 
   /**
-   * name of the news source
-* name of the website where the news article is published
+   * <em>name of the news source</em><br>name of the website where the news article is published
    * @return source
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class GoogleFinanceNewsElement  {
   }
 
   /**
-   * featured image URL
-* URL of the news article’s featured image
+   * <em>featured image URL</em><br>URL of the news article's featured image
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -164,10 +162,7 @@ public class GoogleFinanceNewsElement  {
   }
 
   /**
-   * date and time of the value readout
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-02-10 09:40:00 +00:00
+   * <em>date and time of the value readout</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class GoogleFinanceNewsElement  {
   }
 
   /**
-   * market indexes quoted in the news article
-* information about market indexes quoted in the google_finance_news_element
+   * <em>market indexes quoted in the news article</em><br>information about market indexes quoted in the <code>google_finance_news_element</code>
    * @return quotes
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleImagesTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleImagesTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

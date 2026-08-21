@@ -47,7 +47,7 @@ public class WorkHours  {
   }
 
   /**
-   * work hours timetable
+   * <em>work hours timetable</em>
    * @return timetable
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class WorkHours  {
   }
 
   /**
-   * current status of the establishment
-* indicates whether the establishment is opened or closed
+   * <em>current status of the establishment</em><br>indicates whether the establishment is opened or closed
    * @return currentStatus
    */
   @javax.annotation.Nullable

@@ -71,7 +71,7 @@ public class SerpApiGoogleSearchByImagesImagesElementItem  extends BaseSerpApiGo
   }
 
   /**
-   * 
+   * <em>contains keywords and images related to the specified search term</em><br>            if there are none, equals <code>null</code>
    * @deprecated
    * @return relatedImageSearches
    */

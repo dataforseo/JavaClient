@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**quarterlyMetrics** | **List<GoogleFinanceMetricsBundleInfo>** | quarterly google finance metrics |[optional]|
-**annualMetrics** | **List<GoogleFinanceMetricsBundleInfo>** | annual google finance metrics |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**quarterlyMetrics** | **List<GoogleFinanceMetricsBundleInfo>** | <em>quarterly google finance metrics</em> |[optional]|
+**annualMetrics** | **List<GoogleFinanceMetricsBundleInfo>** | <em>annual google finance metrics</em> |[optional]|

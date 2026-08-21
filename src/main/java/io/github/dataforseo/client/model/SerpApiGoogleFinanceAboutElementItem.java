@@ -47,9 +47,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * displayed name of the market index
-* example: E-mini Dow ($5)
+   * <em>displayed name of the market index</em><br>example: <code>E-mini Dow ($5)</code>
    * @return displayedName
    */
   @javax.annotation.Nullable
@@ -120,7 +116,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * company description
+   * <em>company description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * source of information provided in description
+   * <em>source of information provided in description</em>
    * @return descriptionSourceUrl
    */
   @javax.annotation.Nullable
@@ -166,7 +162,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * Chief Executive Officer of the company
+   * <em>Chief Executive Officer of the company</em>
    * @return ceo
    */
   @javax.annotation.Nullable
@@ -189,10 +185,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * date when the company was founded
-* in the format: “yyyy-mm-ddThh-mm-ssZ”
-* example:
-* 1993-04-05T00:00:00Z
+   * <em>date when the company was founded</em><br>in the format: 'yyyy-mm-ddThh-mm-ssZ'<br>example:<br><code class='long-string'>1993-04-05T00:00:00Z</code>
    * @return founded
    */
   @javax.annotation.Nullable
@@ -215,7 +208,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * company headquarters
+   * <em>company headquarters</em>
    * @return headquarters
    */
   @javax.annotation.Nullable
@@ -238,7 +231,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * company website
+   * <em>company website</em>
    * @return website
    */
   @javax.annotation.Nullable
@@ -261,7 +254,7 @@ public class SerpApiGoogleFinanceAboutElementItem  extends BaseSerpApiGoogleFina
   }
 
   /**
-   * number of company employees
+   * <em>number of company employees</em>
    * @return employees
    */
   @javax.annotation.Nullable

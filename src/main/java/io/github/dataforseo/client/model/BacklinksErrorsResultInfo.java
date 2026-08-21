@@ -223,9 +223,9 @@ public class BacklinksErrorsResultInfo  {
 
   public static final String SERIALIZED_NAME_HTTP_TIME = "http_time";
   @SerializedName(SERIALIZED_NAME_HTTP_TIME)
-  private Integer httpTime;
+  private Double httpTime;
 
-  public BacklinksErrorsResultInfo httpTime(Integer httpTime) {
+  public BacklinksErrorsResultInfo httpTime(Double httpTime) {
     this.httpTime = httpTime;
     return this;
   }
@@ -235,11 +235,11 @@ public class BacklinksErrorsResultInfo  {
    * @return httpTime
    */
   @javax.annotation.Nullable
-  public Integer getHttpTime() {
+  public Double getHttpTime() {
     return httpTime;
   }
 
-  public void setHttpTime(Integer httpTime) {
+  public void setHttpTime(Double httpTime) {
     this.httpTime = httpTime;
   }
 

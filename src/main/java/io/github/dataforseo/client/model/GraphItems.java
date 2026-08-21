@@ -47,10 +47,7 @@ public class GraphItems  {
   }
 
   /**
-   * date and time of the value readout
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-02-10 09:40:00 +00:00
+   * <em>date and time of the value readout</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -73,7 +70,7 @@ public class GraphItems  {
   }
 
   /**
-   * point value on graph
+   * <em>point value on graph</em>
    * @return value
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class GraphItems  {
   }
 
   /**
-   * volume value on graph
+   * <em>volume value on graph</em>
    * @return volume
    */
   @javax.annotation.Nullable

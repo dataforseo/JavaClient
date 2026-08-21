@@ -47,7 +47,7 @@ public class TopicInfo  {
   }
 
   /**
-   * meta title
+   * <em>meta title</em><br>
    * @return hTitle
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class TopicInfo  {
   }
 
   /**
-   * main title of the block
+   * <em>  main title of the block</em><br>
    * @return mainTitle
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class TopicInfo  {
   }
 
   /**
-   * content author name
+   * <em>content author name</em><br>
    * @return author
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class TopicInfo  {
   }
 
   /**
-   * content language
+   * <em>content language</em><br>
    * @return language
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class TopicInfo  {
   }
 
   /**
-   * HTML level
+   * <em>HTML level</em><br>
    * @return level
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class TopicInfo  {
   }
 
   /**
-   * primary content on the page
-* you can find more information about content priority calculation in this help center article
+   * <em>primary content on the page</em><br>            you can find more information about content priority calculation in this <a href='https://dataforseo.com/help-center/difference-between-primary-and-secondary-content' rel='noopener noreferrer' target='_blank'>help center article</a><br>
    * @return primaryContent
    */
   @javax.annotation.Nullable
@@ -186,8 +185,7 @@ public class TopicInfo  {
   }
 
   /**
-   * secondary content on the page
-* you can find more information about content priority calculation in this help center article
+   * <em>secondary content on the page</em><br>            you can find more information about content priority calculation in this <a href='https://dataforseo.com/help-center/difference-between-primary-and-secondary-content' rel='noopener noreferrer' target='_blank'>help center article</a><br>
    * @return secondaryContent
    */
   @javax.annotation.Nullable
@@ -210,7 +208,7 @@ public class TopicInfo  {
   }
 
   /**
-   * content of the table on the page
+   * <em>content of the table on the page</em><br>
    * @return tableContent
    */
   @javax.annotation.Nullable

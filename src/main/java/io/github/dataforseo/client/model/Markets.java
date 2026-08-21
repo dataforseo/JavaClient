@@ -47,8 +47,7 @@ public class Markets  {
   }
 
   /**
-   * financial market identifier
-* possible values: US, Europe, Asia, Currencies, Crypto, Futures
+   * <em>financial market identifier</em><br>possible values: <code>US</code>, <code>Europe</code>, <code>Asia</code>, <code>Currencies</code>, <code>Crypto</code>, <code>Futures</code>
    * @return market
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class Markets  {
   }
 
   /**
-   * elements of search results found in SERP
+   * <em>elements of search results found in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

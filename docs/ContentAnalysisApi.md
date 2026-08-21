@@ -46,9 +46,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
     ContentAnalysisIdListRequestInfo model = new ContentAnalysisIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     ContentAnalysisIdListResponseInfo response = apiInstance.contentAnalysisIdList(List.of(model));
     System.out.println(result);

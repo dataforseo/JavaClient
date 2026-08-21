@@ -70,8 +70,7 @@ public class GoogleFinanceMarketTrendsElement  {
   }
 
   /**
-   * object of items
-* array contains the following type of items: google_finance_asset_pair_element, google_finance_market_instrument_element, google_finance_market_index_element
+   * <em>object of items</em><br>array contains the following <code>type</code> of items: <code>google_finance_asset_pair_element</code>, <code>google_finance_market_instrument_element</code>, <code>google_finance_market_index_element</code>
    * @return quote
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class GoogleFinanceMarketTrendsElement  {
   }
 
   /**
-   * array of items
-* array contains the following type of items: google_finance_news_element
+   * <em>array of items</em><br>array contains the following <code>type</code> of items: <code>google_finance_news_element</code>
    * @return news
    */
   @javax.annotation.Nullable

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**timetable** | **Map<String, List<WorkDayInfo>>** | work hours timetable |[optional]|
-**currentStatus** | **String** | current status of the establishment<br>indicates whether the establishment is opened or closed |[optional]|
+**timetable** | **Map<String, List<WorkDayInfo>>** | <em>work hours timetable</em> |[optional]|
+**currentStatus** | **String** | <em>current status of the establishment</em><br>indicates whether the establishment is opened or closed |[optional]|

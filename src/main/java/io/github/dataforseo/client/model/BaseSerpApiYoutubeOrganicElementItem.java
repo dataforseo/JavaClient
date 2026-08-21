@@ -70,7 +70,7 @@ public class BaseSerpApiYoutubeOrganicElementItem  {
   }
 
   /**
-   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
+   * <em>group rank in SERP</em><br>            position within a group of elements with identical <code>type</code> values<br>            positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BaseSerpApiYoutubeOrganicElementItem  {
   }
 
   /**
-   * <em> absolute rank in SERP for the target domain</em><br>absolute position among all the elements in SERP
+   * <em> absolute rank in SERP for the target domain</em><br>            absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BaseSerpApiYoutubeOrganicElementItem  {
   }
 
   /**
-   * <em>block rank in SERP</em><br>position among all the blocks in SERP
+   * <em>block rank in SERP</em><br>            position among all the blocks in SERP
    * @return blockRank
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BaseSerpApiYoutubeOrganicElementItem  {
   }
 
   /**
-   * <em>name of the block in SERP</em><br>example:<br><code>'People also watched'</code>
+   * <em>name of the block in SERP</em><br>            example:<br>            <code>'People also watched'</code><br>
    * @return blockName
    */
   @javax.annotation.Nullable

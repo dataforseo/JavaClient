@@ -47,8 +47,7 @@ public class SerpApiGoogleFinanceMarketIndexElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * ticker of the market index
-* example: DAX
+   * <em>ticker of the market index</em><br>example: <code>DAX</code>
    * @return ticker
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class SerpApiGoogleFinanceMarketIndexElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * market identifier
-* example: INDEXDB
+   * <em>market identifier</em><br>example: <code>INDEXDB</code>
    * @return marketIdentifier
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class SerpApiGoogleFinanceMarketIndexElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * value of the market index
-* numerical value of the index at a given timestamp
+   * <em>value of the market index</em><br>numerical value of the index at a given <code>timestamp</code>
    * @return indexValue
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class SerpApiGoogleFinanceMarketIndexElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * change in value of the market index
-* change in the index_value at a given timestamp
+   * <em>change in value of the market index</em><br>change in the <code>index_value</code> at a given <code>timestamp</code>
    * @return indexValueDelta
    */
   @javax.annotation.Nullable

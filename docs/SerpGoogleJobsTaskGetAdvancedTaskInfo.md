@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleJobsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleJobsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

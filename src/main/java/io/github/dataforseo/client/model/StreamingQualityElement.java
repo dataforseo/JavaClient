@@ -70,7 +70,7 @@ public class StreamingQualityElement  {
   }
 
   /**
-   * label of the quality element
+   * <em>label of the quality element</em>
    * @return label
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class StreamingQualityElement  {
   }
 
   /**
-   * video width in pixels
+   * <em>video width in pixels</em>
    * @return width
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class StreamingQualityElement  {
   }
 
   /**
-   * video height in pixels
+   * <em>video height in pixels</em>
    * @return height
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class StreamingQualityElement  {
   }
 
   /**
-   * bit rate of the video
+   * <em><a href='https://en.wikipedia.org/wiki/Bit_rate' target='_blank' rel='noopener noreferrer'>bit rate</a> of the video</em>
    * @return bitrate
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class StreamingQualityElement  {
   }
 
   /**
-   * media type of the video
+   * <em><a href='https://en.wikipedia.org/wiki/Media_type' target='_blank' rel='noopener noreferrer'>media type</a> of the video</em>
    * @return mimeType
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class StreamingQualityElement  {
   }
 
   /**
-   * frame rate of the video
+   * <em><a href='https://en.wikipedia.org/wiki/Frame_rate' target='_blank' rel='noopener noreferrer'>frame rate</a> of the video</em>
    * @return fps
    */
   @javax.annotation.Nullable

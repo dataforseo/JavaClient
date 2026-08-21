@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * categories in a POST array
+   * <em>categories in a POST array</em>
    * @return seedCategories
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * the total amount of results in our database relevant to your request
+   * <em>the total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * current offset value
+   * <em>current offset value</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * offset token for subsequent requestsyou can use the string provided in this field to get the subsequent results of the initial task;note: offset_token values are unique for each subsequent task
+   * <em>offset token for subsequent requests</em><br>you can use the string provided in this field to get the subsequent results of the initial task;<br><strong>note:</strong> <code>offset_token</code> values are unique for each subsequent task
    * @return offsetToken
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataforseoLabsGoogleKeywordsForCategoriesLiveResultInfo  {
   }
 
   /**
-   * contains keyword ideas and related data
+   * <em>contains keyword ideas and related data</em>
    * @return items
    */
   @javax.annotation.Nullable

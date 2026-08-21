@@ -47,8 +47,7 @@ public class ChannelSubscribersCount  {
   }
 
   /**
-   * displayed subscriber count
-* subscriber count as displayed on YouTube
+   * <em>displayed subscriber count</em><br>            subscriber count as displayed on YouTube
    * @return displayedCount
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class ChannelSubscribersCount  {
   }
 
   /**
-   * subscriber count
+   * <em>subscriber count</em>
    * @return count
    */
   @javax.annotation.Nullable

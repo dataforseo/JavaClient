@@ -47,8 +47,7 @@ public class SerpGoogleFinanceExploreAdvancedItem  {
   }
 
   /**
-   * array of items
-* this array can take the following names: most_active, gainers, losers
+   * <em>array of items</em><br>this array can take the following names: <code>most_active</code>, <code>gainers</code>, <code>losers</code>
    * @return mostActive
    */
   @javax.annotation.Nullable

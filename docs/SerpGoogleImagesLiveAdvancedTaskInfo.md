@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleImagesLiveAdvancedResultInfo>** |  |[optional]|
+**result** | **List<SerpGoogleImagesLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

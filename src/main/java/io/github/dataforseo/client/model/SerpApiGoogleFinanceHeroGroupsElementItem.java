@@ -47,9 +47,7 @@ public class SerpApiGoogleFinanceHeroGroupsElementItem  extends BaseSerpApiGoogl
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class SerpApiGoogleFinanceHeroGroupsElementItem  extends BaseSerpApiGoogl
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class SerpApiGoogleFinanceHeroGroupsElementItem  extends BaseSerpApiGoogl
   }
 
   /**
-   * financial markets data
-* array of items containing market indexes and other financial information related to these indexes
+   * <em>financial markets data</em><br>array of items containing market indexes and other financial information related to these indexes
    * @return markets
    */
   @javax.annotation.Nullable

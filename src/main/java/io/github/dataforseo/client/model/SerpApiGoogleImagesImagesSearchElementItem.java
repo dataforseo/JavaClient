@@ -47,7 +47,7 @@ public class SerpApiGoogleImagesImagesSearchElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * title of the result in SERP
+   * <em>title of the result in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiGoogleImagesImagesSearchElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * subtitle of the result in SERP
+   * <em>subtitle of the result in SERP</em>
    * @return subtitle
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiGoogleImagesImagesSearchElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * the alt tag of the image
+   * <em>the alt tag of the image</em>
    * @return alt
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiGoogleImagesImagesSearchElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiGoogleImagesImagesSearchElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * the URL of the source image
+   * <em>the URL of the source image</em>
    * @return sourceUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiGoogleImagesImagesSearchElementItem  extends BaseSerpApiGoog
   }
 
   /**
-   * the URL of the cached version of the image stored on Google’s servers
+   * <em>the URL of the cached version of the image stored on Google's servers</em>
    * @return encodedUrl
    */
   @javax.annotation.Nullable

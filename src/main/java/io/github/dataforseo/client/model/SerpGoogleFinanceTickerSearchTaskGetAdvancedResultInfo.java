@@ -47,8 +47,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * <em>keyword received in a POST array</em><br><strong>the keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chips
-* in this case, the value will be null
+   * <em>search refinement chips</em><br>in this case, the value will be <code>null</code>
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -261,9 +254,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP;
-* possible item types: google_finance_market_index, google_finance_asset_pair, google_finance_market_instrument
+   * <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP;<br>possible item types: <a href='#google_finance_market_index'><code>google_finance_market_index</code></a>, <a href='#google_finance_asset_pair'><code>google_finance_asset_pair</code></a>, <a href='#google_finance_market_instrument'><code>google_finance_market_instrument</code></a>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -286,7 +277,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * total number of results in SERP
+   * <em> total number of results in SERP</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -309,7 +300,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -332,9 +323,7 @@ public class SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * items of search results found in SERP
-* array of items containing market indexes data;
-* possible type of items: google_finance_market_index, google_finance_asset_pair, google_finance_market_instrument
+   * <em>items of search results found in SERP</em><br>array of items containing market indexes data;<br>possible <code>type</code> of items: <code>google_finance_market_index</code>, <code>google_finance_asset_pair</code>, <code>google_finance_market_instrument</code>
    * @return items
    */
   @javax.annotation.Nullable

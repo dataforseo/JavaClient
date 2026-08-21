@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**baseSymbol** | **String** | identifier of the base asset in a pair<br>example: EUR |[optional]|
-**quoteSymbol** | **String** | identifier of the quote asset in a pair<br>example: USD |[optional]|
-**baseDisplayName** | **String** | full name of the base asset in a pair<br>example: Euro |[optional]|
-**quoteDisplayName** | **String** | full name of the base asset in a pair<br>example: Euro |[optional]|
-**price** | **Double** | value of the base asset compared to the quote asset |[optional]|
-**priceDelta** | **Double** | change in price<br>change in price at a given timestamp |[optional]|
+**baseSymbol** | **String** | <em>identifier of the base asset in a pair</em><br>example: <code>EUR</code> |[optional]|
+**quoteSymbol** | **String** | <em>identifier of the quote asset in a pair</em><br>example: <code>USD</code> |[optional]|
+**baseDisplayName** | **String** | <em>full name of the base asset in a pair</em><br>example: <code>Euro</code> |[optional]|
+**quoteDisplayName** | **String** | <em>full name of the base asset in a pair</em><br>example: <code>Euro</code> |[optional]|
+**price** | **Double** | <em>value of the base asset compared to the quote asset</em> |[optional]|
+**priceDelta** | **Double** | <em>change in price</em><br>change in <code>price</code> at a given <code>timestamp</code> |[optional]|

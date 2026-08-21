@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**ticker** | **String** | ticker of the market index<br>example: DAX |[optional]|
-**price** | **Double** | value of the base asset compared to the quote asset |[optional]|
-**priceDelta** | **Double** | change in price<br>change in price at a given timestamp |[optional]|
-**priceCurrency** | **String** | price currency<br>example: USD |[optional]|
+**ticker** | **String** | <em>ticker of the market index</em><br>example: <code>DAX</code> |[optional]|
+**price** | **Double** | <em>value of the base asset compared to the quote asset</em> |[optional]|
+**priceDelta** | **Double** | <em>change in price</em><br>change in <code>price</code> at a given <code>timestamp</code> |[optional]|
+**priceCurrency** | **String** | <em>price currency</em><br>example: <code>USD</code> |[optional]|

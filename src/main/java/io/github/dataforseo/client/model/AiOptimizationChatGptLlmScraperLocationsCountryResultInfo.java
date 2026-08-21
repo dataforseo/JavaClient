@@ -85,9 +85,9 @@ public class AiOptimizationChatGptLlmScraperLocationsCountryResultInfo  {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
-  private Integer locationCodeParent;
+  private String locationCodeParent;
 
-  public AiOptimizationChatGptLlmScraperLocationsCountryResultInfo locationCodeParent(Integer locationCodeParent) {
+  public AiOptimizationChatGptLlmScraperLocationsCountryResultInfo locationCodeParent(String locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
     return this;
   }
@@ -97,11 +97,11 @@ public class AiOptimizationChatGptLlmScraperLocationsCountryResultInfo  {
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationCodeParent() {
+  public String getLocationCodeParent() {
     return locationCodeParent;
   }
 
-  public void setLocationCodeParent(Integer locationCodeParent) {
+  public void setLocationCodeParent(String locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
   }
 

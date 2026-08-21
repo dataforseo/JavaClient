@@ -59,9 +59,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksIdListRequestInfo model = new BacklinksIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     BacklinksIdListResponseInfo response = apiInstance.backlinksIdList(List.of(model));
     System.out.println(result);
@@ -132,9 +130,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksErrorsRequestInfo model = new BacklinksErrorsRequestInfo()
-           .limit(10)
-           .offset(0)
-           .filteredFunction("backlinks/content_duplicates");
+           .limit(10);
     BacklinksErrorsResponseInfo response = apiInstance.backlinksErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

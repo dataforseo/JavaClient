@@ -47,11 +47,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * URL of the content to parse
-* required field
-* URL of the page to parse
-* example:
-* https://www.fujielectric.com/
+   * <em>URL of the content to parse</em><br><strong>required field</strong><br>URL of the page to parse<br>example:<br>`https://www.fujielectric.com/`
    * @return url
    */
   @javax.annotation.Nullable
@@ -74,12 +70,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * custom user agent
-* optional field
-* custom user agent for crawling a website
-* example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
-* 
-* default value: Mozilla/5.0 (compatible; RSiteAuditor)
+   * <em>custom user agent</em><br>optional field<br>custom user agent for crawling a website<br>example: <code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36<br></code><br>default value: <code>Mozilla/5.0 (compatible; RSiteAuditor)</code>
    * @return customUserAgent
    */
   @javax.annotation.Nullable
@@ -102,24 +93,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * preset for browser screen parameters
-* optional field
-* if you use this field, you don’t need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factor
-* possible values:
-* desktop, mobile, tablet
-* desktop preset will apply the following values:
-* browser_screen_width: 1920
-* browser_screen_height: 1080
-* browser_screen_scale_factor: 1
-* mobile preset will apply the following values:
-* browser_screen_width: 390
-* browser_screen_height: 844
-* browser_screen_scale_factor: 3
-* tablet preset will apply the following values:
-* browser_screen_width: 1024
-* browser_screen_height: 1366
-* browser_screen_scale_factor: 2
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
+   * <em>preset for browser screen parameters</em><br>optional field<br>if you use this field, you don't need to indicate <code>browser_screen_width</code>, <code>browser_screen_height</code>, <code>browser_screen_scale_factor</code><p>            possible values:<br><code>desktop</code>, <code>mobile</code>, <code>tablet</code><p>            <code>desktop</code> preset will apply the following values:<p>            <code>browser_screen_width: 1920</code><br><code>browser_screen_height: 1080</code><br><code>browser_screen_scale_factor: 1</code><p>            <code>mobile</code> preset will apply the following values:<p>            <code>browser_screen_width: 390</code><br><code>browser_screen_height: 844</code><br><code>browser_screen_scale_factor: 3</code><p>            <code>tablet</code> preset will apply the following values:<p>            <code>browser_screen_width: 1024</code><br><code>browser_screen_height: 1366</code><br><code>browser_screen_scale_factor: 2</code><p>            <strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>
    * @return browserPreset
    */
   @javax.annotation.Nullable
@@ -142,13 +116,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * browser screen width
-* optional field
-* you can set a custom browser screen width to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
-* minimum value, in pixels: 240
-* maximum value, in pixels: 9999
+   * <em>browser screen width</em><br>optional field<br>you can set a custom browser screen width to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<p>            <strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code><p>            minimum value, in pixels: <code>240</code><br>maximum value, in pixels: <code>9999</code>
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -171,13 +139,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * browser screen height
-* optional field
-* you can set a custom browser screen height to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
-* minimum value, in pixels: 240
-* maximum value, in pixels: 9999
+   * <em>browser screen height</em><br>optional field<br>you can set a custom browser screen height to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<p>            <strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code><p>            minimum value, in pixels: <code>240</code><br>maximum value, in pixels: <code>9999</code>
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -200,13 +162,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * browser screen scale factor
-* optional field
-* you can set a custom browser screen resolution ratio to perform audit for a particular device;
-* if you use this field, you don’t need to indicate browser_preset as it will be ignored;
-* Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
-* minimum value: 0.5
-* maximum value: 3
+   * <em>browser screen scale factor</em><br>optional field<br>you can set a custom browser screen resolution ratio to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<p>            <strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code><p>            minimum value: <code>0.5</code><br>maximum value: <code>3</code>
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable
@@ -229,10 +185,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * store HTML of a crawled page
-* optional field
-* set to true if you want to get the HTML of the page using the OnPage Raw HTML endpoint
-* default value: false
+   * <em>store HTML of a crawled page</em><br>optional field<br>set to <code>true</code> if you want to get the HTML of the page using the <a href='/v3/on_page/raw_html/' target='_blank' rel='noopener noreferrer'>OnPage Raw HTML endpoint</a><br>default value: <code>false</code>
    * @return storeRawHtml
    */
   @javax.annotation.Nullable
@@ -255,11 +208,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * disable the cookie popup 
-* optional field
-* set to true if you want to disable the popup requesting cookie consent from the user;
-* default value:
-* false
+   * <em>disable the cookie popup </em><br>optional field<br>set to <code>true</code> if you want to disable the popup requesting cookie consent from the user;<br>default value:<br><code>false</code>
    * @return disableCookiePopup
    */
   @javax.annotation.Nullable
@@ -282,10 +231,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * language header for accessing the website
-* optional field
-* all locale formats are supported (xx, xx-XX, xxx-XX, etc.)
-* Note: if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the 'type':'broken in the response array
+   * <em>language header for accessing the website</em><br>optional field<br>all locale formats are supported (xx, xx-XX, xxx-XX, etc.)<br><strong>Note:</strong> if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the <code>'type':'broken</code> in the response array
    * @return acceptLanguage
    */
   @javax.annotation.Nullable
@@ -308,11 +254,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * load javascript on a page
-* optional field
-* set to true if you want to load the scripts available on a page
-* default value: false
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * <em>load javascript on a page</em><br>optional field<br>set to <code>true</code> if you want to load the scripts available on a page<br>default value: <code>false</code><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' rel='noopener noreferrer' target='_blank'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' target='_blank' rel='noopener noreferrer'>Pricing Page</a>
    * @return enableJavascript
    */
   @javax.annotation.Nullable
@@ -335,14 +277,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * emulate browser rendering to measure Core Web Vitals
-* optional field
-* by using this parameter you will be able to emulate a browser when loading a web page;
-* enable_browser_rendering loads styles, images, fonts, animations, videos, and other resources on a page;
-* default value: false
-* set to true to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;
-* if you use this field, enable_javascript, and load_resources parameters must be set to true
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * <em>emulate browser rendering to measure Core Web Vitals</em><br>optional field<br>by using this parameter you will be able to emulate a browser when loading a web page;<br><code>enable_browser_rendering</code> loads styles, images, fonts, animations, videos, and other resources on a page;<br>default value: <code>false</code><br>set to <code>true</code> to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;<br><strong>if you use this field, <code>enable_javascript</code>, and <code>load_resources</code> parameters must be set to <code>true</code></strong><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' rel='noopener noreferrer' target='_blank'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' rel='noopener noreferrer' target='_blank'>Pricing Page</a>
    * @return enableBrowserRendering
    */
   @javax.annotation.Nullable
@@ -365,12 +300,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * enable XMLHttpRequest on a page
-* optional field
-* set to true if you want our crawler to request data from a web server using the XMLHttpRequest object
-* default value:
-* false
-* if you use this field, enable_javascript must be set to true;
+   * <em>enable XMLHttpRequest on a page</em><br>optional field<br>set to <code>true</code> if you want our crawler to request data from a web server using the XMLHttpRequest object<br>default value:<br><code>false</code><p>            if you use this field, <code>enable_javascript</code> must be set to <code>true</code>;
    * @return enableXhr
    */
   @javax.annotation.Nullable
@@ -393,10 +323,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * switch proxy pool
-* optional field
-* if true, additional proxy pools will be used to obtain the requested data;
-* the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+   * <em>switch proxy pool</em><br>optional field<br>if <code>true</code>, additional proxy pools will be used to obtain the requested data;<br>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional <code>rate-limit</code> and/or <code>site_unreachable</code> errors
    * @return switchPool
    */
   @javax.annotation.Nullable
@@ -419,11 +346,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * proxy pool
-* optional field
-* you can choose a location of the proxy pool that will be used to obtain the requested data;
-* the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors
-* possible values: us, de
+   * <em>proxy pool</em><br>optional field<br>you can choose a location of the proxy pool that will be used to obtain the requested data;<br>the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional <code>site_unreachable</code> errors<br>possible values: <code>us</code>, <code>de</code>
    * @return ipPoolForScan
    */
   @javax.annotation.Nullable
@@ -446,10 +369,7 @@ public class OnPageContentParsingLiveRequestInfo  {
   }
 
   /**
-   * return page content as markdown
-* optional field
-* if set to true, the markdown-formatted content of the page will be returned in the page_as_markdown field of the response;
-* default value: false
+   * <em>return page content as markdown</em><br>optional field<br>if set to <code>true</code>, the markdown-formatted content of the page will be returned in the <code>page_as_markdown</code> field of the response;<br>default value: <code>false</code>
    * @return markdownView
    */
   @javax.annotation.Nullable

@@ -89,9 +89,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataIdListRequestInfo model = new BusinessDataIdListRequestInfo()
-           .limit(100)
-           .offset(0)
-           .sort("desc")
+           .limit(10)
            .includeMetadata(true);
     BusinessDataIdListResponseInfo response = apiInstance.businessDataIdList(List.of(model));
     System.out.println(result);
@@ -162,9 +160,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataErrorsRequestInfo model = new BusinessDataErrorsRequestInfo()
-           .limit(10)
-           .offset(0)
-           .filteredFunction("pingback_url");
+           .limit(10);
     BusinessDataErrorsResponseInfo response = apiInstance.businessDataErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

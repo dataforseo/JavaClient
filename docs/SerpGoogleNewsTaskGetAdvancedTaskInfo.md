@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleNewsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleNewsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

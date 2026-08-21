@@ -211,7 +211,7 @@ public class SerpGoogleLocalFinderLiveHtmlResponseInfo  {
   }
 
   /**
-   * 
+   * <em>array of tasks</em>
    * @return tasks
    */
   @javax.annotation.Nullable

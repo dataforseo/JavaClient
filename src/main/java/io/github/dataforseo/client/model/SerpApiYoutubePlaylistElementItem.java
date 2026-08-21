@@ -208,7 +208,7 @@ public class SerpApiYoutubePlaylistElementItem  extends BaseSerpApiYoutubeOrgani
   }
 
   /**
-   * <em>information about preview videos</em><br>array of objects containing information about videos in the preview block of the playlist element
+   * <em>information about preview videos</em><br>            array of objects containing information about videos in the preview block of the playlist element
    * @return previewVideos
    */
   @javax.annotation.Nullable

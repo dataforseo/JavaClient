@@ -47,7 +47,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * main keyword in a groupcontains the main keyword in a group determined by the synonym clustering algorithmif the value is null, our database does not contain any keywords the corresponding algorithm could identify as synonymous with keyword
+   * <em>main keyword in a group</em><br>contains the main keyword in a group determined by the synonym clustering algorithm<br>if the value is <code>null</code>, our database does not contain any keywords the corresponding algorithm could identify as synonymous with <code>keyword</code>
    * @return coreKeyword
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * the algorithm used to identify synonymspossible values:keyword_metrics - indicates the algorithm based on keyword_info parameterstext_processing - indicates the text-based algorithmif the value is null, our database does not contain any keywords the corresponding algorithm could identify as synonymous with keyword
+   * <em>the algorithm used to identify synonyms</em><br>possible values:<br><code>keyword_metrics</code> - indicates the algorithm based on <code>keyword_info</code> parameters<br><code>text_processing</code> - indicates the text-based algorithm<br>if the value is <code>null</code>, our database does not contain any keywords the corresponding algorithm could identify as synonymous with <code>keyword</code>
    * @return synonymClusteringAlgorithm
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * difficulty of ranking in the first top-10 organic results for a keywordindicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;learn more about the metric in this help center guide
+   * <em>difficulty of ranking in the first top-10 organic results for a keyword</em><br>indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;<br>calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;<br>learn more about the metric in <a href='https://dataforseo.com/help-center/what-is-keyword-difficulty-and-how-is-it-calculated' target='_blank' rel='noopener noreferrer'>this help center guide</a>
    * @return keywordDifficulty
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * detected language of the keywordindicates the language of the keyword as identified by our system
+   * <em>detected language of the keyword</em><br>indicates the language of the keyword as identified by our system
    * @return detectedLanguage
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * detected language of the keyword is different from the set languageif true, the language set in the request does not match the language determined by our system for a given keyword
+   * <em>detected language of the keyword is different from the set language</em><br>if <code>true</code>, the language set in the request does not match the language determined by our system for a given keyword
    * @return isAnotherLanguage
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class KeywordProperties  {
   }
 
   /**
-   * number of words in the keywordindicates how many words the keyword consists of
+   * <em>number of words in the keyword</em><br>indicates how many words the keyword consists of
    * @return wordsCount
    */
   @javax.annotation.Nullable

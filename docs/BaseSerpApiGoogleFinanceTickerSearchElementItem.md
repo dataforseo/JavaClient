@@ -6,12 +6,12 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**identifier** | **String** | identifier of the element<br>full identifier of the element that consists from ticker and market_identifier<br>example: PX1:INDEXDB |[optional]|
-**displayedName** | **String** | name of the market index as displayed on Google Finance<br>example: CAC 40 |[optional]|
-**url** | **String** | URL to the page of the market index on Google Finance |[optional]|
-**location** | **String** | location of the market index<br>example: Europe/Paris |[optional]|
-**trend** | **String** | growth trend of the market index<br>possible values: up, down, stable |[optional]|
-**timestamp** | **String** | date and time of the value readout<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2025-02-10 09:40:00 +00:00 |[optional]|
-**percentageDelta** | **Double** | percentage of change in value of the market index |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**identifier** | **String** | <em>identifier of the element</em><br>full identifier of the element that consists from <code>ticker</code> and <code>market_identifier</code><br>example: <code>PX1:INDEXDB</code> |[optional]|
+**displayedName** | **String** | <em>name of the market index as displayed on Google Finance</em><br>example: <code>CAC 40</code> |[optional]|
+**url** | **String** | <em>URL to the page of the market index on Google Finance</em> |[optional]|
+**location** | **String** | <em>location of the market index</em><br>example: <code>Europe/Paris</code> |[optional]|
+**trend** | **String** | <em>growth trend of the market index</em><br>possible values: <code>up</code>, <code>down</code>, <code>stable</code> |[optional]|
+**timestamp** | **String** | <em>date and time of the value readout</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code> |[optional]|
+**percentageDelta** | **Double** | <em>percentage of change in value of the market index</em> |[optional]|

@@ -231,7 +231,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * <em>video badges</em><br>example:<br><code>New</code>, <code>CC</code>, <code>4K</code>
+   * <em>video badges</em><br>            example:<br>            <code>New</code>, <code>CC</code>, <code>4K</code><br>
    * @return badges
    */
   @javax.annotation.Nullable
@@ -369,7 +369,7 @@ public class SerpApiYoutubeVideoPaidElementItem  extends BaseSerpApiYoutubeOrgan
   }
 
   /**
-   * <em>date and time when the result is published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2022-11-15 12:57:46 +00:00</code>
+   * <em>date and time when the result is published</em><br>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>            example:<br>            <code>2022-11-15 12:57:46 +00:00</code><br>
    * @return timestamp
    */
   @javax.annotation.Nullable

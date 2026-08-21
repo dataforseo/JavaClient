@@ -236,7 +236,7 @@ public class SerpGoogleFinanceQuoteLiveAdvancedTaskInfo  {
   }
 
   /**
-   * 
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

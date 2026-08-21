@@ -70,10 +70,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * date and time of the value readout
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-02-10 09:40:00 +00:00
+   * <em>date and time of the value readout</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2025-02-10 09:40:00 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * revenue value
+   * <em>revenue value</em>
    * @return revenue
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in revenue
+   * <em>change in revenue</em>
    * @return revenueDelta
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * operating expense value
+   * <em>operating expense value</em>
    * @return operatingExpense
    */
   @javax.annotation.Nullable
@@ -165,7 +162,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in operating expense
+   * <em>change in operating expense</em>
    * @return operatingExpenseDelta
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * net income value
+   * <em>net income value</em>
    * @return netIncome
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in net income
+   * <em>change in net income</em>
    * @return netIncomeDelta
    */
   @javax.annotation.Nullable
@@ -234,7 +231,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * net profit margin value
+   * <em>net profit margin value</em>
    * @return netProfitMargin
    */
   @javax.annotation.Nullable
@@ -257,7 +254,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in net profit margin
+   * <em>change in net profit margin</em>
    * @return netProfitMarginDelta
    */
   @javax.annotation.Nullable
@@ -280,7 +277,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * earnings per share value
+   * <em>earnings per share value</em>
    * @return earningsPerShare
    */
   @javax.annotation.Nullable
@@ -303,7 +300,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in earnings per share
+   * <em>change in earnings per share</em>
    * @return earningsPerShareDelta
    */
   @javax.annotation.Nullable
@@ -326,7 +323,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * earnings before interest, taxes, deprecation, amortisation
+   * <em>earnings before interest, taxes, deprecation, amortisation</em>
    * @return ebitda
    */
   @javax.annotation.Nullable
@@ -349,7 +346,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in ebitda
+   * <em>change in ebitda</em>
    * @return ebitdaDelta
    */
   @javax.annotation.Nullable
@@ -372,7 +369,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * effective tax rate value
+   * <em>effective tax rate value</em>
    * @return effectiveTaxRate
    */
   @javax.annotation.Nullable
@@ -395,7 +392,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * cash and short-term investments value
+   * <em>cash and short-term investments value</em>
    * @return cashAndShortTermInvestments
    */
   @javax.annotation.Nullable
@@ -418,7 +415,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in cash and short-term investments
+   * <em>change in cash and short-term investments</em>
    * @return cashAndShortTermInvestmentsDelta
    */
   @javax.annotation.Nullable
@@ -441,7 +438,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * total assets value
+   * <em>total assets value</em>
    * @return totalAssets
    */
   @javax.annotation.Nullable
@@ -464,7 +461,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in total assets
+   * <em>change in total assets</em>
    * @return totalAssetsDelta
    */
   @javax.annotation.Nullable
@@ -487,7 +484,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * total liabilities value
+   * <em>total liabilities value</em>
    * @return totalLiabilities
    */
   @javax.annotation.Nullable
@@ -510,7 +507,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in total liabilities
+   * <em>change in total liabilities</em>
    * @return totalLiabilitiesDelta
    */
   @javax.annotation.Nullable
@@ -533,7 +530,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * total equity value
+   * <em>total equity value</em>
    * @return totalEquity
    */
   @javax.annotation.Nullable
@@ -556,7 +553,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * outstanding shares value
+   * <em>outstanding shares value</em>
    * @return sharesOutstanding
    */
   @javax.annotation.Nullable
@@ -579,7 +576,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * price to book
+   * <em>price to book</em>
    * @return priceToBook
    */
   @javax.annotation.Nullable
@@ -602,7 +599,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * return on assets
+   * <em>return on assets</em>
    * @return returnOnAssets
    */
   @javax.annotation.Nullable
@@ -625,7 +622,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * return on capital
+   * <em>return on capital</em>
    * @return returnOnCapital
    */
   @javax.annotation.Nullable
@@ -648,7 +645,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * cash from operations
+   * <em>cash from operations</em>
    * @return cashFromOperations
    */
   @javax.annotation.Nullable
@@ -671,7 +668,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in cash from operations
+   * <em>change in cash from operations</em>
    * @return cashFromOperationsDelta
    */
   @javax.annotation.Nullable
@@ -694,7 +691,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * cash from investing
+   * <em>cash from investing</em>
    * @return cashFromInvesting
    */
   @javax.annotation.Nullable
@@ -717,7 +714,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in cash from investing
+   * <em>change in cash from investing</em>
    * @return cashFromInvestingDelta
    */
   @javax.annotation.Nullable
@@ -740,7 +737,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * cash from financing
+   * <em>cash from financing/em>
    * @return cashFromFinancing
    */
   @javax.annotation.Nullable
@@ -763,7 +760,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in cash from financing
+   * <em>change in cash from financing</em>
    * @return cashFromFinancingDelta
    */
   @javax.annotation.Nullable
@@ -786,7 +783,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * net change in cash
+   * <em>net change in cash</em>
    * @return netChangeInCash
    */
   @javax.annotation.Nullable
@@ -809,7 +806,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in net change in cash
+   * <em>change in net change in cash</em>
    * @return netChangeInCashDelta
    */
   @javax.annotation.Nullable
@@ -832,7 +829,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * free cash flow value
+   * <em>free cash flow value</em>
    * @return freeCashFlow
    */
   @javax.annotation.Nullable
@@ -855,7 +852,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * change in free cash flow
+   * <em>change in free cash flow</em>
    * @return freeCashFlowDelta
    */
   @javax.annotation.Nullable

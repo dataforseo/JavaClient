@@ -47,8 +47,7 @@ public class SerpApiGoogleFinanceAssetPairElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * identifier of the base asset in a pair
-* example: EUR
+   * <em>identifier of the base asset in a pair</em><br>example: <code>EUR</code>
    * @return baseSymbol
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class SerpApiGoogleFinanceAssetPairElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * identifier of the quote asset in a pair
-* example: USD
+   * <em>identifier of the quote asset in a pair</em><br>example: <code>USD</code>
    * @return quoteSymbol
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class SerpApiGoogleFinanceAssetPairElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * full name of the base asset in a pair
-* example: Euro
+   * <em>full name of the base asset in a pair</em><br>example: <code>Euro</code>
    * @return baseDisplayName
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class SerpApiGoogleFinanceAssetPairElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * full name of the base asset in a pair
-* example: Euro
+   * <em>full name of the base asset in a pair</em><br>example: <code>Euro</code>
    * @return quoteDisplayName
    */
   @javax.annotation.Nullable
@@ -143,7 +139,7 @@ public class SerpApiGoogleFinanceAssetPairElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * value of the base asset compared to the quote asset
+   * <em>value of the base asset compared to the quote asset</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class SerpApiGoogleFinanceAssetPairElementItem  extends BaseSerpApiGoogle
   }
 
   /**
-   * change in price
-* change in price at a given timestamp
+   * <em>change in price</em><br>change in <code>price</code> at a given <code>timestamp</code>
    * @return priceDelta
    */
   @javax.annotation.Nullable

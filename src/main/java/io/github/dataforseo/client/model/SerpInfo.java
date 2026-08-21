@@ -47,7 +47,7 @@ public class SerpInfo  {
   }
 
   /**
-   * search engine type
+   * <em>search engine type</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpInfo  {
   }
 
   /**
-   * direct URL to search engine resultsyou can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpInfo  {
   }
 
   /**
-   * types of search results in SERPcontains types of search results (items) found in SERPpossible item types:answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, google_posts, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box, visual_stories, commercial_units, local_services, google_hotels, math_solver, currency_box, product_considerations, found_on_web, short_videos, refine_products, explore_brands, perspectives, discussions_and_forums, compare_sites, courses, ai_overview;note that the actual results will be returned only for organic, paid, featured_snippet, and local_pack elements
+   * <em>types of search results in SERP</em><br>contains types of search results (items) found in SERP<br>possible item types:<br><code>answer_box</code>, <code>app</code>, <code>carousel</code>, <code>multi_carousel</code>, <code>featured_snippet</code>, <code>google_flights</code>, <code>google_reviews</code>, <code>third_party_reviews</code>, <code>google_posts</code>, <code>images</code>, <code>jobs</code>, <code>knowledge_graph</code>, <code>local_pack</code>, <code>hotels_pack</code>, <code>map</code>, <code>organic</code>, <code>paid</code>, <code>people_also_ask</code>, <code>related_searches</code>, <code>people_also_search</code>, <code>shopping</code>, <code>top_stories</code>, <code>twitter</code>, <code>video</code>, <code>events</code>, <code>mention_carousel</code>, <code>recipes</code>, <code>top_sights</code>, <code>scholarly_articles</code>, <code>popular_products</code>, <code>podcasts</code>, <code>questions_and_answers</code>, <code>find_results_on</code>, <code>stocks_box</code>, <code>visual_stories</code>, <code>commercial_units</code>, <code>local_services</code>, <code>google_hotels</code>, <code>math_solver</code>, <code>currency_box</code>, <code>product_considerations</code>, <code>found_on_web</code>, <code>short_videos</code>, <code>refine_products</code>, <code>explore_brands</code>, <code>perspectives</code>, <code>discussions_and_forums</code>, <code>compare_sites</code>, <code>courses</code>, <code>ai_overview</code>;<br><strong>note</strong> that the actual results will be returned only for <code>organic</code>, <code>paid</code>, <code>featured_snippet</code>, and <code>local_pack</code> elements
    * @return serpItemTypes
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpInfo  {
   }
 
   /**
-   * number of search results for the returned keyword
+   * <em>number of search results for the returned keyword</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpInfo  {
   }
 
   /**
-   * date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpInfo  {
   }
 
   /**
-   * previous to the most recent date and time when SERP data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-10-15 12:57:46 +00:00
+   * <em>previous to the most recent date and time when SERP data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-10-15 12:57:46 +00:00</code>
    * @return previousUpdatedTime
    */
   @javax.annotation.Nullable
