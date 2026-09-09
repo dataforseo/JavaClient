@@ -177,9 +177,9 @@ public class BusinessDataIdListResultInfo  {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private List<String> metadata;
+  private Map<String, Object> metadata;
 
-  public BusinessDataIdListResultInfo metadata(List<String> metadata) {
+  public BusinessDataIdListResultInfo metadata(Map<String, Object> metadata) {
     this.metadata = metadata;
     return this;
   }
@@ -189,11 +189,11 @@ public class BusinessDataIdListResultInfo  {
    * @return metadata
    */
   @javax.annotation.Nullable
-  public List<String> getMetadata() {
+  public Map<String, Object> getMetadata() {
     return metadata;
   }
 
-  public void setMetadata(List<String> metadata) {
+  public void setMetadata(Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 

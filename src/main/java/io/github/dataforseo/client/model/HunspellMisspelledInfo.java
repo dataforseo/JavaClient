@@ -47,7 +47,7 @@ public class HunspellMisspelledInfo  {
   }
 
   /**
-   * <em>misspelled word</em>
+   * misspelled word
    * @return word
    */
   @javax.annotation.Nullable

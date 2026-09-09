@@ -47,7 +47,7 @@ public class HunspellInfo  {
   }
 
   /**
-   * <em>spellcheck language code</em>
+   * spellcheck language code
    * @return hunspellLanguageCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class HunspellInfo  {
   }
 
   /**
-   * <em>array of misspelled words</em>
+   * array of misspelled words
    * @return misspelled
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class OnPagePagesResultInfo  {
   }
 
   /**
-   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
+   * status of the crawling sessionpossible values: in_progress, finished
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPagePagesResultInfo  {
   }
 
   /**
-   * <em>details of the crawling session</em>
+   * details of the crawling session
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class OnPagePagesResultInfo  {
   }
 
   /**
-   * <em>total number of relevant items in the database</em>
+   * total number of relevant items in the database
    * @return totalItemsCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class OnPagePagesResultInfo  {
   }
 
   /**
-   * <em>number of items in the results array</em>
+   * number of items in the results array
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class OnPagePagesResultInfo  {
   }
 
   /**
-   * <em>items array</em>
+   * items array
    * @return items
    */
   @javax.annotation.Nullable

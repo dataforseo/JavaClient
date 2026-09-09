@@ -39,9 +39,9 @@ public class ContentCommentInfo  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private ContentRatingInfo rating;
+  private ContententRatingInfo rating;
 
-  public ContentCommentInfo rating(ContentRatingInfo rating) {
+  public ContentCommentInfo rating(ContententRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -52,11 +52,11 @@ public class ContentCommentInfo  {
    * @return rating
    */
   @javax.annotation.Nullable
-  public ContentRatingInfo getRating() {
+  public ContententRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(ContentRatingInfo rating) {
+  public void setRating(ContententRatingInfo rating) {
     this.rating = rating;
   }
 

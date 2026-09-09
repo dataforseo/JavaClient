@@ -5,33 +5,33 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | <em>page title</em> |[optional]|
-**charset** | **Integer** | <em><a href='https://en.wikipedia.org/wiki/Code_page' target='_blank' rel='noopener noreferrer'>code page</a></em><br>example: <code>65001</code> |[optional]|
-**follow** | **Boolean** | <em>indicates whether a page's 'meta robots' allows crawlers to follow the links on the page</em><br>if <code>false</code>, the page's 'meta robots' tag contains 'nofollow' parameter instructing crawlers not to follow the links on the page |[optional]|
-**generator** | **String** | <em>meta tag generator</em> |[optional]|
-**htags** | **Map<String, List<String>>** | <em>HTML header tags</em> |[optional]|
-**description** | **String** | <em>content of the meta description tag</em> |[optional]|
-**favicon** | **String** | <em>favicon of the page</em> |[optional]|
-**metaKeywords** | **String** | <em>content of the <code>keywords</code> meta tag</em> |[optional]|
-**canonical** | **String** | <em>canonical page</em> |[optional]|
-**internalLinksCount** | **Long** | <em>number of internal links on the page</em> |[optional]|
-**externalLinksCount** | **Long** | <em>number of external links on the page</em> |[optional]|
-**inboundLinksCount** | **Long** | <em>number of internal links pointing at the page</em> |[optional]|
-**imagesCount** | **Long** | <em>number of images on the page</em> |[optional]|
-**imagesSize** | **Integer** | <em>total size of images on the page measured in bytes</em> |[optional]|
-**scriptsCount** | **Long** | <em>number of scripts on the page</em> |[optional]|
-**scriptsSize** | **Integer** | <em>total size of scripts on the page measured in bytes</em> |[optional]|
-**stylesheetsCount** | **Long** | <em>number of stylesheets on the page</em> |[optional]|
-**stylesheetsSize** | **Integer** | <em>total size of stylesheets on the page measured in bytes</em> |[optional]|
-**titleLength** | **Integer** | <em>length of the <code>title</code> tag in characters</em> |[optional]|
-**descriptionLength** | **Integer** | <em>length of the <code>description</code> tag in characters</em> |[optional]|
-**renderBlockingScriptsCount** | **Long** | <em>number of scripts on the page that block page rendering</em> |[optional]|
-**renderBlockingStylesheetsCount** | **Long** | <em>number of CSS styles on the page that block page rendering</em> |[optional]|
-**cumulativeLayoutShift** | **Double** | <em>Core Web Vitals metric measuring the layout stability of the page</em><br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. <a href='https://web.dev/cls/'>Learn more.</a> |[optional]|
-**metaTitle** | **String** | <em>meta title of the page</em><br>meta tag in the head section of an HTML document that defines the title of a page |[optional]|
-**content** | **HtmlContentInfo** | <em>overall information about content of the page</em> |[optional]|
-**deprecatedTags** | **List<String>** | <em>deprecated tags on the page</em> |[optional]|
-**duplicateMetaTags** | **List<String>** | <em>duplicate meta tags on the page</em> |[optional]|
-**spell** | **HunspellInfo** | <em>spellcheck</em><br><a href='http://hunspell.github.io/' target='_blank' rel='noopener noreferrer'>hunspell</a> spellcheck errors |[optional]|
-**socialMediaTags** | **Map<String, String>** | <em>object of social media tags found on the page</em><br>contains social media tags and their content<br>supported tags include but are not limited to <a href='https://ogp.me/'>Open Graph</a> and <a href='https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started'>Twitter card</a> |[optional]|
+**title** | **String** | page title |[optional]|
+**charset** | **Integer** | code pageexample: 65001 |[optional]|
+**follow** | **Boolean** | indicates whether a page's 'meta robots' allows crawlers to follow the links on the pageif false, the page's 'meta robots' tag contains 'nofollow' parameter instructing crawlers not to follow the links on the page |[optional]|
+**generator** | **String** | meta tag generator |[optional]|
+**htags** | **Map<String, List<String>>** | HTML header tags |[optional]|
+**description** | **String** | content of the meta description tag |[optional]|
+**favicon** | **String** | favicon of the page |[optional]|
+**metaKeywords** | **String** | content of the keywords meta tag |[optional]|
+**canonical** | **String** | canonical page |[optional]|
+**internalLinksCount** | **Long** | number of internal links on the page |[optional]|
+**externalLinksCount** | **Long** | number of external links on the page |[optional]|
+**inboundLinksCount** | **Long** | number of internal links pointing at the page |[optional]|
+**imagesCount** | **Long** | number of images on the page |[optional]|
+**imagesSize** | **Integer** | total size of images on the page measured in bytes |[optional]|
+**scriptsCount** | **Long** | number of scripts on the page |[optional]|
+**scriptsSize** | **Integer** | total size of scripts on the page measured in bytes |[optional]|
+**stylesheetsCount** | **Long** | number of stylesheets on the page |[optional]|
+**stylesheetsSize** | **Integer** | total size of stylesheets on the page measured in bytes |[optional]|
+**titleLength** | **Integer** | length of the title tag in characters |[optional]|
+**descriptionLength** | **Integer** | length of the description tag in characters |[optional]|
+**renderBlockingScriptsCount** | **Long** | number of scripts on the page that block page rendering |[optional]|
+**renderBlockingStylesheetsCount** | **Long** | number of CSS styles on the page that block page rendering |[optional]|
+**cumulativeLayoutShift** | **Double** | Core Web Vitals metric measuring the layout stability of the pagemeasures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more. |[optional]|
+**metaTitle** | **String** | meta title of the pagemeta tag in the head section of an HTML document that defines the title of a page |[optional]|
+**content** | **HtmlContentInfo** | overall information about content of the page |[optional]|
+**deprecatedTags** | **List<String>** | deprecated tags on the page |[optional]|
+**duplicateMetaTags** | **List<String>** | duplicate meta tags on the page |[optional]|
+**spell** | **HunspellInfo** | spellcheckhunspell spellcheck errors |[optional]|
+**socialMediaTags** | **Map<String, String>** | object of social media tags found on the pagecontains social media tags and their contentsupported tags include but are not limited to Open Graph and Twitter card |[optional]|
 **brokenHtml** | **OnPageResourceIssueInfo** | resource errors and warnings |[optional]|

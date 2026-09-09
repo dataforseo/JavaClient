@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**crawlProgress** | **String** | <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code> |[optional]|
-**crawlStatus** | **Object** | <em>details of the crawling session</em><br>in this case the value will be <code>null</code> |[optional]|
-**crawlGatewayAddress** | **String** | <em>crawler ip address</em><br>displays the IP address used by the crawler to initiate the current crawling session<br>you can find the full list of IPs used by our crawler in the <a href='/v3/on_page/overview' target='_blank' rel='noopener noreferrer'>Overview section</a> |[optional]|
-**itemsCount** | **Long** | <em>number of items in the results array</em> |[optional]|
-**items** | **List<BaseOnPageResourceItem>** | <em>items array</em> |[optional]|
+**crawlProgress** | **String** | status of the crawling sessionpossible values: in_progress, finished |[optional]|
+**crawlStatus** | **Object** | details of the crawling sessionin this case the value will be null |[optional]|
+**crawlGatewayAddress** | **String** | crawler ip addressdisplays the IP address used by the crawler to initiate the current crawling sessionyou can find the full list of IPs used by our crawler in the Overview section |[optional]|
+**itemsCount** | **Long** | number of items in the results array |[optional]|
+**items** | **List<BaseOnPageResourceItem>** | items array |[optional]|

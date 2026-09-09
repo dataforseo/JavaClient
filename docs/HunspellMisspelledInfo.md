@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**word** | **String** | <em>misspelled word</em> |[optional]|
+**word** | **String** | misspelled word |[optional]|

@@ -47,7 +47,7 @@ public class OnPageResourceIssueItemInfo  {
   }
 
   /**
-   * <em>line where the error was found</em>
+   * line where the error was found
    * @return line
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageResourceIssueItemInfo  {
   }
 
   /**
-   * <em>column where the error was found</em>
+   * column where the error was found
    * @return column
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class OnPageResourceIssueItemInfo  {
   }
 
   /**
-   * <em>text message of the error</em><br>the full list of possible HTML errors can be found <a href='https://github.com/AngleSharp/AngleSharp/blob/3968eb050e142b1d94550fba407afe772232b126/src/AngleSharp/Html/Parser/HtmlParseError.cs'>here</a>
+   * text message of the errorthe full list of possible HTML errors can be found here
    * @return message
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class OnPageResourceIssueItemInfo  {
   }
 
   /**
-   * <i>general status code</i><br>you can find the full list of the response codes <a href='/v3/appendix/errors'>here</a><br><strong>Note:</strong> we strongly recommend designing a necessary system for handling related exceptional or error conditions
+   * general status codeyou can find the full list of the response codes hereNote: we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class OnPageResourceIssueInfo  {
   }
 
   /**
-   * <em>resource errors</em>
+   * resource errors
    * @return errors
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageResourceIssueInfo  {
   }
 
   /**
-   * <em>resource warnings</em>
+   * resource warnings
    * @return warnings
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class OnPageBrokenResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * <em>time range within which a result was fetched</em>
+   * time range within which a result was fetched
    * @return fetchTiming
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageBrokenResourceItem  extends BaseOnPageResourceItem  {
   }
 
   /**
-   * <em>indicates whether a page is a single resource</em>
+   * indicates whether a page is a single resource
    * @return isResource
    */
   @javax.annotation.Nullable

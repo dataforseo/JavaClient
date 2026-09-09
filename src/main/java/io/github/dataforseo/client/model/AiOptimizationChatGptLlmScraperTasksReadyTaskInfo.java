@@ -228,9 +228,9 @@ public class AiOptimizationChatGptLlmScraperTasksReadyTaskInfo  {
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
-  private List<AiOptimizationChatGptLlmScraperTasksReadyResultInfo> result;
+  private Object result;
 
-  public AiOptimizationChatGptLlmScraperTasksReadyTaskInfo result(List<AiOptimizationChatGptLlmScraperTasksReadyResultInfo> result) {
+  public AiOptimizationChatGptLlmScraperTasksReadyTaskInfo result(Object result) {
     this.result = result;
     return this;
   }
@@ -240,11 +240,11 @@ public class AiOptimizationChatGptLlmScraperTasksReadyTaskInfo  {
    * @return result
    */
   @javax.annotation.Nullable
-  public List<AiOptimizationChatGptLlmScraperTasksReadyResultInfo> getResult() {
+  public Object getResult() {
     return result;
   }
 
-  public void setResult(List<AiOptimizationChatGptLlmScraperTasksReadyResultInfo> result) {
+  public void setResult(Object result) {
     this.result = result;
   }
 

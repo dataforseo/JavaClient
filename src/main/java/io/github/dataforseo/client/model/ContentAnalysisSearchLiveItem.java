@@ -338,9 +338,9 @@ public class ContentAnalysisSearchLiveItem  {
 
   public static final String SERIALIZED_NAME_RATINGS = "ratings";
   @SerializedName(SERIALIZED_NAME_RATINGS)
-  private List<ContentRatingInfo> ratings;
+  private List<ContententRatingInfo> ratings;
 
-  public ContentAnalysisSearchLiveItem ratings(List<ContentRatingInfo> ratings) {
+  public ContentAnalysisSearchLiveItem ratings(List<ContententRatingInfo> ratings) {
     this.ratings = ratings;
     return this;
   }
@@ -350,11 +350,11 @@ public class ContentAnalysisSearchLiveItem  {
    * @return ratings
    */
   @javax.annotation.Nullable
-  public List<ContentRatingInfo> getRatings() {
+  public List<ContententRatingInfo> getRatings() {
     return ratings;
   }
 
-  public void setRatings(List<ContentRatingInfo> ratings) {
+  public void setRatings(List<ContententRatingInfo> ratings) {
     this.ratings = ratings;
   }
 

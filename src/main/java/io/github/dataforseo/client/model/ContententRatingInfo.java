@@ -34,87 +34,134 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-public class FetchTiming  {
+public class ContententRatingInfo  {
 
 
-  public static final String SERIALIZED_NAME_DURATION_TIME = "duration_time";
-  @SerializedName(SERIALIZED_NAME_DURATION_TIME)
-  private Integer durationTime;
+  public static final String SERIALIZED_NAME_NAME = "name";
+  @SerializedName(SERIALIZED_NAME_NAME)
+  private String name;
 
-  public FetchTiming durationTime(Integer durationTime) {
-    this.durationTime = durationTime;
+  public ContententRatingInfo name(String name) {
+    this.name = name;
     return this;
   }
 
   /**
-   * total time it takes until a browser receives a complete response from a server (in milliseconds)
-   * @return durationTime
+   * rating name
+* here you can find the following elements: Max5, Percents, CustomMax
+   * @return name
    */
   @javax.annotation.Nullable
-  public Integer getDurationTime() {
-    return durationTime;
+  public String getName() {
+    return name;
   }
 
-  public void setDurationTime(Integer durationTime) {
-    this.durationTime = durationTime;
+  public void setName(String name) {
+    this.name = name;
   }
 
 
-  public static final String SERIALIZED_NAME_FETCH_START = "fetch_start";
-  @SerializedName(SERIALIZED_NAME_FETCH_START)
-  private Integer fetchStart;
+  public static final String SERIALIZED_NAME_RATING_VALUE = "rating_value";
+  @SerializedName(SERIALIZED_NAME_RATING_VALUE)
+  private Double ratingValue;
 
-  public FetchTiming fetchStart(Integer fetchStart) {
-    this.fetchStart = fetchStart;
+  public ContententRatingInfo ratingValue(Double ratingValue) {
+    this.ratingValue = ratingValue;
     return this;
   }
 
   /**
-   * time to start downloading the HTML resourcethe amount of time the browser needs to start downloading a page
-   * @return fetchStart
+   * the value of the rating
+   * @return ratingValue
    */
   @javax.annotation.Nullable
-  public Integer getFetchStart() {
-    return fetchStart;
+  public Double getRatingValue() {
+    return ratingValue;
   }
 
-  public void setFetchStart(Integer fetchStart) {
-    this.fetchStart = fetchStart;
+  public void setRatingValue(Double ratingValue) {
+    this.ratingValue = ratingValue;
   }
 
 
-  public static final String SERIALIZED_NAME_FETCH_END = "fetch_end";
-  @SerializedName(SERIALIZED_NAME_FETCH_END)
-  private Integer fetchEnd;
+  public static final String SERIALIZED_NAME_RATING_COUNT = "rating_count";
+  @SerializedName(SERIALIZED_NAME_RATING_COUNT)
+  private Long ratingCount;
 
-  public FetchTiming fetchEnd(Integer fetchEnd) {
-    this.fetchEnd = fetchEnd;
+  public ContententRatingInfo ratingCount(Long ratingCount) {
+    this.ratingCount = ratingCount;
     return this;
   }
 
   /**
-   * time to complete downloading the HTML resourcethe amount of time the browser needs to complete downloading a page
-   * @return fetchEnd
+   * number of votes
+   * @return ratingCount
    */
   @javax.annotation.Nullable
-  public Integer getFetchEnd() {
-    return fetchEnd;
+  public Long getRatingCount() {
+    return ratingCount;
   }
 
-  public void setFetchEnd(Integer fetchEnd) {
-    this.fetchEnd = fetchEnd;
+  public void setRatingCount(Long ratingCount) {
+    this.ratingCount = ratingCount;
+  }
+
+
+  public static final String SERIALIZED_NAME_MAX_RATING_VALUE = "max_rating_value";
+  @SerializedName(SERIALIZED_NAME_MAX_RATING_VALUE)
+  private Double maxRatingValue;
+
+  public ContententRatingInfo maxRatingValue(Double maxRatingValue) {
+    this.maxRatingValue = maxRatingValue;
+    return this;
+  }
+
+  /**
+   * maximum value for the rating name
+   * @return maxRatingValue
+   */
+  @javax.annotation.Nullable
+  public Double getMaxRatingValue() {
+    return maxRatingValue;
+  }
+
+  public void setMaxRatingValue(Double maxRatingValue) {
+    this.maxRatingValue = maxRatingValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_RELATIVE_RATING = "relative_rating";
+  @SerializedName(SERIALIZED_NAME_RELATIVE_RATING)
+  private Double relativeRating;
+
+  public ContententRatingInfo relativeRating(Double relativeRating) {
+    this.relativeRating = relativeRating;
+    return this;
+  }
+
+  /**
+   * relative rating
+   * @return relativeRating
+   */
+  @javax.annotation.Nullable
+  public Double getRelativeRating() {
+    return relativeRating;
+  }
+
+  public void setRelativeRating(Double relativeRating) {
+    this.relativeRating = relativeRating;
   }
 
 
 
-  public FetchTiming() {
+  public ContententRatingInfo() {
   }
 
   
     
   private Map<String, Object> additionalProperties;
 
-  public FetchTiming putAdditionalProperty(String key, Object value) {
+  public ContententRatingInfo putAdditionalProperty(String key, Object value) {
     if (this.additionalProperties == null) {
         this.additionalProperties = new HashMap<String, Object>();
     }
@@ -146,12 +193,14 @@ public class FetchTiming  {
 
 
     
-    FetchTiming fetchTiming = (FetchTiming) o;
+    ContententRatingInfo contententRatingInfo = (ContententRatingInfo) o;
     return
 
-        Objects.equals(this.durationTime, fetchTiming.durationTime) &&
-        Objects.equals(this.fetchStart, fetchTiming.fetchStart) &&
-        Objects.equals(this.fetchEnd, fetchTiming.fetchEnd);  
+        Objects.equals(this.name, contententRatingInfo.name) &&
+        Objects.equals(this.ratingValue, contententRatingInfo.ratingValue) &&
+        Objects.equals(this.ratingCount, contententRatingInfo.ratingCount) &&
+        Objects.equals(this.maxRatingValue, contententRatingInfo.maxRatingValue) &&
+        Objects.equals(this.relativeRating, contententRatingInfo.relativeRating);  
     
   }
 
@@ -161,7 +210,7 @@ public class FetchTiming  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(durationTime, fetchStart, fetchEnd);
+  return Objects.hash(name, ratingValue, ratingCount, maxRatingValue, relativeRating);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -174,11 +223,13 @@ public class FetchTiming  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class FetchTiming {\n");
+    sb.append("class ContententRatingInfo {\n");
 
-    sb.append("    durationTime: ").append(toIndentedString(durationTime)).append("\n");
-    sb.append("    fetchStart: ").append(toIndentedString(fetchStart)).append("\n");
-    sb.append("    fetchEnd: ").append(toIndentedString(fetchEnd)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    ratingValue: ").append(toIndentedString(ratingValue)).append("\n");
+    sb.append("    ratingCount: ").append(toIndentedString(ratingCount)).append("\n");
+    sb.append("    maxRatingValue: ").append(toIndentedString(maxRatingValue)).append("\n");
+    sb.append("    relativeRating: ").append(toIndentedString(relativeRating)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -202,11 +253,15 @@ public class FetchTiming  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("duration_time");
+    openapiFields.add("name");
     
-    openapiFields.add("fetch_start");
+    openapiFields.add("rating_value");
     
-    openapiFields.add("fetch_end");
+    openapiFields.add("rating_count");
+    
+    openapiFields.add("max_rating_value");
+    
+    openapiFields.add("relative_rating");
     
 
     // a set of required properties/fields (JSON key names)
@@ -220,7 +275,7 @@ public class FetchTiming  {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to FetchTiming
+   * @throws IOException if the JSON Element is invalid with respect to ContententRatingInfo
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
   }
@@ -229,16 +284,16 @@ public class FetchTiming  {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!FetchTiming.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'FetchTiming' and its subtypes
+       if (!ContententRatingInfo.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'ContententRatingInfo' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<FetchTiming> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(FetchTiming.class));
+       final TypeAdapter<ContententRatingInfo> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(ContententRatingInfo.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<FetchTiming>() {
+       return (TypeAdapter<T>) new TypeAdapter<ContententRatingInfo>() {
            @Override
-           public void write(JsonWriter out, FetchTiming value) throws IOException {
+           public void write(JsonWriter out, ContententRatingInfo value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              obj.remove("additionalProperties");
              // serialize additional properties
@@ -266,12 +321,12 @@ public class FetchTiming  {
            }
 
            @Override
-           public FetchTiming read(JsonReader in) throws IOException {
+           public ContententRatingInfo read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              JsonObject jsonObj = jsonElement.getAsJsonObject();
              // store additional fields in the deserialized instance
-             FetchTiming instance = thisAdapter.fromJsonTree(jsonObj);
+             ContententRatingInfo instance = thisAdapter.fromJsonTree(jsonObj);
              for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
                if (!openapiFields.contains(entry.getKey())) {
                  if (entry.getValue().isJsonPrimitive()) { // primitive type
@@ -298,8 +353,8 @@ public class FetchTiming  {
   }
 
 
-  public static FetchTiming fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, FetchTiming.class);
+  public static ContententRatingInfo fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, ContententRatingInfo.class);
   }
 
   public String toJson() {

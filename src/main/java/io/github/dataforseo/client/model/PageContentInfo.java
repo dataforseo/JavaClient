@@ -131,9 +131,9 @@ public class PageContentInfo  {
 
   public static final String SERIALIZED_NAME_RATINGS = "ratings";
   @SerializedName(SERIALIZED_NAME_RATINGS)
-  private List<ContentRatingInfo> ratings;
+  private List<ContententRatingInfo> ratings;
 
-  public PageContentInfo ratings(List<ContentRatingInfo> ratings) {
+  public PageContentInfo ratings(List<ContententRatingInfo> ratings) {
     this.ratings = ratings;
     return this;
   }
@@ -143,11 +143,11 @@ public class PageContentInfo  {
    * @return ratings
    */
   @javax.annotation.Nullable
-  public List<ContentRatingInfo> getRatings() {
+  public List<ContententRatingInfo> getRatings() {
     return ratings;
   }
 
-  public void setRatings(List<ContentRatingInfo> ratings) {
+  public void setRatings(List<ContententRatingInfo> ratings) {
     this.ratings = ratings;
   }
 

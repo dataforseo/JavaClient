@@ -1744,6 +1744,7 @@ public class Example {
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageInstantPagesRequestInfo model = new OnPageInstantPagesRequestInfo()
            .url("https://dataforseo.com/blog")
+           .enableJavascript(true)
            .customJs("meta = {}; meta.url = document.URL; meta;");
     OnPageInstantPagesResponseInfo response = apiInstance.instantPages(List.of(model));
     System.out.println(result);

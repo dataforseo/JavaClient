@@ -47,7 +47,7 @@ public class CacheControl  {
   }
 
   /**
-   * <em>indicates whether the page is cacheable</em>
+   * indicates whether the page is cacheable
    * @return cachable
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class CacheControl  {
   }
 
   /**
-   * <em>time to live</em><br>the amount of time the browser caches a resource
+   * time to livethe amount of time the browser caches a resource
    * @return ttl
    */
   @javax.annotation.Nullable

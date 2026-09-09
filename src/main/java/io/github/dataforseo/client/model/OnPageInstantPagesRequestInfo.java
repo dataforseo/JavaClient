@@ -47,7 +47,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>target page url</em><br><strong>required field</strong><br>absolute URL of the target page;<br><strong>Note #1:</strong> results will be returned for the specified URL only;<br><strong>Note #2:</strong> to prevent denial-of-service events, tasks that contain a duplicate crawl host will be returned with a 40501 error;<br>to prevent this error from occurring, avoid setting tasks with the same domain if at least one of your previous tasks with this domain (including a page URL on the domain) is still in a crawling queue
+   * target page urlrequired fieldabsolute URL of the target page;Note #1: results will be returned for the specified URL only;Note #2: to prevent denial-of-service events, tasks that contain a duplicate crawl host will be returned with a 40501 error;to prevent this error from occurring, avoid setting tasks with the same domain if at least one of your previous tasks with this domain (including a page URL on the domain) is still in a crawling queue
    * @return url
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>custom user agent</em><br>optional field<br>custom user agent for crawling a website<br>example: <code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36<br></code><br>default value: <code>Mozilla/5.0 (compatible; RSiteAuditor)</code>
+   * custom user agentoptional fieldcustom user agent for crawling a websiteexample: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36default value: Mozilla/5.0 (compatible; RSiteAuditor)
    * @return customUserAgent
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>preset for browser screen parameters</em><br>optional field<br>if you use this field, you don't need to indicate <code>browser_screen_width</code>, <code>browser_screen_height</code>, <code>browser_screen_scale_factor</code>possible values:<br><code>desktop</code>, <code>mobile</code>, <code>tablet</code><code>desktop</code> preset will apply the following values:<p><code>browser_screen_width: 1920</code><br><code>browser_screen_height: 1080</code><br><code>browser_screen_scale_factor: 1</code><p><code>mobile</code> preset will apply the following values:<p><code>browser_screen_width: 390</code><br><code>browser_screen_height: 844</code><br><code>browser_screen_scale_factor: 3</code><p><code>tablet</code> preset will apply the following values:<p><code>browser_screen_width: 1024</code><br><code>browser_screen_height: 1366</code><br><code>browser_screen_scale_factor: 2</code><p><strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>
+   * preset for browser screen parametersoptional fieldif you use this field, you don't need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factorpossible values:desktop, mobile, tabletdesktop preset will apply the following values:browser_screen_width: 1920browser_screen_height: 1080browser_screen_scale_factor: 1mobile preset will apply the following values:browser_screen_width: 390browser_screen_height: 844browser_screen_scale_factor: 3tablet preset will apply the following values:browser_screen_width: 1024browser_screen_height: 1366browser_screen_scale_factor: 2Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
    * @return browserPreset
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>browser screen width</em><br>optional field<br>you can set a custom browser screen width to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>minimum value, in pixels: <code>240</code><br>maximum value, in pixels: <code>9999</code>
+   * browser screen widthoptional fieldyou can set a custom browser screen width to perform audit for a particular device;if you use this field, you don't need to indicate browser_preset as it will be ignored;Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value, in pixels: 240maximum value, in pixels: 9999
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>browser screen height</em><br>optional field<br>you can set a custom browser screen height to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>minimum value, in pixels: <code>240</code><br>maximum value, in pixels: <code>9999</code>
+   * browser screen heightoptional fieldyou can set a custom browser screen height to perform audit for a particular device;if you use this field, you don't need to indicate browser_preset as it will be ignored;Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value, in pixels: 240maximum value, in pixels: 9999
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>browser screen scale factor</em><br>optional field<br>you can set a custom browser screen resolution ratio to perform audit for a particular device;<br>if you use this field, you don't need to indicate <code>browser_preset</code> as it will be ignored;<strong>Note:</strong> to use this parameter, set <code>enable_javascript</code> or <code>enable_browser_rendering</code> to <code>true</code>minimum value: <code>0.5</code><br>maximum value: <code>3</code>
+   * browser screen scale factoroptional fieldyou can set a custom browser screen resolution ratio to perform audit for a particular device;if you use this field, you don't need to indicate browser_preset as it will be ignored;Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value: 0.5maximum value: 3
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>store HTML of a crawled page</em><br>optional field<br>set to <code>true</code> if you want get the HTML of the page using the <a href='/v3/on_page/raw_html/' target='_blank' rel='noopener noreferrer'>OnPage Raw HTML endpoint</a><br>default value: <code>false</code>
+   * store HTML of a crawled pageoptional fieldset to true if you want get the HTML of the page using the OnPage Raw HTML endpointdefault value: false
    * @return storeRawHtml
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>language header for accessing the website</em><br>optional field<br>all locale formats are supported (xx, xx-XX, xxx-XX, etc.)<br><strong>Note:</strong> if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the <code>'type':'broken</code> in the response array
+   * language header for accessing the websiteoptional fieldall locale formats are supported (xx, xx-XX, xxx-XX, etc.)Note: if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the 'type':'broken in the response array
    * @return acceptLanguage
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>load resources</em><br>optional field<br>set to <code>true</code> if you want to load image, stylesheets, scripts, and broken resources<br>default value: <code>false</code><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' target='_blank' rel='noopener noreferrer'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' target='_blank' rel='noopener noreferrer'>Pricing Page</a>
+   * load resourcesoptional fieldset to true if you want to load image, stylesheets, scripts, and broken resourcesdefault value: falseNote: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
    * @return loadResources
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>emulate browser rendering to measure Core Web Vitals</em><br>optional field<br>by using this parameter you will be able to emulate a browser when loading a web page;<br><code>enable_browser_rendering</code> loads styles, images, fonts, animations, videos, and other resources on a page;<br>default value: <code>false</code><br>set to <code>true</code> to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;<br><strong>if you use this field, parameters <code>enable_javascript</code>, and <code>load_resources</code> are enabled automatically;</strong><br><strong>Note:</strong> if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <a href='https://dataforseo.com/help-center/cost-of-onpage-api-parameters' target='_blank' rel='noopener noreferrer'>in our help article</a>; the cost can be calculated on the <a href='https://dataforseo.com/pricing/on-page/onpage-api' target='_blank' rel='noopener noreferrer'>Pricing Page</a>
+   * emulate browser rendering to measure Core Web Vitalsoptional fieldby using this parameter you will be able to emulate a browser when loading a web page;enable_browser_rendering loads styles, images, fonts, animations, videos, and other resources on a page;default value: falseset to true to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;if you use this field, parameters enable_javascript, and load_resources are enabled automatically;Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
    * @return enableBrowserRendering
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>disable the cookie popup </em><br>optional field<br>set to <code>true</code> if you want to disable the popup requesting cookie consent from the user;<br>default value:<br><code>false</code>
+   * disable the cookie popup optional fieldset to true if you want to disable the popup requesting cookie consent from the user;default value:false
    * @return disableCookiePopup
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>return data on pages despite the timeout error</em><br>optional field<br>if <code>true</code>, the data will be provided on pages that failed to load within 120 seconds and responded with a timeout error;<br>default value: <code>false</code>
+   * return data on pages despite the timeout erroroptional fieldif true, the data will be provided on pages that failed to load within 120 seconds and responded with a timeout error;default value: false
    * @return returnDespiteTimeout
    */
   @javax.annotation.Nullable
@@ -310,6 +310,29 @@ public class OnPageInstantPagesRequestInfo  {
 
   public void setReturnDespiteTimeout(Boolean returnDespiteTimeout) {
     this.returnDespiteTimeout = returnDespiteTimeout;
+  }
+
+
+  public static final String SERIALIZED_NAME_ENABLE_JAVASCRIPT = "enable_javascript";
+  @SerializedName(SERIALIZED_NAME_ENABLE_JAVASCRIPT)
+  private Boolean enableJavascript;
+
+  public OnPageInstantPagesRequestInfo enableJavascript(Boolean enableJavascript) {
+    this.enableJavascript = enableJavascript;
+    return this;
+  }
+
+  /**
+   * load javascript on a pageoptional fieldset to true if you want to load the scripts available on a pagedefault value: falseNote: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * @return enableJavascript
+   */
+  @javax.annotation.Nullable
+  public Boolean getEnableJavascript() {
+    return enableJavascript;
+  }
+
+  public void setEnableJavascript(Boolean enableJavascript) {
+    this.enableJavascript = enableJavascript;
   }
 
 
@@ -323,7 +346,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>enable XMLHttpRequest on a page</em><br>optional field<br>set to <code>true</code> if you want our crawler to request data from a web server using the XMLHttpRequest object<br>default value:<br><code>false</code>if you use this field, <code>enable_javascript</code> must be set to <code>true</code>;
+   * enable XMLHttpRequest on a pageoptional fieldset to true if you want our crawler to request data from a web server using the XMLHttpRequest objectdefault value:falseif you use this field, enable_javascript must be set to true;
    * @return enableXhr
    */
   @javax.annotation.Nullable
@@ -346,7 +369,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>custom javascript</em><br>optional field<code>Note</code> that the execution time for the script you enter here should be 700 ms maximum;<br>for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a <code>scr</code> attribute:<br><code>let meta = { haveGoogleAnalytics: false, haveTagManager: false };rnfor (var i = 0; i < document.scripts.length; i++) {rn let src = document.scripts[i].getAttribute('src');rn if (src != undefined) {rn if (src.indexOf('analytics.js') >= 0)rn      meta.haveGoogleAnalytics = true;rntif (src.indexOf('gtm.js') >= 0)rn      meta.haveTagManager = true;rn  }rn}rnmeta;</code>the returned value depends on what you specified in this field. For instance, if you specify the following script:<br><code>meta = {}; meta.url = document.URL; meta.test = 'test'; meta;</code><br>as a response you will receive the following data:<br><code>'custom_js_response': {<br>'url': 'https://dataforseo.com/',<br>'test': 'test'<br>}</code>
+   * custom javascriptoptional fieldNote that the execution time for the script you enter here should be 700 ms maximum;for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute:let meta = { haveGoogleAnalytics: false, haveTagManager: false };rnfor (var i = 0; i < document.scripts.length; i++) {rn let src = document.scripts[i].getAttribute('src');rn if (src != undefined) {rn if (src.indexOf('analytics.js') >= 0)rn      meta.haveGoogleAnalytics = true;rntif (src.indexOf('gtm.js') >= 0)rn      meta.haveTagManager = true;rn  }rn}rnmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script:meta = {}; meta.url = document.URL; meta.test = 'test'; meta;as a response you will receive the following data:'custom_js_response': {'url': 'https://dataforseo.com/','test': 'test'}
    * @return customJs
    */
   @javax.annotation.Nullable
@@ -369,7 +392,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>enable microdata validation</em><br>optional field<br>if set to <code>true</code>, you can use the <a href='/v3/on_page/microdata/' target='_blank' rel='noopener noreferrer'>OnPage API Microdata endpoint</a> with the <code>id</code> of the task;<br>default value: <code>false</code>
+   * enable microdata validationoptional fieldif set to true, you can use the OnPage API Microdata endpoint with the id of the task;default value: false
    * @return validateMicromarkup
    */
   @javax.annotation.Nullable
@@ -392,7 +415,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>check spelling</em><br>optional field<br>set to <code>true</code> to check spelling on a website using <a href='http://hunspell.github.io/' target='_blank' rel='noopener noreferrer'>Hunspell</a> library<br>default value: <code>false</code>
+   * check spellingoptional fieldset to true to check spelling on a website using Hunspell librarydefault value: false
    * @return checkSpell
    */
   @javax.annotation.Nullable
@@ -415,7 +438,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>custom threshold values for checks</em><br>optional field<br>you can specify custom threshold values for the parameters included in the <code>checks</code> array of OnPage API responses;<br><strong>Note:</strong> only integer threshold values can be modified;
+   * custom threshold values for checksoptional fieldyou can specify custom threshold values for the parameters included in the checks array of OnPage API responses;Note: only integer threshold values can be modified;
    * @return checksThreshold
    */
   @javax.annotation.Nullable
@@ -438,7 +461,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>switch proxy pool</em><br>optional field<br>if <code>true</code>, additional proxy pools will be used to obtain the requested data;<br>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional <code>rate-limit</code> and/or <code>site_unreachable</code> errors
+   * switch proxy pooloptional fieldif true, additional proxy pools will be used to obtain the requested data;the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
    * @return switchPool
    */
   @javax.annotation.Nullable
@@ -461,7 +484,7 @@ public class OnPageInstantPagesRequestInfo  {
   }
 
   /**
-   * <em>proxy pool</em><br>optional field<br>you can choose a location of the proxy pool that will be used to obtain the requested data;<br>the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional <code>site_unreachable</code> errors<br>possible values: <code>us</code>, <code>de</code>
+   * proxy pooloptional fieldyou can choose a location of the proxy pool that will be used to obtain the requested data;the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errorspossible values: us, de
    * @return ipPoolForScan
    */
   @javax.annotation.Nullable
@@ -529,6 +552,7 @@ public class OnPageInstantPagesRequestInfo  {
         Objects.equals(this.enableBrowserRendering, onPageInstantPagesRequestInfo.enableBrowserRendering) &&
         Objects.equals(this.disableCookiePopup, onPageInstantPagesRequestInfo.disableCookiePopup) &&
         Objects.equals(this.returnDespiteTimeout, onPageInstantPagesRequestInfo.returnDespiteTimeout) &&
+        Objects.equals(this.enableJavascript, onPageInstantPagesRequestInfo.enableJavascript) &&
         Objects.equals(this.enableXhr, onPageInstantPagesRequestInfo.enableXhr) &&
         Objects.equals(this.customJs, onPageInstantPagesRequestInfo.customJs) &&
         Objects.equals(this.validateMicromarkup, onPageInstantPagesRequestInfo.validateMicromarkup) &&
@@ -545,7 +569,7 @@ public class OnPageInstantPagesRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, acceptLanguage, loadResources, enableBrowserRendering, disableCookiePopup, returnDespiteTimeout, enableXhr, customJs, validateMicromarkup, checkSpell, checksThreshold, switchPool, ipPoolForScan);
+  return Objects.hash(url, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, acceptLanguage, loadResources, enableBrowserRendering, disableCookiePopup, returnDespiteTimeout, enableJavascript, enableXhr, customJs, validateMicromarkup, checkSpell, checksThreshold, switchPool, ipPoolForScan);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -572,6 +596,7 @@ public class OnPageInstantPagesRequestInfo  {
     sb.append("    enableBrowserRendering: ").append(toIndentedString(enableBrowserRendering)).append("\n");
     sb.append("    disableCookiePopup: ").append(toIndentedString(disableCookiePopup)).append("\n");
     sb.append("    returnDespiteTimeout: ").append(toIndentedString(returnDespiteTimeout)).append("\n");
+    sb.append("    enableJavascript: ").append(toIndentedString(enableJavascript)).append("\n");
     sb.append("    enableXhr: ").append(toIndentedString(enableXhr)).append("\n");
     sb.append("    customJs: ").append(toIndentedString(customJs)).append("\n");
     sb.append("    validateMicromarkup: ").append(toIndentedString(validateMicromarkup)).append("\n");
@@ -625,6 +650,8 @@ public class OnPageInstantPagesRequestInfo  {
     openapiFields.add("disable_cookie_popup");
     
     openapiFields.add("return_despite_timeout");
+    
+    openapiFields.add("enable_javascript");
     
     openapiFields.add("enable_xhr");
     

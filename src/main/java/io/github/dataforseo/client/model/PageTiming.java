@@ -47,7 +47,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em><a href='https://web.dev/interactive/'>Time To Interactive (TTI)</a> metric</em><br>the time it takes until the user can interact with a page (in milliseconds)
+   * Time To Interactive (TTI) metricthe time it takes until the user can interact with a page (in milliseconds)
    * @return timeToInteractive
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to load resources</em><br>the time it takes until the page and all of its subresources are downloaded (in milliseconds)
+   * time to load resourcesthe time it takes until the page and all of its subresources are downloaded (in milliseconds)
    * @return domComplete
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>Core Web Vitals metric measuring how fast the largest above-the-fold content element is displayed</em><br>The amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. <a href='https://web.dev/lcp/'>Learn more</a>.
+   * Core Web Vitals metric measuring how fast the largest above-the-fold content element is displayedThe amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. Learn more.
    * @return largestContentfulPaint
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>Core Web Vitals metric indicating the responsiveness of a page</em><br>The time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. <a href='https://web.dev/fid/'>Learn more</a>.
+   * Core Web Vitals metric indicating the responsiveness of a pageThe time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. Learn more.
    * @return firstInputDelay
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to connect to a server</em><br>the time it takes until the connection with a server is established (in milliseconds)
+   * time to connect to a serverthe time it takes until the connection with a server is established (in milliseconds)
    * @return connectionTime
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to establish a secure connection</em><br>the time it takes until the secure connection with a server is established (in milliseconds)
+   * time to establish a secure connectionthe time it takes until the secure connection with a server is established (in milliseconds)
    * @return timeToSecureConnection
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to send a request to a server</em><br>the time it takes until the request to a server is sent (in milliseconds)
+   * time to send a request to a serverthe time it takes until the request to a server is sent (in milliseconds)
    * @return requestSentTime
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to first byte <a href='https://en.wikipedia.org/wiki/Time_to_first_byte'>(TTFB)</a> in milliseconds</em>
+   * time to first byte (TTFB) in milliseconds
    * @return waitingTime
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time it takes for a browser to receive a response (in milliseconds)</em>
+   * time it takes for a browser to receive a response (in milliseconds)
    * @return downloadTime
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>total time it takes until a browser receives a complete response from a server (in milliseconds)</em>
+   * total time it takes until a browser receives a complete response from a server (in milliseconds)
    * @return durationTime
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to start downloading the HTML resource</em><br>the amount of time the browser needs to start downloading a page
+   * time to start downloading the HTML resourcethe amount of time the browser needs to start downloading a page
    * @return fetchStart
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class PageTiming  {
   }
 
   /**
-   * <em>time to complete downloading the HTML resource</em><br>the amount of time the browser needs to complete downloading a page
+   * time to complete downloading the HTML resourcethe amount of time the browser needs to complete downloading a page
    * @return fetchEnd
    */
   @javax.annotation.Nullable
