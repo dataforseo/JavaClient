@@ -60,11 +60,34 @@ public class AppendixOnPagePriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixOnPagePriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+  }
+
+
   public static final String SERIALIZED_NAME_LIGHTHOUSE = "lighthouse";
   @SerializedName(SERIALIZED_NAME_LIGHTHOUSE)
-  private AppendixGoogleBusinessDataPriceDataInfo lighthouse;
+  private AppendixLlmResponsesAiOptimizationPriceData lighthouse;
 
-  public AppendixOnPagePriceData lighthouse(AppendixGoogleBusinessDataPriceDataInfo lighthouse) {
+  public AppendixOnPagePriceData lighthouse(AppendixLlmResponsesAiOptimizationPriceData lighthouse) {
     this.lighthouse = lighthouse;
     return this;
   }
@@ -74,12 +97,35 @@ public class AppendixOnPagePriceData  {
    * @return lighthouse
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getLighthouse() {
+  public AppendixLlmResponsesAiOptimizationPriceData getLighthouse() {
     return lighthouse;
   }
 
-  public void setLighthouse(AppendixGoogleBusinessDataPriceDataInfo lighthouse) {
+  public void setLighthouse(AppendixLlmResponsesAiOptimizationPriceData lighthouse) {
     this.lighthouse = lighthouse;
+  }
+
+
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private AppendixTaskKeywordsDataPriceDataInfo availableFilters;
+
+  public AppendixOnPagePriceData availableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
   }
 
 
@@ -474,6 +520,29 @@ public class AppendixOnPagePriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_UNCRAWLABLE_RESOURCES = "uncrawlable_resources";
+  @SerializedName(SERIALIZED_NAME_UNCRAWLABLE_RESOURCES)
+  private AppendixTaskKeywordsDataPriceDataInfo uncrawlableResources;
+
+  public AppendixOnPagePriceData uncrawlableResources(AppendixTaskKeywordsDataPriceDataInfo uncrawlableResources) {
+    this.uncrawlableResources = uncrawlableResources;
+    return this;
+  }
+
+  /**
+   * 
+   * @return uncrawlableResources
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getUncrawlableResources() {
+    return uncrawlableResources;
+  }
+
+  public void setUncrawlableResources(AppendixTaskKeywordsDataPriceDataInfo uncrawlableResources) {
+    this.uncrawlableResources = uncrawlableResources;
+  }
+
+
   public static final String SERIALIZED_NAME_WATERFALL = "waterfall";
   @SerializedName(SERIALIZED_NAME_WATERFALL)
   private AppendixTaskKeywordsDataPriceDataInfo waterfall;
@@ -541,7 +610,9 @@ public class AppendixOnPagePriceData  {
     return
 
         Objects.equals(this.errors, appendixOnPagePriceData.errors) &&
+        Objects.equals(this.idList, appendixOnPagePriceData.idList) &&
         Objects.equals(this.lighthouse, appendixOnPagePriceData.lighthouse) &&
+        Objects.equals(this.availableFilters, appendixOnPagePriceData.availableFilters) &&
         Objects.equals(this.contentParsing, appendixOnPagePriceData.contentParsing) &&
         Objects.equals(this.contentParsingLive, appendixOnPagePriceData.contentParsingLive) &&
         Objects.equals(this.duplicateContent, appendixOnPagePriceData.duplicateContent) &&
@@ -559,6 +630,7 @@ public class AppendixOnPagePriceData  {
         Objects.equals(this.summary, appendixOnPagePriceData.summary) &&
         Objects.equals(this.taskPost, appendixOnPagePriceData.taskPost) &&
         Objects.equals(this.tasksReady, appendixOnPagePriceData.tasksReady) &&
+        Objects.equals(this.uncrawlableResources, appendixOnPagePriceData.uncrawlableResources) &&
         Objects.equals(this.waterfall, appendixOnPagePriceData.waterfall);  
     
   }
@@ -569,7 +641,7 @@ public class AppendixOnPagePriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(errors, lighthouse, contentParsing, contentParsingLive, duplicateContent, duplicateTags, instantPages, keywordDensity, links, nonIndexable, pages, pagesByResource, pageScreenshot, rawHtml, redirectChains, resources, summary, taskPost, tasksReady, waterfall);
+  return Objects.hash(errors, idList, lighthouse, availableFilters, contentParsing, contentParsingLive, duplicateContent, duplicateTags, instantPages, keywordDensity, links, nonIndexable, pages, pagesByResource, pageScreenshot, rawHtml, redirectChains, resources, summary, taskPost, tasksReady, uncrawlableResources, waterfall);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -585,7 +657,9 @@ public class AppendixOnPagePriceData  {
     sb.append("class AppendixOnPagePriceData {\n");
 
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    lighthouse: ").append(toIndentedString(lighthouse)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    contentParsing: ").append(toIndentedString(contentParsing)).append("\n");
     sb.append("    contentParsingLive: ").append(toIndentedString(contentParsingLive)).append("\n");
     sb.append("    duplicateContent: ").append(toIndentedString(duplicateContent)).append("\n");
@@ -603,6 +677,7 @@ public class AppendixOnPagePriceData  {
     sb.append("    summary: ").append(toIndentedString(summary)).append("\n");
     sb.append("    taskPost: ").append(toIndentedString(taskPost)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
+    sb.append("    uncrawlableResources: ").append(toIndentedString(uncrawlableResources)).append("\n");
     sb.append("    waterfall: ").append(toIndentedString(waterfall)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -629,7 +704,11 @@ public class AppendixOnPagePriceData  {
     
     openapiFields.add("errors");
     
+    openapiFields.add("id_list");
+    
     openapiFields.add("lighthouse");
+    
+    openapiFields.add("available_filters");
     
     openapiFields.add("content_parsing");
     
@@ -664,6 +743,8 @@ public class AppendixOnPagePriceData  {
     openapiFields.add("task_post");
     
     openapiFields.add("tasks_ready");
+    
+    openapiFields.add("uncrawlable_resources");
     
     openapiFields.add("waterfall");
     

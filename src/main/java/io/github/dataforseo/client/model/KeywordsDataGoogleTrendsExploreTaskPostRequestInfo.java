@@ -47,7 +47,7 @@ public class KeywordsDataGoogleTrendsExploreTaskPostRequestInfo  {
   }
 
   /**
-   * <em>keywords</em><br><strong>required field</strong><br>the maximum number of keywords you can specify: 5<br>the maximum number of characters you can specify in a keyword: 100<br>the minimum number of characters must be greater than 1<br>comma characters (<code>,</code>) in the specified keywords will be unset and ignored<p><strong>Note:</strong> keywords cannot consist of a combination of the following characters: <code>< > |  ' - + = ~ ! : * ( ) [ ] { }</code><p><strong>Note:</strong> to obtain <code>google_trends_topics_list</code> and <code>google_trends_queries_list</code> items, specify no more than 1 keyword<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
+   * <em>keywords</em><br><strong>required field if you don't specify `category_code`</strong><br>the maximum number of keywords you can specify: 5<br>the maximum number of characters you can specify in a keyword: 100<br>the minimum number of characters must be greater than 1<br>comma characters (<code>,</code>) in the specified keywords will be unset and ignored<p><strong>Note:</strong> keywords cannot consist of a combination of the following characters: <code>< > |  ' - + = ~ ! : * ( ) [ ] { }</code><p><strong>Note:</strong> to obtain <code>google_trends_topics_list</code> and <code>google_trends_queries_list</code> items, specify no more than 1 keyword<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class KeywordsDataGoogleTrendsExploreTaskPostRequestInfo  {
   }
 
   /**
-   * <em>google trends search category</em><br>optional field<br>if you don't specify this field, the <code>0</code> value will be applied by default and the search will be carried out across all available categories<br>you can receive the list of available categories with their <code>category_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/keywords_data/google_trends/categories</code>
+   * <em>google trends search category</em><br><strong>required field if you don't specify `keywords`</strong><br>if you don't specify `keywords`, the value of this field must be greater than `0`<br>if you specify `keywords` and don't specify this field, the <code>0</code> value will be applied by default and the search will be carried out across all available categories<br>you can receive the list of available categories with their <code>category_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/keywords_data/google_trends/categories</code>
    * @return categoryCode
    */
   @javax.annotation.Nullable

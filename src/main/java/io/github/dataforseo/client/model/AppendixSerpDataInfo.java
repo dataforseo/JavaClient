@@ -267,6 +267,52 @@ public class AppendixSerpDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixSerpDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
+  public static final String SERIALIZED_NAME_AI_SUMMARY = "ai_summary";
+  @SerializedName(SERIALIZED_NAME_AI_SUMMARY)
+  private Double aiSummary;
+
+  public AppendixSerpDataInfo aiSummary(Double aiSummary) {
+    this.aiSummary = aiSummary;
+    return this;
+  }
+
+  /**
+   * 
+   * @return aiSummary
+   */
+  @javax.annotation.Nullable
+  public Double getAiSummary() {
+    return aiSummary;
+  }
+
+  public void setAiSummary(Double aiSummary) {
+    this.aiSummary = aiSummary;
+  }
+
+
   public static final String SERIALIZED_NAME_TASKS_READY_QUEUE = "tasks_ready_queue";
   @SerializedName(SERIALIZED_NAME_TASKS_READY_QUEUE)
   private Double tasksReadyQueue;
@@ -343,6 +389,8 @@ public class AppendixSerpDataInfo  {
         Objects.equals(this.tasksFixed, appendixSerpDataInfo.tasksFixed) &&
         Objects.equals(this.jobs, appendixSerpDataInfo.jobs) &&
         Objects.equals(this.screenshot, appendixSerpDataInfo.screenshot) &&
+        Objects.equals(this.idList, appendixSerpDataInfo.idList) &&
+        Objects.equals(this.aiSummary, appendixSerpDataInfo.aiSummary) &&
         Objects.equals(this.tasksReadyQueue, appendixSerpDataInfo.tasksReadyQueue);  
     
   }
@@ -353,7 +401,7 @@ public class AppendixSerpDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(taskPost, taskGet, tasksReady, locations, languages, live, errors, tasksFixed, jobs, screenshot, tasksReadyQueue);
+  return Objects.hash(taskPost, taskGet, tasksReady, locations, languages, live, errors, tasksFixed, jobs, screenshot, idList, aiSummary, tasksReadyQueue);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -378,6 +426,8 @@ public class AppendixSerpDataInfo  {
     sb.append("    tasksFixed: ").append(toIndentedString(tasksFixed)).append("\n");
     sb.append("    jobs: ").append(toIndentedString(jobs)).append("\n");
     sb.append("    screenshot: ").append(toIndentedString(screenshot)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    aiSummary: ").append(toIndentedString(aiSummary)).append("\n");
     sb.append("    tasksReadyQueue: ").append(toIndentedString(tasksReadyQueue)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -421,6 +471,10 @@ public class AppendixSerpDataInfo  {
     openapiFields.add("jobs");
     
     openapiFields.add("screenshot");
+    
+    openapiFields.add("id_list");
+    
+    openapiFields.add("ai_summary");
     
     openapiFields.add("tasks_ready_queue");
     

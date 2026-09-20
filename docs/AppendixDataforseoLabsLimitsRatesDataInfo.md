@@ -5,9 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**relatedKeywords** | **AppendixInfo** |  |[optional]|
 **locationsAndLanguages** | **Double** |  |[optional]|
 **categories** | **Double** |  |[optional]|
 **errors** | **Double** |  |[optional]|
+**availableFilters** | **Double** |  |[optional]|
 **productCompetitors** | **AppendixInfo** |  |[optional]|
 **productKeywordIntersections** | **AppendixInfo** |  |[optional]|
 **productRankOverview** | **AppendixInfo** |  |[optional]|
@@ -16,7 +18,6 @@
 **subdomains** | **AppendixInfo** |  |[optional]|
 **relevantPages** | **AppendixInfo** |  |[optional]|
 **competitorsDomain** | **AppendixInfo** |  |[optional]|
-**relatedKeywords** | **AppendixInfo** |  |[optional]|
 **domainRankOverview** | **AppendixInfo** |  |[optional]|
 **domainIntersection** | **AppendixInfo** |  |[optional]|
 **pageIntersection** | **AppendixInfo** |  |[optional]|
@@ -26,7 +27,6 @@
 **keywordsForSite** | **AppendixInfo** |  |[optional]|
 **keywordSuggestions** | **AppendixInfo** |  |[optional]|
 **keywordIdeas** | **AppendixInfo** |  |[optional]|
-**historicalSearchVolume** | **AppendixInfo** |  |[optional]|
 **categoriesForDomain** | **AppendixInfo** |  |[optional]|
 **domainMetricsByCategories** | **AppendixInfo** |  |[optional]|
 **topSearches** | **AppendixInfo** |  |[optional]|
@@ -38,6 +38,7 @@
 **keywordsForApp** | **AppendixInfo** |  |[optional]|
 **appIntersection** | **AppendixInfo** |  |[optional]|
 **bulkAppMetrics** | **AppendixInfo** |  |[optional]|
+**idList** | **Double** |  |[optional]|
 **searchIntent** | **AppendixInfo** |  |[optional]|
 **historicalBulkTrafficEstimation** | **AppendixInfo** |  |[optional]|
 **categoriesForKeywords** | **AppendixInfo** |  |[optional]|

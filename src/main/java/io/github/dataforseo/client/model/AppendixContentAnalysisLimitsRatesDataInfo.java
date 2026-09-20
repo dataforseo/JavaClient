@@ -267,6 +267,52 @@ public class AppendixContentAnalysisLimitsRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private Double availableFilters;
+
+  public AppendixContentAnalysisLimitsRatesDataInfo availableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public Double getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixContentAnalysisLimitsRatesDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
 
   public AppendixContentAnalysisLimitsRatesDataInfo() {
   }
@@ -319,7 +365,9 @@ public class AppendixContentAnalysisLimitsRatesDataInfo  {
         Objects.equals(this.locations, appendixContentAnalysisLimitsRatesDataInfo.locations) &&
         Objects.equals(this.languages, appendixContentAnalysisLimitsRatesDataInfo.languages) &&
         Objects.equals(this.categories, appendixContentAnalysisLimitsRatesDataInfo.categories) &&
-        Objects.equals(this.errors, appendixContentAnalysisLimitsRatesDataInfo.errors);  
+        Objects.equals(this.errors, appendixContentAnalysisLimitsRatesDataInfo.errors) &&
+        Objects.equals(this.availableFilters, appendixContentAnalysisLimitsRatesDataInfo.availableFilters) &&
+        Objects.equals(this.idList, appendixContentAnalysisLimitsRatesDataInfo.idList);  
     
   }
 
@@ -329,7 +377,7 @@ public class AppendixContentAnalysisLimitsRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(search, summary, sentimentAnalysis, ratingDistribution, phraseTrends, categoryTrends, locations, languages, categories, errors);
+  return Objects.hash(search, summary, sentimentAnalysis, ratingDistribution, phraseTrends, categoryTrends, locations, languages, categories, errors, availableFilters, idList);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -354,6 +402,8 @@ public class AppendixContentAnalysisLimitsRatesDataInfo  {
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -396,6 +446,10 @@ public class AppendixContentAnalysisLimitsRatesDataInfo  {
     openapiFields.add("categories");
     
     openapiFields.add("errors");
+    
+    openapiFields.add("available_filters");
+    
+    openapiFields.add("id_list");
     
 
     // a set of required properties/fields (JSON key names)

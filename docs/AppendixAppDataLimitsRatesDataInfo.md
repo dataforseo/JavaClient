@@ -13,5 +13,7 @@
 **languages** | **Double** |  |[optional]|
 **locations** | **Double** |  |[optional]|
 **categories** | **Double** |  |[optional]|
-**appListings** | **AppendixBusinessListingsBusinessDataLimitsRatesDataInfo** |  |[optional]|
+**idList** | **Double** |  |[optional]|
+**appListings** | **AppendixTrBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**ppListings** | **AppendixDataforseoLabsLimitsRatesDataInfo** |  |[optional]|
 **tasksReady** | **Double** |  |[optional]|

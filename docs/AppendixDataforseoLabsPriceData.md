@@ -15,6 +15,7 @@
 **categoriesForDomain** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **categoriesForKeywords** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **competitorsDomain** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**availableFilters** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **domainIntersection** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **domainMetricsByCategories** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **domainRankOverview** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
@@ -23,8 +24,8 @@
 **historicalBulkTrafficEstimation** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **historicalKeywordData** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **historicalRankOverview** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
-**historicalSearchVolume** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **historicalSerps** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**idList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **keywordIdeas** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **keywordOverview** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **keywordsForApp** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

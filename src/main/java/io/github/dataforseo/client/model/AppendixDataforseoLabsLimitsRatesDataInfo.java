@@ -37,6 +37,29 @@ import io.github.dataforseo.client.JSON;
 public class AppendixDataforseoLabsLimitsRatesDataInfo  {
 
 
+  public static final String SERIALIZED_NAME_RELATED_KEYWORDS = "related_keywords";
+  @SerializedName(SERIALIZED_NAME_RELATED_KEYWORDS)
+  private AppendixInfo relatedKeywords;
+
+  public AppendixDataforseoLabsLimitsRatesDataInfo relatedKeywords(AppendixInfo relatedKeywords) {
+    this.relatedKeywords = relatedKeywords;
+    return this;
+  }
+
+  /**
+   * 
+   * @return relatedKeywords
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getRelatedKeywords() {
+    return relatedKeywords;
+  }
+
+  public void setRelatedKeywords(AppendixInfo relatedKeywords) {
+    this.relatedKeywords = relatedKeywords;
+  }
+
+
   public static final String SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES = "locations_and_languages";
   @SerializedName(SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES)
   private Double locationsAndLanguages;
@@ -103,6 +126,29 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
 
   public void setErrors(Double errors) {
     this.errors = errors;
+  }
+
+
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private Double availableFilters;
+
+  public AppendixDataforseoLabsLimitsRatesDataInfo availableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public Double getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
   }
 
 
@@ -287,29 +333,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
 
   public void setCompetitorsDomain(AppendixInfo competitorsDomain) {
     this.competitorsDomain = competitorsDomain;
-  }
-
-
-  public static final String SERIALIZED_NAME_RELATED_KEYWORDS = "related_keywords";
-  @SerializedName(SERIALIZED_NAME_RELATED_KEYWORDS)
-  private AppendixInfo relatedKeywords;
-
-  public AppendixDataforseoLabsLimitsRatesDataInfo relatedKeywords(AppendixInfo relatedKeywords) {
-    this.relatedKeywords = relatedKeywords;
-    return this;
-  }
-
-  /**
-   * 
-   * @return relatedKeywords
-   */
-  @javax.annotation.Nullable
-  public AppendixInfo getRelatedKeywords() {
-    return relatedKeywords;
-  }
-
-  public void setRelatedKeywords(AppendixInfo relatedKeywords) {
-    this.relatedKeywords = relatedKeywords;
   }
 
 
@@ -517,29 +540,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
 
   public void setKeywordIdeas(AppendixInfo keywordIdeas) {
     this.keywordIdeas = keywordIdeas;
-  }
-
-
-  public static final String SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME = "historical_search_volume";
-  @SerializedName(SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME)
-  private AppendixInfo historicalSearchVolume;
-
-  public AppendixDataforseoLabsLimitsRatesDataInfo historicalSearchVolume(AppendixInfo historicalSearchVolume) {
-    this.historicalSearchVolume = historicalSearchVolume;
-    return this;
-  }
-
-  /**
-   * 
-   * @return historicalSearchVolume
-   */
-  @javax.annotation.Nullable
-  public AppendixInfo getHistoricalSearchVolume() {
-    return historicalSearchVolume;
-  }
-
-  public void setHistoricalSearchVolume(AppendixInfo historicalSearchVolume) {
-    this.historicalSearchVolume = historicalSearchVolume;
   }
 
 
@@ -796,6 +796,29 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixDataforseoLabsLimitsRatesDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
   public static final String SERIALIZED_NAME_SEARCH_INTENT = "search_intent";
   @SerializedName(SERIALIZED_NAME_SEARCH_INTENT)
   private AppendixInfo searchIntent;
@@ -954,9 +977,11 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     AppendixDataforseoLabsLimitsRatesDataInfo appendixDataforseoLabsLimitsRatesDataInfo = (AppendixDataforseoLabsLimitsRatesDataInfo) o;
     return
 
+        Objects.equals(this.relatedKeywords, appendixDataforseoLabsLimitsRatesDataInfo.relatedKeywords) &&
         Objects.equals(this.locationsAndLanguages, appendixDataforseoLabsLimitsRatesDataInfo.locationsAndLanguages) &&
         Objects.equals(this.categories, appendixDataforseoLabsLimitsRatesDataInfo.categories) &&
         Objects.equals(this.errors, appendixDataforseoLabsLimitsRatesDataInfo.errors) &&
+        Objects.equals(this.availableFilters, appendixDataforseoLabsLimitsRatesDataInfo.availableFilters) &&
         Objects.equals(this.productCompetitors, appendixDataforseoLabsLimitsRatesDataInfo.productCompetitors) &&
         Objects.equals(this.productKeywordIntersections, appendixDataforseoLabsLimitsRatesDataInfo.productKeywordIntersections) &&
         Objects.equals(this.productRankOverview, appendixDataforseoLabsLimitsRatesDataInfo.productRankOverview) &&
@@ -965,7 +990,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
         Objects.equals(this.subdomains, appendixDataforseoLabsLimitsRatesDataInfo.subdomains) &&
         Objects.equals(this.relevantPages, appendixDataforseoLabsLimitsRatesDataInfo.relevantPages) &&
         Objects.equals(this.competitorsDomain, appendixDataforseoLabsLimitsRatesDataInfo.competitorsDomain) &&
-        Objects.equals(this.relatedKeywords, appendixDataforseoLabsLimitsRatesDataInfo.relatedKeywords) &&
         Objects.equals(this.domainRankOverview, appendixDataforseoLabsLimitsRatesDataInfo.domainRankOverview) &&
         Objects.equals(this.domainIntersection, appendixDataforseoLabsLimitsRatesDataInfo.domainIntersection) &&
         Objects.equals(this.pageIntersection, appendixDataforseoLabsLimitsRatesDataInfo.pageIntersection) &&
@@ -975,7 +999,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
         Objects.equals(this.keywordsForSite, appendixDataforseoLabsLimitsRatesDataInfo.keywordsForSite) &&
         Objects.equals(this.keywordSuggestions, appendixDataforseoLabsLimitsRatesDataInfo.keywordSuggestions) &&
         Objects.equals(this.keywordIdeas, appendixDataforseoLabsLimitsRatesDataInfo.keywordIdeas) &&
-        Objects.equals(this.historicalSearchVolume, appendixDataforseoLabsLimitsRatesDataInfo.historicalSearchVolume) &&
         Objects.equals(this.categoriesForDomain, appendixDataforseoLabsLimitsRatesDataInfo.categoriesForDomain) &&
         Objects.equals(this.domainMetricsByCategories, appendixDataforseoLabsLimitsRatesDataInfo.domainMetricsByCategories) &&
         Objects.equals(this.topSearches, appendixDataforseoLabsLimitsRatesDataInfo.topSearches) &&
@@ -987,6 +1010,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
         Objects.equals(this.keywordsForApp, appendixDataforseoLabsLimitsRatesDataInfo.keywordsForApp) &&
         Objects.equals(this.appIntersection, appendixDataforseoLabsLimitsRatesDataInfo.appIntersection) &&
         Objects.equals(this.bulkAppMetrics, appendixDataforseoLabsLimitsRatesDataInfo.bulkAppMetrics) &&
+        Objects.equals(this.idList, appendixDataforseoLabsLimitsRatesDataInfo.idList) &&
         Objects.equals(this.searchIntent, appendixDataforseoLabsLimitsRatesDataInfo.searchIntent) &&
         Objects.equals(this.historicalBulkTrafficEstimation, appendixDataforseoLabsLimitsRatesDataInfo.historicalBulkTrafficEstimation) &&
         Objects.equals(this.categoriesForKeywords, appendixDataforseoLabsLimitsRatesDataInfo.categoriesForKeywords) &&
@@ -1001,7 +1025,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(locationsAndLanguages, categories, errors, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, serpCompetitors, subdomains, relevantPages, competitorsDomain, relatedKeywords, domainRankOverview, domainIntersection, pageIntersection, bulkTrafficEstimation, bulkKeywordDifficulty, bulkSearchVolume, keywordsForSite, keywordSuggestions, keywordIdeas, historicalSearchVolume, categoriesForDomain, domainMetricsByCategories, topSearches, domainWhoisOverview, historicalRankOverview, keywordsForCategories, historicalSerps, appCompetitors, keywordsForApp, appIntersection, bulkAppMetrics, searchIntent, historicalBulkTrafficEstimation, categoriesForKeywords, keywordOverview, historicalKeywordData);
+  return Objects.hash(relatedKeywords, locationsAndLanguages, categories, errors, availableFilters, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, serpCompetitors, subdomains, relevantPages, competitorsDomain, domainRankOverview, domainIntersection, pageIntersection, bulkTrafficEstimation, bulkKeywordDifficulty, bulkSearchVolume, keywordsForSite, keywordSuggestions, keywordIdeas, categoriesForDomain, domainMetricsByCategories, topSearches, domainWhoisOverview, historicalRankOverview, keywordsForCategories, historicalSerps, appCompetitors, keywordsForApp, appIntersection, bulkAppMetrics, idList, searchIntent, historicalBulkTrafficEstimation, categoriesForKeywords, keywordOverview, historicalKeywordData);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1016,9 +1040,11 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixDataforseoLabsLimitsRatesDataInfo {\n");
 
+    sb.append("    relatedKeywords: ").append(toIndentedString(relatedKeywords)).append("\n");
     sb.append("    locationsAndLanguages: ").append(toIndentedString(locationsAndLanguages)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    productCompetitors: ").append(toIndentedString(productCompetitors)).append("\n");
     sb.append("    productKeywordIntersections: ").append(toIndentedString(productKeywordIntersections)).append("\n");
     sb.append("    productRankOverview: ").append(toIndentedString(productRankOverview)).append("\n");
@@ -1027,7 +1053,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     sb.append("    subdomains: ").append(toIndentedString(subdomains)).append("\n");
     sb.append("    relevantPages: ").append(toIndentedString(relevantPages)).append("\n");
     sb.append("    competitorsDomain: ").append(toIndentedString(competitorsDomain)).append("\n");
-    sb.append("    relatedKeywords: ").append(toIndentedString(relatedKeywords)).append("\n");
     sb.append("    domainRankOverview: ").append(toIndentedString(domainRankOverview)).append("\n");
     sb.append("    domainIntersection: ").append(toIndentedString(domainIntersection)).append("\n");
     sb.append("    pageIntersection: ").append(toIndentedString(pageIntersection)).append("\n");
@@ -1037,7 +1062,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     sb.append("    keywordsForSite: ").append(toIndentedString(keywordsForSite)).append("\n");
     sb.append("    keywordSuggestions: ").append(toIndentedString(keywordSuggestions)).append("\n");
     sb.append("    keywordIdeas: ").append(toIndentedString(keywordIdeas)).append("\n");
-    sb.append("    historicalSearchVolume: ").append(toIndentedString(historicalSearchVolume)).append("\n");
     sb.append("    categoriesForDomain: ").append(toIndentedString(categoriesForDomain)).append("\n");
     sb.append("    domainMetricsByCategories: ").append(toIndentedString(domainMetricsByCategories)).append("\n");
     sb.append("    topSearches: ").append(toIndentedString(topSearches)).append("\n");
@@ -1049,6 +1073,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     sb.append("    keywordsForApp: ").append(toIndentedString(keywordsForApp)).append("\n");
     sb.append("    appIntersection: ").append(toIndentedString(appIntersection)).append("\n");
     sb.append("    bulkAppMetrics: ").append(toIndentedString(bulkAppMetrics)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    searchIntent: ").append(toIndentedString(searchIntent)).append("\n");
     sb.append("    historicalBulkTrafficEstimation: ").append(toIndentedString(historicalBulkTrafficEstimation)).append("\n");
     sb.append("    categoriesForKeywords: ").append(toIndentedString(categoriesForKeywords)).append("\n");
@@ -1077,11 +1102,15 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
+    openapiFields.add("related_keywords");
+    
     openapiFields.add("locations_and_languages");
     
     openapiFields.add("categories");
     
     openapiFields.add("errors");
+    
+    openapiFields.add("available_filters");
     
     openapiFields.add("product_competitors");
     
@@ -1098,8 +1127,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     openapiFields.add("relevant_pages");
     
     openapiFields.add("competitors_domain");
-    
-    openapiFields.add("related_keywords");
     
     openapiFields.add("domain_rank_overview");
     
@@ -1118,8 +1145,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     openapiFields.add("keyword_suggestions");
     
     openapiFields.add("keyword_ideas");
-    
-    openapiFields.add("historical_search_volume");
     
     openapiFields.add("categories_for_domain");
     
@@ -1142,6 +1167,8 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo  {
     openapiFields.add("app_intersection");
     
     openapiFields.add("bulk_app_metrics");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("search_intent");
     

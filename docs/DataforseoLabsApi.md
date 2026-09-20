@@ -952,7 +952,6 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsGoogleSearchIntentLiveRequestInfo model = new DataforseoLabsGoogleSearchIntentLiveRequestInfo()
-           .languageCode("en")
            .keywords(
                List.of(
                    "login page",

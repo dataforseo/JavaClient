@@ -37,26 +37,26 @@ import io.github.dataforseo.client.JSON;
 public class AppendixSerpPriceDataInfo  {
 
 
-  public static final String SERIALIZED_NAME_ADVANCED = "advanced";
-  @SerializedName(SERIALIZED_NAME_ADVANCED)
-  private AppendixTaskKeywordsDataPriceDataInfo advanced;
+  public static final String SERIALIZED_NAME_HTML = "html";
+  @SerializedName(SERIALIZED_NAME_HTML)
+  private AppendixTaskKeywordsDataPriceDataInfo html;
 
-  public AppendixSerpPriceDataInfo advanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
-    this.advanced = advanced;
+  public AppendixSerpPriceDataInfo html(AppendixTaskKeywordsDataPriceDataInfo html) {
+    this.html = html;
     return this;
   }
 
   /**
    * 
-   * @return advanced
+   * @return html
    */
   @javax.annotation.Nullable
-  public AppendixTaskKeywordsDataPriceDataInfo getAdvanced() {
-    return advanced;
+  public AppendixTaskKeywordsDataPriceDataInfo getHtml() {
+    return html;
   }
 
-  public void setAdvanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
-    this.advanced = advanced;
+  public void setHtml(AppendixTaskKeywordsDataPriceDataInfo html) {
+    this.html = html;
   }
 
 
@@ -83,26 +83,26 @@ public class AppendixSerpPriceDataInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_HTML = "html";
-  @SerializedName(SERIALIZED_NAME_HTML)
-  private AppendixTaskKeywordsDataPriceDataInfo html;
+  public static final String SERIALIZED_NAME_ADVANCED = "advanced";
+  @SerializedName(SERIALIZED_NAME_ADVANCED)
+  private AppendixTaskKeywordsDataPriceDataInfo advanced;
 
-  public AppendixSerpPriceDataInfo html(AppendixTaskKeywordsDataPriceDataInfo html) {
-    this.html = html;
+  public AppendixSerpPriceDataInfo advanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
+    this.advanced = advanced;
     return this;
   }
 
   /**
    * 
-   * @return html
+   * @return advanced
    */
   @javax.annotation.Nullable
-  public AppendixTaskKeywordsDataPriceDataInfo getHtml() {
-    return html;
+  public AppendixTaskKeywordsDataPriceDataInfo getAdvanced() {
+    return advanced;
   }
 
-  public void setHtml(AppendixTaskKeywordsDataPriceDataInfo html) {
-    this.html = html;
+  public void setAdvanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
+    this.advanced = advanced;
   }
 
 
@@ -149,9 +149,9 @@ public class AppendixSerpPriceDataInfo  {
     AppendixSerpPriceDataInfo appendixSerpPriceDataInfo = (AppendixSerpPriceDataInfo) o;
     return
 
-        Objects.equals(this.advanced, appendixSerpPriceDataInfo.advanced) &&
+        Objects.equals(this.html, appendixSerpPriceDataInfo.html) &&
         Objects.equals(this.regular, appendixSerpPriceDataInfo.regular) &&
-        Objects.equals(this.html, appendixSerpPriceDataInfo.html);  
+        Objects.equals(this.advanced, appendixSerpPriceDataInfo.advanced);  
     
   }
 
@@ -161,7 +161,7 @@ public class AppendixSerpPriceDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(advanced, regular, html);
+  return Objects.hash(html, regular, advanced);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -176,9 +176,9 @@ public class AppendixSerpPriceDataInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixSerpPriceDataInfo {\n");
 
-    sb.append("    advanced: ").append(toIndentedString(advanced)).append("\n");
-    sb.append("    regular: ").append(toIndentedString(regular)).append("\n");
     sb.append("    html: ").append(toIndentedString(html)).append("\n");
+    sb.append("    regular: ").append(toIndentedString(regular)).append("\n");
+    sb.append("    advanced: ").append(toIndentedString(advanced)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -202,11 +202,11 @@ public class AppendixSerpPriceDataInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("advanced");
+    openapiFields.add("html");
     
     openapiFields.add("regular");
     
-    openapiFields.add("html");
+    openapiFields.add("advanced");
     
 
     // a set of required properties/fields (JSON key names)

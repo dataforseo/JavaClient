@@ -28,6 +28,6 @@
 **totalAppData** | **Double** |  |[optional]|
 **contentAnalysis** | **AppendixContentAnalysisLimitsRatesDataInfo** |  |[optional]|
 **totalContentAnalysis** | **Double** |  |[optional]|
-**contentGeneration** | **AppendixContentGenerationLimitsRatesDataInfo** |  |[optional]|
-**totalContentGeneration** | **Double** |  |[optional]|
+**aiOptimization** | **AppendixAiOptimizationLimitsRatesDataInfo** |  |[optional]|
+**totalAiOptimization** | **Double** |  |[optional]|
 **value** | **String** | <em>time period for grouping</em><br><code>day</code>_in the yyyy-MM-dd format<br><code>minute</code>_in the yyyy-MM-dd HH:mm formatn |[optional]|

@@ -21,7 +21,10 @@
 **instantPages** | **Double** |  |[optional]|
 **redirectChains** | **Double** |  |[optional]|
 **lighthouse** | **AppendixInfo** |  |[optional]|
+**availableFilters** | **Double** |  |[optional]|
 **keywordDensity** | **Double** |  |[optional]|
 **pageScreenshot** | **Double** |  |[optional]|
 **contentParsing** | **Double** |  |[optional]|
 **contentParsingLive** | **Double** |  |[optional]|
+**idList** | **Double** |  |[optional]|
+**uncrawlableResources** | **Double** |  |[optional]|

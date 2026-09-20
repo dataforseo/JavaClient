@@ -60,6 +60,29 @@ public class AppendixSerpPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_AI_SUMMARY = "ai_summary";
+  @SerializedName(SERIALIZED_NAME_AI_SUMMARY)
+  private AppendixTaskKeywordsDataPriceDataInfo aiSummary;
+
+  public AppendixSerpPriceData aiSummary(AppendixTaskKeywordsDataPriceDataInfo aiSummary) {
+    this.aiSummary = aiSummary;
+    return this;
+  }
+
+  /**
+   * 
+   * @return aiSummary
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAiSummary() {
+    return aiSummary;
+  }
+
+  public void setAiSummary(AppendixTaskKeywordsDataPriceDataInfo aiSummary) {
+    this.aiSummary = aiSummary;
+  }
+
+
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
   private AppendixTaskKeywordsDataPriceDataInfo errors;
@@ -80,6 +103,29 @@ public class AppendixSerpPriceData  {
 
   public void setErrors(AppendixTaskKeywordsDataPriceDataInfo errors) {
     this.errors = errors;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixSerpPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
   }
 
 
@@ -311,7 +357,9 @@ public class AppendixSerpPriceData  {
     return
 
         Objects.equals(this.tasksFixed, appendixSerpPriceData.tasksFixed) &&
+        Objects.equals(this.aiSummary, appendixSerpPriceData.aiSummary) &&
         Objects.equals(this.errors, appendixSerpPriceData.errors) &&
+        Objects.equals(this.idList, appendixSerpPriceData.idList) &&
         Objects.equals(this.jobs, appendixSerpPriceData.jobs) &&
         Objects.equals(this.languages, appendixSerpPriceData.languages) &&
         Objects.equals(this.live, appendixSerpPriceData.live) &&
@@ -329,7 +377,7 @@ public class AppendixSerpPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(tasksFixed, errors, jobs, languages, live, locations, screenshot, taskGet, taskPost, tasksReady);
+  return Objects.hash(tasksFixed, aiSummary, errors, idList, jobs, languages, live, locations, screenshot, taskGet, taskPost, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -345,7 +393,9 @@ public class AppendixSerpPriceData  {
     sb.append("class AppendixSerpPriceData {\n");
 
     sb.append("    tasksFixed: ").append(toIndentedString(tasksFixed)).append("\n");
+    sb.append("    aiSummary: ").append(toIndentedString(aiSummary)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    jobs: ").append(toIndentedString(jobs)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    live: ").append(toIndentedString(live)).append("\n");
@@ -379,7 +429,11 @@ public class AppendixSerpPriceData  {
     
     openapiFields.add("tasks_fixed");
     
+    openapiFields.add("ai_summary");
+    
     openapiFields.add("errors");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("jobs");
     

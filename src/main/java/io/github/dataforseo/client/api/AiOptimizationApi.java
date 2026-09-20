@@ -42,6 +42,9 @@ import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTasksRe
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTaskGetResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesLiveRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesModelsResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesLiveRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesLiveResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLocationsResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLanguagesResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperTaskPostRequestInfo;
@@ -53,9 +56,6 @@ import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveAdvan
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo;
-import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesModelsResponseInfo;
-import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesLiveRequestInfo;
-import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesLiveResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationAiKeywordDataAvailableFiltersResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo;
@@ -1883,6 +1883,148 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
+    public okhttp3.Call perplexityLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/perplexity/llm_responses/models";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call perplexityLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return perplexityLlmResponsesModelsCall(_callback);
+
+    }
+
+    public AiOptimizationPerplexityLlmResponsesModelsResponseInfo perplexityLlmResponsesModels() throws ApiException {
+       ApiResponse<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> localVarResp = perplexityLlmResponsesModelsWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> perplexityLlmResponsesModelsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = perplexityLlmResponsesModelsValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesModelsResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call perplexityLlmResponsesModelsAsync(final ApiCallback<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = perplexityLlmResponsesModelsValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesModelsResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call perplexityLlmResponsesLiveCall(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/perplexity/llm_responses/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call perplexityLlmResponsesLiveValidateBeforeCall(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return perplexityLlmResponsesLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationPerplexityLlmResponsesLiveResponseInfo perplexityLlmResponsesLive(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationPerplexityLlmResponsesLiveResponseInfo> localVarResp = perplexityLlmResponsesLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationPerplexityLlmResponsesLiveResponseInfo> perplexityLlmResponsesLiveWithHttpInfo(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = perplexityLlmResponsesLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call perplexityLlmResponsesLiveAsync(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload, final ApiCallback<AiOptimizationPerplexityLlmResponsesLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = perplexityLlmResponsesLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
     public okhttp3.Call geminiLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
@@ -2459,148 +2601,6 @@ public class AiOptimizationApi {
  
             okhttp3.Call localVarCall = geminiLlmScraperLiveHtmlValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call perplexityLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-          String localVarPath = "/v3/ai_optimization/perplexity/llm_responses/models";
-   
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call perplexityLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-
-       return perplexityLlmResponsesModelsCall(_callback);
-
-    }
-
-    public AiOptimizationPerplexityLlmResponsesModelsResponseInfo perplexityLlmResponsesModels() throws ApiException {
-       ApiResponse<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> localVarResp = perplexityLlmResponsesModelsWithHttpInfo();
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> perplexityLlmResponsesModelsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = perplexityLlmResponsesModelsValidateBeforeCall(null);
-       Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesModelsResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call perplexityLlmResponsesModelsAsync(final ApiCallback<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = perplexityLlmResponsesModelsValidateBeforeCall(_callback);
-       Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesModelsResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call perplexityLlmResponsesLiveCall(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/ai_optimization/perplexity/llm_responses/live";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call perplexityLlmResponsesLiveValidateBeforeCall(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return perplexityLlmResponsesLiveCall(payload, _callback);
- 
-        }
- 
-        public AiOptimizationPerplexityLlmResponsesLiveResponseInfo perplexityLlmResponsesLive(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload) throws ApiException {
-            ApiResponse<AiOptimizationPerplexityLlmResponsesLiveResponseInfo> localVarResp = perplexityLlmResponsesLiveWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<AiOptimizationPerplexityLlmResponsesLiveResponseInfo> perplexityLlmResponsesLiveWithHttpInfo(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = perplexityLlmResponsesLiveValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesLiveResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call perplexityLlmResponsesLiveAsync(List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo> payload, final ApiCallback<AiOptimizationPerplexityLlmResponsesLiveResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = perplexityLlmResponsesLiveValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<AiOptimizationPerplexityLlmResponsesLiveResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

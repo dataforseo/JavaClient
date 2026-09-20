@@ -7,7 +7,9 @@
 |------------ | ------------- | ------------- | -------------|
 **categories** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **categoryTrends** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**availableFilters** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**idList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **phraseTrends** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

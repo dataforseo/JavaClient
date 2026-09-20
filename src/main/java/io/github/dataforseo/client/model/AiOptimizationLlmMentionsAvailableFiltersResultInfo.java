@@ -60,6 +60,282 @@ public class AiOptimizationLlmMentionsAvailableFiltersResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_SEARCH_MENTIONS = "search_mentions";
+  @SerializedName(SERIALIZED_NAME_SEARCH_MENTIONS)
+  private Map<String, String> searchMentions;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo searchMentions(Map<String, String> searchMentions) {
+    this.searchMentions = searchMentions;
+    return this;
+  }
+
+  /**
+   * 
+   * @return searchMentions
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getSearchMentions() {
+    return searchMentions;
+  }
+
+  public void setSearchMentions(Map<String, String> searchMentions) {
+    this.searchMentions = searchMentions;
+  }
+
+
+  public static final String SERIALIZED_NAME_TARGET_METRICS = "target_metrics";
+  @SerializedName(SERIALIZED_NAME_TARGET_METRICS)
+  private Map<String, String> targetMetrics;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo targetMetrics(Map<String, String> targetMetrics) {
+    this.targetMetrics = targetMetrics;
+    return this;
+  }
+
+  /**
+   * 
+   * @return targetMetrics
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTargetMetrics() {
+    return targetMetrics;
+  }
+
+  public void setTargetMetrics(Map<String, String> targetMetrics) {
+    this.targetMetrics = targetMetrics;
+  }
+
+
+  public static final String SERIALIZED_NAME_MULTI_TARGET_METRICS = "multi_target_metrics";
+  @SerializedName(SERIALIZED_NAME_MULTI_TARGET_METRICS)
+  private Map<String, String> multiTargetMetrics;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo multiTargetMetrics(Map<String, String> multiTargetMetrics) {
+    this.multiTargetMetrics = multiTargetMetrics;
+    return this;
+  }
+
+  /**
+   * 
+   * @return multiTargetMetrics
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getMultiTargetMetrics() {
+    return multiTargetMetrics;
+  }
+
+  public void setMultiTargetMetrics(Map<String, String> multiTargetMetrics) {
+    this.multiTargetMetrics = multiTargetMetrics;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_DOMAINS = "top_mentioned_domains";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_DOMAINS)
+  private Map<String, String> topMentionedDomains;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedDomains(Map<String, String> topMentionedDomains) {
+    this.topMentionedDomains = topMentionedDomains;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedDomains
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedDomains() {
+    return topMentionedDomains;
+  }
+
+  public void setTopMentionedDomains(Map<String, String> topMentionedDomains) {
+    this.topMentionedDomains = topMentionedDomains;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_PAGES = "top_mentioned_pages";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_PAGES)
+  private Map<String, String> topMentionedPages;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedPages(Map<String, String> topMentionedPages) {
+    this.topMentionedPages = topMentionedPages;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedPages
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedPages() {
+    return topMentionedPages;
+  }
+
+  public void setTopMentionedPages(Map<String, String> topMentionedPages) {
+    this.topMentionedPages = topMentionedPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_BRANDS = "top_mentioned_brands";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_BRANDS)
+  private Map<String, String> topMentionedBrands;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedBrands(Map<String, String> topMentionedBrands) {
+    this.topMentionedBrands = topMentionedBrands;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedBrands
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedBrands() {
+    return topMentionedBrands;
+  }
+
+  public void setTopMentionedBrands(Map<String, String> topMentionedBrands) {
+    this.topMentionedBrands = topMentionedBrands;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_BRAND_CATEGORIES = "top_mentioned_brand_categories";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_BRAND_CATEGORIES)
+  private Map<String, String> topMentionedBrandCategories;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedBrandCategories(Map<String, String> topMentionedBrandCategories) {
+    this.topMentionedBrandCategories = topMentionedBrandCategories;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedBrandCategories
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedBrandCategories() {
+    return topMentionedBrandCategories;
+  }
+
+  public void setTopMentionedBrandCategories(Map<String, String> topMentionedBrandCategories) {
+    this.topMentionedBrandCategories = topMentionedBrandCategories;
+  }
+
+
+  public static final String SERIALIZED_NAME_TARGET_METRICS_LITE = "target_metrics_lite";
+  @SerializedName(SERIALIZED_NAME_TARGET_METRICS_LITE)
+  private Map<String, String> targetMetricsLite;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo targetMetricsLite(Map<String, String> targetMetricsLite) {
+    this.targetMetricsLite = targetMetricsLite;
+    return this;
+  }
+
+  /**
+   * 
+   * @return targetMetricsLite
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTargetMetricsLite() {
+    return targetMetricsLite;
+  }
+
+  public void setTargetMetricsLite(Map<String, String> targetMetricsLite) {
+    this.targetMetricsLite = targetMetricsLite;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_DOMAINS_LITE = "top_mentioned_domains_lite";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_DOMAINS_LITE)
+  private Map<String, String> topMentionedDomainsLite;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedDomainsLite(Map<String, String> topMentionedDomainsLite) {
+    this.topMentionedDomainsLite = topMentionedDomainsLite;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedDomainsLite
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedDomainsLite() {
+    return topMentionedDomainsLite;
+  }
+
+  public void setTopMentionedDomainsLite(Map<String, String> topMentionedDomainsLite) {
+    this.topMentionedDomainsLite = topMentionedDomainsLite;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_PAGES_LITE = "top_mentioned_pages_lite";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_PAGES_LITE)
+  private Map<String, String> topMentionedPagesLite;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedPagesLite(Map<String, String> topMentionedPagesLite) {
+    this.topMentionedPagesLite = topMentionedPagesLite;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedPagesLite
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedPagesLite() {
+    return topMentionedPagesLite;
+  }
+
+  public void setTopMentionedPagesLite(Map<String, String> topMentionedPagesLite) {
+    this.topMentionedPagesLite = topMentionedPagesLite;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_BRANDS_LITE = "top_mentioned_brands_lite";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_BRANDS_LITE)
+  private Map<String, String> topMentionedBrandsLite;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedBrandsLite(Map<String, String> topMentionedBrandsLite) {
+    this.topMentionedBrandsLite = topMentionedBrandsLite;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedBrandsLite
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedBrandsLite() {
+    return topMentionedBrandsLite;
+  }
+
+  public void setTopMentionedBrandsLite(Map<String, String> topMentionedBrandsLite) {
+    this.topMentionedBrandsLite = topMentionedBrandsLite;
+  }
+
+
+  public static final String SERIALIZED_NAME_TOP_MENTIONED_BRAND_CATEGORIES_LITE = "top_mentioned_brand_categories_lite";
+  @SerializedName(SERIALIZED_NAME_TOP_MENTIONED_BRAND_CATEGORIES_LITE)
+  private Map<String, String> topMentionedBrandCategoriesLite;
+
+  public AiOptimizationLlmMentionsAvailableFiltersResultInfo topMentionedBrandCategoriesLite(Map<String, String> topMentionedBrandCategoriesLite) {
+    this.topMentionedBrandCategoriesLite = topMentionedBrandCategoriesLite;
+    return this;
+  }
+
+  /**
+   * 
+   * @return topMentionedBrandCategoriesLite
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getTopMentionedBrandCategoriesLite() {
+    return topMentionedBrandCategoriesLite;
+  }
+
+  public void setTopMentionedBrandCategoriesLite(Map<String, String> topMentionedBrandCategoriesLite) {
+    this.topMentionedBrandCategoriesLite = topMentionedBrandCategoriesLite;
+  }
+
+
 
   public AiOptimizationLlmMentionsAvailableFiltersResultInfo() {
   }
@@ -103,7 +379,19 @@ public class AiOptimizationLlmMentionsAvailableFiltersResultInfo  {
     AiOptimizationLlmMentionsAvailableFiltersResultInfo aiOptimizationLlmMentionsAvailableFiltersResultInfo = (AiOptimizationLlmMentionsAvailableFiltersResultInfo) o;
     return
 
-        Objects.equals(this.search, aiOptimizationLlmMentionsAvailableFiltersResultInfo.search);  
+        Objects.equals(this.search, aiOptimizationLlmMentionsAvailableFiltersResultInfo.search) &&
+        Objects.equals(this.searchMentions, aiOptimizationLlmMentionsAvailableFiltersResultInfo.searchMentions) &&
+        Objects.equals(this.targetMetrics, aiOptimizationLlmMentionsAvailableFiltersResultInfo.targetMetrics) &&
+        Objects.equals(this.multiTargetMetrics, aiOptimizationLlmMentionsAvailableFiltersResultInfo.multiTargetMetrics) &&
+        Objects.equals(this.topMentionedDomains, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedDomains) &&
+        Objects.equals(this.topMentionedPages, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedPages) &&
+        Objects.equals(this.topMentionedBrands, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedBrands) &&
+        Objects.equals(this.topMentionedBrandCategories, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedBrandCategories) &&
+        Objects.equals(this.targetMetricsLite, aiOptimizationLlmMentionsAvailableFiltersResultInfo.targetMetricsLite) &&
+        Objects.equals(this.topMentionedDomainsLite, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedDomainsLite) &&
+        Objects.equals(this.topMentionedPagesLite, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedPagesLite) &&
+        Objects.equals(this.topMentionedBrandsLite, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedBrandsLite) &&
+        Objects.equals(this.topMentionedBrandCategoriesLite, aiOptimizationLlmMentionsAvailableFiltersResultInfo.topMentionedBrandCategoriesLite);  
     
   }
 
@@ -113,7 +401,7 @@ public class AiOptimizationLlmMentionsAvailableFiltersResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(search);
+  return Objects.hash(search, searchMentions, targetMetrics, multiTargetMetrics, topMentionedDomains, topMentionedPages, topMentionedBrands, topMentionedBrandCategories, targetMetricsLite, topMentionedDomainsLite, topMentionedPagesLite, topMentionedBrandsLite, topMentionedBrandCategoriesLite);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -129,6 +417,18 @@ public class AiOptimizationLlmMentionsAvailableFiltersResultInfo  {
     sb.append("class AiOptimizationLlmMentionsAvailableFiltersResultInfo {\n");
 
     sb.append("    search: ").append(toIndentedString(search)).append("\n");
+    sb.append("    searchMentions: ").append(toIndentedString(searchMentions)).append("\n");
+    sb.append("    targetMetrics: ").append(toIndentedString(targetMetrics)).append("\n");
+    sb.append("    multiTargetMetrics: ").append(toIndentedString(multiTargetMetrics)).append("\n");
+    sb.append("    topMentionedDomains: ").append(toIndentedString(topMentionedDomains)).append("\n");
+    sb.append("    topMentionedPages: ").append(toIndentedString(topMentionedPages)).append("\n");
+    sb.append("    topMentionedBrands: ").append(toIndentedString(topMentionedBrands)).append("\n");
+    sb.append("    topMentionedBrandCategories: ").append(toIndentedString(topMentionedBrandCategories)).append("\n");
+    sb.append("    targetMetricsLite: ").append(toIndentedString(targetMetricsLite)).append("\n");
+    sb.append("    topMentionedDomainsLite: ").append(toIndentedString(topMentionedDomainsLite)).append("\n");
+    sb.append("    topMentionedPagesLite: ").append(toIndentedString(topMentionedPagesLite)).append("\n");
+    sb.append("    topMentionedBrandsLite: ").append(toIndentedString(topMentionedBrandsLite)).append("\n");
+    sb.append("    topMentionedBrandCategoriesLite: ").append(toIndentedString(topMentionedBrandCategoriesLite)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -153,6 +453,30 @@ public class AiOptimizationLlmMentionsAvailableFiltersResultInfo  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("search");
+    
+    openapiFields.add("search_mentions");
+    
+    openapiFields.add("target_metrics");
+    
+    openapiFields.add("multi_target_metrics");
+    
+    openapiFields.add("top_mentioned_domains");
+    
+    openapiFields.add("top_mentioned_pages");
+    
+    openapiFields.add("top_mentioned_brands");
+    
+    openapiFields.add("top_mentioned_brand_categories");
+    
+    openapiFields.add("target_metrics_lite");
+    
+    openapiFields.add("top_mentioned_domains_lite");
+    
+    openapiFields.add("top_mentioned_pages_lite");
+    
+    openapiFields.add("top_mentioned_brands_lite");
+    
+    openapiFields.add("top_mentioned_brand_categories_lite");
     
 
     // a set of required properties/fields (JSON key names)

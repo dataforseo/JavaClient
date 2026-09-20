@@ -11,4 +11,5 @@
 **languages** | **Double** |  |[optional]|
 **errors** | **Double** |  |[optional]|
 **reviews** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**idList** | **Double** |  |[optional]|
 **tasksReady** | **Double** |  |[optional]|

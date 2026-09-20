@@ -106,6 +106,29 @@ public class AppendixMerchantPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixMerchantPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+  }
+
+
   public static final String SERIALIZED_NAME_LANGUAGES = "languages";
   @SerializedName(SERIALIZED_NAME_LANGUAGES)
   private AppendixTaskKeywordsDataPriceDataInfo languages;
@@ -244,6 +267,7 @@ public class AppendixMerchantPriceData  {
         Objects.equals(this.google, appendixMerchantPriceData.google) &&
         Objects.equals(this.amazon, appendixMerchantPriceData.amazon) &&
         Objects.equals(this.errors, appendixMerchantPriceData.errors) &&
+        Objects.equals(this.idList, appendixMerchantPriceData.idList) &&
         Objects.equals(this.languages, appendixMerchantPriceData.languages) &&
         Objects.equals(this.locations, appendixMerchantPriceData.locations) &&
         Objects.equals(this.reviews, appendixMerchantPriceData.reviews) &&
@@ -257,7 +281,7 @@ public class AppendixMerchantPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(google, amazon, errors, languages, locations, reviews, tasksReady);
+  return Objects.hash(google, amazon, errors, idList, languages, locations, reviews, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -275,6 +299,7 @@ public class AppendixMerchantPriceData  {
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
     sb.append("    amazon: ").append(toIndentedString(amazon)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    reviews: ").append(toIndentedString(reviews)).append("\n");
@@ -307,6 +332,8 @@ public class AppendixMerchantPriceData  {
     openapiFields.add("amazon");
     
     openapiFields.add("errors");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("languages");
     

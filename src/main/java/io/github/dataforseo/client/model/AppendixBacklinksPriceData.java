@@ -60,6 +60,29 @@ public class AppendixBacklinksPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private AppendixTaskKeywordsDataPriceDataInfo availableFilters;
+
+  public AppendixBacklinksPriceData availableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
   private AppendixBingKeywordsDataPriceDataInfo backlinks;
@@ -290,6 +313,29 @@ public class AppendixBacklinksPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_DOMAIN_BACKLINKS = "domain_backlinks";
+  @SerializedName(SERIALIZED_NAME_DOMAIN_BACKLINKS)
+  private AppendixBingKeywordsDataPriceDataInfo domainBacklinks;
+
+  public AppendixBacklinksPriceData domainBacklinks(AppendixBingKeywordsDataPriceDataInfo domainBacklinks) {
+    this.domainBacklinks = domainBacklinks;
+    return this;
+  }
+
+  /**
+   * 
+   * @return domainBacklinks
+   */
+  @javax.annotation.Nullable
+  public AppendixBingKeywordsDataPriceDataInfo getDomainBacklinks() {
+    return domainBacklinks;
+  }
+
+  public void setDomainBacklinks(AppendixBingKeywordsDataPriceDataInfo domainBacklinks) {
+    this.domainBacklinks = domainBacklinks;
+  }
+
+
   public static final String SERIALIZED_NAME_DOMAIN_INTERSECTION = "domain_intersection";
   @SerializedName(SERIALIZED_NAME_DOMAIN_INTERSECTION)
   private AppendixBingKeywordsDataPriceDataInfo domainIntersection;
@@ -402,6 +448,52 @@ public class AppendixBacklinksPriceData  {
 
   public void setHistory(AppendixBingKeywordsDataPriceDataInfo history) {
     this.history = history;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixBacklinksPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+  }
+
+
+  public static final String SERIALIZED_NAME_LINKS_INTERSECTION = "links_intersection";
+  @SerializedName(SERIALIZED_NAME_LINKS_INTERSECTION)
+  private AppendixBingKeywordsDataPriceDataInfo linksIntersection;
+
+  public AppendixBacklinksPriceData linksIntersection(AppendixBingKeywordsDataPriceDataInfo linksIntersection) {
+    this.linksIntersection = linksIntersection;
+    return this;
+  }
+
+  /**
+   * 
+   * @return linksIntersection
+   */
+  @javax.annotation.Nullable
+  public AppendixBingKeywordsDataPriceDataInfo getLinksIntersection() {
+    return linksIntersection;
+  }
+
+  public void setLinksIntersection(AppendixBingKeywordsDataPriceDataInfo linksIntersection) {
+    this.linksIntersection = linksIntersection;
   }
 
 
@@ -587,6 +679,7 @@ public class AppendixBacklinksPriceData  {
     return
 
         Objects.equals(this.anchors, appendixBacklinksPriceData.anchors) &&
+        Objects.equals(this.availableFilters, appendixBacklinksPriceData.availableFilters) &&
         Objects.equals(this.backlinks, appendixBacklinksPriceData.backlinks) &&
         Objects.equals(this.bulkBacklinks, appendixBacklinksPriceData.bulkBacklinks) &&
         Objects.equals(this.bulkNewLostBacklinks, appendixBacklinksPriceData.bulkNewLostBacklinks) &&
@@ -597,11 +690,14 @@ public class AppendixBacklinksPriceData  {
         Objects.equals(this.bulkSpamScore, appendixBacklinksPriceData.bulkSpamScore) &&
         Objects.equals(this.competitors, appendixBacklinksPriceData.competitors) &&
         Objects.equals(this.contentDuplicates, appendixBacklinksPriceData.contentDuplicates) &&
+        Objects.equals(this.domainBacklinks, appendixBacklinksPriceData.domainBacklinks) &&
         Objects.equals(this.domainIntersection, appendixBacklinksPriceData.domainIntersection) &&
         Objects.equals(this.domainPages, appendixBacklinksPriceData.domainPages) &&
         Objects.equals(this.domainPagesSummary, appendixBacklinksPriceData.domainPagesSummary) &&
         Objects.equals(this.errors, appendixBacklinksPriceData.errors) &&
         Objects.equals(this.history, appendixBacklinksPriceData.history) &&
+        Objects.equals(this.idList, appendixBacklinksPriceData.idList) &&
+        Objects.equals(this.linksIntersection, appendixBacklinksPriceData.linksIntersection) &&
         Objects.equals(this.pageIntersection, appendixBacklinksPriceData.pageIntersection) &&
         Objects.equals(this.referringDomains, appendixBacklinksPriceData.referringDomains) &&
         Objects.equals(this.referringNetworks, appendixBacklinksPriceData.referringNetworks) &&
@@ -617,7 +713,7 @@ public class AppendixBacklinksPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(anchors, backlinks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkPagesSummary, bulkRanks, bulkReferringDomains, bulkSpamScore, competitors, contentDuplicates, domainIntersection, domainPages, domainPagesSummary, errors, history, pageIntersection, referringDomains, referringNetworks, summary, timeseriesNewLostSummary, timeseriesSummary);
+  return Objects.hash(anchors, availableFilters, backlinks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkPagesSummary, bulkRanks, bulkReferringDomains, bulkSpamScore, competitors, contentDuplicates, domainBacklinks, domainIntersection, domainPages, domainPagesSummary, errors, history, idList, linksIntersection, pageIntersection, referringDomains, referringNetworks, summary, timeseriesNewLostSummary, timeseriesSummary);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -633,6 +729,7 @@ public class AppendixBacklinksPriceData  {
     sb.append("class AppendixBacklinksPriceData {\n");
 
     sb.append("    anchors: ").append(toIndentedString(anchors)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    backlinks: ").append(toIndentedString(backlinks)).append("\n");
     sb.append("    bulkBacklinks: ").append(toIndentedString(bulkBacklinks)).append("\n");
     sb.append("    bulkNewLostBacklinks: ").append(toIndentedString(bulkNewLostBacklinks)).append("\n");
@@ -643,11 +740,14 @@ public class AppendixBacklinksPriceData  {
     sb.append("    bulkSpamScore: ").append(toIndentedString(bulkSpamScore)).append("\n");
     sb.append("    competitors: ").append(toIndentedString(competitors)).append("\n");
     sb.append("    contentDuplicates: ").append(toIndentedString(contentDuplicates)).append("\n");
+    sb.append("    domainBacklinks: ").append(toIndentedString(domainBacklinks)).append("\n");
     sb.append("    domainIntersection: ").append(toIndentedString(domainIntersection)).append("\n");
     sb.append("    domainPages: ").append(toIndentedString(domainPages)).append("\n");
     sb.append("    domainPagesSummary: ").append(toIndentedString(domainPagesSummary)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    history: ").append(toIndentedString(history)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    linksIntersection: ").append(toIndentedString(linksIntersection)).append("\n");
     sb.append("    pageIntersection: ").append(toIndentedString(pageIntersection)).append("\n");
     sb.append("    referringDomains: ").append(toIndentedString(referringDomains)).append("\n");
     sb.append("    referringNetworks: ").append(toIndentedString(referringNetworks)).append("\n");
@@ -679,6 +779,8 @@ public class AppendixBacklinksPriceData  {
     
     openapiFields.add("anchors");
     
+    openapiFields.add("available_filters");
+    
     openapiFields.add("backlinks");
     
     openapiFields.add("bulk_backlinks");
@@ -699,6 +801,8 @@ public class AppendixBacklinksPriceData  {
     
     openapiFields.add("content_duplicates");
     
+    openapiFields.add("domain_backlinks");
+    
     openapiFields.add("domain_intersection");
     
     openapiFields.add("domain_pages");
@@ -708,6 +812,10 @@ public class AppendixBacklinksPriceData  {
     openapiFields.add("errors");
     
     openapiFields.add("history");
+    
+    openapiFields.add("id_list");
+    
+    openapiFields.add("links_intersection");
     
     openapiFields.add("page_intersection");
     

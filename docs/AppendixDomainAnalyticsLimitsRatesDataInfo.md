@@ -9,3 +9,4 @@
 **errors** | **Double** |  |[optional]|
 **whois** | **AppendixWhoisDomainAnalyticsLimitsRatesDataInfo** |  |[optional]|
 **technologies** | **AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo** |  |[optional]|
+**availableFilters** | **Double** |  |[optional]|

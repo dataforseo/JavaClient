@@ -60,6 +60,29 @@ public class AppendixDomainAnalyticsPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private AppendixTaskKeywordsDataPriceDataInfo availableFilters;
+
+  public AppendixDomainAnalyticsPriceData availableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
   public static final String SERIALIZED_NAME_TECHNOLOGIES = "technologies";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGIES)
   private AppendixTechnologiesDomainAnalyticsPriceData technologies;
@@ -173,6 +196,7 @@ public class AppendixDomainAnalyticsPriceData  {
     return
 
         Objects.equals(this.whois, appendixDomainAnalyticsPriceData.whois) &&
+        Objects.equals(this.availableFilters, appendixDomainAnalyticsPriceData.availableFilters) &&
         Objects.equals(this.technologies, appendixDomainAnalyticsPriceData.technologies) &&
         Objects.equals(this.errors, appendixDomainAnalyticsPriceData.errors) &&
         Objects.equals(this.tasksReady, appendixDomainAnalyticsPriceData.tasksReady);  
@@ -185,7 +209,7 @@ public class AppendixDomainAnalyticsPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(whois, technologies, errors, tasksReady);
+  return Objects.hash(whois, availableFilters, technologies, errors, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -201,6 +225,7 @@ public class AppendixDomainAnalyticsPriceData  {
     sb.append("class AppendixDomainAnalyticsPriceData {\n");
 
     sb.append("    whois: ").append(toIndentedString(whois)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    technologies: ").append(toIndentedString(technologies)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
@@ -228,6 +253,8 @@ public class AppendixDomainAnalyticsPriceData  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("whois");
+    
+    openapiFields.add("available_filters");
     
     openapiFields.add("technologies");
     

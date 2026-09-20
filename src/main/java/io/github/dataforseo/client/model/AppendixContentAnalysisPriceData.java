@@ -83,6 +83,29 @@ public class AppendixContentAnalysisPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private AppendixTaskKeywordsDataPriceDataInfo availableFilters;
+
+  public AppendixContentAnalysisPriceData availableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
   private AppendixTaskKeywordsDataPriceDataInfo errors;
@@ -103,6 +126,29 @@ public class AppendixContentAnalysisPriceData  {
 
   public void setErrors(AppendixTaskKeywordsDataPriceDataInfo errors) {
     this.errors = errors;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixContentAnalysisPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
   }
 
 
@@ -312,7 +358,9 @@ public class AppendixContentAnalysisPriceData  {
 
         Objects.equals(this.categories, appendixContentAnalysisPriceData.categories) &&
         Objects.equals(this.categoryTrends, appendixContentAnalysisPriceData.categoryTrends) &&
+        Objects.equals(this.availableFilters, appendixContentAnalysisPriceData.availableFilters) &&
         Objects.equals(this.errors, appendixContentAnalysisPriceData.errors) &&
+        Objects.equals(this.idList, appendixContentAnalysisPriceData.idList) &&
         Objects.equals(this.languages, appendixContentAnalysisPriceData.languages) &&
         Objects.equals(this.locations, appendixContentAnalysisPriceData.locations) &&
         Objects.equals(this.phraseTrends, appendixContentAnalysisPriceData.phraseTrends) &&
@@ -329,7 +377,7 @@ public class AppendixContentAnalysisPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(categories, categoryTrends, errors, languages, locations, phraseTrends, ratingDistribution, search, sentimentAnalysis, summary);
+  return Objects.hash(categories, categoryTrends, availableFilters, errors, idList, languages, locations, phraseTrends, ratingDistribution, search, sentimentAnalysis, summary);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -346,7 +394,9 @@ public class AppendixContentAnalysisPriceData  {
 
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    categoryTrends: ").append(toIndentedString(categoryTrends)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    phraseTrends: ").append(toIndentedString(phraseTrends)).append("\n");
@@ -381,7 +431,11 @@ public class AppendixContentAnalysisPriceData  {
     
     openapiFields.add("category_trends");
     
+    openapiFields.add("available_filters");
+    
     openapiFields.add("errors");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("languages");
     

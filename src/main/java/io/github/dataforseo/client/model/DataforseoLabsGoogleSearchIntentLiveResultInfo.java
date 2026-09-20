@@ -37,29 +37,6 @@ import io.github.dataforseo.client.JSON;
 public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public DataforseoLabsGoogleSearchIntentLiveResultInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
-  }
-
-
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
   private Long itemsCount;
@@ -149,7 +126,6 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
     DataforseoLabsGoogleSearchIntentLiveResultInfo dataforseoLabsGoogleSearchIntentLiveResultInfo = (DataforseoLabsGoogleSearchIntentLiveResultInfo) o;
     return
 
-        Objects.equals(this.languageCode, dataforseoLabsGoogleSearchIntentLiveResultInfo.languageCode) &&
         Objects.equals(this.itemsCount, dataforseoLabsGoogleSearchIntentLiveResultInfo.itemsCount) &&
         Objects.equals(this.items, dataforseoLabsGoogleSearchIntentLiveResultInfo.items);  
     
@@ -161,7 +137,7 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(languageCode, itemsCount, items);
+  return Objects.hash(itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -176,7 +152,6 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class DataforseoLabsGoogleSearchIntentLiveResultInfo {\n");
 
-    sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
@@ -201,8 +176,6 @@ public class DataforseoLabsGoogleSearchIntentLiveResultInfo  {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    
-    openapiFields.add("language_code");
     
     openapiFields.add("items_count");
     

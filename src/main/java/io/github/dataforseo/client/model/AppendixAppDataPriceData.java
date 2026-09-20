@@ -62,9 +62,9 @@ public class AppendixAppDataPriceData  {
 
   public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
   @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
-  private AppendixAppListingsAppDataPriceData appListings;
+  private AppendixLlmMentionsAiOptimizationPriceData appListings;
 
-  public AppendixAppDataPriceData appListings(AppendixAppListingsAppDataPriceData appListings) {
+  public AppendixAppDataPriceData appListings(AppendixLlmMentionsAiOptimizationPriceData appListings) {
     this.appListings = appListings;
     return this;
   }
@@ -74,11 +74,11 @@ public class AppendixAppDataPriceData  {
    * @return appListings
    */
   @javax.annotation.Nullable
-  public AppendixAppListingsAppDataPriceData getAppListings() {
+  public AppendixLlmMentionsAiOptimizationPriceData getAppListings() {
     return appListings;
   }
 
-  public void setAppListings(AppendixAppListingsAppDataPriceData appListings) {
+  public void setAppListings(AppendixLlmMentionsAiOptimizationPriceData appListings) {
     this.appListings = appListings;
   }
 
@@ -152,6 +152,29 @@ public class AppendixAppDataPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_PP_LISTINGS = "pp_listings";
+  @SerializedName(SERIALIZED_NAME_PP_LISTINGS)
+  private AppendixLlmMentionsAiOptimizationPriceData ppListings;
+
+  public AppendixAppDataPriceData ppListings(AppendixLlmMentionsAiOptimizationPriceData ppListings) {
+    this.ppListings = ppListings;
+    return this;
+  }
+
+  /**
+   * 
+   * @return ppListings
+   */
+  @javax.annotation.Nullable
+  public AppendixLlmMentionsAiOptimizationPriceData getPpListings() {
+    return ppListings;
+  }
+
+  public void setPpListings(AppendixLlmMentionsAiOptimizationPriceData ppListings) {
+    this.ppListings = ppListings;
+  }
+
+
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
   private AppendixTaskKeywordsDataPriceDataInfo categories;
@@ -195,6 +218,29 @@ public class AppendixAppDataPriceData  {
 
   public void setErrors(AppendixTaskKeywordsDataPriceDataInfo errors) {
     this.errors = errors;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixAppDataPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
   }
 
 
@@ -315,8 +361,10 @@ public class AppendixAppDataPriceData  {
         Objects.equals(this.appList, appendixAppDataPriceData.appList) &&
         Objects.equals(this.appReviews, appendixAppDataPriceData.appReviews) &&
         Objects.equals(this.appSearches, appendixAppDataPriceData.appSearches) &&
+        Objects.equals(this.ppListings, appendixAppDataPriceData.ppListings) &&
         Objects.equals(this.categories, appendixAppDataPriceData.categories) &&
         Objects.equals(this.errors, appendixAppDataPriceData.errors) &&
+        Objects.equals(this.idList, appendixAppDataPriceData.idList) &&
         Objects.equals(this.languages, appendixAppDataPriceData.languages) &&
         Objects.equals(this.locations, appendixAppDataPriceData.locations) &&
         Objects.equals(this.tasksReady, appendixAppDataPriceData.tasksReady);  
@@ -329,7 +377,7 @@ public class AppendixAppDataPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(appInfo, appListings, appList, appReviews, appSearches, categories, errors, languages, locations, tasksReady);
+  return Objects.hash(appInfo, appListings, appList, appReviews, appSearches, ppListings, categories, errors, idList, languages, locations, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -349,8 +397,10 @@ public class AppendixAppDataPriceData  {
     sb.append("    appList: ").append(toIndentedString(appList)).append("\n");
     sb.append("    appReviews: ").append(toIndentedString(appReviews)).append("\n");
     sb.append("    appSearches: ").append(toIndentedString(appSearches)).append("\n");
+    sb.append("    ppListings: ").append(toIndentedString(ppListings)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
@@ -387,9 +437,13 @@ public class AppendixAppDataPriceData  {
     
     openapiFields.add("app_searches");
     
+    openapiFields.add("pp_listings");
+    
     openapiFields.add("categories");
     
     openapiFields.add("errors");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("languages");
     

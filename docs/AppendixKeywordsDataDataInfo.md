@@ -19,6 +19,7 @@
 **keywordPerformance** | **AppendixInfo** |  |[optional]|
 **locationsAndLanguages** | **Double** |  |[optional]|
 **googleAds** | **AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo** |  |[optional]|
+**idList** | **Double** |  |[optional]|
 **dataforseoTrends** | **AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo** |  |[optional]|
 **clickstreamData** | **AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo** |  |[optional]|
 **audienceEstimation** | **AppendixInfo** |  |[optional]|

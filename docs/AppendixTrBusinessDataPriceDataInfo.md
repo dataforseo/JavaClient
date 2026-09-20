@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**reviews** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
-**search** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
+**reviews** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|
+**search** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|

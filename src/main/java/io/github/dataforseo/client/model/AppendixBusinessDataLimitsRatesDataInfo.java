@@ -129,57 +129,11 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_YELP = "yelp";
-  @SerializedName(SERIALIZED_NAME_YELP)
-  private AppendixBusinessDataDayLimitsRatesDataInfo yelp;
-
-  public AppendixBusinessDataLimitsRatesDataInfo yelp(AppendixBusinessDataDayLimitsRatesDataInfo yelp) {
-    this.yelp = yelp;
-    return this;
-  }
-
-  /**
-   * 
-   * @return yelp
-   */
-  @javax.annotation.Nullable
-  public AppendixBusinessDataDayLimitsRatesDataInfo getYelp() {
-    return yelp;
-  }
-
-  public void setYelp(AppendixBusinessDataDayLimitsRatesDataInfo yelp) {
-    this.yelp = yelp;
-  }
-
-
-  public static final String SERIALIZED_NAME_SOCIAL_MEDIA = "social_media";
-  @SerializedName(SERIALIZED_NAME_SOCIAL_MEDIA)
-  private AppendixSocialMediaBusinessDataLimitsRatesDataInfo socialMedia;
-
-  public AppendixBusinessDataLimitsRatesDataInfo socialMedia(AppendixSocialMediaBusinessDataLimitsRatesDataInfo socialMedia) {
-    this.socialMedia = socialMedia;
-    return this;
-  }
-
-  /**
-   * 
-   * @return socialMedia
-   */
-  @javax.annotation.Nullable
-  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo getSocialMedia() {
-    return socialMedia;
-  }
-
-  public void setSocialMedia(AppendixSocialMediaBusinessDataLimitsRatesDataInfo socialMedia) {
-    this.socialMedia = socialMedia;
-  }
-
-
   public static final String SERIALIZED_NAME_TRIPADVISOR = "tripadvisor";
   @SerializedName(SERIALIZED_NAME_TRIPADVISOR)
-  private AppendixBusinessDataDayLimitsRatesDataInfo tripadvisor;
+  private AppendixTrBusinessDataDayLimitsRatesDataInfo tripadvisor;
 
-  public AppendixBusinessDataLimitsRatesDataInfo tripadvisor(AppendixBusinessDataDayLimitsRatesDataInfo tripadvisor) {
+  public AppendixBusinessDataLimitsRatesDataInfo tripadvisor(AppendixTrBusinessDataDayLimitsRatesDataInfo tripadvisor) {
     this.tripadvisor = tripadvisor;
     return this;
   }
@@ -189,20 +143,20 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
    * @return tripadvisor
    */
   @javax.annotation.Nullable
-  public AppendixBusinessDataDayLimitsRatesDataInfo getTripadvisor() {
+  public AppendixTrBusinessDataDayLimitsRatesDataInfo getTripadvisor() {
     return tripadvisor;
   }
 
-  public void setTripadvisor(AppendixBusinessDataDayLimitsRatesDataInfo tripadvisor) {
+  public void setTripadvisor(AppendixTrBusinessDataDayLimitsRatesDataInfo tripadvisor) {
     this.tripadvisor = tripadvisor;
   }
 
 
   public static final String SERIALIZED_NAME_TRUSTPILOT = "trustpilot";
   @SerializedName(SERIALIZED_NAME_TRUSTPILOT)
-  private AppendixBusinessDataDayLimitsRatesDataInfo trustpilot;
+  private AppendixTrBusinessDataDayLimitsRatesDataInfo trustpilot;
 
-  public AppendixBusinessDataLimitsRatesDataInfo trustpilot(AppendixBusinessDataDayLimitsRatesDataInfo trustpilot) {
+  public AppendixBusinessDataLimitsRatesDataInfo trustpilot(AppendixTrBusinessDataDayLimitsRatesDataInfo trustpilot) {
     this.trustpilot = trustpilot;
     return this;
   }
@@ -212,12 +166,35 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
    * @return trustpilot
    */
   @javax.annotation.Nullable
-  public AppendixBusinessDataDayLimitsRatesDataInfo getTrustpilot() {
+  public AppendixTrBusinessDataDayLimitsRatesDataInfo getTrustpilot() {
     return trustpilot;
   }
 
-  public void setTrustpilot(AppendixBusinessDataDayLimitsRatesDataInfo trustpilot) {
+  public void setTrustpilot(AppendixTrBusinessDataDayLimitsRatesDataInfo trustpilot) {
     this.trustpilot = trustpilot;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixBusinessDataLimitsRatesDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
   }
 
 
@@ -241,6 +218,29 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
 
   public void setBusinessListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo businessListings) {
     this.businessListings = businessListings;
+  }
+
+
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private Double availableFilters;
+
+  public AppendixBusinessDataLimitsRatesDataInfo availableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public Double getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
   }
 
 
@@ -314,11 +314,11 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
         Objects.equals(this.locations, appendixBusinessDataLimitsRatesDataInfo.locations) &&
         Objects.equals(this.languages, appendixBusinessDataLimitsRatesDataInfo.languages) &&
         Objects.equals(this.errors, appendixBusinessDataLimitsRatesDataInfo.errors) &&
-        Objects.equals(this.yelp, appendixBusinessDataLimitsRatesDataInfo.yelp) &&
-        Objects.equals(this.socialMedia, appendixBusinessDataLimitsRatesDataInfo.socialMedia) &&
         Objects.equals(this.tripadvisor, appendixBusinessDataLimitsRatesDataInfo.tripadvisor) &&
         Objects.equals(this.trustpilot, appendixBusinessDataLimitsRatesDataInfo.trustpilot) &&
+        Objects.equals(this.idList, appendixBusinessDataLimitsRatesDataInfo.idList) &&
         Objects.equals(this.businessListings, appendixBusinessDataLimitsRatesDataInfo.businessListings) &&
+        Objects.equals(this.availableFilters, appendixBusinessDataLimitsRatesDataInfo.availableFilters) &&
         Objects.equals(this.tasksReady, appendixBusinessDataLimitsRatesDataInfo.tasksReady);  
     
   }
@@ -329,7 +329,7 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(google, locations, languages, errors, yelp, socialMedia, tripadvisor, trustpilot, businessListings, tasksReady);
+  return Objects.hash(google, locations, languages, errors, tripadvisor, trustpilot, idList, businessListings, availableFilters, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -348,11 +348,11 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
-    sb.append("    yelp: ").append(toIndentedString(yelp)).append("\n");
-    sb.append("    socialMedia: ").append(toIndentedString(socialMedia)).append("\n");
     sb.append("    tripadvisor: ").append(toIndentedString(tripadvisor)).append("\n");
     sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    businessListings: ").append(toIndentedString(businessListings)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -385,15 +385,15 @@ public class AppendixBusinessDataLimitsRatesDataInfo  {
     
     openapiFields.add("errors");
     
-    openapiFields.add("yelp");
-    
-    openapiFields.add("social_media");
-    
     openapiFields.add("tripadvisor");
     
     openapiFields.add("trustpilot");
     
+    openapiFields.add("id_list");
+    
     openapiFields.add("business_listings");
+    
+    openapiFields.add("available_filters");
     
     openapiFields.add("tasks_ready");
     

@@ -37,6 +37,29 @@ import io.github.dataforseo.client.JSON;
 public class AppendixBusinessDataPriceData  {
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private AppendixTaskKeywordsDataPriceDataInfo availableFilters;
+
+  public AppendixBusinessDataPriceData availableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
   public static final String SERIALIZED_NAME_BUSINESS_LISTINGS = "business_listings";
   @SerializedName(SERIALIZED_NAME_BUSINESS_LISTINGS)
   private AppendixBusinessListingsBusinessDataPriceData businessListings;
@@ -106,26 +129,26 @@ public class AppendixBusinessDataPriceData  {
   }
 
 
-  public static final String SERIALIZED_NAME_SOCIAL_MEDIA = "social_media";
-  @SerializedName(SERIALIZED_NAME_SOCIAL_MEDIA)
-  private AppendixSocialMediaBusinessDataPriceData socialMedia;
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
 
-  public AppendixBusinessDataPriceData socialMedia(AppendixSocialMediaBusinessDataPriceData socialMedia) {
-    this.socialMedia = socialMedia;
+  public AppendixBusinessDataPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
     return this;
   }
 
   /**
    * 
-   * @return socialMedia
+   * @return idList
    */
   @javax.annotation.Nullable
-  public AppendixSocialMediaBusinessDataPriceData getSocialMedia() {
-    return socialMedia;
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
   }
 
-  public void setSocialMedia(AppendixSocialMediaBusinessDataPriceData socialMedia) {
-    this.socialMedia = socialMedia;
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
   }
 
 
@@ -221,29 +244,6 @@ public class AppendixBusinessDataPriceData  {
   }
 
 
-  public static final String SERIALIZED_NAME_YELP = "yelp";
-  @SerializedName(SERIALIZED_NAME_YELP)
-  private AppendixTrBusinessDataPriceDataInfo yelp;
-
-  public AppendixBusinessDataPriceData yelp(AppendixTrBusinessDataPriceDataInfo yelp) {
-    this.yelp = yelp;
-    return this;
-  }
-
-  /**
-   * 
-   * @return yelp
-   */
-  @javax.annotation.Nullable
-  public AppendixTrBusinessDataPriceDataInfo getYelp() {
-    return yelp;
-  }
-
-  public void setYelp(AppendixTrBusinessDataPriceDataInfo yelp) {
-    this.yelp = yelp;
-  }
-
-
   public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
   private AppendixTaskKeywordsDataPriceDataInfo tasksReady;
@@ -310,15 +310,15 @@ public class AppendixBusinessDataPriceData  {
     AppendixBusinessDataPriceData appendixBusinessDataPriceData = (AppendixBusinessDataPriceData) o;
     return
 
+        Objects.equals(this.availableFilters, appendixBusinessDataPriceData.availableFilters) &&
         Objects.equals(this.businessListings, appendixBusinessDataPriceData.businessListings) &&
         Objects.equals(this.errors, appendixBusinessDataPriceData.errors) &&
         Objects.equals(this.google, appendixBusinessDataPriceData.google) &&
-        Objects.equals(this.socialMedia, appendixBusinessDataPriceData.socialMedia) &&
+        Objects.equals(this.idList, appendixBusinessDataPriceData.idList) &&
         Objects.equals(this.languages, appendixBusinessDataPriceData.languages) &&
         Objects.equals(this.locations, appendixBusinessDataPriceData.locations) &&
         Objects.equals(this.tripadvisor, appendixBusinessDataPriceData.tripadvisor) &&
         Objects.equals(this.trustpilot, appendixBusinessDataPriceData.trustpilot) &&
-        Objects.equals(this.yelp, appendixBusinessDataPriceData.yelp) &&
         Objects.equals(this.tasksReady, appendixBusinessDataPriceData.tasksReady);  
     
   }
@@ -329,7 +329,7 @@ public class AppendixBusinessDataPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(businessListings, errors, google, socialMedia, languages, locations, tripadvisor, trustpilot, yelp, tasksReady);
+  return Objects.hash(availableFilters, businessListings, errors, google, idList, languages, locations, tripadvisor, trustpilot, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -344,15 +344,15 @@ public class AppendixBusinessDataPriceData  {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixBusinessDataPriceData {\n");
 
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    businessListings: ").append(toIndentedString(businessListings)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
-    sb.append("    socialMedia: ").append(toIndentedString(socialMedia)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    tripadvisor: ").append(toIndentedString(tripadvisor)).append("\n");
     sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
-    sb.append("    yelp: ").append(toIndentedString(yelp)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -377,13 +377,15 @@ public class AppendixBusinessDataPriceData  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
+    openapiFields.add("available_filters");
+    
     openapiFields.add("business_listings");
     
     openapiFields.add("errors");
     
     openapiFields.add("google");
     
-    openapiFields.add("social_media");
+    openapiFields.add("id_list");
     
     openapiFields.add("languages");
     
@@ -392,8 +394,6 @@ public class AppendixBusinessDataPriceData  {
     openapiFields.add("tripadvisor");
     
     openapiFields.add("trustpilot");
-    
-    openapiFields.add("yelp");
     
     openapiFields.add("tasks_ready");
     

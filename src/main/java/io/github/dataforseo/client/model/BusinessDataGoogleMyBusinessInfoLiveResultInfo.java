@@ -223,9 +223,9 @@ public class BusinessDataGoogleMyBusinessInfoLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<ItemsGoogleBusinessInfo> items;
+  private List<GoogleBusinessInfo> items;
 
-  public BusinessDataGoogleMyBusinessInfoLiveResultInfo items(List<ItemsGoogleBusinessInfo> items) {
+  public BusinessDataGoogleMyBusinessInfoLiveResultInfo items(List<GoogleBusinessInfo> items) {
     this.items = items;
     return this;
   }
@@ -235,11 +235,11 @@ public class BusinessDataGoogleMyBusinessInfoLiveResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<ItemsGoogleBusinessInfo> getItems() {
+  public List<GoogleBusinessInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<ItemsGoogleBusinessInfo> items) {
+  public void setItems(List<GoogleBusinessInfo> items) {
     this.items = items;
   }
 

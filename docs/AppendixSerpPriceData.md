@@ -6,7 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **tasksFixed** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**aiSummary** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**idList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **jobs** | **AppendixAKeywordsDataPriceDataInfo** |  |[optional]|
 **languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **live** | **AppendixSerpPriceDataInfo** |  |[optional]|

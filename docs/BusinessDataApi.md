@@ -57,7 +57,6 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**tripadvisorReviewsTaskPost**](BusinessDataApi.md#tripadvisorReviewsTaskPost) | **POST**  /v3/business_data/tripadvisor/reviews/task_post  |
 | [**tripadvisorReviewsTasksReady**](BusinessDataApi.md#tripadvisorReviewsTasksReady) | **GET**  /v3/business_data/tripadvisor/reviews/tasks_ready  |
 | [**tripadvisorReviewsTaskGet**](BusinessDataApi.md#tripadvisorReviewsTaskGet) | **GET**  /v3/business_data/tripadvisor/reviews/task_get/{id}  |
-| [**socialMediaPinterestLive**](BusinessDataApi.md#socialMediaPinterestLive) | **POST**  /v3/business_data/social_media/pinterest/live  |
 
 <a id="businessDataIdList"></a>
 # **businessDataIdList**
@@ -3803,82 +3802,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**BusinessDataTripadvisorReviewsTaskGetResponseInfo**](BusinessDataTripadvisorReviewsTaskGetResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="socialMediaPinterestLive"></a>
-# **socialMediaPinterestLive**
-> BusinessDataSocialMediaPinterestLiveResponseInfo socialMediaPinterestLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataSocialMediaPinterestLiveRequestInfo model = new BusinessDataSocialMediaPinterestLiveRequestInfo()
-           .targets(
-               List.of(
-                   "https://www.simplyrecipes.com/recipes/grilled_salmon_with_cucumber_mango_salsa/",
-                   "https://tasty.co/recipe/classic-lasagna",
-                   "https://www.allrecipes.com/recipe/255263/sicilian-roasted-chicken/"
-                ))
-           .tag("some_string_123");
-    BusinessDataSocialMediaPinterestLiveResponseInfo response = apiInstance.socialMediaPinterestLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling BusinessDataApi#socialMediaPinterestLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<BusinessDataSocialMediaPinterestLiveRequestInfo>&gt;**](List<BusinessDataSocialMediaPinterestLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**BusinessDataSocialMediaPinterestLiveResponseInfo**](BusinessDataSocialMediaPinterestLiveResponseInfo.md)
 
 ### Authorization
 

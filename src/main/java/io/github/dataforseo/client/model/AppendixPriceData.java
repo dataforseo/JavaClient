@@ -83,6 +83,29 @@ public class AppendixPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_AI_OPTIMIZATION = "ai_optimization";
+  @SerializedName(SERIALIZED_NAME_AI_OPTIMIZATION)
+  private AppendixAiOptimizationPriceData aiOptimization;
+
+  public AppendixPriceData aiOptimization(AppendixAiOptimizationPriceData aiOptimization) {
+    this.aiOptimization = aiOptimization;
+    return this;
+  }
+
+  /**
+   * 
+   * @return aiOptimization
+   */
+  @javax.annotation.Nullable
+  public AppendixAiOptimizationPriceData getAiOptimization() {
+    return aiOptimization;
+  }
+
+  public void setAiOptimization(AppendixAiOptimizationPriceData aiOptimization) {
+    this.aiOptimization = aiOptimization;
+  }
+
+
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
   private AppendixSerpPriceData serp;
@@ -221,29 +244,6 @@ public class AppendixPriceData  {
   }
 
 
-  public static final String SERIALIZED_NAME_CONTENT_GENERATION = "content_generation";
-  @SerializedName(SERIALIZED_NAME_CONTENT_GENERATION)
-  private AppendixContentGenerationPriceData contentGeneration;
-
-  public AppendixPriceData contentGeneration(AppendixContentGenerationPriceData contentGeneration) {
-    this.contentGeneration = contentGeneration;
-    return this;
-  }
-
-  /**
-   * 
-   * @return contentGeneration
-   */
-  @javax.annotation.Nullable
-  public AppendixContentGenerationPriceData getContentGeneration() {
-    return contentGeneration;
-  }
-
-  public void setContentGeneration(AppendixContentGenerationPriceData contentGeneration) {
-    this.contentGeneration = contentGeneration;
-  }
-
-
   public static final String SERIALIZED_NAME_DATAFORSEO_LABS = "dataforseo_labs";
   @SerializedName(SERIALIZED_NAME_DATAFORSEO_LABS)
   private AppendixDataforseoLabsPriceData dataforseoLabs;
@@ -358,13 +358,13 @@ public class AppendixPriceData  {
 
         Objects.equals(this.keywordsData, appendixPriceData.keywordsData) &&
         Objects.equals(this.merchant, appendixPriceData.merchant) &&
+        Objects.equals(this.aiOptimization, appendixPriceData.aiOptimization) &&
         Objects.equals(this.serp, appendixPriceData.serp) &&
         Objects.equals(this.appendix, appendixPriceData.appendix) &&
         Objects.equals(this.appData, appendixPriceData.appData) &&
         Objects.equals(this.backlinks, appendixPriceData.backlinks) &&
         Objects.equals(this.businessData, appendixPriceData.businessData) &&
         Objects.equals(this.contentAnalysis, appendixPriceData.contentAnalysis) &&
-        Objects.equals(this.contentGeneration, appendixPriceData.contentGeneration) &&
         Objects.equals(this.dataforseoLabs, appendixPriceData.dataforseoLabs) &&
         Objects.equals(this.domainAnalytics, appendixPriceData.domainAnalytics) &&
         Objects.equals(this.onPage, appendixPriceData.onPage);  
@@ -377,7 +377,7 @@ public class AppendixPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keywordsData, merchant, serp, appendix, appData, backlinks, businessData, contentAnalysis, contentGeneration, dataforseoLabs, domainAnalytics, onPage);
+  return Objects.hash(keywordsData, merchant, aiOptimization, serp, appendix, appData, backlinks, businessData, contentAnalysis, dataforseoLabs, domainAnalytics, onPage);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -394,13 +394,13 @@ public class AppendixPriceData  {
 
     sb.append("    keywordsData: ").append(toIndentedString(keywordsData)).append("\n");
     sb.append("    merchant: ").append(toIndentedString(merchant)).append("\n");
+    sb.append("    aiOptimization: ").append(toIndentedString(aiOptimization)).append("\n");
     sb.append("    serp: ").append(toIndentedString(serp)).append("\n");
     sb.append("    appendix: ").append(toIndentedString(appendix)).append("\n");
     sb.append("    appData: ").append(toIndentedString(appData)).append("\n");
     sb.append("    backlinks: ").append(toIndentedString(backlinks)).append("\n");
     sb.append("    businessData: ").append(toIndentedString(businessData)).append("\n");
     sb.append("    contentAnalysis: ").append(toIndentedString(contentAnalysis)).append("\n");
-    sb.append("    contentGeneration: ").append(toIndentedString(contentGeneration)).append("\n");
     sb.append("    dataforseoLabs: ").append(toIndentedString(dataforseoLabs)).append("\n");
     sb.append("    domainAnalytics: ").append(toIndentedString(domainAnalytics)).append("\n");
     sb.append("    onPage: ").append(toIndentedString(onPage)).append("\n");
@@ -431,6 +431,8 @@ public class AppendixPriceData  {
     
     openapiFields.add("merchant");
     
+    openapiFields.add("ai_optimization");
+    
     openapiFields.add("serp");
     
     openapiFields.add("appendix");
@@ -442,8 +444,6 @@ public class AppendixPriceData  {
     openapiFields.add("business_data");
     
     openapiFields.add("content_analysis");
-    
-    openapiFields.add("content_generation");
     
     openapiFields.add("dataforseo_labs");
     

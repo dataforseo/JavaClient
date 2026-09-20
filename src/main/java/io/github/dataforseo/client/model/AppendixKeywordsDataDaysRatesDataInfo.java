@@ -359,6 +359,29 @@ public class AppendixKeywordsDataDaysRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixKeywordsDataDaysRatesDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
   public static final String SERIALIZED_NAME_DATAFORSEO_TRENDS = "dataforseo_trends";
   @SerializedName(SERIALIZED_NAME_DATAFORSEO_TRENDS)
   private AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo dataforseoTrends;
@@ -508,6 +531,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo  {
         Objects.equals(this.keywordPerformance, appendixKeywordsDataDaysRatesDataInfo.keywordPerformance) &&
         Objects.equals(this.locationsAndLanguages, appendixKeywordsDataDaysRatesDataInfo.locationsAndLanguages) &&
         Objects.equals(this.googleAds, appendixKeywordsDataDaysRatesDataInfo.googleAds) &&
+        Objects.equals(this.idList, appendixKeywordsDataDaysRatesDataInfo.idList) &&
         Objects.equals(this.dataforseoTrends, appendixKeywordsDataDaysRatesDataInfo.dataforseoTrends) &&
         Objects.equals(this.clickstreamData, appendixKeywordsDataDaysRatesDataInfo.clickstreamData) &&
         Objects.equals(this.audienceEstimation, appendixKeywordsDataDaysRatesDataInfo.audienceEstimation) &&
@@ -521,7 +545,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, audienceEstimation, keywordSuggestionsForUrl);
+  return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, idList, dataforseoTrends, clickstreamData, audienceEstimation, keywordSuggestionsForUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -550,6 +574,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo  {
     sb.append("    keywordPerformance: ").append(toIndentedString(keywordPerformance)).append("\n");
     sb.append("    locationsAndLanguages: ").append(toIndentedString(locationsAndLanguages)).append("\n");
     sb.append("    googleAds: ").append(toIndentedString(googleAds)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    dataforseoTrends: ").append(toIndentedString(dataforseoTrends)).append("\n");
     sb.append("    clickstreamData: ").append(toIndentedString(clickstreamData)).append("\n");
     sb.append("    audienceEstimation: ").append(toIndentedString(audienceEstimation)).append("\n");
@@ -604,6 +629,8 @@ public class AppendixKeywordsDataDaysRatesDataInfo  {
     openapiFields.add("locations_and_languages");
     
     openapiFields.add("google_ads");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("dataforseo_trends");
     

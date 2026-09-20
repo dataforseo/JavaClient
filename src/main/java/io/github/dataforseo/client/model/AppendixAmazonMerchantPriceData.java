@@ -39,9 +39,9 @@ public class AppendixAmazonMerchantPriceData  {
 
   public static final String SERIALIZED_NAME_ASIN = "asin";
   @SerializedName(SERIALIZED_NAME_ASIN)
-  private AppendixProductGoogleMerchantPriceDataInfo asin;
+  private AppendixAmazonMerchantPriceDataInfo asin;
 
-  public AppendixAmazonMerchantPriceData asin(AppendixProductGoogleMerchantPriceDataInfo asin) {
+  public AppendixAmazonMerchantPriceData asin(AppendixAmazonMerchantPriceDataInfo asin) {
     this.asin = asin;
     return this;
   }
@@ -51,20 +51,20 @@ public class AppendixAmazonMerchantPriceData  {
    * @return asin
    */
   @javax.annotation.Nullable
-  public AppendixProductGoogleMerchantPriceDataInfo getAsin() {
+  public AppendixAmazonMerchantPriceDataInfo getAsin() {
     return asin;
   }
 
-  public void setAsin(AppendixProductGoogleMerchantPriceDataInfo asin) {
+  public void setAsin(AppendixAmazonMerchantPriceDataInfo asin) {
     this.asin = asin;
   }
 
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private AppendixProductGoogleMerchantPriceDataInfo products;
+  private AppendixAmazonMerchantPriceDataInfo products;
 
-  public AppendixAmazonMerchantPriceData products(AppendixProductGoogleMerchantPriceDataInfo products) {
+  public AppendixAmazonMerchantPriceData products(AppendixAmazonMerchantPriceDataInfo products) {
     this.products = products;
     return this;
   }
@@ -74,20 +74,20 @@ public class AppendixAmazonMerchantPriceData  {
    * @return products
    */
   @javax.annotation.Nullable
-  public AppendixProductGoogleMerchantPriceDataInfo getProducts() {
+  public AppendixAmazonMerchantPriceDataInfo getProducts() {
     return products;
   }
 
-  public void setProducts(AppendixProductGoogleMerchantPriceDataInfo products) {
+  public void setProducts(AppendixAmazonMerchantPriceDataInfo products) {
     this.products = products;
   }
 
 
   public static final String SERIALIZED_NAME_SELLERS = "sellers";
   @SerializedName(SERIALIZED_NAME_SELLERS)
-  private AppendixProductGoogleMerchantPriceDataInfo sellers;
+  private AppendixAmazonMerchantPriceDataInfo sellers;
 
-  public AppendixAmazonMerchantPriceData sellers(AppendixProductGoogleMerchantPriceDataInfo sellers) {
+  public AppendixAmazonMerchantPriceData sellers(AppendixAmazonMerchantPriceDataInfo sellers) {
     this.sellers = sellers;
     return this;
   }
@@ -97,11 +97,11 @@ public class AppendixAmazonMerchantPriceData  {
    * @return sellers
    */
   @javax.annotation.Nullable
-  public AppendixProductGoogleMerchantPriceDataInfo getSellers() {
+  public AppendixAmazonMerchantPriceDataInfo getSellers() {
     return sellers;
   }
 
-  public void setSellers(AppendixProductGoogleMerchantPriceDataInfo sellers) {
+  public void setSellers(AppendixAmazonMerchantPriceDataInfo sellers) {
     this.sellers = sellers;
   }
 

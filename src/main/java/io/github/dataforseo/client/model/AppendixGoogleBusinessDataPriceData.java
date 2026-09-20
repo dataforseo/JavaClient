@@ -62,9 +62,9 @@ public class AppendixGoogleBusinessDataPriceData  {
 
   public static final String SERIALIZED_NAME_HOTEL_INFO = "hotel_info";
   @SerializedName(SERIALIZED_NAME_HOTEL_INFO)
-  private AppendixHotelInfoGoogleBusinessDataPriceData hotelInfo;
+  private AppendixAmazonMerchantPriceDataInfo hotelInfo;
 
-  public AppendixGoogleBusinessDataPriceData hotelInfo(AppendixHotelInfoGoogleBusinessDataPriceData hotelInfo) {
+  public AppendixGoogleBusinessDataPriceData hotelInfo(AppendixAmazonMerchantPriceDataInfo hotelInfo) {
     this.hotelInfo = hotelInfo;
     return this;
   }
@@ -74,20 +74,20 @@ public class AppendixGoogleBusinessDataPriceData  {
    * @return hotelInfo
    */
   @javax.annotation.Nullable
-  public AppendixHotelInfoGoogleBusinessDataPriceData getHotelInfo() {
+  public AppendixAmazonMerchantPriceDataInfo getHotelInfo() {
     return hotelInfo;
   }
 
-  public void setHotelInfo(AppendixHotelInfoGoogleBusinessDataPriceData hotelInfo) {
+  public void setHotelInfo(AppendixAmazonMerchantPriceDataInfo hotelInfo) {
     this.hotelInfo = hotelInfo;
   }
 
 
   public static final String SERIALIZED_NAME_HOTEL_SEARCHES = "hotel_searches";
   @SerializedName(SERIALIZED_NAME_HOTEL_SEARCHES)
-  private AppendixGoogleBusinessDataPriceDataInfo hotelSearches;
+  private AppendixLlmResponsesAiOptimizationPriceData hotelSearches;
 
-  public AppendixGoogleBusinessDataPriceData hotelSearches(AppendixGoogleBusinessDataPriceDataInfo hotelSearches) {
+  public AppendixGoogleBusinessDataPriceData hotelSearches(AppendixLlmResponsesAiOptimizationPriceData hotelSearches) {
     this.hotelSearches = hotelSearches;
     return this;
   }
@@ -97,20 +97,20 @@ public class AppendixGoogleBusinessDataPriceData  {
    * @return hotelSearches
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getHotelSearches() {
+  public AppendixLlmResponsesAiOptimizationPriceData getHotelSearches() {
     return hotelSearches;
   }
 
-  public void setHotelSearches(AppendixGoogleBusinessDataPriceDataInfo hotelSearches) {
+  public void setHotelSearches(AppendixLlmResponsesAiOptimizationPriceData hotelSearches) {
     this.hotelSearches = hotelSearches;
   }
 
 
   public static final String SERIALIZED_NAME_MY_BUSINESS_INFO = "my_business_info";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_INFO)
-  private AppendixGoogleBusinessDataPriceDataInfo myBusinessInfo;
+  private AppendixLlmResponsesAiOptimizationPriceData myBusinessInfo;
 
-  public AppendixGoogleBusinessDataPriceData myBusinessInfo(AppendixGoogleBusinessDataPriceDataInfo myBusinessInfo) {
+  public AppendixGoogleBusinessDataPriceData myBusinessInfo(AppendixLlmResponsesAiOptimizationPriceData myBusinessInfo) {
     this.myBusinessInfo = myBusinessInfo;
     return this;
   }
@@ -120,20 +120,20 @@ public class AppendixGoogleBusinessDataPriceData  {
    * @return myBusinessInfo
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getMyBusinessInfo() {
+  public AppendixLlmResponsesAiOptimizationPriceData getMyBusinessInfo() {
     return myBusinessInfo;
   }
 
-  public void setMyBusinessInfo(AppendixGoogleBusinessDataPriceDataInfo myBusinessInfo) {
+  public void setMyBusinessInfo(AppendixLlmResponsesAiOptimizationPriceData myBusinessInfo) {
     this.myBusinessInfo = myBusinessInfo;
   }
 
 
   public static final String SERIALIZED_NAME_MY_BUSINESS_UPDATES = "my_business_updates";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_UPDATES)
-  private AppendixGoogleBusinessDataPriceDataInfo myBusinessUpdates;
+  private AppendixLlmResponsesAiOptimizationPriceData myBusinessUpdates;
 
-  public AppendixGoogleBusinessDataPriceData myBusinessUpdates(AppendixGoogleBusinessDataPriceDataInfo myBusinessUpdates) {
+  public AppendixGoogleBusinessDataPriceData myBusinessUpdates(AppendixLlmResponsesAiOptimizationPriceData myBusinessUpdates) {
     this.myBusinessUpdates = myBusinessUpdates;
     return this;
   }
@@ -143,20 +143,20 @@ public class AppendixGoogleBusinessDataPriceData  {
    * @return myBusinessUpdates
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getMyBusinessUpdates() {
+  public AppendixLlmResponsesAiOptimizationPriceData getMyBusinessUpdates() {
     return myBusinessUpdates;
   }
 
-  public void setMyBusinessUpdates(AppendixGoogleBusinessDataPriceDataInfo myBusinessUpdates) {
+  public void setMyBusinessUpdates(AppendixLlmResponsesAiOptimizationPriceData myBusinessUpdates) {
     this.myBusinessUpdates = myBusinessUpdates;
   }
 
 
   public static final String SERIALIZED_NAME_QUESTIONS_AND_ANSWERS = "questions_and_answers";
   @SerializedName(SERIALIZED_NAME_QUESTIONS_AND_ANSWERS)
-  private AppendixGoogleBusinessDataPriceDataInfo questionsAndAnswers;
+  private AppendixLlmResponsesAiOptimizationPriceData questionsAndAnswers;
 
-  public AppendixGoogleBusinessDataPriceData questionsAndAnswers(AppendixGoogleBusinessDataPriceDataInfo questionsAndAnswers) {
+  public AppendixGoogleBusinessDataPriceData questionsAndAnswers(AppendixLlmResponsesAiOptimizationPriceData questionsAndAnswers) {
     this.questionsAndAnswers = questionsAndAnswers;
     return this;
   }
@@ -166,20 +166,20 @@ public class AppendixGoogleBusinessDataPriceData  {
    * @return questionsAndAnswers
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getQuestionsAndAnswers() {
+  public AppendixLlmResponsesAiOptimizationPriceData getQuestionsAndAnswers() {
     return questionsAndAnswers;
   }
 
-  public void setQuestionsAndAnswers(AppendixGoogleBusinessDataPriceDataInfo questionsAndAnswers) {
+  public void setQuestionsAndAnswers(AppendixLlmResponsesAiOptimizationPriceData questionsAndAnswers) {
     this.questionsAndAnswers = questionsAndAnswers;
   }
 
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixGoogleBusinessDataPriceDataInfo reviews;
+  private AppendixLlmResponsesAiOptimizationPriceData reviews;
 
-  public AppendixGoogleBusinessDataPriceData reviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
+  public AppendixGoogleBusinessDataPriceData reviews(AppendixLlmResponsesAiOptimizationPriceData reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -189,11 +189,11 @@ public class AppendixGoogleBusinessDataPriceData  {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getReviews() {
+  public AppendixLlmResponsesAiOptimizationPriceData getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
+  public void setReviews(AppendixLlmResponsesAiOptimizationPriceData reviews) {
     this.reviews = reviews;
   }
 

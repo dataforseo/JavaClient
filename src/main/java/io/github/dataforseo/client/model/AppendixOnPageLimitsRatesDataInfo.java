@@ -405,6 +405,29 @@ public class AppendixOnPageLimitsRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private Double availableFilters;
+
+  public AppendixOnPageLimitsRatesDataInfo availableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public Double getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
   public static final String SERIALIZED_NAME_KEYWORD_DENSITY = "keyword_density";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DENSITY)
   private Double keywordDensity;
@@ -497,6 +520,52 @@ public class AppendixOnPageLimitsRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixOnPageLimitsRatesDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
+  public static final String SERIALIZED_NAME_UNCRAWLABLE_RESOURCES = "uncrawlable_resources";
+  @SerializedName(SERIALIZED_NAME_UNCRAWLABLE_RESOURCES)
+  private Double uncrawlableResources;
+
+  public AppendixOnPageLimitsRatesDataInfo uncrawlableResources(Double uncrawlableResources) {
+    this.uncrawlableResources = uncrawlableResources;
+    return this;
+  }
+
+  /**
+   * 
+   * @return uncrawlableResources
+   */
+  @javax.annotation.Nullable
+  public Double getUncrawlableResources() {
+    return uncrawlableResources;
+  }
+
+  public void setUncrawlableResources(Double uncrawlableResources) {
+    this.uncrawlableResources = uncrawlableResources;
+  }
+
+
 
   public AppendixOnPageLimitsRatesDataInfo() {
   }
@@ -556,10 +625,13 @@ public class AppendixOnPageLimitsRatesDataInfo  {
         Objects.equals(this.instantPages, appendixOnPageLimitsRatesDataInfo.instantPages) &&
         Objects.equals(this.redirectChains, appendixOnPageLimitsRatesDataInfo.redirectChains) &&
         Objects.equals(this.lighthouse, appendixOnPageLimitsRatesDataInfo.lighthouse) &&
+        Objects.equals(this.availableFilters, appendixOnPageLimitsRatesDataInfo.availableFilters) &&
         Objects.equals(this.keywordDensity, appendixOnPageLimitsRatesDataInfo.keywordDensity) &&
         Objects.equals(this.pageScreenshot, appendixOnPageLimitsRatesDataInfo.pageScreenshot) &&
         Objects.equals(this.contentParsing, appendixOnPageLimitsRatesDataInfo.contentParsing) &&
-        Objects.equals(this.contentParsingLive, appendixOnPageLimitsRatesDataInfo.contentParsingLive);  
+        Objects.equals(this.contentParsingLive, appendixOnPageLimitsRatesDataInfo.contentParsingLive) &&
+        Objects.equals(this.idList, appendixOnPageLimitsRatesDataInfo.idList) &&
+        Objects.equals(this.uncrawlableResources, appendixOnPageLimitsRatesDataInfo.uncrawlableResources);  
     
   }
 
@@ -569,7 +641,7 @@ public class AppendixOnPageLimitsRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(taskPost, tasksReady, summary, resources, pages, nonIndexable, duplicateTags, links, waterfall, errors, pagesByResource, duplicateContent, rawHtml, instantPages, redirectChains, lighthouse, keywordDensity, pageScreenshot, contentParsing, contentParsingLive);
+  return Objects.hash(taskPost, tasksReady, summary, resources, pages, nonIndexable, duplicateTags, links, waterfall, errors, pagesByResource, duplicateContent, rawHtml, instantPages, redirectChains, lighthouse, availableFilters, keywordDensity, pageScreenshot, contentParsing, contentParsingLive, idList, uncrawlableResources);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -600,10 +672,13 @@ public class AppendixOnPageLimitsRatesDataInfo  {
     sb.append("    instantPages: ").append(toIndentedString(instantPages)).append("\n");
     sb.append("    redirectChains: ").append(toIndentedString(redirectChains)).append("\n");
     sb.append("    lighthouse: ").append(toIndentedString(lighthouse)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    keywordDensity: ").append(toIndentedString(keywordDensity)).append("\n");
     sb.append("    pageScreenshot: ").append(toIndentedString(pageScreenshot)).append("\n");
     sb.append("    contentParsing: ").append(toIndentedString(contentParsing)).append("\n");
     sb.append("    contentParsingLive: ").append(toIndentedString(contentParsingLive)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    uncrawlableResources: ").append(toIndentedString(uncrawlableResources)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -659,6 +734,8 @@ public class AppendixOnPageLimitsRatesDataInfo  {
     
     openapiFields.add("lighthouse");
     
+    openapiFields.add("available_filters");
+    
     openapiFields.add("keyword_density");
     
     openapiFields.add("page_screenshot");
@@ -666,6 +743,10 @@ public class AppendixOnPageLimitsRatesDataInfo  {
     openapiFields.add("content_parsing");
     
     openapiFields.add("content_parsing_live");
+    
+    openapiFields.add("id_list");
+    
+    openapiFields.add("uncrawlable_resources");
     
 
     // a set of required properties/fields (JSON key names)

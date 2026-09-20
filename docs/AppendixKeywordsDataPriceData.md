@@ -13,6 +13,7 @@
 **clickstreamData** | **AppendixClickstreamDataKeywordsDataPriceData** |  |[optional]|
 **errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **googleAds** | **AppendixGoogleAdsKeywordsDataPriceData** |  |[optional]|
+**idList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **keywordPerformance** | **AppendixAKeywordsDataPriceDataInfo** |  |[optional]|
 **keywordsForKeywords** | **AppendixAKeywordsDataPriceDataInfo** |  |[optional]|
 **keywordsForSite** | **AppendixAKeywordsDataPriceDataInfo** |  |[optional]|

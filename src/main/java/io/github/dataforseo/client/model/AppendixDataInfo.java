@@ -566,95 +566,49 @@ public class AppendixDataInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_CONTENT_GENERATION = "content_generation";
-  @SerializedName(SERIALIZED_NAME_CONTENT_GENERATION)
-  private AppendixContentGenerationLimitsRatesDataInfo contentGeneration;
+  public static final String SERIALIZED_NAME_AI_OPTIMIZATION = "ai_optimization";
+  @SerializedName(SERIALIZED_NAME_AI_OPTIMIZATION)
+  private AppendixAiOptimizationLimitsRatesDataInfo aiOptimization;
 
-  public AppendixDataInfo contentGeneration(AppendixContentGenerationLimitsRatesDataInfo contentGeneration) {
-    this.contentGeneration = contentGeneration;
+  public AppendixDataInfo aiOptimization(AppendixAiOptimizationLimitsRatesDataInfo aiOptimization) {
+    this.aiOptimization = aiOptimization;
     return this;
   }
 
   /**
    * 
-   * @return contentGeneration
+   * @return aiOptimization
    */
   @javax.annotation.Nullable
-  public AppendixContentGenerationLimitsRatesDataInfo getContentGeneration() {
-    return contentGeneration;
+  public AppendixAiOptimizationLimitsRatesDataInfo getAiOptimization() {
+    return aiOptimization;
   }
 
-  public void setContentGeneration(AppendixContentGenerationLimitsRatesDataInfo contentGeneration) {
-    this.contentGeneration = contentGeneration;
+  public void setAiOptimization(AppendixAiOptimizationLimitsRatesDataInfo aiOptimization) {
+    this.aiOptimization = aiOptimization;
   }
 
 
-  public static final String SERIALIZED_NAME_TOTAL_CONTENT_GENERATION = "total_content_generation";
-  @SerializedName(SERIALIZED_NAME_TOTAL_CONTENT_GENERATION)
-  private Double totalContentGeneration;
+  public static final String SERIALIZED_NAME_TOTAL_AI_OPTIMIZATION = "total_ai_optimization";
+  @SerializedName(SERIALIZED_NAME_TOTAL_AI_OPTIMIZATION)
+  private Double totalAiOptimization;
 
-  public AppendixDataInfo totalContentGeneration(Double totalContentGeneration) {
-    this.totalContentGeneration = totalContentGeneration;
+  public AppendixDataInfo totalAiOptimization(Double totalAiOptimization) {
+    this.totalAiOptimization = totalAiOptimization;
     return this;
   }
 
   /**
    * 
-   * @return totalContentGeneration
+   * @return totalAiOptimization
    */
   @javax.annotation.Nullable
-  public Double getTotalContentGeneration() {
-    return totalContentGeneration;
+  public Double getTotalAiOptimization() {
+    return totalAiOptimization;
   }
 
-  public void setTotalContentGeneration(Double totalContentGeneration) {
-    this.totalContentGeneration = totalContentGeneration;
-  }
-
-
-  public static final String SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS = "total_traffic_analytics";
-  @SerializedName(SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS)
-  private Double totalTrafficAnalytics;
-
-  public AppendixDataInfo totalTrafficAnalytics(Double totalTrafficAnalytics) {
-    this.totalTrafficAnalytics = totalTrafficAnalytics;
-    return this;
-  }
-
-  /**
-   * 
-   * @return totalTrafficAnalytics
-   */
-  @javax.annotation.Nullable
-  public Double getTotalTrafficAnalytics() {
-    return totalTrafficAnalytics;
-  }
-
-  public void setTotalTrafficAnalytics(Double totalTrafficAnalytics) {
-    this.totalTrafficAnalytics = totalTrafficAnalytics;
-  }
-
-
-  public static final String SERIALIZED_NAME_TRAFFIC_ANALYTICS = "traffic_analytics";
-  @SerializedName(SERIALIZED_NAME_TRAFFIC_ANALYTICS)
-  private AppendixSerpDaysRatesDataInfo trafficAnalytics;
-
-  public AppendixDataInfo trafficAnalytics(AppendixSerpDaysRatesDataInfo trafficAnalytics) {
-    this.trafficAnalytics = trafficAnalytics;
-    return this;
-  }
-
-  /**
-   * 
-   * @return trafficAnalytics
-   */
-  @javax.annotation.Nullable
-  public AppendixSerpDaysRatesDataInfo getTrafficAnalytics() {
-    return trafficAnalytics;
-  }
-
-  public void setTrafficAnalytics(AppendixSerpDaysRatesDataInfo trafficAnalytics) {
-    this.trafficAnalytics = trafficAnalytics;
+  public void setTotalAiOptimization(Double totalAiOptimization) {
+    this.totalAiOptimization = totalAiOptimization;
   }
 
 
@@ -816,10 +770,8 @@ public class AppendixDataInfo  {
         Objects.equals(this.totalAppData, appendixDataInfo.totalAppData) &&
         Objects.equals(this.contentAnalysis, appendixDataInfo.contentAnalysis) &&
         Objects.equals(this.totalContentAnalysis, appendixDataInfo.totalContentAnalysis) &&
-        Objects.equals(this.contentGeneration, appendixDataInfo.contentGeneration) &&
-        Objects.equals(this.totalContentGeneration, appendixDataInfo.totalContentGeneration) &&
-        Objects.equals(this.totalTrafficAnalytics, appendixDataInfo.totalTrafficAnalytics) &&
-        Objects.equals(this.trafficAnalytics, appendixDataInfo.trafficAnalytics) &&
+        Objects.equals(this.aiOptimization, appendixDataInfo.aiOptimization) &&
+        Objects.equals(this.totalAiOptimization, appendixDataInfo.totalAiOptimization) &&
         Objects.equals(this.totalReviews, appendixDataInfo.totalReviews) &&
         Objects.equals(this.reviews, appendixDataInfo.reviews) &&
         Objects.equals(this.totalSocial, appendixDataInfo.totalSocial) &&
@@ -833,7 +785,7 @@ public class AppendixDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(serp, total, totalSerp, keywordsData, totalKeywordsData, appendix, totalAppendix, dataforseoLabs, totalDataforseoLabs, domainAnalytics, totalDomainAnalytics, merchant, totalMerchant, onPage, totalOnPage, businessData, totalBusinessData, backlinks, totalBacklinks, appData, totalAppData, contentAnalysis, totalContentAnalysis, contentGeneration, totalContentGeneration, totalTrafficAnalytics, trafficAnalytics, totalReviews, reviews, totalSocial, social);
+  return Objects.hash(serp, total, totalSerp, keywordsData, totalKeywordsData, appendix, totalAppendix, dataforseoLabs, totalDataforseoLabs, domainAnalytics, totalDomainAnalytics, merchant, totalMerchant, onPage, totalOnPage, businessData, totalBusinessData, backlinks, totalBacklinks, appData, totalAppData, contentAnalysis, totalContentAnalysis, aiOptimization, totalAiOptimization, totalReviews, reviews, totalSocial, social);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -871,10 +823,8 @@ public class AppendixDataInfo  {
     sb.append("    totalAppData: ").append(toIndentedString(totalAppData)).append("\n");
     sb.append("    contentAnalysis: ").append(toIndentedString(contentAnalysis)).append("\n");
     sb.append("    totalContentAnalysis: ").append(toIndentedString(totalContentAnalysis)).append("\n");
-    sb.append("    contentGeneration: ").append(toIndentedString(contentGeneration)).append("\n");
-    sb.append("    totalContentGeneration: ").append(toIndentedString(totalContentGeneration)).append("\n");
-    sb.append("    totalTrafficAnalytics: ").append(toIndentedString(totalTrafficAnalytics)).append("\n");
-    sb.append("    trafficAnalytics: ").append(toIndentedString(trafficAnalytics)).append("\n");
+    sb.append("    aiOptimization: ").append(toIndentedString(aiOptimization)).append("\n");
+    sb.append("    totalAiOptimization: ").append(toIndentedString(totalAiOptimization)).append("\n");
     sb.append("    totalReviews: ").append(toIndentedString(totalReviews)).append("\n");
     sb.append("    reviews: ").append(toIndentedString(reviews)).append("\n");
     sb.append("    totalSocial: ").append(toIndentedString(totalSocial)).append("\n");
@@ -948,13 +898,9 @@ public class AppendixDataInfo  {
     
     openapiFields.add("total_content_analysis");
     
-    openapiFields.add("content_generation");
+    openapiFields.add("ai_optimization");
     
-    openapiFields.add("total_content_generation");
-    
-    openapiFields.add("total_traffic_analytics");
-    
-    openapiFields.add("traffic_analytics");
+    openapiFields.add("total_ai_optimization");
     
     openapiFields.add("total_reviews");
     

@@ -39,9 +39,9 @@ public class AppendixTrBusinessDataPriceDataInfo  {
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixGoogleBusinessDataPriceDataInfo reviews;
+  private AppendixLlmResponsesAiOptimizationPriceData reviews;
 
-  public AppendixTrBusinessDataPriceDataInfo reviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
+  public AppendixTrBusinessDataPriceDataInfo reviews(AppendixLlmResponsesAiOptimizationPriceData reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -51,20 +51,20 @@ public class AppendixTrBusinessDataPriceDataInfo  {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getReviews() {
+  public AppendixLlmResponsesAiOptimizationPriceData getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
+  public void setReviews(AppendixLlmResponsesAiOptimizationPriceData reviews) {
     this.reviews = reviews;
   }
 
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixGoogleBusinessDataPriceDataInfo search;
+  private AppendixLlmResponsesAiOptimizationPriceData search;
 
-  public AppendixTrBusinessDataPriceDataInfo search(AppendixGoogleBusinessDataPriceDataInfo search) {
+  public AppendixTrBusinessDataPriceDataInfo search(AppendixLlmResponsesAiOptimizationPriceData search) {
     this.search = search;
     return this;
   }
@@ -74,11 +74,11 @@ public class AppendixTrBusinessDataPriceDataInfo  {
    * @return search
    */
   @javax.annotation.Nullable
-  public AppendixGoogleBusinessDataPriceDataInfo getSearch() {
+  public AppendixLlmResponsesAiOptimizationPriceData getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixGoogleBusinessDataPriceDataInfo search) {
+  public void setSearch(AppendixLlmResponsesAiOptimizationPriceData search) {
     this.search = search;
   }
 

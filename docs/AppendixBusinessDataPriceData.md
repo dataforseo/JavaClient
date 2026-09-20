@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**availableFilters** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **businessListings** | **AppendixBusinessListingsBusinessDataPriceData** |  |[optional]|
 **errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **google** | **AppendixGoogleBusinessDataPriceData** |  |[optional]|
-**socialMedia** | **AppendixSocialMediaBusinessDataPriceData** |  |[optional]|
+**idList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **tripadvisor** | **AppendixTrBusinessDataPriceDataInfo** |  |[optional]|
 **trustpilot** | **AppendixTrBusinessDataPriceDataInfo** |  |[optional]|
-**yelp** | **AppendixTrBusinessDataPriceDataInfo** |  |[optional]|
 **tasksReady** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

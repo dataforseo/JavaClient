@@ -267,6 +267,29 @@ public class AppendixDataforseoLabsPriceData  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private AppendixTaskKeywordsDataPriceDataInfo availableFilters;
+
+  public AppendixDataforseoLabsPriceData availableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(AppendixTaskKeywordsDataPriceDataInfo availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
   public static final String SERIALIZED_NAME_DOMAIN_INTERSECTION = "domain_intersection";
   @SerializedName(SERIALIZED_NAME_DOMAIN_INTERSECTION)
   private AppendixBingKeywordsDataPriceDataInfo domainIntersection;
@@ -451,29 +474,6 @@ public class AppendixDataforseoLabsPriceData  {
   }
 
 
-  public static final String SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME = "historical_search_volume";
-  @SerializedName(SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME)
-  private AppendixBingKeywordsDataPriceDataInfo historicalSearchVolume;
-
-  public AppendixDataforseoLabsPriceData historicalSearchVolume(AppendixBingKeywordsDataPriceDataInfo historicalSearchVolume) {
-    this.historicalSearchVolume = historicalSearchVolume;
-    return this;
-  }
-
-  /**
-   * 
-   * @return historicalSearchVolume
-   */
-  @javax.annotation.Nullable
-  public AppendixBingKeywordsDataPriceDataInfo getHistoricalSearchVolume() {
-    return historicalSearchVolume;
-  }
-
-  public void setHistoricalSearchVolume(AppendixBingKeywordsDataPriceDataInfo historicalSearchVolume) {
-    this.historicalSearchVolume = historicalSearchVolume;
-  }
-
-
   public static final String SERIALIZED_NAME_HISTORICAL_SERPS = "historical_serps";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SERPS)
   private AppendixBingKeywordsDataPriceDataInfo historicalSerps;
@@ -494,6 +494,29 @@ public class AppendixDataforseoLabsPriceData  {
 
   public void setHistoricalSerps(AppendixBingKeywordsDataPriceDataInfo historicalSerps) {
     this.historicalSerps = historicalSerps;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private AppendixTaskKeywordsDataPriceDataInfo idList;
+
+  public AppendixDataforseoLabsPriceData idList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getIdList() {
+    return idList;
+  }
+
+  public void setIdList(AppendixTaskKeywordsDataPriceDataInfo idList) {
+    this.idList = idList;
   }
 
 
@@ -964,6 +987,7 @@ public class AppendixDataforseoLabsPriceData  {
         Objects.equals(this.categoriesForDomain, appendixDataforseoLabsPriceData.categoriesForDomain) &&
         Objects.equals(this.categoriesForKeywords, appendixDataforseoLabsPriceData.categoriesForKeywords) &&
         Objects.equals(this.competitorsDomain, appendixDataforseoLabsPriceData.competitorsDomain) &&
+        Objects.equals(this.availableFilters, appendixDataforseoLabsPriceData.availableFilters) &&
         Objects.equals(this.domainIntersection, appendixDataforseoLabsPriceData.domainIntersection) &&
         Objects.equals(this.domainMetricsByCategories, appendixDataforseoLabsPriceData.domainMetricsByCategories) &&
         Objects.equals(this.domainRankOverview, appendixDataforseoLabsPriceData.domainRankOverview) &&
@@ -972,8 +996,8 @@ public class AppendixDataforseoLabsPriceData  {
         Objects.equals(this.historicalBulkTrafficEstimation, appendixDataforseoLabsPriceData.historicalBulkTrafficEstimation) &&
         Objects.equals(this.historicalKeywordData, appendixDataforseoLabsPriceData.historicalKeywordData) &&
         Objects.equals(this.historicalRankOverview, appendixDataforseoLabsPriceData.historicalRankOverview) &&
-        Objects.equals(this.historicalSearchVolume, appendixDataforseoLabsPriceData.historicalSearchVolume) &&
         Objects.equals(this.historicalSerps, appendixDataforseoLabsPriceData.historicalSerps) &&
+        Objects.equals(this.idList, appendixDataforseoLabsPriceData.idList) &&
         Objects.equals(this.keywordIdeas, appendixDataforseoLabsPriceData.keywordIdeas) &&
         Objects.equals(this.keywordOverview, appendixDataforseoLabsPriceData.keywordOverview) &&
         Objects.equals(this.keywordsForApp, appendixDataforseoLabsPriceData.keywordsForApp) &&
@@ -1001,7 +1025,7 @@ public class AppendixDataforseoLabsPriceData  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(appCompetitors, appIntersection, bulkAppMetrics, bulkKeywordDifficulty, bulkSearchVolume, bulkTrafficEstimation, categories, categoriesForDomain, categoriesForKeywords, competitorsDomain, domainIntersection, domainMetricsByCategories, domainRankOverview, domainWhoisOverview, errors, historicalBulkTrafficEstimation, historicalKeywordData, historicalRankOverview, historicalSearchVolume, historicalSerps, keywordIdeas, keywordOverview, keywordsForApp, keywordsForCategories, keywordsForSite, keywordSuggestions, locationsAndLanguages, pageIntersection, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, relatedKeywords, relevantPages, searchIntent, serpCompetitors, subdomains, topSearches);
+  return Objects.hash(appCompetitors, appIntersection, bulkAppMetrics, bulkKeywordDifficulty, bulkSearchVolume, bulkTrafficEstimation, categories, categoriesForDomain, categoriesForKeywords, competitorsDomain, availableFilters, domainIntersection, domainMetricsByCategories, domainRankOverview, domainWhoisOverview, errors, historicalBulkTrafficEstimation, historicalKeywordData, historicalRankOverview, historicalSerps, idList, keywordIdeas, keywordOverview, keywordsForApp, keywordsForCategories, keywordsForSite, keywordSuggestions, locationsAndLanguages, pageIntersection, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, relatedKeywords, relevantPages, searchIntent, serpCompetitors, subdomains, topSearches);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1026,6 +1050,7 @@ public class AppendixDataforseoLabsPriceData  {
     sb.append("    categoriesForDomain: ").append(toIndentedString(categoriesForDomain)).append("\n");
     sb.append("    categoriesForKeywords: ").append(toIndentedString(categoriesForKeywords)).append("\n");
     sb.append("    competitorsDomain: ").append(toIndentedString(competitorsDomain)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    domainIntersection: ").append(toIndentedString(domainIntersection)).append("\n");
     sb.append("    domainMetricsByCategories: ").append(toIndentedString(domainMetricsByCategories)).append("\n");
     sb.append("    domainRankOverview: ").append(toIndentedString(domainRankOverview)).append("\n");
@@ -1034,8 +1059,8 @@ public class AppendixDataforseoLabsPriceData  {
     sb.append("    historicalBulkTrafficEstimation: ").append(toIndentedString(historicalBulkTrafficEstimation)).append("\n");
     sb.append("    historicalKeywordData: ").append(toIndentedString(historicalKeywordData)).append("\n");
     sb.append("    historicalRankOverview: ").append(toIndentedString(historicalRankOverview)).append("\n");
-    sb.append("    historicalSearchVolume: ").append(toIndentedString(historicalSearchVolume)).append("\n");
     sb.append("    historicalSerps: ").append(toIndentedString(historicalSerps)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    keywordIdeas: ").append(toIndentedString(keywordIdeas)).append("\n");
     sb.append("    keywordOverview: ").append(toIndentedString(keywordOverview)).append("\n");
     sb.append("    keywordsForApp: ").append(toIndentedString(keywordsForApp)).append("\n");
@@ -1097,6 +1122,8 @@ public class AppendixDataforseoLabsPriceData  {
     
     openapiFields.add("competitors_domain");
     
+    openapiFields.add("available_filters");
+    
     openapiFields.add("domain_intersection");
     
     openapiFields.add("domain_metrics_by_categories");
@@ -1113,9 +1140,9 @@ public class AppendixDataforseoLabsPriceData  {
     
     openapiFields.add("historical_rank_overview");
     
-    openapiFields.add("historical_search_volume");
-    
     openapiFields.add("historical_serps");
+    
+    openapiFields.add("id_list");
     
     openapiFields.add("keyword_ideas");
     

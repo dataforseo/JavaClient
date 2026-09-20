@@ -85,9 +85,9 @@ public class DataforseoLabsGoogleSearchIntentLiveItem  {
 
   public static final String SERIALIZED_NAME_SECONDARY_KEYWORD_INTENTS = "secondary_keyword_intents";
   @SerializedName(SERIALIZED_NAME_SECONDARY_KEYWORD_INTENTS)
-  private List<KeywordIntentInfo> secondaryKeywordIntents;
+  private Object secondaryKeywordIntents;
 
-  public DataforseoLabsGoogleSearchIntentLiveItem secondaryKeywordIntents(List<KeywordIntentInfo> secondaryKeywordIntents) {
+  public DataforseoLabsGoogleSearchIntentLiveItem secondaryKeywordIntents(Object secondaryKeywordIntents) {
     this.secondaryKeywordIntents = secondaryKeywordIntents;
     return this;
   }
@@ -97,11 +97,11 @@ public class DataforseoLabsGoogleSearchIntentLiveItem  {
    * @return secondaryKeywordIntents
    */
   @javax.annotation.Nullable
-  public List<KeywordIntentInfo> getSecondaryKeywordIntents() {
+  public Object getSecondaryKeywordIntents() {
     return secondaryKeywordIntents;
   }
 
-  public void setSecondaryKeywordIntents(List<KeywordIntentInfo> secondaryKeywordIntents) {
+  public void setSecondaryKeywordIntents(Object secondaryKeywordIntents) {
     this.secondaryKeywordIntents = secondaryKeywordIntents;
   }
 

@@ -6,9 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **extendedReviews** | **AppendixAKeywordsDataPriceDataInfo** |  |[optional]|
-**hotelInfo** | **AppendixHotelInfoGoogleBusinessDataPriceData** |  |[optional]|
-**hotelSearches** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
-**myBusinessInfo** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
-**myBusinessUpdates** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
-**questionsAndAnswers** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
-**reviews** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
+**hotelInfo** | **AppendixAmazonMerchantPriceDataInfo** |  |[optional]|
+**hotelSearches** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|
+**myBusinessInfo** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|
+**myBusinessUpdates** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|
+**questionsAndAnswers** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|
+**reviews** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|

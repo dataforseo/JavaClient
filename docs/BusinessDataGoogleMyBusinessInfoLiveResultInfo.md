@@ -13,4 +13,4 @@
 **datetime** | **String** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
 **itemTypes** | **List<String>** | <em>item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_info</code> |[optional]|
 **itemsCount** | **Long** | <em>item types</em><br>the number of items in the <code>items</code> array |[optional]|
-**items** | **List<ItemsGoogleBusinessInfo>** | <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_info</code> |[optional]|
+**items** | **List<GoogleBusinessInfo>** | <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_info</code> |[optional]|

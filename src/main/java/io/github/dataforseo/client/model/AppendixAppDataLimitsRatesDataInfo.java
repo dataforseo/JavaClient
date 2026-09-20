@@ -221,11 +221,34 @@ public class AppendixAppDataLimitsRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public AppendixAppDataLimitsRatesDataInfo idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * 
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
   public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
   @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
-  private AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings;
+  private AppendixTrBusinessDataDayLimitsRatesDataInfo appListings;
 
-  public AppendixAppDataLimitsRatesDataInfo appListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
+  public AppendixAppDataLimitsRatesDataInfo appListings(AppendixTrBusinessDataDayLimitsRatesDataInfo appListings) {
     this.appListings = appListings;
     return this;
   }
@@ -235,12 +258,35 @@ public class AppendixAppDataLimitsRatesDataInfo  {
    * @return appListings
    */
   @javax.annotation.Nullable
-  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo getAppListings() {
+  public AppendixTrBusinessDataDayLimitsRatesDataInfo getAppListings() {
     return appListings;
   }
 
-  public void setAppListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
+  public void setAppListings(AppendixTrBusinessDataDayLimitsRatesDataInfo appListings) {
     this.appListings = appListings;
+  }
+
+
+  public static final String SERIALIZED_NAME_PP_LISTINGS = "pp_listings";
+  @SerializedName(SERIALIZED_NAME_PP_LISTINGS)
+  private AppendixDataforseoLabsLimitsRatesDataInfo ppListings;
+
+  public AppendixAppDataLimitsRatesDataInfo ppListings(AppendixDataforseoLabsLimitsRatesDataInfo ppListings) {
+    this.ppListings = ppListings;
+    return this;
+  }
+
+  /**
+   * 
+   * @return ppListings
+   */
+  @javax.annotation.Nullable
+  public AppendixDataforseoLabsLimitsRatesDataInfo getPpListings() {
+    return ppListings;
+  }
+
+  public void setPpListings(AppendixDataforseoLabsLimitsRatesDataInfo ppListings) {
+    this.ppListings = ppListings;
   }
 
 
@@ -318,7 +364,9 @@ public class AppendixAppDataLimitsRatesDataInfo  {
         Objects.equals(this.languages, appendixAppDataLimitsRatesDataInfo.languages) &&
         Objects.equals(this.locations, appendixAppDataLimitsRatesDataInfo.locations) &&
         Objects.equals(this.categories, appendixAppDataLimitsRatesDataInfo.categories) &&
+        Objects.equals(this.idList, appendixAppDataLimitsRatesDataInfo.idList) &&
         Objects.equals(this.appListings, appendixAppDataLimitsRatesDataInfo.appListings) &&
+        Objects.equals(this.ppListings, appendixAppDataLimitsRatesDataInfo.ppListings) &&
         Objects.equals(this.tasksReady, appendixAppDataLimitsRatesDataInfo.tasksReady);  
     
   }
@@ -329,7 +377,7 @@ public class AppendixAppDataLimitsRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, appListings, tasksReady);
+  return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, idList, appListings, ppListings, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -352,7 +400,9 @@ public class AppendixAppDataLimitsRatesDataInfo  {
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    appListings: ").append(toIndentedString(appListings)).append("\n");
+    sb.append("    ppListings: ").append(toIndentedString(ppListings)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -393,7 +443,11 @@ public class AppendixAppDataLimitsRatesDataInfo  {
     
     openapiFields.add("categories");
     
+    openapiFields.add("id_list");
+    
     openapiFields.add("app_listings");
+    
+    openapiFields.add("pp_listings");
     
     openapiFields.add("tasks_ready");
     

@@ -228,9 +228,9 @@ public class BusinessDataGoogleQuestionsAndAnswersLiveTaskInfo  {
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
-  private Object result;
+  private List<BusinessDataGoogleQuestionsAndAnswersLiveResultInfo> result;
 
-  public BusinessDataGoogleQuestionsAndAnswersLiveTaskInfo result(Object result) {
+  public BusinessDataGoogleQuestionsAndAnswersLiveTaskInfo result(List<BusinessDataGoogleQuestionsAndAnswersLiveResultInfo> result) {
     this.result = result;
     return this;
   }
@@ -240,11 +240,11 @@ public class BusinessDataGoogleQuestionsAndAnswersLiveTaskInfo  {
    * @return result
    */
   @javax.annotation.Nullable
-  public Object getResult() {
+  public List<BusinessDataGoogleQuestionsAndAnswersLiveResultInfo> getResult() {
     return result;
   }
 
-  public void setResult(Object result) {
+  public void setResult(List<BusinessDataGoogleQuestionsAndAnswersLiveResultInfo> result) {
     this.result = result;
   }
 

@@ -60,52 +60,6 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public DataforseoLabsGoogleSearchIntentLiveRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * <em>full name of the language</em><br><strong>required field if don't specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br><a name='lng'></a><br><strong>Note:</strong> this endpoint currently supports the following languages only:<br><code>Arabic</code>, <code>ar</code>,<br><code>Chinese(Traditional)</code>, <code>zh-TW</code>,<br><code>Czech</code>, <code>cs</code>,<br><code>Danish</code>, <code>da</code>,<br><code>Dutch</code>, <code>nl</code>,<br><code>English</code>, <code>en</code>,<br><code>Finnish</code>, <code>fi</code>,<br><code>French</code>, <code>fr</code>,<br><code>German</code>, <code>de</code>,<br><code>Hebrew</code>, <code>he</code>,<br><code>Hindi</code>, <code>hi</code>,<br><code>Italian</code>, <code>it</code>,<br><code>Japanese</code>, <code>ja</code>,<br><code>Korean</code>, <code>ko</code>,<br><code>Malay</code>, <code>ms</code>,<br><code>Norwegian(Bokmål)</code>, <code>nb</code>,<br><code>Polish</code>, <code>pl</code>,<br><code>Portuguese</code>, <code>pt</code>,<br><code>Romanian</code>, <code>ro</code>,<br><code>Russian</code>, <code>ru</code>,<br><code>Spanish</code>, <code>es</code>,<br><code>Swedish</code>, <code>sv</code>,<br><code>Thai</code>, <code>th</code>,<br><code>Ukrainian</code>, <code>uk</code>,<br><code>Vietnamese</code>, <code>vi</code>,<br><code>Bulgarian</code>, <code>bg</code>,<br><code>Croatian</code>, <code>hr</code>,<br><code>Serbian</code>, <code>sr</code>,<br><code>Slovenian</code>, <code>sl</code>,<br><code>Bosnian</code>, <code>bs</code>,<br><code>Greek</code>, <code>el</code>,<br><code>Hungarian</code>, <code>hu</code>,<br><code>Slovak</code>, <code>sk</code>,<br><code>Turkish</code>, <code>tr</code><p>example:<br><code class='long-string'>English</code>
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public DataforseoLabsGoogleSearchIntentLiveRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * <em>language code</em><br><strong>required field if don't specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</code><br><strong>Note:</strong> this endpoint currently supports <a href='#lng'>these languages only;</a><br>example:<br><code class='long-string'>en</code>
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -173,8 +127,6 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
     return
 
         Objects.equals(this.keywords, dataforseoLabsGoogleSearchIntentLiveRequestInfo.keywords) &&
-        Objects.equals(this.languageName, dataforseoLabsGoogleSearchIntentLiveRequestInfo.languageName) &&
-        Objects.equals(this.languageCode, dataforseoLabsGoogleSearchIntentLiveRequestInfo.languageCode) &&
         Objects.equals(this.tag, dataforseoLabsGoogleSearchIntentLiveRequestInfo.tag);  
     
   }
@@ -185,7 +137,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keywords, languageName, languageCode, tag);
+  return Objects.hash(keywords, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -201,8 +153,6 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
     sb.append("class DataforseoLabsGoogleSearchIntentLiveRequestInfo {\n");
 
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -228,10 +178,6 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("keywords");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("language_code");
     
     openapiFields.add("tag");
     

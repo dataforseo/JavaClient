@@ -129,6 +129,29 @@ public class AppendixDomainAnalyticsLimitsRatesDataInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private Double availableFilters;
+
+  public AppendixDomainAnalyticsLimitsRatesDataInfo availableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * 
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public Double getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+  }
+
+
 
   public AppendixDomainAnalyticsLimitsRatesDataInfo() {
   }
@@ -175,7 +198,8 @@ public class AppendixDomainAnalyticsLimitsRatesDataInfo  {
         Objects.equals(this.tasksReady, appendixDomainAnalyticsLimitsRatesDataInfo.tasksReady) &&
         Objects.equals(this.errors, appendixDomainAnalyticsLimitsRatesDataInfo.errors) &&
         Objects.equals(this.whois, appendixDomainAnalyticsLimitsRatesDataInfo.whois) &&
-        Objects.equals(this.technologies, appendixDomainAnalyticsLimitsRatesDataInfo.technologies);  
+        Objects.equals(this.technologies, appendixDomainAnalyticsLimitsRatesDataInfo.technologies) &&
+        Objects.equals(this.availableFilters, appendixDomainAnalyticsLimitsRatesDataInfo.availableFilters);  
     
   }
 
@@ -185,7 +209,7 @@ public class AppendixDomainAnalyticsLimitsRatesDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(tasksReady, errors, whois, technologies);
+  return Objects.hash(tasksReady, errors, whois, technologies, availableFilters);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -204,6 +228,7 @@ public class AppendixDomainAnalyticsLimitsRatesDataInfo  {
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    whois: ").append(toIndentedString(whois)).append("\n");
     sb.append("    technologies: ").append(toIndentedString(technologies)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -234,6 +259,8 @@ public class AppendixDomainAnalyticsLimitsRatesDataInfo  {
     openapiFields.add("whois");
     
     openapiFields.add("technologies");
+    
+    openapiFields.add("available_filters");
     
 
     // a set of required properties/fields (JSON key names)

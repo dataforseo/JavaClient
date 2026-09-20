@@ -70,7 +70,7 @@ public class AnnotationInfo  {
   }
 
   /**
-   * <em>URL of the quoted source</em>
+   * <em>redirect URL to the quoted source</em><br>contains a Vertex AI redirect that leads to the original source
    * @return url
    */
   @javax.annotation.Nullable
@@ -80,6 +80,29 @@ public class AnnotationInfo  {
 
   public void setUrl(String url) {
     this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_DIRECT_URL = "direct_url";
+  @SerializedName(SERIALIZED_NAME_DIRECT_URL)
+  private String directUrl;
+
+  public AnnotationInfo directUrl(String directUrl) {
+    this.directUrl = directUrl;
+    return this;
+  }
+
+  /**
+   * <em>direct URL to the quoted source</em><br>contains the original source URL that the Vertex AI redirect in the `url` field leads to
+   * @return directUrl
+   */
+  @javax.annotation.Nullable
+  public String getDirectUrl() {
+    return directUrl;
+  }
+
+  public void setDirectUrl(String directUrl) {
+    this.directUrl = directUrl;
   }
 
 
@@ -197,6 +220,7 @@ public class AnnotationInfo  {
 
         Objects.equals(this.title, annotationInfo.title) &&
         Objects.equals(this.url, annotationInfo.url) &&
+        Objects.equals(this.directUrl, annotationInfo.directUrl) &&
         Objects.equals(this.startIndex, annotationInfo.startIndex) &&
         Objects.equals(this.endIndex, annotationInfo.endIndex) &&
         Objects.equals(this.text, annotationInfo.text);  
@@ -209,7 +233,7 @@ public class AnnotationInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, url, startIndex, endIndex, text);
+  return Objects.hash(title, url, directUrl, startIndex, endIndex, text);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -226,6 +250,7 @@ public class AnnotationInfo  {
 
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    directUrl: ").append(toIndentedString(directUrl)).append("\n");
     sb.append("    startIndex: ").append(toIndentedString(startIndex)).append("\n");
     sb.append("    endIndex: ").append(toIndentedString(endIndex)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
@@ -255,6 +280,8 @@ public class AnnotationInfo  {
     openapiFields.add("title");
     
     openapiFields.add("url");
+    
+    openapiFields.add("direct_url");
     
     openapiFields.add("start_index");
     

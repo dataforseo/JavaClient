@@ -83,26 +83,26 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
+  public static final String SERIALIZED_NAME_FUNCTION = "function";
+  @SerializedName(SERIALIZED_NAME_FUNCTION)
+  private String function;
 
-  public AiOptimizationChatGptLlmScraperTasksReadyResultInfo seType(String seType) {
-    this.seType = seType;
+  public AiOptimizationChatGptLlmScraperTasksReadyResultInfo function(String function) {
+    this.function = function;
     return this;
   }
 
   /**
-   * <em>type of search engine</em><br>example: <code>{{low_se_type_under}}</code>
-   * @return seType
+   * <em>funciton type</em><br>example: <code>{{low_se_type_under}}</code>
+   * @return function
    */
   @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
+  public String getFunction() {
+    return function;
   }
 
-  public void setSeType(String seType) {
-    this.seType = seType;
+  public void setFunction(String function) {
+    this.function = function;
   }
 
 
@@ -149,29 +149,6 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
 
   public void setTag(String tag) {
     this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_ENDPOINT_REGULAR = "endpoint_regular";
-  @SerializedName(SERIALIZED_NAME_ENDPOINT_REGULAR)
-  private String endpointRegular;
-
-  public AiOptimizationChatGptLlmScraperTasksReadyResultInfo endpointRegular(String endpointRegular) {
-    this.endpointRegular = endpointRegular;
-    return this;
-  }
-
-  /**
-   * <em>URL for collecting the results of the Regular task</em><br>if the Regular function is not supported in the specified endpoint, the value will be <code>null</code>
-   * @return endpointRegular
-   */
-  @javax.annotation.Nullable
-  public String getEndpointRegular() {
-    return endpointRegular;
-  }
-
-  public void setEndpointRegular(String endpointRegular) {
-    this.endpointRegular = endpointRegular;
   }
 
 
@@ -266,10 +243,9 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
 
         Objects.equals(this.id, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.id) &&
         Objects.equals(this.se, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.se) &&
-        Objects.equals(this.seType, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.seType) &&
+        Objects.equals(this.function, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.function) &&
         Objects.equals(this.datePosted, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.datePosted) &&
         Objects.equals(this.tag, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.tag) &&
-        Objects.equals(this.endpointRegular, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.endpointRegular) &&
         Objects.equals(this.endpointAdvanced, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.endpointAdvanced) &&
         Objects.equals(this.endpointHtml, aiOptimizationChatGptLlmScraperTasksReadyResultInfo.endpointHtml);  
     
@@ -281,7 +257,7 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(id, se, seType, datePosted, tag, endpointRegular, endpointAdvanced, endpointHtml);
+  return Objects.hash(id, se, function, datePosted, tag, endpointAdvanced, endpointHtml);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -298,10 +274,9 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
 
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    se: ").append(toIndentedString(se)).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
+    sb.append("    function: ").append(toIndentedString(function)).append("\n");
     sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    endpointRegular: ").append(toIndentedString(endpointRegular)).append("\n");
     sb.append("    endpointAdvanced: ").append(toIndentedString(endpointAdvanced)).append("\n");
     sb.append("    endpointHtml: ").append(toIndentedString(endpointHtml)).append("\n");
     sb.append("}");
@@ -331,13 +306,11 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
     
     openapiFields.add("se");
     
-    openapiFields.add("se_type");
+    openapiFields.add("function");
     
     openapiFields.add("date_posted");
     
     openapiFields.add("tag");
-    
-    openapiFields.add("endpoint_regular");
     
     openapiFields.add("endpoint_advanced");
     

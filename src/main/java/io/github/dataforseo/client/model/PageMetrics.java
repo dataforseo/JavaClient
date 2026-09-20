@@ -246,9 +246,9 @@ public class PageMetrics  {
 
   public static final String SERIALIZED_NAME_ONPAGE_SCORE = "onpage_score";
   @SerializedName(SERIALIZED_NAME_ONPAGE_SCORE)
-  private Double onpageScore;
+  private Integer onpageScore;
 
-  public PageMetrics onpageScore(Double onpageScore) {
+  public PageMetrics onpageScore(Integer onpageScore) {
     this.onpageScore = onpageScore;
     return this;
   }
@@ -258,11 +258,11 @@ public class PageMetrics  {
    * @return onpageScore
    */
   @javax.annotation.Nullable
-  public Double getOnpageScore() {
+  public Integer getOnpageScore() {
     return onpageScore;
   }
 
-  public void setOnpageScore(Double onpageScore) {
+  public void setOnpageScore(Integer onpageScore) {
     this.onpageScore = onpageScore;
   }
 

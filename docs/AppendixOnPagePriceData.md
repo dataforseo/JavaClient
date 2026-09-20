@@ -6,7 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
-**lighthouse** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
+**idList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**lighthouse** | **AppendixLlmResponsesAiOptimizationPriceData** |  |[optional]|
+**availableFilters** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **contentParsing** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **contentParsingLive** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **duplicateContent** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
@@ -24,4 +26,5 @@
 **summary** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **taskPost** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **tasksReady** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**uncrawlableResources** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **waterfall** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
