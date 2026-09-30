@@ -47,7 +47,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>title of the result in SERP</em>
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>description of the results element in SERP</em>
+   * description of the results element in SERP
    * @return description
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>subdomain in SERP</em>
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>phone number</em>
+   * phone number
    * @return phone
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em> relevant URL in SERP</em>
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>indicates whether the element is an ad</em>
+   * indicates whether the element is an ad
    * @return isPaid
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP
+   * the item's rating             the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>primary domain name in SERP</em>
+   * primary domain name in SERP
    * @return mainDomain
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>URL in SERP that does not specify the HTTPs protocol and domain name</em>
+   * URL in SERP that does not specify the HTTPs protocol and domain name
    * @return relativeUrl
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>estimated traffic volume</em><br>            estimated organic monthly traffic to the domain<br>            calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
+   * estimated traffic volume            estimated organic monthly traffic to the domain            calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword            learn more about how the metric is calculated in this help center article
    * @return etv
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>estimated cost of converting organic search traffic into paid</em><br>            represents the estimated monthly cost of running ads (USD) for the returned keyword<br>            the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
+   * estimated cost of paid monthly search traffic            represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values            learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>estimated traffic volume based on clickstream data</em><br>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for<br>            to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code><br>            learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>help center article</a>
+   * estimated traffic volume based on clickstream data            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for            to retrieve results for this field, the parameter include_clickstream_data must be set to true            learn more about how the metric is calculated in this help center article
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>changes in rankings</em><br>            contains information about the ranking changes of the SERP element since the <code>previous_updated_time</code>
+   * changes in rankings            contains information about the ranking changes of the SERP element since the previous_updated_time
    * @return rankChanges
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>backlinks information for the ranked website</em>
+   * backlinks information for the ranked website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable
@@ -369,7 +369,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * <em>page and domain rank information</em>
+   * page and domain rank information
    * @return rankInfo
    */
   @javax.annotation.Nullable

@@ -83,7 +83,7 @@ public class App
           SerpGoogleOrganicLiveAdvancedResponseInfo result = apiInstance.googleOrganicLiveAdvanced(serpTaskRequestInfo);
           System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling SerpApi#googleOrganicTaskGetAdvanced");
+            System.err.println("Exception when calling SerpApi#googleOrganicLiveAdvanced");
             System.err.println("Status code: " + e.getCode());
             System.err.println("Reason: " + e.getResponseBody());
             System.err.println("Response headers: " + e.getResponseHeaders());
@@ -106,8 +106,6 @@ import io.github.dataforseo.client.api.SerpApi;
 import io.github.dataforseo.client.auth.*;
 import io.github.dataforseo.client.model.*;
 
-import okhttp3.internal.concurrent.Task;
-
 import io.github.dataforseo.client.Configuration;
 
 public class App {
@@ -124,13 +122,13 @@ public class App {
 
     try {
 
-      SerpTaskRequestInfo task = new SerpTaskRequestInfo();
+      SerpGoogleOrganicTaskPostRequestInfo task = new SerpGoogleOrganicTaskPostRequestInfo();
 
       task.setLocationCode(2840);
       task.setLanguageCode("en");
       task.setKeyword("albert einstein");
 
-      List<SerpTaskRequestInfo> serpTaskRequestInfo = new ArrayList<SerpTaskRequestInfo>();
+      List<SerpGoogleOrganicTaskPostRequestInfo> serpTaskRequestInfo = new ArrayList<SerpGoogleOrganicTaskPostRequestInfo>();
       serpTaskRequestInfo.add(task);
 
       SerpGoogleOrganicTaskPostResponseInfo taskPost = apiInstance.googleOrganicTaskPost(serpTaskRequestInfo);
@@ -154,7 +152,7 @@ public class App {
       System.out.println(result);
 
     } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicLiveAdvanced");
+      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -165,8 +163,8 @@ public class App {
   private static boolean GoogleOrganicTaskReady(SerpApi serpApi, String taskId) throws ApiException {
 
     SerpGoogleOrganicTasksReadyResponseInfo result = serpApi.googleOrganicTasksReady();
-    for (SerpGoogleOrganicTasksReadyTask task : result.getTasks()) {
-      for (SerpGoogleTasksReadyResultInfo xx : task.getResult()) {
+    for (SerpGoogleOrganicTasksReadyTaskInfo task : result.getTasks()) {
+      for (SerpGoogleOrganicTasksReadyResultInfo xx : task.getResult()) {
         if (xx.getId().equals(taskId)) {
           return true;
         }

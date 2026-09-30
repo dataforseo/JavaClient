@@ -236,7 +236,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostTaskInfo  {
   }
 
   /**
-   * <em>array of results</em><br>in this case, the value will be <code>null</code>
+   * array of resultsin this case, the value will be null
    * @return result
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * <em>target domain</em><br><strong>required field</strong><br>the domain name of the target website<br>the domain should be specified without <code>https://</code>
+   * <em>domain name or page url</em><br><strong>required field</strong><br>the domain name of the target website, subdomain or URL of the target webpage;<br>the <strong>domain name</strong> must be specified <strong>without</strong> <code>https://</code> or <code>www.</code>;<br>the <strong>subdomain</strong> must be specified <strong>without</strong> <code>https://</code>;<br>the <strong>webpage URL</strong> must be specified <strong>with</strong> <code>https://</code> or <code>www.</code><br><strong>Note:</strong> if you specify the <strong>webpage URL</strong> without <code>https://</code> or <code>www.</code>, the result will be returned for the <strong>entire domain</strong> rather than the specific page
    * @return target
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo  {
   }
 
   /**
-   * <em>include or exclude data from clickstream-based metrics in the result</em><br>optional field<br>if the parameter is set to_<code>true</code>, you will receive <code>clickstream_keyword_info</code>, <code>keyword_info_normalized_with_clickstream</code>, and <code>keyword_info_normalized_with_bing</code> fields in the response<br>default value: <code>false</code><br>with this parameter enabled, you will be charged double the price for the request<p>learn more about how clickstream-based metrics are calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>n'
+   * <em>include or exclude data from clickstream-based metrics in the result</em><br>optional field<br>if the parameter is set to_<code>true</code>, you will receive <code>clickstream_keyword_info</code>, <code>keyword_info_normalized_with_clickstream</code>, and <code>keyword_info_normalized_with_bing</code> fields in the response<br>default value: <code>false</code><br>with this parameter enabled, you will be charged double the price for the request<p>learn more about how clickstream-based metrics are calculated in this <a href='https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them' rel='noopener noreferrer' target='_blank'>help center article</a>
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable

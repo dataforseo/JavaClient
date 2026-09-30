@@ -47,7 +47,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveItem  {
   }
 
   /**
-   * <em>search engine type</em>
+   * search engine type
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveItem  {
   }
 
   /**
-   * <em>keyword data for the returned keyword</em>
+   * keyword data for the returned keyword
    * @return keywordData
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveItem  {
   }
 
   /**
-   * <em>contains data on the first domain's SERP element found for the returned <code>keyword</code></em><br>            the list of supported SERP elements can be found below
+   * contains data on the first domain's SERP element found for the returned keyword            the list of supported SERP elements can be found below
    * @return firstDomainSerpElement
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveItem  {
   }
 
   /**
-   * <em>contains data on the second domain's SERP element found for the returned <code>keyword</code></em><br>            the list of supported SERP elements can be found below
+   * contains data on the second domain's SERP element found for the returned keyword            the list of supported SERP elements can be found below
    * @return secondDomainSerpElement
    */
   @javax.annotation.Nullable

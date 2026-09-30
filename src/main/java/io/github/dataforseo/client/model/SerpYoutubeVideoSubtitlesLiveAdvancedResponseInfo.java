@@ -211,7 +211,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo  {
   }
 
   /**
-   * <em>array of tasks</em>
+   * array of tasks
    * @return tasks
    */
   @javax.annotation.Nullable

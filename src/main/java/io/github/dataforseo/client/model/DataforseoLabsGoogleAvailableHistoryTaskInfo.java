@@ -236,7 +236,7 @@ public class DataforseoLabsGoogleAvailableHistoryTaskInfo  {
   }
 
   /**
-   * <em>array of objects containing results</em>
+   * array of objects containing results
    * @return result
    */
   @javax.annotation.Nullable

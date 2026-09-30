@@ -47,7 +47,7 @@ public class DataforseoLabsGooglePageIntersectionLiveItem  {
   }
 
   /**
-   * <em>search engine type</em>
+   * search engine type
    * @return seType
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataforseoLabsGooglePageIntersectionLiveItem  {
   }
 
   /**
-   * <em>keyword data for the returned keyword</em>
+   * keyword data for the returned keyword
    * @return keywordData
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataforseoLabsGooglePageIntersectionLiveItem  {
   }
 
   /**
-   * <em>contains data on the SERP elements found for the returned <code>keyword</code></em><br>data will be provided in separate arrays for each URL you specified in the <code>pages</code> object when setting a task;<br>depending on the number of specified URLs, it can contain from 1 to 20 arrays named respectively
+   * contains data on the SERP elements found for the returned keyworddata will be provided in separate arrays for each URL you specified in the pages object when setting a task;depending on the number of specified URLs, it can contain from 1 to 20 arrays named respectively
    * @return intersectionResult
    */
   @javax.annotation.Nullable

@@ -7108,6 +7108,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpYoutubeVideoInfoTaskPostRequestInfo model = new SerpYoutubeVideoInfoTaskPostRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .videoId("vQXvyV0zIP4");
     SerpYoutubeVideoInfoTaskPostResponseInfo response = apiInstance.youtubeVideoInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -7456,6 +7459,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpYoutubeOrganicTaskPostRequestInfo model = new SerpYoutubeOrganicTaskPostRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .keyword("audi");
     SerpYoutubeOrganicTaskPostResponseInfo response = apiInstance.youtubeOrganicTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -7732,6 +7738,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpYoutubeOrganicLiveAdvancedRequestInfo model = new SerpYoutubeOrganicLiveAdvancedRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .keyword("audi");
     SerpYoutubeOrganicLiveAdvancedResponseInfo response = apiInstance.youtubeOrganicLiveAdvanced(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -7801,6 +7810,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpYoutubeVideoSubtitlesTaskPostRequestInfo model = new SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .videoId("Y8Wu4rSNJms");
     SerpYoutubeVideoSubtitlesTaskPostResponseInfo response = apiInstance.youtubeVideoSubtitlesTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -8077,6 +8089,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo model = new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .videoId("Y8Wu4rSNJms");
     SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo response = apiInstance.youtubeVideoSubtitlesLiveAdvanced(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -8146,6 +8161,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpYoutubeVideoCommentsTaskPostRequestInfo model = new SerpYoutubeVideoCommentsTaskPostRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .videoId("vQXvyV0zIP4");
     SerpYoutubeVideoCommentsTaskPostResponseInfo response = apiInstance.youtubeVideoCommentsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

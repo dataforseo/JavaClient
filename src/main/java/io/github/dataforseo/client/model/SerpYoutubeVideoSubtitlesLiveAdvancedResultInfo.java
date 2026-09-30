@@ -47,7 +47,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>ID of the video received in a POST array</em>
+   * ID of the video received in a POST array
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>search engine domain in a POST array</em>
+   * search engine domain in a POST array
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>location code in a POST array</em>
+   * location code in a POST array
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>language code in a POST array</em>
+   * language code in a POST array
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>direct URL to search engine results<br></em>you can use it to make sure that we provided accurate results
+   * direct URL to search engine resultsyou can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
+   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * autocorrection of the search engineif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item:<br><code>youtube_subtitles</code>
+   * types of search results in SERPcontains types of search results (items) found in SERP.possible item:youtube_subtitles
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>indicates whether the language is unsupported by the system</em>
+   * indicates whether the language is unsupported by the system
    * @return unsupportedLanguage
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>language code of translated text</em>
+   * language code of translated text
    * @return translateLanguage
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>language code of original text</em>
+   * language code of original text
    * @return originLanguage
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>the category the video belongs to</em><br><strong>Note:</strong> this field is deprecated and always returns <code>null</code>
+   * the category the video belongs toNote: this field is deprecated and always returns null
    * @return category
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>number of subtitles in the video</em>
+   * number of subtitles in the video
    * @return subtitlesCount
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>title of the video</em>
+   * title of the video
    * @return title
    */
   @javax.annotation.Nullable
@@ -369,7 +369,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
+   * the number of results returned in the items array
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -392,7 +392,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>elements of search results found in SERP</em>
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable

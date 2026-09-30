@@ -2466,7 +2466,6 @@ public class Example {
            .appCollection("top_free_ios")
            .locationCode(2840)
            .languageCode("en")
-           .depth(200)
            .appCategory("games");
     AppDataAppleAppListTaskPostResponseInfo response = apiInstance.appleAppListTaskPost(List.of(model));
     System.out.println(result);

@@ -236,7 +236,7 @@ public class SerpGoogleOrganicLiveAdvancedTaskInfo  {
   }
 
   /**
-   * <em>array of results</em>
+   * array of results
    * @return result
    */
   @javax.annotation.Nullable

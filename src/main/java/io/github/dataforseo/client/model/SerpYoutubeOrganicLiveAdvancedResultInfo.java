@@ -47,7 +47,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>keyword received in a POST array<br>        </em><strong>the keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
+   * keyword received in a POST array        the keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>search engine domain in a POST array</em>
+   * search engine domain in a POST array
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>location code in a POST array</em>
+   * location code in a POST array
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>language code in a POST array</em>
+   * language code in a POST array
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>direct URL to search engine results<br>        </em>you can use it to make sure that we provided accurate results
+   * direct URL to search engine results        you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>date and time when the result was received</em><br>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>            example:<br>            <code class='long-string'>2019-11-15 12:57:46 +00:00</code>
+   * date and time when the result was received            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”            example:            2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>autocorrection of the search engine</em><br>            if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * autocorrection of the search engine            if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>types of search results in SERP</em><br>            contains types of search results (<code>items</code>) found in SERP.<br>            possible item types:<br>            <code>youtube_channel</code>, <code>youtube_video</code>, <code>youtube_video_paid</code>, <code>youtube_playlist</code>
+   * types of search results in SERP            contains types of search results (items) found in SERP.            possible item types:            youtube_channel, youtube_video, youtube_video_paid, youtube_playlist
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em> total number of results in SERP</em>
+   * total number of results in SERP
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
+   * the number of results returned in the items array
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class SerpYoutubeOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * <em>elements of search results found in SERP</em>
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
