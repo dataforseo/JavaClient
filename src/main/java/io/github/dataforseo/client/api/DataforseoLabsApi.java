@@ -60,6 +60,8 @@ import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalRankOverv
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGooglePageIntersectionLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGooglePageIntersectionLiveResponseInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo;
@@ -2183,6 +2185,76 @@ public class DataforseoLabsApi {
  
             okhttp3.Call localVarCall = googlePageIntersectionLiveValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<DataforseoLabsGooglePageIntersectionLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call googleHistoricalSearchVolumeLiveCall(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/dataforseo_labs/google/historical_search_volume/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call googleHistoricalSearchVolumeLiveValidateBeforeCall(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return googleHistoricalSearchVolumeLiveCall(payload, _callback);
+ 
+        }
+ 
+        public DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo googleHistoricalSearchVolumeLive(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> localVarResp = googleHistoricalSearchVolumeLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> googleHistoricalSearchVolumeLiveWithHttpInfo(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = googleHistoricalSearchVolumeLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call googleHistoricalSearchVolumeLiveAsync(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> payload, final ApiCallback<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = googleHistoricalSearchVolumeLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

@@ -47,7 +47,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>title of the result in SERP</em>
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>subdomain in SERP</em>
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>description of the results element in SERP</em>
+   * description of the results element in SERP
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>breadcrumb in SERP</em>
+   * breadcrumb in SERP
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em> relevant URL in SERP</em>
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -149,6 +149,29 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
 
   public void setUrl(String url) {
     this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public DataLabsPaidSerpElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * array of properties detected for the SERP elementlists the properties that are true for this elementeach value in the array represents a detected property example:if is_image is present in the array, the element contains an imagepossible values in the array:is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_citedequals null if none of the properties are detected for the elementlearn more about the checks array in this Help Center article
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
   }
 
 
@@ -162,7 +185,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>words highlighted in bold within the results <code>description</code></em>
+   * words highlighted in bold within the results description
    * @return highlighted
    */
   @javax.annotation.Nullable
@@ -208,7 +231,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>extended description</em><br>            if there is none, equals <code>null</code>
+   * extended description            if there is none, equals null
    * @return descriptionRows
    */
   @javax.annotation.Nullable
@@ -231,7 +254,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code>
+   * sitelinks            the links shown below some of Google's search results            if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable
@@ -254,7 +277,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>primary domain name in SERP</em>
+   * primary domain name in SERP
    * @return mainDomain
    */
   @javax.annotation.Nullable
@@ -277,7 +300,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>URL in SERP that does not specify the HTTPs protocol and domain name</em>
+   * URL in SERP that does not specify the HTTPs protocol and domain name
    * @return relativeUrl
    */
   @javax.annotation.Nullable
@@ -300,7 +323,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>estimated traffic volume</em><br>            estimated organic monthly traffic to the domain or webpage;<br>            calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
+   * estimated traffic volume            estimated organic monthly traffic to the domain            calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword            learn more about how the metric is calculated in this help center article
    * @return etv
    */
   @javax.annotation.Nullable
@@ -323,7 +346,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>estimated cost of converting organic search traffic into paid</em><br>            represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;<br>            the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;<br>            learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
+   * estimated cost of paid monthly search traffic            represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values            learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -346,7 +369,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>estimated traffic volume based on clickstream data</em><br>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;<br>            to retrieve results for this field, the parameter <code>include_clickstream_data</code> must be set to <code>true</code>;<br>            learn more about how the metric is calculated in this <a href='https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>help center article</a>
+   * estimated traffic volume based on clickstream data            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for            to retrieve results for this field, the parameter include_clickstream_data must be set to true            learn more about how the metric is calculated in this help center article
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -369,7 +392,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>changes in rankings</em><br>            contains information about the ranking changes of the SERP element since the <code>previous_updated_time</code>
+   * changes in rankings            contains information about the ranking changes of the SERP element since the previous_updated_time
    * @return rankChanges
    */
   @javax.annotation.Nullable
@@ -392,7 +415,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>backlinks information for the relevant page URL</em>
+   * backlinks information for the ranked website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable
@@ -415,7 +438,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * <em>page and domain rank information</em>
+   * page and domain rank information
    * @return rankInfo
    */
   @javax.annotation.Nullable
@@ -476,6 +499,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
         Objects.equals(this.description, dataLabsPaidSerpElementItem.description) &&
         Objects.equals(this.breadcrumb, dataLabsPaidSerpElementItem.breadcrumb) &&
         Objects.equals(this.url, dataLabsPaidSerpElementItem.url) &&
+        Objects.equals(this.checks, dataLabsPaidSerpElementItem.checks) &&
         Objects.equals(this.highlighted, dataLabsPaidSerpElementItem.highlighted) &&
         Objects.equals(this.extra, dataLabsPaidSerpElementItem.extra) &&
         Objects.equals(this.descriptionRows, dataLabsPaidSerpElementItem.descriptionRows) &&
@@ -498,7 +522,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, domain, description, breadcrumb, url, highlighted, extra, descriptionRows, links, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo);
+  return Objects.hash(title, domain, description, breadcrumb, url, checks, highlighted, extra, descriptionRows, links, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -518,6 +542,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    breadcrumb: ").append(toIndentedString(breadcrumb)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    highlighted: ").append(toIndentedString(highlighted)).append("\n");
     sb.append("    extra: ").append(toIndentedString(extra)).append("\n");
     sb.append("    descriptionRows: ").append(toIndentedString(descriptionRows)).append("\n");
@@ -568,6 +593,8 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
     openapiFields.add("breadcrumb");
     
     openapiFields.add("url");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("highlighted");
     

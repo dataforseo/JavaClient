@@ -73,8 +73,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantIdListRequestInfo model = new MerchantIdListRequestInfo()
-           .limit(10)
-           .includeMetadata(true);
+        .limit(10)
+        .includeMetadata(true);
     MerchantIdListResponseInfo response = apiInstance.merchantIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -144,9 +144,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantErrorsRequestInfo model = new MerchantErrorsRequestInfo()
-           .limit(10)
-           .offset(0)
-           .filteredFunction("pingback_url");
+        .limit(10)
+        .offset(0)
+        .filteredFunction("pingback_url");
     MerchantErrorsResponseInfo response = apiInstance.merchantErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -423,10 +423,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantGoogleProductsTaskPostRequestInfo model = new MerchantGoogleProductsTaskPostRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .keyword("iphone")
-           .priceMin(5);
+        .languageCode("en")
+        .locationCode(2840)
+        .keyword("iphone")
+        .priceMin(5);
     MerchantGoogleProductsTaskPostResponseInfo response = apiInstance.googleProductsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -772,9 +772,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantGoogleSellersTaskPostRequestInfo model = new MerchantGoogleSellersTaskPostRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .productId("1113158713975221117");
+        .languageCode("en")
+        .locationCode(2840)
+        .productId("1113158713975221117");
     MerchantGoogleSellersTaskPostResponseInfo response = apiInstance.googleSellersTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -982,9 +982,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantGoogleProductInfoTaskPostRequestInfo model = new MerchantGoogleProductInfoTaskPostRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .productId("1113158713975221117");
+        .languageCode("en")
+        .locationCode(2840)
+        .productId("1113158713975221117");
     MerchantGoogleProductInfoTaskPostResponseInfo response = apiInstance.googleProductInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1468,9 +1468,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonProductsTaskPostRequestInfo model = new MerchantAmazonProductsTaskPostRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .keyword("shoes");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .keyword("shoes");
     MerchantAmazonProductsTaskPostResponseInfo response = apiInstance.amazonProductsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1678,9 +1678,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonProductsLiveAdvancedRequestInfo model = new MerchantAmazonProductsLiveAdvancedRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .keyword("shoes");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .keyword("shoes");
     MerchantAmazonProductsLiveAdvancedResponseInfo response = apiInstance.amazonProductsLiveAdvanced(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1819,9 +1819,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonProductsLiveHtmlRequestInfo model = new MerchantAmazonProductsLiveHtmlRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .keyword("shoes");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .keyword("shoes");
     MerchantAmazonProductsLiveHtmlResponseInfo response = apiInstance.amazonProductsLiveHtml(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1891,9 +1891,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonAsinTaskPostRequestInfo model = new MerchantAmazonAsinTaskPostRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .asin("B0756FCPPN");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .asin("B0756FCPPN");
     MerchantAmazonAsinTaskPostResponseInfo response = apiInstance.amazonAsinTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2101,9 +2101,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonAsinLiveAdvancedRequestInfo model = new MerchantAmazonAsinLiveAdvancedRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .asin("B0756FCPPN");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .asin("B0756FCPPN");
     MerchantAmazonAsinLiveAdvancedResponseInfo response = apiInstance.amazonAsinLiveAdvanced(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2242,9 +2242,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonAsinLiveHtmlRequestInfo model = new MerchantAmazonAsinLiveHtmlRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .asin("B0756FCPPN");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .asin("B0756FCPPN");
     MerchantAmazonAsinLiveHtmlResponseInfo response = apiInstance.amazonAsinLiveHtml(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2314,9 +2314,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonSellersTaskPostRequestInfo model = new MerchantAmazonSellersTaskPostRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .asin("B085RFFC9Q");
+        .languageCode("en")
+        .locationCode(2840)
+        .asin("B085RFFC9Q");
     MerchantAmazonSellersTaskPostResponseInfo response = apiInstance.amazonSellersTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2524,9 +2524,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonSellersLiveAdvancedRequestInfo model = new MerchantAmazonSellersLiveAdvancedRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .asin("B07D528W98");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .asin("B07D528W98");
     MerchantAmazonSellersLiveAdvancedResponseInfo response = apiInstance.amazonSellersLiveAdvanced(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2665,9 +2665,9 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonSellersLiveHtmlRequestInfo model = new MerchantAmazonSellersLiveHtmlRequestInfo()
-           .languageCode("en_US")
-           .locationCode(2840)
-           .asin("B085RFFC9Q");
+        .languageCode("en_US")
+        .locationCode(2840)
+        .asin("B085RFFC9Q");
     MerchantAmazonSellersLiveHtmlResponseInfo response = apiInstance.amazonSellersLiveHtml(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

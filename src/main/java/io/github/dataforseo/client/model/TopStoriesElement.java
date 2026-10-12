@@ -162,7 +162,7 @@ public class TopStoriesElement  {
   }
 
   /**
-   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version<br><strong>Note:</strong> this check no longer appears in SERP
    * @return ampVersion
    */
   @javax.annotation.Nullable

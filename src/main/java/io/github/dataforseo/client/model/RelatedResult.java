@@ -277,7 +277,7 @@ public class RelatedResult  {
   }
 
   /**
-   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERPn
+   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isImage
    */
   @javax.annotation.Nullable
@@ -438,7 +438,7 @@ public class RelatedResult  {
   }
 
   /**
-   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version<br><strong>Note:</strong> this check no longer appears in SERP
    * @return ampVersion
    */
   @javax.annotation.Nullable

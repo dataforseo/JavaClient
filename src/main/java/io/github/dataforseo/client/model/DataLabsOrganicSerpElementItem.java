@@ -244,6 +244,29 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
 
+  public static final String SERIALIZED_NAME_CHECKS = "checks";
+  @SerializedName(SERIALIZED_NAME_CHECKS)
+  private List<String> checks;
+
+  public DataLabsOrganicSerpElementItem checks(List<String> checks) {
+    this.checks = checks;
+    return this;
+  }
+
+  /**
+   * <em>array of properties detected for the SERP element</em><br>lists the properties that are true for this element<br>each value in the array represents a detected property <br>example:<br>if <code>is_image</code> is present in the array, the element contains an image<br>possible values in the array:<br><code>is_image</code>, <code>is_video</code>, <code>is_featured_snippet</code>, <code>amp_version</code>, <code>is_malicious</code>, <code>is_web_story</code>, <code>is_highly_cited</code><br>equals <code>null</code> if none of the properties are detected for the element<br>learn more about the <code>checks</code> array in <a href='https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api' target='_blank'>this Help Center article</a>
+   * @return checks
+   */
+  @javax.annotation.Nullable
+  public List<String> getChecks() {
+    return checks;
+  }
+
+  public void setChecks(List<String> checks) {
+    this.checks = checks;
+  }
+
+
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private String description;
@@ -323,7 +346,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * <em>Accelerated Mobile Pages</em><br>            indicates whether an item has the Accelerated Mobile Page (AMP) version
+   * <em>Accelerated Mobile Pages</em><br>indicates whether an item has the Accelerated Mobile Page (AMP) version<br><strong>Note:</strong> this check no longer appears in SERP
    * @return ampVersion
    */
   @javax.annotation.Nullable
@@ -668,6 +691,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
         Objects.equals(this.isVideo, dataLabsOrganicSerpElementItem.isVideo) &&
         Objects.equals(this.isFeaturedSnippet, dataLabsOrganicSerpElementItem.isFeaturedSnippet) &&
         Objects.equals(this.isMalicious, dataLabsOrganicSerpElementItem.isMalicious) &&
+        Objects.equals(this.checks, dataLabsOrganicSerpElementItem.checks) &&
         Objects.equals(this.description, dataLabsOrganicSerpElementItem.description) &&
         Objects.equals(this.preSnippet, dataLabsOrganicSerpElementItem.preSnippet) &&
         Objects.equals(this.extendedSnippet, dataLabsOrganicSerpElementItem.extendedSnippet) &&
@@ -694,7 +718,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, title, url, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, description, preSnippet, extendedSnippet, ampVersion, rating, highlighted, links, aboutThisResult, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo);
+  return Objects.hash(domain, title, url, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, checks, description, preSnippet, extendedSnippet, ampVersion, rating, highlighted, links, aboutThisResult, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -718,6 +742,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
     sb.append("    isVideo: ").append(toIndentedString(isVideo)).append("\n");
     sb.append("    isFeaturedSnippet: ").append(toIndentedString(isFeaturedSnippet)).append("\n");
     sb.append("    isMalicious: ").append(toIndentedString(isMalicious)).append("\n");
+    sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    preSnippet: ").append(toIndentedString(preSnippet)).append("\n");
     sb.append("    extendedSnippet: ").append(toIndentedString(extendedSnippet)).append("\n");
@@ -780,6 +805,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
     openapiFields.add("is_featured_snippet");
     
     openapiFields.add("is_malicious");
+    
+    openapiFields.add("checks");
     
     openapiFields.add("description");
     

@@ -362,13 +362,13 @@ public class JSON {
                 @Override
                 public Class<? extends io.github.dataforseo.client.model.BaseDataforseoLabsApiElementItem> getClassForElement(JsonElement readElement) {
                     Map<String, Class> classByDiscriminatorValue = new HashMap<String, Class>();
-                    classByDiscriminatorValue.put("paid", io.github.dataforseo.client.model.DataLabsPaidSerpElementItem.class);
                     classByDiscriminatorValue.put("organic", io.github.dataforseo.client.model.DataLabsOrganicSerpElementItem.class);
+                    classByDiscriminatorValue.put("featured_snippet", io.github.dataforseo.client.model.DataLabsFeaturedSnippetSerpElementItem.class);
+                    classByDiscriminatorValue.put("paid", io.github.dataforseo.client.model.DataLabsPaidSerpElementItem.class);
                     classByDiscriminatorValue.put("local_pack", io.github.dataforseo.client.model.DataLabsLocalPackSerpElementItem.class);
                     classByDiscriminatorValue.put("answer_box", io.github.dataforseo.client.model.DataLabsAnswerBoxSerpElementItem.class);
                     classByDiscriminatorValue.put("carousel", io.github.dataforseo.client.model.DataLabsCarouselSerpElementItem.class);
                     classByDiscriminatorValue.put("multi_carousel", io.github.dataforseo.client.model.DataLabsMultiCarouselSerpElementItem.class);
-                    classByDiscriminatorValue.put("featured_snippet", io.github.dataforseo.client.model.DataLabsFeaturedSnippetSerpElementItem.class);
                     classByDiscriminatorValue.put("google_flights", io.github.dataforseo.client.model.DataLabsGoogleFlightsSerpElementItem.class);
                     classByDiscriminatorValue.put("google_reviews", io.github.dataforseo.client.model.DataLabsGoogleReviewsSerpElementItem.class);
                     classByDiscriminatorValue.put("google_posts", io.github.dataforseo.client.model.DataLabsGooglePostsSerpElementItem.class);
@@ -600,7 +600,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AiOptimizationLLmMentionsMultiTargetMetricsRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AiOptimizationLLmMentionsDomainElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AiOptimizationLLmMentionsKeywordElement.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsVisualStoriesSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsMentionCarouselSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SerpApiStopCrawlOnMatchInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.LlmMessageChainItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DemographyComparisonInfo.CustomTypeAdapterFactory());
@@ -614,7 +614,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.TimeInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.PopularWorkTimeInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AboutThisResultElement.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsPodcastsSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.CoursesSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AiModeRectangleInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.CrawlStatusInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.RelatedSearchesElement.CustomTypeAdapterFactory());
@@ -626,12 +626,12 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.PriceInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.RatingInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SocialMetricsInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsMentionCarouselSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.CoursesSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.TopDomainInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.ContentAnalysisCategoriesInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.ExploreBrandsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.FoundOnWebSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.TopDomainInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.ContentAnalysisCategoriesInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.VisualStoriesSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.PodcastsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SpellInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.TechnologiesInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AuthorsElement.CustomTypeAdapterFactory());
@@ -645,7 +645,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.BaseResponseTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SectionContentItemInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordInfoNormalizedWithInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.VisualStoriesSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.MentionCarouselSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.MonthlySearchesInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.ContentUrlInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.TableContentInfo.CustomTypeAdapterFactory());
@@ -1529,10 +1529,10 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.RankChanges.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.BacklinksInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.RankInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsPaidSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsOrganicSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.RankedSerpElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsOrganicSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsFeaturedSnippetSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveResponseInfo.CustomTypeAdapterFactory());
@@ -1547,6 +1547,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleCompetitorsDomainLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleDomainIntersectionLiveRequestInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsPaidSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleDomainIntersectionLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsLocalPackSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleDomainIntersectionLiveResultInfo.CustomTypeAdapterFactory());
@@ -1572,7 +1573,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsCarouselElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsCarouselSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsMultiCarouselSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsFeaturedSnippetSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsGoogleFlightsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsGoogleReviewsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsGooglePostsSerpElementItem.CustomTypeAdapterFactory());
@@ -1590,7 +1590,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsKnowledgeGraphSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsHotelsPackSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsMapSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.PodcastsSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.GooglePostsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsPeopleAlsoAskSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsRelatedSearchesSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsPeopleAlsoSearchSerpElementItem.CustomTypeAdapterFactory());
@@ -1624,6 +1624,11 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGooglePageIntersectionLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGooglePageIntersectionLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGooglePageIntersectionLiveResponseInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveResultInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.BulkMetricsInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.BulkMetricsBundleInfo.CustomTypeAdapterFactory());
@@ -1655,7 +1660,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsAmazonBulkSearchVolumeLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.MentionCarouselSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.CoursesElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsAmazonRelatedKeywordsLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsAmazonRelatedKeywordsLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataforseoLabsAmazonRelatedKeywordsLiveTaskInfo.CustomTypeAdapterFactory());
@@ -1885,8 +1890,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataGoogleTrendsExploreTaskGetTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataGoogleTrendsExploreTaskGetResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataGoogleTrendsExploreLiveRequestInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.GooglePostsSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.CoursesElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataGoogleTrendsExploreLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataGoogleTrendsExploreLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataGoogleTrendsExploreLiveResponseInfo.CustomTypeAdapterFactory());
@@ -3203,6 +3206,8 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixStatusResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixStatusTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixStatusResponseInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsPodcastsSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsVisualStoriesSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsFoundOnWebSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsExploreBrandsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.DataLabsCoursesSerpElementItem.CustomTypeAdapterFactory());

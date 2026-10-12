@@ -221,29 +221,6 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
-  @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
-  private List<String> fanOutQueries;
-
-  public AiOptimizationClaudeLlmResponsesTaskGetResultInfo fanOutQueries(List<String> fanOutQueries) {
-    this.fanOutQueries = fanOutQueries;
-    return this;
-  }
-
-  /**
-   * <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response
-   * @return fanOutQueries
-   */
-  @javax.annotation.Nullable
-  public List<String> getFanOutQueries() {
-    return fanOutQueries;
-  }
-
-  public void setFanOutQueries(List<String> fanOutQueries) {
-    this.fanOutQueries = fanOutQueries;
-  }
-
-
 
   public AiOptimizationClaudeLlmResponsesTaskGetResultInfo() {
   }
@@ -294,8 +271,7 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
         Objects.equals(this.webSearch, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.webSearch) &&
         Objects.equals(this.moneySpent, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.datetime) &&
-        Objects.equals(this.items, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.items) &&
-        Objects.equals(this.fanOutQueries, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.fanOutQueries);  
+        Objects.equals(this.items, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.items);  
     
   }
 
@@ -305,7 +281,7 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
+  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -328,7 +304,6 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
     sb.append("    moneySpent: ").append(toIndentedString(moneySpent)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
-    sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -367,8 +342,6 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
     openapiFields.add("datetime");
     
     openapiFields.add("items");
-    
-    openapiFields.add("fan_out_queries");
     
 
     // a set of required properties/fields (JSON key names)

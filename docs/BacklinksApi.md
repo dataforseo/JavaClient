@@ -59,8 +59,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksIdListRequestInfo model = new BacklinksIdListRequestInfo()
-           .limit(10)
-           .includeMetadata(true);
+        .limit(10)
+        .includeMetadata(true);
     BacklinksIdListResponseInfo response = apiInstance.backlinksIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -130,7 +130,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksErrorsRequestInfo model = new BacklinksErrorsRequestInfo()
-           .limit(10);
+        .limit(10);
     BacklinksErrorsResponseInfo response = apiInstance.backlinksErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -338,16 +338,15 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksSummaryLiveRequestInfo model = new BacklinksSummaryLiveRequestInfo()
-           .target("explodingtopics.com")
-           .internalListLimit(10)
-           .includeSubdomains(true)
-           .backlinksFilters(
-               List.of(
-                   "dofollow",
-                   "=",
-                   true
-                ))
-           .backlinksStatusType("all");
+        .target("explodingtopics.com")
+        .internalListLimit(10)
+        .includeSubdomains(true)
+        .backlinksFilters(List.of(
+            "dofollow",
+            "=",
+            true
+        ))
+        .backlinksStatusType("all");
     BacklinksSummaryLiveResponseInfo response = apiInstance.summaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -417,7 +416,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksHistoryLiveRequestInfo model = new BacklinksHistoryLiveRequestInfo()
-           .target("cnn.com");
+        .target("cnn.com");
     BacklinksHistoryLiveResponseInfo response = apiInstance.historyLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -487,15 +486,14 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBacklinksLiveRequestInfo model = new BacklinksBacklinksLiveRequestInfo()
-           .target("forbes.com")
-           .mode("as_is")
-           .filters(
-               List.of(
-                   "dofollow",
-                   "=",
-                   true
-                ))
-           .limit(5);
+        .target("forbes.com")
+        .mode("as_is")
+        .filters(List.of(
+            "dofollow",
+            "=",
+            true
+        ))
+        .limit(5);
     BacklinksBacklinksLiveResponseInfo response = apiInstance.backlinksLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -565,18 +563,16 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksAnchorsLiveRequestInfo model = new BacklinksAnchorsLiveRequestInfo()
-           .target("forbes.com")
-           .limit(4)
-           .orderBy(
-               List.of(
-                   "backlinks,desc"
-                ))
-           .filters(
-               List.of(
-                   "anchor",
-                   "like",
-                   "%news%"
-                ));
+        .target("forbes.com")
+        .limit(4)
+        .orderBy(List.of(
+            "backlinks,desc"
+        ))
+        .filters(List.of(
+            "anchor",
+            "like",
+            "%news%"
+        ));
     BacklinksAnchorsLiveResponseInfo response = apiInstance.anchorsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -646,14 +642,21 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksDomainPagesLiveRequestInfo model = new BacklinksDomainPagesLiveRequestInfo()
-           .target("forbes.com")
-           .limit(5)
-           .filters(
-               List.of(
-                   ,
-                   "and",
-               
-                ));
+        .target("forbes.com")
+        .limit(5)
+        .filters(List.of(
+            List.of(
+                "page_summary.backlinks",
+                ">",
+                5
+            ),
+            "and",
+            List.of(
+                "page",
+                "like",
+                "%sites%"
+            )
+        ));
     BacklinksDomainPagesLiveResponseInfo response = apiInstance.domainPagesLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -723,12 +726,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksDomainPagesSummaryLiveRequestInfo model = new BacklinksDomainPagesSummaryLiveRequestInfo()
-           .target("forbes.com")
-           .limit(4)
-           .orderBy(
-               List.of(
-                   "backlinks,desc"
-                ));
+        .target("forbes.com")
+        .limit(4)
+        .orderBy(List.of(
+            "backlinks,desc"
+        ));
     BacklinksDomainPagesSummaryLiveResponseInfo response = apiInstance.domainPagesSummaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -798,25 +800,22 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksReferringDomainsLiveRequestInfo model = new BacklinksReferringDomainsLiveRequestInfo()
-           .target("backlinko.com")
-           .limit(5)
-           .orderBy(
-               List.of(
-                   "rank,desc"
-                ))
-           .excludeInternalBacklinks(true)
-           .backlinksFilters(
-               List.of(
-                   "dofollow",
-                   "=",
-                   true
-                ))
-           .filters(
-               List.of(
-                   "backlinks",
-                   ">",
-                   100
-                ));
+        .target("backlinko.com")
+        .limit(5)
+        .orderBy(List.of(
+            "rank,desc"
+        ))
+        .excludeInternalBacklinks(true)
+        .backlinksFilters(List.of(
+            "dofollow",
+            "=",
+            true
+        ))
+        .filters(List.of(
+            "backlinks",
+            ">",
+            100
+        ));
     BacklinksReferringDomainsLiveResponseInfo response = apiInstance.referringDomainsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -886,26 +885,23 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksReferringNetworksLiveRequestInfo model = new BacklinksReferringNetworksLiveRequestInfo()
-           .target("backlinko.com")
-           .networkAddressType("subnet")
-           .limit(5)
-           .orderBy(
-               List.of(
-                   "rank,desc"
-                ))
-           .excludeInternalBacklinks(true)
-           .backlinksFilters(
-               List.of(
-                   "dofollow",
-                   "=",
-                   true
-                ))
-           .filters(
-               List.of(
-                   "backlinks",
-                   ">",
-                   100
-                ));
+        .target("backlinko.com")
+        .networkAddressType("subnet")
+        .limit(5)
+        .orderBy(List.of(
+            "rank,desc"
+        ))
+        .excludeInternalBacklinks(true)
+        .backlinksFilters(List.of(
+            "dofollow",
+            "=",
+            true
+        ))
+        .filters(List.of(
+            "backlinks",
+            ">",
+            100
+        ));
     BacklinksReferringNetworksLiveResponseInfo response = apiInstance.referringNetworksLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -975,18 +971,16 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksCompetitorsLiveRequestInfo model = new BacklinksCompetitorsLiveRequestInfo()
-           .target("dataforseo.com")
-           .filters(
-               List.of(
-                   "rank",
-                   ">",
-                   100
-                ))
-           .orderBy(
-               List.of(
-                   "rank,desc"
-                ))
-           .limit(5);
+        .target("dataforseo.com")
+        .filters(List.of(
+            "rank",
+            ">",
+            100
+        ))
+        .orderBy(List.of(
+            "rank,desc"
+        ))
+        .limit(5);
     BacklinksCompetitorsLiveResponseInfo response = apiInstance.competitorsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1056,20 +1050,19 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksDomainIntersectionLiveRequestInfo model = new BacklinksDomainIntersectionLiveRequestInfo()
-       .targets(
-           Map.ofEntries(
-               ))
-           .includeSubdomains(false)
-           .excludeTargets(
-               List.of(
-                   "semrush.com"
-                ))
-           .limit(5)
-           .orderBy(
-               List.of(
-                   "1.backlinks,desc"
-                ))
-           .excludeInternalBacklinks(true);
+        .targets(Map.ofEntries(
+            Map.entry("1", "moz.com"),
+            Map.entry("2", "ahrefs.com")
+        ))
+        .includeSubdomains(false)
+        .excludeTargets(List.of(
+            "semrush.com"
+        ))
+        .limit(5)
+        .orderBy(List.of(
+            "1.backlinks,desc"
+        ))
+        .excludeInternalBacklinks(true);
     BacklinksDomainIntersectionLiveResponseInfo response = apiInstance.domainIntersectionLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1139,24 +1132,30 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksPageIntersectionLiveRequestInfo model = new BacklinksPageIntersectionLiveRequestInfo()
-       .targets(
-           Map.ofEntries(
-               ))
-           .excludeTargets(
-               List.of(
-                   "skysports.com"
-                ))
-           .limit(5)
-           .orderBy(
-               List.of(
-                   "1.rank,desc"
-                ))
-           .filters(
-               List.of(
-                   ,
-                   "and",
-               
-                ));
+        .targets(Map.ofEntries(
+            Map.entry("1", "football.com"),
+            Map.entry("2", "fifa.com")
+        ))
+        .excludeTargets(List.of(
+            "skysports.com"
+        ))
+        .limit(5)
+        .orderBy(List.of(
+            "1.rank,desc"
+        ))
+        .filters(List.of(
+            List.of(
+                "2.domain_from_rank",
+                ">",
+                400
+            ),
+            "and",
+            List.of(
+                "1.dofollow",
+                "=",
+                true
+            )
+        ));
     BacklinksPageIntersectionLiveResponseInfo response = apiInstance.pageIntersectionLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1226,8 +1225,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksTimeseriesSummaryLiveRequestInfo model = new BacklinksTimeseriesSummaryLiveRequestInfo()
-           .target("dataforseo.com")
-           .groupRange("month");
+        .target("dataforseo.com")
+        .groupRange("month");
     BacklinksTimeseriesSummaryLiveResponseInfo response = apiInstance.timeseriesSummaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1297,8 +1296,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksTimeseriesNewLostSummaryLiveRequestInfo model = new BacklinksTimeseriesNewLostSummaryLiveRequestInfo()
-           .target("dataforseo.com")
-           .groupRange("month");
+        .target("dataforseo.com")
+        .groupRange("month");
     BacklinksTimeseriesNewLostSummaryLiveResponseInfo response = apiInstance.timeseriesNewLostSummaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1368,19 +1367,18 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkRanksLiveRequestInfo model = new BacklinksBulkRanksLiveRequestInfo()
-           .targets(
-               List.of(
-                   "forbes.com",
-                   "cnn.com",
-                   "bbc.com",
-                   "yelp.com",
-                   "https://www.apple.com/iphone/",
-                   "https://ahrefs.com/blog/",
-                   "ibm.com",
-                   "https://variety.com/",
-                   "https://stackoverflow.com/",
-                   "www.trustpilot.com"
-                ));
+        .targets(List.of(
+            "forbes.com",
+            "cnn.com",
+            "bbc.com",
+            "yelp.com",
+            "https://www.apple.com/iphone/",
+            "https://ahrefs.com/blog/",
+            "ibm.com",
+            "https://variety.com/",
+            "https://stackoverflow.com/",
+            "www.trustpilot.com"
+        ));
     BacklinksBulkRanksLiveResponseInfo response = apiInstance.bulkRanksLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1450,19 +1448,18 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkBacklinksLiveRequestInfo model = new BacklinksBulkBacklinksLiveRequestInfo()
-           .targets(
-               List.of(
-                   "forbes.com",
-                   "cnn.com",
-                   "bbc.com",
-                   "yelp.com",
-                   "https://www.apple.com/iphone/",
-                   "https://ahrefs.com/blog/",
-                   "ibm.com",
-                   "https://variety.com/",
-                   "https://stackoverflow.com/",
-                   "www.trustpilot.com"
-                ));
+        .targets(List.of(
+            "forbes.com",
+            "cnn.com",
+            "bbc.com",
+            "yelp.com",
+            "https://www.apple.com/iphone/",
+            "https://ahrefs.com/blog/",
+            "ibm.com",
+            "https://variety.com/",
+            "https://stackoverflow.com/",
+            "www.trustpilot.com"
+        ));
     BacklinksBulkBacklinksLiveResponseInfo response = apiInstance.bulkBacklinksLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1532,19 +1529,18 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkSpamScoreLiveRequestInfo model = new BacklinksBulkSpamScoreLiveRequestInfo()
-           .targets(
-               List.of(
-                   "forbes.com",
-                   "cnn.com",
-                   "bbc.com",
-                   "yelp.com",
-                   "https://www.apple.com/iphone/",
-                   "https://ahrefs.com/blog/",
-                   "ibm.com",
-                   "https://variety.com/",
-                   "https://stackoverflow.com/",
-                   "www.trustpilot.com"
-                ));
+        .targets(List.of(
+            "forbes.com",
+            "cnn.com",
+            "bbc.com",
+            "yelp.com",
+            "https://www.apple.com/iphone/",
+            "https://ahrefs.com/blog/",
+            "ibm.com",
+            "https://variety.com/",
+            "https://stackoverflow.com/",
+            "www.trustpilot.com"
+        ));
     BacklinksBulkSpamScoreLiveResponseInfo response = apiInstance.bulkSpamScoreLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1614,19 +1610,18 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkReferringDomainsLiveRequestInfo model = new BacklinksBulkReferringDomainsLiveRequestInfo()
-           .targets(
-               List.of(
-                   "forbes.com",
-                   "cnn.com",
-                   "bbc.com",
-                   "yelp.com",
-                   "https://www.apple.com/iphone/",
-                   "https://ahrefs.com/blog/",
-                   "ibm.com",
-                   "https://variety.com/",
-                   "https://stackoverflow.com/",
-                   "www.trustpilot.com"
-                ));
+        .targets(List.of(
+            "forbes.com",
+            "cnn.com",
+            "bbc.com",
+            "yelp.com",
+            "https://www.apple.com/iphone/",
+            "https://ahrefs.com/blog/",
+            "ibm.com",
+            "https://variety.com/",
+            "https://stackoverflow.com/",
+            "www.trustpilot.com"
+        ));
     BacklinksBulkReferringDomainsLiveResponseInfo response = apiInstance.bulkReferringDomainsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1696,19 +1691,18 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkNewLostBacklinksLiveRequestInfo model = new BacklinksBulkNewLostBacklinksLiveRequestInfo()
-           .targets(
-               List.of(
-                   "forbes.com",
-                   "cnn.com",
-                   "bbc.com",
-                   "yelp.com",
-                   "https://www.apple.com/iphone/",
-                   "https://ahrefs.com/blog/",
-                   "ibm.com",
-                   "https://variety.com/",
-                   "https://stackoverflow.com/",
-                   "www.trustpilot.com"
-                ));
+        .targets(List.of(
+            "forbes.com",
+            "cnn.com",
+            "bbc.com",
+            "yelp.com",
+            "https://www.apple.com/iphone/",
+            "https://ahrefs.com/blog/",
+            "ibm.com",
+            "https://variety.com/",
+            "https://stackoverflow.com/",
+            "www.trustpilot.com"
+        ));
     BacklinksBulkNewLostBacklinksLiveResponseInfo response = apiInstance.bulkNewLostBacklinksLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1778,19 +1772,18 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkNewLostReferringDomainsLiveRequestInfo model = new BacklinksBulkNewLostReferringDomainsLiveRequestInfo()
-           .targets(
-               List.of(
-                   "forbes.com",
-                   "cnn.com",
-                   "bbc.com",
-                   "yelp.com",
-                   "https://www.apple.com/iphone/",
-                   "https://ahrefs.com/blog/",
-                   "ibm.com",
-                   "https://variety.com/",
-                   "https://stackoverflow.com/",
-                   "www.trustpilot.com"
-                ));
+        .targets(List.of(
+            "forbes.com",
+            "cnn.com",
+            "bbc.com",
+            "yelp.com",
+            "https://www.apple.com/iphone/",
+            "https://ahrefs.com/blog/",
+            "ibm.com",
+            "https://variety.com/",
+            "https://stackoverflow.com/",
+            "www.trustpilot.com"
+        ));
     BacklinksBulkNewLostReferringDomainsLiveResponseInfo response = apiInstance.bulkNewLostReferringDomainsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1860,11 +1853,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksBulkPagesSummaryLiveRequestInfo model = new BacklinksBulkPagesSummaryLiveRequestInfo()
-           .targets(
-               List.of(
-                   "https://dataforseo.com/solutions",
-                   "https://dataforseo.com/about-us"
-                ));
+        .targets(List.of(
+            "https://dataforseo.com/solutions",
+            "https://dataforseo.com/about-us"
+        ));
     BacklinksBulkPagesSummaryLiveResponseInfo response = apiInstance.bulkPagesSummaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

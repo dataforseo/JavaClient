@@ -231,7 +231,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERPn
+   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isImage
    */
   @javax.annotation.Nullable

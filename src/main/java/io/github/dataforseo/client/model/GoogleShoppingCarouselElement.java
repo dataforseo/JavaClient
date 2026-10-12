@@ -152,6 +152,29 @@ public class GoogleShoppingCarouselElement  {
   }
 
 
+  public static final String SERIALIZED_NAME_SNIPPET = "snippet";
+  @SerializedName(SERIALIZED_NAME_SNIPPET)
+  private String snippet;
+
+  public GoogleShoppingCarouselElement snippet(String snippet) {
+    this.snippet = snippet;
+    return this;
+  }
+
+  /**
+   * <em>additional information about the result</em>
+   * @return snippet
+   */
+  @javax.annotation.Nullable
+  public String getSnippet() {
+    return snippet;
+  }
+
+  public void setSnippet(String snippet) {
+    this.snippet = snippet;
+  }
+
+
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
   private Double price;
@@ -430,6 +453,7 @@ public class GoogleShoppingCarouselElement  {
         Objects.equals(this.title, googleShoppingCarouselElement.title) &&
         Objects.equals(this.tags, googleShoppingCarouselElement.tags) &&
         Objects.equals(this.seller, googleShoppingCarouselElement.seller) &&
+        Objects.equals(this.snippet, googleShoppingCarouselElement.snippet) &&
         Objects.equals(this.price, googleShoppingCarouselElement.price) &&
         Objects.equals(this.currency, googleShoppingCarouselElement.currency) &&
         Objects.equals(this.productRating, googleShoppingCarouselElement.productRating) &&
@@ -449,7 +473,7 @@ public class GoogleShoppingCarouselElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, xpath, title, tags, seller, price, currency, productRating, productImages, shoppingUrl, productId, dataDocid, gid, deliveryInfo, specialOfferInfo);
+  return Objects.hash(type, xpath, title, tags, seller, snippet, price, currency, productRating, productImages, shoppingUrl, productId, dataDocid, gid, deliveryInfo, specialOfferInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -469,6 +493,7 @@ public class GoogleShoppingCarouselElement  {
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("    seller: ").append(toIndentedString(seller)).append("\n");
+    sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    productRating: ").append(toIndentedString(productRating)).append("\n");
@@ -511,6 +536,8 @@ public class GoogleShoppingCarouselElement  {
     openapiFields.add("tags");
     
     openapiFields.add("seller");
+    
+    openapiFields.add("snippet");
     
     openapiFields.add("price");
     

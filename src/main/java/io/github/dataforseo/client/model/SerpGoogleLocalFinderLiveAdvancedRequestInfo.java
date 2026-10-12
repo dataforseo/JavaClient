@@ -290,52 +290,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_MIN_RATING = "min_rating";
-  @SerializedName(SERIALIZED_NAME_MIN_RATING)
-  private Double minRating;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo minRating(Double minRating) {
-    this.minRating = minRating;
-    return this;
-  }
-
-  /**
-   * <p><em>filter results by minimum rating</em><p>optional field<p>possible values for <code>desktop</code>: <code>3.5</code>, <code>4</code>, <code>4.5</code>;<p>possible values for <code>mobile</code>: <code>2</code>, <code>2.5</code>, <code>3</code>, <code>3.5</code>, <code>4</code>, <code>4.5</code></p>
-   * @return minRating
-   */
-  @javax.annotation.Nullable
-  public Double getMinRating() {
-    return minRating;
-  }
-
-  public void setMinRating(Double minRating) {
-    this.minRating = minRating;
-  }
-
-
-  public static final String SERIALIZED_NAME_TIME_FILTER = "time_filter";
-  @SerializedName(SERIALIZED_NAME_TIME_FILTER)
-  private String timeFilter;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo timeFilter(String timeFilter) {
-    this.timeFilter = timeFilter;
-    return this;
-  }
-
-  /**
-   * <p><em>filter results by open hours</em><p>optional field<p>using this field, you can filter places in the results by the time a place is open for visitors<p>note that Google may also provide results that do not match this filter<p>possible values: <code>'open_now'</code>, <code>'24_hours'</code>, <code>'$day_value'</code>, <code>'$day_value;$time_value'</code>;<p>instead of <code>$day_value</code> use one of these values: <code>'monday'</code>, <code>'tuesday'</code>, <code>'wednesday'</code>, <code>'thursday'</code>, <code>'friday'</code>, <code>'saturday'</code>, <code>'sunday'</code>;<p>instead of <code>$time_value</code> use one of these values: <code>'00'</code>, <code>'01'</code>, <code>'02'</code>, <code>'03'</code>, <code>'04'</code>, <code>'05'</code>, <code>'06'</code>, <code>'07'</code>, <code>'08'</code>, <code>'09'</code>, <code>'10'</code>, <code>'11'</code>, <code>'12'</code>, <code>'13'</code>, <code>'14'</code>, <code>'15'</code>, <code>'16'</code>, <code>'17'</code>, <code>'18'</code>, <code>'19'</code>, <code>'20'</code>, <code>'21'</code>, <code>'22'</code>, <code>'23'</code><p>example: <code class='long-string'>'tuesday;18'</code></p>
-   * @return timeFilter
-   */
-  @javax.annotation.Nullable
-  public String getTimeFilter() {
-    return timeFilter;
-  }
-
-  public void setTimeFilter(String timeFilter) {
-    this.timeFilter = timeFilter;
-  }
-
-
 
   public SerpGoogleLocalFinderLiveAdvancedRequestInfo() {
   }
@@ -389,9 +343,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
         Objects.equals(this.os, serpGoogleLocalFinderLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.tag, serpGoogleLocalFinderLiveAdvancedRequestInfo.tag) &&
         Objects.equals(this.priority, serpGoogleLocalFinderLiveAdvancedRequestInfo.priority) &&
-        Objects.equals(this.locationCoordinate, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCoordinate) &&
-        Objects.equals(this.minRating, serpGoogleLocalFinderLiveAdvancedRequestInfo.minRating) &&
-        Objects.equals(this.timeFilter, serpGoogleLocalFinderLiveAdvancedRequestInfo.timeFilter);  
+        Objects.equals(this.locationCoordinate, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCoordinate);  
     
   }
 
@@ -401,7 +353,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, priority, locationCoordinate, minRating, timeFilter);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, priority, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -427,8 +379,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    minRating: ").append(toIndentedString(minRating)).append("\n");
-    sb.append("    timeFilter: ").append(toIndentedString(timeFilter)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -473,10 +423,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     openapiFields.add("priority");
     
     openapiFields.add("location_coordinate");
-    
-    openapiFields.add("min_rating");
-    
-    openapiFields.add("time_filter");
     
 
     // a set of required properties/fields (JSON key names)

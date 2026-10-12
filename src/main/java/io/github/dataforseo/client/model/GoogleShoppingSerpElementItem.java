@@ -336,6 +336,29 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
 
+  public static final String SERIALIZED_NAME_SNIPPET = "snippet";
+  @SerializedName(SERIALIZED_NAME_SNIPPET)
+  private String snippet;
+
+  public GoogleShoppingSerpElementItem snippet(String snippet) {
+    this.snippet = snippet;
+    return this;
+  }
+
+  /**
+   * <em>additional information about the result</em>
+   * @return snippet
+   */
+  @javax.annotation.Nullable
+  public String getSnippet() {
+    return snippet;
+  }
+
+  public void setSnippet(String snippet) {
+    this.snippet = snippet;
+  }
+
+
   public static final String SERIALIZED_NAME_ADDITIONAL_SPECIFICATIONS = "additional_specifications";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_SPECIFICATIONS)
   private Map<String, String> additionalSpecifications;
@@ -622,6 +645,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
         Objects.equals(this.productId, googleShoppingSerpElementItem.productId) &&
         Objects.equals(this.dataDocid, googleShoppingSerpElementItem.dataDocid) &&
         Objects.equals(this.seller, googleShoppingSerpElementItem.seller) &&
+        Objects.equals(this.snippet, googleShoppingSerpElementItem.snippet) &&
         Objects.equals(this.additionalSpecifications, googleShoppingSerpElementItem.additionalSpecifications) &&
         Objects.equals(this.reviewsCount, googleShoppingSerpElementItem.reviewsCount) &&
         Objects.equals(this.isBestMatch, googleShoppingSerpElementItem.isBestMatch) &&
@@ -642,7 +666,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, title, description, url, shoppingUrl, tags, price, priceMultiplier, oldPrice, currency, productId, dataDocid, seller, additionalSpecifications, reviewsCount, isBestMatch, productRating, shopRating, productImages, shopAdAclk, gid, deliveryInfo, storesCountInfo);
+  return Objects.hash(domain, title, description, url, shoppingUrl, tags, price, priceMultiplier, oldPrice, currency, productId, dataDocid, seller, snippet, additionalSpecifications, reviewsCount, isBestMatch, productRating, shopRating, productImages, shopAdAclk, gid, deliveryInfo, storesCountInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -670,6 +694,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
     sb.append("    seller: ").append(toIndentedString(seller)).append("\n");
+    sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
     sb.append("    additionalSpecifications: ").append(toIndentedString(additionalSpecifications)).append("\n");
     sb.append("    reviewsCount: ").append(toIndentedString(reviewsCount)).append("\n");
     sb.append("    isBestMatch: ").append(toIndentedString(isBestMatch)).append("\n");
@@ -733,6 +758,8 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
     openapiFields.add("data_docid");
     
     openapiFields.add("seller");
+    
+    openapiFields.add("snippet");
     
     openapiFields.add("additional_specifications");
     
