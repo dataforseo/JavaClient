@@ -162,7 +162,7 @@ public class AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languages</code><br>example:<code class='long-string'>en</code>n
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languages</code><br>example:<code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable

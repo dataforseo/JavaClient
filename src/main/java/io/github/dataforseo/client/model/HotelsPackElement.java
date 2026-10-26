@@ -244,6 +244,52 @@ public class HotelsPackElement  {
   }
 
 
+  public static final String SERIALIZED_NAME_GROUP_TITLE = "group_title";
+  @SerializedName(SERIALIZED_NAME_GROUP_TITLE)
+  private String groupTitle;
+
+  public HotelsPackElement groupTitle(String groupTitle) {
+    this.groupTitle = groupTitle;
+    return this;
+  }
+
+  /**
+   * <em>title of the hotel listing's group</em>
+   * @return groupTitle
+   */
+  @javax.annotation.Nullable
+  public String getGroupTitle() {
+    return groupTitle;
+  }
+
+  public void setGroupTitle(String groupTitle) {
+    this.groupTitle = groupTitle;
+  }
+
+
+  public static final String SERIALIZED_NAME_GROUP_SOURCE = "group_source";
+  @SerializedName(SERIALIZED_NAME_GROUP_SOURCE)
+  private String groupSource;
+
+  public HotelsPackElement groupSource(String groupSource) {
+    this.groupSource = groupSource;
+    return this;
+  }
+
+  /**
+   * <em>domain or brand name of the hotel listing's group</em>
+   * @return groupSource
+   */
+  @javax.annotation.Nullable
+  public String getGroupSource() {
+    return groupSource;
+  }
+
+  public void setGroupSource(String groupSource) {
+    this.groupSource = groupSource;
+  }
+
+
 
   public HotelsPackElement() {
   }
@@ -295,7 +341,9 @@ public class HotelsPackElement  {
         Objects.equals(this.domain, hotelsPackElement.domain) &&
         Objects.equals(this.url, hotelsPackElement.url) &&
         Objects.equals(this.isPaid, hotelsPackElement.isPaid) &&
-        Objects.equals(this.rating, hotelsPackElement.rating);  
+        Objects.equals(this.rating, hotelsPackElement.rating) &&
+        Objects.equals(this.groupTitle, hotelsPackElement.groupTitle) &&
+        Objects.equals(this.groupSource, hotelsPackElement.groupSource);  
     
   }
 
@@ -305,7 +353,7 @@ public class HotelsPackElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, price, title, description, hotelIdentifier, domain, url, isPaid, rating);
+  return Objects.hash(type, price, title, description, hotelIdentifier, domain, url, isPaid, rating, groupTitle, groupSource);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -329,6 +377,8 @@ public class HotelsPackElement  {
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    isPaid: ").append(toIndentedString(isPaid)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
+    sb.append("    groupTitle: ").append(toIndentedString(groupTitle)).append("\n");
+    sb.append("    groupSource: ").append(toIndentedString(groupSource)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -369,6 +419,10 @@ public class HotelsPackElement  {
     openapiFields.add("is_paid");
     
     openapiFields.add("rating");
+    
+    openapiFields.add("group_title");
+    
+    openapiFields.add("group_source");
     
 
     // a set of required properties/fields (JSON key names)

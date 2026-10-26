@@ -70,7 +70,7 @@ public class BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
+   * <em>group rank in Gemini result</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
+   * <em>absolute rank in a Gemini result</em><br>absolute position among all the elements in a Gemini result
    * @return rankAbsolute
    */
   @javax.annotation.Nullable

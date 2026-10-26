@@ -198,6 +198,52 @@ public class PopularProductsElement  {
   }
 
 
+  public static final String SERIALIZED_NAME_GROUP_TITLE = "group_title";
+  @SerializedName(SERIALIZED_NAME_GROUP_TITLE)
+  private String groupTitle;
+
+  public PopularProductsElement groupTitle(String groupTitle) {
+    this.groupTitle = groupTitle;
+    return this;
+  }
+
+  /**
+   * <em>title of the hotel listing's group</em>
+   * @return groupTitle
+   */
+  @javax.annotation.Nullable
+  public String getGroupTitle() {
+    return groupTitle;
+  }
+
+  public void setGroupTitle(String groupTitle) {
+    this.groupTitle = groupTitle;
+  }
+
+
+  public static final String SERIALIZED_NAME_GROUP_SOURCE = "group_source";
+  @SerializedName(SERIALIZED_NAME_GROUP_SOURCE)
+  private String groupSource;
+
+  public PopularProductsElement groupSource(String groupSource) {
+    this.groupSource = groupSource;
+    return this;
+  }
+
+  /**
+   * <em>domain or brand name of the hotel listing's group</em>
+   * @return groupSource
+   */
+  @javax.annotation.Nullable
+  public String getGroupSource() {
+    return groupSource;
+  }
+
+  public void setGroupSource(String groupSource) {
+    this.groupSource = groupSource;
+  }
+
+
   public static final String SERIALIZED_NAME_IMAGE_URL = "image_url";
   @SerializedName(SERIALIZED_NAME_IMAGE_URL)
   private String imageUrl;
@@ -340,6 +386,8 @@ public class PopularProductsElement  {
         Objects.equals(this.description, popularProductsElement.description) &&
         Objects.equals(this.moreSellers, popularProductsElement.moreSellers) &&
         Objects.equals(this.seller, popularProductsElement.seller) &&
+        Objects.equals(this.groupTitle, popularProductsElement.groupTitle) &&
+        Objects.equals(this.groupSource, popularProductsElement.groupSource) &&
         Objects.equals(this.imageUrl, popularProductsElement.imageUrl) &&
         Objects.equals(this.price, popularProductsElement.price) &&
         Objects.equals(this.rating, popularProductsElement.rating) &&
@@ -353,7 +401,7 @@ public class PopularProductsElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, url, domain, description, moreSellers, seller, imageUrl, price, rating, productIdentifiers);
+  return Objects.hash(type, title, url, domain, description, moreSellers, seller, groupTitle, groupSource, imageUrl, price, rating, productIdentifiers);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -375,6 +423,8 @@ public class PopularProductsElement  {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    moreSellers: ").append(toIndentedString(moreSellers)).append("\n");
     sb.append("    seller: ").append(toIndentedString(seller)).append("\n");
+    sb.append("    groupTitle: ").append(toIndentedString(groupTitle)).append("\n");
+    sb.append("    groupSource: ").append(toIndentedString(groupSource)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
@@ -415,6 +465,10 @@ public class PopularProductsElement  {
     openapiFields.add("more_sellers");
     
     openapiFields.add("seller");
+    
+    openapiFields.add("group_title");
+    
+    openapiFields.add("group_source");
     
     openapiFields.add("image_url");
     

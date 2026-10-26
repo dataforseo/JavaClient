@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

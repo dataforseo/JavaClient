@@ -47,11 +47,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * ID of the video
-* required field
-* you can find video ID in the URL or 'youtube_video' item of YouTube Organic result
-* example:
-* Y8Wu4rSNJms
+   * <p><em>ID of the video</em><p><strong>required field</strong><p>you can find video ID in the URL or 'youtube_video' item of <a href='/v3/serp/youtube/organic/live/advanced/' target='_blank' rel='noopener noreferrer'>YouTube Organic</a> result<p>example:<p><code>Y8Wu4rSNJms</code></p>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -74,12 +70,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name
-* if you use this field, you don't need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code><p><strong>if you use this field, you don't need to specify <code>location_name</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -102,12 +93,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
+   * <p><em>search engine language code</em><p><strong>required field if you don't specify</strong> <code>language_name</code><p><strong>if you use this field, you don't need to specify <code>language_name</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -130,13 +116,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a href='https://dataforseo.com/pricing/serp/youtube-serp-api' target='_blank'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -159,9 +139,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* only value: desktop
+   * <p><em>device type</em><p>optional field<p>only value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -184,16 +162,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>notification URL of a completed task</em><p>optional field<p>when a task is completed we will notify you by GET request sent to the URL you have specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/pingscript?id=$id</code><p><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -216,16 +185,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>return URL for sending task results</em><p>optional field<p>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/postbackscript?id=$id</code><p><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -248,11 +208,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible value:
-* advanced
+   * <p><em>postback_url datatype</em><p><strong>required field if you specify <code>postback_url</code></strong><p>corresponds to the datatype that will be sent to your server<p>possible value:<p><code>advanced</code></p>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -275,12 +231,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code
-* if you use this field, you don't need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_code</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>United States</code></p>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -303,12 +254,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
+   * <p><em>full name of search engine language</em><p><strong>required field if you don't specify</strong> <code>language_code</code><p><strong>if you use this field, you don't need to specify <code>language_code</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><p>example:<p><code class='long-string'>English</code></p>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -331,10 +277,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* choose from the following values: windows, macos
-* default value: windows
+   * <p><em>device operating system</em><p>optional field<p>choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p>
    * @return os
    */
   @javax.annotation.Nullable
@@ -357,11 +300,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -384,8 +323,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * language code of original text
-* you can get the language code from YouTube Video Info result
+   * <p><em>language code of original text</em><p>you can get the language code from <a href='https://docs.dataforseo.com/v3/serp/youtube/video_info/live/advanced/' target='_blank' rel='noopener noreferrer'>YouTube Video Info</a> result</p>
    * @return subtitlesLanguage
    */
   @javax.annotation.Nullable
@@ -408,9 +346,7 @@ public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo  {
   }
 
   /**
-   * language code of translated text
-* possible values:
-* 'az', 'ay', 'ak', 'sq', 'am', 'en', 'ar', 'hy', 'as', 'af', 'eu', 'be', 'bn', 'my', 'bg', 'bs', 'bho', 'cy', 'hu', 'vi', 'haw', 'ht', 'gl', 'lg', 'el', 'ka', 'gn', 'gu', 'gd', 'da', 'fy', 'zu', 'iw', 'ig', 'yi', 'id', 'ga', 'is', 'es', 'it', 'yo', 'kk', 'kn', 'ca', 'qu', 'rw', 'ky', 'zh-Hant', 'zh-Hans', 'ko', 'co', 'xh', 'ku', 'km', 'lo', 'la', 'lv', 'ln', 'lt', 'lb', 'mk', 'mg', 'ms', 'ml', 'dv', 'mt', 'mi', 'mr', 'mn', 'und', 'de', 'ne', 'nl', 'no', 'ny', 'or', 'om', 'pa', 'fa', 'pl', 'pt', 'ps', 'ro', 'ru', 'sm', 'sa', 'ceb', 'nso', 'sr', 'si', 'sd', 'sk', 'sl', 'so', 'sw', 'su', 'tg', 'th', 'ta', 'tt', 'te', 'ti', 'ts', 'tr', 'tk', 'uz', 'ug', 'uk', 'ur', 'fil', 'fi', 'fr', 'ha', 'hi', 'hmn', 'hr', 'cs', 'sv', 'sn', 'ee', 'eo', 'et', 'st', 'jv', 'ja', 'kri'
+   * <p><em>language code of translated text</em><p>possible values:<p><code>'az'</code>, <code>'ay'</code>, <code>'ak'</code>, <code>'sq'</code>, <code>'am'</code>, <code>'en'</code>, <code>'ar'</code>, <code>'hy'</code>, <code>'as'</code>, <code>'af'</code>, <code>'eu'</code>, <code>'be'</code>, <code>'bn'</code>, <code>'my'</code>, <code>'bg'</code>, <code>'bs'</code>, <code>'bho'</code>, <code>'cy'</code>, <code>'hu'</code>, <code>'vi'</code>, <code>'haw'</code>, <code>'ht'</code>, <code>'gl'</code>, <code>'lg'</code>, <code>'el'</code>, <code>'ka'</code>, <code>'gn'</code>, <code>'gu'</code>, <code>'gd'</code>, <code>'da'</code>, <code>'fy'</code>, <code>'zu'</code>, <code>'iw'</code>, <code>'ig'</code>, <code>'yi'</code>, <code>'id'</code>, <code>'ga'</code>, <code>'is'</code>, <code>'es'</code>, <code>'it'</code>, <code>'yo'</code>, <code>'kk'</code>, <code>'kn'</code>, <code>'ca'</code>, <code>'qu'</code>, <code>'rw'</code>, <code>'ky'</code>, <code>'zh-Hant'</code>, <code>'zh-Hans'</code>, <code>'ko'</code>, <code>'co'</code>, <code>'xh'</code>, <code>'ku'</code>, <code>'km'</code>, <code>'lo'</code>, <code>'la'</code>, <code>'lv'</code>, <code>'ln'</code>, <code>'lt'</code>, <code>'lb'</code>, <code>'mk'</code>, <code>'mg'</code>, <code>'ms'</code>, <code>'ml'</code>, <code>'dv'</code>, <code>'mt'</code>, <code>'mi'</code>, <code>'mr'</code>, <code>'mn'</code>, <code>'und'</code>, <code>'de'</code>, <code>'ne'</code>, <code>'nl'</code>, <code>'no'</code>, <code>'ny'</code>, <code>'or'</code>, <code>'om'</code>, <code>'pa'</code>, <code>'fa'</code>, <code>'pl'</code>, <code>'pt'</code>, <code>'ps'</code>, <code>'ro'</code>, <code>'ru'</code>, <code>'sm'</code>, <code>'sa'</code>, <code>'ceb'</code>, <code>'nso'</code>, <code>'sr'</code>, <code>'si'</code>, <code>'sd'</code>, <code>'sk'</code>, <code>'sl'</code>, <code>'so'</code>, <code>'sw'</code>, <code>'su'</code>, <code>'tg'</code>, <code>'th'</code>, <code>'ta'</code>, <code>'tt'</code>, <code>'te'</code>, <code>'ti'</code>, <code>'ts'</code>, <code>'tr'</code>, <code>'tk'</code>, <code>'uz'</code>, <code>'ug'</code>, <code>'uk'</code>, <code>'ur'</code>, <code>'fil'</code>, <code>'fi'</code>, <code>'fr'</code>, <code>'ha'</code>, <code>'hi'</code>, <code>'hmn'</code>, <code>'hr'</code>, <code>'cs'</code>, <code>'sv'</code>, <code>'sn'</code>, <code>'ee'</code>, <code>'eo'</code>, <code>'et'</code>, <code>'st'</code>, <code>'jv'</code>, <code>'ja'</code>, <code>'kri'</code></p>
    * @return subtitlesTranslateLanguage
    */
   @javax.annotation.Nullable

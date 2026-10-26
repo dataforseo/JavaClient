@@ -116,7 +116,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine language</em><br><strong>required field if you don't specify <code>language_code</code>;</strong><br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code>
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify <code>language_code</code>;</strong><br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>search engine language code</em><br><strong>required field if you don't specify <code>language_name</code>;</strong><br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code>
+   * <em>search engine language code</em><br><strong>required field if you don't specify <code>language_name</code>;</strong><br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable

@@ -12,5 +12,5 @@
 **domain** | **String** | <em>source domain</em> |[optional]|
 **url** | **String** | <em>relevant URL</em> |[optional]|
 **timestamp** | **String** | <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
-**relatedSearches** | **List<String>** |  |[optional]|
+**relatedSearches** | **List<String>** | <a name='related_searches'></a>((‘related_searches’ element in SERP|https://dataforseo.com/wp-content/uploads/2020/02/window-feature-related-searches.png)) |[optional]|
 **aboutThisResult** | **AboutThisResultElement** | <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> this object is deprecated and always returns <code>null</null> |[optional]|

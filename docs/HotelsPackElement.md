@@ -14,3 +14,5 @@
 **url** | **String** | <em>source URL</em> |[optional]|
 **isPaid** | **Boolean** | <em>indicates whether the element is an ad</em> |[optional]|
 **rating** | **RatingInfo** | <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code> |[optional]|
+**groupTitle** | **String** | <em>title of the hotel listing's group</em> |[optional]|
+**groupSource** | **String** | <em>domain or brand name of the hotel listing's group</em> |[optional]|

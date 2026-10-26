@@ -47,7 +47,7 @@ public class SerpApiAiModeAiOverviewTableElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * <em>text of the component in the markdwon format</em>
+   * <em>text of the component in the markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable

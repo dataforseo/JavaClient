@@ -47,13 +47,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”;
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <p><em>keyword</em><p><strong>required field</strong><p>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<p>all %## will be decoded (plus character ‘+’ will be decoded to a space character)<p>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<p>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”;</p><br><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a></p>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -76,12 +70,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name 
-* if you use this field, you don't need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code> <p><strong>if you use this field, you don't need to specify <code>location_name</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -104,12 +93,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
+   * <p><em>search engine language code</em><p><strong>required field if you don't specify</strong> <code>language_name</code><p><strong>if you use this field, you don't need to specify <code>language_name</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -132,10 +116,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* return results for a specific device type
-* available values: desktop, mobile
+   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>available values: <code>desktop</code>, <code>mobile</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -158,14 +139,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of blocks of results in SERP
-* default value: 20
-* max value: 200
-* Note: your account will be billed per each SERP containing up to 20 results;
-* thus, setting a block depth above 20 may result in additional charges if the search engine returns more than 20 results;
-* if the specified block depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+   * <p><em>parsing depth</em><p>optional field<p>number of blocks of results in SERP<p>default value: <code>20</code><p>max value: <code>200</code><p><strong>Note:</strong> your account will be billed per each SERP containing up to 20 results;<p>thus, setting a block depth above <code>20</code> may result in additional charges if the search engine returns more than 20 results;<p>if the specified block depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance</p>
    * @return blockDepth
    */
   @javax.annotation.Nullable
@@ -188,12 +162,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code
-* if you use this field, you don't need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_code</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>United States</code></p>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -216,12 +185,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
+   * <p><em>full name of search engine language</em><p><strong>required field if you don't specify</strong> <code>language_code</code><p><strong>if you use this field, you don't need to specify <code>language_code</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><p>example:<p><code class='long-string'>English</code></p>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -244,12 +208,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
+   * <p><em>device operating system</em><p>optional field<p>if you specify <code>desktop</code> in the <code>device</code> field, choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code><p>if you specify <code>mobile</code> in the <code>device</code> field, choose from the following values: <code>android</code>, <code>ios</code><p>default value: <code>android</code></p>
    * @return os
    */
   @javax.annotation.Nullable
@@ -272,11 +231,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -299,10 +254,7 @@ public class SerpYoutubeOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * additional parameters of the search query
-* optional field
-* example:
-* sp=EgIQAg%253D%253D
+   * <p><em>additional parameters of the search query</em><p>optional field<p>example:<p><code>sp=EgIQAg%253D%253D</code></p>
    * @return searchParam
    */
   @javax.annotation.Nullable

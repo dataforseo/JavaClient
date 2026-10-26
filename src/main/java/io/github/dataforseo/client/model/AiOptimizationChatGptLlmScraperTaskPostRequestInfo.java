@@ -70,7 +70,7 @@ public class AiOptimizationChatGptLlmScraperTaskPostRequestInfo  {
   }
 
   /**
-   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/ai-optimization/llm-scraper' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * <em>task priority</em><br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priority<br>You will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/ai-optimization/llm-scraper' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiOptimizationChatGptLlmScraperTaskPostRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine language</em><br>required field if you don't specify <code>language_code</code>;<br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code>
+   * <em>full name of search engine language</em><br>required field if you don't specify <code>language_code</code>;<br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AiOptimizationChatGptLlmScraperTaskPostRequestInfo  {
   }
 
   /**
-   * <em>search engine language code</em><br>required field if you don't specify <code>language_name</code>;<br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code>n
+   * <em>search engine language code</em><br>required field if you don't specify <code>language_name</code>;<br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable

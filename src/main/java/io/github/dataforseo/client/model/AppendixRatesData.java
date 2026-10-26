@@ -62,9 +62,9 @@ public class AppendixRatesData  {
 
   public static final String SERIALIZED_NAME_STATISTICS = "statistics";
   @SerializedName(SERIALIZED_NAME_STATISTICS)
-  private AppendixStatisticsDataInfo statistics;
+  private AppendixStatisticsRatesData statistics;
 
-  public AppendixRatesData statistics(AppendixStatisticsDataInfo statistics) {
+  public AppendixRatesData statistics(AppendixStatisticsRatesData statistics) {
     this.statistics = statistics;
     return this;
   }
@@ -74,11 +74,11 @@ public class AppendixRatesData  {
    * @return statistics
    */
   @javax.annotation.Nullable
-  public AppendixStatisticsDataInfo getStatistics() {
+  public AppendixStatisticsRatesData getStatistics() {
     return statistics;
   }
 
-  public void setStatistics(AppendixStatisticsDataInfo statistics) {
+  public void setStatistics(AppendixStatisticsRatesData statistics) {
     this.statistics = statistics;
   }
 

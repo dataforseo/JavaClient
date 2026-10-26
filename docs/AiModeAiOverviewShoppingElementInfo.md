@@ -19,3 +19,5 @@
 **marketplace** | **String** | <em>merchant account provider</em><br>e-commerce site that hosts products or websites of individual sellers under the same merchant account<br>example:<br><code>by Google</code> |[optional]|
 **marketplaceUrl** | **String** | <em>URL to the merchant account provider</em><br>e-commerce site that hosts products or websites of individual sellers under the same merchant account |[optional]|
 **imageUrl** | **String** | <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**text** | **String** | <em>introductory text of the element in the response</em><br>text preceding the paid ad items |[optional]|
+**markdown** | **String** | <em>content of the element in the markdown format</em> |[optional]|

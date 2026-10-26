@@ -116,7 +116,7 @@ public class SourceInfo  {
   }
 
   /**
-   * <em>source domain in SERP</em>
+   * <em>source domain in a ChatGPT result</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SourceInfo  {
   }
 
   /**
-   * <em>date and time when the result was published</em><br>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
+   * <em>date and time when the result was published</em><br>in the format: “yyyy-mm-dd hh:mm:ss +hh:mm”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return publicationDate
    */
   @javax.annotation.Nullable

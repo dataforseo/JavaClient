@@ -70,7 +70,7 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>United States</code>
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_code</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations</code><br>example:<br><code class='long-string'>United States</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/{{low_se_name}}/{{low_se_type}}/languages</code><br>example:<code class='long-string'>en</code>n
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/{{low_se_name}}/{{low_se_type}}/languages</code><br>example:<code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable

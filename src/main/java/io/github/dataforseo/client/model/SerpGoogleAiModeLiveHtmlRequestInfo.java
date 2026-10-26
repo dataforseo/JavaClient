@@ -70,7 +70,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>2840</code>n
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/locations</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine language</em><br>required field if you don't specify <code>language_code</code>;<br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>;
+   * <em>full name of search engine language</em><br>required field if you don't specify <code>language_code</code>;<br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * <em>search engine language code</em><br>required field if you don't specify <code>language_name</code>;<br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>n
+   * <em>search engine language code</em><br>required field if you don't specify <code>language_name</code>;<br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>
    * @return languageCode
    */
   @javax.annotation.Nullable

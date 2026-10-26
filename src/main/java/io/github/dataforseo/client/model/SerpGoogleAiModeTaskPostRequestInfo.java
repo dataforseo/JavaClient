@@ -254,7 +254,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
   }
 
   /**
-   * <p><em>full name of search engine language</em><p>required field if you don't specify <code>language_code</code>;<p>if you use this field, you don't need to specify <code>language_code</code>;<p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>;</p>
+   * <p><em>full name of search engine language</em><p>required field if you don't specify <code>language_code</code>;<p>if you use this field, you don't need to specify <code>language_code</code>;<p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code></p>
    * @return languageName
    */
   @javax.annotation.Nullable

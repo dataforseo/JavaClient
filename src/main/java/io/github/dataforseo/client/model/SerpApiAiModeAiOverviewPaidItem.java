@@ -47,7 +47,7 @@ public class SerpApiAiModeAiOverviewPaidItem  extends BaseSerpApiAiModeAiOvervie
   }
 
   /**
-   * <em>introductory text of the element in the response</em><br>text preceding the paid ad items
+   * <em>content of the code block</em><br>contains the code returned in the AI Mode response
    * @return text
    */
   @javax.annotation.Nullable

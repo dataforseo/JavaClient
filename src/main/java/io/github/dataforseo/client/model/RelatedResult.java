@@ -277,7 +277,7 @@ public class RelatedResult  {
   }
 
   /**
-   * <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERP
+   * <em>indicates whether the element contains an <code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERP
    * @return isImage
    */
   @javax.annotation.Nullable

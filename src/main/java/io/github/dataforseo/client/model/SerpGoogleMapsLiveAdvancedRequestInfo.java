@@ -139,7 +139,7 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>can take the values:<code>desktop</code>, <code>mobile</code><p>default value: <code>desktop</code><p><strong>note:</strong> for <code>mobile</code> device, only 20 results are returned for every SERP</p>
+   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>can take the values:<code>desktop</code>, <code>mobile</code><p>default value: <code>desktop</code>
    * @return device
    */
   @javax.annotation.Nullable

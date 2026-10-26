@@ -139,7 +139,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh:mm:ss +hh:mm”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * <em>types of search results</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><code>gemini_text</code>, <code>gemini_table</code>, <code>gemini_images</code>
+   * <em>types of result items</em><br>contains types of result <code>items</code> found in a Gemini result.<br>possible item types:<br><code>gemini_text</code>, <code>gemini_table</code>, <code>gemini_images</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable

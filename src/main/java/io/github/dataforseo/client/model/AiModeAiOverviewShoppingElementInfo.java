@@ -359,6 +359,52 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_TEXT = "text";
+  @SerializedName(SERIALIZED_NAME_TEXT)
+  private String text;
+
+  public AiModeAiOverviewShoppingElementInfo text(String text) {
+    this.text = text;
+    return this;
+  }
+
+  /**
+   * <em>introductory text of the element in the response</em><br>text preceding the paid ad items
+   * @return text
+   */
+  @javax.annotation.Nullable
+  public String getText() {
+    return text;
+  }
+
+  public void setText(String text) {
+    this.text = text;
+  }
+
+
+  public static final String SERIALIZED_NAME_MARKDOWN = "markdown";
+  @SerializedName(SERIALIZED_NAME_MARKDOWN)
+  private String markdown;
+
+  public AiModeAiOverviewShoppingElementInfo markdown(String markdown) {
+    this.markdown = markdown;
+    return this;
+  }
+
+  /**
+   * <em>content of the element in the markdown format</em>
+   * @return markdown
+   */
+  @javax.annotation.Nullable
+  public String getMarkdown() {
+    return markdown;
+  }
+
+  public void setMarkdown(String markdown) {
+    this.markdown = markdown;
+  }
+
+
 
   public AiModeAiOverviewShoppingElementInfo() {
   }
@@ -415,7 +461,9 @@ public class AiModeAiOverviewShoppingElementInfo  {
         Objects.equals(this.snippet, aiModeAiOverviewShoppingElementInfo.snippet) &&
         Objects.equals(this.marketplace, aiModeAiOverviewShoppingElementInfo.marketplace) &&
         Objects.equals(this.marketplaceUrl, aiModeAiOverviewShoppingElementInfo.marketplaceUrl) &&
-        Objects.equals(this.imageUrl, aiModeAiOverviewShoppingElementInfo.imageUrl);  
+        Objects.equals(this.imageUrl, aiModeAiOverviewShoppingElementInfo.imageUrl) &&
+        Objects.equals(this.text, aiModeAiOverviewShoppingElementInfo.text) &&
+        Objects.equals(this.markdown, aiModeAiOverviewShoppingElementInfo.markdown);  
     
   }
 
@@ -425,7 +473,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, productId, dataDocid, gid, title, url, domain, rating, price, seller, snippet, marketplace, marketplaceUrl, imageUrl);
+  return Objects.hash(type, productId, dataDocid, gid, title, url, domain, rating, price, seller, snippet, marketplace, marketplaceUrl, imageUrl, text, markdown);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -454,6 +502,8 @@ public class AiModeAiOverviewShoppingElementInfo  {
     sb.append("    marketplace: ").append(toIndentedString(marketplace)).append("\n");
     sb.append("    marketplaceUrl: ").append(toIndentedString(marketplaceUrl)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
+    sb.append("    text: ").append(toIndentedString(text)).append("\n");
+    sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -504,6 +554,10 @@ public class AiModeAiOverviewShoppingElementInfo  {
     openapiFields.add("marketplace_url");
     
     openapiFields.add("image_url");
+    
+    openapiFields.add("text");
+    
+    openapiFields.add("markdown");
     
 
     // a set of required properties/fields (JSON key names)

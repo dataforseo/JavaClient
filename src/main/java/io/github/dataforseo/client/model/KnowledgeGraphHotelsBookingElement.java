@@ -93,7 +93,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * <em>description of the results element in SERP</em>
+   * <em>description of the place in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable

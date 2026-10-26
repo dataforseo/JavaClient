@@ -47,11 +47,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * ID of the video
-* required field
-* you can find video ID in the URL or 'youtube_video' item of YouTube Organic result
-* example:
-* vQXvyV0zIP4
+   * <p><em>ID of the video</em><p><strong>required field</strong><p>you can find video ID in the URL or 'youtube_video' item of <a href='/v3/serp/youtube/organic/live/advanced/' rel='noopener noreferrer' target='_blank'>YouTube Organic</a> result<p>example:<p><code>vQXvyV0zIP4</code></p>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -74,12 +70,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name 
-* if you use this field, you don't need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code> <p><strong>if you use this field, you don't need to specify <code>location_name</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -102,12 +93,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
+   * <p><em>search engine language code</em><p><strong>required field if you don't specify</strong> <code>language_name</code><p><strong>if you use this field, you don't need to specify <code>language_name</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -130,9 +116,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* only value: desktop
+   * <p><em>device type</em><p>optional field<p>only value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -155,12 +139,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code
-* if you use this field, you don't need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_code</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>United States</code></p>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -183,12 +162,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
+   * <p><em>full name of search engine language</em><p><strong>required field if you don't specify</strong> <code>language_code</code><p><strong>if you use this field, you don't need to specify <code>language_code</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><p>example:<p><code class='long-string'>English</code></p>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -211,10 +185,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* choose from the following values: windows, macos
-* default value: windows
+   * <p><em>device operating system</em><p>optional field<p>choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p>
    * @return os
    */
   @javax.annotation.Nullable
@@ -237,11 +208,7 @@ public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
    * @return tag
    */
   @javax.annotation.Nullable

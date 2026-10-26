@@ -47,11 +47,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * ID of the video
-* required field
-* you can find video ID in the URL or 'youtube_video' item of YouTube Organic result
-* example:
-* vQXvyV0zIP4
+   * <p><em>ID of the video</em><p><strong>required field</strong><p>you can find video ID in the URL or 'youtube_video' item of <a href='/v3/serp/youtube/organic/live/advanced/' target='_blank' rel='noopener noreferrer'>YouTube Organic</a> result<p>example:<p><code>vQXvyV0zIP4</code></p>
    * @return videoId
    */
   @javax.annotation.Nullable
@@ -74,12 +70,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name
-* if you use this field, you don't need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code><p><strong>if you use this field, you don't need to specify <code>location_name</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -102,12 +93,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
+   * <p><em>search engine language code</em><p><strong>required field if you don't specify</strong> <code>language_name</code><p><strong>if you use this field, you don't need to specify <code>language_name</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -130,14 +116,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depth
-* optional field
-* number of results in SERP
-* default value: 20
-* max value: 700
-* Note: your account will be billed per each SERP containing up to 20 results;
-* thus, setting a depth above 20 may result in additional charges if the search engine returns more than 20 results;
-* if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+   * <p><em>parsing depth</em><p>optional field<p>number of results in SERP<p>default value: <code>20</code><p>max value: <code>700</code><p><strong>Note:</strong> your account will be billed per each SERP containing up to 20 results;<p>thus, setting a depth above <code>20</code> may result in additional charges if the search engine returns more than 20 results;<p>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance</p>
    * @return depth
    */
   @javax.annotation.Nullable
@@ -160,13 +139,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a href='https://dataforseo.com/pricing/serp/youtube-serp-api' target='_blank'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -189,9 +162,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* only value: desktop
+   * <p><em>device type</em><p>optional field<p>only value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -214,16 +185,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>notification URL of a completed task</em><p>optional field<p>when a task is completed we will notify you by GET request sent to the URL you have specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/pingscript?id=$id</code><p><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -246,16 +208,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>return URL for sending task results</em><p>optional field<p>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/postbackscript?id=$id</code><p><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -278,11 +231,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible value:
-* advanced
+   * <p><em>postback_url datatype</em><p><strong>required field if you specify <code>postback_url</code></strong><p>corresponds to the datatype that will be sent to your server<p>possible value:<p><code>advanced</code></p>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -305,12 +254,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code
-* if you use this field, you don't need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_code</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/locations</code><p>example:<p><code class='long-string'>United States</code></p>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -333,12 +277,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
+   * <p><em>full name of search engine language</em><p><strong>required field if you don't specify</strong> <code>language_code</code><p><strong>if you use this field, you don't need to specify <code>language_code</code></strong><p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/youtube/languages</code><p>example:<p><code class='long-string'>English</code></p>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -361,10 +300,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* choose from the following values: windows, macos
-* default value: windows
+   * <p><em>device operating system</em><p>optional field<p>choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p>
    * @return os
    */
   @javax.annotation.Nullable
@@ -387,11 +323,7 @@ public class SerpYoutubeVideoCommentsTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
    * @return tag
    */
   @javax.annotation.Nullable

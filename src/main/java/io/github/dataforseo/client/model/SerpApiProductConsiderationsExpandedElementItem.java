@@ -208,7 +208,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * 
+   * <a name='related_searches'></a>((‘related_searches’ element in SERP|https://dataforseo.com/wp-content/uploads/2020/02/window-feature-related-searches.png))
    * @return relatedSearches
    */
   @javax.annotation.Nullable
