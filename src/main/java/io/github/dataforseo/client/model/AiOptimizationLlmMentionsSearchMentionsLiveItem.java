@@ -200,9 +200,9 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
 
   public static final String SERIALIZED_NAME_SEARCH_RESULTS = "search_results";
   @SerializedName(SERIALIZED_NAME_SEARCH_RESULTS)
-  private List<SearchResults> searchResults;
+  private List<ItemsSearchResults> searchResults;
 
-  public AiOptimizationLlmMentionsSearchMentionsLiveItem searchResults(List<SearchResults> searchResults) {
+  public AiOptimizationLlmMentionsSearchMentionsLiveItem searchResults(List<ItemsSearchResults> searchResults) {
     this.searchResults = searchResults;
     return this;
   }
@@ -212,11 +212,11 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
    * @return searchResults
    */
   @javax.annotation.Nullable
-  public List<SearchResults> getSearchResults() {
+  public List<ItemsSearchResults> getSearchResults() {
     return searchResults;
   }
 
-  public void setSearchResults(List<SearchResults> searchResults) {
+  public void setSearchResults(List<ItemsSearchResults> searchResults) {
     this.searchResults = searchResults;
   }
 

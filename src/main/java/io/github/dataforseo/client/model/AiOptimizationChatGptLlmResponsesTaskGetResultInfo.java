@@ -244,6 +244,29 @@ public class AiOptimizationChatGptLlmResponsesTaskGetResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_SEARCH_RESULTS = "search_results";
+  @SerializedName(SERIALIZED_NAME_SEARCH_RESULTS)
+  private List<SearchResults> searchResults;
+
+  public AiOptimizationChatGptLlmResponsesTaskGetResultInfo searchResults(List<SearchResults> searchResults) {
+    this.searchResults = searchResults;
+    return this;
+  }
+
+  /**
+   * <em>array of search results</em><br>contains objects with search results relevant to the user query and model's response
+   * @return searchResults
+   */
+  @javax.annotation.Nullable
+  public List<SearchResults> getSearchResults() {
+    return searchResults;
+  }
+
+  public void setSearchResults(List<SearchResults> searchResults) {
+    this.searchResults = searchResults;
+  }
+
+
 
   public AiOptimizationChatGptLlmResponsesTaskGetResultInfo() {
   }
@@ -295,7 +318,8 @@ public class AiOptimizationChatGptLlmResponsesTaskGetResultInfo  {
         Objects.equals(this.moneySpent, aiOptimizationChatGptLlmResponsesTaskGetResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationChatGptLlmResponsesTaskGetResultInfo.datetime) &&
         Objects.equals(this.items, aiOptimizationChatGptLlmResponsesTaskGetResultInfo.items) &&
-        Objects.equals(this.fanOutQueries, aiOptimizationChatGptLlmResponsesTaskGetResultInfo.fanOutQueries);  
+        Objects.equals(this.fanOutQueries, aiOptimizationChatGptLlmResponsesTaskGetResultInfo.fanOutQueries) &&
+        Objects.equals(this.searchResults, aiOptimizationChatGptLlmResponsesTaskGetResultInfo.searchResults);  
     
   }
 
@@ -305,7 +329,7 @@ public class AiOptimizationChatGptLlmResponsesTaskGetResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
+  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries, searchResults);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -329,6 +353,7 @@ public class AiOptimizationChatGptLlmResponsesTaskGetResultInfo  {
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
+    sb.append("    searchResults: ").append(toIndentedString(searchResults)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -369,6 +394,8 @@ public class AiOptimizationChatGptLlmResponsesTaskGetResultInfo  {
     openapiFields.add("items");
     
     openapiFields.add("fan_out_queries");
+    
+    openapiFields.add("search_results");
     
 
     // a set of required properties/fields (JSON key names)

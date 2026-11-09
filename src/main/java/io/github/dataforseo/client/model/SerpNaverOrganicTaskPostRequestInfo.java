@@ -116,7 +116,7 @@ public class SerpNaverOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * <em>parsing depth</em><br>optional field<br>number of results in SERP<br>default value: <code>15</code><br>max value: <code>700</code><br><strong>Your account will be billed per each SERP containing up to 15 results;</strong> <br>Setting depth above 15 may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'>if the search engine returns more than 15 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/naver-organic-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * <em>parsing depth</em><br>optional field<br>number of results in SERP<br>default value: <code>20</code><br>max value: <code>700</code><br><strong>Your account will be billed per each SERP containing up to 20 results;</strong> <br>Setting depth above 20 may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'>if the search engine returns more than 20 results</a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/naver-organic-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable

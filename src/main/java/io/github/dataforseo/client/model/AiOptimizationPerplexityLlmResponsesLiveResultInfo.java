@@ -223,9 +223,9 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
   @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
-  private Object fanOutQueries;
+  private List<String> fanOutQueries;
 
-  public AiOptimizationPerplexityLlmResponsesLiveResultInfo fanOutQueries(Object fanOutQueries) {
+  public AiOptimizationPerplexityLlmResponsesLiveResultInfo fanOutQueries(List<String> fanOutQueries) {
     this.fanOutQueries = fanOutQueries;
     return this;
   }
@@ -235,12 +235,35 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
    * @return fanOutQueries
    */
   @javax.annotation.Nullable
-  public Object getFanOutQueries() {
+  public List<String> getFanOutQueries() {
     return fanOutQueries;
   }
 
-  public void setFanOutQueries(Object fanOutQueries) {
+  public void setFanOutQueries(List<String> fanOutQueries) {
     this.fanOutQueries = fanOutQueries;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_RESULTS = "search_results";
+  @SerializedName(SERIALIZED_NAME_SEARCH_RESULTS)
+  private List<SearchResults> searchResults;
+
+  public AiOptimizationPerplexityLlmResponsesLiveResultInfo searchResults(List<SearchResults> searchResults) {
+    this.searchResults = searchResults;
+    return this;
+  }
+
+  /**
+   * <em>array of search results</em><br>contains objects with search results relevant to the user query and model's response
+   * @return searchResults
+   */
+  @javax.annotation.Nullable
+  public List<SearchResults> getSearchResults() {
+    return searchResults;
+  }
+
+  public void setSearchResults(List<SearchResults> searchResults) {
+    this.searchResults = searchResults;
   }
 
 
@@ -295,7 +318,8 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
         Objects.equals(this.moneySpent, aiOptimizationPerplexityLlmResponsesLiveResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationPerplexityLlmResponsesLiveResultInfo.datetime) &&
         Objects.equals(this.items, aiOptimizationPerplexityLlmResponsesLiveResultInfo.items) &&
-        Objects.equals(this.fanOutQueries, aiOptimizationPerplexityLlmResponsesLiveResultInfo.fanOutQueries);  
+        Objects.equals(this.fanOutQueries, aiOptimizationPerplexityLlmResponsesLiveResultInfo.fanOutQueries) &&
+        Objects.equals(this.searchResults, aiOptimizationPerplexityLlmResponsesLiveResultInfo.searchResults);  
     
   }
 
@@ -305,7 +329,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
+  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries, searchResults);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -329,6 +353,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
+    sb.append("    searchResults: ").append(toIndentedString(searchResults)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -369,6 +394,8 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
     openapiFields.add("items");
     
     openapiFields.add("fan_out_queries");
+    
+    openapiFields.add("search_results");
     
 
     // a set of required properties/fields (JSON key names)

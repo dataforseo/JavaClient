@@ -37,75 +37,6 @@ import io.github.dataforseo.client.JSON;
 public class SearchResults  {
 
 
-  public static final String SERIALIZED_NAME_DESCRIPTION = "description";
-  @SerializedName(SERIALIZED_NAME_DESCRIPTION)
-  private String description;
-
-  public SearchResults description(String description) {
-    this.description = description;
-    return this;
-  }
-
-  /**
-   * <em>result description</em>
-   * @return description
-   */
-  @javax.annotation.Nullable
-  public String getDescription() {
-    return description;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
-  }
-
-
-  public static final String SERIALIZED_NAME_BREADCRUMB = "breadcrumb";
-  @SerializedName(SERIALIZED_NAME_BREADCRUMB)
-  private String breadcrumb;
-
-  public SearchResults breadcrumb(String breadcrumb) {
-    this.breadcrumb = breadcrumb;
-    return this;
-  }
-
-  /**
-   * <em>breadcrumb</em>
-   * @return breadcrumb
-   */
-  @javax.annotation.Nullable
-  public String getBreadcrumb() {
-    return breadcrumb;
-  }
-
-  public void setBreadcrumb(String breadcrumb) {
-    this.breadcrumb = breadcrumb;
-  }
-
-
-  public static final String SERIALIZED_NAME_RANK = "rank";
-  @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
-
-  public SearchResults rank(Integer rank) {
-    this.rank = rank;
-    return this;
-  }
-
-  /**
-   * <em>rank in the results</em>
-   * @return rank
-   */
-  @javax.annotation.Nullable
-  public Integer getRank() {
-    return rank;
-  }
-
-  public void setRank(Integer rank) {
-    this.rank = rank;
-  }
-
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -116,7 +47,7 @@ public class SearchResults  {
   }
 
   /**
-   * <em>source title</em>
+   * <em>the domain name or title of the quoted source</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -126,29 +57,6 @@ public class SearchResults  {
 
   public void setTitle(String title) {
     this.title = title;
-  }
-
-
-  public static final String SERIALIZED_NAME_DOMAIN = "domain";
-  @SerializedName(SERIALIZED_NAME_DOMAIN)
-  private String domain;
-
-  public SearchResults domain(String domain) {
-    this.domain = domain;
-    return this;
-  }
-
-  /**
-   * <em>source domain</em>
-   * @return domain
-   */
-  @javax.annotation.Nullable
-  public String getDomain() {
-    return domain;
-  }
-
-  public void setDomain(String domain) {
-    this.domain = domain;
   }
 
 
@@ -162,7 +70,7 @@ public class SearchResults  {
   }
 
   /**
-   * <em>source URL</em>
+   * <em>URL of the quoted source</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -175,26 +83,49 @@ public class SearchResults  {
   }
 
 
-  public static final String SERIALIZED_NAME_PUBLICATION_DATE = "publication_date";
-  @SerializedName(SERIALIZED_NAME_PUBLICATION_DATE)
-  private String publicationDate;
+  public static final String SERIALIZED_NAME_DATE = "date";
+  @SerializedName(SERIALIZED_NAME_DATE)
+  private String date;
 
-  public SearchResults publicationDate(String publicationDate) {
-    this.publicationDate = publicationDate;
+  public SearchResults date(String date) {
+    this.date = date;
     return this;
   }
 
   /**
-   * <em>date and time when the result was published</em><br>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
-   * @return publicationDate
+   * <em>publishing date</em><br>date when the page appearing in the search result was published or indexed<br> in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+   * @return date
    */
   @javax.annotation.Nullable
-  public String getPublicationDate() {
-    return publicationDate;
+  public String getDate() {
+    return date;
   }
 
-  public void setPublicationDate(String publicationDate) {
-    this.publicationDate = publicationDate;
+  public void setDate(String date) {
+    this.date = date;
+  }
+
+
+  public static final String SERIALIZED_NAME_SNIPPET = "snippet";
+  @SerializedName(SERIALIZED_NAME_SNIPPET)
+  private String snippet;
+
+  public SearchResults snippet(String snippet) {
+    this.snippet = snippet;
+    return this;
+  }
+
+  /**
+   * <em>text snippet in the search result</em>
+   * @return snippet
+   */
+  @javax.annotation.Nullable
+  public String getSnippet() {
+    return snippet;
+  }
+
+  public void setSnippet(String snippet) {
+    this.snippet = snippet;
   }
 
 
@@ -241,13 +172,10 @@ public class SearchResults  {
     SearchResults searchResults = (SearchResults) o;
     return
 
-        Objects.equals(this.description, searchResults.description) &&
-        Objects.equals(this.breadcrumb, searchResults.breadcrumb) &&
-        Objects.equals(this.rank, searchResults.rank) &&
         Objects.equals(this.title, searchResults.title) &&
-        Objects.equals(this.domain, searchResults.domain) &&
         Objects.equals(this.url, searchResults.url) &&
-        Objects.equals(this.publicationDate, searchResults.publicationDate);  
+        Objects.equals(this.date, searchResults.date) &&
+        Objects.equals(this.snippet, searchResults.snippet);  
     
   }
 
@@ -257,7 +185,7 @@ public class SearchResults  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(description, breadcrumb, rank, title, domain, url, publicationDate);
+  return Objects.hash(title, url, date, snippet);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -272,13 +200,10 @@ public class SearchResults  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SearchResults {\n");
 
-    sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    breadcrumb: ").append(toIndentedString(breadcrumb)).append("\n");
-    sb.append("    rank: ").append(toIndentedString(rank)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    publicationDate: ").append(toIndentedString(publicationDate)).append("\n");
+    sb.append("    date: ").append(toIndentedString(date)).append("\n");
+    sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -302,19 +227,13 @@ public class SearchResults  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("description");
-    
-    openapiFields.add("breadcrumb");
-    
-    openapiFields.add("rank");
-    
     openapiFields.add("title");
-    
-    openapiFields.add("domain");
     
     openapiFields.add("url");
     
-    openapiFields.add("publication_date");
+    openapiFields.add("date");
+    
+    openapiFields.add("snippet");
     
 
     // a set of required properties/fields (JSON key names)

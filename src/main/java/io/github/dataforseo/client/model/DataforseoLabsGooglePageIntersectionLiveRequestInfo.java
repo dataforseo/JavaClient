@@ -185,7 +185,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo  {
   }
 
   /**
-   * search results typeindicates type of search results included in the responseoptional fieldpossible values: ['organic', 'paid', 'featured_snippet', 'local_pack']default value: ['organic', 'paid']
+   * search results typeindicates type of search results included in the responseoptional fieldpossible values: ['organic', 'paid', 'featured_snippet', 'local_pack', 'ai_overview_reference']default value: ['organic', 'paid']
    * @return itemTypes
    */
   @javax.annotation.Nullable

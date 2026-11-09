@@ -13,4 +13,5 @@
 **moneySpent** | **Double** | <em>cost of AI tokens, USD</em><br>the price charged by the third-party AI model provider for according to its <a href='https://docs.perplexity.ai/guides/pricing' target='_blank'>Pricing</a> |[optional]|
 **datetime** | **String** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
 **items** | **List<MessageAiOptimizationLlmResponseElementItem>** | <em>array of response items</em><br>contains structured AI response data |[optional]|
-**fanOutQueries** | **Object** | <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response |[optional]|
+**fanOutQueries** | **List<String>** | <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response |[optional]|
+**searchResults** | **List<SearchResults>** | <em>array of search results</em><br>contains objects with search results relevant to the user query and model's response |[optional]|

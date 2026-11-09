@@ -47,7 +47,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>direct URL of the search query</em><br>optional field<br>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.<br>example:<br><code class='long-string'>https://search.yahoo.com/search?p=rank+checker&n=100&vl=lang_en&vc=us&ei=UTF-8</code>
+   * direct URL of the search queryoptional fieldyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.example:https://search.yahoo.com/search?p=rank+checker&n=100&vl=lang_en&vc=us&ei=UTF-8
    * @return url
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<br><strong>all %## will be decoded (plus character '+' will be decoded to a space character)</strong><br>if you need to use the '%' character for your <code>keyword</code>, please specify it as '%25';<br>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
+   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character '+' will be decoded to a space character)if you need to use the '%' character for your keyword, please specify it as '%25';if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
+   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/locationsexample:London,England,United Kingdom
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>2840</code>n
+   * search engine location coderequired field if you don't specify location_name_or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/locationsexample:2840n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9 (mm)<br>the maximum value for <em>'radius'</em>: 199999 (mm)<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>n
+   * GPS coordinates of a locationrequired field if you don't specify location_name_or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,radius' formatthe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'radius': 199.9 (mm)the maximum value for 'radius': 199999 (mm)example:53.476225,-2.243572,200n
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>full name of search engine language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><br>example:<br><code class='long-string'>English</code>
+   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/languagesexample:English
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>n
+   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/serp/yahoo/languagesexample:enn
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>device type</em><br>optional field<br>return results for a specific device type<br>can take the values:<code>desktop</code>, <code>mobile</code><br>default value: <code>desktop</code>
+   * device typeoptional fieldreturn results for a specific device typecan take the values:desktop, mobiledefault value: desktop
    * @return device
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>device operating system</em><br>optional field<br>if you specify <code>desktop</code> in the <code>device</code> field, choose from the following values: <code>windows</code>, <code>macos</code><br>default value: <code>windows</code><br>if you specify <code>mobile</code> in the <code>device</code> field, choose from the following values: <code>android</code>, <code>ios</code><br>default value: <code>android</code>
+   * device operating systemoptional fieldif you specify desktop in the device field, choose from the following values: windows, macosdefault value: windowsif you specify mobile in the device field, choose from the following values: android, iosdefault value: android
    * @return os
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>search engine domain</em><br>optional field<br>we choose the relevant search engine domain automatically according to the location and language you specify<br>however, you can set a custom search engine domain in this field<br>example:<br><code>au.search.yahoo.com</code>, <code>uk.search.yahoo.com</code>, <code>ca.search.yahoo.com</code>, etc.
+   * search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:au.search.yahoo.com, uk.search.yahoo.com, ca.search.yahoo.com, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>parsing depth</em><br>optional field<br>number of results in SERP<br>default value: <code>6</code><br>max value: <code>200</code><br><strong>Your account will be billed per each SERP;</strong> <br>Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'></a>;<br>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/yahoo-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * parsing depthoptional fieldnumber of results in SERPdefault value: 6max value: 200Your account will be billed per each SERP; Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>page crawl limit</em><br>optional field<br>number of search results pages to crawl<br>default value: <code>1</code><br>max value: <code>100</code><br><strong>Note:</strong> the <code>max_crawl_pages</code> and <code>depth</code> parameters complement each other;<br>learn more at <a href='https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work' rel='noopener noreferrer' target='_blank'>our help center</a>
+   * page crawl limitoptional fieldnumber of search results pages to crawldefault value: 1max value: 100Note: the max_crawl_pages and depth parameters complement each other;learn more at our help center
    * @return maxCrawlPages
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>target domain, subdomain, or webpage to get results for</em><br>optional field<br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>note that the results of <code>target</code>-specific tasks will only include SERP elements that contain a <code>url</code> string;<br>you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;<br>examples:<br><strong><code class='long-string'>example.com</code></strong>  - returns results for the website's home page with URLs, such as <code class='long-string'>https://example.com</code>, or <code class='long-string'>https://www.example.com/</code>, or <code class='long-string'>https://example.com/</code>;<br><strong><code class='long-string'>example.com*</code></strong> - returns results for the domain, including all its pages;<br><strong><code class='long-string'>*example.com*</code></strong> - returns results for the entire domain, including all its pages and subdomains;<br><strong><code class='long-string'>*example.com</code></strong>  - returns results for the home page regardless of the subdomain, such as <code class='long-string'>https://en.example.com</code>; <br><strong><code class='long-string'>example.com/example-page</code></strong>  - returns results for the exact URL;<br><strong><code class='long-string'>example.com/example-page*</code></strong>  - returns results for all domain's URLs that start with the specified string
+   * target domain, subdomain, or webpage to get results foroptional fielda domain or a subdomain should be specified without https:// and www.note that the results of target-specific tasks will only include SERP elements that contain a url string;you can also use a wildcard (‘’) character to specify the search pattern in SERP and narrow down the results;examples:example.com  - returns results for the website's home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;example.com - returns results for the domain, including all its pages;example.com - returns results for the entire domain, including all its pages and subdomains;example.com  - returns results for the home page regardless of the subdomain, such as https://en.example.com; example.com/example-page  - returns results for the exact URL;example.com/example-page  - returns results for all domain's URLs that start with the specified string
    * @return target
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>additional parameters of the search query</em><br>optional field<br><a href='https://dataforseo.com/help-center/yahoo-search-engine-parameters-and-how-to-use-them'>get the list of available parameters and additional details here</a>
+   * additional parameters of the search queryoptional fieldget the list of available parameters and additional details here
    * @return searchParam
    */
   @javax.annotation.Nullable
@@ -389,6 +389,52 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpYahooOrganicLiveAdvancedRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * target domain, subdomain, or wildcard valuerequired field if stop_crawl_on_match is specifiedspecify a target domain, subdomain, or wildcard value;Note: domain or subdomain must be specified without a request protocol;example: 'match_value': 'dataforseo.com','match_value': '/blog/post-*'
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private String matchType;
+
+  public SerpYahooOrganicLiveAdvancedRequestInfo matchType(String matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * target match typerequired field if stop_crawl_on_match is specifiedtype of match for the match_valuepossible values: domain – specific domain or subdomainwith_subdomains – main domain and subdomainswildcard –  wildcard pattern
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public String getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(String matchType) {
+    this.matchType = matchType;
+  }
+
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -399,7 +445,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -470,6 +516,8 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.target, serpYahooOrganicLiveAdvancedRequestInfo.target) &&
         Objects.equals(this.searchParam, serpYahooOrganicLiveAdvancedRequestInfo.searchParam) &&
         Objects.equals(this.stopCrawlOnMatch, serpYahooOrganicLiveAdvancedRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchValue, serpYahooOrganicLiveAdvancedRequestInfo.matchValue) &&
+        Objects.equals(this.matchType, serpYahooOrganicLiveAdvancedRequestInfo.matchType) &&
         Objects.equals(this.tag, serpYahooOrganicLiveAdvancedRequestInfo.tag);  
     
   }
@@ -480,7 +528,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, target, searchParam, stopCrawlOnMatch, tag);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, target, searchParam, stopCrawlOnMatch, matchValue, matchType, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -510,6 +558,8 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -563,6 +613,10 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("search_param");
     
     openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_value");
+    
+    openapiFields.add("match_type");
     
     openapiFields.add("tag");
     
