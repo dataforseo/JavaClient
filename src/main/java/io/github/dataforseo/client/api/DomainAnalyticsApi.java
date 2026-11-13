@@ -220,7 +220,7 @@ public class DomainAnalyticsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call technologiesAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call technologiesAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -265,9 +265,9 @@ public class DomainAnalyticsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call technologiesAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return technologiesAvailableFiltersCall(_callback);
 
@@ -292,7 +292,7 @@ public class DomainAnalyticsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call technologiesLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call technologiesLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -337,9 +337,9 @@ public class DomainAnalyticsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call technologiesLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return technologiesLocationsCall(_callback);
 
@@ -364,7 +364,7 @@ public class DomainAnalyticsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call technologiesLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call technologiesLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -409,9 +409,9 @@ public class DomainAnalyticsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call technologiesLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return technologiesLanguagesCall(_callback);
 
@@ -436,7 +436,7 @@ public class DomainAnalyticsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call technologiesTechnologiesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call technologiesTechnologiesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -481,9 +481,9 @@ public class DomainAnalyticsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call technologiesTechnologiesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return technologiesTechnologiesCall(_callback);
 
@@ -928,7 +928,7 @@ public class DomainAnalyticsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call whoisAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call whoisAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -973,9 +973,9 @@ public class DomainAnalyticsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call whoisAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return whoisAvailableFiltersCall(_callback);
 

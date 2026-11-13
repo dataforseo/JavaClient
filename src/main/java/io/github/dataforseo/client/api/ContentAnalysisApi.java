@@ -145,7 +145,7 @@ public class ContentAnalysisApi {
             return localVarCall;
         }
 
-    public okhttp3.Call contentAnalysisAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call contentAnalysisAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -190,9 +190,9 @@ public class ContentAnalysisApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call contentAnalysisAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return contentAnalysisAvailableFiltersCall(_callback);
 
@@ -217,7 +217,7 @@ public class ContentAnalysisApi {
        return localVarCall;
     }
 
-    public okhttp3.Call locationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call locationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -262,9 +262,9 @@ public class ContentAnalysisApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call locationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return locationsCall(_callback);
 
@@ -289,7 +289,7 @@ public class ContentAnalysisApi {
        return localVarCall;
     }
 
-    public okhttp3.Call languagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call languagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -334,9 +334,9 @@ public class ContentAnalysisApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call languagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return languagesCall(_callback);
 
@@ -361,7 +361,7 @@ public class ContentAnalysisApi {
        return localVarCall;
     }
 
-    public okhttp3.Call contentAnalysisCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call contentAnalysisCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -406,9 +406,9 @@ public class ContentAnalysisApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call contentAnalysisCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return contentAnalysisCategoriesCall(_callback);
 

@@ -143,7 +143,7 @@ public class AiOptimizationApi {
     }
 
 
-    public okhttp3.Call chatGptLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -188,9 +188,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmScraperLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return chatGptLlmScraperLocationsCall(_callback);
 
@@ -215,7 +215,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call chatGptLlmScraperLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -261,13 +261,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmScraperLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling chatGptLlmScraperLocationsCountry(Async)");
        }
+   
 
        return chatGptLlmScraperLocationsCountryCall(country, _callback);
 
@@ -292,7 +293,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call chatGptLlmScraperLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -337,9 +338,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmScraperLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return chatGptLlmScraperLanguagesCall(_callback);
 
@@ -434,7 +435,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call chatGptLlmScraperTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -479,9 +480,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmScraperTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return chatGptLlmScraperTasksReadyCall(_callback);
 
@@ -506,7 +507,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call chatGptLlmScraperTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -552,13 +553,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmScraperTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmScraperTaskGetAdvanced(Async)");
        }
+   
 
        return chatGptLlmScraperTaskGetAdvancedCall(id, _callback);
 
@@ -583,7 +585,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call chatGptLlmScraperTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -629,13 +631,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmScraperTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmScraperTaskGetHtml(Async)");
        }
+   
 
        return chatGptLlmScraperTaskGetHtmlCall(id, _callback);
 
@@ -800,7 +803,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call chatGptLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmResponsesModelsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -845,9 +848,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return chatGptLlmResponsesModelsCall(_callback);
 
@@ -1012,7 +1015,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call chatGptLlmResponsesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmResponsesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1057,9 +1060,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmResponsesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return chatGptLlmResponsesTasksReadyCall(_callback);
 
@@ -1084,7 +1087,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call chatGptLlmResponsesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmResponsesTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1130,13 +1133,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call chatGptLlmResponsesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmResponsesTaskGet(Async)");
        }
+   
 
        return chatGptLlmResponsesTaskGetCall(id, _callback);
 
@@ -1161,7 +1165,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call claudeLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call claudeLlmResponsesModelsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1206,9 +1210,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call claudeLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return claudeLlmResponsesModelsCall(_callback);
 
@@ -1373,7 +1377,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call claudeLlmResponsesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call claudeLlmResponsesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1418,9 +1422,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call claudeLlmResponsesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return claudeLlmResponsesTasksReadyCall(_callback);
 
@@ -1445,7 +1449,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call claudeLlmResponsesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call claudeLlmResponsesTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1491,13 +1495,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call claudeLlmResponsesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling claudeLlmResponsesTaskGet(Async)");
        }
+   
 
        return claudeLlmResponsesTaskGetCall(id, _callback);
 
@@ -1522,7 +1527,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call geminiLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmResponsesModelsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1567,9 +1572,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return geminiLlmResponsesModelsCall(_callback);
 
@@ -1664,7 +1669,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call geminiLlmResponsesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmResponsesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1709,9 +1714,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmResponsesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return geminiLlmResponsesTasksReadyCall(_callback);
 
@@ -1736,7 +1741,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call geminiLlmResponsesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmResponsesTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1782,13 +1787,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmResponsesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling geminiLlmResponsesTaskGet(Async)");
        }
+   
 
        return geminiLlmResponsesTaskGetCall(id, _callback);
 
@@ -1883,7 +1889,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call perplexityLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call perplexityLlmResponsesModelsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1928,9 +1934,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call perplexityLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return perplexityLlmResponsesModelsCall(_callback);
 
@@ -2025,7 +2031,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call geminiLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmScraperLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2070,9 +2076,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmScraperLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return geminiLlmScraperLocationsCall(_callback);
 
@@ -2097,7 +2103,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call geminiLlmScraperLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmScraperLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2142,9 +2148,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmScraperLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return geminiLlmScraperLanguagesCall(_callback);
 
@@ -2239,7 +2245,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call geminiLlmScraperTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmScraperTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2284,9 +2290,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmScraperTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return geminiLlmScraperTasksReadyCall(_callback);
 
@@ -2311,7 +2317,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call geminiLlmScraperTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmScraperTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2357,13 +2363,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmScraperTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling geminiLlmScraperTaskGetAdvanced(Async)");
        }
+   
 
        return geminiLlmScraperTaskGetAdvancedCall(id, _callback);
 
@@ -2388,7 +2395,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call geminiLlmScraperTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call geminiLlmScraperTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2434,13 +2441,14 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call geminiLlmScraperTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling geminiLlmScraperTaskGetHtml(Async)");
        }
+   
 
        return geminiLlmScraperTaskGetHtmlCall(id, _callback);
 
@@ -2605,7 +2613,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call aiKeywordDataAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call aiKeywordDataAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2650,9 +2658,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call aiKeywordDataAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return aiKeywordDataAvailableFiltersCall(_callback);
 
@@ -2677,7 +2685,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call aiKeywordDataLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call aiKeywordDataLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2722,9 +2730,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call aiKeywordDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return aiKeywordDataLocationsAndLanguagesCall(_callback);
 
@@ -2819,7 +2827,7 @@ public class AiOptimizationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call llmMentionsAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call llmMentionsAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2864,9 +2872,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call llmMentionsAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return llmMentionsAvailableFiltersCall(_callback);
 
@@ -2891,7 +2899,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call llmMentionsLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call llmMentionsLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2936,9 +2944,9 @@ public class AiOptimizationApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call llmMentionsLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return llmMentionsLocationsAndLanguagesCall(_callback);
 

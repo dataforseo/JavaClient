@@ -139,7 +139,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-local-finder-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-local-finder-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page
    * @return priority
    */
   @javax.annotation.Nullable
@@ -149,6 +149,29 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
 
   public void setPriority(Integer priority) {
     this.priority = priority;
+  }
+
+
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleLocalFinderTaskPostRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs for tasks with high execution priority<p>default value for tasks with <code>priority: 1</code> is <code>true</code><p>default value for tasks with <code>priority: 2</code> is <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time of high-priority tasks, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
   }
 
 
@@ -407,6 +430,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
         Objects.equals(this.languageCode, serpGoogleLocalFinderTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.depth, serpGoogleLocalFinderTaskPostRequestInfo.depth) &&
         Objects.equals(this.priority, serpGoogleLocalFinderTaskPostRequestInfo.priority) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleLocalFinderTaskPostRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.device, serpGoogleLocalFinderTaskPostRequestInfo.device) &&
         Objects.equals(this.pingbackUrl, serpGoogleLocalFinderTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleLocalFinderTaskPostRequestInfo.postbackUrl) &&
@@ -425,7 +449,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, locationCoordinate);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, resolveGotoUrls, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -445,6 +469,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
@@ -486,6 +511,8 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
     openapiFields.add("depth");
     
     openapiFields.add("priority");
+    
+    openapiFields.add("resolve_goto_urls");
     
     openapiFields.add("device");
     

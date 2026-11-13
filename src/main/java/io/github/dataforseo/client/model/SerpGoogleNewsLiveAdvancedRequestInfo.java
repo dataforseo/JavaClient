@@ -116,7 +116,7 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * <p><em>parsing depth</em><p>optional field<p>number of results in SERP<p>default value: <code>10</code><p>max value: <code>200</code></p><br><strong>Your account will be billed per each SERP containing up to 10 results;</strong><p>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;<p>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-news-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * <p><em>parsing depth</em><p>optional field<p>number of results in SERP<p>default value: <code>10</code><p>max value: <code>200</code></p><br><strong>Your account will be billed per each SERP containing up to 10 results;</strong><p>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;<p>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-news-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page
    * @return depth
    */
   @javax.annotation.Nullable
@@ -126,6 +126,29 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   public void setDepth(Integer depth) {
     this.depth = depth;
+  }
+
+
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs<p>default value: <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
   }
 
 
@@ -452,6 +475,7 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
         Objects.equals(this.locationCode, serpGoogleNewsLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleNewsLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.depth, serpGoogleNewsLiveAdvancedRequestInfo.depth) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleNewsLiveAdvancedRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.locationName, serpGoogleNewsLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.languageName, serpGoogleNewsLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleNewsLiveAdvancedRequestInfo.os) &&
@@ -473,7 +497,7 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, locationName, languageName, os, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain);
+  return Objects.hash(keyword, locationCode, languageCode, depth, resolveGotoUrls, locationName, languageName, os, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -492,6 +516,7 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
@@ -534,6 +559,8 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("depth");
+    
+    openapiFields.add("resolve_goto_urls");
     
     openapiFields.add("location_name");
     

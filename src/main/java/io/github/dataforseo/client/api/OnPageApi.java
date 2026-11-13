@@ -321,7 +321,7 @@ public class OnPageApi {
             return localVarCall;
         }
 
-    public okhttp3.Call onPageAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call onPageAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -366,9 +366,9 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call onPageAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return onPageAvailableFiltersCall(_callback);
 
@@ -463,7 +463,7 @@ public class OnPageApi {
             return localVarCall;
         }
 
-    public okhttp3.Call onPageTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call onPageTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -508,9 +508,9 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call onPageTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return onPageTasksReadyCall(_callback);
 
@@ -535,7 +535,7 @@ public class OnPageApi {
        return localVarCall;
     }
 
-    public okhttp3.Call summaryCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call summaryCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -581,13 +581,14 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call summaryValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling summary(Async)");
        }
+   
 
        return summaryCall(id, _callback);
 
@@ -1802,7 +1803,7 @@ public class OnPageApi {
             return localVarCall;
         }
 
-    public okhttp3.Call lighthouseLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call lighthouseLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1847,9 +1848,9 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call lighthouseLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return lighthouseLanguagesCall(_callback);
 
@@ -1874,7 +1875,7 @@ public class OnPageApi {
        return localVarCall;
     }
 
-    public okhttp3.Call lighthouseAuditsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call lighthouseAuditsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1919,9 +1920,9 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call lighthouseAuditsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return lighthouseAuditsCall(_callback);
 
@@ -1946,7 +1947,7 @@ public class OnPageApi {
        return localVarCall;
     }
 
-    public okhttp3.Call lighthouseVersionsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call lighthouseVersionsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1991,9 +1992,9 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call lighthouseVersionsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return lighthouseVersionsCall(_callback);
 
@@ -2088,7 +2089,7 @@ public class OnPageApi {
             return localVarCall;
         }
 
-    public okhttp3.Call lighthouseTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call lighthouseTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2133,9 +2134,9 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call lighthouseTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return lighthouseTasksReadyCall(_callback);
 
@@ -2160,7 +2161,7 @@ public class OnPageApi {
        return localVarCall;
     }
 
-    public okhttp3.Call lighthouseTaskGetJsonCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call lighthouseTaskGetJsonCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2206,13 +2207,14 @@ public class OnPageApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call lighthouseTaskGetJsonValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling lighthouseTaskGetJson(Async)");
        }
+   
 
        return lighthouseTaskGetJsonCall(id, _callback);
 

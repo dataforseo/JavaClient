@@ -223,9 +223,9 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
   @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
-  private List<String> fanOutQueries;
+  private Object fanOutQueries;
 
-  public AiOptimizationPerplexityLlmResponsesLiveResultInfo fanOutQueries(List<String> fanOutQueries) {
+  public AiOptimizationPerplexityLlmResponsesLiveResultInfo fanOutQueries(Object fanOutQueries) {
     this.fanOutQueries = fanOutQueries;
     return this;
   }
@@ -235,11 +235,11 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
    * @return fanOutQueries
    */
   @javax.annotation.Nullable
-  public List<String> getFanOutQueries() {
+  public Object getFanOutQueries() {
     return fanOutQueries;
   }
 
-  public void setFanOutQueries(List<String> fanOutQueries) {
+  public void setFanOutQueries(Object fanOutQueries) {
     this.fanOutQueries = fanOutQueries;
   }
 

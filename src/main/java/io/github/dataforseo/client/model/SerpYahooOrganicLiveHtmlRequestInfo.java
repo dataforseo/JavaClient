@@ -336,36 +336,6 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpYahooOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
 
   public SerpYahooOrganicLiveHtmlRequestInfo() {
   }
@@ -421,8 +391,7 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
         Objects.equals(this.seDomain, serpYahooOrganicLiveHtmlRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpYahooOrganicLiveHtmlRequestInfo.depth) &&
         Objects.equals(this.maxCrawlPages, serpYahooOrganicLiveHtmlRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.searchParam, serpYahooOrganicLiveHtmlRequestInfo.searchParam) &&
-        Objects.equals(this.stopCrawlOnMatch, serpYahooOrganicLiveHtmlRequestInfo.stopCrawlOnMatch);  
+        Objects.equals(this.searchParam, serpYahooOrganicLiveHtmlRequestInfo.searchParam);  
     
   }
 
@@ -432,7 +401,7 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, stopCrawlOnMatch);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -460,7 +429,6 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -509,8 +477,6 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
     openapiFields.add("max_crawl_pages");
     
     openapiFields.add("search_param");
-    
-    openapiFields.add("stop_crawl_on_match");
     
 
     // a set of required properties/fields (JSON key names)

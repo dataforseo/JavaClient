@@ -217,7 +217,7 @@ public class DataforseoLabsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call statusCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call statusCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -262,9 +262,9 @@ public class DataforseoLabsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call statusValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return statusCall(_callback);
 
@@ -359,7 +359,7 @@ public class DataforseoLabsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call availableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call availableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -404,9 +404,9 @@ public class DataforseoLabsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call availableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return availableFiltersCall(_callback);
 
@@ -431,7 +431,7 @@ public class DataforseoLabsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call locationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call locationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -476,9 +476,9 @@ public class DataforseoLabsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call locationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return locationsAndLanguagesCall(_callback);
 
@@ -503,7 +503,7 @@ public class DataforseoLabsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call categoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call categoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -548,9 +548,9 @@ public class DataforseoLabsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call categoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return categoriesCall(_callback);
 
@@ -575,7 +575,7 @@ public class DataforseoLabsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAvailableHistoryCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAvailableHistoryCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -620,9 +620,9 @@ public class DataforseoLabsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAvailableHistoryValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAvailableHistoryCall(_callback);
 
@@ -1067,7 +1067,7 @@ public class DataforseoLabsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleCategoriesForKeywordsLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleCategoriesForKeywordsLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1112,9 +1112,9 @@ public class DataforseoLabsApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleCategoriesForKeywordsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleCategoriesForKeywordsLanguagesCall(_callback);
 

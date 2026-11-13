@@ -251,7 +251,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -296,9 +296,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleCategoriesCall(_callback);
 
@@ -323,7 +323,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appDataGoogleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appDataGoogleLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -368,9 +368,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appDataGoogleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appDataGoogleLocationsCall(_callback);
 
@@ -395,7 +395,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appDataGoogleLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appDataGoogleLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -441,13 +441,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appDataGoogleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling appDataGoogleLocationsCountry(Async)");
        }
+   
 
        return appDataGoogleLocationsCountryCall(country, _callback);
 
@@ -472,7 +473,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appDataGoogleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appDataGoogleLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -517,9 +518,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appDataGoogleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appDataGoogleLanguagesCall(_callback);
 
@@ -614,7 +615,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAppSearchesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppSearchesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -659,9 +660,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppSearchesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAppSearchesTasksReadyCall(_callback);
 
@@ -686,7 +687,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appDataTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appDataTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -731,9 +732,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appDataTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appDataTasksReadyCall(_callback);
 
@@ -758,7 +759,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppSearchesTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppSearchesTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -804,13 +805,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppSearchesTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppSearchesTaskGetAdvanced(Async)");
        }
+   
 
        return googleAppSearchesTaskGetAdvancedCall(id, _callback);
 
@@ -835,7 +837,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppSearchesTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppSearchesTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -881,13 +883,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppSearchesTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppSearchesTaskGetHtml(Async)");
        }
+   
 
        return googleAppSearchesTaskGetHtmlCall(id, _callback);
 
@@ -982,7 +985,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAppListTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppListTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1027,9 +1030,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppListTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAppListTasksReadyCall(_callback);
 
@@ -1054,7 +1057,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppListTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppListTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1100,13 +1103,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppListTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppListTaskGetAdvanced(Async)");
        }
+   
 
        return googleAppListTaskGetAdvancedCall(id, _callback);
 
@@ -1131,7 +1135,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppListTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppListTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1177,13 +1181,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppListTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppListTaskGetHtml(Async)");
        }
+   
 
        return googleAppListTaskGetHtmlCall(id, _callback);
 
@@ -1278,7 +1283,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAppInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1323,9 +1328,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAppInfoTasksReadyCall(_callback);
 
@@ -1350,7 +1355,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppInfoTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppInfoTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1396,13 +1401,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppInfoTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppInfoTaskGetAdvanced(Async)");
        }
+   
 
        return googleAppInfoTaskGetAdvancedCall(id, _callback);
 
@@ -1427,7 +1433,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppInfoTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppInfoTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1473,13 +1479,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppInfoTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppInfoTaskGetHtml(Async)");
        }
+   
 
        return googleAppInfoTaskGetHtmlCall(id, _callback);
 
@@ -1574,7 +1581,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAppReviewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1619,9 +1626,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAppReviewsTasksReadyCall(_callback);
 
@@ -1646,7 +1653,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppReviewsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppReviewsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1692,13 +1699,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppReviewsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppReviewsTaskGetAdvanced(Async)");
        }
+   
 
        return googleAppReviewsTaskGetAdvancedCall(id, _callback);
 
@@ -1723,7 +1731,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppReviewsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppReviewsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1769,13 +1777,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppReviewsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAppReviewsTaskGetHtml(Async)");
        }
+   
 
        return googleAppReviewsTaskGetHtmlCall(id, _callback);
 
@@ -1800,7 +1809,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAppListingsCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppListingsCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1845,9 +1854,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAppListingsCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAppListingsCategoriesCall(_callback);
 
@@ -1942,7 +1951,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call appleCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1987,9 +1996,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleCategoriesCall(_callback);
 
@@ -2014,7 +2023,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2059,9 +2068,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleLocationsCall(_callback);
 
@@ -2086,7 +2095,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2131,9 +2140,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleLanguagesCall(_callback);
 
@@ -2228,7 +2237,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call appleAppSearchesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppSearchesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2273,9 +2282,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppSearchesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleAppSearchesTasksReadyCall(_callback);
 
@@ -2300,7 +2309,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleAppSearchesTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppSearchesTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2346,13 +2355,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppSearchesTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling appleAppSearchesTaskGetAdvanced(Async)");
        }
+   
 
        return appleAppSearchesTaskGetAdvancedCall(id, _callback);
 
@@ -2447,7 +2457,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call appleAppInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2492,9 +2502,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleAppInfoTasksReadyCall(_callback);
 
@@ -2519,7 +2529,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleAppInfoTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppInfoTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2565,13 +2575,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppInfoTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling appleAppInfoTaskGetAdvanced(Async)");
        }
+   
 
        return appleAppInfoTaskGetAdvancedCall(id, _callback);
 
@@ -2666,7 +2677,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call appleAppListTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppListTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2711,9 +2722,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppListTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleAppListTasksReadyCall(_callback);
 
@@ -2738,7 +2749,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleAppListTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppListTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2784,13 +2795,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppListTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling appleAppListTaskGetAdvanced(Async)");
        }
+   
 
        return appleAppListTaskGetAdvancedCall(id, _callback);
 
@@ -2885,7 +2897,7 @@ public class AppDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call appleAppReviewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2930,9 +2942,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleAppReviewsTasksReadyCall(_callback);
 
@@ -2957,7 +2969,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleAppReviewsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppReviewsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3003,13 +3015,14 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppReviewsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling appleAppReviewsTaskGetAdvanced(Async)");
        }
+   
 
        return appleAppReviewsTaskGetAdvancedCall(id, _callback);
 
@@ -3034,7 +3047,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appleAppListingsCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppListingsCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3079,9 +3092,9 @@ public class AppDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appleAppListingsCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appleAppListingsCategoriesCall(_callback);
 

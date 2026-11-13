@@ -243,7 +243,7 @@ public class BacklinksApi {
             return localVarCall;
         }
 
-    public okhttp3.Call backlinksAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call backlinksAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -288,9 +288,9 @@ public class BacklinksApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call backlinksAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return backlinksAvailableFiltersCall(_callback);
 
@@ -315,7 +315,7 @@ public class BacklinksApi {
        return localVarCall;
     }
 
-    public okhttp3.Call indexCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call indexCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -360,9 +360,9 @@ public class BacklinksApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call indexValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return indexCall(_callback);
 

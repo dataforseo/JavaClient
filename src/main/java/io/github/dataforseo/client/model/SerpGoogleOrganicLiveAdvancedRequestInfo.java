@@ -129,6 +129,29 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs<p>default value: <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+  }
+
+
   public static final String SERIALIZED_NAME_DEVICE = "device";
   @SerializedName(SERIALIZED_NAME_DEVICE)
   private String device;
@@ -264,82 +287,6 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   public void setTag(String tag) {
     this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpGoogleOrganicLiveAdvancedRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public SerpGoogleOrganicLiveAdvancedRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * <p><em>target match type</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>type of match for the <code>match_value</code><p>possible values:<p><code>domain</code> – specific domain or subdomain<p><code>with_subdomains</code> – main domain and subdomains<p><code>wildcard</code> –  wildcard pattern</p>
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
-
-  public SerpGoogleOrganicLiveAdvancedRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
-    return this;
-  }
-
-  /**
-   * <p><em>target domain, subdomain, or wildcard value</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>specify a target domain, subdomain, or wildcard value;<p><strong>Note:</strong> domain or subdomain must be specified without a request protocol;<p>example: <code>'match_value': 'dataforseo.com'</code>,<p><code>'match_value': '/blog/post-*'</code></p>
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
   }
 
 
@@ -642,75 +589,6 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_TARGET_SEARCH_MODE = "target_search_mode";
-  @SerializedName(SERIALIZED_NAME_TARGET_SEARCH_MODE)
-  private String targetSearchMode;
-
-  public SerpGoogleOrganicLiveAdvancedRequestInfo targetSearchMode(String targetSearchMode) {
-    this.targetSearchMode = targetSearchMode;
-    return this;
-  }
-
-  /**
-   * <p><em>target matching mode</em><p>optional field<p>to enable this parameter, <code>stop_crawl_on_match</code> must also be enabled<p>defines how the crawl should stop when multiple targets are specified in <code>stop_crawl_on_match</code><p>possible values: <code>all</code>, <code>any</code><p><code>all</code> – the crawl stops only when all specified targets are found<p><code>any</code> – the crawl stops when any single target is found<p>default value: <code>any</code><p>learn more about this parameter on our <a href='https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api' target='_blank'>Help Center</a></p>
-   * @return targetSearchMode
-   */
-  @javax.annotation.Nullable
-  public String getTargetSearchMode() {
-    return targetSearchMode;
-  }
-
-  public void setTargetSearchMode(String targetSearchMode) {
-    this.targetSearchMode = targetSearchMode;
-  }
-
-
-  public static final String SERIALIZED_NAME_FIND_TARGETS_IN = "find_targets_in";
-  @SerializedName(SERIALIZED_NAME_FIND_TARGETS_IN)
-  private List<String> findTargetsIn;
-
-  public SerpGoogleOrganicLiveAdvancedRequestInfo findTargetsIn(List<String> findTargetsIn) {
-    this.findTargetsIn = findTargetsIn;
-    return this;
-  }
-
-  /**
-   * <p><em>SERP element types to check for targets</em><p>optional field<p>to enable this parameter, <code>stop_crawl_on_match</code> must also be enabled<p>specifies which SERP element types should be checked for target matches<p>if not specified, all first-level elements with <code>url</code> and <code>domain</code> fields are checked for targets<p>possible values: <code>organic</code>, <code>paid</code>, <code>local_pack</code>, <code>featured_snippet</code>, <code>events</code>, <code>google_flights</code>, <code>images</code>, <code>jobs</code>, <code>knowledge_graph</code>, <code>local_service</code>, <code>map</code>, <code>scholarly_articles</code>, <code>third_party_reviews</code>, <code>twitter</code><p><strong>Note:</strong> cannot contain the same element types as <code>ignore_targets_in</code><p>example:<p><code>'find_targets_in': ['organic', 'featured_snippet']</code><p>learn more about this parameter on our <a href='https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api' target='_blank'>Help Center</a></p>
-   * @return findTargetsIn
-   */
-  @javax.annotation.Nullable
-  public List<String> getFindTargetsIn() {
-    return findTargetsIn;
-  }
-
-  public void setFindTargetsIn(List<String> findTargetsIn) {
-    this.findTargetsIn = findTargetsIn;
-  }
-
-
-  public static final String SERIALIZED_NAME_IGNORE_TARGETS_IN = "ignore_targets_in";
-  @SerializedName(SERIALIZED_NAME_IGNORE_TARGETS_IN)
-  private List<String> ignoreTargetsIn;
-
-  public SerpGoogleOrganicLiveAdvancedRequestInfo ignoreTargetsIn(List<String> ignoreTargetsIn) {
-    this.ignoreTargetsIn = ignoreTargetsIn;
-    return this;
-  }
-
-  /**
-   * <p><em>SERP element types to exclude from target search</em><p>optional field<p>to enable this parameter, <code>stop_crawl_on_match</code> must also be enabled<p>specifies which SERP element types should be excluded when searching for target matches<p>possible values: <code>organic</code>, <code>paid</code>, <code>local_pack</code>, <code>featured_snippet</code>, <code>events</code>, <code>google_flights</code>, <code>images</code>, <code>jobs</code>, <code>knowledge_graph</code>, <code>local_service</code>, <code>map</code>, <code>scholarly_articles</code>, <code>third_party_reviews</code>, <code>twitter</code><p><strong>Note:</strong> cannot contain the same element types as <code>find_targets_in</code><p>example:<p><code>'ignore_targets_in': ['paid', 'images']</code><p>learn more about this parameter on our <a href='https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api' target='_blank'>Help Center</a></p>
-   * @return ignoreTargetsIn
-   */
-  @javax.annotation.Nullable
-  public List<String> getIgnoreTargetsIn() {
-    return ignoreTargetsIn;
-  }
-
-  public void setIgnoreTargetsIn(List<String> ignoreTargetsIn) {
-    this.ignoreTargetsIn = ignoreTargetsIn;
-  }
-
-
 
   public SerpGoogleOrganicLiveAdvancedRequestInfo() {
   }
@@ -758,15 +636,13 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.locationCode, serpGoogleOrganicLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleOrganicLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.depth, serpGoogleOrganicLiveAdvancedRequestInfo.depth) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleOrganicLiveAdvancedRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.device, serpGoogleOrganicLiveAdvancedRequestInfo.device) &&
         Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveAdvancedRequestInfo.loadAsyncAiOverview) &&
         Objects.equals(this.locationName, serpGoogleOrganicLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.languageName, serpGoogleOrganicLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleOrganicLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.tag, serpGoogleOrganicLiveAdvancedRequestInfo.tag) &&
-        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveAdvancedRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchType, serpGoogleOrganicLiveAdvancedRequestInfo.matchType) &&
-        Objects.equals(this.matchValue, serpGoogleOrganicLiveAdvancedRequestInfo.matchValue) &&
         Objects.equals(this.maxCrawlPages, serpGoogleOrganicLiveAdvancedRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpGoogleOrganicLiveAdvancedRequestInfo.searchParam) &&
         Objects.equals(this.removeFromUrl, serpGoogleOrganicLiveAdvancedRequestInfo.removeFromUrl) &&
@@ -779,10 +655,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.url, serpGoogleOrganicLiveAdvancedRequestInfo.url) &&
         Objects.equals(this.locationCoordinate, serpGoogleOrganicLiveAdvancedRequestInfo.locationCoordinate) &&
         Objects.equals(this.seDomain, serpGoogleOrganicLiveAdvancedRequestInfo.seDomain) &&
-        Objects.equals(this.target, serpGoogleOrganicLiveAdvancedRequestInfo.target) &&
-        Objects.equals(this.targetSearchMode, serpGoogleOrganicLiveAdvancedRequestInfo.targetSearchMode) &&
-        Objects.equals(this.findTargetsIn, serpGoogleOrganicLiveAdvancedRequestInfo.findTargetsIn) &&
-        Objects.equals(this.ignoreTargetsIn, serpGoogleOrganicLiveAdvancedRequestInfo.ignoreTargetsIn);  
+        Objects.equals(this.target, serpGoogleOrganicLiveAdvancedRequestInfo.target);  
     
   }
 
@@ -792,7 +665,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, locationName, languageName, os, tag, stopCrawlOnMatch, matchType, matchValue, maxCrawlPages, searchParam, removeFromUrl, peopleAlsoAskClickDepth, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain, target, targetSearchMode, findTargetsIn, ignoreTargetsIn);
+  return Objects.hash(keyword, locationCode, languageCode, depth, resolveGotoUrls, device, loadAsyncAiOverview, locationName, languageName, os, tag, maxCrawlPages, searchParam, removeFromUrl, peopleAlsoAskClickDepth, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain, target);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -811,15 +684,13 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    removeFromUrl: ").append(toIndentedString(removeFromUrl)).append("\n");
@@ -833,9 +704,6 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
-    sb.append("    targetSearchMode: ").append(toIndentedString(targetSearchMode)).append("\n");
-    sb.append("    findTargetsIn: ").append(toIndentedString(findTargetsIn)).append("\n");
-    sb.append("    ignoreTargetsIn: ").append(toIndentedString(ignoreTargetsIn)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -867,6 +735,8 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     
     openapiFields.add("depth");
     
+    openapiFields.add("resolve_goto_urls");
+    
     openapiFields.add("device");
     
     openapiFields.add("load_async_ai_overview");
@@ -878,12 +748,6 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("os");
     
     openapiFields.add("tag");
-    
-    openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_type");
-    
-    openapiFields.add("match_value");
     
     openapiFields.add("max_crawl_pages");
     
@@ -910,12 +774,6 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("se_domain");
     
     openapiFields.add("target");
-    
-    openapiFields.add("target_search_mode");
-    
-    openapiFields.add("find_targets_in");
-    
-    openapiFields.add("ignore_targets_in");
     
 
     // a set of required properties/fields (JSON key names)

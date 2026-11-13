@@ -298,7 +298,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsStatusCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsStatusCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -343,9 +343,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsStatusValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsStatusCall(_callback);
 
@@ -370,7 +370,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -415,9 +415,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsLocationsCall(_callback);
 
@@ -442,7 +442,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -488,13 +488,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling googleAdsLocationsCountry(Async)");
        }
+   
 
        return googleAdsLocationsCountryCall(country, _callback);
 
@@ -519,7 +520,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -564,9 +565,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsLanguagesCall(_callback);
 
@@ -661,7 +662,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsSearchVolumeTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchVolumeTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -706,9 +707,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsSearchVolumeTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsSearchVolumeTasksReadyCall(_callback);
 
@@ -733,7 +734,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsSearchVolumeTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchVolumeTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -779,13 +780,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsSearchVolumeTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAdsSearchVolumeTaskGet(Async)");
        }
+   
 
        return googleAdsSearchVolumeTaskGetCall(id, _callback);
 
@@ -950,7 +952,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsKeywordsForSiteTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsKeywordsForSiteTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -995,9 +997,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsKeywordsForSiteTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsKeywordsForSiteTasksReadyCall(_callback);
 
@@ -1022,7 +1024,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsKeywordsForSiteTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsKeywordsForSiteTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1068,13 +1070,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsKeywordsForSiteTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAdsKeywordsForSiteTaskGet(Async)");
        }
+   
 
        return googleAdsKeywordsForSiteTaskGetCall(id, _callback);
 
@@ -1239,7 +1242,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsKeywordsForKeywordsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsKeywordsForKeywordsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1284,9 +1287,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsKeywordsForKeywordsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsKeywordsForKeywordsTasksReadyCall(_callback);
 
@@ -1311,7 +1314,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsKeywordsForKeywordsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsKeywordsForKeywordsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1357,13 +1360,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsKeywordsForKeywordsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAdsKeywordsForKeywordsTaskGet(Async)");
        }
+   
 
        return googleAdsKeywordsForKeywordsTaskGetCall(id, _callback);
 
@@ -1528,7 +1532,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsAdTrafficByKeywordsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdTrafficByKeywordsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1573,9 +1577,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsAdTrafficByKeywordsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsAdTrafficByKeywordsTasksReadyCall(_callback);
 
@@ -1600,7 +1604,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsAdTrafficByKeywordsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdTrafficByKeywordsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1646,13 +1650,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsAdTrafficByKeywordsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAdsAdTrafficByKeywordsTaskGet(Async)");
        }
+   
 
        return googleAdsAdTrafficByKeywordsTaskGetCall(id, _callback);
 
@@ -1747,7 +1752,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleTrendsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1792,9 +1797,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleTrendsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleTrendsLocationsCall(_callback);
 
@@ -1819,7 +1824,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleTrendsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1865,13 +1870,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleTrendsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling googleTrendsLocationsCountry(Async)");
        }
+   
 
        return googleTrendsLocationsCountryCall(country, _callback);
 
@@ -1896,7 +1902,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleTrendsLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1941,9 +1947,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleTrendsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleTrendsLanguagesCall(_callback);
 
@@ -1968,7 +1974,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleTrendsCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2013,9 +2019,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleTrendsCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleTrendsCategoriesCall(_callback);
 
@@ -2110,7 +2116,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleTrendsExploreTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsExploreTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2155,9 +2161,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleTrendsExploreTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleTrendsExploreTasksReadyCall(_callback);
 
@@ -2182,7 +2188,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleTrendsExploreTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsExploreTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2228,13 +2234,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleTrendsExploreTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleTrendsExploreTaskGet(Async)");
        }
+   
 
        return googleTrendsExploreTaskGetCall(id, _callback);
 
@@ -2329,7 +2336,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call dataforseoTrendsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call dataforseoTrendsLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2374,9 +2381,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call dataforseoTrendsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return dataforseoTrendsLocationsCall(_callback);
 
@@ -2401,7 +2408,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call dataforseoTrendsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call dataforseoTrendsLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2447,13 +2454,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call dataforseoTrendsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling dataforseoTrendsLocationsCountry(Async)");
        }
+   
 
        return dataforseoTrendsLocationsCountryCall(country, _callback);
 
@@ -2758,7 +2766,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call keywordsDataBingLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call keywordsDataBingLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2803,9 +2811,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call keywordsDataBingLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return keywordsDataBingLocationsCall(_callback);
 
@@ -2830,7 +2838,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataBingLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call keywordsDataBingLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2875,9 +2883,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call keywordsDataBingLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return keywordsDataBingLanguagesCall(_callback);
 
@@ -2972,7 +2980,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingSearchVolumeTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3017,9 +3025,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingSearchVolumeTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingSearchVolumeTasksReadyCall(_callback);
 
@@ -3044,7 +3052,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingSearchVolumeTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3090,13 +3098,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingSearchVolumeTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingSearchVolumeTaskGet(Async)");
        }
+   
 
        return bingSearchVolumeTaskGetCall(id, _callback);
 
@@ -3191,7 +3200,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingAudienceEstimationJobFunctionsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingAudienceEstimationJobFunctionsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3236,9 +3245,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingAudienceEstimationJobFunctionsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingAudienceEstimationJobFunctionsCall(_callback);
 
@@ -3263,7 +3272,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingAudienceEstimationIndustriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingAudienceEstimationIndustriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3308,9 +3317,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingAudienceEstimationIndustriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingAudienceEstimationIndustriesCall(_callback);
 
@@ -3405,7 +3414,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingAudienceEstimationTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingAudienceEstimationTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3450,9 +3459,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingAudienceEstimationTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingAudienceEstimationTasksReadyCall(_callback);
 
@@ -3477,7 +3486,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingAudienceEstimationTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingAudienceEstimationTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3523,13 +3532,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingAudienceEstimationTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingAudienceEstimationTaskGet(Async)");
        }
+   
 
        return bingAudienceEstimationTaskGetCall(id, _callback);
 
@@ -3694,7 +3704,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingKeywordsForSiteTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordsForSiteTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3739,9 +3749,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordsForSiteTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingKeywordsForSiteTasksReadyCall(_callback);
 
@@ -3766,7 +3776,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingKeywordsForSiteTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordsForSiteTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3812,13 +3822,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordsForSiteTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingKeywordsForSiteTaskGet(Async)");
        }
+   
 
        return bingKeywordsForSiteTaskGetCall(id, _callback);
 
@@ -3983,7 +3994,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingKeywordsForKeywordsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordsForKeywordsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4028,9 +4039,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordsForKeywordsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingKeywordsForKeywordsTasksReadyCall(_callback);
 
@@ -4055,7 +4066,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingKeywordsForKeywordsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordsForKeywordsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4101,13 +4112,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordsForKeywordsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingKeywordsForKeywordsTaskGet(Async)");
        }
+   
 
        return bingKeywordsForKeywordsTaskGetCall(id, _callback);
 
@@ -4202,7 +4214,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingKeywordPerformanceLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordPerformanceLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4247,9 +4259,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingKeywordPerformanceLocationsAndLanguagesCall(_callback);
 
@@ -4344,7 +4356,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingKeywordPerformanceTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordPerformanceTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4389,9 +4401,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordPerformanceTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingKeywordPerformanceTasksReadyCall(_callback);
 
@@ -4416,7 +4428,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingKeywordPerformanceTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordPerformanceTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4462,13 +4474,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingKeywordPerformanceTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingKeywordPerformanceTaskGet(Async)");
        }
+   
 
        return bingKeywordPerformanceTaskGetCall(id, _callback);
 
@@ -4563,7 +4576,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingSearchVolumeHistoryLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeHistoryLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4608,9 +4621,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingSearchVolumeHistoryLocationsAndLanguagesCall(_callback);
 
@@ -4705,7 +4718,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingSearchVolumeHistoryTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeHistoryTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4750,9 +4763,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingSearchVolumeHistoryTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingSearchVolumeHistoryTasksReadyCall(_callback);
 
@@ -4777,7 +4790,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingSearchVolumeHistoryTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeHistoryTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4823,13 +4836,14 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingSearchVolumeHistoryTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingSearchVolumeHistoryTaskGet(Async)");
        }
+   
 
        return bingSearchVolumeHistoryTaskGetCall(id, _callback);
 
@@ -4924,7 +4938,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call clickstreamDataLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4969,9 +4983,9 @@ public class KeywordsDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call clickstreamDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return clickstreamDataLocationsAndLanguagesCall(_callback);
 

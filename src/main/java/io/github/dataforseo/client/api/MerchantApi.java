@@ -249,7 +249,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call merchantGoogleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call merchantGoogleLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -294,9 +294,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call merchantGoogleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return merchantGoogleLanguagesCall(_callback);
 
@@ -321,7 +321,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call merchantGoogleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call merchantGoogleLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -366,9 +366,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call merchantGoogleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return merchantGoogleLocationsCall(_callback);
 
@@ -393,7 +393,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call merchantGoogleLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call merchantGoogleLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -439,13 +439,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call merchantGoogleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling merchantGoogleLocationsCountry(Async)");
        }
+   
 
        return merchantGoogleLocationsCountryCall(country, _callback);
 
@@ -540,7 +541,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleProductsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleProductsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -585,9 +586,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleProductsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleProductsTasksReadyCall(_callback);
 
@@ -612,7 +613,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call merchantTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call merchantTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -657,9 +658,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call merchantTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return merchantTasksReadyCall(_callback);
 
@@ -684,7 +685,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleProductsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleProductsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -730,13 +731,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleProductsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleProductsTaskGetAdvanced(Async)");
        }
+   
 
        return googleProductsTaskGetAdvancedCall(id, _callback);
 
@@ -761,7 +763,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleProductsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleProductsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -807,13 +809,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleProductsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleProductsTaskGetHtml(Async)");
        }
+   
 
        return googleProductsTaskGetHtmlCall(id, _callback);
 
@@ -908,7 +911,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleSellersTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleSellersTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -953,9 +956,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleSellersTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleSellersTasksReadyCall(_callback);
 
@@ -980,7 +983,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleSellersTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleSellersTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1026,13 +1029,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleSellersTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleSellersTaskGetAdvanced(Async)");
        }
+   
 
        return googleSellersTaskGetAdvancedCall(id, _callback);
 
@@ -1127,7 +1131,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleProductInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleProductInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1172,9 +1176,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleProductInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleProductInfoTasksReadyCall(_callback);
 
@@ -1199,7 +1203,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleProductInfoTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleProductInfoTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1245,13 +1249,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleProductInfoTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleProductInfoTaskGetAdvanced(Async)");
        }
+   
 
        return googleProductInfoTaskGetAdvancedCall(id, _callback);
 
@@ -1276,7 +1281,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleSellersAdUrlCall( String shop_ad_aclk,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleSellersAdUrlCall(String shop_ad_aclk, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1322,13 +1327,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleSellersAdUrlValidateBeforeCall(String shop_ad_aclk, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'shop_ad_aclk' is set
        if (shop_ad_aclk == null) {
            throw new ApiException("Missing the required parameter 'shop_ad_aclk' when calling googleSellersAdUrl(Async)");
        }
+   
 
        return googleSellersAdUrlCall(shop_ad_aclk, _callback);
 
@@ -1353,7 +1359,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call amazonLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1398,9 +1404,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return amazonLocationsCall(_callback);
 
@@ -1425,7 +1431,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call amazonLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1471,13 +1477,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling amazonLocationsCountry(Async)");
        }
+   
 
        return amazonLocationsCountryCall(country, _callback);
 
@@ -1502,7 +1509,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call amazonLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1547,9 +1554,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return amazonLanguagesCall(_callback);
 
@@ -1644,7 +1651,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call amazonProductsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonProductsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1689,9 +1696,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonProductsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return amazonProductsTasksReadyCall(_callback);
 
@@ -1716,7 +1723,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call amazonProductsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonProductsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1762,13 +1769,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonProductsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling amazonProductsTaskGetAdvanced(Async)");
        }
+   
 
        return amazonProductsTaskGetAdvancedCall(id, _callback);
 
@@ -1863,7 +1871,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call amazonProductsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonProductsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1909,13 +1917,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonProductsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling amazonProductsTaskGetHtml(Async)");
        }
+   
 
        return amazonProductsTaskGetHtmlCall(id, _callback);
 
@@ -2080,7 +2089,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call amazonAsinTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonAsinTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2125,9 +2134,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonAsinTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return amazonAsinTasksReadyCall(_callback);
 
@@ -2152,7 +2161,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call amazonAsinTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonAsinTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2198,13 +2207,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonAsinTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling amazonAsinTaskGetAdvanced(Async)");
        }
+   
 
        return amazonAsinTaskGetAdvancedCall(id, _callback);
 
@@ -2299,7 +2309,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call amazonAsinTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonAsinTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2345,13 +2355,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonAsinTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling amazonAsinTaskGetHtml(Async)");
        }
+   
 
        return amazonAsinTaskGetHtmlCall(id, _callback);
 
@@ -2516,7 +2527,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call amazonSellersTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonSellersTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2561,9 +2572,9 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonSellersTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return amazonSellersTasksReadyCall(_callback);
 
@@ -2588,7 +2599,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call amazonSellersTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonSellersTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2634,13 +2645,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonSellersTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling amazonSellersTaskGetAdvanced(Async)");
        }
+   
 
        return amazonSellersTaskGetAdvancedCall(id, _callback);
 
@@ -2735,7 +2747,7 @@ public class MerchantApi {
             return localVarCall;
         }
 
-    public okhttp3.Call amazonSellersTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonSellersTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2781,13 +2793,14 @@ public class MerchantApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call amazonSellersTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling amazonSellersTaskGetHtml(Async)");
        }
+   
 
        return amazonSellersTaskGetHtmlCall(id, _callback);
 

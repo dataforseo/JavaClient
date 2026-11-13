@@ -545,9 +545,9 @@ public class BacklinksDomainIntersection  {
 
   public static final String SERIALIZED_NAME_REFERRING_LINKS_COUNTRIES = "referring_links_countries";
   @SerializedName(SERIALIZED_NAME_REFERRING_LINKS_COUNTRIES)
-  private Map<String, Long> referringLinksCountries;
+  private Object referringLinksCountries;
 
-  public BacklinksDomainIntersection referringLinksCountries(Map<String, Long> referringLinksCountries) {
+  public BacklinksDomainIntersection referringLinksCountries(Object referringLinksCountries) {
     this.referringLinksCountries = referringLinksCountries;
     return this;
   }
@@ -557,11 +557,11 @@ public class BacklinksDomainIntersection  {
    * @return referringLinksCountries
    */
   @javax.annotation.Nullable
-  public Map<String, Long> getReferringLinksCountries() {
+  public Object getReferringLinksCountries() {
     return referringLinksCountries;
   }
 
-  public void setReferringLinksCountries(Map<String, Long> referringLinksCountries) {
+  public void setReferringLinksCountries(Object referringLinksCountries) {
     this.referringLinksCountries = referringLinksCountries;
   }
 

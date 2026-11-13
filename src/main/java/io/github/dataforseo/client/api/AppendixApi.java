@@ -62,7 +62,7 @@ public class AppendixApi {
     }
 
 
-    public okhttp3.Call userDataCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call userDataCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -107,9 +107,9 @@ public class AppendixApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call userDataValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return userDataCall(_callback);
 
@@ -134,7 +134,7 @@ public class AppendixApi {
        return localVarCall;
     }
 
-    public okhttp3.Call errorsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call errorsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -179,9 +179,9 @@ public class AppendixApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call errorsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return errorsCall(_callback);
 
@@ -276,7 +276,7 @@ public class AppendixApi {
             return localVarCall;
         }
 
-    public okhttp3.Call appendixStatusCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appendixStatusCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -321,9 +321,9 @@ public class AppendixApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call appendixStatusValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return appendixStatusCall(_callback);
 

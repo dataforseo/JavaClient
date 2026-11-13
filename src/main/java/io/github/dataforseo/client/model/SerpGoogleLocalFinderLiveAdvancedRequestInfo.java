@@ -129,6 +129,29 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs<p>default value: <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+  }
+
+
   public static final String SERIALIZED_NAME_DEVICE = "device";
   @SerializedName(SERIALIZED_NAME_DEVICE)
   private String device;
@@ -244,29 +267,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-local-finder-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
   @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
   private String locationCoordinate;
@@ -337,12 +337,12 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
         Objects.equals(this.locationCode, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleLocalFinderLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.depth, serpGoogleLocalFinderLiveAdvancedRequestInfo.depth) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleLocalFinderLiveAdvancedRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.device, serpGoogleLocalFinderLiveAdvancedRequestInfo.device) &&
         Objects.equals(this.locationName, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.languageName, serpGoogleLocalFinderLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleLocalFinderLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.tag, serpGoogleLocalFinderLiveAdvancedRequestInfo.tag) &&
-        Objects.equals(this.priority, serpGoogleLocalFinderLiveAdvancedRequestInfo.priority) &&
         Objects.equals(this.locationCoordinate, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCoordinate);  
     
   }
@@ -353,7 +353,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, priority, locationCoordinate);
+  return Objects.hash(keyword, locationCode, languageCode, depth, resolveGotoUrls, device, locationName, languageName, os, tag, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -372,12 +372,12 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -410,6 +410,8 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     
     openapiFields.add("depth");
     
+    openapiFields.add("resolve_goto_urls");
+    
     openapiFields.add("device");
     
     openapiFields.add("location_name");
@@ -419,8 +421,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     openapiFields.add("os");
     
     openapiFields.add("tag");
-    
-    openapiFields.add("priority");
     
     openapiFields.add("location_coordinate");
     

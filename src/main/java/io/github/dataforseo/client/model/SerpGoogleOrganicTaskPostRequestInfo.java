@@ -267,6 +267,29 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleOrganicTaskPostRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs for tasks with high execution priority<p>default value for tasks with <code>priority: 1</code> is <code>true</code><p>default value for tasks with <code>priority: 2</code> is <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time of high-priority tasks, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+  }
+
+
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -379,82 +402,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
 
   public void setOs(String os) {
     this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpGoogleOrganicTaskPostRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public SerpGoogleOrganicTaskPostRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * <p><em>target match type</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>type of match for the <code>match_value</code><p>possible values:<p><code>domain</code> – specific domain or subdomain<p><code>with_subdomains</code> – main domain and subdomains<p><code>wildcard</code> –  wildcard pattern</p>
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
-
-  public SerpGoogleOrganicTaskPostRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
-    return this;
-  }
-
-  /**
-   * <p><em>target domain, subdomain, or wildcard value</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>specify a target domain, subdomain, or wildcard value;<p><strong>Note:</strong> domain or subdomain must be specified without a request protocol;<p>example: <code>'match_value': 'dataforseo.com'</code>,<p><code>'match_value': '/blog/post-*'</code></p>
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
   }
 
 
@@ -711,75 +658,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_TARGET_SEARCH_MODE = "target_search_mode";
-  @SerializedName(SERIALIZED_NAME_TARGET_SEARCH_MODE)
-  private String targetSearchMode;
-
-  public SerpGoogleOrganicTaskPostRequestInfo targetSearchMode(String targetSearchMode) {
-    this.targetSearchMode = targetSearchMode;
-    return this;
-  }
-
-  /**
-   * <p><em>target matching mode</em><p>optional field<p>to enable this parameter, <code>stop_crawl_on_match</code> must also be enabled<p>defines how the crawl should stop when multiple targets are specified in <code>stop_crawl_on_match</code><p>possible values: <code>all</code>, <code>any</code><p><code>all</code> – the crawl stops only when all specified targets are found<p><code>any</code> – the crawl stops when any single target is found<p>default value: <code>any</code><p>learn more about this parameter on our <a href='https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api' target='_blank'>Help Center</a></p>
-   * @return targetSearchMode
-   */
-  @javax.annotation.Nullable
-  public String getTargetSearchMode() {
-    return targetSearchMode;
-  }
-
-  public void setTargetSearchMode(String targetSearchMode) {
-    this.targetSearchMode = targetSearchMode;
-  }
-
-
-  public static final String SERIALIZED_NAME_FIND_TARGETS_IN = "find_targets_in";
-  @SerializedName(SERIALIZED_NAME_FIND_TARGETS_IN)
-  private List<String> findTargetsIn;
-
-  public SerpGoogleOrganicTaskPostRequestInfo findTargetsIn(List<String> findTargetsIn) {
-    this.findTargetsIn = findTargetsIn;
-    return this;
-  }
-
-  /**
-   * <p><em>SERP element types to check for targets</em><p>optional field<p>to enable this parameter, <code>stop_crawl_on_match</code> must also be enabled<p>specifies which SERP element types should be checked for target matches<p>if not specified, all first-level elements with <code>url</code> and <code>domain</code> fields are checked for targets<p>possible values: <code>organic</code>, <code>paid</code>, <code>local_pack</code>, <code>featured_snippet</code>, <code>events</code>, <code>google_flights</code>, <code>images</code>, <code>jobs</code>, <code>knowledge_graph</code>, <code>local_service</code>, <code>map</code>, <code>scholarly_articles</code>, <code>third_party_reviews</code>, <code>twitter</code><p><strong>Note:</strong> cannot contain the same element types as <code>ignore_targets_in</code><p>example:<p><code>'find_targets_in': ['organic', 'featured_snippet']</code><p>learn more about this parameter on our <a href='https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api' target='_blank'>Help Center</a></p>
-   * @return findTargetsIn
-   */
-  @javax.annotation.Nullable
-  public List<String> getFindTargetsIn() {
-    return findTargetsIn;
-  }
-
-  public void setFindTargetsIn(List<String> findTargetsIn) {
-    this.findTargetsIn = findTargetsIn;
-  }
-
-
-  public static final String SERIALIZED_NAME_IGNORE_TARGETS_IN = "ignore_targets_in";
-  @SerializedName(SERIALIZED_NAME_IGNORE_TARGETS_IN)
-  private List<String> ignoreTargetsIn;
-
-  public SerpGoogleOrganicTaskPostRequestInfo ignoreTargetsIn(List<String> ignoreTargetsIn) {
-    this.ignoreTargetsIn = ignoreTargetsIn;
-    return this;
-  }
-
-  /**
-   * <p><em>SERP element types to exclude from target search</em><p>optional field<p>to enable this parameter, <code>stop_crawl_on_match</code> must also be enabled<p>specifies which SERP element types should be excluded when searching for target matches<p>possible values: <code>organic</code>, <code>paid</code>, <code>local_pack</code>, <code>featured_snippet</code>, <code>events</code>, <code>google_flights</code>, <code>images</code>, <code>jobs</code>, <code>knowledge_graph</code>, <code>local_service</code>, <code>map</code>, <code>scholarly_articles</code>, <code>third_party_reviews</code>, <code>twitter</code><p><strong>Note:</strong> cannot contain the same element types as <code>find_targets_in</code><p>example:<p><code>'ignore_targets_in': ['paid', 'images']</code><p>learn more about this parameter on our <a href='https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api' target='_blank'>Help Center</a></p>
-   * @return ignoreTargetsIn
-   */
-  @javax.annotation.Nullable
-  public List<String> getIgnoreTargetsIn() {
-    return ignoreTargetsIn;
-  }
-
-  public void setIgnoreTargetsIn(List<String> ignoreTargetsIn) {
-    this.ignoreTargetsIn = ignoreTargetsIn;
-  }
-
-
   public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
   @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
   private String seDomain;
@@ -856,14 +734,12 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
         Objects.equals(this.postbackUrl, serpGoogleOrganicTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleOrganicTaskPostRequestInfo.postbackData) &&
         Objects.equals(this.priority, serpGoogleOrganicTaskPostRequestInfo.priority) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleOrganicTaskPostRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.locationName, serpGoogleOrganicTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCoordinate, serpGoogleOrganicTaskPostRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, serpGoogleOrganicTaskPostRequestInfo.languageName) &&
         Objects.equals(this.tag, serpGoogleOrganicTaskPostRequestInfo.tag) &&
         Objects.equals(this.os, serpGoogleOrganicTaskPostRequestInfo.os) &&
-        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchType, serpGoogleOrganicTaskPostRequestInfo.matchType) &&
-        Objects.equals(this.matchValue, serpGoogleOrganicTaskPostRequestInfo.matchValue) &&
         Objects.equals(this.maxCrawlPages, serpGoogleOrganicTaskPostRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpGoogleOrganicTaskPostRequestInfo.searchParam) &&
         Objects.equals(this.removeFromUrl, serpGoogleOrganicTaskPostRequestInfo.removeFromUrl) &&
@@ -875,9 +751,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
         Objects.equals(this.browserScreenHeight, serpGoogleOrganicTaskPostRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpGoogleOrganicTaskPostRequestInfo.browserScreenResolutionRatio) &&
         Objects.equals(this.url, serpGoogleOrganicTaskPostRequestInfo.url) &&
-        Objects.equals(this.targetSearchMode, serpGoogleOrganicTaskPostRequestInfo.targetSearchMode) &&
-        Objects.equals(this.findTargetsIn, serpGoogleOrganicTaskPostRequestInfo.findTargetsIn) &&
-        Objects.equals(this.ignoreTargetsIn, serpGoogleOrganicTaskPostRequestInfo.ignoreTargetsIn) &&
         Objects.equals(this.seDomain, serpGoogleOrganicTaskPostRequestInfo.seDomain);  
     
   }
@@ -888,7 +761,7 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, pingbackUrl, postbackUrl, postbackData, priority, locationName, locationCoordinate, languageName, tag, os, stopCrawlOnMatch, matchType, matchValue, maxCrawlPages, searchParam, removeFromUrl, expandAiOverview, peopleAlsoAskClickDepth, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, targetSearchMode, findTargetsIn, ignoreTargetsIn, seDomain);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, pingbackUrl, postbackUrl, postbackData, priority, resolveGotoUrls, locationName, locationCoordinate, languageName, tag, os, maxCrawlPages, searchParam, removeFromUrl, expandAiOverview, peopleAlsoAskClickDepth, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -913,14 +786,12 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    removeFromUrl: ").append(toIndentedString(removeFromUrl)).append("\n");
@@ -932,9 +803,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    targetSearchMode: ").append(toIndentedString(targetSearchMode)).append("\n");
-    sb.append("    findTargetsIn: ").append(toIndentedString(findTargetsIn)).append("\n");
-    sb.append("    ignoreTargetsIn: ").append(toIndentedString(ignoreTargetsIn)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -979,6 +847,8 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     
     openapiFields.add("priority");
     
+    openapiFields.add("resolve_goto_urls");
+    
     openapiFields.add("location_name");
     
     openapiFields.add("location_coordinate");
@@ -988,12 +858,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     openapiFields.add("tag");
     
     openapiFields.add("os");
-    
-    openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_type");
-    
-    openapiFields.add("match_value");
     
     openapiFields.add("max_crawl_pages");
     
@@ -1016,12 +880,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     openapiFields.add("browser_screen_resolution_ratio");
     
     openapiFields.add("url");
-    
-    openapiFields.add("target_search_mode");
-    
-    openapiFields.add("find_targets_in");
-    
-    openapiFields.add("ignore_targets_in");
     
     openapiFields.add("se_domain");
     

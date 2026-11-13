@@ -270,7 +270,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call businessListingsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessListingsLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -315,9 +315,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessListingsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return businessListingsLocationsCall(_callback);
 
@@ -342,7 +342,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call businessListingsCategoriesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessListingsCategoriesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -387,9 +387,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessListingsCategoriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return businessListingsCategoriesCall(_callback);
 
@@ -414,7 +414,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call businessListingsAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessListingsAvailableFiltersCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -459,9 +459,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessListingsAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return businessListingsAvailableFiltersCall(_callback);
 
@@ -626,7 +626,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call businessDataGoogleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessDataGoogleLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -671,9 +671,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessDataGoogleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return businessDataGoogleLocationsCall(_callback);
 
@@ -698,7 +698,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call businessDataGoogleLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessDataGoogleLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -744,13 +744,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessDataGoogleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling businessDataGoogleLocationsCountry(Async)");
        }
+   
 
        return businessDataGoogleLocationsCountryCall(country, _callback);
 
@@ -775,7 +776,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call businessDataGoogleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessDataGoogleLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -820,9 +821,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessDataGoogleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return businessDataGoogleLanguagesCall(_callback);
 
@@ -917,7 +918,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleMyBusinessInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -962,9 +963,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMyBusinessInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleMyBusinessInfoTasksReadyCall(_callback);
 
@@ -989,7 +990,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call businessDataTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessDataTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1034,9 +1035,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call businessDataTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return businessDataTasksReadyCall(_callback);
 
@@ -1061,7 +1062,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleMyBusinessInfoTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessInfoTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1107,13 +1108,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMyBusinessInfoTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleMyBusinessInfoTaskGet(Async)");
        }
+   
 
        return googleMyBusinessInfoTaskGetCall(id, _callback);
 
@@ -1278,7 +1280,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleMyBusinessUpdatesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessUpdatesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1323,9 +1325,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMyBusinessUpdatesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleMyBusinessUpdatesTasksReadyCall(_callback);
 
@@ -1350,7 +1352,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleMyBusinessUpdatesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessUpdatesTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1396,13 +1398,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMyBusinessUpdatesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleMyBusinessUpdatesTaskGet(Async)");
        }
+   
 
        return googleMyBusinessUpdatesTaskGetCall(id, _callback);
 
@@ -1497,7 +1500,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleHotelSearchesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleHotelSearchesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1542,9 +1545,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleHotelSearchesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleHotelSearchesTasksReadyCall(_callback);
 
@@ -1569,7 +1572,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleHotelSearchesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleHotelSearchesTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1615,13 +1618,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleHotelSearchesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleHotelSearchesTaskGet(Async)");
        }
+   
 
        return googleHotelSearchesTaskGetCall(id, _callback);
 
@@ -1786,7 +1790,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleHotelInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleHotelInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1831,9 +1835,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleHotelInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleHotelInfoTasksReadyCall(_callback);
 
@@ -1858,7 +1862,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleHotelInfoTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleHotelInfoTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1904,13 +1908,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleHotelInfoTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleHotelInfoTaskGetAdvanced(Async)");
        }
+   
 
        return googleHotelInfoTaskGetAdvancedCall(id, _callback);
 
@@ -1935,7 +1940,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleHotelInfoTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleHotelInfoTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1981,13 +1986,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleHotelInfoTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleHotelInfoTaskGetHtml(Async)");
        }
+   
 
        return googleHotelInfoTaskGetHtmlCall(id, _callback);
 
@@ -2222,7 +2228,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleReviewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2267,9 +2273,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleReviewsTasksReadyCall(_callback);
 
@@ -2294,7 +2300,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleReviewsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleReviewsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2340,13 +2346,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleReviewsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleReviewsTaskGet(Async)");
        }
+   
 
        return googleReviewsTaskGetCall(id, _callback);
 
@@ -2441,7 +2448,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleExtendedReviewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleExtendedReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2486,9 +2493,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleExtendedReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleExtendedReviewsTasksReadyCall(_callback);
 
@@ -2513,7 +2520,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleExtendedReviewsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleExtendedReviewsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2559,13 +2566,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleExtendedReviewsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleExtendedReviewsTaskGet(Async)");
        }
+   
 
        return googleExtendedReviewsTaskGetCall(id, _callback);
 
@@ -2660,7 +2668,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleQuestionsAndAnswersTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleQuestionsAndAnswersTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2705,9 +2713,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleQuestionsAndAnswersTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleQuestionsAndAnswersTasksReadyCall(_callback);
 
@@ -2732,7 +2740,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleQuestionsAndAnswersTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleQuestionsAndAnswersTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2778,13 +2786,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleQuestionsAndAnswersTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleQuestionsAndAnswersTaskGet(Async)");
        }
+   
 
        return googleQuestionsAndAnswersTaskGetCall(id, _callback);
 
@@ -2949,7 +2958,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call trustpilotSearchTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call trustpilotSearchTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2994,9 +3003,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call trustpilotSearchTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return trustpilotSearchTasksReadyCall(_callback);
 
@@ -3021,7 +3030,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call trustpilotSearchTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call trustpilotSearchTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3067,13 +3076,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call trustpilotSearchTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling trustpilotSearchTaskGet(Async)");
        }
+   
 
        return trustpilotSearchTaskGetCall(id, _callback);
 
@@ -3168,7 +3178,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call trustpilotReviewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call trustpilotReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3213,9 +3223,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call trustpilotReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return trustpilotReviewsTasksReadyCall(_callback);
 
@@ -3240,7 +3250,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call trustpilotReviewsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call trustpilotReviewsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3286,13 +3296,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call trustpilotReviewsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling trustpilotReviewsTaskGet(Async)");
        }
+   
 
        return trustpilotReviewsTaskGetCall(id, _callback);
 
@@ -3317,7 +3328,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call tripadvisorLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3362,9 +3373,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return tripadvisorLocationsCall(_callback);
 
@@ -3389,7 +3400,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call tripadvisorLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3435,13 +3446,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling tripadvisorLocationsCountry(Async)");
        }
+   
 
        return tripadvisorLocationsCountryCall(country, _callback);
 
@@ -3466,7 +3478,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call tripadvisorLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3511,9 +3523,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return tripadvisorLanguagesCall(_callback);
 
@@ -3608,7 +3620,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call tripadvisorSearchTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorSearchTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3653,9 +3665,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorSearchTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return tripadvisorSearchTasksReadyCall(_callback);
 
@@ -3680,7 +3692,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call tripadvisorSearchTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorSearchTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3726,13 +3738,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorSearchTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling tripadvisorSearchTaskGet(Async)");
        }
+   
 
        return tripadvisorSearchTaskGetCall(id, _callback);
 
@@ -3827,7 +3840,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call tripadvisorReviewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3872,9 +3885,9 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return tripadvisorReviewsTasksReadyCall(_callback);
 
@@ -3899,7 +3912,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call tripadvisorReviewsTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorReviewsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3945,13 +3958,14 @@ public class BusinessDataApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tripadvisorReviewsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling tripadvisorReviewsTaskGet(Async)");
        }
+   
 
        return tripadvisorReviewsTaskGetCall(id, _callback);
 

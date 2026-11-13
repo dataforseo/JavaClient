@@ -185,7 +185,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
   }
 
   /**
-   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-search-by-image-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-search-by-image-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page
    * @return priority
    */
   @javax.annotation.Nullable
@@ -195,6 +195,29 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
 
   public void setPriority(Integer priority) {
     this.priority = priority;
+  }
+
+
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleSearchByImageTaskPostRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs for tasks with high execution priority<p>default value for tasks with <code>priority: 1</code> is <code>true</code><p>default value for tasks with <code>priority: 2</code> is <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time of high-priority tasks, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
   }
 
 
@@ -501,6 +524,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
         Objects.equals(this.postbackUrl, serpGoogleSearchByImageTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleSearchByImageTaskPostRequestInfo.postbackData) &&
         Objects.equals(this.priority, serpGoogleSearchByImageTaskPostRequestInfo.priority) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleSearchByImageTaskPostRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.locationName, serpGoogleSearchByImageTaskPostRequestInfo.locationName) &&
         Objects.equals(this.languageName, serpGoogleSearchByImageTaskPostRequestInfo.languageName) &&
         Objects.equals(this.tag, serpGoogleSearchByImageTaskPostRequestInfo.tag) &&
@@ -521,7 +545,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(imageUrl, locationCode, languageCode, pingbackUrl, postbackUrl, postbackData, priority, locationName, languageName, tag, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, locationCoordinate, seDomain);
+  return Objects.hash(imageUrl, locationCode, languageCode, pingbackUrl, postbackUrl, postbackData, priority, resolveGotoUrls, locationName, languageName, tag, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, locationCoordinate, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -543,6 +567,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -590,6 +615,8 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
     openapiFields.add("postback_data");
     
     openapiFields.add("priority");
+    
+    openapiFields.add("resolve_goto_urls");
     
     openapiFields.add("location_name");
     

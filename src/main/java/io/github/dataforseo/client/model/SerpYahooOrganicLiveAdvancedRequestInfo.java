@@ -359,82 +359,6 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpYahooOrganicLiveAdvancedRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
-
-  public SerpYahooOrganicLiveAdvancedRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
-    return this;
-  }
-
-  /**
-   * target domain, subdomain, or wildcard valuerequired field if stop_crawl_on_match is specifiedspecify a target domain, subdomain, or wildcard value;Note: domain or subdomain must be specified without a request protocol;example: 'match_value': 'dataforseo.com','match_value': '/blog/post-*'
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public SerpYahooOrganicLiveAdvancedRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * target match typerequired field if stop_crawl_on_match is specifiedtype of match for the match_valuepossible values: domain – specific domain or subdomainwith_subdomains – main domain and subdomainswildcard –  wildcard pattern
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -515,9 +439,6 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.maxCrawlPages, serpYahooOrganicLiveAdvancedRequestInfo.maxCrawlPages) &&
         Objects.equals(this.target, serpYahooOrganicLiveAdvancedRequestInfo.target) &&
         Objects.equals(this.searchParam, serpYahooOrganicLiveAdvancedRequestInfo.searchParam) &&
-        Objects.equals(this.stopCrawlOnMatch, serpYahooOrganicLiveAdvancedRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchValue, serpYahooOrganicLiveAdvancedRequestInfo.matchValue) &&
-        Objects.equals(this.matchType, serpYahooOrganicLiveAdvancedRequestInfo.matchType) &&
         Objects.equals(this.tag, serpYahooOrganicLiveAdvancedRequestInfo.tag);  
     
   }
@@ -528,7 +449,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, target, searchParam, stopCrawlOnMatch, matchValue, matchType, tag);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, target, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -557,9 +478,6 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -611,12 +529,6 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("target");
     
     openapiFields.add("search_param");
-    
-    openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_value");
-    
-    openapiFields.add("match_type");
     
     openapiFields.add("tag");
     

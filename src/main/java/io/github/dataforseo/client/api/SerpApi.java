@@ -20,7 +20,6 @@ import io.github.dataforseo.client.model.SerpGoogleLocationsResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleLanguagesResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskPostRequestInfo;
-import io.github.dataforseo.client.model.SerpApiStopCrawlOnMatchInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpTasksReadyResponseInfo;
@@ -576,7 +575,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -621,9 +620,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleLocationsCall(_callback);
 
@@ -648,7 +647,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -694,13 +693,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling googleLocationsCountry(Async)");
        }
+   
 
        return googleLocationsCountryCall(country, _callback);
 
@@ -725,7 +725,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -770,9 +770,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleLanguagesCall(_callback);
 
@@ -867,7 +867,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -912,9 +912,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleOrganicTasksReadyCall(_callback);
 
@@ -939,7 +939,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call tasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -984,9 +984,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call tasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return tasksReadyCall(_callback);
 
@@ -1011,7 +1011,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1056,9 +1056,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleOrganicTasksFixedCall(_callback);
 
@@ -1083,7 +1083,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleOrganicTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleOrganicTaskGetRegularCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1109,6 +1109,9 @@ public class SerpApi {
        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
        Map<String, String> localVarCookieParams = new HashMap<String, String>();
        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+       if (resolveGotoUrls != null) {
+           localVarQueryParams.addAll(localVarApiClient.parameterToPair("resolve_goto_urls", resolveGotoUrls));
+       }
 
        final String[] localVarAccepts = {
            "application/json"
@@ -1129,38 +1132,55 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleOrganicTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleOrganicTaskGetRegularValidateBeforeCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleOrganicTaskGetRegular(Async)");
        }
+   
 
-       return googleOrganicTaskGetRegularCall(id, _callback);
+       return googleOrganicTaskGetRegularCall(id, resolveGotoUrls, _callback);
 
     }
 
-    public SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular(String id) throws ApiException {
-       ApiResponse<SerpGoogleOrganicTaskGetRegularResponseInfo> localVarResp = googleOrganicTaskGetRegularWithHttpInfo(id);
+    public SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular(String id, Boolean resolveGotoUrls) throws ApiException {
+       ApiResponse<SerpGoogleOrganicTaskGetRegularResponseInfo> localVarResp = googleOrganicTaskGetRegularWithHttpInfo(id, resolveGotoUrls);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleOrganicTaskGetRegularResponseInfo> googleOrganicTaskGetRegularWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = googleOrganicTaskGetRegularValidateBeforeCall(id, null);
+    public ApiResponse<SerpGoogleOrganicTaskGetRegularResponseInfo> googleOrganicTaskGetRegularWithHttpInfo(String id, Boolean resolveGotoUrls) throws ApiException {
+       okhttp3.Call localVarCall = googleOrganicTaskGetRegularValidateBeforeCall(id, resolveGotoUrls, null);
        Type localVarReturnType = new TypeToken<SerpGoogleOrganicTaskGetRegularResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call googleOrganicTaskGetRegularAsync(String id, final ApiCallback<SerpGoogleOrganicTaskGetRegularResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleOrganicTaskGetRegularAsync(String id, Boolean resolveGotoUrls, final ApiCallback<SerpGoogleOrganicTaskGetRegularResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = googleOrganicTaskGetRegularValidateBeforeCall(id, _callback);
+       okhttp3.Call localVarCall = googleOrganicTaskGetRegularValidateBeforeCall(id, resolveGotoUrls, _callback);
        Type localVarReturnType = new TypeToken<SerpGoogleOrganicTaskGetRegularResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+    
 
-    public okhttp3.Call googleOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+
+
+
+    public SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular(String id) throws ApiException {
+       return googleOrganicTaskGetRegular(id, null);
+    }
+
+    public ApiResponse<SerpGoogleOrganicTaskGetRegularResponseInfo> googleOrganicTaskGetRegularWithHttpInfo(String id) throws ApiException {
+       return googleOrganicTaskGetRegularWithHttpInfo(id, null);
+    }
+
+    public okhttp3.Call googleOrganicTaskGetRegularAsync(String id, final ApiCallback<SerpGoogleOrganicTaskGetRegularResponseInfo> _callback) throws ApiException {
+       return googleOrganicTaskGetRegularAsync(id, null, _callback);
+    }
+
+    public okhttp3.Call googleOrganicTaskGetAdvancedCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1186,6 +1206,9 @@ public class SerpApi {
        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
        Map<String, String> localVarCookieParams = new HashMap<String, String>();
        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+       if (resolveGotoUrls != null) {
+           localVarQueryParams.addAll(localVarApiClient.parameterToPair("resolve_goto_urls", resolveGotoUrls));
+       }
 
        final String[] localVarAccepts = {
            "application/json"
@@ -1206,38 +1229,55 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleOrganicTaskGetAdvancedValidateBeforeCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleOrganicTaskGetAdvanced(Async)");
        }
+   
 
-       return googleOrganicTaskGetAdvancedCall(id, _callback);
+       return googleOrganicTaskGetAdvancedCall(id, resolveGotoUrls, _callback);
 
     }
 
-    public SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced(String id) throws ApiException {
-       ApiResponse<SerpGoogleOrganicTaskGetAdvancedResponseInfo> localVarResp = googleOrganicTaskGetAdvancedWithHttpInfo(id);
+    public SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced(String id, Boolean resolveGotoUrls) throws ApiException {
+       ApiResponse<SerpGoogleOrganicTaskGetAdvancedResponseInfo> localVarResp = googleOrganicTaskGetAdvancedWithHttpInfo(id, resolveGotoUrls);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleOrganicTaskGetAdvancedResponseInfo> googleOrganicTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = googleOrganicTaskGetAdvancedValidateBeforeCall(id, null);
+    public ApiResponse<SerpGoogleOrganicTaskGetAdvancedResponseInfo> googleOrganicTaskGetAdvancedWithHttpInfo(String id, Boolean resolveGotoUrls) throws ApiException {
+       okhttp3.Call localVarCall = googleOrganicTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, null);
        Type localVarReturnType = new TypeToken<SerpGoogleOrganicTaskGetAdvancedResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call googleOrganicTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleOrganicTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleOrganicTaskGetAdvancedAsync(String id, Boolean resolveGotoUrls, final ApiCallback<SerpGoogleOrganicTaskGetAdvancedResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = googleOrganicTaskGetAdvancedValidateBeforeCall(id, _callback);
+       okhttp3.Call localVarCall = googleOrganicTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, _callback);
        Type localVarReturnType = new TypeToken<SerpGoogleOrganicTaskGetAdvancedResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+    
 
-    public okhttp3.Call googleOrganicTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+
+
+
+    public SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced(String id) throws ApiException {
+       return googleOrganicTaskGetAdvanced(id, null);
+    }
+
+    public ApiResponse<SerpGoogleOrganicTaskGetAdvancedResponseInfo> googleOrganicTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       return googleOrganicTaskGetAdvancedWithHttpInfo(id, null);
+    }
+
+    public okhttp3.Call googleOrganicTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleOrganicTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+       return googleOrganicTaskGetAdvancedAsync(id, null, _callback);
+    }
+
+    public okhttp3.Call googleOrganicTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1283,13 +1323,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleOrganicTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleOrganicTaskGetHtml(Async)");
        }
+   
 
        return googleOrganicTaskGetHtmlCall(id, _callback);
 
@@ -1524,7 +1565,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAiModeLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAiModeLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1569,9 +1610,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAiModeLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAiModeLanguagesCall(_callback);
 
@@ -1666,7 +1707,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAiModeTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAiModeTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1711,9 +1752,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAiModeTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAiModeTasksReadyCall(_callback);
 
@@ -1738,7 +1779,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAiModeTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAiModeTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1783,9 +1824,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAiModeTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAiModeTasksFixedCall(_callback);
 
@@ -1810,7 +1851,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAiModeTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAiModeTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1856,13 +1897,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAiModeTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAiModeTaskGetAdvanced(Async)");
        }
+   
 
        return googleAiModeTaskGetAdvancedCall(id, _callback);
 
@@ -1887,7 +1929,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAiModeTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAiModeTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1933,13 +1975,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAiModeTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAiModeTaskGetHtml(Async)");
        }
+   
 
        return googleAiModeTaskGetHtmlCall(id, _callback);
 
@@ -2174,7 +2217,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleMapsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMapsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2219,9 +2262,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMapsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleMapsTasksReadyCall(_callback);
 
@@ -2246,7 +2289,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleMapsTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMapsTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2291,9 +2334,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMapsTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleMapsTasksFixedCall(_callback);
 
@@ -2318,7 +2361,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleMapsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMapsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2364,13 +2407,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleMapsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleMapsTaskGetAdvanced(Async)");
        }
+   
 
        return googleMapsTaskGetAdvancedCall(id, _callback);
 
@@ -2535,7 +2579,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleLocalFinderTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocalFinderTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2580,9 +2624,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleLocalFinderTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleLocalFinderTasksReadyCall(_callback);
 
@@ -2607,7 +2651,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleLocalFinderTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocalFinderTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2652,9 +2696,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleLocalFinderTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleLocalFinderTasksFixedCall(_callback);
 
@@ -2679,7 +2723,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleLocalFinderTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocalFinderTaskGetAdvancedCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2705,6 +2749,9 @@ public class SerpApi {
        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
        Map<String, String> localVarCookieParams = new HashMap<String, String>();
        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+       if (resolveGotoUrls != null) {
+           localVarQueryParams.addAll(localVarApiClient.parameterToPair("resolve_goto_urls", resolveGotoUrls));
+       }
 
        final String[] localVarAccepts = {
            "application/json"
@@ -2725,38 +2772,55 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleLocalFinderTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleLocalFinderTaskGetAdvancedValidateBeforeCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleLocalFinderTaskGetAdvanced(Async)");
        }
+   
 
-       return googleLocalFinderTaskGetAdvancedCall(id, _callback);
+       return googleLocalFinderTaskGetAdvancedCall(id, resolveGotoUrls, _callback);
 
     }
 
-    public SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced(String id) throws ApiException {
-       ApiResponse<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> localVarResp = googleLocalFinderTaskGetAdvancedWithHttpInfo(id);
+    public SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced(String id, Boolean resolveGotoUrls) throws ApiException {
+       ApiResponse<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> localVarResp = googleLocalFinderTaskGetAdvancedWithHttpInfo(id, resolveGotoUrls);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> googleLocalFinderTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = googleLocalFinderTaskGetAdvancedValidateBeforeCall(id, null);
+    public ApiResponse<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> googleLocalFinderTaskGetAdvancedWithHttpInfo(String id, Boolean resolveGotoUrls) throws ApiException {
+       okhttp3.Call localVarCall = googleLocalFinderTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, null);
        Type localVarReturnType = new TypeToken<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call googleLocalFinderTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleLocalFinderTaskGetAdvancedAsync(String id, Boolean resolveGotoUrls, final ApiCallback<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = googleLocalFinderTaskGetAdvancedValidateBeforeCall(id, _callback);
+       okhttp3.Call localVarCall = googleLocalFinderTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, _callback);
        Type localVarReturnType = new TypeToken<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+    
 
-    public okhttp3.Call googleLocalFinderTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+
+
+
+    public SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced(String id) throws ApiException {
+       return googleLocalFinderTaskGetAdvanced(id, null);
+    }
+
+    public ApiResponse<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> googleLocalFinderTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       return googleLocalFinderTaskGetAdvancedWithHttpInfo(id, null);
+    }
+
+    public okhttp3.Call googleLocalFinderTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+       return googleLocalFinderTaskGetAdvancedAsync(id, null, _callback);
+    }
+
+    public okhttp3.Call googleLocalFinderTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2802,13 +2866,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleLocalFinderTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleLocalFinderTaskGetHtml(Async)");
        }
+   
 
        return googleLocalFinderTaskGetHtmlCall(id, _callback);
 
@@ -3043,7 +3108,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleNewsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleNewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3088,9 +3153,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleNewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleNewsTasksReadyCall(_callback);
 
@@ -3115,7 +3180,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleNewsTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleNewsTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3160,9 +3225,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleNewsTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleNewsTasksFixedCall(_callback);
 
@@ -3187,7 +3252,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleNewsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleNewsTaskGetAdvancedCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3213,6 +3278,9 @@ public class SerpApi {
        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
        Map<String, String> localVarCookieParams = new HashMap<String, String>();
        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+       if (resolveGotoUrls != null) {
+           localVarQueryParams.addAll(localVarApiClient.parameterToPair("resolve_goto_urls", resolveGotoUrls));
+       }
 
        final String[] localVarAccepts = {
            "application/json"
@@ -3233,38 +3301,55 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleNewsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleNewsTaskGetAdvancedValidateBeforeCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleNewsTaskGetAdvanced(Async)");
        }
+   
 
-       return googleNewsTaskGetAdvancedCall(id, _callback);
+       return googleNewsTaskGetAdvancedCall(id, resolveGotoUrls, _callback);
 
     }
 
-    public SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced(String id) throws ApiException {
-       ApiResponse<SerpGoogleNewsTaskGetAdvancedResponseInfo> localVarResp = googleNewsTaskGetAdvancedWithHttpInfo(id);
+    public SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced(String id, Boolean resolveGotoUrls) throws ApiException {
+       ApiResponse<SerpGoogleNewsTaskGetAdvancedResponseInfo> localVarResp = googleNewsTaskGetAdvancedWithHttpInfo(id, resolveGotoUrls);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleNewsTaskGetAdvancedResponseInfo> googleNewsTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = googleNewsTaskGetAdvancedValidateBeforeCall(id, null);
+    public ApiResponse<SerpGoogleNewsTaskGetAdvancedResponseInfo> googleNewsTaskGetAdvancedWithHttpInfo(String id, Boolean resolveGotoUrls) throws ApiException {
+       okhttp3.Call localVarCall = googleNewsTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, null);
        Type localVarReturnType = new TypeToken<SerpGoogleNewsTaskGetAdvancedResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call googleNewsTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleNewsTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleNewsTaskGetAdvancedAsync(String id, Boolean resolveGotoUrls, final ApiCallback<SerpGoogleNewsTaskGetAdvancedResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = googleNewsTaskGetAdvancedValidateBeforeCall(id, _callback);
+       okhttp3.Call localVarCall = googleNewsTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, _callback);
        Type localVarReturnType = new TypeToken<SerpGoogleNewsTaskGetAdvancedResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+    
 
-    public okhttp3.Call googleNewsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+
+
+
+    public SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced(String id) throws ApiException {
+       return googleNewsTaskGetAdvanced(id, null);
+    }
+
+    public ApiResponse<SerpGoogleNewsTaskGetAdvancedResponseInfo> googleNewsTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       return googleNewsTaskGetAdvancedWithHttpInfo(id, null);
+    }
+
+    public okhttp3.Call googleNewsTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleNewsTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+       return googleNewsTaskGetAdvancedAsync(id, null, _callback);
+    }
+
+    public okhttp3.Call googleNewsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3310,13 +3395,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleNewsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleNewsTaskGetHtml(Async)");
        }
+   
 
        return googleNewsTaskGetHtmlCall(id, _callback);
 
@@ -3551,7 +3637,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleImagesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleImagesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3596,9 +3682,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleImagesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleImagesTasksReadyCall(_callback);
 
@@ -3623,7 +3709,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleImagesTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleImagesTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3668,9 +3754,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleImagesTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleImagesTasksFixedCall(_callback);
 
@@ -3695,7 +3781,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleImagesTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleImagesTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3741,13 +3827,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleImagesTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleImagesTaskGetAdvanced(Async)");
        }
+   
 
        return googleImagesTaskGetAdvancedCall(id, _callback);
 
@@ -3772,7 +3859,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleImagesTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleImagesTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3818,13 +3905,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleImagesTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleImagesTaskGetHtml(Async)");
        }
+   
 
        return googleImagesTaskGetHtmlCall(id, _callback);
 
@@ -4059,7 +4147,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleSearchByImageTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleSearchByImageTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4104,9 +4192,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleSearchByImageTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleSearchByImageTasksReadyCall(_callback);
 
@@ -4131,7 +4219,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleSearchByImageTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleSearchByImageTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4176,9 +4264,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleSearchByImageTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleSearchByImageTasksFixedCall(_callback);
 
@@ -4203,7 +4291,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleSearchByImageTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleSearchByImageTaskGetAdvancedCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4229,6 +4317,9 @@ public class SerpApi {
        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
        Map<String, String> localVarCookieParams = new HashMap<String, String>();
        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+       if (resolveGotoUrls != null) {
+           localVarQueryParams.addAll(localVarApiClient.parameterToPair("resolve_goto_urls", resolveGotoUrls));
+       }
 
        final String[] localVarAccepts = {
            "application/json"
@@ -4249,35 +4340,52 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleSearchByImageTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleSearchByImageTaskGetAdvancedValidateBeforeCall(String id, Boolean resolveGotoUrls, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleSearchByImageTaskGetAdvanced(Async)");
        }
+   
 
-       return googleSearchByImageTaskGetAdvancedCall(id, _callback);
+       return googleSearchByImageTaskGetAdvancedCall(id, resolveGotoUrls, _callback);
 
     }
 
-    public SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced(String id) throws ApiException {
-       ApiResponse<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> localVarResp = googleSearchByImageTaskGetAdvancedWithHttpInfo(id);
+    public SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced(String id, Boolean resolveGotoUrls) throws ApiException {
+       ApiResponse<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> localVarResp = googleSearchByImageTaskGetAdvancedWithHttpInfo(id, resolveGotoUrls);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> googleSearchByImageTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = googleSearchByImageTaskGetAdvancedValidateBeforeCall(id, null);
+    public ApiResponse<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> googleSearchByImageTaskGetAdvancedWithHttpInfo(String id, Boolean resolveGotoUrls) throws ApiException {
+       okhttp3.Call localVarCall = googleSearchByImageTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, null);
        Type localVarReturnType = new TypeToken<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call googleSearchByImageTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleSearchByImageTaskGetAdvancedAsync(String id, Boolean resolveGotoUrls, final ApiCallback<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = googleSearchByImageTaskGetAdvancedValidateBeforeCall(id, _callback);
+       okhttp3.Call localVarCall = googleSearchByImageTaskGetAdvancedValidateBeforeCall(id, resolveGotoUrls, _callback);
        Type localVarReturnType = new TypeToken<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
+    }
+    
+
+
+
+
+    public SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced(String id) throws ApiException {
+       return googleSearchByImageTaskGetAdvanced(id, null);
+    }
+
+    public ApiResponse<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> googleSearchByImageTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       return googleSearchByImageTaskGetAdvancedWithHttpInfo(id, null);
+    }
+
+    public okhttp3.Call googleSearchByImageTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+       return googleSearchByImageTaskGetAdvancedAsync(id, null, _callback);
     }
 
     public okhttp3.Call googleJobsTaskPostCall(List<SerpGoogleJobsTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
@@ -4350,7 +4458,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleJobsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleJobsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4395,9 +4503,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleJobsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleJobsTasksReadyCall(_callback);
 
@@ -4422,7 +4530,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleJobsTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleJobsTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4467,9 +4575,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleJobsTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleJobsTasksFixedCall(_callback);
 
@@ -4494,7 +4602,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleJobsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleJobsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4540,13 +4648,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleJobsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleJobsTaskGetAdvanced(Async)");
        }
+   
 
        return googleJobsTaskGetAdvancedCall(id, _callback);
 
@@ -4571,7 +4680,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleJobsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleJobsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4617,13 +4726,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleJobsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleJobsTaskGetHtml(Async)");
        }
+   
 
        return googleJobsTaskGetHtmlCall(id, _callback);
 
@@ -4718,7 +4828,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAutocompleteTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAutocompleteTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4763,9 +4873,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAutocompleteTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAutocompleteTasksReadyCall(_callback);
 
@@ -4790,7 +4900,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAutocompleteTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAutocompleteTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4835,9 +4945,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAutocompleteTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAutocompleteTasksFixedCall(_callback);
 
@@ -4862,7 +4972,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAutocompleteTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAutocompleteTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4908,13 +5018,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAutocompleteTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAutocompleteTaskGetAdvanced(Async)");
        }
+   
 
        return googleAutocompleteTaskGetAdvancedCall(id, _callback);
 
@@ -5079,7 +5190,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleDatasetSearchTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleDatasetSearchTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5124,9 +5235,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleDatasetSearchTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleDatasetSearchTasksReadyCall(_callback);
 
@@ -5151,7 +5262,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleDatasetSearchTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleDatasetSearchTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5196,9 +5307,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleDatasetSearchTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleDatasetSearchTasksFixedCall(_callback);
 
@@ -5223,7 +5334,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleDatasetSearchTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleDatasetSearchTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5269,13 +5380,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleDatasetSearchTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleDatasetSearchTaskGetAdvanced(Async)");
        }
+   
 
        return googleDatasetSearchTaskGetAdvancedCall(id, _callback);
 
@@ -5440,7 +5552,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleDatasetInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleDatasetInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5485,9 +5597,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleDatasetInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleDatasetInfoTasksReadyCall(_callback);
 
@@ -5512,7 +5624,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleDatasetInfoTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleDatasetInfoTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5557,9 +5669,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleDatasetInfoTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleDatasetInfoTasksFixedCall(_callback);
 
@@ -5584,7 +5696,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleDatasetInfoTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleDatasetInfoTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5630,13 +5742,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleDatasetInfoTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleDatasetInfoTaskGetAdvanced(Async)");
        }
+   
 
        return googleDatasetInfoTaskGetAdvancedCall(id, _callback);
 
@@ -5731,7 +5844,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsAdvertisersLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdvertisersLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5776,9 +5889,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsAdvertisersLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsAdvertisersLocationsCall(_callback);
 
@@ -5873,7 +5986,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsAdvertisersTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdvertisersTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5918,9 +6031,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsAdvertisersTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsAdvertisersTasksReadyCall(_callback);
 
@@ -5945,7 +6058,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsAdvertisersTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdvertisersTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -5991,13 +6104,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsAdvertisersTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAdsAdvertisersTaskGetAdvanced(Async)");
        }
+   
 
        return googleAdsAdvertisersTaskGetAdvancedCall(id, _callback);
 
@@ -6022,7 +6136,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsSearchLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6067,9 +6181,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsSearchLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsSearchLocationsCall(_callback);
 
@@ -6164,7 +6278,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleAdsSearchTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6209,9 +6323,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsSearchTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleAdsSearchTasksReadyCall(_callback);
 
@@ -6236,7 +6350,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleAdsSearchTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6282,13 +6396,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleAdsSearchTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleAdsSearchTaskGetAdvanced(Async)");
        }
+   
 
        return googleAdsSearchTaskGetAdvancedCall(id, _callback);
 
@@ -6313,7 +6428,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6358,9 +6473,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingLocationsCall(_callback);
 
@@ -6385,7 +6500,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6431,13 +6546,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling bingLocationsCountry(Async)");
        }
+   
 
        return bingLocationsCountryCall(country, _callback);
 
@@ -6462,7 +6578,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6507,9 +6623,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingLanguagesCall(_callback);
 
@@ -6604,7 +6720,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6649,9 +6765,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingOrganicTasksReadyCall(_callback);
 
@@ -6676,7 +6792,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6721,9 +6837,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return bingOrganicTasksFixedCall(_callback);
 
@@ -6748,7 +6864,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingOrganicTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingOrganicTaskGetRegularCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6794,13 +6910,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingOrganicTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingOrganicTaskGetRegular(Async)");
        }
+   
 
        return bingOrganicTaskGetRegularCall(id, _callback);
 
@@ -6825,7 +6942,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingOrganicTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6871,13 +6988,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingOrganicTaskGetAdvanced(Async)");
        }
+   
 
        return bingOrganicTaskGetAdvancedCall(id, _callback);
 
@@ -6902,7 +7020,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call bingOrganicTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingOrganicTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6948,13 +7066,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call bingOrganicTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling bingOrganicTaskGetHtml(Async)");
        }
+   
 
        return bingOrganicTaskGetHtmlCall(id, _callback);
 
@@ -7189,7 +7308,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call youtubeLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7234,9 +7353,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeLocationsCall(_callback);
 
@@ -7261,7 +7380,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7307,13 +7426,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling youtubeLocationsCountry(Async)");
        }
+   
 
        return youtubeLocationsCountryCall(country, _callback);
 
@@ -7338,7 +7458,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7383,9 +7503,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeLanguagesCall(_callback);
 
@@ -7480,7 +7600,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call youtubeVideoInfoTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoInfoTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7525,9 +7645,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoInfoTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeVideoInfoTasksReadyCall(_callback);
 
@@ -7552,7 +7672,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeVideoInfoTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoInfoTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7597,9 +7717,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoInfoTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeVideoInfoTasksFixedCall(_callback);
 
@@ -7624,7 +7744,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeVideoInfoTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoInfoTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7670,13 +7790,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoInfoTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling youtubeVideoInfoTaskGetAdvanced(Async)");
        }
+   
 
        return youtubeVideoInfoTaskGetAdvancedCall(id, _callback);
 
@@ -7841,7 +7962,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call youtubeOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7886,9 +8007,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeOrganicTasksReadyCall(_callback);
 
@@ -7913,7 +8034,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -7958,9 +8079,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeOrganicTasksFixedCall(_callback);
 
@@ -7985,7 +8106,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeOrganicTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8031,13 +8152,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling youtubeOrganicTaskGetAdvanced(Async)");
        }
+   
 
        return youtubeOrganicTaskGetAdvancedCall(id, _callback);
 
@@ -8202,7 +8324,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call youtubeVideoSubtitlesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoSubtitlesTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8247,9 +8369,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoSubtitlesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeVideoSubtitlesTasksReadyCall(_callback);
 
@@ -8274,7 +8396,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeVideoSubtitlesTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoSubtitlesTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8319,9 +8441,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoSubtitlesTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeVideoSubtitlesTasksFixedCall(_callback);
 
@@ -8346,7 +8468,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeVideoSubtitlesTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoSubtitlesTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8392,13 +8514,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoSubtitlesTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling youtubeVideoSubtitlesTaskGetAdvanced(Async)");
        }
+   
 
        return youtubeVideoSubtitlesTaskGetAdvancedCall(id, _callback);
 
@@ -8563,7 +8686,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call youtubeVideoCommentsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoCommentsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8608,9 +8731,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoCommentsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeVideoCommentsTasksReadyCall(_callback);
 
@@ -8635,7 +8758,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeVideoCommentsTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoCommentsTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8680,9 +8803,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoCommentsTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return youtubeVideoCommentsTasksFixedCall(_callback);
 
@@ -8707,7 +8830,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call youtubeVideoCommentsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeVideoCommentsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8753,13 +8876,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call youtubeVideoCommentsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling youtubeVideoCommentsTaskGetAdvanced(Async)");
        }
+   
 
        return youtubeVideoCommentsTaskGetAdvancedCall(id, _callback);
 
@@ -8854,7 +8978,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call yahooLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8899,9 +9023,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return yahooLocationsCall(_callback);
 
@@ -8926,7 +9050,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call yahooLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8972,13 +9096,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling yahooLocationsCountry(Async)");
        }
+   
 
        return yahooLocationsCountryCall(country, _callback);
 
@@ -9003,7 +9128,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call yahooLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9048,9 +9173,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return yahooLanguagesCall(_callback);
 
@@ -9145,7 +9270,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call yahooOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9190,9 +9315,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return yahooOrganicTasksReadyCall(_callback);
 
@@ -9217,7 +9342,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call yahooOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9262,9 +9387,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return yahooOrganicTasksFixedCall(_callback);
 
@@ -9289,7 +9414,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call yahooOrganicTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooOrganicTaskGetRegularCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9335,13 +9460,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooOrganicTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling yahooOrganicTaskGetRegular(Async)");
        }
+   
 
        return yahooOrganicTaskGetRegularCall(id, _callback);
 
@@ -9366,7 +9492,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call yahooOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooOrganicTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9412,13 +9538,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling yahooOrganicTaskGetAdvanced(Async)");
        }
+   
 
        return yahooOrganicTaskGetAdvancedCall(id, _callback);
 
@@ -9443,7 +9570,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call yahooOrganicTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooOrganicTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9489,13 +9616,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call yahooOrganicTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling yahooOrganicTaskGetHtml(Async)");
        }
+   
 
        return yahooOrganicTaskGetHtmlCall(id, _callback);
 
@@ -9730,7 +9858,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call baiduLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9775,9 +9903,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return baiduLocationsCall(_callback);
 
@@ -9802,7 +9930,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call baiduLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9848,13 +9976,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling baiduLocationsCountry(Async)");
        }
+   
 
        return baiduLocationsCountryCall(country, _callback);
 
@@ -9879,7 +10008,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call baiduLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9924,9 +10053,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return baiduLanguagesCall(_callback);
 
@@ -10021,7 +10150,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call baiduOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10066,9 +10195,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return baiduOrganicTasksReadyCall(_callback);
 
@@ -10093,7 +10222,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call baiduOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10138,9 +10267,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return baiduOrganicTasksFixedCall(_callback);
 
@@ -10165,7 +10294,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call baiduOrganicTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduOrganicTaskGetRegularCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10211,13 +10340,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduOrganicTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling baiduOrganicTaskGetRegular(Async)");
        }
+   
 
        return baiduOrganicTaskGetRegularCall(id, _callback);
 
@@ -10242,7 +10372,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call baiduOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduOrganicTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10288,13 +10418,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling baiduOrganicTaskGetAdvanced(Async)");
        }
+   
 
        return baiduOrganicTaskGetAdvancedCall(id, _callback);
 
@@ -10319,7 +10450,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call baiduOrganicTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduOrganicTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10365,13 +10496,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call baiduOrganicTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling baiduOrganicTaskGetHtml(Async)");
        }
+   
 
        return baiduOrganicTaskGetHtmlCall(id, _callback);
 
@@ -10466,7 +10598,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call naverOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call naverOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10511,9 +10643,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call naverOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return naverOrganicTasksReadyCall(_callback);
 
@@ -10538,7 +10670,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call naverOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call naverOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10583,9 +10715,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call naverOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return naverOrganicTasksFixedCall(_callback);
 
@@ -10610,7 +10742,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call naverOrganicTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call naverOrganicTaskGetRegularCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10656,13 +10788,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call naverOrganicTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling naverOrganicTaskGetRegular(Async)");
        }
+   
 
        return naverOrganicTaskGetRegularCall(id, _callback);
 
@@ -10687,7 +10820,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call naverOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call naverOrganicTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10733,13 +10866,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call naverOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling naverOrganicTaskGetAdvanced(Async)");
        }
+   
 
        return naverOrganicTaskGetAdvancedCall(id, _callback);
 
@@ -10764,7 +10898,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call naverOrganicTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call naverOrganicTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10810,13 +10944,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call naverOrganicTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling naverOrganicTaskGetHtml(Async)");
        }
+   
 
        return naverOrganicTaskGetHtmlCall(id, _callback);
 
@@ -10841,7 +10976,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamLocationsCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10886,9 +11021,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return seznamLocationsCall(_callback);
 
@@ -10913,7 +11048,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10959,13 +11094,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'country' is set
        if (country == null) {
            throw new ApiException("Missing the required parameter 'country' when calling seznamLocationsCountry(Async)");
        }
+   
 
        return seznamLocationsCountryCall(country, _callback);
 
@@ -10990,7 +11126,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamLanguagesCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11035,9 +11171,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return seznamLanguagesCall(_callback);
 
@@ -11132,7 +11268,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call seznamOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamOrganicTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11177,9 +11313,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return seznamOrganicTasksReadyCall(_callback);
 
@@ -11204,7 +11340,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamOrganicTasksFixedCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11249,9 +11385,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return seznamOrganicTasksFixedCall(_callback);
 
@@ -11276,7 +11412,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamOrganicTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamOrganicTaskGetRegularCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11322,13 +11458,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamOrganicTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling seznamOrganicTaskGetRegular(Async)");
        }
+   
 
        return seznamOrganicTaskGetRegularCall(id, _callback);
 
@@ -11353,7 +11490,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamOrganicTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11399,13 +11536,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling seznamOrganicTaskGetAdvanced(Async)");
        }
+   
 
        return seznamOrganicTaskGetAdvancedCall(id, _callback);
 
@@ -11430,7 +11568,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call seznamOrganicTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamOrganicTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11476,13 +11614,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call seznamOrganicTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling seznamOrganicTaskGetHtml(Async)");
        }
+   
 
        return seznamOrganicTaskGetHtmlCall(id, _callback);
 
@@ -11577,7 +11716,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleFinanceExploreTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceExploreTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11622,9 +11761,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceExploreTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleFinanceExploreTasksReadyCall(_callback);
 
@@ -11649,7 +11788,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceExploreTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceExploreTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11695,13 +11834,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceExploreTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceExploreTaskGetAdvanced(Async)");
        }
+   
 
        return googleFinanceExploreTaskGetAdvancedCall(id, _callback);
 
@@ -11726,7 +11866,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceExploreTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceExploreTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11772,13 +11912,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceExploreTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceExploreTaskGetHtml(Async)");
        }
+   
 
        return googleFinanceExploreTaskGetHtmlCall(id, _callback);
 
@@ -12013,7 +12154,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleFinanceMarketsTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceMarketsTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12058,9 +12199,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceMarketsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleFinanceMarketsTasksReadyCall(_callback);
 
@@ -12085,7 +12226,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceMarketsTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceMarketsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12131,13 +12272,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceMarketsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceMarketsTaskGetAdvanced(Async)");
        }
+   
 
        return googleFinanceMarketsTaskGetAdvancedCall(id, _callback);
 
@@ -12162,7 +12304,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceMarketsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceMarketsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12208,13 +12350,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceMarketsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceMarketsTaskGetHtml(Async)");
        }
+   
 
        return googleFinanceMarketsTaskGetHtmlCall(id, _callback);
 
@@ -12449,7 +12592,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleFinanceQuoteTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceQuoteTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12494,9 +12637,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceQuoteTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleFinanceQuoteTasksReadyCall(_callback);
 
@@ -12521,7 +12664,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceQuoteTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceQuoteTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12567,13 +12710,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceQuoteTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceQuoteTaskGetAdvanced(Async)");
        }
+   
 
        return googleFinanceQuoteTaskGetAdvancedCall(id, _callback);
 
@@ -12598,7 +12742,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceQuoteTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceQuoteTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12644,13 +12788,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceQuoteTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceQuoteTaskGetHtml(Async)");
        }
+   
 
        return googleFinanceQuoteTaskGetHtmlCall(id, _callback);
 
@@ -12885,7 +13030,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call googleFinanceTickerSearchTasksReadyCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceTickerSearchTasksReadyCall(final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -12930,9 +13075,9 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceTickerSearchTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+   
 
        return googleFinanceTickerSearchTasksReadyCall(_callback);
 
@@ -12957,7 +13102,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call googleFinanceTickerSearchTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleFinanceTickerSearchTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -13003,13 +13148,14 @@ public class SerpApi {
        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
-    
     @SuppressWarnings("rawtypes")
     private okhttp3.Call googleFinanceTickerSearchTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+   
        // verify the required parameter 'id' is set
        if (id == null) {
            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceTickerSearchTaskGetAdvanced(Async)");
        }
+   
 
        return googleFinanceTickerSearchTaskGetAdvancedCall(id, _callback);
 

@@ -139,7 +139,7 @@ public class SerpGoogleNewsTaskPostRequestInfo  {
   }
 
   /**
-   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-news-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-news-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page
    * @return priority
    */
   @javax.annotation.Nullable
@@ -149,6 +149,29 @@ public class SerpGoogleNewsTaskPostRequestInfo  {
 
   public void setPriority(Integer priority) {
     this.priority = priority;
+  }
+
+
+  public static final String SERIALIZED_NAME_RESOLVE_GOTO_URLS = "resolve_goto_urls";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_GOTO_URLS)
+  private Boolean resolveGotoUrls;
+
+  public SerpGoogleNewsTaskPostRequestInfo resolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
+    return this;
+  }
+
+  /**
+   * <p><em>resolve goto redirect URLs</em><p>optional field<p>set to <code>true</code> to resolve goto redirect URLs in SERPs for tasks with high execution priority<p>default value for tasks with <code>priority: 1</code> is <code>true</code><p>default value for tasks with <code>priority: 2</code> is <code>false</code><p><strong>Note:</strong> this parameter adds up to 40 seconds to the turnaround time of high-priority tasks, with a maximum turnaround time of 260 seconds
+   * @return resolveGotoUrls
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolveGotoUrls() {
+    return resolveGotoUrls;
+  }
+
+  public void setResolveGotoUrls(Boolean resolveGotoUrls) {
+    this.resolveGotoUrls = resolveGotoUrls;
   }
 
 
@@ -568,6 +591,7 @@ public class SerpGoogleNewsTaskPostRequestInfo  {
         Objects.equals(this.languageCode, serpGoogleNewsTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.depth, serpGoogleNewsTaskPostRequestInfo.depth) &&
         Objects.equals(this.priority, serpGoogleNewsTaskPostRequestInfo.priority) &&
+        Objects.equals(this.resolveGotoUrls, serpGoogleNewsTaskPostRequestInfo.resolveGotoUrls) &&
         Objects.equals(this.pingbackUrl, serpGoogleNewsTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleNewsTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleNewsTaskPostRequestInfo.postbackData) &&
@@ -593,7 +617,7 @@ public class SerpGoogleNewsTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, priority, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, resolveGotoUrls, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -613,6 +637,7 @@ public class SerpGoogleNewsTaskPostRequestInfo  {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    resolveGotoUrls: ").append(toIndentedString(resolveGotoUrls)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -661,6 +686,8 @@ public class SerpGoogleNewsTaskPostRequestInfo  {
     openapiFields.add("depth");
     
     openapiFields.add("priority");
+    
+    openapiFields.add("resolve_goto_urls");
     
     openapiFields.add("pingback_url");
     

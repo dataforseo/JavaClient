@@ -267,82 +267,6 @@ public class SerpBingOrganicLiveRegularRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpBingOrganicLiveRegularRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public SerpBingOrganicLiveRegularRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * <p><em>target match type</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>type of match for the <code>match_value</code><p>possible values:<p><code>domain</code> – specific domain or subdomain<p><code>with_subdomains</code> – main domain and subdomains<p><code>wildcard</code> –  wildcard pattern</p>
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
-
-  public SerpBingOrganicLiveRegularRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
-    return this;
-  }
-
-  /**
-   * <p><em>target domain, subdomain, or wildcard value</em><p><strong>required field if <code>stop_crawl_on_match</code> is specified</strong><p>specify a target domain, subdomain, or wildcard value;<p><strong>Note:</strong> domain or subdomain must be specified without a request protocol;<p>example: <code>'match_value': 'dataforseo.com'</code>,<p><code>'match_value': '/blog/post-*'</code></p>
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
-  }
-
-
   public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
   @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
   private Integer maxCrawlPages;
@@ -488,9 +412,6 @@ public class SerpBingOrganicLiveRegularRequestInfo  {
         Objects.equals(this.os, serpBingOrganicLiveRegularRequestInfo.os) &&
         Objects.equals(this.tag, serpBingOrganicLiveRegularRequestInfo.tag) &&
         Objects.equals(this.target, serpBingOrganicLiveRegularRequestInfo.target) &&
-        Objects.equals(this.stopCrawlOnMatch, serpBingOrganicLiveRegularRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchType, serpBingOrganicLiveRegularRequestInfo.matchType) &&
-        Objects.equals(this.matchValue, serpBingOrganicLiveRegularRequestInfo.matchValue) &&
         Objects.equals(this.maxCrawlPages, serpBingOrganicLiveRegularRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpBingOrganicLiveRegularRequestInfo.searchParam) &&
         Objects.equals(this.url, serpBingOrganicLiveRegularRequestInfo.url) &&
@@ -504,7 +425,7 @@ public class SerpBingOrganicLiveRegularRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, target, stopCrawlOnMatch, matchType, matchValue, maxCrawlPages, searchParam, url, locationCoordinate);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, target, maxCrawlPages, searchParam, url, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -529,9 +450,6 @@ public class SerpBingOrganicLiveRegularRequestInfo  {
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -578,12 +496,6 @@ public class SerpBingOrganicLiveRegularRequestInfo  {
     openapiFields.add("tag");
     
     openapiFields.add("target");
-    
-    openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_type");
-    
-    openapiFields.add("match_value");
     
     openapiFields.add("max_crawl_pages");
     

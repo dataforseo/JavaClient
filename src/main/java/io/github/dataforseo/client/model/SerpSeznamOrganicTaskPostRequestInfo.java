@@ -359,36 +359,6 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpSeznamOrganicTaskPostRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -538,7 +508,6 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
         Objects.equals(this.seDomain, serpSeznamOrganicTaskPostRequestInfo.seDomain) &&
         Objects.equals(this.searchParam, serpSeznamOrganicTaskPostRequestInfo.searchParam) &&
         Objects.equals(this.calculateRectangles, serpSeznamOrganicTaskPostRequestInfo.calculateRectangles) &&
-        Objects.equals(this.stopCrawlOnMatch, serpSeznamOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
         Objects.equals(this.tag, serpSeznamOrganicTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, serpSeznamOrganicTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpSeznamOrganicTaskPostRequestInfo.postbackData) &&
@@ -552,7 +521,7 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, url, priority, depth, maxCrawlPages, device, os, seDomain, searchParam, calculateRectangles, stopCrawlOnMatch, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, url, priority, depth, maxCrawlPages, device, os, seDomain, searchParam, calculateRectangles, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -581,7 +550,6 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -636,8 +604,6 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
     openapiFields.add("search_param");
     
     openapiFields.add("calculate_rectangles");
-    
-    openapiFields.add("stop_crawl_on_match");
     
     openapiFields.add("tag");
     

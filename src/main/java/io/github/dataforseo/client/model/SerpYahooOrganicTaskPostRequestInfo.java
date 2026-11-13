@@ -359,36 +359,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpYahooOrganicTaskPostRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -538,7 +508,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
         Objects.equals(this.depth, serpYahooOrganicTaskPostRequestInfo.depth) &&
         Objects.equals(this.maxCrawlPages, serpYahooOrganicTaskPostRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpYahooOrganicTaskPostRequestInfo.searchParam) &&
-        Objects.equals(this.stopCrawlOnMatch, serpYahooOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
         Objects.equals(this.tag, serpYahooOrganicTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, serpYahooOrganicTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpYahooOrganicTaskPostRequestInfo.postbackData) &&
@@ -552,7 +521,7 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, stopCrawlOnMatch, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -581,7 +550,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -636,8 +604,6 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
     openapiFields.add("max_crawl_pages");
     
     openapiFields.add("search_param");
-    
-    openapiFields.add("stop_crawl_on_match");
     
     openapiFields.add("tag");
     
