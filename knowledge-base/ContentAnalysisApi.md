@@ -116,6 +116,7 @@ ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
 ContentAnalysisPhraseTrendsLiveRequestInfo model = new ContentAnalysisPhraseTrendsLiveRequestInfo()
     .keyword("logitech")
     .searchMode("as_is")
+    .dateFrom("2026-08-22")
     .dateGroup("month");
 ContentAnalysisPhraseTrendsLiveResponseInfo response = apiInstance.phraseTrendsLive(List.of(model));
 ```
@@ -135,7 +136,11 @@ basicAuth.setUsername("USERNAME");
 basicAuth.setPassword("PASSWORD");
 ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
 ContentAnalysisIdListRequestInfo model = new ContentAnalysisIdListRequestInfo()
+    .datetimeFrom("2026-11-19 16:24:50 +00:00")
+    .datetimeTo("2026-11-21 16:24:50 +00:00")
     .limit(10)
+    .offset(0)
+    .sort("desc")
     .includeMetadata(true);
 ContentAnalysisIdListResponseInfo response = apiInstance.contentAnalysisIdList(List.of(model));
 ```
@@ -252,6 +257,7 @@ ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
 ContentAnalysisCategoryTrendsLiveRequestInfo model = new ContentAnalysisCategoryTrendsLiveRequestInfo()
     .categoryCode(10994)
     .searchMode("as_is")
+    .dateFrom("2026-08-22")
     .dateGroup("month");
 ContentAnalysisCategoryTrendsLiveResponseInfo response = apiInstance.categoryTrendsLive(List.of(model));
 ```

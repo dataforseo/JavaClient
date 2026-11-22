@@ -77,7 +77,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
     AppDataIdListRequestInfo model = new AppDataIdListRequestInfo()
+        .datetimeFrom("2026-11-19 16:25:10 +00:00")
+        .datetimeTo("2026-11-21 16:25:10 +00:00")
         .limit(10)
+        .offset(0)
+        .sort("desc")
         .includeMetadata(true);
     AppDataIdListResponseInfo response = apiInstance.appDataIdList(List.of(model));
     System.out.println(result);
@@ -148,7 +152,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
     AppDataErrorsRequestInfo model = new AppDataErrorsRequestInfo()
-        .limit(10);
+        .limit(10)
+        .offset(0);
     AppDataErrorsResponseInfo response = apiInstance.appDataErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1753,18 +1758,13 @@ public class Example {
     AppDataGoogleAppListingsSearchLiveRequestInfo model = new AppDataGoogleAppListingsSearchLiveRequestInfo()
         .title("vpn")
         .description("vpn")
-        .categories(List.of(
-            "Tools"
-        ))
         .orderBy(List.of(
-            "item.installs_count,asc"
+            "item.rating.value,desc"
         ))
         .filters(List.of(
-            List.of(
-                "item.rating.value",
-                ">",
-                4.5d
-            )
+            "item.rating.value",
+            ">",
+            4.5d
         ))
         .limit(10);
     AppDataGoogleAppListingsSearchLiveResponseInfo response = apiInstance.googleAppListingsSearchLive(List.of(model));
@@ -2957,18 +2957,13 @@ public class Example {
     AppDataAppleAppListingsSearchLiveRequestInfo model = new AppDataAppleAppListingsSearchLiveRequestInfo()
         .title("vpn")
         .description("vpn")
-        .categories(List.of(
-            "Utilities"
-        ))
         .orderBy(List.of(
             "item.rating.value,desc"
         ))
         .filters(List.of(
-            List.of(
-                "item.rating.value",
-                ">",
-                4.5d
-            )
+            "item.rating.value",
+            ">",
+            4.5d
         ))
         .limit(10);
     AppDataAppleAppListingsSearchLiveResponseInfo response = apiInstance.appleAppListingsSearchLive(List.of(model));

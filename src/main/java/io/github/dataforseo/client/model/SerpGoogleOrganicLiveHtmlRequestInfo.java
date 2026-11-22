@@ -175,6 +175,29 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_RESOLVE_POISONED_RESULTS = "resolve_poisoned_results";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_POISONED_RESULTS)
+  private Boolean resolvePoisonedResults;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo resolvePoisonedResults(Boolean resolvePoisonedResults) {
+    this.resolvePoisonedResults = resolvePoisonedResults;
+    return this;
+  }
+
+  /**
+   * <em>resolve poisoned SERP results</em><br>optional field<br>set to `true` to detect and resolve poisoned SERPs;<br>default value: `false`;<br><strong>Note:</strong> if set to `true`, the cost of the task is increased by the price of one SERP page;<br>the cost can be calculated on the <a href='https://dataforseo.com/pricing/serp/google-organic-serp-api' target='_blank' rel='noopener'>Pricing</a> page;<br><strong>Note#2:</strong> this parameter cannot be used together with `udm=web` or `udm=14` in the `url` or `search_param` fields
+   * @return resolvePoisonedResults
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolvePoisonedResults() {
+    return resolvePoisonedResults;
+  }
+
+  public void setResolvePoisonedResults(Boolean resolvePoisonedResults) {
+    this.resolvePoisonedResults = resolvePoisonedResults;
+  }
+
+
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -454,6 +477,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
         Objects.equals(this.depth, serpGoogleOrganicLiveHtmlRequestInfo.depth) &&
         Objects.equals(this.device, serpGoogleOrganicLiveHtmlRequestInfo.device) &&
         Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveHtmlRequestInfo.loadAsyncAiOverview) &&
+        Objects.equals(this.resolvePoisonedResults, serpGoogleOrganicLiveHtmlRequestInfo.resolvePoisonedResults) &&
         Objects.equals(this.locationName, serpGoogleOrganicLiveHtmlRequestInfo.locationName) &&
         Objects.equals(this.languageName, serpGoogleOrganicLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleOrganicLiveHtmlRequestInfo.os) &&
@@ -473,7 +497,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, locationName, languageName, os, tag, maxCrawlPages, searchParam, expandAiOverview, url, locationCoordinate, seDomain);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, resolvePoisonedResults, locationName, languageName, os, tag, maxCrawlPages, searchParam, expandAiOverview, url, locationCoordinate, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -494,6 +518,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
+    sb.append("    resolvePoisonedResults: ").append(toIndentedString(resolvePoisonedResults)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
@@ -538,6 +563,8 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     openapiFields.add("device");
     
     openapiFields.add("load_async_ai_overview");
+    
+    openapiFields.add("resolve_poisoned_results");
     
     openapiFields.add("location_name");
     

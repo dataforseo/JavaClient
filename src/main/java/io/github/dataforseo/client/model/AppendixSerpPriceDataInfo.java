@@ -37,29 +37,6 @@ import io.github.dataforseo.client.JSON;
 public class AppendixSerpPriceDataInfo  {
 
 
-  public static final String SERIALIZED_NAME_HTML = "html";
-  @SerializedName(SERIALIZED_NAME_HTML)
-  private AppendixTaskKeywordsDataPriceDataInfo html;
-
-  public AppendixSerpPriceDataInfo html(AppendixTaskKeywordsDataPriceDataInfo html) {
-    this.html = html;
-    return this;
-  }
-
-  /**
-   * 
-   * @return html
-   */
-  @javax.annotation.Nullable
-  public AppendixTaskKeywordsDataPriceDataInfo getHtml() {
-    return html;
-  }
-
-  public void setHtml(AppendixTaskKeywordsDataPriceDataInfo html) {
-    this.html = html;
-  }
-
-
   public static final String SERIALIZED_NAME_REGULAR = "regular";
   @SerializedName(SERIALIZED_NAME_REGULAR)
   private AppendixTaskKeywordsDataPriceDataInfo regular;
@@ -80,6 +57,29 @@ public class AppendixSerpPriceDataInfo  {
 
   public void setRegular(AppendixTaskKeywordsDataPriceDataInfo regular) {
     this.regular = regular;
+  }
+
+
+  public static final String SERIALIZED_NAME_HTML = "html";
+  @SerializedName(SERIALIZED_NAME_HTML)
+  private AppendixTaskKeywordsDataPriceDataInfo html;
+
+  public AppendixSerpPriceDataInfo html(AppendixTaskKeywordsDataPriceDataInfo html) {
+    this.html = html;
+    return this;
+  }
+
+  /**
+   * 
+   * @return html
+   */
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getHtml() {
+    return html;
+  }
+
+  public void setHtml(AppendixTaskKeywordsDataPriceDataInfo html) {
+    this.html = html;
   }
 
 
@@ -149,8 +149,8 @@ public class AppendixSerpPriceDataInfo  {
     AppendixSerpPriceDataInfo appendixSerpPriceDataInfo = (AppendixSerpPriceDataInfo) o;
     return
 
-        Objects.equals(this.html, appendixSerpPriceDataInfo.html) &&
         Objects.equals(this.regular, appendixSerpPriceDataInfo.regular) &&
+        Objects.equals(this.html, appendixSerpPriceDataInfo.html) &&
         Objects.equals(this.advanced, appendixSerpPriceDataInfo.advanced);  
     
   }
@@ -161,7 +161,7 @@ public class AppendixSerpPriceDataInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(html, regular, advanced);
+  return Objects.hash(regular, html, advanced);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -176,8 +176,8 @@ public class AppendixSerpPriceDataInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixSerpPriceDataInfo {\n");
 
-    sb.append("    html: ").append(toIndentedString(html)).append("\n");
     sb.append("    regular: ").append(toIndentedString(regular)).append("\n");
+    sb.append("    html: ").append(toIndentedString(html)).append("\n");
     sb.append("    advanced: ").append(toIndentedString(advanced)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -202,9 +202,9 @@ public class AppendixSerpPriceDataInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("html");
-    
     openapiFields.add("regular");
+    
+    openapiFields.add("html");
     
     openapiFields.add("advanced");
     

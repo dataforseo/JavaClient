@@ -4135,6 +4135,8 @@ public class Example {
                 ))
         ))
         .platform("google")
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .groupRange("month");
     AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo response = apiInstance.llmMentionsTimeseriesDeltaLive(List.of(model));
     System.out.println(result);
@@ -4218,6 +4220,8 @@ public class Example {
                 ))
         ))
         .platform("google")
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .groupRange("month");
     AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo response = apiInstance.llmMentionsTimeseriesNewLostLive(List.of(model));
     System.out.println(result);

@@ -83,6 +83,52 @@ public class ReviewResponseItemInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_LANGUAGE = "language";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE)
+  private String language;
+
+  public ReviewResponseItemInfo language(String language) {
+    this.language = language;
+    return this;
+  }
+
+  /**
+   * language of the response
+   * @return language
+   */
+  @javax.annotation.Nullable
+  public String getLanguage() {
+    return language;
+  }
+
+  public void setLanguage(String language) {
+    this.language = language;
+  }
+
+
+  public static final String SERIALIZED_NAME_RESPONSE_ID = "response_id";
+  @SerializedName(SERIALIZED_NAME_RESPONSE_ID)
+  private String responseId;
+
+  public ReviewResponseItemInfo responseId(String responseId) {
+    this.responseId = responseId;
+    return this;
+  }
+
+  /**
+   * ID of the response
+   * @return responseId
+   */
+  @javax.annotation.Nullable
+  public String getResponseId() {
+    return responseId;
+  }
+
+  public void setResponseId(String responseId) {
+    this.responseId = responseId;
+  }
+
+
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
   private String timestamp;
@@ -151,6 +197,8 @@ public class ReviewResponseItemInfo  {
 
         Objects.equals(this.title, reviewResponseItemInfo.title) &&
         Objects.equals(this.text, reviewResponseItemInfo.text) &&
+        Objects.equals(this.language, reviewResponseItemInfo.language) &&
+        Objects.equals(this.responseId, reviewResponseItemInfo.responseId) &&
         Objects.equals(this.timestamp, reviewResponseItemInfo.timestamp);  
     
   }
@@ -161,7 +209,7 @@ public class ReviewResponseItemInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, text, timestamp);
+  return Objects.hash(title, text, language, responseId, timestamp);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -178,6 +226,8 @@ public class ReviewResponseItemInfo  {
 
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
+    sb.append("    language: ").append(toIndentedString(language)).append("\n");
+    sb.append("    responseId: ").append(toIndentedString(responseId)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -205,6 +255,10 @@ public class ReviewResponseItemInfo  {
     openapiFields.add("title");
     
     openapiFields.add("text");
+    
+    openapiFields.add("language");
+    
+    openapiFields.add("response_id");
     
     openapiFields.add("timestamp");
     

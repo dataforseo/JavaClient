@@ -247,7 +247,9 @@ basicAuth.setUsername("USERNAME");
 basicAuth.setPassword("PASSWORD");
 BacklinksApi apiInstance = new BacklinksApi(defaultClient);
 BacklinksHistoryLiveRequestInfo model = new BacklinksHistoryLiveRequestInfo()
-    .target("cnn.com");
+    .target("cnn.com")
+    .dateFrom("2026-08-22")
+    .dateTo("2026-10-22");
 BacklinksHistoryLiveResponseInfo response = apiInstance.historyLive(List.of(model));
 ```
 

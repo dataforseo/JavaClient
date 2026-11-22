@@ -132,7 +132,11 @@ basicAuth.setUsername("USERNAME");
 basicAuth.setPassword("PASSWORD");
 DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
 DomainAnalyticsIdListRequestInfo model = new DomainAnalyticsIdListRequestInfo()
+    .datetimeFrom("2026-11-19 16:20:14 +00:00")
+    .datetimeTo("2026-11-21 16:20:14 +00:00")
     .limit(10)
+    .offset(0)
+    .sort("desc")
     .includeMetadata(true);
 DomainAnalyticsIdListResponseInfo response = apiInstance.domainAnalyticsIdList(List.of(model));
 ```
@@ -290,7 +294,9 @@ basicAuth.setUsername("USERNAME");
 basicAuth.setPassword("PASSWORD");
 DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
 DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo model = new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
-    .technology("jQuery");
+    .technology("jQuery")
+    .dateFrom("2026-08-22")
+    .dateTo("2026-10-22");
 DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo response = apiInstance.technologiesTechnologyStatsLive(List.of(model));
 ```
 

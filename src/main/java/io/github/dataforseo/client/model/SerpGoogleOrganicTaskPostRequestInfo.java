@@ -175,6 +175,29 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_RESOLVE_POISONED_RESULTS = "resolve_poisoned_results";
+  @SerializedName(SERIALIZED_NAME_RESOLVE_POISONED_RESULTS)
+  private Boolean resolvePoisonedResults;
+
+  public SerpGoogleOrganicTaskPostRequestInfo resolvePoisonedResults(Boolean resolvePoisonedResults) {
+    this.resolvePoisonedResults = resolvePoisonedResults;
+    return this;
+  }
+
+  /**
+   * <em>resolve poisoned SERP results</em><br>optional field<br>set to `true` to detect and resolve poisoned SERPs;<br>restored organic results are marked with the `from_web` value in the `checks` array;<br>default value: `false`;<br><strong>Note:</strong> if set to `true`, the cost of the task is increased by the price of one SERP page;<br>the cost can be calculated on the <a href='https://dataforseo.com/pricing/serp/google-organic-serp-api' target='_blank' rel='noopener'>Pricing</a> page;<br><strong>Note#2:</strong> this parameter cannot be used together with `udm=web` or `udm=14` in the `url` or `search_param` fields
+   * @return resolvePoisonedResults
+   */
+  @javax.annotation.Nullable
+  public Boolean getResolvePoisonedResults() {
+    return resolvePoisonedResults;
+  }
+
+  public void setResolvePoisonedResults(Boolean resolvePoisonedResults) {
+    this.resolvePoisonedResults = resolvePoisonedResults;
+  }
+
+
   public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
   @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
   private String pingbackUrl;
@@ -730,6 +753,7 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
         Objects.equals(this.depth, serpGoogleOrganicTaskPostRequestInfo.depth) &&
         Objects.equals(this.device, serpGoogleOrganicTaskPostRequestInfo.device) &&
         Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicTaskPostRequestInfo.loadAsyncAiOverview) &&
+        Objects.equals(this.resolvePoisonedResults, serpGoogleOrganicTaskPostRequestInfo.resolvePoisonedResults) &&
         Objects.equals(this.pingbackUrl, serpGoogleOrganicTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleOrganicTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleOrganicTaskPostRequestInfo.postbackData) &&
@@ -761,7 +785,7 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, pingbackUrl, postbackUrl, postbackData, priority, resolveGotoUrls, locationName, locationCoordinate, languageName, tag, os, maxCrawlPages, searchParam, removeFromUrl, expandAiOverview, peopleAlsoAskClickDepth, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, seDomain);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, resolvePoisonedResults, pingbackUrl, postbackUrl, postbackData, priority, resolveGotoUrls, locationName, locationCoordinate, languageName, tag, os, maxCrawlPages, searchParam, removeFromUrl, expandAiOverview, peopleAlsoAskClickDepth, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -782,6 +806,7 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
+    sb.append("    resolvePoisonedResults: ").append(toIndentedString(resolvePoisonedResults)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -838,6 +863,8 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
     openapiFields.add("device");
     
     openapiFields.add("load_async_ai_overview");
+    
+    openapiFields.add("resolve_poisoned_results");
     
     openapiFields.add("pingback_url");
     

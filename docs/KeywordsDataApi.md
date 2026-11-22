@@ -105,7 +105,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
     KeywordsDataIdListRequestInfo model = new KeywordsDataIdListRequestInfo()
+        .datetimeFrom("2026-11-19 16:20:19 +00:00")
+        .datetimeTo("2026-11-21 16:20:19 +00:00")
         .limit(10)
+        .offset(0)
+        .sort("desc")
         .includeMetadata(true);
     KeywordsDataIdListResponseInfo response = apiInstance.keywordsDataIdList(List.of(model));
     System.out.println(result);
@@ -743,6 +747,7 @@ public class Example {
             "cheap laptops for sale",
             "purchase laptop"
         ))
+        .dateFrom("2026-08-22")
         .searchPartners(true);
     KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = apiInstance.googleAdsSearchVolumeLive(List.of(model));
     System.out.println(result);
@@ -1945,6 +1950,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
     KeywordsDataGoogleTrendsExploreTaskPostRequestInfo model = new KeywordsDataGoogleTrendsExploreTaskPostRequestInfo()
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .type("youtube")
         .categoryCode(3)
         .keywords(List.of(
@@ -2159,6 +2166,8 @@ public class Example {
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
     KeywordsDataGoogleTrendsExploreLiveRequestInfo model = new KeywordsDataGoogleTrendsExploreLiveRequestInfo()
         .locationName("United States")
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .type("youtube")
         .categoryCode(3)
         .keywords(List.of(
@@ -2450,6 +2459,8 @@ public class Example {
             "rugby",
             "cricket"
         ))
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .type("web")
         .locationName("United States");
     KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo response = apiInstance.dataforseoTrendsSubregionInterestsLive(List.of(model));
@@ -2525,6 +2536,8 @@ public class Example {
             "rugby",
             "cricket"
         ))
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .type("web")
         .locationName("United States");
     KeywordsDataDataforseoTrendsDemographyLiveResponseInfo response = apiInstance.dataforseoTrendsDemographyLive(List.of(model));
@@ -2600,6 +2613,8 @@ public class Example {
             "rugby",
             "cricket"
         ))
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .type("web")
         .locationName("United States");
     KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo response = apiInstance.dataforseoTrendsMergedDataLive(List.of(model));

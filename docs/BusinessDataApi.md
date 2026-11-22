@@ -88,7 +88,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataIdListRequestInfo model = new BusinessDataIdListRequestInfo()
+        .datetimeFrom("2026-11-19 16:25:20 +00:00")
+        .datetimeTo("2026-11-21 16:25:20 +00:00")
         .limit(10)
+        .offset(0)
+        .sort("desc")
         .includeMetadata(true);
     BusinessDataIdListResponseInfo response = apiInstance.businessDataIdList(List.of(model));
     System.out.println(result);
@@ -159,7 +163,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataErrorsRequestInfo model = new BusinessDataErrorsRequestInfo()
-        .limit(10);
+        .limit(10)
+        .offset(0);
     BusinessDataErrorsResponseInfo response = apiInstance.businessDataErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1378,6 +1383,8 @@ public class Example {
         .languageCode("en")
         .locationName("New York,New York,United States")
         .keyword("cheap hotel")
+        .checkIn("2026-12-22")
+        .checkOut("2026-12-23")
         .currency("USD")
         .adults(2)
         .children(List.of(
@@ -1596,6 +1603,8 @@ public class Example {
         .languageCode("en")
         .locationName("New York,New York,United States")
         .keyword("cheap hotel")
+        .checkIn("2026-12-22")
+        .checkOut("2026-12-23")
         .currency("USD")
         .adults(2)
         .children(List.of(

@@ -148,7 +148,9 @@ DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
 DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo model = new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
     .keyword("albert einstein")
     .locationCode(2840)
-    .languageCode("en");
+    .languageCode("en")
+    .dateFrom("2026-08-22")
+    .dateTo("2026-10-22");
 DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo response = apiInstance.googleHistoricalSerpsLive(List.of(model));
 ```
 

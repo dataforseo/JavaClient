@@ -83,7 +83,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsIdListRequestInfo model = new DataforseoLabsIdListRequestInfo()
+        .datetimeFrom("2026-11-19 16:18:23 +00:00")
+        .datetimeTo("2026-11-21 16:18:23 +00:00")
         .limit(10)
+        .offset(0)
+        .sort("desc")
         .includeMetadata(true);
     DataforseoLabsIdListResponseInfo response = apiInstance.dataforseoLabsIdList(List.of(model));
     System.out.println(result);
@@ -223,7 +227,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsErrorsRequestInfo model = new DataforseoLabsErrorsRequestInfo()
-        .limit(10);
+        .limit(10)
+        .offset(0);
     DataforseoLabsErrorsResponseInfo response = apiInstance.dataforseoLabsErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1331,6 +1336,8 @@ public class Example {
             "13418",
             "11494"
         ))
+        .firstDate("2026-08-22")
+        .secondDate("2026-10-22")
         .limit(3);
     DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo response = apiInstance.googleDomainMetricsByCategoriesLive(List.of(model));
     System.out.println(result);
@@ -2023,7 +2030,9 @@ public class Example {
     DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo model = new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
         .keyword("albert einstein")
         .locationCode(2840)
-        .languageCode("en");
+        .languageCode("en")
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22");
     DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo response = apiInstance.googleHistoricalSerpsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2095,7 +2104,9 @@ public class Example {
     DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo model = new DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo()
         .target("dataforseo.com")
         .locationCode(2840)
-        .languageCode("en");
+        .languageCode("en")
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22");
     DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo response = apiInstance.googleHistoricalRankOverviewLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2405,6 +2416,8 @@ public class Example {
         ))
         .locationCode(2840)
         .languageCode("en")
+        .dateFrom("2026-08-22")
+        .dateTo("2026-10-22")
         .itemTypes(List.of(
             "organic",
             "paid"

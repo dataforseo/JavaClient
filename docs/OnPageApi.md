@@ -66,7 +66,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageIdListRequestInfo model = new OnPageIdListRequestInfo()
+        .datetimeFrom("2026-11-19 16:21:18 +00:00")
+        .datetimeTo("2026-11-21 16:21:18 +00:00")
         .limit(10)
+        .offset(0)
+        .sort("desc")
         .includeMetadata(true);
     OnPageIdListResponseInfo response = apiInstance.onPageIdList(List.of(model));
     System.out.println(result);

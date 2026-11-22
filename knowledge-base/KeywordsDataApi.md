@@ -67,6 +67,8 @@ basicAuth.setUsername("USERNAME");
 basicAuth.setPassword("PASSWORD");
 KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 KeywordsDataGoogleTrendsExploreTaskPostRequestInfo model = new KeywordsDataGoogleTrendsExploreTaskPostRequestInfo()
+    .dateFrom("2026-08-22")
+    .dateTo("2026-10-22")
     .type("youtube")
     .categoryCode(3)
     .keywords(List.of(
@@ -97,6 +99,7 @@ KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo model = new KeywordsDataGoogleA
         "cheap laptops for sale",
         "purchase laptop"
     ))
+    .dateFrom("2026-08-22")
     .searchPartners(true);
 KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = apiInstance.googleAdsSearchVolumeLive(List.of(model));
 ```
@@ -142,6 +145,8 @@ basicAuth.setPassword("PASSWORD");
 KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 KeywordsDataGoogleTrendsExploreLiveRequestInfo model = new KeywordsDataGoogleTrendsExploreLiveRequestInfo()
     .locationName("United States")
+    .dateFrom("2026-08-22")
+    .dateTo("2026-10-22")
     .type("youtube")
     .categoryCode(3)
     .keywords(List.of(

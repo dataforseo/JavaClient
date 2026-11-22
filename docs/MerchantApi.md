@@ -73,7 +73,11 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantIdListRequestInfo model = new MerchantIdListRequestInfo()
+        .datetimeFrom("2026-11-19 16:24:56 +00:00")
+        .datetimeTo("2026-11-21 16:24:56 +00:00")
         .limit(10)
+        .offset(0)
+        .sort("desc")
         .includeMetadata(true);
     MerchantIdListResponseInfo response = apiInstance.merchantIdList(List.of(model));
     System.out.println(result);
@@ -2314,7 +2318,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantAmazonSellersTaskPostRequestInfo model = new MerchantAmazonSellersTaskPostRequestInfo()
-        .languageCode("en")
+        .languageCode("en_US")
         .locationCode(2840)
         .asin("B085RFFC9Q");
     MerchantAmazonSellersTaskPostResponseInfo response = apiInstance.amazonSellersTaskPost(List.of(model));
